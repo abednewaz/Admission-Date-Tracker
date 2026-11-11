@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1e3a5f">
+  <meta name="description" content="Admission Date Tracker – Track Bangladesh undergraduate admission exam dates for HSC Batch 2026 (2026–27). Search universities, live countdowns, close-exam warnings.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Admission Date Tracker">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Admission Date Tracker</title>
+  <style>
+    :root{--bg:#f7f5f2;--card:#fff;--text:#1a2332;--muted:#5a6577;--pri:#1e3a5f;--pri2:#2c5282;--red:#c53030;--green:#276749;--border:#e2e0db;--sh:0 1px 3px rgba(26,35,50,.08),0 4px 12px rgba(26,35,50,.04);--r:12px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;-webkit-text-size-adjust:100%}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100dvh;-webkit-font-smoothing:antialiased}
+    .app{min-height:100dvh;display:flex;flex-direction:column}
+    header{background:var(--pri);color:#fff;padding:1rem 1rem 1.35rem;text-align:center}
+    .header-brand{display:flex;align-items:center;justify-content:center;gap:.65rem;margin-bottom:.35rem}
+    .header-logo{width:2.4rem;height:2.4rem;border-radius:.55rem;flex-shrink:0}
+    header h1{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+    .sub{font-size:.9rem;opacity:.92;font-weight:500}
+    .tag{font-size:.78rem;opacity:.72;margin-top:.12rem}
+    main{flex:1;max-width:640px;width:100%;margin:0 auto;padding:1rem 1rem 2rem}
+    .sw{position:relative;margin-bottom:1.15rem}
+    .sw svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;color:var(--muted);pointer-events:none}
+    .search{width:100%;padding:.75rem 2.5rem .75rem 2.6rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);font-size:1rem;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}
+    .search:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}
+    .search::placeholder{color:#9aa3b2}
+    .clear{position:absolute;right:.55rem;top:50%;transform:translateY(-50%);width:1.7rem;height:1.7rem;border:none;background:#e8e6e1;border-radius:50%;font-size:1.1rem;line-height:1;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center}
+    .meta{font-size:.8rem;color:var(--muted);margin-top:.35rem;padding-left:.5rem}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-bottom:1rem}
+    .stat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:.7rem .4rem;text-align:center;box-shadow:var(--sh)}
+    .stat b{display:block;font-size:1.35rem;font-weight:700;color:var(--pri);line-height:1.2}
+    .stat span{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+    .closest{background:linear-gradient(135deg,#ebf4ff 0%,#e6fffa 100%);border:1px solid #bee3f8;border-radius:var(--r);padding:.8rem 1rem;margin-bottom:1.15rem;display:none;flex-direction:column;gap:.12rem}
+    .closest .l{font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--pri2);font-weight:600}
+    .closest strong{font-size:.92rem}
+    .closest .d{font-size:.84rem;color:var(--green);font-weight:600}
+    .notice{background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-bottom:1.15rem;overflow:hidden;box-shadow:var(--sh)}
+    .ntog{width:100%;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:none;border:none;cursor:pointer;text-align:left}
+    .ntog h2{font-size:.98rem;font-weight:650;color:var(--pri)}
+    .nicon{font-size:1.2rem;color:var(--muted);line-height:1}
+    .nlist{border-top:1px solid var(--border);padding:.5rem}
+    .nitem{padding:.7rem;border-radius:8px;margin-bottom:.35rem}
+    .nitem.hi{background:#fff5f5;border-left:3px solid var(--red)}
+    .ncat{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--pri);background:#ebf4ff;padding:.12rem .38rem;border-radius:4px;margin-right:.45rem}
+    .ndate{font-size:.74rem;color:var(--muted)}
+    .ntitle{font-size:.88rem;font-weight:650;margin:.22rem 0}
+    .ndesc{font-size:.84rem;color:var(--muted);line-height:1.45}
+    .tabs{display:flex;gap:.35rem;margin-bottom:1rem;background:#ebe8e2;padding:.28rem;border-radius:999px}
+    .tabs button{flex:1;padding:.48rem .7rem;border:none;background:transparent;border-radius:999px;font-size:.84rem;font-weight:600;color:var(--muted);cursor:pointer}
+    .tabs button.on{background:var(--card);color:var(--pri);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    .group{margin-bottom:1.4rem}
+    .gt{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:.55rem;padding-left:.12rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:.95rem;margin-bottom:.7rem;box-shadow:var(--sh)}
+    .gap{display:flex;align-items:center;gap:.4rem;background:#fff5f5;color:var(--red);font-size:.8rem;font-weight:650;padding:.42rem .6rem;border-radius:8px;margin-bottom:.7rem;border:1px solid #feb2b2}
+    .ch{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.6rem}
+    .uni{font-size:.98rem;font-weight:700;line-height:1.3}
+    .unit{font-size:.84rem;color:var(--muted);margin-top:.12rem}
+    .badge{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:.18rem .42rem;border-radius:4px;white-space:nowrap;flex-shrink:0}
+    .bpub{background:#ebf8ff;color:#2b6cb0}
+    .bpri{background:#faf5ff;color:#6b46c1}
+    .chg{background:#fefcbf;border:1px solid #f6e05e;border-radius:8px;padding:.45rem .6rem;margin-bottom:.6rem;font-size:.8rem}
+    .chg strong{display:block;color:#744210;margin-bottom:.12rem}
+    .rows{display:grid;gap:.32rem;margin-bottom:.7rem}
+    .row{display:flex;justify-content:space-between;gap:.7rem;font-size:.86rem}
+    .row .l{color:var(--muted);flex-shrink:0}
+    .row .v{text-align:right;font-weight:500;word-break:break-word}
+    .row .v.cl{color:var(--red);font-weight:650}
+    .cd{display:inline-block;font-size:.84rem;font-weight:700;padding:.32rem .65rem;border-radius:999px;margin-bottom:.7rem}
+    .cdu{background:#ebf8ff;color:#2b6cb0}
+    .cds{background:#fefcbf;color:#744210}
+    .cdn{background:#c6f6d5;color:#22543d}
+    .cdd{background:#edf2f7;color:#718096}
+    .btn{display:block;width:100%;text-align:center;padding:.58rem;background:var(--pri);color:#fff;font-size:.86rem;font-weight:600;text-decoration:none;border-radius:8px;transition:background .15s}
+    .btn:hover,.btn:focus{background:var(--pri2)}
+    .notes{margin-top:.6rem;font-size:.8rem;color:var(--muted);line-height:1.4;border-top:1px solid var(--border);padding-top:.5rem}
+    .marked-section{background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-bottom:1.15rem;box-shadow:var(--sh);overflow:hidden}.marked-head{padding:.8rem 1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:.5rem}.marked-head h2{font-size:.98rem;font-weight:700;color:var(--pri)}.marked-head span{font-size:.72rem;color:var(--muted)}.marked-list{padding:.65rem}.marked-card{padding:.75rem;border:1px solid var(--border);border-radius:10px;margin-bottom:.5rem;background:#fbfcfe}.marked-card:last-child{margin-bottom:0}.marked-top{display:flex;justify-content:space-between;gap:.5rem;align-items:flex-start}.marked-name{font-size:.9rem;font-weight:700}.marked-unit{font-size:.78rem;color:var(--muted);margin-top:.08rem}.live-cd{margin:.55rem 0 .45rem;padding:.55rem .65rem;border-radius:9px;background:#edf7ff;color:var(--pri);font-variant-numeric:tabular-nums;font-size:.92rem;font-weight:800;text-align:center;letter-spacing:.01em}.live-cd.done{background:#edf2f7;color:#718096}.live-cd.unknown{background:#fefcbf;color:#744210}.mark-btn{border:1px solid var(--border);background:#fff;color:var(--pri);border-radius:8px;padding:.32rem .55rem;font-size:.75rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:transform .12s,background .15s,border-color .15s}.mark-btn:hover{background:#f3f7fb;border-color:#bfd0e2}.mark-btn:active{transform:scale(.97)}.mark-btn.marked{background:#ebf8ff;border-color:#90cdf4}.card .mark-btn{width:auto;display:inline-flex;align-items:center;gap:.25rem}.card-actions{display:flex;gap:.5rem;align-items:center;margin-top:.15rem}.card-actions .btn{flex:1}.empty-marked{text-align:center;padding:1.1rem .75rem;color:var(--muted);font-size:.84rem}.live-timer{font-variant-numeric:tabular-nums;white-space:nowrap}    .empty{text-align:center;color:var(--muted);padding:2rem 1rem;font-size:.95rem}
+    .notif{margin-top:1.4rem;text-align:center;padding:1rem;background:var(--card);border:1px dashed var(--border);border-radius:var(--r)}
+    .notif p{font-size:.86rem;color:var(--muted);margin-bottom:.55rem}
+    .notif button{background:var(--pri);color:#fff;border:none;padding:.52rem 1.15rem;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer}
+    footer{border-top:1px solid var(--border);background:var(--card);padding:1.2rem 1rem;margin-top:auto}
+    .fi{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:.7rem}
+    .av{width:2rem;height:2rem;border-radius:50%;background:var(--pri);color:#fff;font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .cr{font-size:.74rem;color:var(--muted);line-height:1.4}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
+    @media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}main{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="header-brand">
+        <img class="header-logo" src="icon.svg" width="40" height="40" alt="" aria-hidden="true">
+        <h1>Admission Date Tracker</h1>
+      </div>
+      <p class="sub">Bangladesh Undergraduate Admission 2026–27</p>
+      <p class="tag">HSC Batch 2026</p>
+    </header>
+    <main>
+      <div class="sw">
+        <label for="q" class="sr-only">Search University</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input class="search" id="q" type="search" placeholder="Search University (DU, BUET, BRAC, NSU…)" autocomplete="off" enterkeyhint="search">
+        <button type="button" class="clear" id="clear" aria-label="Clear search">×</button>
+      </div>
+      <p class="meta" id="meta" hidden></p>
+      <section class="stats" id="stats" aria-label="Overview"></section>
+      <div class="closest" id="closest" role="status"></div>
+      <section class="notice" aria-labelledby="notice-heading">
+        <button type="button" class="ntog" id="ntog" aria-expanded="true" aria-controls="nlist">
+          <h2 id="notice-heading">Notice Board</h2>
+          <span class="nicon" id="nicon" aria-hidden="true">−</span>
+        </button>
+        <div class="nlist" id="nlist">
+          <article class="nitem hi">
+            <span class="ncat">Update</span><span class="ndate">2026-11-10</span>
+            <h3 class="ntitle">Private University Spring 2027 Dates Published</h3>
+            <p class="ndesc">Several private universities including BRAC, NSU, AIUB, UIU, EWU and ULAB have published undergraduate admission test dates for Spring 2027. Always verify details on the official admission portal.</p>
+          </article>
+          <article class="nitem">
+            <span class="ncat">Info</span><span class="ndate">2026-11-10</span>
+            <h3 class="ntitle">Welcome to Admission Date Tracker</h3>
+            <p class="ndesc">This app tracks undergraduate admission exam dates for HSC Batch 2026 (2026–27 cycle). Data is taken from the prepared official dataset. “Not published yet” means the date has not been published on the official source.</p>
+          </article>
+        </div>
+      </section>
+      <div class="tabs" role="tablist" aria-label="Exam sections">
+        <button type="button" class="on" data-s="upcoming" role="tab" aria-selected="true">Upcoming</button>
+        <button type="button" data-s="all" role="tab" aria-selected="false">All</button>
+        <button type="button" data-s="finished" role="tab" aria-selected="false">Finished</button>
+      </div>
+      <div id="list"></div>
+      <div class="notif" id="notif">
+        <p>Get reminded before important exams</p>
+        <button type="button" id="enN">Enable Exam Reminders</button>
+      </div>
+    </main>
+    <footer>
+      <div class="fi">
+        <div class="av" title="Profile photo placeholder – replace with actual photo of Abed Newaz before production release">AN</div>
+        <p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at the.abednewaz@gmail.com</p>
+      </div>
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script>
+    const TZ='Asia/Dhaka',CLOSE=3,exams=window.ADMISSION_EXAMS||[];
+    function todayBD(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+    function parseD(s){if(!s||s==='Not published yet')return null;const p=String(s).split('-').map(Number);if(p.length!==3||p.some(isNaN))return null;return new Date(Date.UTC(p[0],p[1]-1,p[2]))}
+    function daysB(a,b){const d1=parseD(a),d2=parseD(b);if(!d1||!d2)return null;return Math.round((d2-d1)/864e5)}
+    function fmt(s){if(!s||s==='Not published yet')return 'Not published yet';const d=parseD(s);if(!d)return s;return d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}
+    function cd(ed){if(!ed||ed==='Not published yet')return{s:'unk',l:'Not published yet',d:null};const days=daysB(todayBD(),ed);if(days===null)return{s:'unk',l:'Not published yet',d:null};if(days<0)return{s:'fin',l:'Exam finished',d:days};if(days===0)return{s:'tod',l:'Today',d:0};if(days===1)return{s:'tom',l:'Tomorrow',d:1};return{s:'up',l:days+' days left',d:days}}
+    const MARK_KEY='adt_marked_universities_v1';
+    function getMarked(){try{const x=JSON.parse(localStorage.getItem(MARK_KEY)||'[]');return Array.isArray(x)?x:[]}catch(e){return[]}}
+    function setMarked(a){try{localStorage.setItem(MARK_KEY,JSON.stringify(a))}catch(e){}}
+    function isMarked(name){return getMarked().indexOf(name)!==-1}
+    function toggleMarked(name){const a=getMarked(),i=a.indexOf(name);if(i===-1)a.push(name);else a.splice(i,1);setMarked(a);render();renderMarked();}
+    function examMoment(e){if(!e||!e.examDate||e.examDate==='Not published yet')return null;const m=String(e.examDate).match(/^(\d{4})-(\d{2})-(\d{2})$/);if(!m)return null;let hh=0,mm=0;const t=String(e.examTime||'').trim();const tm=t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);if(tm){hh=Number(tm[1]);mm=Number(tm[2]);const ap=(tm[3]||'').toUpperCase();if(ap==='PM'&&hh<12)hh+=12;if(ap==='AM'&&hh===12)hh=0}return new Date(Date.UTC(Number(m[1]),Number(m[2])-1,Number(m[3]),hh-6,mm,0))}
+    function pad(n){return String(Math.max(0,n)).padStart(2,'0')}
+    function liveText(e,now){const d=examMoment(e);if(!d)return{cls:'unknown',text:'Not published yet'};let ms=d.getTime()-now;if(ms<=0)return{cls:'done',text:'Exam finished'};let sec=Math.floor(ms/1000),days=Math.floor(sec/86400);sec%=86400;let h=Math.floor(sec/3600);sec%=3600;let min=Math.floor(sec/60),s=sec%60;return{cls:'',text:days+' days '+pad(h)+' hours '+pad(min)+' minutes '+pad(s)+' seconds'}}
+    function nextExamForUniversity(name){const now=Date.now();return exams.filter(function(e){return e.universityName===name&&examMoment(e)&&examMoment(e).getTime()>now}).sort(function(a,b){return examMoment(a)-examMoment(b)})[0]||exams.filter(function(e){return e.universityName===name&&e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return String(a.examDate).localeCompare(String(b.examDate))})[0]||null}
+    function renderMarked(){const list=document.getElementById('markedList'),names=getMarked();document.getElementById('markedCount').textContent=names.length+' marked';if(!names.length){list.innerHTML='<div class="empty-marked">No universities marked yet. Mark a university to see its personalized countdown here.</div>';return}const now=Date.now();let html='';names.forEach(function(name){const e=nextExamForUniversity(name);if(!e){html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(name)+'</div><div class="marked-unit">No exam date published yet</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd unknown">Not published yet</div></article>';return}const lt=liveText(e,now);html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(e.universityName)+'</div><div class="marked-unit">'+esc(e.unit)+' · '+fmt(e.examDate)+'</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd '+lt.cls+'" data-live-id="'+esc(e.id)+'">'+lt.text+'</div></article>'});list.innerHTML=html;list.querySelectorAll('[data-unmark]').forEach(function(b){b.addEventListener('click',function(){toggleMarked(b.getAttribute('data-unmark'))})})}
+    setInterval(function(){const now=Date.now();document.querySelectorAll('[data-live-id]').forEach(function(el){const e=exams.find(function(x){return String(x.id)===el.getAttribute('data-live-id')});if(e){const lt=liveText(e,now);el.className='live-cd '+lt.cls;el.textContent=lt.text}})},1000);
+    function appS(dl){if(!dl||dl==='Not published yet')return{c:false,l:'Not published yet'};const days=daysB(todayBD(),dl);if(days===null)return{c:false,l:dl};if(days<0)return{c:true,l:'Application closed'};if(days===0)return{c:false,l:'Closes today'};return{c:false,l:fmt(dl)}}
+    function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+    function match(e,q){if(!q)return true;var terms=q.toLowerCase().trim().split(/\s+/).filter(Boolean);var name=(e.universityName||"").toLowerCase();var short=(e.universityShortName||"").toLowerCase();var unit=(e.unit||"").toLowerCase();function hasWord(text,w){if(w.length<=2)return short===w||name.split(/[\s\-\/()]+/).indexOf(w)!==-1;return text.indexOf(w)!==-1}return terms.every(function(w){if(short===w)return true;if(hasWord(name,w))return true;if(hasWord(unit,w))return true;return false})}
+    let Q='',SEC='upcoming';
+    function render(){
+      const q=Q.toLowerCase().trim();
+      const fil=exams.filter(function(e){return match(e,q)});
+      var meta=document.getElementById('meta');
+      if(q){meta.hidden=false;meta.textContent=fil.length+' result'+(fil.length!==1?'s':'')}else meta.hidden=true;
+      var up=0,wd=0,cl=null,cld=Infinity;var unis=new Set();
+      for(var i=0;i<exams.length;i++){var e=exams[i];unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;if(c.d!==null&&c.d<cld){cld=c.d;cl=e}}}}
+      document.getElementById('stats').innerHTML='<div class="stat"><b>'+up+'</b><span>Upcoming exams</span></div><div class="stat"><b>'+unis.size+'</b><span>Universities</span></div><div class="stat"><b>'+wd+'</b><span>With exam date</span></div>';
+      var cle=document.getElementById('closest');
+      if(cl){cle.style.display='flex';cle.innerHTML='<span class="l">Closest upcoming</span><strong>'+esc(cl.universityShortName)+' — '+esc(cl.unit)+'</strong><span class="d">'+(cld===0?'Today':cld===1?'Tomorrow':cld+' days left')+'</span>'}else cle.style.display='none';
+      var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return a.examDate.localeCompare(b.examDate)});
+      var gapM=new Map();
+      for(var j=1;j<chrono.length;j++){var gap=daysB(chrono[j-1].examDate,chrono[j].examDate);if(gap!==null&&gap>=0&&gap<=CLOSE){var txt=gap===0?'Only 0 days between these exams':gap===1?'Only 1 day between these exams':'Only '+gap+' days between these exams';gapM.set(chrono[j].id,txt)}}
+      var groups=new Map();
+      for(var k=0;k<fil.length;k++){var ex=fil[k];if(!groups.has(ex.universityName))groups.set(ex.universityName,[]);groups.get(ex.universityName).push(ex)}
+      groups.forEach(function(list){list.sort(function(a,b){if(!a.examDate&&!b.examDate)return 0;if(!a.examDate)return 1;if(!b.examDate)return -1;return a.examDate.localeCompare(b.examDate)})});
+      var html='',any=false;
+      groups.forEach(function(list,uni){
+        var show=list;
+        if(SEC==='upcoming')show=list.filter(function(e){var s=cd(e.examDate).s;return s==='up'||s==='tod'||s==='tom'||s==='unk'});
+        else if(SEC==='finished')show=list.filter(function(e){return cd(e.examDate).s==='fin'});
+        if(!show.length)return;any=true;
+        html+='<section class="group"><h2 class="gt">'+esc(uni)+'</h2>';
+        for(var m=0;m<show.length;m++){
+          var e2=show[m],c2=cd(e2.examDate),ap=appS(e2.applicationDeadline);
+          var cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
+          var gapTxt=gapM.get(e2.id);
+          html+='<article class="card">';
+          if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+gapTxt+'</span></div>';
+          html+='<div class="ch"><div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
+          if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
+          html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+fmt(e2.examDate)+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(e2.examTime)+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(e2.examLocation)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v'+(ap.c?' cl':'')+'">'+esc(ap.l)+'</span></div></div>';
+          html+='<div class="cd '+cls+'">'+c2.l+'</div>';
+          html+='<div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
+          if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+          html+='</article>';
+        }
+        html+='</section>';
+      });
+      document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});
+    }
+    document.getElementById('q').addEventListener('input',function(e){Q=e.target.value;document.getElementById('clear').style.display=Q?'flex':'none';render()});
+    document.getElementById('clear').addEventListener('click',function(){Q='';document.getElementById('q').value='';document.getElementById('clear').style.display='none';render()});
+    document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
+    document.getElementById('ntog').addEventListener('click',function(){var list=document.getElementById('nlist'),open=list.style.display!=='none';list.style.display=open?'none':'block';document.getElementById('nicon').textContent=open?'+':'−';document.getElementById('ntog').setAttribute('aria-expanded',open?'false':'true')});
+    var notifEl=document.getElementById('notif');
+    if(!('Notification' in window))notifEl.innerHTML='<p style="font-size:.8rem;color:var(--muted)">Notifications not supported in this browser</p>';
+    else if(Notification.permission==='granted')notifEl.innerHTML='<p style="font-size:.8rem;color:var(--green)">Exam reminders enabled</p>';
+    else if(Notification.permission==='denied')notifEl.style.display='none';
+    else document.getElementById('enN').addEventListener('click',function(){Notification.requestPermission().then(function(p){if(p==='granted')notifEl.innerHTML='<p style="font-size:.8rem;color:var(--green)">Exam reminders enabled</p>';else notifEl.style.display='none'})});
+    if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){})});
+    render();
+    renderMarked();
+  </script>
+</body>
+</html>
