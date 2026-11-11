@@ -1,7 +1,8 @@
-const CACHE = 'adt-v2';
+const CACHE = 'adt-v3';
 const ASSETS = [
   './',
   './index.html',
+  './Abed_Newaz_Profile.png',
   './data.js',
   './manifest.webmanifest',
   './icon.svg',
