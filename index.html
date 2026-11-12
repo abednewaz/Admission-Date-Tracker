@@ -136,7 +136,7 @@
   </div>
   <script src="data.js"></script>
   <script>
-    const TZ='Asia/Dhaka',CLOSE=3,exams=window.ADMISSION_EXAMS||[];
+    const TZ='Asia/Dhaka',CLOSE=3,exams=(window.ADMISSION_EXAMS||[]).filter(function(e){return e&&e.universityName&&e.unit&&e.admissionType;});
     function todayBD(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
     function parseD(s){if(!s||s==='Not published yet')return null;const p=String(s).split('-').map(Number);if(p.length!==3||p.some(isNaN))return null;return new Date(Date.UTC(p[0],p[1]-1,p[2]))}
     function daysB(a,b){const d1=parseD(a),d2=parseD(b);if(!d1||!d2)return null;return Math.round((d2-d1)/864e5)}
@@ -223,7 +223,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       installBtn.addEventListener('click',async function(){if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;hideInstall()}else{alert('Open the Chrome menu and choose Add to Home screen or Install app.')}});
       if(/iphone|ipad|ipod/i.test(navigator.userAgent)){installBox.style.display='block';installBtn.textContent='Add to Home Screen'}
     }
-    if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=6',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})});
+    if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=7',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})});
     render();
     renderMarked();
   </script>
