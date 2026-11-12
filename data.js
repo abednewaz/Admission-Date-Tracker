@@ -1,1 +1,1164 @@
-window.ADMISSION_EXAMS = [{"id":"e2","universityName":"American International University-Bangladesh (AIUB)","universityShortName":"AIUB","unit":"Undergraduate — Spring 2026-27 Slot 1 (except B.Pharm & LL.B.)","admissionType":"Private","applicationOpenDate":"2026-10-18","applicationDeadline":"2026-11-23","examDate":"2026-11-26","examTime":"12:00 PM","examLocation":"AIUB campus","officialUrl":"https://aiub.edu/admission","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official schedule: undergraduate written exam 26 Nov 2026 at 12:00 PM.","cycle":"Spring 2026-27 / HSC Batch 2026"},{"id":"e3","universityName":"BRAC University","universityShortName":"BRAC","unit":"Undergraduate — Spring 2027","admissionType":"Private","applicationOpenDate":"2026-10-15","applicationDeadline":"2026-11-22","examDate":"2026-11-27","examTime":"09:30 AM","examLocation":"BRAC University / designated venue per admit card","officialUrl":"https://www.bracu.ac.bd/ug-domestic-applicant","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official page lists undergraduate admission test on 27 Nov 2026 at 9:30 AM.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e4","universityName":"American International University-Bangladesh (AIUB)","universityShortName":"AIUB","unit":"B.Pharm. & LL.B. — Spring 2026-27 Slot 2","admissionType":"Private","applicationOpenDate":"2026-10-18","applicationDeadline":"2026-11-23","examDate":"2026-11-28","examTime":"12:00 PM","examLocation":"AIUB campus","officialUrl":"https://aiub.edu/admission","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official schedule: B.Pharm & LL.B written exam 28 Nov 2026 at 12:00 PM.","cycle":"Spring 2026-27 / HSC Batch 2026"},{"id":"e5","universityName":"North South University (NSU)","universityShortName":"NSU","unit":"Undergraduate — Spring 2027","admissionType":"Private","applicationOpenDate":"2026-10-15","applicationDeadline":"2026-11-22","examDate":"2026-11-28","examTime":"10:00 AM","examLocation":"NSU campus / admit-card instructions","officialUrl":"https://admissions.northsouth.edu/","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official admissions page confirms 28 Nov 2026; verify exact venue from admit card.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e6","universityName":"University of Liberal Arts Bangladesh (ULAB)","universityShortName":"ULAB","unit":"Undergraduate — Spring 2027","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":null,"examDate":"2026-12-04","examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admissions.ulab.edu.bd/","status":"Automatically updated from official source","dateChanged":true,"previousExamDate":"2026-12-03","notes":"Auto-detected admission-test date from official source: https://admissions.ulab.edu.bd/","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e7","universityName":"United International University (UIU)","universityShortName":"UIU","unit":"Undergraduate — Spring 2027 Trimester","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":"2026-12-01","examDate":"2026-12-04","examTime":"09:00 AM","examLocation":"UIU / admission instructions","officialUrl":"https://admission.uiu.ac.bd/admission/Home.aspx","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official page lists undergraduate admission test 4 Dec 2026 at 9:00 AM.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e8","universityName":"DU - IBA Unit","universityShortName":"DU","unit":"IBA Unit","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-11","applicationDeadline":"2026-11-25","examDate":"2026-12-05","examTime":"10:00 AM","examLocation":"Dhaka University Campus, Dhaka","officialUrl":"https://admission.eis.du.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official DU admission portal: IBA Unit exam 5 Dec 2026, 10:00 AM–12:00 PM.","cycle":"2026-27 / HSC Batch 2026","requirements":"HSC/equivalent in 2026, combined SSC+HSC GPA 8.00 with at least 3.50 in each examination. Previous DU admission-test appearance restriction also applies. The published IBA eligibility rule does not exclude Humanities applicants.","requirementsByGroup":{"science":{"eligible":true,"text":"Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."},"business":{"eligible":true,"text":"Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."},"humanities":{"eligible":true,"text":"Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e9","universityName":"East West University (EWU)","universityShortName":"EWU","unit":"Undergraduate — Spring 2027 (most programs)","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":"2026-12-08","examDate":"2026-12-11","examTime":"10:00 AM","examLocation":"EWU / admission instructions","officialUrl":"https://www.ewubd.edu/undergraduate-dates-deadline","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official page lists 11 Dec 2026 at 10:00 AM for most listed undergraduate programs.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e10","universityName":"DU - Science Unit (A Unit)","universityShortName":"DU","unit":"Science Unit","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-11","applicationDeadline":"2026-11-25","examDate":"2026-12-12","examTime":"11:00 AM","examLocation":"Assigned centre shown on admit card; exam held in Dhaka and seven other divisional cities.","officialUrl":"https://admission.eis.du.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official DU admission portal: Science Unit exam 12 Dec 2026, 11:00 AM–12:30 PM.","cycle":"2026-27 / HSC Batch 2026","requirements":"Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."},"business":{"eligible":true,"text":"Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"humanities":{"eligible":true,"text":"Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e11","universityName":"East West University (EWU)","universityShortName":"EWU","unit":"Bachelor of Pharmacy — Spring 2027","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":"2026-12-09","examDate":"2026-12-08","examTime":"02:30 PM","examLocation":"EWU / admission instructions","officialUrl":"https://www.ewubd.edu/undergraduate-dates-deadline","status":"Automatically updated from official source","dateChanged":true,"previousExamDate":"2026-12-12","notes":"Auto-detected admission-test date from official source: https://www.ewubd.edu/undergraduate-dates-deadline","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e12","universityName":"DU - Arts, Law & Social Science (B Unit)","universityShortName":"DU","unit":"Arts, Law & Social Science Unit","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-11","applicationDeadline":"2026-11-25","examDate":"2026-12-19","examTime":"11:00 AM","examLocation":"Assigned centre shown on admit card; exam held in Dhaka and seven other divisional cities.","officialUrl":"https://admission.eis.du.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official DU admission portal: Arts, Law and Social Science Unit exam 19 Dec 2026, 11:00 AM–12:30 PM.","cycle":"2026-27 / HSC Batch 2026","requirements":"Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."},"business":{"eligible":true,"text":"Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"humanities":{"eligible":true,"text":"Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e13","universityName":"DU - Fine Arts Unit (F Unit)","universityShortName":"DU","unit":"Fine Arts (MCQ + Drawing)","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-11","applicationDeadline":"2026-11-25","examDate":"2026-12-22","examTime":"11:00 AM","examLocation":"Dhaka University, Dhaka (assigned centre/instructions on admit card)","officialUrl":"https://admission.eis.du.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official DU admission portal: Fine Arts Unit exam 22 Dec 2026, 11:00 AM–12:30 PM.","cycle":"2026-27 / HSC Batch 2026","requirements":"Science, Humanities and Business Studies applicants: combined SSC+HSC GPA 6.50, at least 3.00 in each. Additional Fine Arts conditions apply.","requirementsByGroup":{"science":{"eligible":true,"text":"Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."},"business":{"eligible":true,"text":"Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."},"humanities":{"eligible":true,"text":"Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e14","universityName":"DU - Business Studies Unit (C Unit)","universityShortName":"DU","unit":"Business Studies Unit","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-11","applicationDeadline":"2026-11-25","examDate":"2026-12-26","examTime":"11:00 AM","examLocation":"Assigned centre shown on admit card; exam centre details should be checked in the official instructions.","officialUrl":"https://admission.eis.du.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official DU admission portal: Business Studies Unit exam 26 Dec 2026, 11:00 AM–12:30 PM.","cycle":"2026-27 / HSC Batch 2026","requirements":"Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."},"business":{"eligible":true,"text":"Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"humanities":{"eligible":true,"text":"Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e15","universityName":"BUP - Faculty of Science & Tech / Arts / Social Sci","universityShortName":"BUP","unit":"Science, Tech, Arts, Social Sciences","admissionType":"Public / Centralized","applicationOpenDate":"2026-08-31","applicationDeadline":null,"examDate":"2027-01-02","examTime":"Not published yet","examLocation":"BUP Campus, Mirpur Cantonment, Dhaka","officialUrl":"https://bup.edu.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The previous auto-detected dates were not reliable for the current 2026-27 admission cycle. No confirmed current undergraduate test date was retained without a matching official 2026-27 source.","cycle":"2026-27 / HSC Batch 2026"},{"id":"e16","universityName":"JnU - Unit A","universityShortName":"JnU","unit":"Science","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-01","examTime":"10:00 AM","examLocation":"Better check Yourself","officialUrl":"https://admission.jnu.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.","cycle":"2026-27 / HSC Batch 2026","requirements":"SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit A requires combined SSC+HSC GPA 7.00 with at least 3.00 in each examination."},{"id":"e17","universityName":"Khulna University of Engineering & Technology (KUET)","universityShortName":"KUET","unit":"1st Year B.Sc. Engineering, B.URP & B.Arch","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-03","applicationDeadline":"2026-12-10","examDate":"2027-01-08","examTime":"09:30 AM–12:30 PM","examLocation":"Khulna, Dhaka & Rajshahi","officialUrl":"https://admission.kuet.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.","cycle":"2026-27 / HSC Batch 2026","requirements":"For Bangladeshi applicants: SSC/equivalent must be 2023 or 2024 with at least GPA 4.00; HSC/equivalent must be 2026. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00. Biomedical Engineering additionally requires Biology GP 4.00. Check the official circular for the full subject/department rules."},{"id":"e18","universityName":"JnU - Unit E","universityShortName":"JnU","unit":"Fine Arts & Music","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-08","examTime":"10:00 AM","examLocation":"Better check Yourself","officialUrl":"https://admission.jnu.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.","cycle":"2026-27 / HSC Batch 2026","requirements":"SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit E requires combined SSC+HSC GPA 5.50 with at least 2.50 in each examination."},{"id":"e19","universityName":"RU - B Unit","universityShortName":"RU","unit":"Business Studies","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-11-30","examDate":"2027-02-12","examTime":"Not published yet","examLocation":"7 Divisional Cities (Rajshahi, Dhaka, Ctg, Khulna, Sylhet, Mymensingh, Rangpur)","officialUrl":"https://admission.ru.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official 2026-27 RU admission portal now lists Unit B test on 12 Feb 2027 and applications 15–30 Nov 2026.","cycle":"2026-27 / HSC Batch 2026","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."},"business":{"eligible":true,"text":"Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"humanities":{"eligible":true,"text":"Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e20","universityName":"RU - C Unit","universityShortName":"RU","unit":"Science (Engg, Life Sci, Agri)","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-11-30","examDate":"2027-02-13","examTime":"Not published yet","examLocation":"7 Divisional Cities","officialUrl":"https://admission.ru.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official 2026-27 RU admission portal now lists Unit C test on 13 Feb 2027 and applications 15–30 Nov 2026.","cycle":"2026-27 / HSC Batch 2026","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."},"business":{"eligible":true,"text":"Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"humanities":{"eligible":true,"text":"Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e21","universityName":"JnU - Unit B","universityShortName":"JnU","unit":"Humanities & Social Science","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-15","examTime":"10:00 AM","examLocation":"Better check Yourself","officialUrl":"https://admission.jnu.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.","cycle":"2026-27 / HSC Batch 2026","requirements":"SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit B requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."},{"id":"e22","universityName":"BUET","universityShortName":"BUET","unit":"Engineering & Architecture","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":"2026-12-01","examDate":"2027-01-16","examTime":"Not published yet","examLocation":"BUET Campus, Dhaka","officialUrl":"https://ugadmission.buet.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"A current official BUET admission circular with the final schedule has not been verified here. Do not rely on an earlier/provisional date.","cycle":"2026-27 / HSC Batch 2026"},{"id":"e23","universityName":"RU - A Unit","universityShortName":"RU","unit":"Arts, Law, Social Science, Fine Arts","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-11-30","examDate":"2027-02-20","examTime":"Not published yet","examLocation":"7 Divisional Cities","officialUrl":"https://admission.ru.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official 2026-27 RU admission portal now lists Unit A test on 20 Feb 2027 and applications 15–30 Nov 2026.","cycle":"2026-27 / HSC Batch 2026","requirementsByGroup":{"science":{"eligible":true,"text":"Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."},"business":{"eligible":true,"text":"Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"humanities":{"eligible":true,"text":"Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."},"oLevelALevel":{"eligible":null,"text":"O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."},"others":{"eligible":null,"text":"Check the university's official website for information about other or special qualifications."},"madrasa":{"eligible":null,"text":"Check universities' website for more information."},"technical":{"eligible":null,"text":"Check universities' website for more information."}}},{"id":"e24","universityName":"JnU - Unit C","universityShortName":"JnU","unit":"Business Studies","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-22","examTime":"10:00 AM","examLocation":"Better check Yourself","officialUrl":"https://admission.jnu.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.","cycle":"2026-27 / HSC Batch 2026","requirements":"SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit C requires combined SSC+HSC GPA 6.50 with at least 3.00 in each examination."},{"id":"e25","universityName":"JnU - Unit D","universityShortName":"JnU","unit":"Specialized / Integrated","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-23","examTime":"10:00 AM","examLocation":"Better check Yourself","officialUrl":"https://admission.jnu.ac.bd","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.","cycle":"2026-27 / HSC Batch 2026","requirements":"SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit D requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."},{"id":"e26","universityName":"CU - Unit C","universityShortName":"CU","unit":"Business Administration","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-29","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e27","universityName":"CU - Unit A","universityShortName":"CU","unit":"Science & Engineering","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-01-30","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e28","universityName":"CU - Sub-unit B1","universityShortName":"CU","unit":"Music / Fine Arts","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-02-03","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e29","universityName":"CU - Sub-unit B2","universityShortName":"CU","unit":"Islamic Studies / Specialized","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-02-04","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e30","universityName":"CU - Unit B","universityShortName":"CU","unit":"Arts & Humanities","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-02-05","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e31","universityName":"CU - Unit D","universityShortName":"CU","unit":"Social Sciences","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-02-06","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e32","universityName":"CU - Sub-unit D1","universityShortName":"CU","unit":"Physical Education / Specialized","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-12-10","examDate":"2027-02-08","examTime":"Not published yet","examLocation":"Better check Yourself","officialUrl":"https://admission.cu.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e33","universityName":"GST Cluster - Unit B","universityShortName":"GST","unit":"Humanities & Social Sciences","admissionType":"Public / Centralized","applicationOpenDate":"2027-01-01","applicationDeadline":"2027-02-01","examDate":"2027-03-19","examTime":"11:00 AM","examLocation":"Better check Yourself","officialUrl":"https://gstadmission.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e34","universityName":"GST Cluster - Unit C & D","universityShortName":"GST","unit":"Commerce / Business & Interdisciplinary","admissionType":"Public / Centralized","applicationOpenDate":"2027-01-01","applicationDeadline":"2027-02-01","examDate":"2027-03-20","examTime":"11:00 AM (C); 03:00 PM (D)","examLocation":"Better check Yourself","officialUrl":"https://gstadmission.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e35","universityName":"GST Cluster - Unit A","universityShortName":"GST","unit":"Science & Engineering","admissionType":"Public / Centralized","applicationOpenDate":"2027-01-01","applicationDeadline":"2027-02-01","examDate":"2027-03-27","examTime":"11:00 AM","examLocation":"Better check Yourself","officialUrl":"https://gstadmission.ac.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e36","universityName":"Ahsanullah University of Science and Technology (AUST)","universityShortName":"AUST","unit":"Undergraduate — next relevant admission cycle","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.aust.edu/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The available official AUST undergraduate schedule is for Spring 2026 and has already passed. No confirmed 2026-27 / 2027 undergraduate admission-test date was found.","cycle":"2026-27 / HSC Batch 2026"},{"id":"e37","universityName":"BUP - Faculty of Business Studies (FBS)","universityShortName":"BUP","unit":"Business Studies","admissionType":"Public / Centralized","applicationOpenDate":"2026-08-31","applicationDeadline":null,"examDate":"2027-01-01","examTime":"Not published yet","examLocation":"BUP Campus, Mirpur Cantonment, Dhaka","officialUrl":"https://bup.edu.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The previous auto-detected dates were not reliable for the current 2026-27 admission cycle. No confirmed current undergraduate test date was retained without a matching official 2026-27 source.","cycle":"2026-27 / HSC Batch 2026"},{"id":"e38","universityName":"DGME Combined MBBS / BDS","universityShortName":"DGME","unit":"Medical & Dental Colleges","admissionType":"Public / Centralized","applicationOpenDate":"2026-11-15","applicationDeadline":"2026-11-21","examDate":null,"examTime":"Not published yet","examLocation":"Designated exam centers across Bangladesh","officialUrl":"https://dgme.teletalk.com.bd","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":null,"cycle":"2026-27 / HSC Batch 2026"},{"id":"e39","universityName":"Green University of Bangladesh (GUB)","universityShortName":"GUB","unit":"Undergraduate — Spring 2027","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":"2026-11-30","examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current official Spring 2027 application portal does not publish an admission-test date; the university currently states that tests may be conducted immediately/one-to-one. No unverified date is shown.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e40","universityName":"Independent University, Bangladesh (IUB)","universityShortName":"IUB","unit":"Undergraduate — Spring 2027","admissionType":"Private","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://www.iub.edu.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"Third-party listings suggest a December date, but no official IUB source was located in this check; do not use an unverified date.","cycle":"Spring 2027 / HSC Batch 2026"},{"id":"e41","notes":"SUST revised the 2026-27 admission tests to 17 and 18 January 2027. A1 is scheduled for 17 January at 10:00 AM–12:00 PM, A2 drawing for 17 January at 2:30–4:00 PM, and B Unit for 18 January at 10:00 AM–12:00 PM.","cycle":"2026-27 / HSC Batch 2026"},{"id":"e43","universityName":"Chittagong University of Engineering & Technology (CUET)","universityShortName":"CUET","unit":"Level-1 Undergraduate — Engineering, BURP & Architecture","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":"Better check Yourself","examTime":"Better check Yourself","examLocation":"Better check Yourself","officialUrl":"https://cuet.ac.bd/admission","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"CUET's official academic news announced 23 Jan 2027 as the probable 2026-27 undergraduate admission-test date. Recheck the official admission page for the final schedule.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-ju","notes":"Jahangirnagar University has published that the 2026-27 admission tests will run from 10 to 21 January 2027, excluding Fridays and Saturdays. Unit-specific dates and exact times have not yet been published.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-ku-cd","universityName":"Khulna University","universityShortName":"KU","unit":"C & D Units","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":"2027-02-05","examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.ku.ac.bd/","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official KU notice confirms C & D Units on 17 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-ku-ab","universityName":"Khulna University","universityShortName":"KU","unit":"A & B Units","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":"2027-02-04","examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.ku.ac.bd/","status":"Officially published","dateChanged":false,"previousExamDate":null,"notes":"Official KU notice confirms A & B Units on 18 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-mist-c","universityName":"Military Institute of Science and Technology","universityShortName":"MIST","unit":"C Unit (Science)","admissionType":"Public / Centralized","applicationOpenDate":"2027-01-05","applicationDeadline":"2027-01-21","examDate":"2027-02-05","examTime":"Morning shift","examLocation":"Not published yet","officialUrl":"https://admission.mist.ac.bd/","status":"Official","dateChanged":true,"previousExamDate":"2027-01-15","notes":"MIST announced the revised 2026-27 schedule on 10 November 2026: C Unit (Science) will be held on 5 February 2027, Friday, in the morning. The exact clock time and centre details are not yet verified here.","cycle":"2026-27 / HSC Batch 2026","source":"https://www.mist.ac.bd/"},{"id":"auto-mist-ab","universityName":"Military Institute of Science and Technology","universityShortName":"MIST","unit":"A & B Units (Engineering & Architecture)","admissionType":"Public / Centralized","applicationOpenDate":"2027-01-05","applicationDeadline":"2027-01-21","examDate":"2027-02-06","examTime":"Morning shift (A & B); Afternoon shift (B)","examLocation":"Not published yet","officialUrl":"https://admission.mist.ac.bd/","status":"Official","dateChanged":true,"previousExamDate":"2027-01-22","notes":"MIST announced the revised 2026-27 schedule on 10 November 2026: A & B Units will be held on 6 February 2027, Saturday; A+B in the morning and the remaining B Unit examination in the afternoon. The exact clock times and centre details are not yet verified here.","cycle":"2026-27 / HSC Batch 2026","source":"https://www.mist.ac.bd/"},{"id":"auto-cou","notes":"Comilla University has published the unit schedule: A Unit on 5 February 2027 at 11:00 AM, B Unit on 6 February at 3:00 PM, and C Unit on 7 February at 11:00 AM.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-bmu","notes":"Official BMU notice confirms the 2026-27 undergraduate admission tests on 29 and 30 December 2026. Unit-wise mapping and exact times were not included in the verified notice.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-aaub","notes":"AAUB postponed the 2026-27 undergraduate admission test from 5 December 2026 to 30 January 2027. The test will be held at BAF Shaheen College, Dhaka and the permanent campus in Lalmonirhat.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-hstu","notes":"HSTU has published the 2026-27 undergraduate admission schedule: Unit A on 24 January, B on 25 January, C on 26 January and D on 27 January 2027; Architecture drawing is on 28 January. Exact unit mapping is shown in the official admission information.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-bau","notes":"The 2026-27 agriculture cluster admission test is scheduled for 2 January 2027. Exact time, centres and detailed unit information were not yet published in the verified announcement.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-nstu","universityName":"Noakhali Science and Technology University","universityShortName":"NSTU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.nstu.edu.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-just","universityName":"Jashore University of Science and Technology","universityShortName":"JUST","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://just.edu.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-pust","universityName":"Pabna University of Science and Technology","universityShortName":"PUST","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.pust.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-brur","universityName":"Begum Rokeya University, Rangpur","universityShortName":"BRUR","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.brur.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-mbstu","universityName":"Mawlana Bhashani Science and Technology University","universityShortName":"MBSTU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://mbstu.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-pstu","universityName":"Patuakhali Science and Technology University","universityShortName":"PSTU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://pstu.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-jkkniu","universityName":"Jatiya Kabi Kazi Nazrul Islam University","universityShortName":"JKKNIU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://jkkniu.edu.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-bu","universityName":"University of Barishal","universityShortName":"BU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.bu.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-iu","universityName":"Islamic University, Bangladesh","universityShortName":"IU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.iu.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-rmstu","universityName":"Rangamati Science and Technology University","universityShortName":"RMSTU","unit":"Undergraduate admission test","admissionType":"Public / Centralized","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://rmstu.ac.bd/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The current 2026-27 / HSC Batch 2026 admission-test date was not confidently confirmed in this check. Check the official admission source yourself.","cycle":"2026-27 / HSC Batch 2026"},{"id":"auto-iut","universityName":"Islamic University of Technology","universityShortName":"IUT","unit":"B.Sc. Engineering & BBA — Undergraduate admission test","admissionType":"Public / OIC","applicationOpenDate":null,"applicationDeadline":null,"examDate":null,"examTime":"Not published yet","examLocation":"Not published yet","officialUrl":"https://admission.iutoic-dhaka.edu/","status":"Better check Yourself","dateChanged":false,"previousExamDate":null,"notes":"The 2025-26 IUT admission cycle is closed. The next undergraduate admission cycle is expected in 2027; the official 2026-27 admission-test date has not yet been published.","cycle":"2026-27 / HSC Batch 2026"}];
+window.ADMISSION_EXAMS = [
+  {
+    "id": "e2",
+    "universityName": "American International University-Bangladesh (AIUB)",
+    "universityShortName": "AIUB",
+    "unit": "Undergraduate — Spring 2026-27 Slot 1 (except B.Pharm & LL.B.)",
+    "admissionType": "Private",
+    "applicationOpenDate": "2026-10-18",
+    "applicationDeadline": "2026-11-23",
+    "examDate": "2026-11-26",
+    "examTime": "12:00 PM",
+    "examLocation": "AIUB campus",
+    "officialUrl": "https://aiub.edu/admission",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official schedule: undergraduate written exam 26 Nov 2026 at 12:00 PM.",
+    "cycle": "Spring 2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e3",
+    "universityName": "BRAC University",
+    "universityShortName": "BRAC",
+    "unit": "Undergraduate — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": "2026-10-15",
+    "applicationDeadline": "2026-11-22",
+    "examDate": "2026-11-27",
+    "examTime": "09:30 AM",
+    "examLocation": "BRAC University / designated venue per admit card",
+    "officialUrl": "https://www.bracu.ac.bd/ug-domestic-applicant",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official page lists undergraduate admission test on 27 Nov 2026 at 9:30 AM.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e4",
+    "universityName": "American International University-Bangladesh (AIUB)",
+    "universityShortName": "AIUB",
+    "unit": "B.Pharm. & LL.B. — Spring 2026-27 Slot 2",
+    "admissionType": "Private",
+    "applicationOpenDate": "2026-10-18",
+    "applicationDeadline": "2026-11-23",
+    "examDate": "2026-11-28",
+    "examTime": "12:00 PM",
+    "examLocation": "AIUB campus",
+    "officialUrl": "https://aiub.edu/admission",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official schedule: B.Pharm & LL.B written exam 28 Nov 2026 at 12:00 PM.",
+    "cycle": "Spring 2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e5",
+    "universityName": "North South University (NSU)",
+    "universityShortName": "NSU",
+    "unit": "Undergraduate — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": "2026-10-15",
+    "applicationDeadline": "2026-11-22",
+    "examDate": "2026-11-28",
+    "examTime": "10:00 AM",
+    "examLocation": "NSU campus / admit-card instructions",
+    "officialUrl": "https://admissions.northsouth.edu/",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official admissions page confirms 28 Nov 2026; verify exact venue from admit card.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e6",
+    "universityName": "University of Liberal Arts Bangladesh (ULAB)",
+    "universityShortName": "ULAB",
+    "unit": "Undergraduate — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2026-12-04",
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admissions.ulab.edu.bd/",
+    "status": "Automatically updated from official source",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-03",
+    "notes": "Auto-detected admission-test date from official source: https://admissions.ulab.edu.bd/",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e7",
+    "universityName": "United International University (UIU)",
+    "universityShortName": "UIU",
+    "unit": "Undergraduate — Spring 2027 Trimester",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": "2026-12-01",
+    "examDate": "2026-12-04",
+    "examTime": "09:00 AM",
+    "examLocation": "UIU / admission instructions",
+    "officialUrl": "https://admission.uiu.ac.bd/admission/Home.aspx",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official page lists undergraduate admission test 4 Dec 2026 at 9:00 AM.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e8",
+    "universityName": "DU - IBA Unit",
+    "universityShortName": "DU",
+    "unit": "IBA Unit",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-11",
+    "applicationDeadline": "2026-11-25",
+    "examDate": "2026-12-05",
+    "examTime": "10:00 AM",
+    "examLocation": "Dhaka University Campus, Dhaka",
+    "officialUrl": "https://admission.eis.du.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official DU admission portal: IBA Unit exam 5 Dec 2026, 10:00 AM–12:00 PM.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "HSC/equivalent in 2026, combined SSC+HSC GPA 8.00 with at least 3.50 in each examination. Previous DU admission-test appearance restriction also applies. The published IBA eligibility rule does not exclude Humanities applicants.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e9",
+    "universityName": "East West University (EWU)",
+    "universityShortName": "EWU",
+    "unit": "Undergraduate — Spring 2027 (most programs)",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": "2026-12-08",
+    "examDate": "2026-12-11",
+    "examTime": "10:00 AM",
+    "examLocation": "EWU / admission instructions",
+    "officialUrl": "https://www.ewubd.edu/undergraduate-dates-deadline",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official page lists 11 Dec 2026 at 10:00 AM for most listed undergraduate programs.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e10",
+    "universityName": "DU - Science Unit (A Unit)",
+    "universityShortName": "DU",
+    "unit": "Science Unit",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-11",
+    "applicationDeadline": "2026-11-25",
+    "examDate": "2026-12-12",
+    "examTime": "11:00 AM",
+    "examLocation": "Assigned centre shown on admit card; exam held in Dhaka and seven other divisional cities.",
+    "officialUrl": "https://admission.eis.du.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official DU admission portal: Science Unit exam 12 Dec 2026, 11:00 AM–12:30 PM.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e11",
+    "universityName": "East West University (EWU)",
+    "universityShortName": "EWU",
+    "unit": "Bachelor of Pharmacy — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": "2026-12-09",
+    "examDate": "2026-12-08",
+    "examTime": "02:30 PM",
+    "examLocation": "EWU / admission instructions",
+    "officialUrl": "https://www.ewubd.edu/undergraduate-dates-deadline",
+    "status": "Automatically updated from official source",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-12",
+    "notes": "Auto-detected admission-test date from official source: https://www.ewubd.edu/undergraduate-dates-deadline",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e12",
+    "universityName": "DU - Arts, Law & Social Science (B Unit)",
+    "universityShortName": "DU",
+    "unit": "Arts, Law & Social Science Unit",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-11",
+    "applicationDeadline": "2026-11-25",
+    "examDate": "2026-12-19",
+    "examTime": "11:00 AM",
+    "examLocation": "Assigned centre shown on admit card; exam held in Dhaka and seven other divisional cities.",
+    "officialUrl": "https://admission.eis.du.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official DU admission portal: Arts, Law and Social Science Unit exam 19 Dec 2026, 11:00 AM–12:30 PM.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e13",
+    "universityName": "DU - Fine Arts Unit (F Unit)",
+    "universityShortName": "DU",
+    "unit": "Fine Arts (MCQ + Drawing)",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-11",
+    "applicationDeadline": "2026-11-25",
+    "examDate": "2026-12-22",
+    "examTime": "11:00 AM",
+    "examLocation": "Dhaka University, Dhaka (assigned centre/instructions on admit card)",
+    "officialUrl": "https://admission.eis.du.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official DU admission portal: Fine Arts Unit exam 22 Dec 2026, 11:00 AM–12:30 PM.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Science, Humanities and Business Studies applicants: combined SSC+HSC GPA 6.50, at least 3.00 in each. Additional Fine Arts conditions apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e14",
+    "universityName": "DU - Business Studies Unit (C Unit)",
+    "universityShortName": "DU",
+    "unit": "Business Studies Unit",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-11",
+    "applicationDeadline": "2026-11-25",
+    "examDate": "2026-12-26",
+    "examTime": "11:00 AM",
+    "examLocation": "Assigned centre shown on admit card; exam centre details should be checked in the official instructions.",
+    "officialUrl": "https://admission.eis.du.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official DU admission portal: Business Studies Unit exam 26 Dec 2026, 11:00 AM–12:30 PM.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e15",
+    "universityName": "BUP - Faculty of Science & Tech / Arts / Social Sci",
+    "universityShortName": "BUP",
+    "unit": "Science, Tech, Arts, Social Sciences",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-08-31",
+    "applicationDeadline": null,
+    "examDate": "2027-01-02",
+    "examTime": "Not published yet",
+    "examLocation": "BUP Campus, Mirpur Cantonment, Dhaka",
+    "officialUrl": "https://bup.edu.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "The previous auto-detected dates were not reliable for the current 2026-27 admission cycle. No confirmed current undergraduate test date was retained without a matching official 2026-27 source.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e16",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "Science",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-01",
+    "examTime": "10:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit A requires combined SSC+HSC GPA 7.00 with at least 3.00 in each examination."
+  },
+  {
+    "id": "e17",
+    "universityName": "Khulna University of Engineering & Technology (KUET)",
+    "universityShortName": "KUET",
+    "unit": "1st Year B.Sc. Engineering, B.URP & B.Arch",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-03",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-08",
+    "examTime": "09:30 AM–12:30 PM",
+    "examLocation": "Khulna, Dhaka & Rajshahi",
+    "officialUrl": "https://admission.kuet.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "For Bangladeshi applicants: SSC/equivalent must be 2023 or 2024 with at least GPA 4.00; HSC/equivalent must be 2026. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00. Biomedical Engineering additionally requires Biology GP 4.00. Check the official circular for the full subject/department rules."
+  },
+  {
+    "id": "e18",
+    "universityName": "JnU - Unit E",
+    "universityShortName": "JnU",
+    "unit": "Fine Arts & Music",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-08",
+    "examTime": "10:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit E requires combined SSC+HSC GPA 5.50 with at least 2.50 in each examination."
+  },
+  {
+    "id": "e19",
+    "universityName": "RU - B Unit",
+    "universityShortName": "RU",
+    "unit": "Business Studies",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-11-30",
+    "examDate": "2027-02-12",
+    "examTime": "Not published yet",
+    "examLocation": "7 Divisional Cities (Rajshahi, Dhaka, Ctg, Khulna, Sylhet, Mymensingh, Rangpur)",
+    "officialUrl": "https://admission.ru.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official 2026-27 RU admission portal now lists Unit B test on 12 Feb 2027 and applications 15–30 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e20",
+    "universityName": "RU - C Unit",
+    "universityShortName": "RU",
+    "unit": "Science (Engg, Life Sci, Agri)",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-11-30",
+    "examDate": "2027-02-13",
+    "examTime": "Not published yet",
+    "examLocation": "7 Divisional Cities",
+    "officialUrl": "https://admission.ru.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official 2026-27 RU admission portal now lists Unit C test on 13 Feb 2027 and applications 15–30 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e21",
+    "universityName": "JnU - Unit B",
+    "universityShortName": "JnU",
+    "unit": "Humanities & Social Science",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-15",
+    "examTime": "10:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit B requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."
+  },
+  {
+    "id": "e22",
+    "universityName": "BUET",
+    "universityShortName": "BUET",
+    "unit": "Engineering & Architecture",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": null,
+    "applicationDeadline": "2026-12-01",
+    "examDate": "2027-01-16",
+    "examTime": "Not published yet",
+    "examLocation": "BUET Campus, Dhaka",
+    "officialUrl": "https://ugadmission.buet.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "A current official BUET admission circular with the final schedule has not been verified here. Do not rely on an earlier/provisional date.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e23",
+    "universityName": "RU - A Unit",
+    "universityShortName": "RU",
+    "unit": "Arts, Law, Social Science, Fine Arts",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-11-30",
+    "examDate": "2027-02-20",
+    "examTime": "Not published yet",
+    "examLocation": "7 Divisional Cities",
+    "officialUrl": "https://admission.ru.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official 2026-27 RU admission portal now lists Unit A test on 20 Feb 2027 and applications 15–30 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the university's official website for information about other or special qualifications."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check universities' website for more information."
+      }
+    }
+  },
+  {
+    "id": "e24",
+    "universityName": "JnU - Unit C",
+    "universityShortName": "JnU",
+    "unit": "Business Studies",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-22",
+    "examTime": "10:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit C requires combined SSC+HSC GPA 6.50 with at least 3.00 in each examination."
+  },
+  {
+    "id": "e25",
+    "universityName": "JnU - Unit D",
+    "universityShortName": "JnU",
+    "unit": "Specialized / Integrated",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-23",
+    "examTime": "10:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit D requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."
+  },
+  {
+    "id": "e26",
+    "universityName": "CU - Unit C",
+    "universityShortName": "CU",
+    "unit": "Business Administration",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-29",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e27",
+    "universityName": "CU - Unit A",
+    "universityShortName": "CU",
+    "unit": "Science & Engineering",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-01-30",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e28",
+    "universityName": "CU - Sub-unit B1",
+    "universityShortName": "CU",
+    "unit": "Music / Fine Arts",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-02-03",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e29",
+    "universityName": "CU - Sub-unit B2",
+    "universityShortName": "CU",
+    "unit": "Islamic Studies / Specialized",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-02-04",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e30",
+    "universityName": "CU - Unit B",
+    "universityShortName": "CU",
+    "unit": "Arts & Humanities",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-02-05",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e31",
+    "universityName": "CU - Unit D",
+    "universityShortName": "CU",
+    "unit": "Social Sciences",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-02-06",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e32",
+    "universityName": "CU - Sub-unit D1",
+    "universityShortName": "CU",
+    "unit": "Physical Education / Specialized",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "2027-02-08",
+    "examTime": "Not published yet",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://admission.cu.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e33",
+    "universityName": "GST Cluster - Unit B",
+    "universityShortName": "GST",
+    "unit": "Humanities & Social Sciences",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2027-01-01",
+    "applicationDeadline": "2027-02-01",
+    "examDate": "2027-03-19",
+    "examTime": "11:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://gstadmission.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e34",
+    "universityName": "GST Cluster - Unit C & D",
+    "universityShortName": "GST",
+    "unit": "Commerce / Business & Interdisciplinary",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2027-01-01",
+    "applicationDeadline": "2027-02-01",
+    "examDate": "2027-03-20",
+    "examTime": "11:00 AM (C); 03:00 PM (D)",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://gstadmission.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e35",
+    "universityName": "GST Cluster - Unit A",
+    "universityShortName": "GST",
+    "unit": "Science & Engineering",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2027-01-01",
+    "applicationDeadline": "2027-02-01",
+    "examDate": "2027-03-27",
+    "examTime": "11:00 AM",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://gstadmission.ac.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e36",
+    "universityName": "Ahsanullah University of Science and Technology (AUST)",
+    "universityShortName": "AUST",
+    "unit": "Undergraduate — next relevant admission cycle",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": null,
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.aust.edu/",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "The available official AUST undergraduate schedule is for Spring 2026 and has already passed. No confirmed 2026-27 / 2027 undergraduate admission-test date was found.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e37",
+    "universityName": "BUP - Faculty of Business Studies (FBS)",
+    "universityShortName": "BUP",
+    "unit": "Business Studies",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-08-31",
+    "applicationDeadline": null,
+    "examDate": "2027-01-01",
+    "examTime": "Not published yet",
+    "examLocation": "BUP Campus, Mirpur Cantonment, Dhaka",
+    "officialUrl": "https://bup.edu.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "The previous auto-detected dates were not reliable for the current 2026-27 admission cycle. No confirmed current undergraduate test date was retained without a matching official 2026-27 source.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e38",
+    "universityName": "DGME Combined MBBS / BDS",
+    "universityShortName": "DGME",
+    "unit": "Medical & Dental Colleges",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-11-21",
+    "examDate": null,
+    "examTime": "Not published yet",
+    "examLocation": "Designated exam centers across Bangladesh",
+    "officialUrl": "https://dgme.teletalk.com.bd",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": null,
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e39",
+    "universityName": "Green University of Bangladesh (GUB)",
+    "universityShortName": "GUB",
+    "unit": "Undergraduate — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": "2026-11-30",
+    "examDate": null,
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "The current official Spring 2027 application portal does not publish an admission-test date; the university currently states that tests may be conducted immediately/one-to-one. No unverified date is shown.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e40",
+    "universityName": "Independent University, Bangladesh (IUB)",
+    "universityShortName": "IUB",
+    "unit": "Undergraduate — Spring 2027",
+    "admissionType": "Private",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": null,
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://www.iub.edu.bd/",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Third-party listings suggest a December date, but no official IUB source was located in this check; do not use an unverified date.",
+    "cycle": "Spring 2027 / HSC Batch 2026"
+  },
+  {
+    "id": "e41",
+    "notes": "SUST revised the 2026-27 admission tests to 17 and 18 January 2027. A1 is scheduled for 17 January at 10:00 AM–12:00 PM, A2 drawing for 17 January at 2:30–4:00 PM, and B Unit for 18 January at 10:00 AM–12:00 PM.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "e43",
+    "universityName": "Chittagong University of Engineering & Technology (CUET)",
+    "universityShortName": "CUET",
+    "unit": "Level-1 Undergraduate — Engineering, BURP & Architecture",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "Better check Yourself",
+    "examTime": "Better check Yourself",
+    "examLocation": "Better check Yourself",
+    "officialUrl": "https://cuet.ac.bd/admission",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "CUET's official academic news announced 23 Jan 2027 as the probable 2026-27 undergraduate admission-test date. Recheck the official admission page for the final schedule.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-ju",
+    "notes": "Jahangirnagar University has published that the 2026-27 admission tests will run from 10 to 21 January 2027, excluding Fridays and Saturdays. Unit-specific dates and exact times have not yet been published.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-ku-cd",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "C & D Units",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2027-02-05",
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.ku.ac.bd/",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official KU notice confirms C & D Units on 17 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-ku-ab",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "A & B Units",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2027-02-04",
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.ku.ac.bd/",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "Official KU notice confirms A & B Units on 18 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-mist-c",
+    "universityName": "Military Institute of Science and Technology",
+    "universityShortName": "MIST",
+    "unit": "C Unit (Science)",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2027-01-05",
+    "applicationDeadline": "2027-01-21",
+    "examDate": "2027-02-05",
+    "examTime": "Morning shift",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.mist.ac.bd/",
+    "status": "Official",
+    "dateChanged": true,
+    "previousExamDate": "2027-01-15",
+    "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: C Unit (Science) will be held on 5 February 2027, Friday, in the morning. The exact clock time and centre details are not yet verified here.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "source": "https://www.mist.ac.bd/"
+  },
+  {
+    "id": "auto-mist-ab",
+    "universityName": "Military Institute of Science and Technology",
+    "universityShortName": "MIST",
+    "unit": "A & B Units (Engineering & Architecture)",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2027-01-05",
+    "applicationDeadline": "2027-01-21",
+    "examDate": "2027-02-06",
+    "examTime": "Morning shift (A & B); Afternoon shift (B)",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.mist.ac.bd/",
+    "status": "Official",
+    "dateChanged": true,
+    "previousExamDate": "2027-01-22",
+    "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: A & B Units will be held on 6 February 2027, Saturday; A+B in the morning and the remaining B Unit examination in the afternoon. The exact clock times and centre details are not yet verified here.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "source": "https://www.mist.ac.bd/"
+  },
+  {
+    "id": "auto-cou",
+    "notes": "Comilla University has published the unit schedule: A Unit on 5 February 2027 at 11:00 AM, B Unit on 6 February at 3:00 PM, and C Unit on 7 February at 11:00 AM.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-bmu",
+    "notes": "Official BMU notice confirms the 2026-27 undergraduate admission tests on 29 and 30 December 2026. Unit-wise mapping and exact times were not included in the verified notice.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-aaub",
+    "notes": "AAUB postponed the 2026-27 undergraduate admission test from 5 December 2026 to 30 January 2027. The test will be held at BAF Shaheen College, Dhaka and the permanent campus in Lalmonirhat.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-hstu",
+    "notes": "HSTU has published the 2026-27 undergraduate admission schedule: Unit A on 24 January, B on 25 January, C on 26 January and D on 27 January 2027; Architecture drawing is on 28 January. Exact unit mapping is shown in the official admission information.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-bau",
+    "notes": "The 2026-27 agriculture cluster admission test is scheduled for 2 January 2027. Exact time, centres and detailed unit information were not yet published in the verified announcement.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "id": "auto-iut",
+    "universityName": "Islamic University of Technology",
+    "universityShortName": "IUT",
+    "unit": "B.Sc. Engineering & BBA — Undergraduate admission test",
+    "admissionType": "Public / OIC",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": null,
+    "examTime": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://admission.iutoic-dhaka.edu/",
+    "status": "Better check Yourself",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "The 2025-26 IUT admission cycle is closed. The next undergraduate admission cycle is expected in 2027; the official 2026-27 admission-test date has not yet been published.",
+    "cycle": "2026-27 / HSC Batch 2026"
+  },
+  {
+    "admissionType": "Public / Centralized GST Cluster",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://gstadmission.ac.bd/",
+    "status": "Officially announced",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "notes": "GST (General, Science & Technology) is a centralized admission test. The 2026-27 cluster currently has 20 confirmed universities. A single GST unit test is used for admission consideration across the participating universities; university/subject choice is handled through the centralized GST process after the test. Participating universities: Islamic University, Bangladesh, Mawlana Bhashani Science and Technology University, Patuakhali Science and Technology University, Noakhali Science and Technology University, Jatiya Kabi Kazi Nazrul Islam University, Jashore University of Science and Technology, Pabna University of Science and Technology, Begum Rokeya University, Rangpur, Gopalganj Science and Technology University, University of Barishal, Rangamati Science and Technology University, Rabindra University Bangladesh, University of Frontier Technology Bangladesh, Netrokona University, Jamalpur Science and Technology University, Chandpur Science and Technology University, Kishoreganj University, Sunamganj Science and Technology University, Pirojpur University of Science and Technology, Naogaon University. B Unit (Humanities) test is scheduled for 19 March 2027.",
+    "id": "gst-b-2026-27",
+    "universityName": "GST Cluster — 20 Public Universities",
+    "universityShortName": "GST",
+    "unit": "B Unit — Humanities",
+    "examDate": "2027-03-19",
+    "examTime": "11:00 AM–12:00 PM"
+  },
+  {
+    "admissionType": "Public / Centralized GST Cluster",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://gstadmission.ac.bd/",
+    "status": "Officially announced",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "notes": "GST (General, Science & Technology) is a centralized admission test. The 2026-27 cluster currently has 20 confirmed universities. A single GST unit test is used for admission consideration across the participating universities; university/subject choice is handled through the centralized GST process after the test. Participating universities: Islamic University, Bangladesh, Mawlana Bhashani Science and Technology University, Patuakhali Science and Technology University, Noakhali Science and Technology University, Jatiya Kabi Kazi Nazrul Islam University, Jashore University of Science and Technology, Pabna University of Science and Technology, Begum Rokeya University, Rangpur, Gopalganj Science and Technology University, University of Barishal, Rangamati Science and Technology University, Rabindra University Bangladesh, University of Frontier Technology Bangladesh, Netrokona University, Jamalpur Science and Technology University, Chandpur Science and Technology University, Kishoreganj University, Sunamganj Science and Technology University, Pirojpur University of Science and Technology, Naogaon University. C Unit (Business Studies) test is scheduled for 20 March 2027.",
+    "id": "gst-c-2026-27",
+    "universityName": "GST Cluster — 20 Public Universities",
+    "universityShortName": "GST",
+    "unit": "C Unit — Business Studies",
+    "examDate": "2027-03-20",
+    "examTime": "11:00 AM–12:00 PM"
+  },
+  {
+    "admissionType": "Public / Centralized GST Cluster",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://gstadmission.ac.bd/",
+    "status": "Officially announced",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "notes": "GST (General, Science & Technology) is a centralized admission test. The 2026-27 cluster currently has 20 confirmed universities. A single GST unit test is used for admission consideration across the participating universities; university/subject choice is handled through the centralized GST process after the test. Participating universities: Islamic University, Bangladesh, Mawlana Bhashani Science and Technology University, Patuakhali Science and Technology University, Noakhali Science and Technology University, Jatiya Kabi Kazi Nazrul Islam University, Jashore University of Science and Technology, Pabna University of Science and Technology, Begum Rokeya University, Rangpur, Gopalganj Science and Technology University, University of Barishal, Rangamati Science and Technology University, Rabindra University Bangladesh, University of Frontier Technology Bangladesh, Netrokona University, Jamalpur Science and Technology University, Chandpur Science and Technology University, Kishoreganj University, Sunamganj Science and Technology University, Pirojpur University of Science and Technology, Naogaon University. D Unit (Architecture) test is scheduled for 20 March 2027. This is a newly separate GST unit for 2026-27.",
+    "id": "gst-d-2026-27",
+    "universityName": "GST Cluster — 20 Public Universities",
+    "universityShortName": "GST",
+    "unit": "D Unit — Architecture",
+    "examDate": "2027-03-20",
+    "examTime": "3:00 PM–4:00 PM"
+  },
+  {
+    "admissionType": "Public / Centralized GST Cluster",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examLocation": "Not published yet",
+    "officialUrl": "https://gstadmission.ac.bd/",
+    "status": "Officially announced",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "notes": "GST (General, Science & Technology) is a centralized admission test. The 2026-27 cluster currently has 20 confirmed universities. A single GST unit test is used for admission consideration across the participating universities; university/subject choice is handled through the centralized GST process after the test. Participating universities: Islamic University, Bangladesh, Mawlana Bhashani Science and Technology University, Patuakhali Science and Technology University, Noakhali Science and Technology University, Jatiya Kabi Kazi Nazrul Islam University, Jashore University of Science and Technology, Pabna University of Science and Technology, Begum Rokeya University, Rangpur, Gopalganj Science and Technology University, University of Barishal, Rangamati Science and Technology University, Rabindra University Bangladesh, University of Frontier Technology Bangladesh, Netrokona University, Jamalpur Science and Technology University, Chandpur Science and Technology University, Kishoreganj University, Sunamganj Science and Technology University, Pirojpur University of Science and Technology, Naogaon University. A Unit (Science) test is scheduled for 27 March 2027.",
+    "id": "gst-a-2026-27",
+    "universityName": "GST Cluster — 20 Public Universities",
+    "universityShortName": "GST",
+    "unit": "A Unit — Science",
+    "examDate": "2027-03-27",
+    "examTime": "11:00 AM–12:00 PM"
+  }
+];
