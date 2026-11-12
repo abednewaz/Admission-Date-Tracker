@@ -1,0 +1,46 @@
+name: Admission Date Auto Checker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+      timezone: "Asia/Dhaka"
+    - cron: "0 11 * * *"
+      timezone: "Asia/Dhaka"
+    - cron: "0 16 * * *"
+      timezone: "Asia/Dhaka"
+
+permissions:
+  contents: write
+
+jobs:
+  check-admission-dates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pypdf
+
+      - name: Run 39-university checker
+        run: python .github/scripts/check_admission_dates.py
+
+      - name: Commit detected updates
+        run: |
+          if git diff --quiet; then
+            echo "No admission-date changes detected."
+            exit 0
+          fi
+          git config user.name "Admission Date Tracker Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.js
+          git commit -m "Auto-update admission dates"
+          git push
