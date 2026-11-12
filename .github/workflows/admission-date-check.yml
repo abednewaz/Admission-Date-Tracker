@@ -3,11 +3,8 @@ name: Admission Date Auto Checker
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
-      timezone: "Asia/Dhaka"
-    - cron: "0 11 * * *"
-      timezone: "Asia/Dhaka"
-    - cron: "0 16 * * *"
+    # Run hourly at minute 17 to reduce contention around the top of the hour.
+    - cron: "17 * * * *"
       timezone: "Asia/Dhaka"
 
 permissions:
