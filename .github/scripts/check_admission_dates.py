@@ -97,7 +97,7 @@ def parse_pdf(content):
 
     # Many university notices are scanned/image PDFs. Use OCR only when
     # normal PDF text extraction is clearly insufficient.
-    if len(text.strip()) >= 180 and re.search(r"\\d", text):
+    if len(text.strip()) >= 180 and re.search(r"\d", text):
         return text
 
     try:
