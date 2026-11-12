@@ -82,7 +82,10 @@
     .btn:hover,.btn:focus{background:var(--pri2)}
     .notes{margin-top:.6rem;font-size:.8rem;color:var(--muted);line-height:1.4;border-top:1px solid var(--border);padding-top:.5rem}
     .marked-section{background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-bottom:1.15rem;box-shadow:var(--sh);overflow:hidden}.marked-head{padding:.8rem 1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:.5rem}.marked-head h2{font-size:.98rem;font-weight:700;color:var(--pri)}.marked-head span{font-size:.72rem;color:var(--muted)}.marked-list{padding:.65rem}.marked-card{padding:.75rem;border:1px solid var(--border);border-radius:10px;margin-bottom:.5rem;background:#fbfcfe}.marked-card:last-child{margin-bottom:0}.marked-top{display:flex;justify-content:space-between;gap:.5rem;align-items:flex-start}.marked-name{font-size:.9rem;font-weight:700}.marked-unit{font-size:.78rem;color:var(--muted);margin-top:.08rem}.live-cd{margin:.55rem 0 .45rem;padding:.55rem .65rem;border-radius:9px;background:#edf7ff;color:var(--pri);font-variant-numeric:tabular-nums;font-size:.92rem;font-weight:800;text-align:center;letter-spacing:.01em}.live-cd.done{background:#edf2f7;color:#718096}.live-cd.unknown{background:#fefcbf;color:#744210}.mark-btn{border:1px solid var(--border);background:#fff;color:var(--pri);border-radius:8px;padding:.32rem .55rem;font-size:.75rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:transform .12s,background .15s,border-color .15s}.mark-btn:hover{background:#f3f7fb;border-color:#bfd0e2}.mark-btn:active{transform:scale(.97)}.mark-btn.marked{background:#ebf8ff;border-color:#90cdf4}.card .mark-btn{width:auto;display:inline-flex;align-items:center;gap:.25rem}.card-actions{display:flex;gap:.5rem;align-items:center;margin-top:.15rem}.card-actions .btn{flex:1}.empty-marked{text-align:center;padding:1.1rem .75rem;color:var(--muted);font-size:.84rem}.live-timer{font-variant-numeric:tabular-nums;white-space:nowrap}    .empty{text-align:center;color:var(--muted);padding:2rem 1rem;font-size:.95rem}
-    .notif{margin-top:1.4rem;text-align:center;padding:1rem;background:var(--card);border:1px dashed var(--border);border-radius:var(--r)}
+    .notif,.install-box{margin-bottom:1rem;text-align:center;padding:1rem;background:var(--card);border:1px dashed var(--border);border-radius:var(--r)}
+    .notif p,.install-box p{font-size:.86rem;color:var(--muted);margin-bottom:.55rem}
+    .notif button,.install-box button{background:var(--pri);color:#fff;border:none;padding:.58rem 1.15rem;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer;width:100%}
+    .install-box{display:none;border-style:solid;background:#eef5fb}.install-box p{color:var(--pri);font-weight:600}
     .notif p{font-size:.86rem;color:var(--muted);margin-bottom:.55rem}
     .notif button{background:var(--pri);color:#fff;border:none;padding:.52rem 1.15rem;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer}
     footer{border-top:1px solid var(--border);background:var(--card);padding:1.2rem 1rem;margin-top:auto}
@@ -105,6 +108,9 @@
       <p class="tag">HSC Batch 2026</p>
     </header>
     <main>
+      <div class="notif" id="notif"><p>Get reminded before important exams</p><button type="button" id="enN">Enable Exam Reminders</button></div>
+      <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div>
+      <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
         <label for="q" class="sr-only">Search University</label>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -113,26 +119,7 @@
       </div>
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
-      <div class="closest" id="closest" role="status"></div>
-      <section class="notice" aria-labelledby="notice-heading">
-        <button type="button" class="ntog" id="ntog" aria-expanded="true" aria-controls="nlist">
-          <h2 id="notice-heading">Notice Board</h2>
-          <span class="nicon" id="nicon" aria-hidden="true">−</span>
-        </button>
-        <div class="nlist" id="nlist">
-          <article class="nitem hi">
-            <span class="ncat">Update</span><span class="ndate">2026-11-10</span>
-            <h3 class="ntitle">Private University Spring 2027 Dates Published</h3>
-            <p class="ndesc">Several private universities including BRAC, NSU, AIUB, UIU, EWU and ULAB have published undergraduate admission test dates for Spring 2027. Always verify details on the official admission portal.</p>
-          </article>
-          <article class="nitem">
-            <span class="ncat">Info</span><span class="ndate">2026-11-10</span>
-            <h3 class="ntitle">Welcome to Admission Date Tracker</h3>
-            <p class="ndesc">This app tracks undergraduate admission exam dates for HSC Batch 2026 (2026–27 cycle). Data is taken from the prepared official dataset. “Not published yet” means the date has not been published on the official source.</p>
-          </article>
-        </div>
-      </section>
-      <div class="tabs" role="tablist" aria-label="Exam sections">
+      <section class="notice" aria-labelledby="notice-heading">      <div class="tabs" role="tablist" aria-label="Exam sections">
         <button type="button" class="on" data-s="upcoming" role="tab" aria-selected="true">Upcoming</button>
         <button type="button" data-s="all" role="tab" aria-selected="false">All</button>
         <button type="button" data-s="finished" role="tab" aria-selected="false">Finished</button>
@@ -167,7 +154,7 @@
     function pad(n){return String(Math.max(0,n)).padStart(2,'0')}
     function liveText(e,now){const d=examMoment(e);if(!d)return{cls:'unknown',text:'Not published yet'};let ms=d.getTime()-now;if(ms<=0)return{cls:'done',text:'Exam finished'};let sec=Math.floor(ms/1000),days=Math.floor(sec/86400);sec%=86400;let h=Math.floor(sec/3600);sec%=3600;let min=Math.floor(sec/60),s=sec%60;return{cls:'',text:days+' days '+pad(h)+' hours '+pad(min)+' minutes '+pad(s)+' seconds'}}
     function nextExamForUniversity(name){const now=Date.now();return exams.filter(function(e){return e.universityName===name&&examMoment(e)&&examMoment(e).getTime()>now}).sort(function(a,b){return examMoment(a)-examMoment(b)})[0]||exams.filter(function(e){return e.universityName===name&&e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return String(a.examDate).localeCompare(String(b.examDate))})[0]||null}
-    function renderMarked(){const list=document.getElementById('markedList'),names=getMarked();document.getElementById('markedCount').textContent=names.length+' marked';if(!names.length){list.innerHTML='<div class="empty-marked">No universities marked yet. Mark a university to see its personalized countdown here.</div>';return}const now=Date.now();let html='';names.forEach(function(name){const e=nextExamForUniversity(name);if(!e){html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(name)+'</div><div class="marked-unit">No exam date published yet</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd unknown">Not published yet</div></article>';return}const lt=liveText(e,now);html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(e.universityName)+'</div><div class="marked-unit">'+esc(e.unit)+' · '+fmt(e.examDate)+'</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd '+lt.cls+'" data-live-id="'+esc(e.id)+'">'+lt.text+'</div></article>'});list.innerHTML=html;list.querySelectorAll('[data-unmark]').forEach(function(b){b.addEventListener('click',function(){toggleMarked(b.getAttribute('data-unmark'))})})}
+    function renderMarked(){const section=document.getElementById('markedSection'),list=document.getElementById('markedList'),names=getMarked();document.getElementById('markedCount').textContent=names.length+' marked';section.hidden=!names.length;if(!names.length){list.innerHTML='';return}const now=Date.now();let html='';names.forEach(function(name){const e=nextExamForUniversity(name);if(!e){html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(name)+'</div><div class="marked-unit">No exam date published yet</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd unknown">Not published yet</div></article>';return}const lt=liveText(e,now);html+='<article class="marked-card"><div class="marked-top"><div><div class="marked-name">'+esc(e.universityName)+'</div><div class="marked-unit">'+esc(e.unit)+' · '+fmt(e.examDate)+'</div></div><button class="mark-btn marked" type="button" data-unmark="'+esc(name)+'">Unmark</button></div><div class="live-cd '+lt.cls+'" data-live-id="'+esc(e.id)+'">'+lt.text+'</div></article>'});list.innerHTML=html;list.querySelectorAll('[data-unmark]').forEach(function(b){b.addEventListener('click',function(){toggleMarked(b.getAttribute('data-unmark'))})})}
     setInterval(function(){const now=Date.now();document.querySelectorAll('[data-live-id]').forEach(function(el){const e=exams.find(function(x){return String(x.id)===el.getAttribute('data-live-id')});if(e){const lt=liveText(e,now);el.className='live-cd '+lt.cls;el.textContent=lt.text}})},1000);
     function appS(dl){if(!dl||dl==='Not published yet')return{c:false,l:'Not published yet'};const days=daysB(todayBD(),dl);if(days===null)return{c:false,l:dl};if(days<0)return{c:true,l:'Application closed'};if(days===0)return{c:false,l:'Closes today'};return{c:false,l:fmt(dl)}}
     function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -178,11 +165,9 @@
       const fil=exams.filter(function(e){return match(e,q)});
       var meta=document.getElementById('meta');
       if(q){meta.hidden=false;meta.textContent=fil.length+' result'+(fil.length!==1?'s':'')}else meta.hidden=true;
-      var up=0,wd=0,cl=null,cld=Infinity;var unis=new Set();
-      for(var i=0;i<exams.length;i++){var e=exams[i];unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;if(c.d!==null&&c.d<cld){cld=c.d;cl=e}}}}
+      var up=0,wd=0;var unis=new Set();
+      for(var i=0;i<exams.length;i++){var e=exams[i];unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;}}}
       document.getElementById('stats').innerHTML='<div class="stat"><b>'+up+'</b><span>Upcoming exams</span></div><div class="stat"><b>'+unis.size+'</b><span>Universities</span></div><div class="stat"><b>'+wd+'</b><span>With exam date</span></div>';
-      var cle=document.getElementById('closest');
-      if(cl){cle.style.display='flex';cle.innerHTML='<span class="l">Closest upcoming</span><strong>'+esc(cl.universityShortName)+' — '+esc(cl.unit)+'</strong><span class="d">'+(cld===0?'Today':cld===1?'Tomorrow':cld+' days left')+'</span>'}else cle.style.display='none';
       var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return a.examDate.localeCompare(b.examDate)});
       var gapM=new Map();
       for(var j=1;j<chrono.length;j++){var gap=daysB(chrono[j-1].examDate,chrono[j].examDate);if(gap!==null&&gap>=0&&gap<=CLOSE){var txt=gap===0?'Only 0 days between these exams':gap===1?'Only 1 day between these exams':'Only '+gap+' days between these exams';gapM.set(chrono[j].id,txt)}}
@@ -219,11 +204,16 @@
     document.getElementById('clear').addEventListener('click',function(){Q='';document.getElementById('q').value='';document.getElementById('clear').style.display='none';render()});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
     document.getElementById('ntog').addEventListener('click',function(){var list=document.getElementById('nlist'),open=list.style.display!=='none';list.style.display=open?'none':'block';document.getElementById('nicon').textContent=open?'+':'−';document.getElementById('ntog').setAttribute('aria-expanded',open?'false':'true')});
-    var notifEl=document.getElementById('notif');
-    if(!('Notification' in window))notifEl.innerHTML='<p style="font-size:.8rem;color:var(--muted)">Notifications not supported in this browser</p>';
-    else if(Notification.permission==='granted')notifEl.innerHTML='<p style="font-size:.8rem;color:var(--green)">Exam reminders enabled</p>';
-    else if(Notification.permission==='denied')notifEl.style.display='none';
-    else document.getElementById('enN').addEventListener('click',function(){Notification.requestPermission().then(function(p){if(p==='granted')notifEl.innerHTML='<p style="font-size:.8rem;color:var(--green)">Exam reminders enabled</p>';else notifEl.style.display='none'})});
+    var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
+    function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
+    if(!('Notification' in window)||Notification.permission!=='default'){hideNotif()}else{document.getElementById('enN').addEventListener('click',function(){Notification.requestPermission().then(function(p){if(p!=='default')hideNotif()})})}
+    function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
+    if(isStandalone()){hideInstall()}else{
+      window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferredInstallPrompt=e;installBox.style.display='block'});
+      window.addEventListener('appinstalled',function(){deferredInstallPrompt=null;hideInstall()});
+      installBtn.addEventListener('click',async function(){if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;hideInstall()}else{alert('Chrome menu থেকে Add to Home screen / Install app নির্বাচন করুন।')}});
+      if(/iphone|ipad|ipod/i.test(navigator.userAgent)){installBox.style.display='block';installBtn.textContent='Add to Home Screen'}
+    }
     if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){})});
     render();
     renderMarked();
