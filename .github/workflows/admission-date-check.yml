@@ -1,8 +1,6 @@
 name: Admission Date Auto Checker
 
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
   schedule:
     # Run hourly at minute 17 to reduce contention around the top of the hour.
