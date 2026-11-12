@@ -120,8 +120,8 @@
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
       <div class="tabs" role="tablist" aria-label="Exam sections">
-        <button type="button" class="on" data-s="upcoming" role="tab" aria-selected="true">Upcoming</button>
-        <button type="button" data-s="all" role="tab" aria-selected="false">All</button>
+        <button type="button" data-s="upcoming" role="tab" aria-selected="false">Upcoming</button>
+        <button type="button" class="on" data-s="all" role="tab" aria-selected="true">All</button>
         <button type="button" data-s="finished" role="tab" aria-selected="false">Finished</button>
       </div>
       <div id="list"></div>
@@ -157,7 +157,7 @@
     function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
     function fieldValue(e,field){var v=e&&e[field];if(e&&e.status==='Better check Yourself'&&(field==='examDate'||field==='examTime'||field==='examLocation')&&(!v||v==='Not published yet'))return 'Better check Yourself';if(field==='examDate')return fmt(v);return v||'Not published yet'}
     function match(e,q){if(!q)return true;var terms=q.toLowerCase().trim().split(/\s+/).filter(Boolean);var name=(e.universityName||"").toLowerCase();var short=(e.universityShortName||"").toLowerCase();var unit=(e.unit||"").toLowerCase();function hasWord(text,w){if(w.length<=2)return short===w||name.split(/[\s\-\/()]+/).indexOf(w)!==-1;return text.indexOf(w)!==-1}return terms.every(function(w){if(short===w)return true;if(hasWord(name,w))return true;if(hasWord(unit,w))return true;return false})}
-    let Q='',SEC='upcoming';
+    let Q='',SEC='all';
     function render(){
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){return match(e,q)});
