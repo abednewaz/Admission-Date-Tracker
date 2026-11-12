@@ -1,4 +1,4 @@
-const CACHE = 'adt-v3';
+const CACHE = 'adt-v4';
 const ASSETS = [
   './',
   './index.html',
