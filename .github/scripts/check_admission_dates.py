@@ -122,6 +122,13 @@ SOURCE_FALLBACKS = {
     "admissions.northsouth.edu": [
         "https://admissions.northsouth.edu/index.php/deadline",
     ],
+    "www.iub.edu.bd": [
+        "https://www.admission.iub.edu.bd/",
+    ],
+    "gstadmission.ac.bd": [
+        "https://admission.just.edu.bd/Home/Index",
+        "https://www.nstu.edu.bd/services/viewNotice",
+    ],
 }
 
 def request_source(url):
@@ -271,6 +278,10 @@ def choose_exam_date(row, texts):
             allowed_domains.add("dgme.gov.bd")
         if official_domain.endswith(".mist.ac.bd"):
             allowed_domains.add("mist.ac.bd")
+        if official_domain == "www.iub.edu.bd":
+            allowed_domains.add("admission.iub.edu.bd")
+        if official_domain == "gstadmission.ac.bd":
+            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
         if official_domain and source_domain and source_domain not in allowed_domains:
             continue
 
