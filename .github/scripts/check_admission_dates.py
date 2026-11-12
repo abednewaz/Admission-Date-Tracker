@@ -112,9 +112,59 @@ def parse_pdf(content):
         return text
 
 
+SOURCE_FALLBACKS = {
+    "dgme.teletalk.com.bd": [
+        "https://dgme.gov.bd/",
+    ],
+    "admission.mist.ac.bd": [
+        "https://www.admission.mist.ac.bd/",
+    ],
+    "admissions.northsouth.edu": [
+        "https://admissions.northsouth.edu/index.php/deadline",
+    ],
+}
+
+def request_source(url):
+    candidates = [url]
+    host = urlparse(url).netloc.lower()
+    candidates.extend(SOURCE_FALLBACKS.get(host, []))
+
+    last_error = None
+    browser_headers = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,bn;q=0.8",
+        "Referer": url,
+        "Connection": "keep-alive",
+    }
+
+    for candidate in list(dict.fromkeys(candidates)):
+        for verify in (True, False):
+            try:
+                headers = dict(browser_headers)
+                headers["Referer"] = candidate
+                r = session.get(
+                    candidate,
+                    timeout=TIMEOUT,
+                    allow_redirects=True,
+                    verify=verify,
+                    headers=headers,
+                )
+                r.raise_for_status()
+                return r
+            except requests.exceptions.SSLError as exc:
+                last_error = exc
+                if verify:
+                    continue
+                break
+            except requests.exceptions.RequestException as exc:
+                last_error = exc
+                break
+
+    raise last_error or RuntimeError(f"Could not fetch source: {url}")
+
+
 def fetch(url):
-    r = session.get(url, timeout=TIMEOUT, allow_redirects=True)
-    r.raise_for_status()
+    r = request_source(url)
     ctype = r.headers.get("content-type", "").lower()
     final_url = r.url
     if "pdf" in ctype or final_url.lower().split("?")[0].endswith(".pdf"):
@@ -214,9 +264,14 @@ def choose_exam_date(row, texts):
     keywords = row_keywords(row)
 
     for text, source_url in texts:
-        source_domain = urlparse(source_url).netloc.lower()
-        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower()
-        if official_domain and source_domain and source_domain != official_domain:
+        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
+        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
+        allowed_domains = {official_domain}
+        if official_domain == "dgme.teletalk.com.bd":
+            allowed_domains.add("dgme.gov.bd")
+        if official_domain.endswith(".mist.ac.bd"):
+            allowed_domains.add("mist.ac.bd")
+        if official_domain and source_domain and source_domain not in allowed_domains:
             continue
 
         for date_value, strength, ctx in extract_dates(text):
