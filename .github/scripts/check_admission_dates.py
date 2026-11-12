@@ -85,8 +85,7 @@ def load_data():
 def save_data(rows):
     DATA_FILE.write_text(
         "window.ADMISSION_EXAMS = "
-        + json.dumps(rows, ensure_ascii=False, indent=2) + ";"
-        + ";\n",
+        + json.dumps(rows, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8",
     )
 
