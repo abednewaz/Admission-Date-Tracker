@@ -16,6 +16,7 @@ permissions:
 jobs:
   check-admission-dates:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,17 +26,22 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install OCR support
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ben poppler-utils
+
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pypdf
+          pip install requests beautifulsoup4 pypdf pymupdf pytesseract
 
-      - name: Run 39-university checker
+      - name: Check all admission sources
         run: python .github/scripts/check_admission_dates.py
 
       - name: Commit detected updates
         run: |
-          if git diff --quiet; then
+          if git diff --quiet -- data.js; then
             echo "No admission-date changes detected."
             exit 0
           fi
