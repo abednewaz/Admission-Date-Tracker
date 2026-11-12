@@ -1,17 +1,22 @@
 import io
 import json
 import re
-from datetime import datetime
+from datetime import datetime, date
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+import fitz
+import pytesseract
 
 DATA_FILE = Path("data.js")
 TIMEOUT = 30
 MAX_LINKED_PDFS = 12
+CYCLE_START = date(2026, 11, 1)
+CYCLE_END = date(2027, 12, 31)
 HEADERS = {
     "User-Agent": "Admission-Date-Tracker/1.0 (+https://admission-date-tracker.vercel.app/)"
 }
@@ -89,7 +94,23 @@ def save_data(rows):
 def parse_pdf(content):
     reader = PdfReader(io.BytesIO(content))
     text = "\n".join((page.extract_text() or "") for page in reader.pages)
-    return text
+
+    # Many university notices are scanned/image PDFs. Use OCR only when
+    # normal PDF text extraction is clearly insufficient.
+    if len(text.strip()) >= 180 and re.search(r"\\d", text):
+        return text
+
+    try:
+        doc = fitz.open(stream=content, filetype="pdf")
+        pages = []
+        for page in doc[:8]:
+            pix = page.get_pixmap(matrix=fitz.Matrix(2.0, 2.0), alpha=False)
+            image = pix.tobytes("png")
+            pages.append(pytesseract.image_to_string(image, lang="eng+ben"))
+        ocr_text = "\n".join(pages)
+        return (text + "\n" + ocr_text).strip()
+    except Exception:
+        return text
 
 
 def fetch(url):
@@ -180,31 +201,73 @@ def source_text(url):
     return texts
 
 
+def row_keywords(row):
+    unit = normalize(str(row.get("unit", ""))).lower()
+    words = re.findall(r"[a-z]{4,}", unit)
+    stop = {"undergraduate", "admission", "spring", "trimester", "session", "batch", "except", "most", "programs"}
+    return [w for w in words if w not in stop][:6]
+
+
 def choose_exam_date(row, texts):
+    today = datetime.now(ZoneInfo("Asia/Dhaka")).date()
     candidates = []
     current = row.get("examDate")
+    keywords = row_keywords(row)
+
     for text, source_url in texts:
-        for date, strength, ctx in extract_dates(text):
-            score = strength * 100
-            if current and date == current:
+        source_domain = urlparse(source_url).netloc.lower()
+        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower()
+        if official_domain and source_domain and source_domain != official_domain:
+            continue
+
+        for date_value, strength, ctx in extract_dates(text):
+            try:
+                candidate_date = datetime.strptime(date_value, "%Y-%m-%d").date()
+            except ValueError:
+                continue
+
+            # Never auto-publish a date outside the current admission cycle
+            # or a date that has already passed when the checker is running.
+            if candidate_date < today or candidate_date < CYCLE_START or candidate_date > CYCLE_END:
+                continue
+
+            # Automatic replacement requires explicit admission-test context.
+            if strength < 3:
+                continue
+
+            ctx_low = ctx.lower()
+            score = 300
+            if current and date_value == current:
                 score += 40
-            if current and re.match(r"^\d{4}-", current) and date[:4] == current[:4]:
-                score += 10
-            if "application deadline" in ctx.lower() or "application closes" in ctx.lower():
-                score -= 60
-            candidates.append((score, date, source_url, ctx))
+            if keywords:
+                matched = sum(1 for word in keywords if word in ctx_low)
+                score += min(60, matched * 15)
+
+            # Deadline/application dates are common false positives. Penalize
+            # heavily unless the same context explicitly names an exam/test.
+            if ("application deadline" in ctx_low or "application closes" in ctx_low
+                    or "last date to apply" in ctx_low) and not EXAM_RE.search(ctx):
+                score -= 250
+
+            # Prefer dates near the existing cycle year, but do not let the
+            # old value override a clearly published changed date.
+            if current and re.match(r"^\\d{4}-", str(current)):
+                if date_value[:4] == str(current)[:4]:
+                    score += 10
+
+            candidates.append((score, date_value, source_url, ctx))
 
     if not candidates:
         return None
 
-    # Prefer strong admission-test context and a date matching the existing cycle.
-    # Do not replace a known date with a weak, unrelated date.
     candidates.sort(key=lambda x: (-x[0], x[1]))
     best = candidates[0]
-    if best[0] < 100:
-        return None
-    return best[1], best[2], best[3]
 
+    # Require a strong margin when several different exam dates are found.
+    if len(candidates) > 1 and candidates[0][0] == candidates[1][0] and candidates[0][1] != candidates[1][1]:
+        return None
+
+    return best[1], best[2], best[3]
 
 def main():
     rows = load_data()
@@ -244,6 +307,7 @@ def main():
         save_data(rows)
 
     print(f"Checked {len(rows)} admission records from {len(source_cache)} unique official sources.")
+    print("Safety mode: only future 2026-27-cycle dates with explicit admission-test context are eligible for automatic updates.")
     print(f"Changed: {len(changed)}")
     for item in changed:
         print("UPDATE:", item)
