@@ -251,7 +251,7 @@ def choose_exam_date(row, texts):
 
             # Prefer dates near the existing cycle year, but do not let the
             # old value override a clearly published changed date.
-            if current and re.match(r"^\\d{4}-", str(current)):
+            if current and re.match(r"^\d{4}-", str(current)):
                 if date_value[:4] == str(current)[:4]:
                     score += 10
 
