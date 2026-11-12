@@ -119,16 +119,12 @@
       </div>
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
-      <section class="notice" aria-labelledby="notice-heading">      <div class="tabs" role="tablist" aria-label="Exam sections">
+      <div class="tabs" role="tablist" aria-label="Exam sections">
         <button type="button" class="on" data-s="upcoming" role="tab" aria-selected="true">Upcoming</button>
         <button type="button" data-s="all" role="tab" aria-selected="false">All</button>
         <button type="button" data-s="finished" role="tab" aria-selected="false">Finished</button>
       </div>
       <div id="list"></div>
-      <div class="notif" id="notif">
-        <p>Get reminded before important exams</p>
-        <button type="button" id="enN">Enable Exam Reminders</button>
-      </div>
     </main>
     <footer>
       <div class="fi">
@@ -203,12 +199,12 @@
     document.getElementById('q').addEventListener('input',function(e){Q=e.target.value;document.getElementById('clear').style.display=Q?'flex':'none';render()});
     document.getElementById('clear').addEventListener('click',function(){Q='';document.getElementById('q').value='';document.getElementById('clear').style.display='none';render()});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
-    document.getElementById('ntog').addEventListener('click',function(){var list=document.getElementById('nlist'),open=list.style.display!=='none';list.style.display=open?'none':'block';document.getElementById('nicon').textContent=open?'+':'−';document.getElementById('ntog').setAttribute('aria-expanded',open?'false':'true')});
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
     if(!('Notification' in window)||Notification.permission!=='default'){hideNotif()}else{document.getElementById('enN').addEventListener('click',function(){Notification.requestPermission().then(function(p){if(p!=='default')hideNotif()})})}
     function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
     if(isStandalone()){hideInstall()}else{
+      installBox.style.display='block';
       window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferredInstallPrompt=e;installBox.style.display='block'});
       window.addEventListener('appinstalled',function(){deferredInstallPrompt=null;hideInstall()});
       installBtn.addEventListener('click',async function(){if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;hideInstall()}else{alert('Chrome menu থেকে Add to Home screen / Install app নির্বাচন করুন।')}});
