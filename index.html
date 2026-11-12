@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" href="icon-192.png">
   <title>Admission Date Tracker</title>
   <style>
-    :root{--bg:#f7f5f2;--card:#fff;--text:#1a2332;--muted:#5a6577;--pri:#1e3a5f;--pri2:#2c5282;--red:#c53030;--green:#276749;--border:#e2e0db;--sh:0 1px 3px rgba(26,35,50,.08),0 4px 12px rgba(26,35,50,.04);--r:12px}
+    :root{--bg:#f7f5f2;--card:#fff;--text:#1a2332;--muted:#5a6577;--pri:#1e3a5f;--pri2:#2c5282;--red:#c53030;--green:#276749;--border:#e2e0db;--sh:0 1px 3px rgba(26,35,50,.08),0 4px 12px rgba(26,35,50,.04);--r:12px}body.dark{--bg:#111827;--card:#1f2937;--text:#f3f4f6;--muted:#aeb8c7;--pri:#8fb7e8;--pri2:#b8d2f2;--red:#f87171;--green:#68d391;--border:#374151;--sh:0 2px 6px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.18)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{font-size:16px;-webkit-text-size-adjust:100%}
     body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100dvh;-webkit-font-smoothing:antialiased}
@@ -92,11 +92,12 @@
     .av{width:2.5rem;height:2.5rem;border-radius:50%;object-fit:cover;object-position:center;display:block;flex-shrink:0;border:2px solid var(--border)}
     .cr{font-size:.74rem;color:var(--muted);line-height:1.4}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
+    .theme-toggle{position:fixed;top:.7rem;right:.7rem;z-index:50;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.18);color:#fff;border-radius:999px;padding:.42rem .62rem;font-size:.78rem;font-weight:700;cursor:pointer;backdrop-filter:blur(8px)}.req-btn{display:block;width:100%;margin-top:.55rem;padding:.55rem;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:8px;font-size:.84rem;font-weight:700;cursor:pointer}.req-overlay{position:fixed;inset:0;background:rgba(0,0,0,.58);z-index:100;display:none;align-items:flex-end;justify-content:center;padding:1rem}.req-overlay.show{display:flex}.req-modal{width:min(640px,100%);max-height:85dvh;overflow:auto;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:16px;padding:1rem;box-shadow:0 20px 50px rgba(0,0,0,.3)}.req-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.7rem;margin-bottom:.8rem}.req-head h2{font-size:1.05rem}.req-close{border:0;background:var(--bg);color:var(--text);width:2rem;height:2rem;border-radius:50%;font-size:1.2rem;cursor:pointer}.req-body{font-size:.88rem;line-height:1.55;color:var(--muted)}.req-note{margin-top:.8rem;padding:.65rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-link{display:block;margin-top:.8rem;text-align:center;text-decoration:none;background:var(--pri);color:#fff;padding:.58rem;border-radius:8px;font-weight:700;font-size:.84rem}body.dark .tabs{background:#293241}body.dark .tabs button.on{background:#374151}body.dark .install-box{background:#1d3044}body.dark .nitem.hi{background:#3a2023}body.dark .ncat{background:#263b55}body.dark .gap{background:#3a2023;border-color:#7f1d1d}body.dark .bpub{background:#20364d;color:#9bc5ef}body.dark .bpri{background:#34254d;color:#c4a5f5}body.dark .chg{background:#3a321d;border-color:#806b22}body.dark .cds,body.dark .live-cd.unknown{background:#3a321d;color:#f6d77a}body.dark .cdn{background:#173827;color:#8ee0ad}body.dark .cdd{background:#303844;color:#aeb8c7}body.dark .cdu,body.dark .live-cd{background:#20364d;color:#a8cff5}    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
     @media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}main{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
   </style>
 </head>
 <body>
+  <button class="theme-toggle" id="themeToggle" type="button">☾ Dark</button>
   <div class="app">
     <header>
       <div class="header-brand">
@@ -125,6 +126,7 @@
       </div>
       <div id="list"></div>
     </main>
+    <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
     <footer>
       <div class="fi">
         <img class="av" src="Abed_Newaz_Profile.png" alt="Abed Newaz">
@@ -187,15 +189,23 @@
           html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+fmt(e2.examDate)+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(e2.examTime)+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(e2.examLocation)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v'+(ap.c?' cl':'')+'">'+esc(ap.l)+'</span></div></div>';
           html+=(e2.status==='Better check Yourself'?'<div class="self-check">Better check Yourself</div>':'');
           html+='<div class="cd '+cls+'">'+c2.l+'</div>';
-          html+='<div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
+          html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
           if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
           html+='</article>';
         }
         html+='</section>';
       });
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
-      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});
     }
+    const THEME_KEY='adt_theme_v1';
+    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
+    (function(){var s='';try{s=localStorage.getItem(THEME_KEY)||''}catch(e){}applyTheme(s==='dark'?'dark':'light')})();
+    document.getElementById('themeToggle').addEventListener('click',function(){applyTheme(document.body.classList.contains('dark')?'light':'dark')});
+    var reqOverlay=document.getElementById('reqOverlay'),reqBody=document.getElementById('reqBody'),reqTitle=document.getElementById('reqTitle');
+    function openRequirements(id){var e=exams.find(function(x){return String(x.id)===String(id)});if(!e)return;reqTitle.textContent=(e.universityName||'University')+' — Requirements';var text=e.requirements||'Exact eligibility requirements have not been separately entered yet. Check the latest official admission circular for the minimum GPA, subject/group and other eligibility conditions for this unit/program.';reqBody.innerHTML='<p><strong>Who can take the exam?</strong></p><p>'+esc(text)+'</p><div class="req-note">Requirements can vary by unit/program. The official circular is the final authority.</div>'+(e.officialUrl?'<a class="req-link" href="'+esc(e.officialUrl)+'" target="_blank" rel="noopener noreferrer">Open Official Admission Website</a>':'');reqOverlay.classList.add('show');document.body.style.overflow='hidden'}
+    function closeRequirements(){reqOverlay.classList.remove('show');document.body.style.overflow=''}
+    document.getElementById('reqClose').addEventListener('click',closeRequirements);reqOverlay.addEventListener('click',function(e){if(e.target===reqOverlay)closeRequirements()});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeRequirements()});
     document.getElementById('q').addEventListener('input',function(e){Q=e.target.value;document.getElementById('clear').style.display=Q?'flex':'none';render()});
     document.getElementById('clear').addEventListener('click',function(){Q='';document.getElementById('q').value='';document.getElementById('clear').style.display='none';render()});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
