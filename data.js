@@ -15,7 +15,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official schedule: undergraduate written exam 26 Nov 2026 at 12:00 PM.",
-    "cycle": "Spring 2026-27 / HSC Batch 2026"
+    "cycle": "Spring 2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Kindly check the Notices on the AIUB Website for relevant announcements on a regular basis. In case of any issues, please email us at apply@aiub.edu Admission Requirements Undergraduate Program Requirements 1. For Bachelor of Pharmacy (BPharm) Applicants must be permanent residents of Bangladesh. Foreign applicants may apply only for the reserved seats allocated by the Government of Bangladesh. Applicants must have passed SSC/O-level or recognized equivalents and HSC/A-level or recognized equivalents in the Science group , with a minimum total GPA of 8.00 (on a scale of 10) and a minimum GPA of 3.50 (on a scale of 5) separately",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
+    "requirementsSource": "https://aiub.edu/admission"
   },
   {
     "id": "e3",
@@ -51,7 +56,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official schedule: B.Pharm & LL.B written exam 28 Nov 2026 at 12:00 PM.",
-    "cycle": "Spring 2026-27 / HSC Batch 2026"
+    "cycle": "Spring 2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Kindly check the Notices on the AIUB Website for relevant announcements on a regular basis. In case of any issues, please email us at apply@aiub.edu Admission Requirements Undergraduate Program Requirements 1. For Bachelor of Pharmacy (BPharm) Applicants must be permanent residents of Bangladesh. Foreign applicants may apply only for the reserved seats allocated by the Government of Bangladesh. Applicants must have passed SSC/O-level or recognized equivalents and HSC/A-level or recognized equivalents in the Science group , with a minimum total GPA of 8.00 (on a scale of 10) and a minimum GPA of 3.50 (on a scale of 5) separately",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
+    "requirementsSource": "https://aiub.edu/admission"
   },
   {
     "id": "e5",
@@ -87,7 +97,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": true,
     "previousExamDate": "2026-12-03",
     "notes": "Auto-detected admission-test date from official source: https://admissions.ulab.edu.bd/",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Graduate Admission Requirements | Admissions Skip to main content Home Undergraduate + Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate + Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International + Undergraduate Graduate Contact Information Quick Links + Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Home Undergraduate Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International Undergraduate Graduate Contact Information Quick Links Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Apply Now Search Menu Apply Now Graduate Admission Requirements Graduate Admission Requirements General Requirements Minimum Qualifications for Graduate Admission A minimum CGPA of 2.00 in Bachelor’s degree, plus A minimum GPA of 2.50 both in SSC and HSC examinations or equivalent, or At least one GPA of 2.00 but aggregate GPA of 6.00 in SSC & HSC, or O’Levels in 5 subjects with a minimum GPA of 2.50 & A’Level in 2 subjects with a minimum GPA of 2.00 (scale A=5, B=4, C=3, D=2, E=1), or Sons/daughters of freedom fighters with an aggregate GPA of 5.00 in SSC& HSC. Note Acceptable score in the ULAB Admission Test. To be eligible for M.A in English (1 Year) a candidate must have a Four year Bachelor Degree in English. Applicants with an undergraduate degree from any other discipline can apply for the MA in English 2-Year Program",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:29:59+06:00",
+    "requirementsSource": "https://admissions.ulab.edu.bd/graduate-programs/admissions-requirements"
   },
   {
     "id": "e7",
@@ -105,7 +120,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official page lists undergraduate admission test 4 Dec 2026 at 9:00 AM.",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Minimum GPA 3.00 in Biology and Chemistry separately in SSC/ “O” level/equivalent and HSC/”A” level/equivalent examinations. GRADUATE ADMISSION REQUIREMENTS The minimum qualification for admission into a graduate program is: 1. The terms & conditions of undergraduate programs mentioned above will be applicable for admission to graduate programs. 2. A relevant undergraduate degree from a recognized university with a GPA of 2.00 or above in a scale of 4.0 3",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:04+06:00",
+    "requirementsSource": "https://admission.uiu.ac.bd/admission/Home.aspx"
   },
   {
     "id": "e8",
@@ -128,11 +148,13 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
       },
       "business": {
         "eligible": true,
-        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
       },
       "humanities": {
         "eligible": true,
@@ -152,9 +174,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:06+06:00",
+    "requirementsSource": "https://admission.eis.du.ac.bd"
   },
   {
     "id": "e9",
@@ -195,11 +221,13 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
       },
       "humanities": {
         "eligible": true,
@@ -219,9 +247,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
+    "requirementsSource": "https://admission.eis.du.ac.bd"
   },
   {
     "id": "e11",
@@ -262,11 +294,13 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
       },
       "humanities": {
         "eligible": true,
@@ -286,9 +320,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
+    "requirementsSource": "https://admission.eis.du.ac.bd"
   },
   {
     "id": "e13",
@@ -311,11 +349,13 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
       },
       "business": {
         "eligible": true,
-        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
       },
       "humanities": {
         "eligible": true,
@@ -335,9 +375,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
+    "requirementsSource": "https://admission.eis.du.ac.bd"
   },
   {
     "id": "e14",
@@ -360,11 +404,13 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
+        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
       },
       "humanities": {
         "eligible": true,
@@ -384,9 +430,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
+    "requirementsSource": "https://admission.eis.du.ac.bd"
   },
   {
     "id": "e15",
@@ -519,7 +569,8 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
+        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
       },
       "business": {
         "eligible": true,
@@ -527,7 +578,8 @@ window.ADMISSION_EXAMS = [
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
+        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
       },
       "oLevelALevel": {
         "eligible": null,
@@ -543,9 +595,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:33+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd"
   },
   {
     "id": "e20",
@@ -567,7 +623,8 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
+        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
       },
       "business": {
         "eligible": true,
@@ -575,7 +632,8 @@ window.ADMISSION_EXAMS = [
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
+        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
       },
       "oLevelALevel": {
         "eligible": null,
@@ -591,9 +649,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:33+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd"
   },
   {
     "id": "e21",
@@ -652,7 +714,8 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {
       "science": {
         "eligible": true,
-        "text": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
+        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
       },
       "business": {
         "eligible": true,
@@ -660,7 +723,8 @@ window.ADMISSION_EXAMS = [
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
+        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
       },
       "oLevelALevel": {
         "eligible": null,
@@ -676,9 +740,13 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "Check universities' website for more information."
       }
-    }
+    },
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:34+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd"
   },
   {
     "id": "e24",
@@ -860,7 +928,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "id": "e34",
@@ -878,7 +951,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "id": "e35",
@@ -896,7 +974,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "id": "e36",
@@ -968,7 +1051,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন কনটেন্টটি শেষ হাল-নাগাদ করা হয়েছে: রবিবার, 6 আগস্ট, 2023 এ 11:55 PM Eligibility list for private medical/ dental colleges/ dental unit of Medical College কন্টেন্ট: পাতা Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2022-2023 Eigibility list for private medical college (03/08/2023) PDF Eigibility list for private medical college (26/07/2023) PDF Eigibility list for private medical college (23/07/2023) PDF Eigibility list for private medical college (19/07/2023) PDF Eigibility list for private medical college (16/07/2023) PDF Eigibility list for private medical college (13/07/2023) PDF Eigibility list for private medical college (03/07/2023) PDF Eigibility list for private medical college (18/06/2023) PDF Eigibility list for private medical college (15/06/2023) PDF Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2021-2022 1 Rev. Eligiblity list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in bangladesh (session 2021-2022) (05/07/2022) PDF 2 Eligibility list of marks equalization of foreign students for admission in private medical/ dental colleges/ dental unitgs in bangladesh (session 2021-2022) (27/09/2022) PDF 3 Eligibility list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in Bangladesh (session 2021-2022) PDF এই কনটেন্টটি শেয়ার করতে ক্লিক করুন আপনার মতামত প্রদান করুন আপনার মতামত প্রদান করুন আপনার নাম নাম অবশ্যই দিতে হবে আপনার ইমেইল সঠিক ইমেইল দিন আপনার যোগাযোগ নম্বর সঠিক ফোন নম্বর দিন (যেমন 017XXXXXXXX) আপনার মতামত মতামত কমপক্ষে 20 অক্ষরের হতে হবে Attachment (jpg, jpeg, png, pdf • max 2 MB) Invalid file. Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন এক্সেসিবিলিটি ফন্ট বৃদ্ধি ফন্ট হ্রাস মনোক্রোম ইনভার্ট বড় কার্সর লিঙ্ক হাইলাইট শিরোনাম হাইলাইট পড়ার গাইড রিসেট স্ক্রিন রিডার ডাউনলোড করুন কন্টেন্টে চলে যান এক্সেসিবিলিটি মেনুতে যান এই ওয়েবসাইটে প্রকাশিত সকল তথ্য সংশ্লিষ্ট দপ্তর কর্তৃক নিয়মিত হালনাগাদ করা হয়। তথ্যের যথার্থতা, নির্ভুলতা ও নির্ভরযোগ্যতা নিশ্চিত করতে সংশ্লিষ্ট দপ্তর সর্বদা সচেষ্ট। ব্যবহারের শর্তাবলি সচরাচর জিজ্ঞাস্য যোগাযোগ গোপনীয়তার-নীতিমালা সাইটটি শেষ হাল-নাগাদ করা হয়েছে: শুক্রবার, 13 নভেম্বর, 2026 এ 21:35:42 পরিকল্পনা এবং বাস্তবায়ন: মন্ত্রিপরিষদ বিভাগ, এটুআই, বিসিসি, ডিওআইসিটি ও বেসিস।",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:31:16+06:00",
+    "requirementsSource": "https://dgme.gov.bd/pages/static-pages/6922dfe4933eb65569e2485f"
   },
   {
     "id": "e39",
@@ -986,7 +1074,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": true,
     "previousExamDate": null,
     "notes": "Auto-detected admission-test date from official source: https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "GUB - Select Programs Home Login Undergraduate Programs If you are a Foreign Student, then select the Foreign Student! Local Student Foreign Student Program Session Admission Form Fee (BDT) Application Start Date Application End Date Admission Test Date BA (Hons) in English (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 Bachelor of Business Administration (BBA) (Day) Spring 2027 [Bi-Semester] 1000 08/10/2026 30/11/2026 Bachelor of Laws (LL.B.) (Day) Spring 2027 [Bi-Semester_2] 1000 27/07/2026 30/11/2026 BSc in Artificial Intelligence and Data Science (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Computer Science and Engineering (CSE) (Day) Spring 2027 [Bi-Semester] 1000 08/10/2026 30/11/2026 BSc in Electrical and Electronic Engineering (EEE) (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Software Engineering (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSS (Hons) in Sociology (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Textile Engineering (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSS (Hons) in Journalism and Media Communication (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 Number of Selected Program(s): 0 Total Admission Form Fees: 0 CONTACT DETAILS 220/D, Begum Rokeya Sarani (300 meter North Side of IDB Bhaban), Dhaka -1207, Bangladesh-1207 Green University of Bangladesh Purbachal American City, Kanchan, Rupganj Narayanganj-1461, Dhaka, Bangladesh Cell No.: 01324713502, 01324713503, 01324713504, 01324713506 01324713503, 01324713507, 01324713508 Email: info@green.edu.bd Website: www.green.edu.bd Dhaka City Information Center 220/D/4/1 Begum Rokeya Sharani (100 meters south from Shewrapara Metro Station ) Dhaka 1207, Bangladesh Cell No.: 01324713502, 01324713504 Fax: IMPORTANT LINKS GUB Ranking Green University Website Undergraduate Programs Graduate Programs Eligibility of Admissions Tuition Fees Financial Aid and Scholarship Why Study at Green University Frequently Asked Questions Admission Office © 2026 - Edusoft Consultants Ltd",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:31:27+06:00",
+    "requirementsSource": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4"
   },
   {
     "id": "e40",
@@ -1027,7 +1120,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "CUET's official academic news announced 23 Jan 2027 as the probable 2026-27 undergraduate admission-test date. Recheck the official admission page for the final schedule.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "At present, no admission test is scheduled for these programs. All official announcements regarding admission notices, eligibility criteria, application procedures, and test schedules will be published exclusively through CUET's official website and other authorized channels. Prospective applicants are strongly advised to regularly visit the CUET website to stay informed about the latest updates, notifications, and official instructions regarding undergraduate admissions. The examination center will be decided according to the grade points and marks obtained by the candidate in the four subjects, namely Mathematics, Science, Chemistry and English in Higher Secondary or equivalent examination and the candidates preference. The university and the department for admission will be determined according to the merit rank obtained in the admission test by the candidate and his/her preference",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:00+06:00",
+    "requirementsSource": "https://cuet.ac.bd/admission"
   },
   {
     "id": "auto-ju",
@@ -1050,7 +1148,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": true,
     "previousExamDate": "2026-12-17",
     "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. C & D Units will be held on 5 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf"
   },
   {
     "id": "auto-ku-ab",
@@ -1068,7 +1171,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": true,
     "previousExamDate": "2026-12-18",
     "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. A & B Units will be held on 4 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf"
   },
   {
     "id": "auto-mist-c",
@@ -1149,7 +1257,12 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "The 2025-26 IUT admission cycle is closed. The next undergraduate admission cycle is expected in 2027; the official 2026-27 admission-test date has not yet been published.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": null,
+    "requirements": "ENTRY REQUIREMENTS (for Host Country Applicants) Undergraduate Programmes (only Muslim applicants of OIC member countries can apply for admission in IUT) BSc Engineering and BBA Student from Host Country under National Curriculum SSC or Equivalent: Student from only Science group can apply Minimum CGPA 4.50 out of 5.00 Must have to pass in 2022 or later HSC or Equivalent: Student from only Science group can apply Minimum CGPA 4.50 out of 5.00 Must have to pass in 2025 or 2024 Must Have A+ grades in following Subjects Physics Chemistry Mathematics Must Have minimum A grade in following Subject English Student from O/A Level or Equivalent O Level or Equivalent: Must have at least B in any two subjects among Mathematics , Physics and Chemistry and minimum C grade in the remaining subject mentioned above. Must have at least B grade in English Must have completed in 2022 or later A Level or Equivalent: Mathematics, Physics and Chemistry with Minimum grade A Must have completed in 2025 or 2024 If the transcript provides both grades and marks, then the grades will be considered only for entry requirement. If the transcript shows only marks, then marks will be converted into grades according to the following table: Marks O/A level Grade Point A*-G Grading 9-1 Grading 80-100 A/A* 9, 8, 7 5.00 70-79 B 5, 6 4.00 60-69 C 4 3.50 Technical Education Bachelor of Science in Technical Education (BScTE), Duration: 3 years The candidate must have 3 or 4 years Diploma in Engineering/Technology or the equivalent having minimum CGPA of 3.25 (out of 4.0) . Postgraduate Programmes Engineering Doctor of Philosophy MSc in relevant field or equivalent Minimum CGPA of 2.5 (out of 4.0) or 3.0 (out of 5.0) in both MSc and BSc degrees Master of Science in Engineering (M.Sc.Engg) / Master of Engineering (M.Engg) BSc in engineering or equivalent in relevant field Minimum CGPA of 2.5 (out of 4.0) or 3.0 (out of 5.0) in the BSc degree Technical Education Master of Science in Technical Education (M.Sc. TE) Duration: 2 years The applicant must have B.Sc.TE or B.Sc.Engg",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:14+06:00",
+    "requirementsSource": "https://admission.iutoic-dhaka.edu/information/entry-requirements"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1165,7 +1278,12 @@ window.ADMISSION_EXAMS = [
     "universityShortName": "GST",
     "unit": "B Unit — Humanities",
     "examDate": "2027-03-19",
-    "examTime": "11:00 AM–12:00 PM"
+    "examTime": "11:00 AM–12:00 PM",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1181,7 +1299,12 @@ window.ADMISSION_EXAMS = [
     "universityShortName": "GST",
     "unit": "C Unit — Business Studies",
     "examDate": "2027-03-20",
-    "examTime": "11:00 AM–12:00 PM"
+    "examTime": "11:00 AM–12:00 PM",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1197,7 +1320,12 @@ window.ADMISSION_EXAMS = [
     "universityShortName": "GST",
     "unit": "D Unit — Architecture",
     "examDate": "2027-03-20",
-    "examTime": "3:00 PM–4:00 PM"
+    "examTime": "3:00 PM–4:00 PM",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1213,6 +1341,11 @@ window.ADMISSION_EXAMS = [
     "universityShortName": "GST",
     "unit": "A Unit — Science",
     "examDate": "2027-03-27",
-    "examTime": "11:00 AM–12:00 PM"
+    "examTime": "11:00 AM–12:00 PM",
+    "previousRequirements": null,
+    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
   }
 ];
