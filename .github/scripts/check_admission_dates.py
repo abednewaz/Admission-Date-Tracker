@@ -592,6 +592,132 @@ def choose_exam_date(row, texts):
 
     return best[1], best[2], best[3]
 
+NOTICE_FEED_URL = "https://students.bd/en/notice"
+NOTICE_TARGETS = {
+    # Dhaka universities in the tracker.
+    "dhaka university": "Dhaka University",
+    "university of dhaka": "Dhaka University",
+    "jagannath university": "Jagannath University",
+    "jnu": "Jagannath University",
+    "jahangirnagar university": "Jahangirnagar University",
+    "bup": "Bangladesh University of Professionals",
+    "bangladesh university of professionals": "Bangladesh University of Professionals",
+    "aiub": "AIUB",
+    "american international university": "AIUB",
+    "brac university": "BRAC University",
+    "north south university": "North South University",
+    "nsu": "North South University",
+    "east west university": "East West University",
+    "united international university": "United International University",
+    "ulab": "ULAB",
+    "green university": "Green University of Bangladesh",
+    "iub": "Independent University, Bangladesh",
+
+    # Engineering / technology universities in the tracker.
+    "buet": "BUET",
+    "ruet": "RUET",
+    "cuet": "CUET",
+    "kuet": "KUET",
+    "mist": "MIST",
+    "iut": "IUT",
+    "duet": "DUET",
+    "butex": "BUTEX",
+
+    # Medical admission sources in the tracker.
+    "dgme": "Medical Admission",
+    "medical admission": "Medical Admission",
+    "mbbs": "Medical Admission",
+    "bds": "Medical Admission",
+    "bangladesh medical university": "Bangladesh Medical University",
+    "bmu": "Bangladesh Medical University",
+
+    # Divisional / regional public universities in the tracker.
+    "rajshahi university": "Rajshahi University",
+    "university of rajshahi": "Rajshahi University",
+    "chittagong university": "Chittagong University",
+    "university of chittagong": "Chittagong University",
+    "khulna university": "Khulna University",
+    "barishal university": "University of Barishal",
+    "barisal university": "University of Barishal",
+    "begum rokeya university": "Begum Rokeya University",
+    "comilla university": "Comilla University",
+    "cumilla university": "Comilla University",
+    "shahjalal university": "SUST",
+    "sust": "SUST",
+    "jkkniu": "Jatiya Kabi Kazi Nazrul Islam University",
+    "hajee mohammad danesh": "HSTU",
+    "hstu": "HSTU",
+    "patuakhali science": "Patuakhali Science and Technology University",
+    "pstu": "PSTU",
+    "mawlana bhashani": "MBSTU",
+    "mbstu": "MBSTU",
+}
+
+def notice_university(title):
+    low = normalize(title).lower()
+    for key, label in sorted(NOTICE_TARGETS.items(), key=lambda x: -len(x[0])):
+        if key in low:
+            return label
+    return None
+
+def update_notice_feed():
+    try:
+        r = request_source(NOTICE_FEED_URL)
+        soup = BeautifulSoup(r.text, "html.parser")
+        items = []
+        seen = set()
+
+        for a in soup.find_all("a", href=True):
+            href = urljoin(r.url, a["href"])
+            if "/notice/" not in href:
+                continue
+            title = a.get_text(" ", strip=True)
+            if not title or len(title) < 8:
+                continue
+
+            university = notice_university(title)
+            if not university:
+                continue
+
+            # Ignore navigation/category links and duplicate detail links.
+            key = (href, title)
+            if key in seen:
+                continue
+            seen.add(key)
+
+            parent_text = a.parent.get_text(" ", strip=True) if a.parent else title
+            date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", parent_text)
+            date_value = date_match.group(0) if date_match else ""
+            if not date_value:
+                date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", soup.get_text(" ", strip=True))
+                date_value = date_match.group(0) if date_match else ""
+
+            items.append({
+                "university": university,
+                "title": title,
+                "date": date_value,
+                "url": href,
+                "source": "students.bd",
+            })
+
+            if len(items) >= 20:
+                break
+
+        # Newest first where a date was captured; preserve source order otherwise.
+        items.sort(key=lambda x: x.get("date", ""), reverse=True)
+        Path("notices.js").write_text(
+            "window.ADMISSION_NOTICES = "
+            + json.dumps(items[:12], ensure_ascii=False, indent=2)
+            + ";\n",
+            encoding="utf-8",
+        )
+        print(f"Notice feed: {len(items[:12])} matching notices saved.")
+        return len(items[:12])
+    except Exception as exc:
+        print(f"Notice feed failed: {exc}")
+        return 0
+
+
 def main():
     rows = load_data()
     changed = []
@@ -665,6 +791,10 @@ def main():
 
     if changed or requirement_changed:
         save_data(rows)
+
+    # Notice Board is a separate generated feed. A failure here never blocks
+    # admission-date/requirement checking or modifies data.js.
+    update_notice_feed()
 
     print(f"Checked {len(rows)} admission records from {len(source_cache)} unique official sources.")
     print(
