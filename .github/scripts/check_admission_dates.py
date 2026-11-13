@@ -16,6 +16,7 @@ import pytesseract
 DATA_FILE = Path("data.js")
 TIMEOUT = 30
 MAX_LINKED_PDFS = 12
+MAX_LINKED_REQUIREMENT_PAGES = 8
 CYCLE_START = date(2026, 11, 1)
 CYCLE_END = date(2027, 12, 31)
 HEADERS = {
@@ -177,18 +178,28 @@ def fetch(url):
     final_url = r.url
     if "pdf" in ctype or final_url.lower().split("?")[0].endswith(".pdf"):
         text = parse_pdf(r.content)
-        return normalize(text), final_url, []
+        return normalize(text), final_url, [], []
     soup = BeautifulSoup(r.text, "html.parser")
     pdfs = []
+    requirement_pages = []
     for a in soup.find_all("a", href=True):
         href = urljoin(final_url, a["href"])
         label = a.get_text(" ", strip=True)
+        if urlparse(href).scheme not in ("http", "https"):
+            continue
+        low = f"{href} {label}".lower()
         if ".pdf" in href.lower() or "pdf" in label.lower() or "notice" in label.lower():
-            if urlparse(href).scheme in ("http", "https"):
-                pdfs.append(href)
+            pdfs.append(href)
+        if re.search(r"requirement|eligibility|eligible|qualification|minimum requirement|ভর্তির যোগ্যতা|যোগ্যতা", low, re.I):
+            requirement_pages.append(href)
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
-    return normalize(soup.get_text(" ", strip=True)), final_url, list(dict.fromkeys(pdfs))[:MAX_LINKED_PDFS]
+    return (
+        normalize(soup.get_text(" ", strip=True)),
+        final_url,
+        list(dict.fromkeys(pdfs))[:MAX_LINKED_PDFS],
+        list(dict.fromkeys(requirement_pages))[:MAX_LINKED_REQUIREMENT_PAGES],
+    )
 
 
 def extract_dates(text):
@@ -246,11 +257,39 @@ def extract_dates(text):
 
 
 def source_text(url):
-    page_text, final_url, pdf_links = fetch(url)
+    page_text, final_url, pdf_links, requirement_links = fetch(url)
     texts = [(page_text, final_url)]
-    for pdf_url in pdf_links:
+    seen = {final_url}
+
+    # Follow explicit official requirement/eligibility links. This is important
+    # for sites such as NSU where dates and requirements live on separate pages.
+    for req_url in requirement_links:
+        if req_url in seen:
+            continue
+        seen.add(req_url)
         try:
-            pdf_text, pdf_final, _ = fetch(pdf_url)
+            req_text, req_final, req_pdfs, _ = fetch(req_url)
+            if req_text.strip():
+                texts.append((req_text, req_final))
+            for pdf_url in req_pdfs:
+                if pdf_url in seen:
+                    continue
+                seen.add(pdf_url)
+                try:
+                    pdf_text, pdf_final, _, _ = fetch(pdf_url)
+                    if pdf_text.strip():
+                        texts.append((pdf_text, pdf_final))
+                except Exception:
+                    continue
+        except Exception:
+            continue
+
+    for pdf_url in pdf_links:
+        if pdf_url in seen:
+            continue
+        seen.add(pdf_url)
+        try:
+            pdf_text, pdf_final, _, _ = fetch(pdf_url)
             if pdf_text.strip():
                 texts.append((pdf_text, pdf_final))
         except Exception:
