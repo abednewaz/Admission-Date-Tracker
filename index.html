@@ -228,7 +228,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       if(/iphone|ipad|ipod/i.test(navigator.userAgent)){installBox.style.display='block';installBtn.textContent='Add to Home Screen'}
     }
     if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=7',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})});
-    function renderNoticeBoard(){var el=document.getElementById('noticeList'),items=window.ADMISSION_NOTICES||[];if(!items.length){el.innerHTML='<div class="nb-empty">No matching recent notices found.</div>';return}el.innerHTML=items.slice(0,12).map(function(n){return '<a class="nb-item" href="'+esc(n.url||'https://students.bd/en/notice')+'" target="_blank" rel="noopener noreferrer"><div class="nb-meta"><span class="nb-uni">'+esc(n.university||'University')+'</span><span>'+esc(n.date||'')+'</span></div><div class="nb-title">'+esc(n.title||'Notice')+'</div><div class="nb-source">'+esc(n.source||'students.bd')+'</div></a>'}).join('')}
+    function renderNoticeBoard(){var el=document.getElementById('noticeList'),items=window.ADMISSION_NOTICES||[];if(!items.length){el.innerHTML='<div class="nb-empty">No matching recent notices found.</div>';return}el.innerHTML=items.slice(0,12).map(function(n){return '<a class="nb-item" href="'+esc(n.url||'https://students.bd/en/notice')+'" target="_blank" rel="noopener noreferrer"><div class="nb-meta"><span class="nb-uni">'+esc(n.university||'University')+'</span><span>'+esc(n.date||'')+'</span></div><div class="nb-title">'+esc(n.title||'Notice')+'</div></a>'}).join('')}
     renderNoticeBoard();
     render();
     renderMarked();
