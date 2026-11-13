@@ -626,10 +626,10 @@ window.ADMISSION_EXAMS = [
     "examTime": "Not published yet",
     "examLocation": "BUET Campus, Dhaka",
     "officialUrl": "https://ugadmission.buet.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": "A current official BUET admission circular with the final schedule has not been verified here. Do not rely on an earlier/provisional date.",
+    "notes": "BUET's official 2026-27 admission notice confirms the undergraduate admission test on 16 Jan 2027. The notice indicates applications are expected to open on 21 Nov 2026; the application deadline and further details will be published in a subsequent notice.",
     "cycle": "2026-27 / HSC Batch 2026"
   },
   {
@@ -1045,11 +1045,11 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-02-05",
     "examTime": "Not published yet",
     "examLocation": "Not published yet",
-    "officialUrl": "https://admission.ku.ac.bd/",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
     "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "Official KU notice confirms C & D Units on 17 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-17",
+    "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. C & D Units will be held on 5 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
     "cycle": "2026-27 / HSC Batch 2026"
   },
   {
@@ -1063,11 +1063,11 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-02-04",
     "examTime": "Not published yet",
     "examLocation": "Not published yet",
-    "officialUrl": "https://admission.ku.ac.bd/",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
     "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "Official KU notice confirms A & B Units on 18 Dec 2026. Exact exam time and centre details are not yet published in the verified notice.",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-18",
+    "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. A & B Units will be held on 4 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
     "cycle": "2026-27 / HSC Batch 2026"
   },
   {
