@@ -1,6 +1,10 @@
 name: Check official admission dates
 
 on:
+  push:
+    paths:
+      - 'scripts/admission_checker.py'
+      - '.github/workflows/admission-date-checker.yml'
   schedule:
     # 3 checks/day in Bangladesh time (UTC+6): 12:00 AM, 8:00 AM, 4:00 PM.
     - cron: "0 18,2,10 * * *"
