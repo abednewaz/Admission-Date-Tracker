@@ -621,7 +621,7 @@ window.ADMISSION_EXAMS = [
     "unit": "Engineering & Architecture",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": null,
-    "applicationDeadline": "2026-12-01",
+    "applicationDeadline": null,
     "examDate": "2027-01-16",
     "examTime": "Not published yet",
     "examLocation": "BUET Campus, Dhaka",
