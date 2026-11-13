@@ -1,6 +1,7 @@
 import io
 import json
 import re
+import hashlib
 from datetime import datetime, date
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -264,6 +265,224 @@ def row_keywords(row):
     return [w for w in words if w not in stop][:6]
 
 
+
+REQUIREMENT_RE = re.compile(
+    r"eligib|eligibility|eligible|admission requirements?|requirements?|"
+    r"qualification|qualifications|minimum gpa|minimum grade|academic requirement|"
+    r"ভর্তির যোগ্যতা|যোগ্যতা|ভর্তির শর্ত|শর্তাবলি|প্রয়োজনীয়তা|প্রয়োজনীয়তা|"
+    r"এসএসসি|এইচএসসি|সমমান|জিপিএ",
+    re.I,
+)
+
+REQUIREMENT_NEGATIVE_RE = re.compile(
+    r"application deadline|last date to apply|application closes|"
+    r"admission test date|exam date|exam schedule|"
+    r"আবেদনের শেষ|আবেদন শেষ|পরীক্ষার তারিখ|পরীক্ষা অনুষ্ঠিত",
+    re.I,
+)
+
+GROUP_TERMS = {
+    "science": re.compile(r"\bscience\b|বিজ্ঞান", re.I),
+    "business": re.compile(r"\bbusiness(?: studies)?\b|commerce|ব্যবসায়|ব্যবসায়", re.I),
+    "humanities": re.compile(r"\bhumanities\b|arts|মানবিক", re.I),
+    "madrasa": re.compile(r"\bmadrasa\b|alim|মাদ্রাসা|আলিম", re.I),
+    "technical": re.compile(r"\btechnical\b|vocational|কারিগরি|ভোকেশনাল", re.I),
+    "oLevelALevel": re.compile(r"o[- ]?level|a[- ]?level|igcse|ial|gce", re.I),
+}
+
+GENERIC_REQUIREMENT_TEXTS = {
+    "Check universities' website for more information.",
+    "Check the university's official website for information about other or special qualifications.",
+    "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules.",
+}
+
+def normalize_requirement_text(text):
+    text = normalize(text)
+    text = re.sub(r"\s+", " ", text).strip(" -–—:;,.")
+    return text
+
+def requirement_hash(text):
+    return hashlib.sha256(normalize_requirement_text(text).lower().encode("utf-8")).hexdigest()
+
+def requirement_candidates(text):
+    text = normalize(text)
+    # HTML pages become mostly one long line after BeautifulSoup extraction,
+    # while PDFs normally retain line breaks. Sentence splitting works for both.
+    sentences = re.split(r"(?<=[.!?।])\s+|\n+", text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+    candidates = []
+
+    for i, sentence in enumerate(sentences):
+        if not REQUIREMENT_RE.search(sentence):
+            continue
+        if REQUIREMENT_NEGATIVE_RE.search(sentence) and not re.search(
+            r"eligib|qualification|requirement|minimum gpa|minimum grade|যোগ্যতা|সমমান",
+            sentence,
+            re.I,
+        ):
+            continue
+
+        start = max(0, i - 1)
+        end = min(len(sentences), i + 4)
+        block = " ".join(sentences[start:end])
+        block = normalize_requirement_text(block)
+
+        if len(block) < 70 or len(block) > 3000:
+            continue
+
+        score = 100
+        if re.search(r"eligib|eligibility|eligible", block, re.I):
+            score += 35
+        if re.search(r"requirement|qualification", block, re.I):
+            score += 30
+        if re.search(r"minimum gpa|minimum grade|gpa|grade|ssc|hsc|equivalent", block, re.I):
+            score += 30
+        if re.search(r"ভর্তির যোগ্যতা|যোগ্যতা|সমমান|জিপিএ|এসএসসি|এইচএসসি", block, re.I):
+            score += 30
+        if len(block) > 500:
+            score += 10
+
+        candidates.append((score, block))
+
+    # De-duplicate overlapping sentence windows.
+    unique = {}
+    for score, block in candidates:
+        key = re.sub(r"\W+", " ", block.lower()).strip()
+        if key not in unique or score > unique[key][0]:
+            unique[key] = (score, block)
+
+    return list(unique.values())
+
+def choose_requirement(row, texts):
+    current = normalize_requirement_text(row.get("requirements", ""))
+    keywords = row_keywords(row)
+    candidates = []
+
+    for text, source_url in texts:
+        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
+        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
+        allowed_domains = {official_domain}
+        if official_domain == "dgme.teletalk.com.bd":
+            allowed_domains.add("dgme.gov.bd")
+        if official_domain.endswith(".mist.ac.bd"):
+            allowed_domains.add("mist.ac.bd")
+        if official_domain == "www.iub.edu.bd":
+            allowed_domains.add("admission.iub.edu.bd")
+        if official_domain == "gstadmission.ac.bd":
+            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
+        if official_domain and source_domain and source_domain not in allowed_domains:
+            continue
+
+        for score, block in requirement_candidates(text):
+            low = block.lower()
+            if keywords:
+                matched = sum(1 for word in keywords if word in low)
+                score += min(60, matched * 15)
+
+            # Prefer an explicit requirements/eligibility section over a
+            # random sentence that merely mentions "eligible".
+            if re.search(r"eligibility criteria|admission requirements|minimum qualifications", low, re.I):
+                score += 45
+
+            candidates.append((score, block, source_url))
+
+    if not candidates:
+        return None
+
+    # Compare candidates after whitespace/punctuation normalization.
+    candidates.sort(key=lambda x: (-x[0], -len(x[1])))
+    best = candidates[0]
+
+    # Never replace an existing detailed requirement with a much shorter
+    # fragment produced by a weak extraction.
+    if current and len(best[1]) < max(80, int(len(current) * 0.45)):
+        return None
+
+    # If two different high-scoring requirement blocks conflict, leave the
+    # record unchanged rather than guessing which unit/program they describe.
+    if len(candidates) > 1:
+        second = candidates[1]
+        n1 = normalize_requirement_text(best[1]).lower()
+        n2 = normalize_requirement_text(second[1]).lower()
+        if n1 != n2 and best[0] - second[0] < 25:
+            return None
+
+    if current and requirement_hash(current) == requirement_hash(best[1]):
+        return None
+
+    return best[1], best[2]
+
+def extract_group_requirement_candidates(text):
+    out = {}
+    for score, block in requirement_candidates(text):
+        for group, rx in GROUP_TERMS.items():
+            if rx.search(block):
+                out.setdefault(group, []).append((score, block))
+    return out
+
+def choose_group_requirements(row, texts):
+    groups = row.get("requirementsByGroup")
+    if not isinstance(groups, dict):
+        return {}
+
+    found = {}
+    for text, source_url in texts:
+        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
+        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
+        allowed_domains = {official_domain}
+        if official_domain == "dgme.teletalk.com.bd":
+            allowed_domains.add("dgme.gov.bd")
+        if official_domain.endswith(".mist.ac.bd"):
+            allowed_domains.add("mist.ac.bd")
+        if official_domain == "www.iub.edu.bd":
+            allowed_domains.add("admission.iub.edu.bd")
+        if official_domain == "gstadmission.ac.bd":
+            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
+        if official_domain and source_domain and source_domain not in allowed_domains:
+            continue
+
+        for group, items in extract_group_requirement_candidates(text).items():
+            for score, block in items:
+                score += 30
+                if group in ("science", "business", "humanities"):
+                    score += 10
+                found.setdefault(group, []).append((score, block, source_url))
+
+    updates = {}
+    for group, old in groups.items():
+        if group not in found:
+            continue
+        candidates = sorted(found[group], key=lambda x: (-x[0], -len(x[1])))
+        best = candidates[0]
+
+        # Only auto-update a group when the official source clearly contains
+        # that group's eligibility language. Avoid replacing a verified group
+        # rule with a generic "eligible" sentence.
+        if not re.search(
+            r"eligib|eligibility|minimum gpa|minimum grade|qualification|"
+            r"যোগ্যতা|জিপিএ|সমমান|এসএসসি|এইচএসসি",
+            best[1],
+            re.I,
+        ):
+            continue
+
+        if len(best[1]) < 60:
+            continue
+
+        old_text = normalize_requirement_text((old or {}).get("text", ""))
+        if old_text in GENERIC_REQUIREMENT_TEXTS:
+            changed = True
+        else:
+            changed = requirement_hash(old_text) != requirement_hash(best[1])
+
+        if changed:
+            updates[group] = {
+                "eligible": old.get("eligible") if isinstance(old, dict) else None,
+                "text": best[1],
+            }
+
+    return updates
+
 def choose_exam_date(row, texts):
     today = datetime.now(ZoneInfo("Asia/Dhaka")).date()
     candidates = []
@@ -337,6 +556,7 @@ def choose_exam_date(row, texts):
 def main():
     rows = load_data()
     changed = []
+    requirement_changed = []
     failures = []
     source_cache = {}
 
@@ -348,34 +568,81 @@ def main():
             if url not in source_cache:
                 source_cache[url] = source_text(url)
             texts = source_cache[url]
+
+            # -------------------------
+            # Admission-test date check
+            # -------------------------
             result = choose_exam_date(row, texts)
-            if not result:
-                continue
+            if result:
+                new_date, source_url, ctx = result
+                old_date = row.get("examDate")
+                if new_date != old_date:
+                    row["previousExamDate"] = old_date
+                    row["examDate"] = new_date
+                    row["dateChanged"] = True
+                    row["status"] = "Automatically updated from official source"
+                    row["notes"] = (
+                        f"Auto-detected admission-test date from official source: {source_url}"
+                    )
+                    changed.append((row["universityShortName"], old_date, new_date, source_url))
 
-            new_date, source_url, ctx = result
-            old_date = row.get("examDate")
-            if new_date == old_date:
-                continue
+            # -------------------------
+            # Requirements check
+            # -------------------------
+            req_result = choose_requirement(row, texts)
+            if req_result:
+                new_req, req_source = req_result
+                old_req = row.get("requirements")
+                row["previousRequirements"] = old_req
+                row["requirements"] = new_req
+                row["requirementsChanged"] = True
+                row["requirementsLastChecked"] = datetime.now(
+                    ZoneInfo("Asia/Dhaka")
+                ).isoformat(timespec="seconds")
+                row["requirementsSource"] = req_source
+                requirement_changed.append(
+                    (row["universityShortName"], "general", req_source)
+                )
 
-            row["previousExamDate"] = old_date
-            row["examDate"] = new_date
-            row["dateChanged"] = True
-            row["status"] = "Automatically updated from official source"
-            row["notes"] = (
-                f"Auto-detected admission-test date from official source: {source_url}"
-            )
-            changed.append((row["universityShortName"], old_date, new_date, source_url))
+            # Group-wise eligibility is updated only when the source explicitly
+            # names the applicant group and gives requirement/eligibility text.
+            group_updates = choose_group_requirements(row, texts)
+            if group_updates:
+                for group, value in group_updates.items():
+                    old = row["requirementsByGroup"].get(group, {})
+                    value["previousText"] = old.get("text") if isinstance(old, dict) else None
+                    row["requirementsByGroup"][group] = value
+                    row["requirementsChanged"] = True
+                    row["requirementsLastChecked"] = datetime.now(
+                        ZoneInfo("Asia/Dhaka")
+                    ).isoformat(timespec="seconds")
+                    row["requirementsSource"] = req_result[1] if req_result else url
+                    requirement_changed.append(
+                        (row["universityShortName"], group, row["requirementsSource"])
+                    )
+
         except Exception as exc:
             failures.append((row.get("universityShortName"), url, str(exc)))
 
-    if changed:
+    if changed or requirement_changed:
         save_data(rows)
 
     print(f"Checked {len(rows)} admission records from {len(source_cache)} unique official sources.")
-    print("Safety mode: only future 2026-27-cycle dates with explicit admission-test context are eligible for automatic updates.")
-    print(f"Changed: {len(changed)}")
+    print(
+        "Safety mode: only future 2026-27-cycle dates with explicit admission-test "
+        "context are eligible for automatic date updates."
+    )
+    print(
+        "Requirement mode: only explicit official eligibility/qualification text "
+        "is eligible for automatic requirement updates; ambiguous or weak matches are skipped."
+    )
+    print(f"Date changes: {len(changed)}")
     for item in changed:
-        print("UPDATE:", item)
+        print("DATE UPDATE:", item)
+
+    print(f"Requirement changes: {len(requirement_changed)}")
+    for item in requirement_changed:
+        print("REQUIREMENT UPDATE:", item)
 
     if failures:
         print(f"Source failures: {len(failures)}")
