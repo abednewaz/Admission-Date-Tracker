@@ -1,4 +1,4 @@
-name: Admission Date Auto Checker
+name: Admission Date & Notice Auto Checker
 
 on:
   workflow_dispatch:
@@ -38,12 +38,12 @@ jobs:
 
       - name: Commit detected updates
         run: |
-          if git diff --quiet -- data.js; then
-            echo "No admission-date changes detected."
+          if git diff --quiet -- data.js notices.js; then
+            echo "No admission-date or notice changes detected."
             exit 0
           fi
           git config user.name "Admission Date Tracker Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.js
-          git commit -m "Auto-update admission dates"
+          git add data.js notices.js
+          git commit -m "Auto-update admission dates and notice board"
           git push
