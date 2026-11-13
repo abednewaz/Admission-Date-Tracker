@@ -25,7 +25,7 @@
     header h1{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}
     .sub{font-size:.9rem;opacity:.92;font-weight:500}
     .tag{font-size:.78rem;opacity:.72;margin-top:.12rem}
-    main{flex:1;max-width:640px;width:100%;margin:0 auto;padding:1rem 1rem 2rem}
+    main{flex:1;max-width:1180px;width:100%;margin:0 auto;padding:1rem 1rem 2rem;display:grid;grid-template-columns:minmax(0,640px) 330px;gap:1rem;align-items:start}
     .sw{position:relative;margin-bottom:1.15rem}
     .sw svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;color:var(--muted);pointer-events:none}
     .search{width:100%;padding:.75rem 2.5rem .75rem 2.6rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);font-size:1rem;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}
@@ -87,13 +87,14 @@
     .install-box{display:none;border-style:solid;background:#eef5fb}.install-box p{color:var(--pri);font-weight:600}
     .notif p{font-size:.86rem;color:var(--muted);margin-bottom:.55rem}
     .notif button{background:var(--pri);color:#fff;border:none;padding:.52rem 1.15rem;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer}
+    .notice-board{background:var(--card);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;position:sticky;top:1rem}.nb-head{padding:.8rem 1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:.5rem}.nb-head h2{font-size:.98rem;color:var(--pri)}.nb-live{font-size:.64rem;font-weight:700;color:var(--green);background:#e8f7ee;padding:.16rem .4rem;border-radius:999px}.nb-list{padding:.5rem;max-height:calc(100vh - 7rem);overflow:auto}.nb-item{display:block;padding:.7rem;border-radius:9px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--border)}.nb-item:last-child{border-bottom:0}.nb-item:hover{background:var(--bg)}.nb-meta{display:flex;justify-content:space-between;gap:.4rem;font-size:.66rem;color:var(--muted);margin-bottom:.2rem}.nb-uni{font-weight:700;color:var(--pri)}.nb-title{font-size:.82rem;line-height:1.4;font-weight:600}.nb-source{font-size:.64rem;color:var(--muted);margin-top:.25rem}.nb-empty{padding:1rem;color:var(--muted);font-size:.82rem;text-align:center}.nb-foot{padding:.6rem 1rem;border-top:1px solid var(--border);font-size:.68rem;color:var(--muted)}.nb-foot a{color:var(--pri);font-weight:700;text-decoration:none}body.dark .nb-live{background:#173827;color:#8ee0ad}body.dark .nb-item:hover{background:#293241}
     footer{border-top:1px solid var(--border);background:var(--card);padding:1.2rem 1rem;margin-top:auto}
     .fi{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:.7rem}
     .av{width:2.5rem;height:2.5rem;border-radius:50%;object-fit:cover;object-position:center;display:block;flex-shrink:0;border:2px solid var(--border)}
     .cr{font-size:.74rem;color:var(--muted);line-height:1.4}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .theme-toggle{position:fixed;top:.7rem;right:.7rem;z-index:50;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.18);color:#fff;border-radius:999px;padding:.42rem .62rem;font-size:.78rem;font-weight:700;cursor:pointer;backdrop-filter:blur(8px)}.req-btn{display:block;width:100%;margin-top:.55rem;padding:.55rem;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:8px;font-size:.84rem;font-weight:700;cursor:pointer}.req-overlay{position:fixed;inset:0;background:rgba(0,0,0,.58);z-index:100;display:none;align-items:flex-end;justify-content:center;padding:1rem}.req-overlay.show{display:flex}.req-modal{width:min(640px,100%);max-height:85dvh;overflow:auto;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:16px;padding:1rem;box-shadow:0 20px 50px rgba(0,0,0,.3)}.req-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.7rem;margin-bottom:.8rem}.req-head h2{font-size:1.05rem}.req-close{border:0;background:var(--bg);color:var(--text);width:2rem;height:2rem;border-radius:50%;font-size:1.2rem;cursor:pointer}.req-body{font-size:.88rem;line-height:1.55;color:var(--muted)}.req-group-select{width:100%;margin-top:.45rem;margin-bottom:.85rem;padding:.62rem .7rem;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text);font-size:.86rem;font-weight:650;outline:none}.req-group-select:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}.req-groups{display:none}.req-group-btn{display:none}.req-group-btn.on{display:none}.req-section{scroll-margin-top:.75rem;padding:.75rem 0 1rem;border-top:1px solid var(--border)}.req-section:first-of-type{border-top:0}.req-section h3{font-size:.92rem;color:var(--text);margin-bottom:.3rem}.req-section p{margin:0}.req-note{margin-top:.8rem;padding:.65rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-eligible{margin-top:.8rem;padding:.7rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-ineligible{margin-top:.8rem;padding:.7rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-link{display:block;margin-top:.8rem;text-align:center;text-decoration:none;background:var(--pri);color:#fff;padding:.58rem;border-radius:8px;font-weight:700;font-size:.84rem}body.dark .tabs{background:#293241}body.dark .tabs button.on{background:#374151}body.dark .install-box{background:#1d3044}body.dark .nitem.hi{background:#3a2023}body.dark .ncat{background:#263b55}body.dark .gap{background:#3a2023;border-color:#7f1d1d}body.dark .bpub{background:#20364d;color:#9bc5ef}body.dark .bpri{background:#34254d;color:#c4a5f5}body.dark .chg{background:#3a321d;border-color:#806b22}body.dark .cds,body.dark .live-cd.unknown{background:#3a321d;color:#f6d77a}body.dark .cdn{background:#173827;color:#8ee0ad}body.dark .cdd{background:#303844;color:#aeb8c7}body.dark .cdu,body.dark .live-cd{background:#20364d;color:#a8cff5}    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
-    @media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}main{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
+    @media(max-width:900px){main{display:block;max-width:640px}.notice-board{position:static;margin-top:1rem}.nb-list{max-height:520px}}@media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}main{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
   </style>
 </head>
 <body>
@@ -126,6 +127,7 @@
       </div>
       <div id="list"></div>
     </main>
+    <aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><h2>Live Notice Board</h2><span class="nb-live">LIVE</span></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Aggregated from <a href="https://students.bd/en/notice" target="_blank" rel="noopener noreferrer">students.bd</a>. Always verify important details on the university's official website.</div></aside>
     <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
     <footer>
       <div class="fi">
@@ -135,6 +137,7 @@
     </footer>
   </div>
   <script src="data.js"></script>
+  <script src="notices.js"></script>
   <script>
     const TZ='Asia/Dhaka',CLOSE=3,exams=(window.ADMISSION_EXAMS||[]).filter(function(e){return e&&e.universityName&&e.unit&&e.admissionType;});
     function todayBD(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
@@ -224,6 +227,8 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       if(/iphone|ipad|ipod/i.test(navigator.userAgent)){installBox.style.display='block';installBtn.textContent='Add to Home Screen'}
     }
     if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=7',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})});
+    function renderNoticeBoard(){var el=document.getElementById('noticeList'),items=window.ADMISSION_NOTICES||[];if(!items.length){el.innerHTML='<div class="nb-empty">No matching recent notices found.</div>';return}el.innerHTML=items.slice(0,12).map(function(n){return '<a class="nb-item" href="'+esc(n.url||'https://students.bd/en/notice')+'" target="_blank" rel="noopener noreferrer"><div class="nb-meta"><span class="nb-uni">'+esc(n.university||'University')+'</span><span>'+esc(n.date||'')+'</span></div><div class="nb-title">'+esc(n.title||'Notice')+'</div><div class="nb-source">'+esc(n.source||'students.bd')+'</div></a>'}).join('')}
+    renderNoticeBoard();
     render();
     renderMarked();
   </script>
