@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(about|privacy|disclaimer|contact).html",
+      "source": "/(about|privacy|disclaimer|contact)(.html)?",
       "headers": [
         {
           "key": "Cache-Control",
@@ -9,7 +9,6 @@
         }
       ]
     },
-
     {
       "source": "/index.html",
       "headers": [
@@ -45,6 +44,24 @@
           "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/disclaimer.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
     }
   ]
 }
