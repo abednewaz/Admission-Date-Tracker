@@ -680,7 +680,9 @@ def update_notice_feed():
                 continue
 
             # Ignore navigation/category links and duplicate detail links.
-            key = (href, title)
+            # One notice page can appear multiple times with slightly different link text.
+            # Keep one entry per detail URL so the board shows distinct latest notices.
+            key = href
             if key in seen:
                 continue
             seen.add(key)
@@ -688,10 +690,6 @@ def update_notice_feed():
             parent_text = a.parent.get_text(" ", strip=True) if a.parent else title
             date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", parent_text)
             date_value = date_match.group(0) if date_match else ""
-            if not date_value:
-                date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", soup.get_text(" ", strip=True))
-                date_value = date_match.group(0) if date_match else ""
-
             items.append({
                 "university": university,
                 "title": title,
