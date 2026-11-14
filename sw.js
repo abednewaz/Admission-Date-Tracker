@@ -1,4 +1,4 @@
-const CACHE = 'adt-v10';
+const CACHE = 'adt-v11';
 const ASSETS = [
   './Abed_Newaz_Profile.png',
   './manifest.webmanifest',
