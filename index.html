@@ -254,6 +254,24 @@
     @media(prefers-reduced-motion:reduce){
       *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
     }
+      .nb-head{width:100%;font:inherit;color:inherit;background:none;cursor:pointer;text-align:left;border:0}
+    .nb-title-wrap{display:flex;align-items:center;gap:.42rem;min-width:0}
+    .nb-chevron{font-size:1rem;line-height:1;color:var(--muted);transition:transform .24s ease}
+    .nb-live{display:inline-flex;align-items:center;gap:.3rem}
+    .nb-live i{width:.42rem;height:.42rem;border-radius:50%;background:#27ae68;box-shadow:0 0 0 0 rgba(39,174,104,.55);animation:nbLivePulse 1.55s ease-in-out infinite}
+    @keyframes nbLivePulse{0%,100%{opacity:.42;box-shadow:0 0 0 0 rgba(39,174,104,.48)}50%{opacity:1;box-shadow:0 0 0 4px rgba(39,174,104,0)}}
+    .notice-board.open .nb-chevron{transform:rotate(180deg)}
+    .notice-board .nb-list,.notice-board .nb-foot{transition:opacity .24s ease,transform .24s ease}
+    @media(max-width:900px){
+      .notice-board{position:static;margin:0 0 1rem;width:100%}
+      .notice-board:not(.open) .nb-list,.notice-board:not(.open) .nb-foot{display:none}
+      .notice-board.open .nb-list{animation:adtFadeUp .28s ease both}
+      .notice-board .nb-item:nth-child(n+2){display:none}
+      .notice-board .nb-head{padding:.78rem .9rem}
+      .notice-board .nb-title-wrap h2{font-size:.96rem}
+      .notice-board .nb-live{font-size:.62rem}
+    }
+    @media(min-width:901px){.notice-board .nb-head{cursor:default}.notice-board .nb-head .nb-chevron{display:none}}
   </style>
 </head>
 <body>
@@ -288,7 +306,7 @@
       </div>
       <div id="list"></div>
     </main>
-    <aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><h2>Live Notice Board</h2><span class="nb-live">LIVE</span></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside>
+    <aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><button class="nb-head" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></button><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside>
     <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
     <footer>
       <div class="fi">
@@ -398,6 +416,11 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     }
     if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=8',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     function renderNoticeBoard(){var el=document.getElementById('noticeList'),items=window.ADMISSION_NOTICES||[];if(!items.length){el.innerHTML='<div class="nb-empty">No matching recent notices found.</div>';return}el.innerHTML=items.slice(0,12).map(function(n){return '<a class="nb-item" href="'+esc(n.url||'https://students.bd/en/notice')+'" target="_blank" rel="noopener noreferrer"><div class="nb-meta"><span class="nb-uni">'+esc(n.university||'University')+'</span><span>'+esc(n.date||'')+'</span></div><div class="nb-title">'+esc(n.title||'Notice')+'</div></a>'}).join('')}
+    const noticeBoard=document.getElementById('noticeBoard'),noticeToggle=document.getElementById('noticeToggle'),mainEl=document.querySelector('main'),noticeOriginalParent=noticeBoard.parentNode,noticeOriginalNext=noticeBoard.nextSibling,calendarBoxEl=document.getElementById('calendarBox');
+    function placeNoticeBoard(){var mobile=window.matchMedia('(max-width:900px)').matches;if(mobile){if(noticeBoard.parentNode!==mainEl)mainEl.insertBefore(noticeBoard,calendarBoxEl)}else if(noticeBoard.parentNode!==noticeOriginalParent)noticeOriginalParent.insertBefore(noticeBoard,noticeOriginalNext)}
+    noticeToggle.addEventListener('click',function(){if(!window.matchMedia('(max-width:900px)').matches)return;var open=noticeBoard.classList.toggle('open');noticeToggle.setAttribute('aria-expanded',open?'true':'false')});
+    placeNoticeBoard();
+    window.addEventListener('resize',placeNoticeBoard);
     renderNoticeBoard();
     render();
     document.getElementById('calPrev').addEventListener('click',function(){CAL_MONTH--;if(CAL_MONTH<0){CAL_MONTH=11;CAL_YEAR--}CAL_SELECTED='';renderCalendar()});
