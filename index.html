@@ -293,21 +293,24 @@
     footer.site-footer{margin-top:auto;padding:2.5rem 1.25rem 1.35rem;background:var(--card);border-top:1px solid var(--border)}
     .footer-main{max-width:1040px;margin:0 auto 2rem;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:2.5rem;align-items:start}
     .footer-brand{display:flex;align-items:center;gap:.75rem;margin-bottom:.8rem}
-    .footer-brand-icon{width:2.7rem;height:2.7rem;object-fit:contain;display:block;flex-shrink:0;border-radius:10px}
+    .footer-brand-icon{width:2.7rem;height:2.7rem;object-fit:contain;display:block;flex-shrink:0;border-radius:10px;background:#f1efff;box-shadow:0 0 0 1px var(--border)}
+    body.dark .footer-brand-icon{background:#08090d}
+    .footer-credit{max-width:540px;justify-content:flex-end}
+    .footer-credit .av{width:2.7rem;height:2.7rem;border-radius:50%;object-fit:cover;object-position:center;display:block;flex-shrink:0;border:2px solid var(--border)}
     .footer-brand h2{font-size:1.25rem;font-weight:750;letter-spacing:-.025em;color:var(--text)}
     .footer-description{max-width:620px;color:var(--muted);font-size:.94rem;line-height:1.65}
     .footer-quicklinks{display:flex;flex-direction:column;align-items:stretch;gap:.38rem}
     .footer-quicklinks h2{font-size:1.02rem;font-weight:750;color:var(--text);margin-bottom:.35rem;text-align:right}
     .footer-quicklinks a{display:block;text-align:right;padding:.43rem .7rem;border:1px solid transparent;border-radius:9px;color:var(--muted);font-size:.88rem;text-decoration:none;transition:background .16s,border-color .16s,color .16s}
     .footer-quicklinks a:hover,.footer-quicklinks a:focus-visible{background:var(--bg);border-color:var(--border);color:var(--pri)}
-    .footer-quicklinks a.footer-home{margin-top:.38rem;border-color:rgba(139,130,245,.35);background:rgba(139,130,245,.10);color:var(--pri);font-weight:750}
+    
     .footer-bottom{max-width:1040px;margin:0 auto;padding-top:1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
     .footer-legal{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
     .footer-legal a{font-size:.76rem;color:var(--muted);text-decoration:none}
     .footer-legal a:hover{color:var(--pri);text-decoration:underline}
     .footer-bottom .cr{font-size:.74rem}
     body.dark footer.site-footer{background:#101625;border-top-color:#283149}
-    body.dark .footer-quicklinks a.footer-home{background:rgba(139,130,245,.12);border-color:rgba(139,130,245,.28)}
+
     @media(max-width:640px){
       footer.site-footer{padding:1.8rem 1rem 1.1rem}
       .footer-main{grid-template-columns:1fr;gap:1.45rem;margin-bottom:1.4rem}
@@ -360,7 +363,7 @@
       <div class="footer-main">
         <section class="footer-intro" aria-label="About Admission Tracker">
           <div class="footer-brand">
-            <img class="footer-brand-icon" src="/icon.svg" width="48" height="48" alt="">
+            <img class="footer-brand-icon" src="/icon-light.svg" data-light-src="/icon-light.svg" data-dark-src="/icon.svg" width="48" height="48" alt="">
             <h2>Admission Tracker</h2>
           </div>
           <p class="footer-description">Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.</p>
@@ -371,7 +374,7 @@
           <a href="#calendarBox">Admission Calendar</a>
           <a href="#noticeBoard">Notice Board</a>
           <a href="/about">About</a>
-          <a class="footer-home" href="#top">Home</a>
+          <a href="#top">Home</a>
         </nav>
       </div>
       <div class="footer-bottom">
@@ -380,7 +383,7 @@
           <a href="/disclaimer">Disclaimer</a>
           <a href="/contact">Contact</a>
         </nav>
-        <p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at <a class="footer-email" href="mailto:the.abednewaz@gmail.com?subject=Admission%20Tracker%20%E2%80%93%20Contact" data-email="the.abednewaz@gmail.com">the.abednewaz@gmail.com</a></p>
+        <div class="fi footer-credit"><img class="av" src="/Abed_Newaz_Profile.png" width="48" height="48" alt="Abed Newaz"><p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at <a class="footer-email" href="mailto:the.abednewaz@gmail.com?subject=Admission%20Tracker%20%E2%80%93%20Contact" data-email="the.abednewaz@gmail.com">the.abednewaz@gmail.com</a></p></div>
       </div>
     </footer>
   </div>
@@ -494,7 +497,7 @@
       document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});bindScrollReveal();
     }
     const THEME_KEY='adt_theme_v1';
-    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
+    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
     (function(){var s='';try{s=localStorage.getItem(THEME_KEY)||''}catch(e){}applyTheme(s==='dark'?'dark':'light')})();
     document.getElementById('themeToggle').addEventListener('click',function(){applyTheme(document.body.classList.contains('dark')?'light':'dark')});
     var reqOverlay=document.getElementById('reqOverlay'),reqBody=document.getElementById('reqBody'),reqTitle=document.getElementById('reqTitle');
