@@ -1,6 +1,27 @@
 window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
+    "title": "New Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
+    "source": "students.bd"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-business-studies-c-unit-admission-circular-2026-27",
+    "source": "students.bd"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-arts-law-social-science-unit-admission-circular-2026-2027",
+    "source": "students.bd"
+  },
+  {
+    "university": "Dhaka University",
     "title": "New Admission Dhaka University Undergraduate Admission Circular 2026-2027 (Apply Online & Exam Date) 11/14",
     "date": "",
     "url": "https://students.bd/notice/dhaka-university-undergraduate-admission-2026-2027",
