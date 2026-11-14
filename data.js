@@ -20,7 +20,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official AIUB admission requirements for the exact program-specific eligibility criteria.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
-    "requirementsSource": "https://aiub.edu/admission"
+    "requirementsSource": "https://aiub.edu/admission",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e3",
@@ -38,7 +39,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official page lists undergraduate admission test on 27 Nov 2026 at 9:30 AM.",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e4",
@@ -61,7 +63,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official AIUB admission requirements for the exact program-specific eligibility criteria.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
-    "requirementsSource": "https://aiub.edu/admission"
+    "requirementsSource": "https://aiub.edu/admission",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e5",
@@ -79,7 +82,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official admissions page confirms 28 Nov 2026; verify exact venue from admit card.",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e6",
@@ -102,7 +106,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official ULAB admission requirements for the exact undergraduate program eligibility criteria.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T00:08:07+06:00",
-    "requirementsSource": "https://admissions.ulab.edu.bd/graduate-programs/admissions-requirements"
+    "requirementsSource": "https://admissions.ulab.edu.bd/graduate-programs/admissions-requirements",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e7",
@@ -125,7 +130,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Minimum GPA 3.00 in Biology and Chemistry separately in SSC/ “O” level/equivalent and HSC/”A” level/equivalent examinations. GRADUATE ADMISSION REQUIREMENTS The minimum qualification for admission into a graduate program is: 1. The terms & conditions of undergraduate programs mentioned above will be applicable for admission to graduate programs. 2. A relevant undergraduate degree from a recognized university with a GPA of 2.00 or above in a scale of 4.0 3",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:04+06:00",
-    "requirementsSource": "https://admission.uiu.ac.bd/admission/Home.aspx"
+    "requirementsSource": "https://admission.uiu.ac.bd/admission/Home.aspx",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e8",
@@ -180,7 +186,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:06+06:00",
-    "requirementsSource": "https://admission.eis.du.ac.bd"
+    "requirementsSource": "https://admission.eis.du.ac.bd",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e9",
@@ -198,7 +205,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e10",
@@ -253,7 +261,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
-    "requirementsSource": "https://admission.eis.du.ac.bd"
+    "requirementsSource": "https://admission.eis.du.ac.bd",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e11",
@@ -271,7 +280,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": true,
     "previousExamDate": "2026-12-08",
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e12",
@@ -326,7 +336,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
-    "requirementsSource": "https://admission.eis.du.ac.bd"
+    "requirementsSource": "https://admission.eis.du.ac.bd",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e13",
@@ -381,7 +392,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
-    "requirementsSource": "https://admission.eis.du.ac.bd"
+    "requirementsSource": "https://admission.eis.du.ac.bd",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e14",
@@ -436,7 +448,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:15+06:00",
-    "requirementsSource": "https://admission.eis.du.ac.bd"
+    "requirementsSource": "https://admission.eis.du.ac.bd",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e15",
@@ -454,7 +467,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FASS written examination on 02 Jan 2027. Exact time and detailed unit/program mapping are not stated in the notice.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "auto-bup-fst-fet-fms",
@@ -472,7 +486,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FST, FET and FMS written examinations on 08 Jan 2027. Exact time is not stated in the notice.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "auto-bup-fsss",
@@ -490,7 +505,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FSSS written examination on 08 Jan 2027. Exact time is not stated in the notice.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e16",
@@ -509,7 +525,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit A requires combined SSC+HSC GPA 7.00 with at least 3.00 in each examination."
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit A requires combined SSC+HSC GPA 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e17",
@@ -528,7 +545,10 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "For Bangladeshi applicants: SSC/equivalent must be 2023 or 2024 with at least GPA 4.00; HSC/equivalent must be 2026. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00. Biomedical Engineering additionally requires Biology GP 4.00. Check the official circular for the full subject/department rules."
+    "requirements": "For Bangladeshi applicants: (1) SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00; (2) HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later; (3) in HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; (4) Biomedical Engineering requires Biology GP 4.00. GCE O-Level applicants must have at least B in five subjects; A-Level applicants must have at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must meet the equivalent grades/marks stated in the official circular.",
+    "requirementsStatus": "verified",
+    "requirementsSource": "https://admission.kuet.ac.bd/uploads/notices/1.UG-Admission-2026-Circular.pdf",
+    "requirementsLastChecked": "2026-11-15T21:00:00+06:00"
   },
   {
     "id": "e18",
@@ -547,7 +567,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit E requires combined SSC+HSC GPA 5.50 with at least 2.50 in each examination."
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit E requires combined SSC+HSC GPA 5.50 with at least 2.50 in each examination.",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e19",
@@ -601,7 +622,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd"
+    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e20",
@@ -655,7 +677,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd"
+    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e21",
@@ -674,7 +697,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit B requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit B requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination.",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e22",
@@ -692,7 +716,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "BUET's official 2026-27 admission notice confirms the undergraduate admission test on 16 Jan 2027. The notice indicates applications are expected to open on 21 Nov 2026; the application deadline and further details will be published in a subsequent notice.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e23",
@@ -746,7 +771,8 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:43+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd"
+    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e24",
@@ -765,7 +791,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit C requires combined SSC+HSC GPA 6.50 with at least 3.00 in each examination."
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit C requires combined SSC+HSC GPA 6.50 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e25",
@@ -784,7 +811,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit D requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination."
+    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit D requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination.",
+    "requirementsStatus": "verified"
   },
   {
     "id": "e26",
@@ -802,7 +830,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e27",
@@ -820,7 +849,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e28",
@@ -838,7 +868,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e29",
@@ -856,7 +887,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e30",
@@ -874,7 +906,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e31",
@@ -892,7 +925,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e32",
@@ -910,7 +944,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e33",
@@ -933,7 +968,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e34",
@@ -956,7 +992,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e35",
@@ -979,7 +1016,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:47+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e36",
@@ -997,7 +1035,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "The available official AUST undergraduate schedule is for Spring 2026 and has already passed. No confirmed 2026-27 / 2027 undergraduate admission-test date was found.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e37",
@@ -1015,7 +1054,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists FBS written examinations on 01 and 09 Jan 2027. The notice does not specify which FBS programs correspond to each date.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "auto-bup-fbs-2",
@@ -1033,7 +1073,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists FBS written examinations on 01 and 09 Jan 2027. The notice does not specify which FBS programs correspond to each date.",
-    "cycle": "2026-27 / HSC Batch 2026"
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e38",
@@ -1056,7 +1097,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official DGME admission circular and eligibility list for the applicable session and college.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:20:16+06:00",
-    "requirementsSource": "https://dgme.gov.bd/pages/static-pages/6922dfe4933eb65569e2485f"
+    "requirementsSource": "https://dgme.gov.bd/pages/static-pages/6922dfe4933eb65569e2485f",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e39",
@@ -1079,7 +1121,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official Green University of Bangladesh admission requirements for the exact undergraduate program eligibility criteria.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:31:27+06:00",
-    "requirementsSource": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4"
+    "requirementsSource": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "e40",
@@ -1097,7 +1140,8 @@ window.ADMISSION_EXAMS = [
     "dateChanged": false,
     "previousExamDate": null,
     "notes": "Third-party listings suggest a December date, but no official IUB source was located in this check; do not use an unverified date.",
-    "cycle": "Spring 2027 / HSC Batch 2026"
+    "cycle": "Spring 2027 / HSC Batch 2026",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "e43",
@@ -1120,7 +1164,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "At present, no admission test is scheduled for these programs. All official announcements regarding admission notices, eligibility criteria, application procedures, and test schedules will be published exclusively through CUET's official website and other authorized channels. Prospective applicants are strongly advised to regularly visit the CUET website to stay informed about the latest updates, notifications, and official instructions regarding undergraduate admissions. The examination center will be decided according to the grade points and marks obtained by the candidate in the four subjects, namely Mathematics, Science, Chemistry and English in Higher Secondary or equivalent examination and the candidates preference. The university and the department for admission will be determined according to the merit rank obtained in the admission test by the candidate and his/her preference",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:00+06:00",
-    "requirementsSource": "https://cuet.ac.bd/admission"
+    "requirementsSource": "https://cuet.ac.bd/admission",
+    "requirementsStatus": "verified"
   },
   {
     "id": "auto-ku-cd",
@@ -1143,7 +1188,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
-    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf"
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "auto-ku-ab",
@@ -1166,7 +1212,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
-    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf"
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official"
   },
   {
     "id": "auto-mist-c",
@@ -1185,7 +1232,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2027-01-15",
     "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: C Unit (Science) will be held on 5 February 2027, Friday, in the morning. The exact clock time and centre details are not yet verified here.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "source": "https://www.mist.ac.bd/"
+    "source": "https://www.mist.ac.bd/",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "auto-mist-ab",
@@ -1204,7 +1252,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2027-01-22",
     "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: A & B Units will be held on 6 February 2027, Saturday; A+B in the morning and the remaining B Unit examination in the afternoon. The exact clock times and centre details are not yet verified here.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "source": "https://www.mist.ac.bd/"
+    "source": "https://www.mist.ac.bd/",
+    "requirementsStatus": "not_published"
   },
   {
     "id": "auto-iut",
@@ -1227,7 +1276,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "ENTRY REQUIREMENTS (for Host Country Applicants) Undergraduate Programmes (only Muslim applicants of OIC member countries can apply for admission in IUT) BSc Engineering and BBA Student from Host Country under National Curriculum SSC or Equivalent: Student from only Science group can apply Minimum CGPA 4.50 out of 5.00 Must have to pass in 2022 or later HSC or Equivalent: Student from only Science group can apply Minimum CGPA 4.50 out of 5.00 Must have to pass in 2025 or 2024 Must Have A+ grades in following Subjects Physics Chemistry Mathematics Must Have minimum A grade in following Subject English Student from O/A Level or Equivalent O Level or Equivalent: Must have at least B in any two subjects among Mathematics , Physics and Chemistry and minimum C grade in the remaining subject mentioned above. Must have at least B grade in English Must have completed in 2022 or later A Level or Equivalent: Mathematics, Physics and Chemistry with Minimum grade A Must have completed in 2025 or 2024 If the transcript provides both grades and marks, then the grades will be considered only for entry requirement. If the transcript shows only marks, then marks will be converted into grades according to the following table: Marks O/A level Grade Point A*-G Grading 9-1 Grading 80-100 A/A* 9, 8, 7 5.00 70-79 B 5, 6 4.00 60-69 C 4 3.50 Technical Education Bachelor of Science in Technical Education (BScTE), Duration: 3 years The candidate must have 3 or 4 years Diploma in Engineering/Technology or the equivalent having minimum CGPA of 3.25 (out of 4.0) . Postgraduate Programmes Engineering Doctor of Philosophy MSc in relevant field or equivalent Minimum CGPA of 2.5 (out of 4.0) or 3.0 (out of 5.0) in both MSc and BSc degrees Master of Science in Engineering (M.Sc.Engg) / Master of Engineering (M.Engg) BSc in engineering or equivalent in relevant field Minimum CGPA of 2.5 (out of 4.0) or 3.0 (out of 5.0) in the BSc degree Technical Education Master of Science in Technical Education (M.Sc. TE) Duration: 2 years The applicant must have B.Sc.TE or B.Sc.Engg",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:14+06:00",
-    "requirementsSource": "https://admission.iutoic-dhaka.edu/information/entry-requirements"
+    "requirementsSource": "https://admission.iutoic-dhaka.edu/information/entry-requirements",
+    "requirementsStatus": "verified"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1248,7 +1298,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1269,7 +1320,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1290,7 +1342,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1311,6 +1364,7 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:19+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index"
+    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
+    "requirementsStatus": "check_official"
   }
 ];
