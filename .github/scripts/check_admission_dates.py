@@ -15,8 +15,8 @@ import pytesseract
 
 DATA_FILE = Path("data.js")
 TIMEOUT = 30
-MAX_LINKED_PDFS = 12
-MAX_LINKED_REQUIREMENT_PAGES = 8
+MAX_LINKED_PDFS = 16
+MAX_LINKED_REQUIREMENT_PAGES = 14
 CYCLE_START = date(2026, 11, 1)
 CYCLE_END = date(2027, 12, 31)
 HEADERS = {
@@ -133,10 +133,69 @@ SOURCE_FALLBACKS = {
     ],
 }
 
+LINK_HINT_RE = re.compile(
+    r"requirement|eligibility|eligible|qualification|criteria|guideline|"
+    r"prospectus|circular|admission|notice|brochure|academic requirement|"
+    r"minimum requirement|ভর্তির যোগ্যতা|যোগ্যতা|ভর্তির শর্ত|বিজ্ঞপ্তি|সার্কুলার|প্রসপেক্টাস",
+    re.I,
+)
+
+# Extra official hosts the tracker is allowed to read when the configured
+# URL lives on a sibling admission portal. Keys are www-stripped.
+DOMAIN_ALIASES = {
+    "dgme.teletalk.com.bd": {"dgme.gov.bd"},
+    "admission.mist.ac.bd": {"mist.ac.bd"},
+    "admissions.northsouth.edu": {"northsouth.edu"},
+    "iub.edu.bd": {"admission.iub.edu.bd"},
+    "gstadmission.ac.bd": {"just.edu.bd", "nstu.edu.bd"},
+    "bracu.ac.bd": {"brac.ac.bd"},
+    "ewubd.edu": {"ewubd.edu"},
+    "aiub.edu": {"admission.aiub.edu"},
+}
+
+
+def host_of(url):
+    return urlparse(url or "").netloc.lower().removeprefix("www.")
+
+
+def source_allowed(official_url, source_url):
+    official = host_of(official_url)
+    source = host_of(source_url)
+    if not official or not source:
+        return False
+    allowed = {official, *DOMAIN_ALIASES.get(official, set())}
+    for base in allowed:
+        if source == base or source.endswith("." + base):
+            return True
+        # Official URL is often a subdomain (admission.example.ac.bd) while
+        # the circular lives on the parent (example.ac.bd). Require a real
+        # institutional parent, not a public suffix like ac.bd.
+        if official.endswith("." + source) and source.count(".") >= 2:
+            return True
+    return False
+
+
+def page_blocks(soup):
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    blocks = []
+    for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "li", "tr"]):
+        text = " ".join(el.get_text(" ", strip=True).split())
+        if len(text) < 12:
+            continue
+        if blocks and (text == blocks[-1] or text in blocks[-1]):
+            continue
+        blocks.append(text)
+    if blocks:
+        return "\n".join(blocks)
+    return soup.get_text("\n", strip=True)
+
+
 def request_source(url):
-    candidates = [url]
     host = urlparse(url).netloc.lower()
+    candidates = [url]
     candidates.extend(SOURCE_FALLBACKS.get(host, []))
+    candidates.extend(SOURCE_FALLBACKS.get(host.removeprefix("www."), []))
 
     last_error = None
     browser_headers = {
@@ -188,14 +247,26 @@ def fetch(url):
         if urlparse(href).scheme not in ("http", "https"):
             continue
         low = f"{href} {label}".lower()
-        if ".pdf" in href.lower() or "pdf" in label.lower() or "notice" in label.lower():
+        parsed = urlparse(href)
+        if parsed.netloc and not source_allowed(final_url, href):
+            continue
+        is_pdf = ".pdf" in href.lower() or href.lower().split("?")[0].endswith(".pdf")
+        if is_pdf or "pdf" in label.lower():
             pdfs.append(href)
-        if re.search(r"requirement|eligibility|eligible|qualification|minimum requirement|ভর্তির যোগ্যতা|যোগ্যতা", low, re.I):
-            requirement_pages.append(href)
-    for tag in soup(["script", "style", "noscript"]):
-        tag.decompose()
+        elif LINK_HINT_RE.search(low) and not re.search(r"\b(home|login|contact|gallery)\b", low):
+            # "admission" alone matches almost every menu item. Require a
+            # stronger hint, or the word admission together with a doc-like path.
+            strong = re.search(
+                r"requirement|eligibility|qualification|criteria|guideline|"
+                r"prospectus|circular|notice|brochure|যোগ্যতা|বিজ্ঞপ্তি|সার্কুলার|প্রসপেক্টাস",
+                low,
+                re.I,
+            )
+            doc_path = re.search(r"admission.*(pdf|notice|circular|eligib|require|guideline)", low, re.I)
+            if strong or doc_path:
+                requirement_pages.append(href)
     return (
-        normalize(soup.get_text(" ", strip=True)),
+        normalize(page_blocks(soup)),
         final_url,
         list(dict.fromkeys(pdfs))[:MAX_LINKED_PDFS],
         list(dict.fromkeys(requirement_pages))[:MAX_LINKED_REQUIREMENT_PAGES],
@@ -376,6 +447,10 @@ def requirement_candidates(text):
             score += 30
         if re.search(r"minimum gpa|minimum grade|gpa|grade|ssc|hsc|equivalent", block, re.I):
             score += 30
+        if re.search(r"\b(ssc|hsc|o-?level|a-?level)\b", block, re.I) and re.search(
+            r"\b\d\.\d{2}\b|gpa|জিপিএ", block, re.I
+        ):
+            score += 50
         if re.search(r"ভর্তির যোগ্যতা|যোগ্যতা|সমমান|জিপিএ|এসএসসি|এইচএসসি", block, re.I):
             score += 30
         if len(block) > 500:
@@ -398,18 +473,7 @@ def choose_requirement(row, texts):
     candidates = []
 
     for text, source_url in texts:
-        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
-        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
-        allowed_domains = {official_domain}
-        if official_domain == "dgme.teletalk.com.bd":
-            allowed_domains.add("dgme.gov.bd")
-        if official_domain.endswith(".mist.ac.bd"):
-            allowed_domains.add("mist.ac.bd")
-        if official_domain == "www.iub.edu.bd":
-            allowed_domains.add("admission.iub.edu.bd")
-        if official_domain == "gstadmission.ac.bd":
-            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
-        if official_domain and source_domain and source_domain not in allowed_domains:
+        if not source_allowed(row.get("officialUrl", ""), source_url):
             continue
 
         for score, block in requirement_candidates(text):
@@ -466,18 +530,7 @@ def choose_group_requirements(row, texts):
 
     found = {}
     for text, source_url in texts:
-        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
-        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
-        allowed_domains = {official_domain}
-        if official_domain == "dgme.teletalk.com.bd":
-            allowed_domains.add("dgme.gov.bd")
-        if official_domain.endswith(".mist.ac.bd"):
-            allowed_domains.add("mist.ac.bd")
-        if official_domain == "www.iub.edu.bd":
-            allowed_domains.add("admission.iub.edu.bd")
-        if official_domain == "gstadmission.ac.bd":
-            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
-        if official_domain and source_domain and source_domain not in allowed_domains:
+        if not source_allowed(row.get("officialUrl", ""), source_url):
             continue
 
         for group, items in extract_group_requirement_candidates(text).items():
@@ -529,18 +582,7 @@ def choose_exam_date(row, texts):
     keywords = row_keywords(row)
 
     for text, source_url in texts:
-        source_domain = urlparse(source_url).netloc.lower().removeprefix("www.")
-        official_domain = urlparse(row.get("officialUrl", "")).netloc.lower().removeprefix("www.")
-        allowed_domains = {official_domain}
-        if official_domain == "dgme.teletalk.com.bd":
-            allowed_domains.add("dgme.gov.bd")
-        if official_domain.endswith(".mist.ac.bd"):
-            allowed_domains.add("mist.ac.bd")
-        if official_domain == "www.iub.edu.bd":
-            allowed_domains.add("admission.iub.edu.bd")
-        if official_domain == "gstadmission.ac.bd":
-            allowed_domains.update({"admission.just.edu.bd", "www.nstu.edu.bd"})
-        if official_domain and source_domain and source_domain not in allowed_domains:
+        if not source_allowed(row.get("officialUrl", ""), source_url):
             continue
 
         for date_value, strength, ctx in extract_dates(text):
