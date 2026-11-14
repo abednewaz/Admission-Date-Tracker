@@ -323,9 +323,9 @@
     <footer>
       <div class="fi">
         <img class="av" src="Abed_Newaz_Profile.png" alt="Abed Newaz">
-        <p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at the.abednewaz@gmail.com</p>
+        <p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at <a class="footer-email" href="mailto:the.abednewaz@gmail.com?subject=Admission%20Tracker%20%E2%80%93%20Contact" data-email="the.abednewaz@gmail.com">the.abednewaz@gmail.com</a></p>
       </div>
-      <nav class="footer-links" aria-label="Site information"><a href="./about.html">About</a><a href="./privacy.html">Privacy</a><a href="./disclaimer.html">Disclaimer</a><a href="./contact.html">Contact</a></nav>
+      <nav class="footer-links" aria-label="Site information"><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/disclaimer">Disclaimer</a><a href="/contact">Contact</a></nav>
     </footer>
   </div>
   <script src="data.js"></script>
@@ -477,5 +477,18 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     renderCalendar();
     renderMarked();
   </script>
-</body>
+<script>
+(function(){
+  document.querySelectorAll('[data-email]').forEach(function(a){
+    a.addEventListener('click',function(ev){
+      if(window.matchMedia && window.matchMedia('(min-width: 768px)').matches){
+        ev.preventDefault();
+        var to=encodeURIComponent(a.getAttribute('data-email'));
+        var subject=encodeURIComponent('Admission Tracker – Contact');
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject,'_blank','noopener');
+      }
+    });
+  });
+})();
+</script></body>
 </html>
