@@ -1,32 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Admission Tracker graduate stopwatch icon for light mode</title>
   <desc id="desc">A graduate wearing a mortarboard and round glasses holds a stopwatch.</desc>
-  <rect width="512" height="512" rx="88" fill="#00CBE5"/>
+  <rect width="512" height="512" rx="88" fill="#49B7C5"/>
   <g fill="none" stroke="#151329" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Graduation cap and tassel -->
     <path d="M70 116 253 42l188 74-188 78L70 116Z"/>
     <path d="M130 140v55m0 0c-16 15-18 37-5 54m5-54c16 15 18 37 5 54"/>
     <path d="M153 151v40c53 33 151 34 204 0v-40"/>
-    <!-- Head and round glasses -->
     <path d="M158 207c0-39 38-68 98-68s98 29 98 68v51c0 63-43 105-98 105s-98-42-98-105v-51Z"/>
     <circle cx="218" cy="239" r="35"/>
     <circle cx="294" cy="239" r="35"/>
     <path d="M253 237h6m-76-34-24-2m145 2 24-2M246 300q12 10 24 0"/>
-    <!-- Neck, gown, stole -->
     <path d="M238 359v28m42-28v28"/>
     <path d="M238 384 165 409l-61 58 38 30 78-51 36 32 37-32 78 51 38-30-61-58-72-25"/>
     <path d="m205 397 51 81 51-81m-51 81v34"/>
     <path d="M256 478 241 449l15-18 15 18-15 29Z"/>
-    <!-- Arm holding stopwatch -->
     <path d="M370 420c28-20 43-47 48-78"/>
     <path d="M409 342c-13-12-16-32-9-49 7-16 25-26 43-22 20 4 33 22 31 42-2 21-19 37-40 37"/>
-    <!-- Stopwatch -->
     <rect x="418" y="173" width="24" height="18" rx="4"/>
     <path d="M430 191v12"/>
     <circle cx="430" cy="257" r="57"/>
     <path d="M430 257 456 230m-26 27v-28m-39 28h8"/>
     <path d="M469 186l12-13m-1 43 15-4"/>
-    <!-- Free arm / hand at hip -->
     <path d="M166 410c-30 8-49 34-47 62 1 13 8 23 19 27"/>
     <path d="M138 475c-8 10-6 18 5 23m0 0 18-14"/>
   </g>
