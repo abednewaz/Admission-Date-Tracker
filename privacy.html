@@ -12,7 +12,7 @@ main{background:var(--card);border:1px solid var(--border);border-radius:18px;pa
 (function(){
   var d=document,mode='';
   try{mode=localStorage.getItem('adt_theme_v1')||''}catch(e){}
-  var dark=mode==='dark'||(!mode&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  var dark=mode!=='light';
   if(dark)d.documentElement.classList.add('dark-pre');
   d.body.classList.toggle('dark',dark);
   var b=d.getElementById('theme');
