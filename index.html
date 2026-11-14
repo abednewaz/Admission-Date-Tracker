@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#5b5bd6">
+  <meta name="theme-color" content="#0d1220">
   <meta name="description" content="Admission Tracker – Track university admission dates, application deadlines, exam schedules, admission requirements, and upcoming notices from universities across Bangladesh, all in one place.">
 
   <meta name="mobile-web-app-capable" content="yes">
@@ -11,8 +11,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Admission Tracker">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="shortcut icon" href="/icon.svg">
   <title>Admission Tracker</title>
   <link rel="canonical" href="https://admissiontracker.site/">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -288,11 +288,43 @@
     footer .footer-email:hover,footer .footer-email:focus-visible{color:#7667e8;text-decoration:underline;text-underline-offset:3px}
     body.dark footer .footer-email{color:#b8adff}
     body.dark footer .footer-email:hover,body.dark footer .footer-email:focus-visible{color:#d4ceff;text-decoration:underline;text-underline-offset:3px}
-  </style>
+  
+    /* Branded footer */
+    footer.site-footer{margin-top:auto;padding:2.5rem 1.25rem 1.35rem;background:var(--card);border-top:1px solid var(--border)}
+    .footer-main{max-width:1040px;margin:0 auto 2rem;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:2.5rem;align-items:start}
+    .footer-brand{display:flex;align-items:center;gap:.75rem;margin-bottom:.8rem}
+    .footer-brand-icon{width:2.7rem;height:2.7rem;object-fit:contain;display:block;flex-shrink:0;border-radius:10px}
+    .footer-brand h2{font-size:1.25rem;font-weight:750;letter-spacing:-.025em;color:var(--text)}
+    .footer-description{max-width:620px;color:var(--muted);font-size:.94rem;line-height:1.65}
+    .footer-quicklinks{display:flex;flex-direction:column;align-items:stretch;gap:.38rem}
+    .footer-quicklinks h2{font-size:1.02rem;font-weight:750;color:var(--text);margin-bottom:.35rem;text-align:right}
+    .footer-quicklinks a{display:block;text-align:right;padding:.43rem .7rem;border:1px solid transparent;border-radius:9px;color:var(--muted);font-size:.88rem;text-decoration:none;transition:background .16s,border-color .16s,color .16s}
+    .footer-quicklinks a:hover,.footer-quicklinks a:focus-visible{background:var(--bg);border-color:var(--border);color:var(--pri)}
+    .footer-quicklinks a.footer-home{margin-top:.38rem;border-color:rgba(139,130,245,.35);background:rgba(139,130,245,.10);color:var(--pri);font-weight:750}
+    .footer-bottom{max-width:1040px;margin:0 auto;padding-top:1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .footer-legal{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    .footer-legal a{font-size:.76rem;color:var(--muted);text-decoration:none}
+    .footer-legal a:hover{color:var(--pri);text-decoration:underline}
+    .footer-bottom .cr{font-size:.74rem}
+    body.dark footer.site-footer{background:#101625;border-top-color:#283149}
+    body.dark .footer-quicklinks a.footer-home{background:rgba(139,130,245,.12);border-color:rgba(139,130,245,.28)}
+    @media(max-width:640px){
+      footer.site-footer{padding:1.8rem 1rem 1.1rem}
+      .footer-main{grid-template-columns:1fr;gap:1.45rem;margin-bottom:1.4rem}
+      .footer-brand{gap:.65rem}
+      .footer-brand-icon{width:2.45rem;height:2.45rem}
+      .footer-brand h2{font-size:1.12rem}
+      .footer-description{font-size:.86rem;line-height:1.6}
+      .footer-quicklinks{max-width:100%;gap:.3rem}
+      .footer-quicklinks h2{text-align:left;margin-bottom:.2rem}
+      .footer-quicklinks a{text-align:left;padding:.48rem .7rem}
+      .footer-bottom{align-items:flex-start;flex-direction:column;gap:.75rem}
+    }
+</style>
 </head>
 <body>
   <button class="theme-toggle" id="themeToggle" type="button">☾ Dark</button>
-  <div class="app">
+  <div class="app" id="top">
     <header>
       <div class="header-brand">
         <img class="header-logo" src="icon.svg" width="40" height="40" alt="" aria-hidden="true">
@@ -324,12 +356,32 @@
     </main>
     <aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><button class="nb-head" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></button><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside>
     <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
-    <footer>
-      <div class="fi">
-        <img class="av" src="Abed_Newaz_Profile.png" alt="Abed Newaz">
+    <footer class="site-footer">
+      <div class="footer-main">
+        <section class="footer-intro" aria-label="About Admission Tracker">
+          <div class="footer-brand">
+            <img class="footer-brand-icon" src="/icon.svg" width="48" height="48" alt="">
+            <h2>Admission Tracker</h2>
+          </div>
+          <p class="footer-description">Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.</p>
+        </section>
+        <nav class="footer-quicklinks" aria-label="Quick links">
+          <h2>Quick Links</h2>
+          <a href="#list">Universities</a>
+          <a href="#calendarBox">Admission Calendar</a>
+          <a href="#noticeBoard">Notice Board</a>
+          <a href="/about">About</a>
+          <a class="footer-home" href="#top">Home</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <nav class="footer-legal" aria-label="Site information">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/disclaimer">Disclaimer</a>
+          <a href="/contact">Contact</a>
+        </nav>
         <p class="cr">Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at <a class="footer-email" href="mailto:the.abednewaz@gmail.com?subject=Admission%20Tracker%20%E2%80%93%20Contact" data-email="the.abednewaz@gmail.com">the.abednewaz@gmail.com</a></p>
       </div>
-      <nav class="footer-links" aria-label="Site information"><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/disclaimer">Disclaimer</a><a href="/contact">Contact</a></nav>
     </footer>
   </div>
   <script src="data.js"></script>
@@ -455,7 +507,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
-    async function showExamNotification(title,body,tag){try{if(!('Notification' in window)||Notification.permission!=='granted')return;var reg=await navigator.serviceWorker.ready;await reg.showNotification(title,{body:body,icon:'./icon-192.png',badge:'./icon-192.png',tag:tag,data:{url:'./'}})}catch(e){}}
+    async function showExamNotification(title,body,tag){try{if(!('Notification' in window)||Notification.permission!=='granted')return;var reg=await navigator.serviceWorker.ready;await reg.showNotification(title,{body:body,icon:'./icon.svg',badge:'./icon.svg',tag:tag,data:{url:'./'}})}catch(e){}}
     function checkExamNotifications(){if(!('Notification' in window)||Notification.permission!=='granted')return;var now=Date.now(),marked=getMarked(),sent={};try{sent=JSON.parse(localStorage.getItem('adt_sent_notifications_v1')||'{}')}catch(e){};exams.forEach(function(e){if(marked.indexOf(e.universityName)===-1)return;var d=examMoment(e);if(!d)return;var diff=d.getTime()-now,key=String(e.id);if(diff>0&&diff<=604800000&&!sent[key+'-7d']){sent[key+'-7d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 1 week: '+e.universityName+' — '+e.unit,key+'-7d')}if(diff>0&&diff<=172800000&&!sent[key+'-2d']){sent[key+'-2d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 2 days: '+e.universityName+' — '+e.unit,key+'-2d')}if(diff>0&&diff<=86400000&&!sent[key+'-24h']){sent[key+'-24h']=Date.now();showExamNotification('Admission Date Tracker','Exam tomorrow: '+e.universityName+' — '+e.unit,key+'-24h')}if(diff>0&&diff<=3600000&&!sent[key+'-1h']){sent[key+'-1h']=Date.now();showExamNotification('Admission Date Tracker','Exam in about 1 hour: '+e.universityName+' — '+e.unit,key+'-1h')}});try{localStorage.setItem('adt_sent_notifications_v1',JSON.stringify(sent))}catch(e){}}
     if(!('Notification' in window)){hideNotif()}else if(Notification.permission==='granted'){hideNotif()}else{document.getElementById('enN').addEventListener('click',async function(){var p=await Notification.requestPermission();if(p==='granted'){hideNotif();checkExamNotifications()}else if(p==='denied'){hideNotif()}})}
     setInterval(checkExamNotifications,60000)
