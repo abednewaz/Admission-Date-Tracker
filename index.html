@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#1e3a5f">
+  <meta name="theme-color" content="#5b5bd6">
   <meta name="description" content="Admission Tracker – Track university admission dates, application deadlines, exam schedules, admission requirements, and upcoming notices from universities across Bangladesh, all in one place.">
 
   <meta name="mobile-web-app-capable" content="yes">
@@ -95,6 +95,100 @@
     .cr{font-size:.74rem;color:var(--muted);line-height:1.4}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .theme-toggle{position:fixed;top:.7rem;right:.7rem;z-index:50;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.18);color:#fff;border-radius:999px;padding:.42rem .62rem;font-size:.78rem;font-weight:700;cursor:pointer;backdrop-filter:blur(8px)}.req-btn{display:block;width:100%;margin-top:.55rem;padding:.55rem;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:8px;font-size:.84rem;font-weight:700;cursor:pointer}.req-overlay{position:fixed;inset:0;background:rgba(0,0,0,.58);z-index:100;display:none;align-items:flex-end;justify-content:center;padding:1rem}.req-overlay.show{display:flex}.req-modal{width:min(640px,100%);max-height:85dvh;overflow:auto;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:16px;padding:1rem;box-shadow:0 20px 50px rgba(0,0,0,.3)}.req-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.7rem;margin-bottom:.8rem}.req-head h2{font-size:1.05rem}.req-close{border:0;background:var(--bg);color:var(--text);width:2rem;height:2rem;border-radius:50%;font-size:1.2rem;cursor:pointer}.req-body{font-size:.88rem;line-height:1.55;color:var(--muted)}.req-group-select{width:100%;margin-top:.45rem;margin-bottom:.85rem;padding:.62rem .7rem;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text);font-size:.86rem;font-weight:650;outline:none}.req-group-select:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}.req-groups{display:none}.req-group-btn{display:none}.req-group-btn.on{display:none}.req-section{scroll-margin-top:.75rem;padding:.75rem 0 1rem;border-top:1px solid var(--border)}.req-section:first-of-type{border-top:0}.req-section h3{font-size:.92rem;color:var(--text);margin-bottom:.3rem}.req-section p{margin:0}.req-note{margin-top:.8rem;padding:.65rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-eligible{margin-top:.8rem;padding:.7rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-ineligible{margin-top:.8rem;padding:.7rem .75rem;border:1px solid var(--border);border-radius:9px;background:var(--bg)}.req-link{display:block;margin-top:.8rem;text-align:center;text-decoration:none;background:var(--pri);color:#fff;padding:.58rem;border-radius:8px;font-weight:700;font-size:.84rem}body.dark .tabs{background:#202832}body.dark .tabs button.on{background:#303945}body.dark .install-box{background:#202b38}body.dark .nitem.hi{background:#332327}body.dark .ncat{background:#293747;color:#9db7d4}body.dark .gap{background:#332327;border-color:#6b3538}body.dark .bpub{background:#273542;color:#a9c1da}body.dark .bpri{background:#302c39;color:#c0aed6}body.dark .chg{background:#332f24;border-color:#665a2d}body.dark .cds,body.dark .live-cd.unknown{background:#332f24;color:#dfc979}body.dark .cdn{background:#20352a;color:#9bd3ac}body.dark .cdd{background:#29313a;color:#aab4c0}body.dark .cdu,body.dark .live-cd{background:#263542;color:#a9c1da}body.dark .closest{background:linear-gradient(135deg,#202d3a 0%,#20332e 100%);border-color:#354957}body.dark .calendar-day.has-exam{background:#332327;color:#e77979}body.dark .calendar-day .dot{background:#d85f5f}body.dark .marked-card{background:#202832}body.dark .mark-btn{background:#202832;color:#a9c1da}body.dark .mark-btn:hover{background:#293440;border-color:#435365}body.dark .mark-btn.marked{background:#263542;border-color:#4b6278}body.dark .clear{background:#303640;color:#c1c8d1}body.dark .search::placeholder{color:#7f8996}body.dark .search:focus{box-shadow:0 0 0 3px rgba(127,155,189,.12)}body.dark .req-group-select{background:#151b23}body.dark .req-close{background:#252d37}    button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
+    /* Modern visual layer — keeps the existing layout and functionality intact */
+    :root{
+      --bg:#f5f7ff;--card:#ffffff;--text:#182033;--muted:#68738a;
+      --pri:#5b5bd6;--pri2:#7667e8;--red:#e35d6a;--green:#24a56a;
+      --border:#e5e8f2;--sh:0 8px 28px rgba(44,55,105,.08),0 2px 8px rgba(44,55,105,.04);--r:16px
+    }
+    body.dark{
+      --bg:#0d1220;--card:#151c2d;--text:#edf1fb;--muted:#9ca7bc;
+      --pri:#8b82f5;--pri2:#a79ff8;--red:#f0808b;--green:#67d39b;
+      --border:#283149;--header:#171d35;--sh:0 10px 30px rgba(0,0,0,.24)
+    }
+    body{background:
+      radial-gradient(circle at 8% 0%,rgba(118,103,232,.10),transparent 25rem),
+      radial-gradient(circle at 92% 5%,rgba(52,211,153,.07),transparent 22rem),
+      var(--bg)}
+    header{
+      position:relative;overflow:hidden;
+      background:linear-gradient(135deg,#5146c9 0%,#6764df 48%,#4f8fe8 100%);
+      padding:1.45rem 1rem 1.65rem;
+      box-shadow:0 8px 28px rgba(65,62,170,.20)
+    }
+    header::before,header::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+    header::before{width:18rem;height:18rem;right:-7rem;top:-11rem;background:rgba(255,255,255,.10)}
+    header::after{width:12rem;height:12rem;left:-6rem;bottom:-9rem;background:rgba(255,255,255,.08)}
+    .header-brand,.sub,.tag{position:relative;z-index:1}
+    .header-logo{border-radius:.7rem;box-shadow:0 5px 16px rgba(0,0,0,.16)}
+    header h1{font-size:1.5rem;letter-spacing:-.035em}
+    .sub{max-width:900px;margin:0 auto;font-size:.91rem;line-height:1.55;opacity:.94}
+    .tag{margin-top:.35rem;font-weight:700;letter-spacing:.03em}
+    .content-shell{max-width:1040px;grid-template-columns:minmax(0,610px) minmax(225px,300px);gap:2rem;padding-top:1.35rem}
+    .search{border-color:#dfe3ef;box-shadow:0 5px 18px rgba(50,60,110,.05);transition:.2s}
+    .search:focus{border-color:var(--pri2);box-shadow:0 0 0 4px rgba(118,103,232,.13),0 8px 24px rgba(50,60,110,.08)}
+    .stats{gap:.7rem}
+    .stat{border-radius:15px;padding:.82rem .45rem;box-shadow:var(--sh);transition:transform .18s,box-shadow .18s}
+    .stat:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(44,55,105,.12)}
+    .stat b{color:var(--pri)}
+    .tabs{background:#e9eafa;padding:.32rem;gap:.4rem;box-shadow:inset 0 1px 2px rgba(50,60,110,.05)}
+    .tabs button{padding:.55rem .7rem}
+    .tabs button.on{color:var(--pri);box-shadow:0 3px 10px rgba(44,55,105,.10)}
+    .card,.notice,.calendar-box,.marked-section,.notice-board{border-color:#e4e7f0;box-shadow:var(--sh)}
+    .card{border-radius:16px;padding:1rem;transition:transform .18s,box-shadow .18s,border-color .18s}
+    .card:hover{transform:translateY(-2px);border-color:#d2d5eb;box-shadow:0 14px 34px rgba(44,55,105,.11)}
+    .group{margin-bottom:1.6rem}
+    .gt{color:#7a849a;letter-spacing:.08em}
+    .badge{border-radius:999px;padding:.22rem .5rem}
+    .bpub{background:#eef2ff;color:#5752b8}.bpri{background:#f5efff;color:#7a52b8}
+    .btn{background:linear-gradient(135deg,var(--pri),var(--pri2));border-radius:10px;box-shadow:0 5px 14px rgba(91,91,214,.18)}
+    .btn:hover,.btn:focus{background:linear-gradient(135deg,#4d4cc3,#6657db)}
+    .calendar-box,.marked-section,.notice-board{border-radius:16px}
+    .calendar-head,.marked-head,.nb-head{padding:.9rem 1rem}
+    .calendar-head h2,.marked-head h2,.nb-head h2,.ntog h2{color:var(--pri)}
+    .calendar-nav button{border-radius:9px;color:var(--pri);transition:.15s}
+    .calendar-nav button:hover{background:#eef0ff;border-color:#cfd3f0}
+    .calendar-day.has-exam{background:#fff0f2;color:#cf4352}
+    .calendar-day.today{outline:2px solid rgba(91,91,214,.55);outline-offset:-2px}
+    .marked-card{border-radius:12px;background:#fafbff}
+    .live-cd{background:#eef0ff;color:#5149bd;border-radius:10px}
+    .mark-btn{border-radius:9px;background:#fff}
+    .mark-btn.marked{background:#eef0ff;border-color:#cdd0f4;color:#5149bd}
+    .notice-board{top:1.25rem}
+    .nb-head{background:linear-gradient(135deg,rgba(91,91,214,.08),rgba(79,143,232,.05))}
+    .nb-live{background:#e7f8ef;color:#198553;padding:.2rem .5rem}
+    .nb-item{transition:background .15s,transform .15s}
+    .nb-item:hover{background:#f4f5ff;transform:translateX(2px)}
+    .install-box{background:linear-gradient(135deg,#f0f1ff,#eef8ff);border:1px solid #dfe3f5}
+    .notif{background:linear-gradient(135deg,#fff,#f7f7ff)}
+    .notif button,.install-box button{background:linear-gradient(135deg,var(--pri),var(--pri2));border-radius:10px}
+    footer{background:rgba(255,255,255,.72);backdrop-filter:blur(10px)}
+    .theme-toggle{background:rgba(17,20,40,.22);border-color:rgba(255,255,255,.35);box-shadow:0 5px 18px rgba(0,0,0,.12)}
+    body.dark{
+      background:
+        radial-gradient(circle at 8% 0%,rgba(139,130,245,.10),transparent 25rem),
+        radial-gradient(circle at 92% 5%,rgba(103,211,155,.06),transparent 22rem),
+        var(--bg)
+    }
+    body.dark header{background:linear-gradient(135deg,#29235f 0%,#35337b 48%,#28517f 100%);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    body.dark .tabs{background:#1b2335}
+    body.dark .tabs button.on{background:#27304a;color:#a79ff8}
+    body.dark .search{border-color:#303a53}
+    body.dark .card,.dark .notice,.dark .calendar-box,.dark .marked-section,.dark .notice-board{border-color:#29344b}
+    body.dark .card:hover{border-color:#3a4661;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+    body.dark .bpub{background:#252d48;color:#b6b1ff}.dark .bpri{background:#30283f;color:#c9a9ef}
+    body.dark .calendar-day.has-exam{background:#38232b;color:#f0808b}
+    body.dark .calendar-nav button{background:#1a2233}
+    body.dark .calendar-nav button:hover{background:#27304a}
+    body.dark .marked-card{background:#192236}
+    body.dark .live-cd{background:#252b49;color:#b6b1ff}
+    body.dark .mark-btn{background:#192236}
+    body.dark .mark-btn.marked{background:#252b49;border-color:#4c5280;color:#b6b1ff}
+    body.dark .nb-head{background:linear-gradient(135deg,rgba(139,130,245,.12),rgba(79,143,232,.07))}
+    body.dark .nb-item:hover{background:#1e2639}
+    body.dark .install-box{background:linear-gradient(135deg,#1d2440,#182d3b)}
+    body.dark .notif{background:linear-gradient(135deg,#171d2e,#1b2136)}
+    body.dark footer{background:rgba(21,28,45,.82)}
     @media(max-width:900px){.content-shell{display:block;max-width:640px}.notice-board{position:static;margin-top:1rem}.nb-list{max-height:520px}}@media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}.content-shell{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
   </style>
 </head>
