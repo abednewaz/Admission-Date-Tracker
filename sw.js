@@ -1,6 +1,5 @@
-const CACHE = 'adt-v7';
+const CACHE = 'adt-v8';
 const ASSETS = [
-  './',
   './Abed_Newaz_Profile.png',
   './manifest.webmanifest',
   './icon.svg',
@@ -30,13 +29,7 @@ self.addEventListener('fetch', (e) => {
   const isLiveData = url.pathname.endsWith('/index.html') || url.pathname.endsWith('/data.js') || url.pathname.endsWith('/');
   if (isLiveData) {
     e.respondWith(
-      fetch(new Request(e.request, {cache:'no-store'})).then((res) => {
-        if (res && res.status === 200 && res.type === 'basic') {
-          const clone = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(e.request, clone));
-        }
-        return res;
-      }).catch(() => caches.match(e.request))
+      fetch(new Request(e.request, {cache:'no-store'}))
     );
     return;
   }
