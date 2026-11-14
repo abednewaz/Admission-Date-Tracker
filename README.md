@@ -63,7 +63,7 @@ data.js is intentionally kept human-readable because it is both application data
 
 ## Automatic date checking
 
-GitHub Actions checks the tracked official sources hourly at minute 17 (Asia/Dhaka).
+GitHub Actions checks the tracked official sources hourly at minute 34 (Asia/Dhaka).
 
 The checker is deliberately conservative:
 
