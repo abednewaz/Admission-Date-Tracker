@@ -203,6 +203,57 @@
     .search:focus{border-color:#bc8be8;box-shadow:0 8px 24px rgba(57,20,103,.32),0 0 0 3px rgba(150,91,220,.18),inset 0 1px 0 rgba(255,255,255,.16)}
     body.dark .search{background:linear-gradient(135deg,#26083f 0%,#3d1269 48%,#210735 100%);border-color:#7650a5;box-shadow:0 7px 22px rgba(0,0,0,.38),0 0 16px rgba(118,80,165,.16),inset 0 1px 0 rgba(255,255,255,.12)}
     body.dark .search:focus{box-shadow:0 9px 26px rgba(0,0,0,.46),0 0 0 3px rgba(154,101,217,.18),0 0 18px rgba(118,80,165,.16)}
+      /* Presentation-style motion: elegant slide-in, lift and stagger effects */
+    @keyframes adtFadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes adtFadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes adtScale{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+    @keyframes adtSlideRight{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes adtGlow{0%,100%{box-shadow:var(--sh)}50%{box-shadow:0 10px 28px rgba(91,91,214,.13)}}
+    @keyframes adtPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+    @keyframes adtShine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    header{animation:adtFadeDown .7s cubic-bezier(.22,1,.36,1) both}
+    .header-logo{animation:adtScale .65s .12s cubic-bezier(.22,1,.36,1) both}
+    .header-brand h1{animation:adtSlideRight .7s .18s cubic-bezier(.22,1,.36,1) both}
+    .sub{animation:adtFadeUp .7s .28s cubic-bezier(.22,1,.36,1) both}
+    .tag{animation:adtFadeUp .7s .36s cubic-bezier(.22,1,.36,1) both}
+    .content-shell{animation:adtFadeUp .7s .18s cubic-bezier(.22,1,.36,1) both}
+    .sw{animation:adtFadeDown .65s .35s cubic-bezier(.22,1,.36,1) both}
+    .search{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background .2s ease}
+    .search:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,58,95,.14)}
+    .stats .stat{animation:adtScale .55s cubic-bezier(.22,1,.36,1) both}
+    .stats .stat:nth-child(1){animation-delay:.38s}.stats .stat:nth-child(2){animation-delay:.46s}.stats .stat:nth-child(3){animation-delay:.54s}
+    .closest{animation:adtFadeUp .6s .58s cubic-bezier(.22,1,.36,1) both}
+    .notice{animation:adtFadeUp .65s .62s cubic-bezier(.22,1,.36,1) both}
+    .tabs{animation:adtScale .6s .68s cubic-bezier(.22,1,.36,1) both}
+    .tabs button{transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
+    .tabs button:hover{transform:translateY(-2px)}
+    .card{animation:adtFadeUp .55s cubic-bezier(.22,1,.36,1) both;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+    .card:nth-child(1){animation-delay:.72s}.card:nth-child(2){animation-delay:.79s}.card:nth-child(3){animation-delay:.86s}.card:nth-child(4){animation-delay:.93s}.card:nth-child(5){animation-delay:1s}.card:nth-child(n+6){animation-delay:1.07s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(26,35,50,.12)}
+    .mark-btn,.req-btn,.btn,.calendar-nav button,.theme-toggle,.install-box button,.notif button{transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .mark-btn:hover,.req-btn:hover,.btn:hover,.calendar-nav button:hover,.theme-toggle:hover,.install-box button:hover,.notif button:hover{transform:translateY(-2px)}
+    .mark-btn:active,.req-btn:active,.btn:active,.calendar-nav button:active,.theme-toggle:active,.install-box button:active,.notif button:active{transform:translateY(0) scale(.97)}
+    .marked-section{animation:adtFadeUp .7s 1s cubic-bezier(.22,1,.36,1) both}
+    .marked-card{transition:transform .22s ease,box-shadow .22s ease}
+    .marked-card:hover{transform:translateX(4px);box-shadow:0 10px 24px rgba(26,35,50,.1)}
+    .calendar-box{animation:adtFadeUp .7s 1.08s cubic-bezier(.22,1,.36,1) both}
+    .calendar-day{transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .calendar-day:hover{transform:scale(1.08);box-shadow:0 3px 10px rgba(26,35,50,.12);z-index:2}
+    .notice-board{animation:adtSlideRight .7s .48s cubic-bezier(.22,1,.36,1) both}
+    .nb-item{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+    .nb-item:hover{transform:translateX(5px);box-shadow:0 5px 14px rgba(26,35,50,.07)}
+    .install-box,.notif{animation:adtFadeUp .65s 1.15s cubic-bezier(.22,1,.36,1) both}
+    .nb-live{animation:adtPulse 2.4s ease-in-out infinite}
+    .theme-toggle{animation:adtScale .55s .55s cubic-bezier(.22,1,.36,1) both}
+    .theme-toggle:hover{box-shadow:0 8px 20px rgba(0,0,0,.18)}
+    .req-overlay{animation:adtScale .22s ease-out both}
+    .req-modal{animation:adtFadeUp .35s cubic-bezier(.22,1,.36,1) both}
+    footer{animation:adtFadeUp .7s 1.25s cubic-bezier(.22,1,.36,1) both}
+    body.dark .card:hover{box-shadow:0 14px 32px rgba(0,0,0,.34)}
+    body.dark .search:hover{box-shadow:0 9px 24px rgba(0,0,0,.38)}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+    }
   </style>
 </head>
 <body>
