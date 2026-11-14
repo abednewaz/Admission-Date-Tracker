@@ -228,6 +228,12 @@
     .tabs button{transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
     .tabs button:hover{transform:translateY(-2px)}
     .card{animation:adtFadeUp .55s cubic-bezier(.22,1,.36,1) both;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+    /* Scroll-triggered presentation animation for university cards */
+    .card.scroll-reveal{animation:none!important;opacity:0;transform:translateY(42px) scale(.985);will-change:transform,opacity}
+    .card.scroll-reveal.scroll-visible{animation:adtScrollCard .62s var(--scroll-delay,0s) cubic-bezier(.22,1,.36,1) both!important}
+    @keyframes adtScrollCard{from{opacity:0;transform:translateY(42px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .card.scroll-reveal.scroll-visible:hover{transform:translateY(-4px) scale(1)}
+
     .card:nth-child(1){animation-delay:.72s}.card:nth-child(2){animation-delay:.79s}.card:nth-child(3){animation-delay:.86s}.card:nth-child(4){animation-delay:.93s}.card:nth-child(5){animation-delay:1s}.card:nth-child(n+6){animation-delay:1.07s}
     .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(26,35,50,.12)}
     .mark-btn,.req-btn,.btn,.calendar-nav button,.theme-toggle,.install-box button,.notif button{transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
@@ -347,7 +353,28 @@
 
     function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase();var m=[['gst','gstadmission.ac.bd'],['medical admission','dgme.gov.bd'],['dgme','dgme.gov.bd'],['dhaka university','du.ac.bd'],['du ','du.ac.bd'],['bangladesh university of engineering and technology','buet.ac.bd'],['buet','buet.ac.bd'],['rajshahi university','ru.ac.bd'],['ruet','ruet.ac.bd'],['chittagong university','cu.ac.bd'],['cuet','cuet.ac.bd'],['khulna university','ku.ac.bd'],['kuet','kuet.ac.bd'],['jagannath university','jnu.ac.bd'],['jahangirnagar university','juniv.edu'],['bup','bup.edu.bd'],['mist','mist.ac.bd'],['iut','iutoic-dhaka.edu'],['duet','duet.ac.bd'],['butex','butex.edu.bd'],['north south university','northsouth.edu'],['brac university','bracu.ac.bd'],['east west university','ewubd.edu'],['american international university-bangladesh','aiub.edu'],['united international university','uiu.ac.bd'],['ulab','ulab.edu.bd'],['green university','green.edu.bd'],['independent university','iub.edu.bd']];for(var i=0;i<m.length;i++)if(n.indexOf(m[i][0])!==-1)return m[i][1];try{var u=e&&e.officialUrl?new URL(e.officialUrl,location.href):null;return u?u.hostname.replace(/^www\./,''):''}catch(err){return ''}}
     function logoInitials(name){var s=String(name||'University').replace(/university/ig,'').trim().split(/\s+/).filter(Boolean);return s.slice(0,2).map(function(x){return x[0]}).join('').toUpperCase()||'U'}
-    function logoMarkup(e,cls){var domain=logoDomain(e),name=e&&e.universityName||'University',initials=logoInitials(name);if(!domain)return '<span class="'+cls+'-fallback" style="display:flex">'+initials+'</span>';var src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=128';return '<span style="display:inline-flex;position:relative;flex-shrink:0"><img class="'+cls+'" src="'+esc(src)+'" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="'+cls+'-fallback">'+initials+'</span></span>'}
+    function logoMarkup(e,cls){var domain=logoDomain(e),name=e&&e.universityName||'University',initials=logoInitials(name);if(!domain)return '<span class="'+cls+'-fallback" style="display:flex">'+initials+'</span>';var src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=256';return '<span style="display:inline-flex;position:relative;flex-shrink:0"><img class="'+cls+'" src="'+esc(src)+'" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="'+cls+'-fallback">'+initials+'</span></span>'}
+    function bindScrollReveal(){
+      var cards=document.querySelectorAll('#list .card');
+      if(!('IntersectionObserver' in window)){
+        cards.forEach(function(card){card.classList.add('scroll-visible')});
+        return;
+      }
+      var observer=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(!entry.isIntersecting)return;
+          var card=entry.target;
+          card.classList.add('scroll-visible');
+          observer.unobserve(card);
+        });
+      },{root:null,rootMargin:'0px 0px -7% 0px',threshold:.08});
+      cards.forEach(function(card,i){
+        card.classList.add('scroll-reveal');
+        card.style.setProperty('--scroll-delay',Math.min((i%4)*.09,.27)+'s');
+        observer.observe(card);
+      });
+    }
+
     function render(){
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){return match(e,q)});
@@ -373,7 +400,7 @@
           var e2=show[m],c2=cd(e2.examDate),ap=appS(e2.applicationDeadline);
           var cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
           var gapTxt=gapM.get(e2.id);
-          html+='<article class="card">';
+          html+='<article class="card scroll-reveal">';
           if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+gapTxt+'</span></div>';
           html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
           if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
@@ -386,7 +413,7 @@
         html+='</section>';
       });
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
-      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});bindScrollReveal();
     }
     const THEME_KEY='adt_theme_v1';
     function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
