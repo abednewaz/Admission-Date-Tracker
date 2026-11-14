@@ -330,7 +330,7 @@
   <div class="app" id="top">
     <header>
       <div class="header-brand">
-        <img class="header-logo" src="icon.svg" width="40" height="40" alt="" aria-hidden="true">
+        <img class="header-logo" src="icon-light.svg" data-light-src="icon-light.svg" data-dark-src="icon.svg" width="40" height="40" alt="" aria-hidden="true">
         <h1>Admission Tracker</h1>
       </div>
       <p class="sub">Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.</p>
@@ -497,7 +497,7 @@
       document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});bindScrollReveal();
     }
     const THEME_KEY='adt_theme_v1';
-    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
+    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;var headerIcon=document.querySelector('.header-logo');if(headerIcon)headerIcon.src=mode==='dark'?headerIcon.dataset.darkSrc:headerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
     (function(){var s='';try{s=localStorage.getItem(THEME_KEY)||''}catch(e){}applyTheme(s==='dark'?'dark':'light')})();
     document.getElementById('themeToggle').addEventListener('click',function(){applyTheme(document.body.classList.contains('dark')?'light':'dark')});
     var reqOverlay=document.getElementById('reqOverlay'),reqBody=document.getElementById('reqBody'),reqTitle=document.getElementById('reqTitle');
