@@ -191,6 +191,18 @@
     body.dark .notif{background:linear-gradient(135deg,#171d2e,#1b2136)}
     body.dark footer{background:rgba(21,28,45,.82)}
     @media(max-width:900px){.content-shell{display:block;max-width:640px}.notice-board{position:static;margin-top:1rem}.nb-list{max-height:520px}}@media(min-width:640px){header h1{font-size:1.55rem}.header-logo{width:2.7rem;height:2.7rem}.content-shell{padding:1.4rem 1.25rem 2.5rem}.stat b{font-size:1.5rem}}
+      /* Sticky search: deep purple + subtle moving shimmer */
+    .sw{position:sticky}
+    .sw::before{content:"";position:absolute;left:7%;right:7%;top:50%;height:54px;transform:translateY(-50%);border-radius:999px;background:linear-gradient(90deg,transparent 0%,rgba(104,58,183,.12) 20%,rgba(145,91,225,.24) 50%,rgba(104,58,183,.12) 80%,transparent 100%);filter:blur(12px);pointer-events:none;z-index:-1}
+    .sw::after{content:"";position:absolute;left:7%;right:7%;top:.65rem;height:calc(100% - 1.25rem);border-radius:999px;background:linear-gradient(105deg,transparent 0%,transparent 43%,rgba(255,255,255,.55) 49%,rgba(220,190,255,.82) 50%,rgba(255,255,255,.38) 51%,transparent 57%,transparent 100%);background-size:220% 100%;animation:searchShimmer 4.5s linear infinite;pointer-events:none;z-index:2;opacity:.55;mix-blend-mode:screen}
+    @keyframes searchShimmer{0%{background-position:220% 0}100%{background-position:-220% 0}}
+    .search{position:relative;z-index:3;background:linear-gradient(135deg,#32105f 0%,#4a187f 48%,#2d0d56 100%);color:#fff;border-color:#8e5bc4;box-shadow:0 6px 20px rgba(57,20,103,.24),0 0 0 1px rgba(180,128,239,.12),inset 0 1px 0 rgba(255,255,255,.14)}
+    .search::placeholder{color:rgba(255,255,255,.72)}
+    .sw svg{z-index:4;color:#eadbff}
+    .clear{z-index:5;background:rgba(255,255,255,.16);color:#f3eaff}
+    .search:focus{border-color:#bc8be8;box-shadow:0 8px 24px rgba(57,20,103,.32),0 0 0 3px rgba(150,91,220,.18),inset 0 1px 0 rgba(255,255,255,.16)}
+    body.dark .search{background:linear-gradient(135deg,#26083f 0%,#3d1269 48%,#210735 100%);border-color:#7650a5;box-shadow:0 7px 22px rgba(0,0,0,.38),0 0 16px rgba(118,80,165,.16),inset 0 1px 0 rgba(255,255,255,.12)}
+    body.dark .search:focus{box-shadow:0 9px 26px rgba(0,0,0,.46),0 0 0 3px rgba(154,101,217,.18),0 0 18px rgba(118,80,165,.16)}
   </style>
 </head>
 <body>
@@ -333,7 +345,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       installBtn.addEventListener('click',async function(){if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;hideInstall()}else{alert('Open the Chrome menu and choose Add to Home screen or Install app.')}});
       if(/iphone|ipad|ipod/i.test(navigator.userAgent)){installBox.style.display='block';installBtn.textContent='Add to Home Screen'}
     }
-    if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=7',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})});
+    if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=8',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     function renderNoticeBoard(){var el=document.getElementById('noticeList'),items=window.ADMISSION_NOTICES||[];if(!items.length){el.innerHTML='<div class="nb-empty">No matching recent notices found.</div>';return}el.innerHTML=items.slice(0,12).map(function(n){return '<a class="nb-item" href="'+esc(n.url||'https://students.bd/en/notice')+'" target="_blank" rel="noopener noreferrer"><div class="nb-meta"><span class="nb-uni">'+esc(n.university||'University')+'</span><span>'+esc(n.date||'')+'</span></div><div class="nb-title">'+esc(n.title||'Notice')+'</div></a>'}).join('')}
     renderNoticeBoard();
     render();
