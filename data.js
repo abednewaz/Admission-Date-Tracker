@@ -1100,11 +1100,6 @@ window.ADMISSION_EXAMS = [
     "cycle": "Spring 2027 / HSC Batch 2026"
   },
   {
-    "id": "e41",
-    "notes": "SUST revised the 2026-27 admission tests to 17 and 18 January 2027. A1 is scheduled for 17 January at 10:00 AM–12:00 PM, A2 drawing for 17 January at 2:30–4:00 PM, and B Unit for 18 January at 10:00 AM–12:00 PM.",
-    "cycle": "2026-27 / HSC Batch 2026"
-  },
-  {
     "id": "e43",
     "universityName": "Chittagong University of Engineering & Technology (CUET)",
     "universityShortName": "CUET",
@@ -1126,11 +1121,6 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:00+06:00",
     "requirementsSource": "https://cuet.ac.bd/admission"
-  },
-  {
-    "id": "auto-ju",
-    "notes": "Jahangirnagar University has published that the 2026-27 admission tests will run from 10 to 21 January 2027, excluding Fridays and Saturdays. Unit-specific dates and exact times have not yet been published.",
-    "cycle": "2026-27 / HSC Batch 2026"
   },
   {
     "id": "auto-ku-cd",
@@ -1215,31 +1205,6 @@ window.ADMISSION_EXAMS = [
     "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: A & B Units will be held on 6 February 2027, Saturday; A+B in the morning and the remaining B Unit examination in the afternoon. The exact clock times and centre details are not yet verified here.",
     "cycle": "2026-27 / HSC Batch 2026",
     "source": "https://www.mist.ac.bd/"
-  },
-  {
-    "id": "auto-cou",
-    "notes": "Comilla University has published the unit schedule: A Unit on 5 February 2027 at 11:00 AM, B Unit on 6 February at 3:00 PM, and C Unit on 7 February at 11:00 AM.",
-    "cycle": "2026-27 / HSC Batch 2026"
-  },
-  {
-    "id": "auto-bmu",
-    "notes": "Official BMU notice confirms the 2026-27 undergraduate admission tests on 29 and 30 December 2026. Unit-wise mapping and exact times were not included in the verified notice.",
-    "cycle": "2026-27 / HSC Batch 2026"
-  },
-  {
-    "id": "auto-aaub",
-    "notes": "AAUB postponed the 2026-27 undergraduate admission test from 5 December 2026 to 30 January 2027. The test will be held at BAF Shaheen College, Dhaka and the permanent campus in Lalmonirhat.",
-    "cycle": "2026-27 / HSC Batch 2026"
-  },
-  {
-    "id": "auto-hstu",
-    "notes": "HSTU has published the 2026-27 undergraduate admission schedule: Unit A on 24 January, B on 25 January, C on 26 January and D on 27 January 2027; Architecture drawing is on 28 January. Exact unit mapping is shown in the official admission information.",
-    "cycle": "2026-27 / HSC Batch 2026"
-  },
-  {
-    "id": "auto-bau",
-    "notes": "The 2026-27 agriculture cluster admission test is scheduled for 2 January 2027. Exact time, centres and detailed unit information were not yet published in the verified announcement.",
-    "cycle": "2026-27 / HSC Batch 2026"
   },
   {
     "id": "auto-iut",
