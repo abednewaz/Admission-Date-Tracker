@@ -612,10 +612,9 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
   </script>
 <script>
 (function(){
-  var stars=document.querySelectorAll('.rating-star'),thanks=document.getElementById('ratingThanks'),key='adt_experience_rating_v1';
+  var stars=document.querySelectorAll('.rating-star'),thanks=document.getElementById('ratingThanks');
   var form=document.getElementById('reviewForm'),nameInput=document.getElementById('reviewName'),textInput=document.getElementById('reviewText'),submit=document.getElementById('reviewSubmit'),status=document.getElementById('reviewStatus'),list=document.getElementById('reviewsList'),selectedRating=0;
-  function setRating(n){selectedRating=n;stars.forEach(function(s){s.classList.toggle('active',Number(s.dataset.rating)<=n)});if(thanks){thanks.textContent=n+'/5 selected';thanks.style.display='block'}try{localStorage.setItem(key,String(n))}catch(e){}}
-  var saved=0;try{saved=Number(localStorage.getItem(key)||0)}catch(e){} if(saved>=1&&saved<=5)setRating(saved);
+  function setRating(n){selectedRating=n;stars.forEach(function(s){s.classList.toggle('active',Number(s.dataset.rating)<=n)});if(thanks){thanks.textContent=n+'/5 selected';thanks.style.display='block'}}
   stars.forEach(function(s){s.addEventListener('click',function(){setRating(Number(this.dataset.rating))})});
   function escReview(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
   function formatReviewDate(v){var d=new Date(v);if(isNaN(d.getTime()))return '';return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}
