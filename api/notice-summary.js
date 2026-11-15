@@ -25,7 +25,8 @@ module.exports = async function handler(req,res){
       console.error('OpenAI Responses API error:',r.status,data);
       throw new Error(data.error?.message||'OpenAI request failed with status '+r.status);
     }
-    const outputText=(data.output||[]).filter(item=>item.type==='message').flatMap(item=>item.content||[]).filter(part=>part.type==='output_text').map(part=>part.text||'').join('\\n');\n    const summary=String(data.output_text||outputText||'').trim();
+    const outputText=(data.output||[]).filter(item=>item.type==='message').flatMap(item=>item.content||[]).filter(part=>part.type==='output_text').map(part=>part.text||'').join('\\n');
+    const summary=String(data.output_text||outputText||'').trim();
     if(!summary)throw new Error('No summary returned from OpenAI');
     return res.status(200).json({summary});
   }catch(e){
