@@ -1,10 +1,10 @@
-name: Admission Date & Notice Auto Checker
+name: Admission Date Auto Checker
 
 on:
   workflow_dispatch:
   schedule:
-    # Run hourly at minute 34 to reduce contention around the top of the hour.
-    - cron: "34 * * * *"
+    # Bangladesh local time: every hour at minute 17.
+    - cron: "17 * * * *"
       timezone: "Asia/Dhaka"
 
 permissions:
@@ -33,67 +33,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 pypdf pymupdf pytesseract
 
-      - name: Check all admission sources
-        run: python .github/scripts/check_admission_dates.py
+      - name: Check official admission dates and requirements
+        run: python .github/scripts/check_admission_dates.py --mode admission
 
-      - name: Notify subscribers about newly detected notices
-        if: hashFiles('notices.js') != ''
-        env:
-          PUSH_BROADCAST_SECRET: ${{ secrets.PUSH_BROADCAST_SECRET }}
+      - name: Commit detected admission updates
         run: |
-          python - <<'PY'
-          import json, os, re, subprocess, sys
-          import requests
-
-          def parse_notices(text):
-              match = re.search(r"window\.ADMISSION_NOTICES\s*=\s*(\[.*?\])\s*;?\s*$", text, re.S)
-              if not match:
-                  return []
-              return json.loads(match.group(1))
-
-          try:
-              old_text = subprocess.check_output(["git", "show", "HEAD:notices.js"], text=True)
-          except subprocess.CalledProcessError:
-              old_text = "window.ADMISSION_NOTICES = [];"
-
-          with open("notices.js", encoding="utf-8") as f:
-              new_text = f.read()
-
-          old = parse_notices(old_text)
-          new = parse_notices(new_text)
-
-          old_keys = {(n.get("url") or "", n.get("title") or "") for n in old}
-          fresh = [n for n in new if (n.get("url") or "", n.get("title") or "") not in old_keys and n.get("title")]
-
-          if not fresh:
-              print("No newly detected notices.")
-              sys.exit(0)
-
-          secret = os.environ.get("PUSH_BROADCAST_SECRET")
-          if not secret:
-              raise SystemExit("PUSH_BROADCAST_SECRET GitHub secret is missing.")
-
-          for notice in fresh:
-              r = requests.post(
-                  "https://admissiontracker.site/api/push-broadcast",
-                  headers={"Authorization": "Bearer " + secret},
-                  json=notice,
-                  timeout=30,
-              )
-              print("Broadcast:", notice.get("title"), r.status_code)
-              if r.status_code >= 300:
-                  print(r.text)
-                  r.raise_for_status()
-          PY
-
-      - name: Commit detected updates
-        run: |
-          if git diff --quiet -- data.js notices.js; then
-            echo "No admission-date or notice changes detected."
+          if git diff --quiet -- data.js; then
+            echo "No admission-date or requirement changes detected."
             exit 0
           fi
           git config user.name "Admission Date Tracker Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.js notices.js
-          git commit -m "Auto-update admission dates and notice board"
+          git add data.js
+          git commit -m "Auto-update admission dates and requirements"
           git push
