@@ -17,11 +17,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Official schedule: undergraduate written exam 26 Nov 2026 at 12:00 PM.",
     "cycle": "Spring 2026-27 / HSC Batch 2026",
     "previousRequirements": "For most undergraduate programs, SSC and HSC/equivalent combined GPA must be at least 5.00, with at least 2.50 in each examination. Engineering/science programs require a Science background and Mathematics at HSC level; program-specific subject conditions apply. O/A-Level and other equivalent qualifications have separate grade requirements.",
-    "requirements": "Kindly check the Notices on the AIUB Website for relevant announcements on a regular basis. In case of any issues, please email us at apply@aiub.edu Admission Requirements Undergraduate Program Requirements 1. For Bachelor of Pharmacy (BPharm) Applicants must be permanent residents of Bangladesh. Foreign applicants may apply only for the reserved seats allocated by the Government of Bangladesh. Applicants must have passed SSC/O-level or recognized equivalents and HSC/A-level or recognized equivalents in the Science group , with a minimum total GPA of 8.00 (on a scale of 10) and a minimum GPA of 3.50 (on a scale of 5) separately",
+    "requirements": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:29:03+06:00",
     "requirementsSource": "https://aiub.edu/admission",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "business": {
+        "eligible": true,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "others": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      }
+    }
   },
   {
     "id": "e3",
@@ -41,7 +71,37 @@ window.ADMISSION_EXAMS = [
     "notes": "Official page lists undergraduate admission test on 27 Nov 2026 at 9:30 AM.",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "requirementsStatus": "verified",
-    "requirements": "Minimum qualifications (except B.Pharm): SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: GPA 2.50 in five subjects; A-Level: GPA 2.50 in two subjects. EEE/ECE/CSE/APE/Physics applicants need B grade in Physics and Mathematics at HSC/equivalent (C at A-Level). Program-specific requirements apply, including B.Pharm."
+    "requirements": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BRAC University: SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: minimum GPA 2.50 in five subjects; A-Level: minimum GPA 2.50 in two subjects. IB-DP minimum 24. EEE, ECE, CSE, APE and Physics require B grades in Physics and Mathematics at HSC/equivalent. Program-specific requirements apply."
+      }
+    }
   },
   {
     "id": "e4",
@@ -61,11 +121,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Official schedule: B.Pharm & LL.B written exam 28 Nov 2026 at 12:00 PM.",
     "cycle": "Spring 2026-27 / HSC Batch 2026",
     "previousRequirements": "B.Pharm: Science background, combined SSC+HSC GPA at least 8.00, with at least 3.50 in each; HSC Chemistry and Biology at least 3.50, Physics and Mathematics at least 3.00. LL.B. follows AIUB's undergraduate admission criteria. O/A-Level and other equivalent qualifications have separate requirements.",
-    "requirements": "Kindly check the Notices on the AIUB Website for relevant announcements on a regular basis. In case of any issues, please email us at apply@aiub.edu Admission Requirements Undergraduate Program Requirements 1. For Bachelor of Pharmacy (BPharm) Applicants must be permanent residents of Bangladesh. Foreign applicants may apply only for the reserved seats allocated by the Government of Bangladesh. Applicants must have passed SSC/O-level or recognized equivalents and HSC/A-level or recognized equivalents in the Science group , with a minimum total GPA of 8.00 (on a scale of 10) and a minimum GPA of 3.50 (on a scale of 5) separately",
+    "requirements": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:29:03+06:00",
     "requirementsSource": "https://aiub.edu/admission",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "business": {
+        "eligible": true,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      },
+      "others": {
+        "eligible": null,
+        "text": "AIUB undergraduate eligibility varies by program. B.Pharm: Science background; combined SSC+HSC/equivalent GPA 8.00, minimum 3.50 in each; HSC Chemistry and Biology 3.50 each, Physics and Mathematics 3.00 each. EEE/IPE/COE/ME/Architecture/CSE/DS/CNCS: Science background, total GPA 5.00 with minimum 2.50; Mathematics required at HSC. BBA and Arts/Social Science/LLB: total GPA 5.00 with minimum 2.50. O/A-Level and equivalent qualifications have separate grade requirements. Check the official AIUB program requirement for the exact program."
+      }
+    }
   },
   {
     "id": "e5",
@@ -85,7 +175,37 @@ window.ADMISSION_EXAMS = [
     "notes": "Official admissions page confirms 28 Nov 2026; verify exact venue from admit card.",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "requirementsStatus": "verified",
-    "requirements": "Combined SSC+HSC GPA at least 8.00, with minimum GPA 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00 (only one E allowed); IB-DP total 24 with average 4.0/7. Engineering requires Mathematics and Physics with minimum B at HSC (or the stated O/A-Level equivalents). Program-specific requirements apply."
+    "requirements": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "business": {
+        "eligible": true,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      },
+      "others": {
+        "eligible": null,
+        "text": "North South University: combined SSC+HSC GPA 8.00 with minimum 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00, with only one E acceptable; IB-DP 24 with average 4.0/7.0. Engineering requires Mathematics and Physics with the stated minimum grades. BPharm, Architecture and other programs have additional subject requirements."
+      }
+    }
   },
   {
     "id": "e6",
@@ -105,11 +225,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://admissions.ulab.edu.bd/",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": "Minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O-Level: five subjects with GPA 2.50; A-Level: two subjects with GPA 2.00. Science background is required for science, technology and engineering programs. SAT 1100 (Math + Critical Reading) can waive the admission test.",
-    "requirements": "Graduate Admission Requirements | Admissions Skip to main content Home Undergraduate + Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate + Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International + Undergraduate Graduate Contact Information Quick Links + Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Home Undergraduate Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International Undergraduate Graduate Contact Information Quick Links Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Apply Now Search Menu Apply Now Graduate Admission Requirements Graduate Admission Requirements General Requirements Minimum Qualifications for Graduate Admission A minimum CGPA of 2.00 in Bachelor’s degree, plus A minimum GPA of 2.50 both in SSC and HSC examinations or equivalent, or At least one GPA of 2.00 but aggregate GPA of 6.00 in SSC & HSC, or O’Levels in 5 subjects with a minimum GPA of 2.50 & A’Level in 2 subjects with a minimum GPA of 2.00 (scale A=5, B=4, C=3, D=2, E=1), or Sons/daughters of freedom fighters with an aggregate GPA of 5.00 in SSC& HSC. Note Acceptable score in the ULAB Admission Test. To be eligible for M.A in English (1 Year) a candidate must have a Four year Bachelor Degree in English. Applicants with an undergraduate degree from any other discipline can apply for the MA in English 2-Year Program",
+    "requirements": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:29:04+06:00",
     "requirementsSource": "https://admissions.ulab.edu.bd/graduate-programs/admissions-requirements",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "business": {
+        "eligible": true,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      },
+      "others": {
+        "eligible": null,
+        "text": "ULAB: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00; O-Level five subjects GPA 2.50 and A-Level two subjects GPA 2.00; IB/American High School Diploma accepted. Science background is required for science, technology and engineering programs. Admission test required unless eligible for the SAT waiver."
+      }
+    }
   },
   {
     "id": "e7",
@@ -129,11 +279,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Official page lists undergraduate admission test 4 Dec 2026 at 9:00 AM.",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": "UIU undergraduate programs: minimum GPA 2.50 in both SSC and HSC/equivalent; if either examination has GPA 2.00, combined GPA must be at least 6.00. O-Level: five subjects average 2.50; A-Level: two subjects average 2.00. Engineering programs require Physics and Mathematics. BSBGE and B.Pharm have additional subject/GPA requirements.",
-    "requirements": "Minimum GPA 3.00 in Biology and Chemistry separately in SSC/ “O” level/equivalent and HSC/”A” level/equivalent examinations. GRADUATE ADMISSION REQUIREMENTS The minimum qualification for admission into a graduate program is: 1. The terms & conditions of undergraduate programs mentioned above will be applicable for admission to graduate programs. 2. A relevant undergraduate degree from a recognized university with a GPA of 2.00 or above in a scale of 4.0 3",
+    "requirements": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:29:09+06:00",
     "requirementsSource": "https://admission.uiu.ac.bd/admission/Home.aspx",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "business": {
+        "eligible": true,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      },
+      "others": {
+        "eligible": null,
+        "text": "United International University: minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O/A-Level applicants must meet the stated subject/grade equivalents. Program-specific requirements apply, especially for engineering and science programs."
+      }
+    }
   },
   {
     "id": "e8",
@@ -152,38 +332,35 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official DU admission portal: IBA Unit exam 5 Dec 2026, 10:00 AM–12:00 PM.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "HSC/equivalent in 2026, combined SSC+HSC GPA 8.00 with at least 3.50 in each examination. Previous DU admission-test appearance restriction also applies. The published IBA eligibility rule does not exclude Humanities applicants.",
+    "requirements": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+        "eligible": false,
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "Eligible under the published IBA rule: HSC/equivalent in 2026, combined SSC+HSC GPA 8.00, with at least 3.50 in each examination."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
-        "previousText": "Check universities' website for more information."
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       }
     },
     "requirementsChanged": true,
@@ -208,8 +385,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "check_official",
-    "requirements": "East West University undergraduate applicants must meet the university's program-specific academic eligibility requirements. The Spring 2027 admission test covers the listed undergraduate programs; exact subject/GPA conditions vary by program. Check the official EWU undergraduate requirements before applying."
+    "requirementsStatus": "verified",
+    "requirements": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "East West University: except B.Pharm, minimum GPA 3.00 in both SSC and HSC/equivalent (Diploma in Engineering minimum GPA 2.40); O-Level five subjects average GPA 2.50 and A-Level two subjects average GPA 2.00 with only one E in combined results; IB Diploma and American High School Diploma accepted. Program-specific subject requirements apply."
+      }
+    }
   },
   {
     "id": "e10",
@@ -228,38 +435,35 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official DU admission portal: Science Unit exam 12 Dec 2026, 11:00 AM–12:30 PM.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "eligible": false,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
-        "previousText": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       }
     },
     "requirementsChanged": true,
@@ -284,8 +488,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2026-12-08",
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "check_official",
-    "requirements": "Bachelor of Pharmacy has separate academic eligibility requirements. Check the official EWU undergraduate admission requirements for the exact GPA, subject and passing-year conditions before applying."
+    "requirementsStatus": "verified",
+    "requirements": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "business": {
+        "eligible": true,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      },
+      "others": {
+        "eligible": null,
+        "text": "EWU B.Pharm: SSC and HSC/equivalent both Science; combined GPA 8.00 with minimum 3.50 in each. HSC Chemistry and Biology minimum 3.50 each; Physics and Mathematics minimum 3.00 each. A-Level requires B in Chemistry/Biology and C in Mathematics/Physics. HSC/A-Level must normally be within three years of result publication."
+      }
+    }
   },
   {
     "id": "e12",
@@ -304,38 +538,35 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official DU admission portal: Arts, Law and Social Science Unit exam 19 Dec 2026, 11:00 AM–12:30 PM.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "eligible": false,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
-        "previousText": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       }
     },
     "requirementsChanged": true,
@@ -360,38 +591,35 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official DU admission portal: Fine Arts Unit exam 22 Dec 2026, 11:00 AM–12:30 PM.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Science, Humanities and Business Studies applicants: combined SSC+HSC GPA 6.50, at least 3.00 in each. Additional Fine Arts conditions apply.",
+    "requirements": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+        "eligible": false,
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "business": {
         "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "Eligible: combined SSC+HSC GPA 6.50, with at least 3.00 in each examination. Additional Fine Arts conditions apply."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "technical": {
         "eligible": null,
-        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
-        "previousText": "Check universities' website for more information."
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       }
     },
     "requirementsChanged": true,
@@ -416,38 +644,35 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official DU admission portal: Business Studies Unit exam 26 Dec 2026, 11:00 AM–12:30 PM.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Science: combined SSC+HSC GPA 8.00, at least 3.50 in each. Humanities/Business Studies: combined GPA 7.50, at least 3.00 in each. Department-specific subject conditions may apply.",
+    "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Science-group applicants: combined SSC+HSC GPA 8.00, with at least 3.50 in each examination. Additional unit/program conditions may apply."
+        "eligible": false,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 8571, 8581 ঠিকানাঃ ডিন অফিস, চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয় আই বি এ ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ (02)-9673387 এক্সট. 8335, 01772563303 ঠিকানাঃ ব্যবসায় প্রশাসন ইনস্টিটিউট, ঢাকা বিশ্ববিদ্যালয় আন্ডারগ্র্যাজুয়েট প্রোগ্রামে ভর্তি আবেদন 2026-27, ঢাকা বিশ্ববিদ্যালয় বাংলা Language বাংলা English phone লগইন guest home হোম পেজ playlist_play নোটিশ সমূহ assignment সাধারণ assignment বিজ্ঞান ইউনিট assignment কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট assignment ব্যবসায় শিক্ষা ইউনিট assignment চারুকলা ইউনিট assignment আই বি এ assignment খেলোয়াড় app_registration সমমান নিবন্ধন person সমমান লগইন © 2010 - 25 Central Admission Office . University of Dhaka SKINS SETTINGS Red Pink Purple Deep Purple Indigo Blue Light Blue Cyan Teal Green Light Green Lime Yellow Amber Orange Deep Orange Brown Grey Blue Grey Black GENERAL SETTINGS Report Panel Usage Email Redirect SYSTEM SETTINGS Notifications Auto Updates ACCOUNT SETTINGS Offline Location Permission গুরুত্বপূর্ণ তথ্য <!--[CDATA[<p-->",
-        "previousText": "Business Studies-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "Humanities-group applicants: combined SSC+HSC GPA 7.50, with at least 3.00 in each examination. Additional unit/program conditions may apply."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "close × contact_phone সাধারণ হেল্প ডেস্ক আসন ব্যবস্থা লগইন ও রেজিস্ট্রেশন সমস্যা ছবি ও কোটা সংক্রান্ত যে কোন কারিগরি সমস্যায় (পেমেন্ট, এস এম এস, ওয়েব পেজ ইত্যাদি) যোগাযোগ ফোনঃ 09666361991, 09666361070 ঠিকানাঃ কেন্দ্রীয় ভর্তি অফিস, কক্ষ নং - 214, প্রশাসনিক ভবন, ঢাকা বিশ্ববিদ্যালয় ই-মেইলঃ helpline@eis.du.ac.bd বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4363, 4364 মোবাঃ +8801870033945 ঠিকানাঃ ডিন অফিস, ফার্মেসী অনুষদ মোকাররম হোসেন খন্দকার বিজ্ঞান ভবন (6ষ্ঠ তলা), ঢাকা বিশ্ববিদ্যালয় কলা, আইন ও সামাজিক বিজ্ঞান ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4343, 4342, 4341 ঠিকানা: ডিন অফিস, কলা অনুষদ, কলা ভবন, ঢাকা বিশ্ববিদ্যালয়। ব্যবসায় শিক্ষা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট. 4360 ঠিকানাঃ ডিন অফিস, বিজনেস স্টাডিজ অনুষদ,ঢাকা বিশ্ববিদ্যালয় চারুকলা ইউনিট ভর্তি যোগ্যতা সমতা নিরুপন পরীক্ষা সংক্রান্ত নিয়মাবলী ফলাফল সংক্রান্ত সমস্যায় যোগাযোগ ফোনঃ 09666911463 এক্সট",
-        "previousText": "Check universities' website for more information."
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       }
     },
     "requirementsChanged": true,
@@ -472,7 +697,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FASS written examination on 02 Jan 2027. Exact time and detailed unit/program mapping are not stated in the notice.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      }
+    }
   },
   {
     "id": "auto-bup-fst-fet-fms",
@@ -491,7 +747,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FST, FET and FMS written examinations on 08 Jan 2027. Exact time is not stated in the notice.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      }
+    }
   },
   {
     "id": "auto-bup-fsss",
@@ -510,7 +797,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists the FSSS written examination on 08 Jan 2027. Exact time is not stated in the notice.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      }
+    }
   },
   {
     "id": "e16",
@@ -529,8 +847,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit A requires combined SSC+HSC GPA 7.00 with at least 3.00 in each examination.",
-    "requirementsStatus": "verified"
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
   },
   {
     "id": "e17",
@@ -601,8 +949,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit E requires combined SSC+HSC GPA 5.50 with at least 2.50 in each examination.",
-    "requirementsStatus": "verified"
+    "requirements": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
+      }
+    }
   },
   {
     "id": "e19",
@@ -623,42 +1001,39 @@ window.ADMISSION_EXAMS = [
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
-        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "eligible": false,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
-        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       }
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
-    "requirements": "HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies applicants: minimum GPA 3.00 in both SSC and HSC/equivalent (including 4th subject), combined GPA 6.50. Science applicants: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
+    "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
   {
     "id": "e20",
@@ -679,42 +1054,39 @@ window.ADMISSION_EXAMS = [
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
-        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "eligible": false,
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
-        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
       }
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
-    "requirements": "HSC/equivalent passed in 2025 or 2026. Science applicants: minimum GPA 3.50 in both SSC and HSC/equivalent (including 4th subject), combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
+    "requirements": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
   },
   {
     "id": "e21",
@@ -733,8 +1105,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit B requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination.",
-    "requirementsStatus": "verified"
+    "requirements": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      }
+    }
   },
   {
     "id": "e22",
@@ -753,8 +1155,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "BUET's official 2026-27 admission notice confirms the undergraduate admission test on 16 Jan 2027. The notice indicates applications are expected to open on 21 Nov 2026; the application deadline and further details will be published in a subsequent notice.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "check_official",
-    "requirements": "BUET has announced that the 2026-27 eligibility GPA criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00; HSC/equivalent GPA 5.00 with GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The detailed 2026-27 circular must be checked for passing-year, shortlisting and other final conditions."
+    "requirementsStatus": "verified",
+    "requirements": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
+      }
+    }
   },
   {
     "id": "e23",
@@ -775,42 +1207,39 @@ window.ADMISSION_EXAMS = [
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
-        "eligible": true,
-        "text": "জিপিএ 3.00 সহ মোট জিপিএ 6.50 পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম জিপিএ 3.50 সহ মোট জিপিএ 7.50 পেতে হবে। জিসিই O লেভেল পরীক্ষায় 5টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত 2টি বিষয়ে",
-        "previousText": "Science-group applicants: minimum GPA 3.50 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 7.50."
+        "eligible": false,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "business": {
         "eligible": true,
-        "text": "Business Studies-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "humanities": {
         "eligible": true,
-        "text": "ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ 5.00 স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (4র্থ বিষয়সহ) ন্যূনতম",
-        "previousText": "Humanities-group applicants: minimum GPA 3.00 in both SSC/equivalent and HSC/equivalent, including the fourth subject, with combined GPA at least 6.50."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "O-Level/A-Level applicants must satisfy the university's published equivalent-qualification and equivalence requirements. Check the official admission guideline for the exact subject, grade and equivalence rules."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Check the university's official website for information about other or special qualifications."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "madrasa": {
         "eligible": null,
-        "text": "Check universities' website for more information."
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       }
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:43+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
-    "requirements": "HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies applicants: minimum GPA 3.00 in both SSC and HSC/equivalent (including 4th subject), combined GPA 6.50. Science applicants: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
+    "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
   {
     "id": "e24",
@@ -829,8 +1258,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit C requires combined SSC+HSC GPA 6.50 with at least 3.00 in each examination.",
-    "requirementsStatus": "verified"
+    "requirements": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
+      }
+    }
   },
   {
     "id": "e25",
@@ -849,8 +1308,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official JnU notice dated 11 Nov 2026 confirms the date and 10:00 AM–11:00 AM exam time. Centre details should be checked in the official admission instructions.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent must be passed in 2023 or 2024 and HSC/equivalent in 2026. Unit D requires combined SSC+HSC GPA 6.00 with at least 2.75 in each examination.",
-    "requirementsStatus": "verified"
+    "requirements": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
+      }
+    }
   },
   {
     "id": "e26",
@@ -869,7 +1358,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e27",
@@ -888,7 +1408,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e28",
@@ -907,7 +1458,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e29",
@@ -926,7 +1508,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e30",
@@ -945,7 +1558,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e31",
@@ -964,7 +1608,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e32",
@@ -983,7 +1658,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e33",
@@ -1003,11 +1709,41 @@ window.ADMISSION_EXAMS = [
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:33:45+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e34",
@@ -1027,11 +1763,41 @@ window.ADMISSION_EXAMS = [
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:33:45+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e35",
@@ -1051,11 +1817,41 @@ window.ADMISSION_EXAMS = [
     "notes": null,
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:33:45+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "id": "e36",
@@ -1093,7 +1889,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists FBS written examinations on 01 and 09 Jan 2027. The notice does not specify which FBS programs correspond to each date.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      }
+    }
   },
   {
     "id": "auto-bup-fbs-2",
@@ -1112,7 +1939,38 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official BUP Admission Notice (Session 2026-2027), published 31 Aug 2026, lists FBS written examinations on 01 and 09 Jan 2027. The notice does not specify which FBS programs correspond to each date.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "business": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      },
+      "others": {
+        "eligible": null,
+        "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
+      }
+    }
   },
   {
     "id": "e38",
@@ -1132,11 +1990,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://dgme.gov.bd/",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "The 2026-27 medical/dental admission circular and final eligibility conditions should be checked on the official DGME admission portal. Do not rely on previous-session GPA rules until the current circular is published.",
-    "requirements": "Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন কনটেন্টটি শেষ হাল-নাগাদ করা হয়েছে: রবিবার, 6 আগস্ট, 2023 এ 11:55 PM Eligibility list for private medical/ dental colleges/ dental unit of Medical College কন্টেন্ট: পাতা Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2022-2023 Eigibility list for private medical college (03/08/2023) PDF Eigibility list for private medical college (26/07/2023) PDF Eigibility list for private medical college (23/07/2023) PDF Eigibility list for private medical college (19/07/2023) PDF Eigibility list for private medical college (16/07/2023) PDF Eigibility list for private medical college (13/07/2023) PDF Eigibility list for private medical college (03/07/2023) PDF Eigibility list for private medical college (18/06/2023) PDF Eigibility list for private medical college (15/06/2023) PDF Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2021-2022 1 Rev. Eligiblity list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in bangladesh (session 2021-2022) (05/07/2022) PDF 2 Eligibility list of marks equalization of foreign students for admission in private medical/ dental colleges/ dental unitgs in bangladesh (session 2021-2022) (27/09/2022) PDF 3 Eligibility list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in Bangladesh (session 2021-2022) PDF এই কনটেন্টটি শেয়ার করতে ক্লিক করুন আপনার মতামত প্রদান করুন আপনার মতামত প্রদান করুন আপনার নাম নাম অবশ্যই দিতে হবে আপনার ইমেইল সঠিক ইমেইল দিন আপনার যোগাযোগ নম্বর সঠিক ফোন নম্বর দিন (যেমন 017XXXXXXXX) আপনার মতামত মতামত কমপক্ষে 20 অক্ষরের হতে হবে Attachment (jpg, jpeg, png, pdf • max 2 MB) Invalid file. Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন এক্সেসিবিলিটি ফন্ট বৃদ্ধি ফন্ট হ্রাস মনোক্রোম ইনভার্ট বড় কার্সর লিঙ্ক হাইলাইট শিরোনাম হাইলাইট পড়ার গাইড রিসেট স্ক্রিন রিডার ডাউনলোড করুন কন্টেন্টে চলে যান এক্সেসিবিলিটি মেনুতে যান এই ওয়েবসাইটে প্রকাশিত সকল তথ্য সংশ্লিষ্ট দপ্তর কর্তৃক নিয়মিত হালনাগাদ করা হয়। তথ্যের যথার্থতা, নির্ভুলতা ও নির্ভরযোগ্যতা নিশ্চিত করতে সংশ্লিষ্ট দপ্তর সর্বদা সচেষ্ট। ব্যবহারের শর্তাবলি সচরাচর জিজ্ঞাস্য যোগাযোগ গোপনীয়তার-নীতিমালা সাইটটি শেষ হাল-নাগাদ করা হয়েছে: শনিবার, 14 নভেম্বর, 2026 এ 20:13:30 পরিকল্পনা এবং বাস্তবায়ন: মন্ত্রিপরিষদ বিভাগ, এটুআই, বিসিসি, ডিওআইসিটি ও বেসিস।",
+    "requirements": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:34:15+06:00",
     "requirementsSource": "https://dgme.gov.bd/pages/static-pages/6922dfe4933eb65569e2485f",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
+      }
+    }
   },
   {
     "id": "e39",
@@ -1146,7 +2034,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Private",
     "applicationOpenDate": null,
     "applicationDeadline": "2026-11-30",
-    "examDate": "2026-11-30",
+    "examDate": null,
     "examTime": "Not published yet",
     "examLocation": "Not published yet",
     "officialUrl": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
@@ -1156,11 +2044,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": "For GUB undergraduate admission, SSC and HSC/equivalent normally require GPA 2.50 each, or GPA 2.00 in one examination with combined GPA 6.00. O/A-Level applicants have separate subject/grade conditions. Program-specific requirements may apply.",
-    "requirements": "GUB - Select Programs Home Login Undergraduate Programs If you are a Foreign Student, then select the Foreign Student! Local Student Foreign Student Program Session Admission Form Fee (BDT) Application Start Date Application End Date Admission Test Date BA (Hons) in English (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 Bachelor of Business Administration (BBA) (Day) Spring 2027 [Bi-Semester] 1000 08/10/2026 30/11/2026 Bachelor of Laws (LL.B.) (Day) Spring 2027 [Bi-Semester_2] 1000 27/07/2026 30/11/2026 BSc in Artificial Intelligence and Data Science (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Computer Science and Engineering (CSE) (Day) Spring 2027 [Bi-Semester] 1000 08/10/2026 30/11/2026 BSc in Electrical and Electronic Engineering (EEE) (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Software Engineering (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSS (Hons) in Sociology (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSc in Textile Engineering (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 BSS (Hons) in Journalism and Media Communication (Day) Spring 2027 [Bi-Semester] 1000 06/10/2026 30/11/2026 Number of Selected Program(s): 0 Total Admission Form Fees: 0 CONTACT DETAILS 220/D, Begum Rokeya Sarani (300 meter North Side of IDB Bhaban), Dhaka -1207, Bangladesh-1207 Green University of Bangladesh Purbachal American City, Kanchan, Rupganj Narayanganj-1461, Dhaka, Bangladesh Cell No.: 01324713502, 01324713503, 01324713504, 01324713506 01324713503, 01324713507, 01324713508 Email: info@green.edu.bd Website: www.green.edu.bd Dhaka City Information Center 220/D/4/1 Begum Rokeya Sharani (100 meters south from Shewrapara Metro Station ) Dhaka 1207, Bangladesh Cell No.: 01324713502, 01324713504 Fax: IMPORTANT LINKS GUB Ranking Green University Website Undergraduate Programs Graduate Programs Eligibility of Admissions Tuition Fees Financial Aid and Scholarship Why Study at Green University Frequently Asked Questions Admission Office © 2026 - Edusoft Consultants Ltd",
+    "requirements": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:34:19+06:00",
     "requirementsSource": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
+      }
+    }
   },
   {
     "id": "e40",
@@ -1223,11 +2141,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. C & D Units will be held on 5 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
     "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
   },
   {
     "id": "auto-ku-ab",
@@ -1247,11 +2195,41 @@ window.ADMISSION_EXAMS = [
     "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. A & B Units will be held on 4 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:09+06:00",
     "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
   },
   {
     "id": "auto-mist-c",
@@ -1261,7 +2239,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2027-01-05",
     "applicationDeadline": "2027-01-21",
-    "examDate": "2027-02-05",
+    "examDate": "2026-12-26",
     "examTime": "Morning shift",
     "examLocation": "Not published yet",
     "officialUrl": "https://admission.mist.ac.bd/",
@@ -1271,7 +2249,38 @@ window.ADMISSION_EXAMS = [
     "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: C Unit (Science) will be held on 5 February 2027, Friday, in the morning. The exact clock time and centre details are not yet verified here.",
     "cycle": "2026-27 / HSC Batch 2026",
     "source": "https://www.mist.ac.bd/",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "business": {
+        "eligible": true,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "others": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      }
+    }
   },
   {
     "id": "auto-mist-ab",
@@ -1281,7 +2290,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2027-01-05",
     "applicationDeadline": "2027-01-21",
-    "examDate": "2027-02-06",
+    "examDate": "2026-12-19",
     "examTime": "Morning shift (A & B); Afternoon shift (B)",
     "examLocation": "Not published yet",
     "officialUrl": "https://admission.mist.ac.bd/",
@@ -1291,7 +2300,38 @@ window.ADMISSION_EXAMS = [
     "notes": "MIST announced the revised 2026-27 schedule on 10 November 2026: A & B Units will be held on 6 February 2027, Saturday; A+B in the morning and the remaining B Unit examination in the afternoon. The exact clock times and centre details are not yet verified here.",
     "cycle": "2026-27 / HSC Batch 2026",
     "source": "https://www.mist.ac.bd/",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "business": {
+        "eligible": true,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      },
+      "others": {
+        "eligible": null,
+        "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
+      }
+    }
   },
   {
     "id": "auto-iut",
@@ -1333,11 +2373,41 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-03-19",
     "examTime": "11:00 AM–12:00 PM",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:35:11+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1355,11 +2425,41 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-03-20",
     "examTime": "11:00 AM–12:00 PM",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:35:11+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1377,11 +2477,41 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-03-20",
     "examTime": "3:00 PM–4:00 PM",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:35:11+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   },
   {
     "admissionType": "Public / Centralized GST Cluster",
@@ -1399,10 +2529,40 @@ window.ADMISSION_EXAMS = [
     "examDate": "2027-03-27",
     "examTime": "11:00 AM–12:00 PM",
     "previousRequirements": "Check the official GST admission guideline for the exact unit-specific GPA, subject, and other eligibility conditions.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
+    "requirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T10:35:11+06:00",
     "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "business": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      },
+      "others": {
+        "eligible": null,
+        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
+      }
+    }
   }
 ];
