@@ -61,9 +61,16 @@ Each record can contain fields such as:
 
 data.js is intentionally kept human-readable because it is both application data and the primary source file maintained by the automation.
 
-## Automatic date checking
+## Automatic monitoring
 
-GitHub Actions checks the tracked official sources hourly at minute 34 (Asia/Dhaka).
+Two independent GitHub Actions workflows run on the default branch:
+
+- Admission dates and eligibility requirements: every hour at minute 17 (Asia/Dhaka).
+- Admission notice feed: every hour at minute 34 (Asia/Dhaka).
+
+The admission checker reads the existing data.js, fetches each configured official source, and only changes dates when explicit admission-test context is found. The notice checker refreshes the notice feed from the configured notice aggregator and broadcasts newly detected notices to push subscribers when the required GitHub secret is configured.
+
+GitHub Actions scheduled runs are best-effort and can occasionally start late or be skipped during platform load. The schedules are configured for the requested minute offsets; they are not a hard real-time guarantee.
 
 The checker is deliberately conservative:
 
