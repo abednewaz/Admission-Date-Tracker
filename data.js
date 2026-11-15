@@ -860,21 +860,321 @@ window.ADMISSION_EXAMS = [
     }
   },
   {
-    "id": "e16",
+    "id": "jnu-2026-27-a",
     "universityName": "JnU - Unit A",
     "universityShortName": "JnU",
-    "unit": "Science",
+    "unit": "A Unit — Mathematical & Physical Sciences",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "Not published yet",
     "examTime": "Not published yet",
-    "examLocation": "Jagannath University campus",
+    "examLocation": "Jahangirnagar University campus",
     "officialUrl": "https://admission.jnu.ac.bd",
     "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": "The university has announced a tentative admission-test window of 10–21 January 2027 (excluding Fridays and Saturdays); exact unit-wise dates are not published yet.",
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-b",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "B Unit — Social Sciences",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-c",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "C Unit — Arts & Humanities, Law and ICLC",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-c1",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "C1 Unit — Drama & Dramatics / Fine Arts",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-d",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "D Unit — Biological Sciences",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-e",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "E Unit — Business Studies",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
+    "requirementsStatus": "verified",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": false,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination."
+      }
+    }
+  },
+  {
+    "id": "jnu-2026-27-iba",
+    "universityName": "JnU - Unit A",
+    "universityShortName": "JnU",
+    "unit": "IBA-JU — BBA Admission Test",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-10",
+    "examDate": "Not published yet",
+    "examTime": "Not published yet",
+    "examLocation": "Jahangirnagar University campus",
+    "officialUrl": "https://admission.jnu.ac.bd",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "notes": "JU has announced the tentative overall test window as 10–21 January 2027, excluding Fridays and Saturdays. Exact unit-wise date and time have not yet been published. Unit structure follows the university's unchanged structure for this session.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirements": "Jagannath University Unit A: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 7.00 with at least 3.00 in each examination.",
     "requirementsStatus": "verified",
@@ -963,56 +1263,6 @@ window.ADMISSION_EXAMS = [
       }
     },
     "requirementsChanged": true
-  },
-  {
-    "id": "e18",
-    "universityName": "JnU - Unit E",
-    "universityShortName": "JnU",
-    "unit": "Fine Arts & Music",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2026-11-15",
-    "applicationDeadline": "2026-12-10",
-    "examDate": "Not published yet",
-    "examTime": "Not published yet",
-    "examLocation": "Jagannath University campus",
-    "officialUrl": "https://admission.jnu.ac.bd",
-    "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "The university has announced a tentative admission-test window of 10–21 January 2027 (excluding Fridays and Saturdays); exact unit-wise dates are not published yet.",
-    "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination.",
-    "requirementsStatus": "verified",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": false,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "business": {
-        "eligible": true,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "humanities": {
-        "eligible": true,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Jagannath University Unit E: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 5.50 with at least 2.50 in each examination."
-      }
-    }
   },
   {
     "id": "e19",
@@ -1127,56 +1377,6 @@ window.ADMISSION_EXAMS = [
     "requirements": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
   },
   {
-    "id": "e21",
-    "universityName": "JnU - Unit B",
-    "universityShortName": "JnU",
-    "unit": "Humanities & Social Science",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2026-11-15",
-    "applicationDeadline": "2026-12-10",
-    "examDate": "Not published yet",
-    "examTime": "Not published yet",
-    "examLocation": "Jagannath University campus",
-    "officialUrl": "https://admission.jnu.ac.bd",
-    "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "The university has announced a tentative admission-test window of 10–21 January 2027 (excluding Fridays and Saturdays); exact unit-wise dates are not published yet.",
-    "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75.",
-    "requirementsStatus": "verified",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": false,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "business": {
-        "eligible": true,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "humanities": {
-        "eligible": true,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Jagannath University Unit B: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      }
-    }
-  },
-  {
     "id": "e22",
     "universityName": "BUET",
     "universityShortName": "BUET",
@@ -1281,106 +1481,6 @@ window.ADMISSION_EXAMS = [
     "requirementsSource": "https://application.ru.ac.bd/",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
-  },
-  {
-    "id": "e24",
-    "universityName": "JnU - Unit C",
-    "universityShortName": "JnU",
-    "unit": "Business Studies",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2026-11-15",
-    "applicationDeadline": "2026-12-10",
-    "examDate": "Not published yet",
-    "examTime": "Not published yet",
-    "examLocation": "Jagannath University campus",
-    "officialUrl": "https://admission.jnu.ac.bd",
-    "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "The university has announced a tentative admission-test window of 10–21 January 2027 (excluding Fridays and Saturdays); exact unit-wise dates are not published yet.",
-    "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination.",
-    "requirementsStatus": "verified",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": false,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "business": {
-        "eligible": true,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "humanities": {
-        "eligible": true,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Jagannath University Unit C: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.50 with at least 3.00 in each examination."
-      }
-    }
-  },
-  {
-    "id": "e25",
-    "universityName": "JnU - Unit D",
-    "universityShortName": "JnU",
-    "unit": "Specialized / Integrated",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2026-11-15",
-    "applicationDeadline": "2026-12-10",
-    "examDate": "Not published yet",
-    "examTime": "Not published yet",
-    "examLocation": "Jagannath University campus",
-    "officialUrl": "https://admission.jnu.ac.bd",
-    "status": "Officially published",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": "The university has announced a tentative admission-test window of 10–21 January 2027 (excluding Fridays and Saturdays); exact unit-wise dates are not published yet.",
-    "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75.",
-    "requirementsStatus": "verified",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": false,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "business": {
-        "eligible": true,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "humanities": {
-        "eligible": true,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      },
-      "others": {
-        "eligible": null,
-        "text": "Jagannath University Unit D: SSC/equivalent passed in 2023 or 2024 and HSC/equivalent in 2026; combined GPA at least 6.00 with no individual GPA below 2.75."
-      }
-    }
   },
   {
     "id": "e26",
