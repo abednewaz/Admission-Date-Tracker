@@ -335,15 +335,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University IBA: HSC/equivalent in 2026; combined SSC+HSC GPA 8.00 with at least 3.50 in each. Previous DU admission-test appearance restrictions and the current IBA-specific conditions also apply."
       },
       "madrasa": {
@@ -438,15 +438,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
@@ -541,15 +541,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
@@ -594,15 +594,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University Fine Arts: Science, Humanities and Business Studies applicants need combined SSC+HSC GPA 6.50 with at least 3.00 in each. Additional Fine Arts conditions apply."
       },
       "madrasa": {
@@ -647,15 +647,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Dhaka University: Science-group applicants need combined SSC+HSC GPA 8.00 with at least 3.50 in each. Humanities/Business Studies applicants need combined GPA 7.50 with at least 3.00 in each. Unit- and department-specific subject conditions also apply."
       },
       "madrasa": {
@@ -701,15 +701,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "madrasa": {
@@ -751,15 +751,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "madrasa": {
@@ -801,15 +801,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "madrasa": {
@@ -1159,15 +1159,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUET: current 2026-27 information says the previous eligibility criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00 and HSC/equivalent GPA 5.00, including GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The final circular should be checked for passing-year and shortlisting details."
       },
       "madrasa": {
@@ -1207,15 +1207,15 @@ window.ADMISSION_EXAMS = [
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
       },
       "madrasa": {
@@ -1362,15 +1362,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1412,15 +1412,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1462,15 +1462,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1512,15 +1512,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1562,15 +1562,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1612,15 +1612,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1662,15 +1662,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
       },
       "madrasa": {
@@ -1716,15 +1716,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -1770,15 +1770,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -1824,15 +1824,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -1893,15 +1893,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "madrasa": {
@@ -1943,15 +1943,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "BUP has announced the 2026-27 admission-test dates, but the full current undergraduate eligibility circular was not available in the sources I could reliably verify. Do not use last year's GPA figures as current rules. Please check the official BUP admission circular for the exact faculty/group eligibility."
       },
       "madrasa": {
@@ -1997,15 +1997,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Medical and dental admission test date for 2026-27 is published for 18 December 2026, but the current DGME admission circular/eligibility policy was not yet available in the sources checked. Please check the official DGME circular before relying on GPA, subject or passing-year requirements."
       },
       "madrasa": {
@@ -2051,15 +2051,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "verified",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Green University: minimum GPA 2.50 in both SSC and HSC/equivalent, or if either examination GPA is 2.00 or above, combined GPA must be at least 6.00. O-Level/A-Level applicants have separate grade requirements. CSE, EEE and Textile Engineering require Physics, Chemistry and Mathematics at HSC/A-Level or equivalent."
       },
       "madrasa": {
@@ -2148,15 +2148,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "madrasa": {
@@ -2202,15 +2202,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
       },
       "madrasa": {
@@ -2253,15 +2253,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "madrasa": {
@@ -2304,15 +2304,15 @@ window.ADMISSION_EXAMS = [
     "requirements": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units.",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "MIST current undergraduate criteria: Science-group SSC/equivalent minimum GPA 4.00 without fourth subject. HSC/equivalent requires total Grade Point 18 in Mathematics, Physics, Chemistry and English, with minimum Grade Point 4.0 in Mathematics, Physics and Chemistry. O-Level requires at least B in five subjects including Mathematics, Physics, Chemistry and English; A-Level requires at least three B grades in Mathematics, Physics and Chemistry. Architecture applicants take both applicable units."
       },
       "madrasa": {
@@ -2380,15 +2380,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -2432,15 +2432,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -2484,15 +2484,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
@@ -2536,15 +2536,15 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official",
     "requirementsByGroup": {
       "science": {
-        "eligible": false,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "business": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "humanities": {
-        "eligible": true,
+        "eligible": null,
         "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       },
       "madrasa": {
