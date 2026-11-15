@@ -290,7 +290,7 @@
     .experience-box{max-width:1040px;margin:0 auto 1.8rem;padding:1.35rem 1.25rem;text-align:center;background:linear-gradient(135deg,rgba(81,70,201,.08),rgba(79,143,232,.08));border:1px solid var(--border);border-radius:16px;box-shadow:var(--sh)}
     .experience-box h2{font-size:1.08rem;font-weight:750;color:var(--text);margin-bottom:.3rem}.experience-box p{font-size:.82rem;color:var(--muted);margin-bottom:.7rem}
     .rating-stars{display:flex;justify-content:center;gap:.3rem}.rating-star{border:0;background:transparent;color:#b8bec8;font-size:2rem;line-height:1;padding:.15rem .22rem;cursor:pointer;transition:transform .12s,color .12s}.rating-star:hover,.rating-star:focus-visible,.rating-star.active{color:#f2b94b;transform:translateY(-1px)}.rating-star:focus-visible{outline:2px solid var(--pri2);outline-offset:2px;border-radius:7px}.rating-thanks{display:none;margin-top:.55rem;font-size:.78rem;font-weight:650;color:var(--green)}body.dark .experience-box{background:linear-gradient(135deg,rgba(81,70,201,.16),rgba(79,143,232,.12))}
-    footer .footer-email{color:#5147c8;font-weight:700;text-decoration:none;transition:color .18s ease,text-decoration-color .18s ease}
+    .review-area{margin-top:1rem;text-align:left}.review-form{display:grid;gap:.65rem}.review-input,.review-textarea{width:100%;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font:inherit;font-size:.86rem;padding:.68rem .75rem;outline:none}.review-textarea{min-height:92px;resize:vertical}.review-input:focus,.review-textarea:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(118,103,232,.12)}.review-submit{width:100%;border:0;border-radius:10px;padding:.65rem;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font-size:.86rem;font-weight:700;cursor:pointer;transition:transform .18s,box-shadow .18s}.review-submit:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(91,91,214,.2)}.review-submit:disabled{opacity:.65;cursor:wait;transform:none}.review-status{min-height:1.1rem;font-size:.76rem;font-weight:650;color:var(--green)}.reviews-section{margin-top:1.15rem;padding-top:1rem;border-top:1px solid var(--border);text-align:left}.reviews-section h3{font-size:.92rem;color:var(--text);margin-bottom:.65rem}.reviews-list{display:grid;gap:.55rem;max-height:460px;overflow:auto;padding-right:.15rem}.review-card{padding:.75rem;border:1px solid var(--border);border-radius:11px;background:var(--card)}.review-card-top{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.35rem}.review-author{font-size:.8rem;font-weight:750;color:var(--text)}.review-date{font-size:.68rem;color:var(--muted);white-space:nowrap}.review-card-stars{color:#f2b94b;font-size:.85rem;letter-spacing:.03em}.review-card-text{margin-top:.28rem;color:var(--muted);font-size:.82rem;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}.reviews-empty{padding:.8rem;border:1px dashed var(--border);border-radius:10px;color:var(--muted);font-size:.8rem;text-align:center}body.dark .review-input,body.dark .review-textarea{background:#101725;border-color:#303a53}body.dark .review-card{background:#182136}@media(max-width:640px){.experience-box{margin-left:1rem;margin-right:1rem}.review-card-top{align-items:flex-start;flex-direction:column;gap:.15rem}.review-date{white-space:normal}}    footer .footer-email{color:#5147c8;font-weight:700;text-decoration:none;transition:color .18s ease,text-decoration-color .18s ease}
     footer .footer-email:hover,footer .footer-email:focus-visible{color:#7667e8;text-decoration:underline;text-underline-offset:3px}
     body.dark footer .footer-email{color:#b8adff}
     body.dark footer .footer-email:hover,body.dark footer .footer-email:focus-visible{color:#d4ceff;text-decoration:underline;text-underline-offset:3px}
@@ -370,14 +370,26 @@
       <section class="experience-box" aria-label="Rate your Experience">
         <h2>Rate your Experience</h2>
         <p>How helpful was Admission Tracker for you?</p>
-        <div class="rating-stars" role="group" aria-label="Rate your Experience">
+        <div class="rating-stars" id="ratingStars" role="group" aria-label="Rate your Experience">
           <button class="rating-star" type="button" data-rating="1" aria-label="1 out of 5">★</button>
           <button class="rating-star" type="button" data-rating="2" aria-label="2 out of 5">★</button>
           <button class="rating-star" type="button" data-rating="3" aria-label="3 out of 5">★</button>
           <button class="rating-star" type="button" data-rating="4" aria-label="4 out of 5">★</button>
           <button class="rating-star" type="button" data-rating="5" aria-label="5 out of 5">★</button>
         </div>
-        <div class="rating-thanks" id="ratingThanks">Thanks for your feedback.</div>
+        <div class="rating-thanks" id="ratingThanks"></div>
+        <div class="review-area">
+          <form class="review-form" id="reviewForm">
+            <input class="review-input" id="reviewName" type="text" maxlength="50" placeholder="Your name (optional)" autocomplete="name">
+            <textarea class="review-textarea" id="reviewText" maxlength="500" placeholder="Write your review..." required></textarea>
+            <button class="review-submit" id="reviewSubmit" type="submit">Submit Review</button>
+            <div class="review-status" id="reviewStatus" role="status" aria-live="polite"></div>
+          </form>
+          <section class="reviews-section" aria-labelledby="reviewsHeading">
+            <h3 id="reviewsHeading">Recent Reviews</h3>
+            <div class="reviews-list" id="reviewsList"><div class="reviews-empty">Loading reviews...</div></div>
+          </section>
+        </div>
       </section>
 
       <div class="footer-main">
@@ -601,9 +613,39 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 <script>
 (function(){
   var stars=document.querySelectorAll('.rating-star'),thanks=document.getElementById('ratingThanks'),key='adt_experience_rating_v1';
-  function setRating(n){stars.forEach(function(s){s.classList.toggle('active',Number(s.dataset.rating)<=n)});if(thanks)thanks.style.display='block';try{localStorage.setItem(key,String(n))}catch(e){}}
-  var saved=0;try{saved=Number(localStorage.getItem(key)||0)}catch(e){} if(saved)setRating(saved);
+  var form=document.getElementById('reviewForm'),nameInput=document.getElementById('reviewName'),textInput=document.getElementById('reviewText'),submit=document.getElementById('reviewSubmit'),status=document.getElementById('reviewStatus'),list=document.getElementById('reviewsList'),selectedRating=0;
+  function setRating(n){selectedRating=n;stars.forEach(function(s){s.classList.toggle('active',Number(s.dataset.rating)<=n)});if(thanks){thanks.textContent=n+'/5 selected';thanks.style.display='block'}try{localStorage.setItem(key,String(n))}catch(e){}}
+  var saved=0;try{saved=Number(localStorage.getItem(key)||0)}catch(e){} if(saved>=1&&saved<=5)setRating(saved);
   stars.forEach(function(s){s.addEventListener('click',function(){setRating(Number(this.dataset.rating))})});
+  function escReview(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+  function formatReviewDate(v){var d=new Date(v);if(isNaN(d.getTime()))return '';return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}
+  function renderReviews(items){
+    if(!Array.isArray(items)||!items.length){list.innerHTML='<div class="reviews-empty">No reviews yet. Be the first to share your experience.</div>';return}
+    list.innerHTML=items.map(function(r){
+      var rating=Math.max(1,Math.min(5,Number(r.rating)||0));
+      return '<article class="review-card"><div class="review-card-top"><div><div class="review-author">'+escReview(r.name||'Anonymous')+'</div><div class="review-card-stars" aria-label="'+rating+' out of 5">'+('★'.repeat(rating))+('☆'.repeat(5-rating))+'</div></div><time class="review-date" datetime="'+escReview(r.created_at||'')+'">'+escReview(formatReviewDate(r.created_at))+'</time></div><div class="review-card-text">'+escReview(r.review)+'</div></article>';
+    }).join('');
+  }
+  async function loadReviews(){
+    try{var res=await fetch('/api/reviews');if(!res.ok)throw new Error('load failed');renderReviews(await res.json())}
+    catch(e){list.innerHTML='<div class="reviews-empty">Reviews are temporarily unavailable.</div>'}
+  }
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();status.textContent='';
+    if(!selectedRating){status.textContent='Please select a rating first.';status.style.color='var(--red)';return}
+    var review=textInput.value.trim(),name=nameInput.value.trim();
+    if(review.length<3){status.textContent='Please write a review.';status.style.color='var(--red)';textInput.focus();return}
+    submit.disabled=true;
+    try{
+      var res=await fetch('/api/reviews',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({rating:selectedRating,review:review,name:name||'Anonymous'})});
+      var data=await res.json().catch(function(){return{}});
+      if(!res.ok)throw new Error(data.error||'Could not submit your review.');
+      status.style.color='var(--green)';status.textContent='Your review has been submitted.';
+      textInput.value='';nameInput.value='';setRating(selectedRating);await loadReviews();
+    }catch(err){status.style.color='var(--red)';status.textContent=err.message||'Could not submit your review. Please try again.'}
+    finally{submit.disabled=false}
+  });
+  loadReviews();
 })();
 </script>
 <script>
@@ -624,6 +666,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 (function(){
   var key='adt_language_v1';
   var dict={
+    'Rate your Experience':'আপনার অভিজ্ঞতা মূল্যায়ন করুন','How helpful was Admission Tracker for you?':'Admission Tracker আপনার জন্য কতটা উপকারী ছিল?','Your name (optional)':'আপনার নাম (ঐচ্ছিক)','Write your review...':'আপনার রিভিউ লিখুন...','Submit Review':'রিভিউ জমা দিন','Recent Reviews':'সাম্প্রতিক রিভিউ','Loading reviews...':'রিভিউ লোড হচ্ছে...','No reviews yet. Be the first to share your experience.':'এখনও কোনো রিভিউ নেই। আপনার অভিজ্ঞতা সবার আগে শেয়ার করুন।','Reviews are temporarily unavailable.':'রিভিউগুলো সাময়িকভাবে পাওয়া যাচ্ছে না।','Please select a rating first.':'প্রথমে একটি রেটিং নির্বাচন করুন।','Please write a review.':'অনুগ্রহ করে একটি রিভিউ লিখুন।','Your review has been submitted.':'আপনার রিভিউ জমা হয়েছে।','Could not submit your review. Please try again.':'রিভিউ জমা দেওয়া যায়নি। আবার চেষ্টা করুন।','Thanks for your feedback.':'আপনার মতামতের জন্য ধন্যবাদ।',
     'Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.':'বাংলাদেশের বিশ্ববিদ্যালয়গুলোর ভর্তি তারিখ, আবেদনের শেষ সময়, পরীক্ষার সময়সূচি, যোগ্যতা এবং গুরুত্বপূর্ণ নোটিশ সম্পর্কে আপডেট থাকুন।',
     'Get new notice and exam alerts':'নতুন নোটিশ ও পরীক্ষার অ্যালার্ট পান',
     'Enable Notifications':'নোটিফিকেশন চালু করুন',
