@@ -679,7 +679,7 @@ def extract_notice_summary(url):
             for tag in node(["script", "style", "noscript", "nav", "footer", "form"]):
                 tag.decompose()
             text = normalize(node.get_text(" ", strip=True))
-            text = re.sub(r"\\s+", " ", text).strip()
+            text = re.sub(r"\s+", " ", text).strip()
             if len(text) >= 80:
                 return text[:1200]
 
