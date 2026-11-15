@@ -598,7 +598,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     }
     if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=15',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
-      'dhaka university':'https://www.du.ac.bd/notice',
+      'dhaka university':'https://du.ac.bd/notice',
       'buet':'https://ugadmission.buet.ac.bd/',
       'kuet':'https://www.kuet.ac.bd/notice/all',
       'rajshahi university':'https://www.ru.ac.bd/notices/',
