@@ -40,7 +40,7 @@ jobs:
           import requests
 
           def parse_notices(text):
-              match = re.search(r"window\\.ADMISSION_NOTICES\\s*=\\s*(\\[.*?\\])\\s*;?\\s*$", text, re.S)
+              match = re.search(r"window\.ADMISSION_NOTICES\s*=\s*(\[.*?\])\s*;?\s*$", text, re.S)
               return json.loads(match.group(1)) if match else []
 
           try:
