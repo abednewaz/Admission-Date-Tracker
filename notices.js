@@ -1,14 +1,66 @@
 window.ADMISSION_NOTICES = [
-  {"university":"Dhaka University","title":"New Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF)","date":"2026-11-14","summary":"The University of Dhaka has published the Faculty of Fine Art (Cha Unit) undergraduate admission circular for 2026-2027. Online applications run from November 11 to November 25, 2026, and the admission test is scheduled for December 22, 2026.","source":"students.bd"},
-  {"university":"Dhaka University","title":"New Admission Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF)","date":"2026-11-14","summary":"The Faculty of Business Studies, University of Dhaka has published the undergraduate admission guidelines for 2026-2027. Online applications run from November 11 to November 25, 2026, and the admission test will be held on December 26, 2026, at 11:00 AM.","source":"students.bd"},
-  {"university":"Dhaka University","title":"New Admission Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download)","date":"2026-11-14","summary":"Dhaka University has published the undergraduate admission guidelines for the Arts, Law, and Social Science Unit for 2026-2027. Online applications are open from November 11 to November 25, 2026, and the admission test will be held on December 19, 2026.","source":"students.bd"},
-  {"university":"Dhaka University","title":"New Admission Dhaka University Undergraduate Admission Circular 2026-2027 (Apply Online & Exam Date)","date":"2026-11-14","summary":"Dhaka University has published the Undergraduate Program Admission Circular for 2026-2027. Eligible candidates can apply online from November 11 to November 25, 2026, and admission tests begin on December 5, 2026.","source":"students.bd"},
-  {"university":"Dhaka University","title":"New Admission Dhaka University Undergraduate Admission Application Guidelines 2026-27 (PDF)","date":"2026-11-14","summary":"Dhaka University has published the complete online application guidelines for the 2026-27 undergraduate admission test. Applications and fee payment are available from November 11 to November 25, 2026 through the official admission portal.","source":"students.bd"},
-  {"university":"Dhaka University","title":"New Admission Dhaka University Undergraduate Equivalence Registration Guide 2026-27 (PDF Download)","date":"2026-11-14","summary":"The Central Admission Office of Dhaka University has published the 2026-27 equivalence registration guide for O-Level, A-Level and foreign-equivalent applicants.","source":"students.bd"},
-  {"university":"Marine Cadet Admission","title":"New Marine Cadet Admission Circular 2026-2027 (Apply Online & PDF)","date":"2026-11-13","summary":"The Department of Shipping has published the Marine Cadet Training Course admission circular for 2026-2027. Online applications run from November 13 to December 25, 2026.","source":"students.bd"},
-  {"university":"KUET","title":"New Admission KUET Admission Circular 2026-2027 | 1st Year B.Sc. Engineering, BURP & B.Arch (PDF)","date":"2026-11-13","summary":"KUET has published the 2026-2027 first-year admission circular for B.Sc. Engineering, BURP and B.Arch programs.","source":"students.bd"},
-  {"university":"Rajshahi University","title":"New Admission Rajshahi University (RU) Honours 1st Year Admission Circular 2026-2027 (PDF)","date":"2026-11-12","summary":"Rajshahi University has published the 2026-2027 first-year undergraduate admission circular. Online applications run from November 15 to November 30, 2026.","source":"students.bd"},
-  {"university":"Alim / BMEB","title":"New Alim Supplementary Exam Center List 2026 (PDF Download) - BMEB","date":"2026-11-12","summary":"The Alim Supplementary Examination 2026 center list has been published, covering designated centers across Bangladesh.","source":"students.bd"},
-  {"university":"Alim / BMEB","title":"New Alim Supplementary Exam Routine 2026 Published by BMEB (PDF Download)","date":"2026-11-12","summary":"The Bangladesh Madrasah Education Board has published the Alim Supplementary Examination 2026 routine.","source":"students.bd"},
-  {"university":"Education Boards","title":"New Junior Scholarship Exam 2026 Official Forms, Bundle Labels & Center Statements (PDF Download)","date":"2026-11-12","summary":"Official forms, bundle labels and center statements for the Junior Scholarship Examination 2026 have been published for education boards across Bangladesh.","source":"students.bd"}
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Date & Day 2026-12-22 Tuesday - Subject General Knowledge (MCQ) & Drawing (Human Figure Drawing) 11:00 AM - 12:30 PM"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-business-studies-c-unit-admission-circular-2026-27",
+    "source": "students.bd",
+    "summary": "Date & Day 2026-12-26 Saturday - Subject Business Studies Unit Admission Test (MCQ 45 mins + Written 45 mins) 11:00 AM - 12:30 PM"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-arts-law-social-science-unit-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Date & Day 2026-12-19 Saturday - Subject Arts, Law & Social Science Unit Admission Test (MCQ & Written) 11:00 AM - 12:30 PM"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Undergraduate Admission Circular 2026-2027 (Apply Online & Exam Date) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-undergraduate-admission-2026-2027",
+    "source": "students.bd",
+    "summary": "à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à¦¯à¦¼à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¬à¦¿à¦à§à¦à¦ªà§à¦¤à¦¿ à§¨à§¦à§¨à§§ à¦¸à¦¨ à¦¥à§à¦à§ à§¨à§¦à§¨à§ª à¦¸à¦¨ à¦ªà¦°à§à¦¯à¦¨à§à¦¤ à¦®à¦¾à¦§à§à¦¯à¦®à¦¿à¦ à¦¬à¦¾ à¦¸à¦®à¦®à¦¾à¦¨ à¦à¦¬à¦ à§¨à§¦à§¨à§¬ à¦¸à¦¨à§à¦° à¦à¦à§à¦ à¦®à¦¾à¦§à§à¦¯à¦®à¦¿à¦ à¦¬à¦¾ à¦¸à¦®à¦®à¦¾à¦¨à§à¦° à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦à¦¤à§à¦¤à§à¦°à§à¦£ à¦à¦¾à¦¤à§à¦°-à¦à¦¾à¦¤à§à¦°à§à¦¦à§à¦° à¦®à¦§à§à¦¯à§ à¦¯à¦¾à¦°à¦¾ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§à¦° à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦à¦à¦¨à¦¿à¦à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦¨à¦¿à¦°à§à¦§à¦¾à¦°à¦¿à¦¤ à¦¶à¦°à§à¦¤ à¦ªà§à¦°à¦£ à¦à¦°à§ à¦à§à¦¬à¦² à¦¤à¦¾à¦°à¦¾à¦ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¤à§ à¦ªà¦¾à¦°à¦¬à§à¥¤ à¦­à¦°à§à¦¤à¦¿ à¦ªà§à¦°à¦¾à¦°à§à¦¥à§à¦°à¦¾ à§§à§§/à§§à§§/à§¨à§¦à§¨à§¬ à¦¤à¦¾à¦°à¦¿à¦ à¦¦à§à¦ªà§à¦° à§§à§¨:à§¦à§¦à¦à¦¾ à¦¥à§à¦à§ à§¨à§«/à§§à§§/à§¨à§¦à"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Undergraduate Admission Application Guidelines 2026-27 (PDF) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-undergraduate-admission-application-guidelines-2026-27",
+    "source": "students.bd",
+    "summary": "à¦ à¦¨à¦²à¦¾à¦à¦¨ à¦­à¦°à§à¦¤à¦¿ à¦à¦®à¦¿à¦à¦¿ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦à§à¦¨à§à¦¦à§à¦°à§à§ à¦­à¦°à§à¦¤à¦¿ à¦ à¦«à¦¿à¦¸ à¦à¦à§à¦· à¦¨à¦-à§¨à§§à§ª, à¦ªà§à¦°à¦¶à¦¾à¦¸à¦¨à¦¿à¦ à¦­à¦¬à¦¨ à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦ à¦à¦¶à¦à§à¦°à¦¹à¦£à§à¦° à¦à¦¬à§à¦¦à¦¨ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à¦¬à¦¿à¦¶à§à¦· à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¨à¦¾ à¦ à¦¨à¦¾à¦à¦¾à¦à§à¦à¦¿à¦¤ à¦¬à¦¿à¦­à§à¦°à¦¾à¦¨à§à¦¤à¦¿ à¦à§à¦¾à¦¤à§ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§à¦¦à§à¦° à¦¨à¦¿à¦à§ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¾à¦° à¦à¦¨à§à¦¯ à¦ªà¦°à¦¾à¦®à¦°à§à¦¶ à¦¦à§à§à¦¾ à¦¹à¦à§à¦à§à¥¤ à¦ à¦¬à¦¸à§à¦¥à¦¾à¦° à¦ªà§à¦°à§à¦à§à¦·à¦¿à¦¤à§ à¦¨à¦¿à¦à§ à¦¸à¦®à§à¦­à¦¬ à¦¨à¦¾ à¦¹à¦²à§ à¦¤à¦¾à¦° à¦ªà¦à§à¦·à§ à¦ à¦¨à§à¦¯ à¦à§à¦ à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¾à¦° à¦¸à¦®à§ à¦ªà¦¾à¦¶à§ à¦¦à¦¾à¦à§à¦¿à§à§ à¦à§à§à¦¾à¦² à¦°à¦¾à¦à¦¾à¦° à¦à¦¨à§à¦¯ à¦ à¦¨à§à¦°à§à¦§ à¦à¦°à¦¾ à¦¯à¦¾à¦à§à¦à§à¥¤ à¦ à¦¤à§à¦¤à§ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦ªà§à¦°à¦¤à¦¿à¦·à§à¦ à¦¾à¦¨"
+  },
+  {
+    "university": "Dhaka University",
+    "title": "New Admission Dhaka University Undergraduate Equivalence Registration Guide 2026-27 (PDF Download) 11/14",
+    "date": "",
+    "url": "https://students.bd/notice/dhaka-university-undergraduate-equivalence-registration-guide-2026-27",
+    "source": "students.bd",
+    "summary": "à¦ à¦¨à¦²à¦¾à¦à¦¨ à¦­à¦°à§à¦¤à¦¿ à¦à¦®à¦¿à¦à¦¿ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦à§à¦¨à§à¦¦à§à¦°à§à§ à¦­à¦°à§à¦¤à¦¿ à¦ à¦«à¦¿à¦¸ à¦à¦à§à¦· à¦¨à¦-à§¨à§§à§ª, à¦ªà§à¦°à¦¶à¦¾à¦¸à¦¨à¦¿à¦ à¦­à¦¬à¦¨ à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à¦¯à¦¼à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨ à¦à¦¬à§à¦¦à¦¨ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à¦§à¦¾à¦ª à§§: à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§à¦° à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦à¦¨à§à¦¯ à¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨ à¦à¦°à¦¤à§ à¦à¦à§à¦à§à¦ à¦à¦¬à§à¦¦à¦¨à¦à¦¾à¦°à§ https://admission.eis.du.ac.bd à¦à§à§à¦¬à¦¸à¦¾à¦à¦à§ à¦ªà§à¦°à¦¬à§à¦¶ à¦à¦°à§ âà¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨â à¦®à§à¦¨à§à¦¤à§ à¦à§à¦²à¦¿à¦ à¦à¦°à¦²à§ à¦¨à¦¿à¦à§à¦° à¦ªà§à¦·à§à¦ à¦¾ à¦ªà§à¦°à¦¦à¦°à§à¦¶à¦¿à¦¤ à¦¹à¦¬à§à¥¤ à¦§à¦¾à¦ª à§¨: à¦à¦ªà¦°à§à¦° à¦à¦²à§à¦²à§à¦à¦¿à¦¤ à¦ªà§à¦·à§à¦ à¦¾à§ à¦ªà¦¾à¦¸à¦ªà§à¦°à§à¦/à¦à¦¨à"
+  },
+  {
+    "university": "Rajshahi University",
+    "title": "New Admission Rajshahi University (RU) Honours 1st Year Admission Circular 2026-2027 (PDF) 11/12",
+    "date": "",
+    "url": "https://students.bd/notice/rajshahi-university-ru-honours-1st-year-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Date & Day 2027-02-12 Friday Unit B Subject Unit B (Business Studies) 1st Shift: 11:00 AM - 12:00 PM | 2nd Shift: 3:00 PM - 4:00 PM"
+  },
+  {
+    "university": "KUET",
+    "title": "New Admission KUET Admission Circular 2026-2027 | 1st Year B.Sc. Engineering, BURP & B.Arch (PDF) 11/13",
+    "date": "",
+    "url": "https://students.bd/notice/kuet-admission-circular-latest",
+    "source": "students.bd",
+    "summary": "à¦à§à¦²à¦¨à¦¾ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ Khulna University of Engineering & Technology (KUET) à¦­à¦°à§à¦¤à¦¿ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿. à¦à¦¸-à¦¸à¦¿. à¦à¦à§à¦à¦¿à¦¨à¦¿à§à¦¾à¦°à¦¿à¦, à¦¬à¦¿à¦à¦à¦à¦°à¦ªà¦¿ à¦ à¦¬à¦¿à¦à¦°à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à¦ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à§§à¥¤ à¦à¦ªà¦à§à¦°à¦®à¦¨à¦¿à¦à¦¾: à¦à§à¦²à¦¨à¦¾ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿. à¦à¦¸-à¦¸à¦¿. à¦à¦à§à¦à¦¿à¦¨à¦¿à§à¦¾à¦°à¦¿à¦, à¦¬à¦¿à¦à¦à¦à¦°à¦ªà¦¿ à¦ à¦¬à¦¿à¦à¦°à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦¬à¦¿à¦­à¦¾à¦à§ à¦¨à¦¿à¦°à§à¦§à¦¾à¦°à¦¿à¦¤ à¦¸à¦à¦à§à¦¯à¦ à¦à¦¸à¦¨à§ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾ à¦ à¦¨à§à¦·à§à¦ à¦¿à¦¤ à¦¹à¦¬à§à¥¤ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦à§à¦¬à¦²à¦®à¦¾à¦¤à§à¦° à¦ªà§à¦°à¦¾à¦°à§à¦¥à§à¦° à¦®à§à¦§à¦¾à¦¸à§à¦¥à¦¾à¦¨ à¦à¦¬à¦ à¦¨à¦¿à"
+  }
 ];
