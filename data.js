@@ -552,7 +552,37 @@ window.ADMISSION_EXAMS = [
     "requirements": "For Bangladeshi applicants: SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; each of these four subjects must have at least GP 3.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level applicants need at least B in five subjects; A-Level applicants need at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must satisfy the equivalent marks/grades stated in the official circular.",
     "requirementsStatus": "verified",
     "requirementsSource": "https://admission.kuet.ac.bd/uploads/notices/2.Prospectus-Ban.pdf",
-    "requirementsLastChecked": "2026-11-15"
+    "requirementsLastChecked": "2026-11-15",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "For Bangladeshi applicants: SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; each of these four subjects must have at least GP 3.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level applicants need at least B in five subjects; A-Level applicants need at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must satisfy the equivalent marks/grades stated in the official circular."
+      },
+      "business": {
+        "eligible": false,
+        "text": "KUET's 2026-27 admission eligibility is based on the published Science-subject requirements. Check the official prospectus for the complete applicable criteria."
+      },
+      "humanities": {
+        "eligible": false,
+        "text": "KUET's 2026-27 undergraduate admission test eligibility is based on the published Science-subject requirements. Check the official prospectus for the complete applicable criteria."
+      },
+      "madrasa": {
+        "eligible": true,
+        "text": "Alim/equivalent applicants must satisfy the published Mathematics, Physics, Chemistry and English requirements and the applicable GPA/grade conditions in the official KUET prospectus."
+      },
+      "technical": {
+        "eligible": true,
+        "text": "HSC Vocational/equivalent applicants must satisfy the published Mathematics, Physics, Chemistry and English requirements and the applicable GPA/grade conditions in the official KUET prospectus."
+      },
+      "oLevelALevel": {
+        "eligible": true,
+        "text": "O-Level: at least B in five subjects. A-Level: at least B separately in Physics, Chemistry and Mathematics; Biomedical Engineering additionally requires B in Biology."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Applicants with foreign-board or other equivalent qualifications must satisfy the equivalency conditions stated in the official KUET prospectus."
+      }
+    }
   },
   {
     "id": "e18",
