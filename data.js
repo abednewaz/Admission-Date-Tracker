@@ -549,10 +549,10 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "SSC/equivalent: passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent: passed in 2026; Mathematics + Physics + Chemistry + English must total at least GP 16.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level/A-Level applicants must satisfy the grade and subject conditions in the official circular.",
+    "requirements": "For Bangladeshi applicants: SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; each of these four subjects must have at least GP 3.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level applicants need at least B in five subjects; A-Level applicants need at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must satisfy the equivalent marks/grades stated in the official circular.",
     "requirementsStatus": "verified",
-    "requirementsSource": "https://admission.kuet.ac.bd/uploads/notices/1.UG-Admission-2026-Circular.pdf",
-    "requirementsLastChecked": "2026-11-15T21:00:00+06:00"
+    "requirementsSource": "https://admission.kuet.ac.bd/uploads/notices/2.Prospectus-Ban.pdf",
+    "requirementsLastChecked": "2026-11-15"
   },
   {
     "id": "e18",
