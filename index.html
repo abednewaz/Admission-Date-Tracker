@@ -286,6 +286,10 @@
       .notice-board .nb-live{font-size:.62rem}
     }
     @media(min-width:901px){.notice-board .nb-head{cursor:default}.notice-board .nb-head .nb-chevron{display:none}}
+
+    .experience-box{max-width:1040px;margin:0 auto 1.8rem;padding:1.35rem 1.25rem;text-align:center;background:linear-gradient(135deg,rgba(81,70,201,.08),rgba(79,143,232,.08));border:1px solid var(--border);border-radius:16px;box-shadow:var(--sh)}
+    .experience-box h2{font-size:1.08rem;font-weight:750;color:var(--text);margin-bottom:.3rem}.experience-box p{font-size:.82rem;color:var(--muted);margin-bottom:.7rem}
+    .rating-stars{display:flex;justify-content:center;gap:.3rem}.rating-star{border:0;background:transparent;color:#b8bec8;font-size:2rem;line-height:1;padding:.15rem .22rem;cursor:pointer;transition:transform .12s,color .12s}.rating-star:hover,.rating-star:focus-visible,.rating-star.active{color:#f2b94b;transform:translateY(-1px)}.rating-star:focus-visible{outline:2px solid var(--pri2);outline-offset:2px;border-radius:7px}.rating-thanks{display:none;margin-top:.55rem;font-size:.78rem;font-weight:650;color:var(--green)}body.dark .experience-box{background:linear-gradient(135deg,rgba(81,70,201,.16),rgba(79,143,232,.12))}
     footer .footer-email{color:#5147c8;font-weight:700;text-decoration:none;transition:color .18s ease,text-decoration-color .18s ease}
     footer .footer-email:hover,footer .footer-email:focus-visible{color:#7667e8;text-decoration:underline;text-underline-offset:3px}
     body.dark footer .footer-email{color:#b8adff}
@@ -363,6 +367,19 @@
     </div>
     <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
     <footer class="site-footer">
+      <section class="experience-box" aria-label="Rate your Experience">
+        <h2>Rate your Experience</h2>
+        <p>How helpful was Admission Tracker for you?</p>
+        <div class="rating-stars" role="group" aria-label="Rate your Experience">
+          <button class="rating-star" type="button" data-rating="1" aria-label="1 out of 5">★</button>
+          <button class="rating-star" type="button" data-rating="2" aria-label="2 out of 5">★</button>
+          <button class="rating-star" type="button" data-rating="3" aria-label="3 out of 5">★</button>
+          <button class="rating-star" type="button" data-rating="4" aria-label="4 out of 5">★</button>
+          <button class="rating-star" type="button" data-rating="5" aria-label="5 out of 5">★</button>
+        </div>
+        <div class="rating-thanks" id="ratingThanks">Thanks for your feedback.</div>
+      </section>
+
       <div class="footer-main">
         <section class="footer-intro" aria-label="About Admission Tracker">
           <div class="footer-brand">
@@ -581,6 +598,14 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     renderCalendar();
     renderMarked();
   </script>
+<script>
+(function(){
+  var stars=document.querySelectorAll('.rating-star'),thanks=document.getElementById('ratingThanks'),key='adt_experience_rating_v1';
+  function setRating(n){stars.forEach(function(s){s.classList.toggle('active',Number(s.dataset.rating)<=n)});if(thanks)thanks.style.display='block';try{localStorage.setItem(key,String(n))}catch(e){}}
+  var saved=0;try{saved=Number(localStorage.getItem(key)||0)}catch(e){} if(saved)setRating(saved);
+  stars.forEach(function(s){s.addEventListener('click',function(){setRating(Number(this.dataset.rating))})});
+})();
+</script>
 <script>
 (function(){
   document.querySelectorAll('[data-email]').forEach(function(a){
