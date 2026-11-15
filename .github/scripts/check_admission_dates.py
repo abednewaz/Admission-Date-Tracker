@@ -660,6 +660,38 @@ def notice_university(title):
             return label
     return None
 
+def extract_notice_summary(url):
+    try:
+        r = request_source(url)
+        soup = BeautifulSoup(r.text, "html.parser")
+        selectors = [
+            "article",
+            "[class*='notice-content']",
+            "[class*='entry-content']",
+            "[class*='post-content']",
+            "[class*='article-content']",
+            "main",
+        ]
+        for selector in selectors:
+            node = soup.select_one(selector)
+            if not node:
+                continue
+            for tag in node(["script", "style", "noscript", "nav", "footer", "form"]):
+                tag.decompose()
+            text = normalize(node.get_text(" ", strip=True))
+            text = re.sub(r"\\s+", " ", text).strip()
+            if len(text) >= 80:
+                return text[:1200]
+
+        meta = soup.find("meta", attrs={"name": re.compile("^description$", re.I)})
+        if meta and meta.get("content"):
+            text = normalize(meta.get("content", "")).strip()
+            if text:
+                return text[:1200]
+    except Exception as exc:
+        print(f"Notice summary failed for {url}: {exc}")
+    return ""
+
 def update_notice_feed():
     try:
         r = request_source(NOTICE_FEED_URL)
@@ -690,12 +722,14 @@ def update_notice_feed():
             parent_text = a.parent.get_text(" ", strip=True) if a.parent else title
             date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", parent_text)
             date_value = date_match.group(0) if date_match else ""
+            summary = extract_notice_summary(href)
             items.append({
                 "university": university,
                 "title": title,
                 "date": date_value,
                 "url": href,
                 "source": "students.bd",
+                "summary": summary,
             })
 
             if len(items) >= 20:
