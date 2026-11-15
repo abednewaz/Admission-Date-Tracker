@@ -1023,13 +1023,13 @@ window.ADMISSION_EXAMS = [
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-11-30",
     "examDate": "2027-02-12",
-    "examTime": "Not published yet",
-    "examLocation": "7 Divisional Cities (Rajshahi, Dhaka, Ctg, Khulna, Sylhet, Mymensingh, Rangpur)",
+    "examTime": "11:00 AM–12:00 PM; 03:00 PM–04:00 PM (two shifts)",
+    "examLocation": "Rajshahi, Dhaka, Chattogram, Khulna, Rangpur, Sylhet, Mymensingh and Barishal",
     "officialUrl": "https://admission.ru.ac.bd",
     "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": "Official 2026-27 RU admission portal now lists Unit B test on 12 Feb 2027 and applications 15–30 Nov 2026.",
+    "notes": "Official RU circular dated 12 Nov 2026: Unit B exam on 12 Feb 2027; two shifts. See official circular for shift allocation.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
@@ -1066,7 +1066,7 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T11:26:22+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsSource": "https://application.ru.ac.bd/",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
@@ -1079,13 +1079,13 @@ window.ADMISSION_EXAMS = [
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-11-30",
     "examDate": "2027-02-13",
-    "examTime": "Not published yet",
-    "examLocation": "7 Divisional Cities",
+    "examTime": "11:00 AM–12:00 PM; 01:00 PM–02:00 PM (two shifts)",
+    "examLocation": "Rajshahi, Dhaka, Chattogram, Khulna, Rangpur, Sylhet, Mymensingh and Barishal",
     "officialUrl": "https://admission.ru.ac.bd",
     "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": "Official 2026-27 RU admission portal now lists Unit C test on 13 Feb 2027 and applications 15–30 Nov 2026.",
+    "notes": "Official RU circular dated 12 Nov 2026: Unit C exam on 13 Feb 2027; two shifts. See official circular for shift allocation.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
@@ -1122,7 +1122,7 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T11:26:22+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsSource": "https://application.ru.ac.bd/",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
   },
@@ -1235,13 +1235,13 @@ window.ADMISSION_EXAMS = [
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-11-30",
     "examDate": "2027-02-20",
-    "examTime": "Not published yet",
-    "examLocation": "7 Divisional Cities",
+    "examTime": "11:00 AM–12:00 PM; 01:00 PM–02:00 PM (two shifts)",
+    "examLocation": "Rajshahi, Dhaka, Chattogram, Khulna, Rangpur, Sylhet, Mymensingh and Barishal",
     "officialUrl": "https://admission.ru.ac.bd",
     "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": "Official 2026-27 RU admission portal now lists Unit A test on 20 Feb 2027 and applications 15–30 Nov 2026.",
+    "notes": "Official RU circular dated 12 Nov 2026: Unit A exam on 20 Feb 2027; two shifts. See official circular for shift allocation.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsByGroup": {
       "science": {
@@ -1278,7 +1278,7 @@ window.ADMISSION_EXAMS = [
     },
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T11:26:23+06:00",
-    "requirementsSource": "https://admission.ru.ac.bd",
+    "requirementsSource": "https://application.ru.ac.bd/",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
@@ -1386,18 +1386,18 @@ window.ADMISSION_EXAMS = [
     "id": "e26",
     "universityName": "CU - Unit C",
     "universityShortName": "CU",
-    "unit": "Business Administration",
+    "unit": "A Unit — Science, Engineering & Biological Sciences",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
-    "examDate": "2027-01-29",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examDate": "2027-01-30",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong, Dhaka and Rajshahi (assigned centre)",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1436,18 +1436,18 @@ window.ADMISSION_EXAMS = [
     "id": "e27",
     "universityName": "CU - Unit A",
     "universityShortName": "CU",
-    "unit": "Science & Engineering",
+    "unit": "C Unit — Business Administration",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
-    "examDate": "2027-01-30",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examDate": "2027-01-29",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong, Dhaka and Rajshahi (assigned centre)",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1486,18 +1486,18 @@ window.ADMISSION_EXAMS = [
     "id": "e28",
     "universityName": "CU - Sub-unit B1",
     "universityShortName": "CU",
-    "unit": "Music / Fine Arts",
+    "unit": "B1 Sub-Unit — Fine Arts / Drama-related programmes",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "2027-02-03",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong University Campus",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1536,18 +1536,18 @@ window.ADMISSION_EXAMS = [
     "id": "e29",
     "universityName": "CU - Sub-unit B2",
     "universityShortName": "CU",
-    "unit": "Islamic Studies / Specialized",
+    "unit": "B2 Sub-Unit — Fine Arts / Drama-related programmes",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "2027-02-04",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong University Campus",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1586,18 +1586,18 @@ window.ADMISSION_EXAMS = [
     "id": "e30",
     "universityName": "CU - Unit B",
     "universityShortName": "CU",
-    "unit": "Arts & Humanities",
+    "unit": "B Unit — Arts & Humanities",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "2027-02-05",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong, Dhaka and Rajshahi (assigned centre)",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1636,18 +1636,18 @@ window.ADMISSION_EXAMS = [
     "id": "e31",
     "universityName": "CU - Unit D",
     "universityShortName": "CU",
-    "unit": "Social Sciences",
+    "unit": "D Unit — Social Sciences",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "2027-02-06",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong, Dhaka and Rajshahi (assigned centre)",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1686,18 +1686,18 @@ window.ADMISSION_EXAMS = [
     "id": "e32",
     "universityName": "CU - Sub-unit D1",
     "universityShortName": "CU",
-    "unit": "Physical Education / Specialized",
+    "unit": "D1 Sub-Unit — Social Sciences / Law-related programmes",
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-12-10",
     "examDate": "2027-02-08",
-    "examTime": "Not published yet",
-    "examLocation": "Better check Yourself",
+    "examTime": "10:30 AM",
+    "examLocation": "Chittagong University Campus",
     "officialUrl": "https://admission.cu.ac.bd",
-    "status": "Better check Yourself",
+    "status": "Officially published",
     "dateChanged": false,
     "previousExamDate": null,
-    "notes": null,
+    "notes": "Unit-wise schedule confirmed in the University of Chittagong's official 2026–27 admission schedule dated 23 Aug 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "check_official",
     "requirements": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information.",
@@ -1729,177 +1729,6 @@ window.ADMISSION_EXAMS = [
       "others": {
         "eligible": null,
         "text": "Chittagong University has announced the 2026-27 exam schedule, but reliable current unit-wise GPA/eligibility criteria were not yet available in the sources checked. Please check the official CU prospectus/admission portal before relying on eligibility information."
-      }
-    }
-  },
-  {
-    "id": "e33",
-    "universityName": "GST Cluster - Unit B",
-    "universityShortName": "GST",
-    "unit": "Humanities & Social Sciences",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2027-01-01",
-    "applicationDeadline": "2027-02-01",
-    "examDate": "2027-03-19",
-    "examTime": "11:00 AM",
-    "examLocation": "Better check Yourself",
-    "officialUrl": "https://gstadmission.ac.bd",
-    "status": "Better check Yourself",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026",
-    "previousRequirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-    "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:28+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "business": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "humanities": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "others": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      }
-    }
-  },
-  {
-    "id": "e34",
-    "universityName": "GST Cluster - Unit C & D",
-    "universityShortName": "GST",
-    "unit": "Commerce / Business & Interdisciplinary",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2027-01-01",
-    "applicationDeadline": "2027-02-01",
-    "examDate": "2027-03-20",
-    "examTime": "11:00 AM (C); 03:00 PM (D)",
-    "examLocation": "Better check Yourself",
-    "officialUrl": "https://gstadmission.ac.bd",
-    "status": "Better check Yourself",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026",
-    "previousRequirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-    "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:28+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "business": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "humanities": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "others": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      }
-    }
-  },
-  {
-    "id": "e35",
-    "universityName": "GST Cluster - Unit A",
-    "universityShortName": "GST",
-    "unit": "Science & Engineering",
-    "admissionType": "Public / Centralized",
-    "applicationOpenDate": "2027-01-01",
-    "applicationDeadline": "2027-02-01",
-    "examDate": "2027-03-27",
-    "examTime": "11:00 AM",
-    "examLocation": "Better check Yourself",
-    "officialUrl": "https://gstadmission.ac.bd",
-    "status": "Better check Yourself",
-    "dateChanged": false,
-    "previousExamDate": null,
-    "notes": null,
-    "cycle": "2026-27 / HSC Batch 2026",
-    "previousRequirements": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information.",
-    "requirements": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-    "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:28+06:00",
-    "requirementsSource": "https://admission.just.edu.bd/Home/Index",
-    "requirementsStatus": "check_official",
-    "requirementsByGroup": {
-      "science": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "business": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "humanities": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "madrasa": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "technical": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "oLevelALevel": {
-        "eligible": null,
-        "text": "Official Web Site - JUST ADMISSION 2025-2026 JUST ADMISSION 2025-2026 Login যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ভর্তি আবেদন 2025-2026 সকল নোটিশ অপেক্ষমান তালিকা থেকে চূড়ান্ত ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের মূল মার্কসীট বিতরণ সংক্রান্ত বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের চূড়ান্ত ভর্তির বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ সংরক্ষিত আসনে ভর্তির জন্য আবেদনকারী শিক্ষার্থীদের স্বাক্ষাৎকারের সংশোধিত বিজ্ঞপ্তি GST 2025- 2026 শিক্ষাবের্ষ 1ম ধাপের প্রাথমিক ভর্তির বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষে পিইএসএস বিভাগে চূড়ান্ত ভর্তির বিজ্ঞপ্তি শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগের 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষের ভর্তি\u0012পরীক্ষার ফলাফল প্রকাশ শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান (PESS) বিভাগে 2025-2026 শিক্ষাবর্ষে স্নাতক (সম্মান) 1ম বর্ষে ভর্তির লক্ষে 16/04/2026 ইং তারিখে গৃহীত লিখিত (MCQ) পরীক্ষার ফলাফল এবং ব্যবহারিক পরীক্ষার সময় ও নির্দেশনা প্রকাশ 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তির আবেদনের সময়সীমা আগামী 28/02/2026 খ্রিঃ তারিখ পর্যন্ত বৃদ্ধি করা হয়েছে 2025-2026 শিক্ষাবর্ষে শারীরিক শিক্ষা ও ক্রীড়া বিজ্ঞান বিভাগে ভর্তি বিজ্ঞপ্তি 2025-2026 শিক্ষাবর্ষের স্নাতক 1ম বর্ষে ভর্তির যোগ্যতা ও শর্তাবলী গুরুত্বপূর্ণ লিংক সমূহ PESS বিভাগে রেজিস্ট্রেশনের লিঙ্ক GST গুচ্ছভুক্ত বিশ্ববিদ্যালয়সমূহের ওয়েবসাইট (https://gstadmission.ac.bd/) গুরুত্বপূর্ণ তারিখ সমূহ PESS বিভাগে আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 12/01/2026 তারিখ দুপুর 12.00টা আবেদন শেষ - 28/02/2026 তারিখ রাত 11:59টা প্রবেশ পত্র ডাউনলোড - 09/04/2026 লিখিত পরীক্ষা (MCQ) - 16/04/2026 তারিখ বেলা 11:00 - 12:00 টা পর্যন্ত লিখিত পরীক্ষার ফলাফল প্রকাশ - 19/04/2026 তারিখের মধ্যে ব্যবহারিক পরীক্ষা - 23/04/2026 তারিখ সকাল 9:00 টা চূড়ান্ত মেধাতালিকা - 27/04/2026 GST আবেদনের গুরুত্বপূর্ণ তারিখ সমুহঃ আবেদন শুরু - 10-12-2025 তারিখ (বুধবার) - দুপুর 12:00 মিনিট আবেদন শেষ - 24-12-2025 তারিখ (বুধবার) - রাত 11:59 মিনিট পরীক্ষার সময়সূচিঃ ইউনিট C (বাণিজ্য) 27/03/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট B (মানবিক) 03/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা ইউনিট A (বিজ্ঞান) 10/04/2026 খ্রি. (শুক্রবার) বেলা 11:00 টা হতে দুপুর 12:00 টা আর্কিটেকচার ব্যবহারিক ( ড্রয়িং) পরীক্ষা বিকাল 03:00 টা হতে বিকাল 04:00 টা ভর্তি সংক্রান্ত যেকোনো তথ্য বা সমস্যার ক্ষেত্রে প্রথমে admsupport@just.edu.bd এ ইমেইল করুন © 2026 Department of Computer Science and Engineering, Jashore University of Science and Technology",
-        "previousText": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
-      },
-      "others": {
-        "eligible": null,
-        "text": "GST 2026-27 exam dates have been announced, but application, minimum GPA and unit-wise eligibility requirements had not yet been published in the sources checked. Please check the official GST admission circular before relying on eligibility information."
       }
     }
   },
@@ -2178,21 +2007,21 @@ window.ADMISSION_EXAMS = [
     "requirementsStatus": "check_official"
   },
   {
-    "id": "auto-ku-cd",
+    "id": "auto-ku-a",
     "universityName": "Khulna University",
     "universityShortName": "KU",
-    "unit": "C & D Units",
+    "unit": "A Unit — Science, Engineering & Technology",
     "admissionType": "Public / Centralized",
-    "applicationOpenDate": null,
-    "applicationDeadline": null,
-    "examDate": "2027-02-05",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examDate": "2027-02-04",
     "examTime": "Not published yet",
-    "examLocation": "Not published yet",
+    "examLocation": "Khulna University campus",
     "officialUrl": "https://ku.ac.bd/news-details/2884",
     "status": "Officially published",
     "dateChanged": true,
-    "previousExamDate": "2026-12-17",
-    "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. C & D Units will be held on 5 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
+    "previousExamDate": "2026-12-18",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
     "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
@@ -2234,21 +2063,245 @@ window.ADMISSION_EXAMS = [
     }
   },
   {
-    "id": "auto-ku-ab",
+    "id": "auto-ku-b",
     "universityName": "Khulna University",
     "universityShortName": "KU",
-    "unit": "A & B Units",
+    "unit": "B Unit — Life Science",
     "admissionType": "Public / Centralized",
-    "applicationOpenDate": null,
-    "applicationDeadline": null,
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
     "examDate": "2027-02-04",
     "examTime": "Not published yet",
-    "examLocation": "Not published yet",
+    "examLocation": "Khulna University campus",
     "officialUrl": "https://ku.ac.bd/news-details/2884",
     "status": "Officially published",
     "dateChanged": true,
     "previousExamDate": "2026-12-18",
-    "notes": "Official KU notice published 11 Nov 2026 revises the 2026-27 admission tests to 4 and 5 Feb 2027. A & B Units will be held on 4 Feb 2027. Application method, eligibility, exact times and admission-process details will be published later.",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-15T11:27:44+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": null,
+        "text": "অন্যদিকে, ‘ডি’ ইউনিটের আওতায় রয়েছে ব্যবস্থাপনা ও ব্যবসায় প্রশাসন স্কুলের ডিসিপ্লিনসমূহ। ভর্তি পরীক্ষার আবেদনপদ্ধতি, আবেদনের যোগ্যতা, সময়সূচি ও ভর্তি প্রক্রিয়াসংক্রান্ত বিস্তারিত তথ্য পরবর্তীতে খুলনা বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে ( www.ku.ac.bd ) প্রকাশ করা হবে। Useful Links About Us Senate Syndicate Academic Council Board of Advanced Studies Useful Links Undergraduate Graduate Post Graduate Ph.D Post Graduate in Diploma Quick Links Noc/GO Career Tender Contact us Registrar Khulna University, Khulna-9208, Bangladesh Phone : 88-02-477734140 PABX :5004 Fax: 88-02-477734138 E-mail: office@registrar.ku.ac.bd Web: www.ku.ac.bd All rights reserved © ICT CELL , Khulna University 2026. |",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "• Name of Student [Times New Roman, 14-point, Bold Centre aligned] • Student’ Last Qualification (in bracket) [Times New Roman, 12-point, Centre aligned] • The words: “A dissertation submitted in partial fulfillment of the requirements for the degree of Master of Arts” [Times New Roman, 12-point, Centre aligned] • Student’ Discipline: <Name of Discipline > Discipline [Times New Roman, 14-point",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
+  },
+  {
+    "id": "auto-ku-c",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "C Unit — Arts, Humanities, Social Sciences, Law, Education & Fine Arts",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examDate": "2027-02-05",
+    "examTime": "Not published yet",
+    "examLocation": "Khulna University campus",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
+    "status": "Officially published",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-17",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-15T11:27:44+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": null,
+        "text": "অন্যদিকে, ‘ডি’ ইউনিটের আওতায় রয়েছে ব্যবস্থাপনা ও ব্যবসায় প্রশাসন স্কুলের ডিসিপ্লিনসমূহ। ভর্তি পরীক্ষার আবেদনপদ্ধতি, আবেদনের যোগ্যতা, সময়সূচি ও ভর্তি প্রক্রিয়াসংক্রান্ত বিস্তারিত তথ্য পরবর্তীতে খুলনা বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে ( www.ku.ac.bd ) প্রকাশ করা হবে। Useful Links About Us Senate Syndicate Academic Council Board of Advanced Studies Useful Links Undergraduate Graduate Post Graduate Ph.D Post Graduate in Diploma Quick Links Noc/GO Career Tender Contact us Registrar Khulna University, Khulna-9208, Bangladesh Phone : 88-02-477734140 PABX :5004 Fax: 88-02-477734138 E-mail: office@registrar.ku.ac.bd Web: www.ku.ac.bd All rights reserved © ICT CELL , Khulna University 2026. |",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "• Name of Student [Times New Roman, 14-point, Bold Centre aligned] • Student’ Last Qualification (in bracket) [Times New Roman, 12-point, Centre aligned] • The words: “A dissertation submitted in partial fulfillment of the requirements for the degree of Master of Arts” [Times New Roman, 12-point, Centre aligned] • Student’ Discipline: <Name of Discipline > Discipline [Times New Roman, 14-point",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
+  },
+  {
+    "id": "auto-ku-d",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "D Unit — Management & Business Administration",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examDate": "2027-02-05",
+    "examTime": "Not published yet",
+    "examLocation": "Khulna University campus",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
+    "status": "Officially published",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-17",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-15T11:27:44+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": null,
+        "text": "অন্যদিকে, ‘ডি’ ইউনিটের আওতায় রয়েছে ব্যবস্থাপনা ও ব্যবসায় প্রশাসন স্কুলের ডিসিপ্লিনসমূহ। ভর্তি পরীক্ষার আবেদনপদ্ধতি, আবেদনের যোগ্যতা, সময়সূচি ও ভর্তি প্রক্রিয়াসংক্রান্ত বিস্তারিত তথ্য পরবর্তীতে খুলনা বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে ( www.ku.ac.bd ) প্রকাশ করা হবে। Useful Links About Us Senate Syndicate Academic Council Board of Advanced Studies Useful Links Undergraduate Graduate Post Graduate Ph.D Post Graduate in Diploma Quick Links Noc/GO Career Tender Contact us Registrar Khulna University, Khulna-9208, Bangladesh Phone : 88-02-477734140 PABX :5004 Fax: 88-02-477734138 E-mail: office@registrar.ku.ac.bd Web: www.ku.ac.bd All rights reserved © ICT CELL , Khulna University 2026. |",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "• Name of Student [Times New Roman, 14-point, Bold Centre aligned] • Student’ Last Qualification (in bracket) [Times New Roman, 12-point, Centre aligned] • The words: “A dissertation submitted in partial fulfillment of the requirements for the degree of Master of Arts” [Times New Roman, 12-point, Centre aligned] • Student’ Discipline: <Name of Discipline > Discipline [Times New Roman, 14-point",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
+  },
+  {
+    "id": "auto-ku-c",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "C Unit — Arts, Humanities, Social Sciences, Law, Education & Fine Arts",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examDate": "2027-02-05",
+    "examTime": "Not published yet",
+    "examLocation": "Khulna University campus",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
+    "status": "Officially published",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-17",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
+    "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-15T11:27:44+06:00",
+    "requirementsSource": "https://ku.ac.bd/uploads/form/1676267661KU%20Masters%20Ordinance%2020230101.pdf",
+    "requirementsStatus": "check_official",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "business": {
+        "eligible": null,
+        "text": "অন্যদিকে, ‘ডি’ ইউনিটের আওতায় রয়েছে ব্যবস্থাপনা ও ব্যবসায় প্রশাসন স্কুলের ডিসিপ্লিনসমূহ। ভর্তি পরীক্ষার আবেদনপদ্ধতি, আবেদনের যোগ্যতা, সময়সূচি ও ভর্তি প্রক্রিয়াসংক্রান্ত বিস্তারিত তথ্য পরবর্তীতে খুলনা বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে ( www.ku.ac.bd ) প্রকাশ করা হবে। Useful Links About Us Senate Syndicate Academic Council Board of Advanced Studies Useful Links Undergraduate Graduate Post Graduate Ph.D Post Graduate in Diploma Quick Links Noc/GO Career Tender Contact us Registrar Khulna University, Khulna-9208, Bangladesh Phone : 88-02-477734140 PABX :5004 Fax: 88-02-477734138 E-mail: office@registrar.ku.ac.bd Web: www.ku.ac.bd All rights reserved © ICT CELL , Khulna University 2026. |",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "humanities": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "• Name of Student [Times New Roman, 14-point, Bold Centre aligned] • Student’ Last Qualification (in bracket) [Times New Roman, 12-point, Centre aligned] • The words: “A dissertation submitted in partial fulfillment of the requirements for the degree of Master of Arts” [Times New Roman, 12-point, Centre aligned] • Student’ Discipline: <Name of Discipline > Discipline [Times New Roman, 14-point",
+        "previousText": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released."
+      }
+    }
+  },
+  {
+    "id": "auto-ku-a",
+    "universityName": "Khulna University",
+    "universityShortName": "KU",
+    "unit": "A Unit — Science, Engineering & Technology",
+    "admissionType": "Public / Centralized",
+    "applicationOpenDate": "Not published yet",
+    "applicationDeadline": "Not published yet",
+    "examDate": "2027-02-04",
+    "examTime": "Not published yet",
+    "examLocation": "Khulna University campus",
+    "officialUrl": "https://ku.ac.bd/news-details/2884",
+    "status": "Officially published",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-18",
+    "notes": "Rescheduled by KU Central Admission Committee on 10 Nov 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Khulna University has announced/rescheduled the 2026-27 admission tests, but detailed current GPA and eligibility requirements have not yet been published in the sources checked. Please check the official KU admission portal when the detailed notice is released.",
     "requirements": "reputed journal as the first author. Table 4: Admission Requirements Name of School CGPA or Class Arts and Humanities School 2.25 or Second ClassEducation School",
