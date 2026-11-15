@@ -17,7 +17,7 @@ window.ADMISSION_EXAMS = [
     "notes": "Official schedule: undergraduate written exam 26 Nov 2026 at 12:00 PM.",
     "cycle": "Spring 2026-27 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "Check the official AIUB admission requirements for the exact program-specific eligibility criteria.",
+    "requirements": "For most undergraduate programs, SSC and HSC/equivalent combined GPA must be at least 5.00, with at least 2.50 in each examination. Engineering/science programs require a Science background and Mathematics at HSC level; program-specific subject conditions apply. O/A-Level and other equivalent qualifications have separate grade requirements.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
     "requirementsSource": "https://aiub.edu/admission",
@@ -40,7 +40,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official page lists undergraduate admission test on 27 Nov 2026 at 9:30 AM.",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "Minimum qualifications (except B.Pharm): SSC/equivalent GPA at least 3.50 and HSC/equivalent GPA at least 3.50. O-Level: GPA 2.50 in five subjects; A-Level: GPA 2.50 in two subjects. EEE/ECE/CSE/APE/Physics applicants need B grade in Physics and Mathematics at HSC/equivalent (C at A-Level). Program-specific requirements apply, including B.Pharm."
   },
   {
     "id": "e4",
@@ -60,7 +61,7 @@ window.ADMISSION_EXAMS = [
     "notes": "Official schedule: B.Pharm & LL.B written exam 28 Nov 2026 at 12:00 PM.",
     "cycle": "Spring 2026-27 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "Check the official AIUB admission requirements for the exact program-specific eligibility criteria.",
+    "requirements": "B.Pharm: Science background, combined SSC+HSC GPA at least 8.00, with at least 3.50 in each; HSC Chemistry and Biology at least 3.50, Physics and Mathematics at least 3.00. LL.B. follows AIUB's undergraduate admission criteria. O/A-Level and other equivalent qualifications have separate requirements.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:29:57+06:00",
     "requirementsSource": "https://aiub.edu/admission",
@@ -83,7 +84,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official admissions page confirms 28 Nov 2026; verify exact venue from admit card.",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "Combined SSC+HSC GPA at least 8.00, with minimum GPA 3.50 in each; O-Level five subjects average 2.50 and A-Level two subjects average 2.00 (only one E allowed); IB-DP total 24 with average 4.0/7. Engineering requires Mathematics and Physics with minimum B at HSC (or the stated O/A-Level equivalents). Program-specific requirements apply."
   },
   {
     "id": "e6",
@@ -93,7 +95,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Private",
     "applicationOpenDate": null,
     "applicationDeadline": null,
-    "examDate": "2026-12-04",
+    "examDate": "2026-12-03",
     "examTime": "Not published yet",
     "examLocation": "Not published yet",
     "officialUrl": "https://admissions.ulab.edu.bd/",
@@ -103,11 +105,11 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://admissions.ulab.edu.bd/",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": "Admissions Skip to main content Home Undergraduate + Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate + Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International + Undergraduate Graduate Contact Information Quick Links + Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Home Undergraduate Admissions Requirements Tuition & Fees Scholarships & Financial Aid Apply Online Admission Form Course Catalogue Credit Transfer Undergraduate Sample Question Guideline for Online Application Merit Scholarship policy Graduate Admission Requirements Tuition & Fees Scholarships & Financial Aid Course Catalogue Apply Online Admission Form Credit Transfer Graduate Sample Question Guideline for Online Application International Undergraduate Graduate Contact Information Quick Links Prospectus Payment Guideline Admissions Policies Guideline for Online Application Sample Questions Contact Us Apply Now Search Menu Apply Now Admissions Want to speak with our admission team? Book a counseling session: https://oac.ulab.edu.bd [email protected] 01730082197 | 01713091936 | 01714161613 Get a real feel of ULAB life—join us on social media: Admissions and Programs Apply Online Scholarships Tuition & Fees Undergraduate Programs Graduate Programs International Admissions Open Spring 2027 UNDERGRADUATE BSc in EEE BSc in CSE BBA BA in Bangla BA in English Bachelor in Media Studies & Journalism BSc in Environmental Science & Sustainability GRADUATE MBA Executive MBA ( 1-Year Program ) MA in English ( 1-Year Program ) MA in English ( 2-Year Program ) Master in Journalism and Communication (MJComn) ( 1-Year Program ) Admission Test Dates: Undergraduate: Thursday, December 3 , 2026 Graduate: Friday, December 4, 2026 Scholarships Available Tuition Waiver (Undergraduate) 100% GPA 5.0 in both SSC & HSC (without 4th subject) 5 A's in O'Level (one sitting) & 2 A's in A'Level (one sitting) 40% GPA 5.0 in SSC/O'Level & HSC/A'Level or equivalent Siblings or spouse of current students ULAB/GEMCON employee ward or spouse 10-20% 20%: Average GPA 4.50-4.99 in SSC/O'Level & HSC/A'Level 15%: Average GPA 4.00-4.49 in SSC/O'Level & HSC/A'Level 15%: English Medium/English Version background 10%: Female students 10% tuition waiver for students from science background (both SC/O'Level & HSC/A'Level) except engineering program. Scholarships and Financial Aid Undergraduate 5 Named Scholarships Tomes and Sarah Resor Kazi Anisur Rahman A.R.M. Inamul Hag Major General Abdul Mannan Siddiqui (Red.) with full free tuition fee exemption inclusive of stipend in every semester up to graduation; Professor Dr",
-    "requirements": "Check the official ULAB admission requirements for the exact undergraduate program eligibility criteria.",
+    "requirements": "Minimum GPA 2.50 in both SSC and HSC/equivalent, or one GPA 2.00 with combined GPA 6.00. O-Level: five subjects with GPA 2.50; A-Level: two subjects with GPA 2.00. Science background is required for science, technology and engineering programs. SAT 1100 (Math + Critical Reading) can waive the admission test.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-15T00:08:07+06:00",
     "requirementsSource": "https://admissions.ulab.edu.bd/graduate-programs/admissions-requirements",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "verified"
   },
   {
     "id": "e7",
@@ -127,11 +129,11 @@ window.ADMISSION_EXAMS = [
     "notes": "Official page lists undergraduate admission test 4 Dec 2026 at 9:00 AM.",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "Minimum GPA 3.00 in Biology and Chemistry separately in SSC/ “O” level/equivalent and HSC/”A” level/equivalent examinations. GRADUATE ADMISSION REQUIREMENTS The minimum qualification for admission into a graduate program is: 1. The terms & conditions of undergraduate programs mentioned above will be applicable for admission to graduate programs. 2. A relevant undergraduate degree from a recognized university with a GPA of 2.00 or above in a scale of 4.0 3",
+    "requirements": "UIU undergraduate programs: minimum GPA 2.50 in both SSC and HSC/equivalent; if either examination has GPA 2.00, combined GPA must be at least 6.00. O-Level: five subjects average 2.50; A-Level: two subjects average 2.00. Engineering programs require Physics and Mathematics. BSBGE and B.Pharm have additional subject/GPA requirements.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:30:04+06:00",
     "requirementsSource": "https://admission.uiu.ac.bd/admission/Home.aspx",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "verified"
   },
   {
     "id": "e8",
@@ -206,7 +208,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "East West University undergraduate applicants must meet the university's program-specific academic eligibility requirements. The Spring 2027 admission test covers the listed undergraduate programs; exact subject/GPA conditions vary by program. Check the official EWU undergraduate requirements before applying."
   },
   {
     "id": "e10",
@@ -281,7 +284,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2026-12-08",
     "notes": "Automatically verified from the official admission source: https://www.ewubd.edu/undergraduate-dates-deadline",
     "cycle": "Spring 2027 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "Bachelor of Pharmacy has separate academic eligibility requirements. Check the official EWU undergraduate admission requirements for the exact GPA, subject and passing-year conditions before applying."
   },
   {
     "id": "e12",
@@ -545,7 +549,7 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "For Bangladeshi applicants: (1) SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00; (2) HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later; (3) in HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; (4) Biomedical Engineering requires Biology GP 4.00. GCE O-Level applicants must have at least B in five subjects; A-Level applicants must have at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must meet the equivalent grades/marks stated in the official circular.",
+    "requirements": "SSC/equivalent: passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent: passed in 2026; Mathematics + Physics + Chemistry + English must total at least GP 16.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level/A-Level applicants must satisfy the grade and subject conditions in the official circular.",
     "requirementsStatus": "verified",
     "requirementsSource": "https://admission.kuet.ac.bd/uploads/notices/1.UG-Admission-2026-Circular.pdf",
     "requirementsLastChecked": "2026-11-15T21:00:00+06:00"
@@ -623,7 +627,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies applicants: minimum GPA 3.00 in both SSC and HSC/equivalent (including 4th subject), combined GPA 6.50. Science applicants: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
   },
   {
     "id": "e20",
@@ -678,7 +683,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:38+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "HSC/equivalent passed in 2025 or 2026. Science applicants: minimum GPA 3.50 in both SSC and HSC/equivalent (including 4th subject), combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
   },
   {
     "id": "e21",
@@ -717,7 +723,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "BUET's official 2026-27 admission notice confirms the undergraduate admission test on 16 Jan 2027. The notice indicates applications are expected to open on 21 Nov 2026; the application deadline and further details will be published in a subsequent notice.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "check_official",
+    "requirements": "BUET has announced that the 2026-27 eligibility GPA criteria remain unchanged: Science-group SSC/equivalent GPA at least 4.00; HSC/equivalent GPA 5.00 with GPA 5.00 separately in Physics, Chemistry and Higher Mathematics. The detailed 2026-27 circular must be checked for passing-year, shortlisting and other final conditions."
   },
   {
     "id": "e23",
@@ -772,7 +779,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:19:43+06:00",
     "requirementsSource": "https://admission.ru.ac.bd",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "verified",
+    "requirements": "HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies applicants: minimum GPA 3.00 in both SSC and HSC/equivalent (including 4th subject), combined GPA 6.50. Science applicants: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level applicants must meet the published grade conditions. Unit/department-specific conditions may also apply."
   },
   {
     "id": "e24",
@@ -1084,7 +1092,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Public / Centralized",
     "applicationOpenDate": "2026-11-15",
     "applicationDeadline": "2026-11-21",
-    "examDate": "2026-11-14",
+    "examDate": "2026-12-18",
     "examTime": "Not published yet",
     "examLocation": "Designated exam centers across Bangladesh",
     "officialUrl": "https://dgme.teletalk.com.bd",
@@ -1094,7 +1102,7 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://dgme.gov.bd/",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": "Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন কনটেন্টটি শেষ হাল-নাগাদ করা হয়েছে: রবিবার, 6 আগস্ট, 2023 এ 11:55 PM Eligibility list for private medical/ dental colleges/ dental unit of Medical College কন্টেন্ট: পাতা Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2022-2023 Eigibility list for private medical college (03/08/2023) PDF Eigibility list for private medical college (26/07/2023) PDF Eigibility list for private medical college (23/07/2023) PDF Eigibility list for private medical college (19/07/2023) PDF Eigibility list for private medical college (16/07/2023) PDF Eigibility list for private medical college (13/07/2023) PDF Eigibility list for private medical college (03/07/2023) PDF Eigibility list for private medical college (18/06/2023) PDF Eigibility list for private medical college (15/06/2023) PDF Eligibility list for private medical/ dental colleges/ dental unit of Medical College 2021-2022 1 Rev. Eligiblity list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in bangladesh (session 2021-2022) (05/07/2022) PDF 2 Eligibility list of marks equalization of foreign students for admission in private medical/ dental colleges/ dental unitgs in bangladesh (session 2021-2022) (27/09/2022) PDF 3 Eligibility list of marks equalization of foreign students for admission in private medical/dental colleges/dental units in Bangladesh (session 2021-2022) PDF এই কনটেন্টটি শেয়ার করতে ক্লিক করুন আপনার মতামত প্রদান করুন আপনার মতামত প্রদান করুন আপনার নাম নাম অবশ্যই দিতে হবে আপনার ইমেইল সঠিক ইমেইল দিন আপনার যোগাযোগ নম্বর সঠিক ফোন নম্বর দিন (যেমন 017XXXXXXXX) আপনার মতামত মতামত কমপক্ষে 20 অক্ষরের হতে হবে Attachment (jpg, jpeg, png, pdf • max 2 MB) Invalid file. Allowed: JPG, JPEG, PNG, PDF up to 2MB জমা দিন এক্সেসিবিলিটি ফন্ট বৃদ্ধি ফন্ট হ্রাস মনোক্রোম ইনভার্ট বড় কার্সর লিঙ্ক হাইলাইট শিরোনাম হাইলাইট পড়ার গাইড রিসেট স্ক্রিন রিডার ডাউনলোড করুন কন্টেন্টে চলে যান এক্সেসিবিলিটি মেনুতে যান এই ওয়েবসাইটে প্রকাশিত সকল তথ্য সংশ্লিষ্ট দপ্তর কর্তৃক নিয়মিত হালনাগাদ করা হয়। তথ্যের যথার্থতা, নির্ভুলতা ও নির্ভরযোগ্যতা নিশ্চিত করতে সংশ্লিষ্ট দপ্তর সর্বদা সচেষ্ট। ব্যবহারের শর্তাবলি সচরাচর জিজ্ঞাস্য যোগাযোগ গোপনীয়তার-নীতিমালা সাইটটি শেষ হাল-নাগাদ করা হয়েছে: শনিবার, 14 নভেম্বর, 2026 এ 18:29:38 পরিকল্পনা এবং বাস্তবায়ন: মন্ত্রিপরিষদ বিভাগ, এটুআই, বিসিসি, ডিওআইসিটি ও বেসিস।",
-    "requirements": "Check the official DGME admission circular and eligibility list for the applicable session and college.",
+    "requirements": "The 2026-27 medical/dental admission circular and final eligibility conditions should be checked on the official DGME admission portal. Do not rely on previous-session GPA rules until the current circular is published.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T20:20:16+06:00",
     "requirementsSource": "https://dgme.gov.bd/pages/static-pages/6922dfe4933eb65569e2485f",
@@ -1108,7 +1116,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Private",
     "applicationOpenDate": null,
     "applicationDeadline": "2026-11-30",
-    "examDate": "2026-11-30",
+    "examDate": "2026-12-05",
     "examTime": "Not published yet",
     "examLocation": "Not published yet",
     "officialUrl": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
@@ -1118,11 +1126,11 @@ window.ADMISSION_EXAMS = [
     "notes": "Auto-detected admission-test date from official source: https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
     "cycle": "Spring 2027 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "Check the official Green University of Bangladesh admission requirements for the exact undergraduate program eligibility criteria.",
+    "requirements": "For GUB undergraduate admission, SSC and HSC/equivalent normally require GPA 2.50 each, or GPA 2.00 in one examination with combined GPA 6.00. O/A-Level applicants have separate subject/grade conditions. Program-specific requirements may apply.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:31:27+06:00",
     "requirementsSource": "https://applyonline.green.edu.bd/admission/Candidate/SelectProgramBachelor.aspx?ecat=4",
-    "requirementsStatus": "check_official"
+    "requirementsStatus": "verified"
   },
   {
     "id": "e40",
@@ -1151,7 +1159,7 @@ window.ADMISSION_EXAMS = [
     "admissionType": "Public / Centralized",
     "applicationOpenDate": null,
     "applicationDeadline": null,
-    "examDate": "Better check Yourself",
+    "examDate": null,
     "examTime": "Better check Yourself",
     "examLocation": "Better check Yourself",
     "officialUrl": "https://cuet.ac.bd/admission",
@@ -1161,11 +1169,11 @@ window.ADMISSION_EXAMS = [
     "notes": "CUET's official academic news announced 23 Jan 2027 as the probable 2026-27 undergraduate admission-test date. Recheck the official admission page for the final schedule.",
     "cycle": "2026-27 / HSC Batch 2026",
     "previousRequirements": null,
-    "requirements": "At present, no admission test is scheduled for these programs. All official announcements regarding admission notices, eligibility criteria, application procedures, and test schedules will be published exclusively through CUET's official website and other authorized channels. Prospective applicants are strongly advised to regularly visit the CUET website to stay informed about the latest updates, notifications, and official instructions regarding undergraduate admissions. The examination center will be decided according to the grade points and marks obtained by the candidate in the four subjects, namely Mathematics, Science, Chemistry and English in Higher Secondary or equivalent examination and the candidates preference. The university and the department for admission will be determined according to the merit rank obtained in the admission test by the candidate and his/her preference",
+    "requirements": "The current admission information could not be reliably verified from the available source. Please check CUET's official undergraduate admission page for the current eligibility criteria and schedule.",
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-14T01:32:00+06:00",
     "requirementsSource": "https://cuet.ac.bd/admission",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "check_official"
   },
   {
     "id": "auto-ku-cd",
