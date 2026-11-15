@@ -1,4 +1,4 @@
-const CACHE = 'adt-v13';
+const CACHE = 'adt-v14';
 const ASSETS = [
   './Abed_Newaz_Profile.png',
   './manifest.webmanifest',
@@ -44,6 +44,20 @@ self.addEventListener('fetch', (e) => {
       });
     })
   );
+});
+
+self.addEventListener('push', (event) => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch (e) {}
+  const title = data.title || 'Admission Tracker';
+  const options = {
+    body: data.body || 'A new admission notice is available.',
+    icon: './icon.svg',
+    badge: './icon.svg',
+    tag: data.tag || 'admission-notice',
+    data: { url: data.url || './' }
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
 });
 
 self.addEventListener('notificationclick', (event) => {
