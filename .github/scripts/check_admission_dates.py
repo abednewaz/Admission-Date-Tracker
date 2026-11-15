@@ -1,3 +1,4 @@
+import argparse
 import io
 import json
 import re
@@ -9,9 +10,6 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-from pypdf import PdfReader
-import fitz
-import pytesseract
 
 DATA_FILE = Path("data.js")
 TIMEOUT = 30
@@ -93,8 +91,12 @@ def save_data(rows):
 
 
 def parse_pdf(content):
-    reader = PdfReader(io.BytesIO(content))
-    text = "\n".join((page.extract_text() or "") for page in reader.pages)
+    try:
+        from pypdf import PdfReader
+        reader = PdfReader(io.BytesIO(content))
+        text = "\n".join((page.extract_text() or "") for page in reader.pages)
+    except Exception as exc:
+        raise RuntimeError(f"PDF text extraction unavailable: {exc}") from exc
 
     # Many university notices are scanned/image PDFs. Use OCR only when
     # normal PDF text extraction is clearly insufficient.
@@ -102,6 +104,8 @@ def parse_pdf(content):
         return text
 
     try:
+        import fitz
+        import pytesseract
         doc = fitz.open(stream=content, filetype="pdf")
         pages = []
         for page in doc[:8]:
@@ -735,6 +739,12 @@ def update_notice_feed():
             if len(items) >= 20:
                 break
 
+        # Do not erase the existing notice board if the source temporarily
+        # returns an incomplete page or no matching cards.
+        if not items:
+            print("Notice feed returned no matching items; keeping the previous feed unchanged.")
+            return 0
+
         # Newest first where a date was captured; preserve source order otherwise.
         items.sort(key=lambda x: x.get("date", ""), reverse=True)
         Path("notices.js").write_text(
@@ -751,104 +761,113 @@ def update_notice_feed():
 
 
 def main():
-    rows = load_data()
-    changed = []
-    requirement_changed = []
-    failures = []
-    source_cache = {}
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--mode",
+        choices=("admission", "notices", "all"),
+        default="all",
+        help="Run only the admission/requirements checker, only the notice feed, or both.",
+    )
+    mode = parser.parse_args().mode
 
-    for row in rows:
-        url = row.get("officialUrl")
-        if not url:
-            continue
-        try:
-            if url not in source_cache:
-                source_cache[url] = source_text(url)
-            texts = source_cache[url]
+    if mode in ("admission", "all"):
+        rows = load_data()
+        changed = []
+        requirement_changed = []
+        failures = []
+        source_cache = {}
 
-            # -------------------------
-            # Admission-test date check
-            # -------------------------
-            result = choose_exam_date(row, texts)
-            if result:
-                new_date, source_url, ctx = result
-                old_date = row.get("examDate")
-                if new_date != old_date:
-                    row["previousExamDate"] = old_date
-                    row["examDate"] = new_date
-                    row["dateChanged"] = True
-                    row["status"] = "Automatically updated from official source"
-                    row["notes"] = (
-                        f"Auto-detected admission-test date from official source: {source_url}"
-                    )
-                    changed.append((row["universityShortName"], old_date, new_date, source_url))
+        for row in rows:
+            url = row.get("officialUrl")
+            if not url:
+                continue
+            try:
+                if url not in source_cache:
+                    source_cache[url] = source_text(url)
+                texts = source_cache[url]
 
-            # -------------------------
-            # Requirements check
-            # -------------------------
-            req_result = choose_requirement(row, texts)
-            if req_result:
-                new_req, req_source = req_result
-                old_req = row.get("requirements")
-                row["previousRequirements"] = old_req
-                row["requirements"] = new_req
-                row["requirementsChanged"] = True
-                row["requirementsLastChecked"] = datetime.now(
-                    ZoneInfo("Asia/Dhaka")
-                ).isoformat(timespec="seconds")
-                row["requirementsSource"] = req_source
-                requirement_changed.append(
-                    (row["universityShortName"], "general", req_source)
-                )
+                # -------------------------
+                # Admission-test date check
+                # -------------------------
+                result = choose_exam_date(row, texts)
+                if result:
+                    new_date, source_url, ctx = result
+                    old_date = row.get("examDate")
+                    if new_date != old_date:
+                        row["previousExamDate"] = old_date
+                        row["examDate"] = new_date
+                        row["dateChanged"] = True
+                        row["status"] = "Automatically updated from official source"
+                        row["notes"] = (
+                            f"Auto-detected admission-test date from official source: {source_url}"
+                        )
+                        changed.append((row["universityShortName"], old_date, new_date, source_url))
 
-            # Group-wise eligibility is updated only when the source explicitly
-            # names the applicant group and gives requirement/eligibility text.
-            group_updates = choose_group_requirements(row, texts)
-            if group_updates:
-                for group, value in group_updates.items():
-                    old = row["requirementsByGroup"].get(group, {})
-                    value["previousText"] = old.get("text") if isinstance(old, dict) else None
-                    row["requirementsByGroup"][group] = value
+                # -------------------------
+                # Requirements check
+                # -------------------------
+                req_result = choose_requirement(row, texts)
+                if req_result:
+                    new_req, req_source = req_result
+                    old_req = row.get("requirements")
+                    row["previousRequirements"] = old_req
+                    row["requirements"] = new_req
                     row["requirementsChanged"] = True
                     row["requirementsLastChecked"] = datetime.now(
                         ZoneInfo("Asia/Dhaka")
                     ).isoformat(timespec="seconds")
-                    row["requirementsSource"] = req_result[1] if req_result else url
+                    row["requirementsSource"] = req_source
                     requirement_changed.append(
-                        (row["universityShortName"], group, row["requirementsSource"])
+                        (row["universityShortName"], "general", req_source)
                     )
 
-        except Exception as exc:
-            failures.append((row.get("universityShortName"), url, str(exc)))
+                # Group-wise eligibility is updated only when the source explicitly
+                # names the applicant group and gives requirement/eligibility text.
+                group_updates = choose_group_requirements(row, texts)
+                if group_updates:
+                    for group, value in group_updates.items():
+                        old = row["requirementsByGroup"].get(group, {})
+                        value["previousText"] = old.get("text") if isinstance(old, dict) else None
+                        row["requirementsByGroup"][group] = value
+                        row["requirementsChanged"] = True
+                        row["requirementsLastChecked"] = datetime.now(
+                            ZoneInfo("Asia/Dhaka")
+                        ).isoformat(timespec="seconds")
+                        row["requirementsSource"] = req_result[1] if req_result else url
+                        requirement_changed.append(
+                            (row["universityShortName"], group, row["requirementsSource"])
+                        )
 
-    if changed or requirement_changed:
-        save_data(rows)
+            except Exception as exc:
+                failures.append((row.get("universityShortName"), url, str(exc)))
 
-    # Notice Board is a separate generated feed. A failure here never blocks
-    # admission-date/requirement checking or modifies data.js.
-    update_notice_feed()
+        if changed or requirement_changed:
+            save_data(rows)
 
-    print(f"Checked {len(rows)} admission records from {len(source_cache)} unique official sources.")
-    print(
-        "Safety mode: only future 2026-27-cycle dates with explicit admission-test "
-        "context are eligible for automatic date updates."
-    )
-    print(
-        "Requirement mode: only explicit official eligibility/qualification text "
-        "is eligible for automatic requirement updates; ambiguous or weak matches are skipped."
-    )
-    print(f"Date changes: {len(changed)}")
-    for item in changed:
-        print("DATE UPDATE:", item)
+        print(f"Checked {len(rows)} admission records from {len(source_cache)} unique official sources.")
+        print(
+            "Safety mode: only future 2026-27-cycle dates with explicit admission-test "
+            "context are eligible for automatic date updates."
+        )
+        print(
+            "Requirement mode: only explicit official eligibility/qualification text "
+            "is eligible for automatic requirement updates; ambiguous or weak matches are skipped."
+        )
+        print(f"Date changes: {len(changed)}")
+        for item in changed:
+            print("DATE UPDATE:", item)
 
-    print(f"Requirement changes: {len(requirement_changed)}")
-    for item in requirement_changed:
-        print("REQUIREMENT UPDATE:", item)
+        print(f"Requirement changes: {len(requirement_changed)}")
+        for item in requirement_changed:
+            print("REQUIREMENT UPDATE:", item)
 
-    if failures:
-        print(f"Source failures: {len(failures)}")
-        for item in failures:
-            print("FAIL:", item)
+        if failures:
+            print(f"Source failures: {len(failures)}")
+            for item in failures:
+                print("FAIL:", item)
+
+    if mode in ("notices", "all"):
+        update_notice_feed()
 
 
 if __name__ == "__main__":
