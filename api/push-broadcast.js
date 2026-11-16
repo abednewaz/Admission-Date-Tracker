@@ -45,8 +45,11 @@ export default async function handler(req, res) {
 
     for (const row of subscriptions) {
       try {
+        const stored = row.subscription || {};
+        const pushSubscription = { endpoint: stored.endpoint || row.endpoint, keys: stored.keys };
+        if (!pushSubscription.endpoint || !pushSubscription.keys?.p256dh || !pushSubscription.keys?.auth) continue;
         await webpush.sendNotification(
-          row.subscription,
+          pushSubscription,
           JSON.stringify({
             title: 'New Admission Notice',
             body: (notice.university ? notice.university + ': ' : '') + notice.title,
