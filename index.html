@@ -339,7 +339,7 @@
     .tour-card h2{font-size:1.02rem;line-height:1.3;margin-bottom:.28rem}
     .tour-card p{font-size:.82rem;line-height:1.5;color:var(--muted);padding-right:.2rem}
     .tour-actions{display:flex;justify-content:flex-end;align-items:center;gap:.5rem;margin-top:.8rem}
-    .tour-next{border:0;border-radius:9px;padding:.52rem .9rem;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font-size:.8rem;font-weight:750;cursor:pointer}
+    .tour-skip{border:1px solid var(--border);border-radius:9px;padding:.5rem .82rem;background:var(--bg);color:var(--muted);font-size:.8rem;font-weight:700;cursor:pointer}.tour-next{border:0;border-radius:9px;padding:.52rem .9rem;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font-size:.8rem;font-weight:750;cursor:pointer}
     .tour-next:active{transform:scale(.97)}
     body.dark .tour-close{background:#252d3b;color:#c8d0dc}
     @media(max-width:640px){.tour-overlay{padding:.7rem}.tour-card{border-radius:16px;padding:.9rem}.tour-card p{font-size:.8rem}}
@@ -388,7 +388,7 @@
         <div class="tour-step" id="tourStep">1 of 7</div>
         <h2 id="tourTitle"></h2>
         <p id="tourText"></p>
-        <div class="tour-actions"><button class="tour-next" id="tourNext" type="button">Next →</button></div>
+        <div class="tour-actions"><button class="tour-skip" id="tourSkip" type="button">Skip</button><button class="tour-next" id="tourNext" type="button">Next →</button></div>
       </div>
     </div>
     <footer class="site-footer">
@@ -796,12 +796,13 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 
 <script>
 (function(){
-  var TOUR_KEY='adt_first_visit_tour_v1', overlay=document.getElementById('firstVisitTour');
+  var TOUR_KEY='adt_first_visit_tour_v2', overlay=document.getElementById('firstVisitTour');
   if(!overlay)return;
-  var title=document.getElementById('tourTitle'), text=document.getElementById('tourText'), step=document.getElementById('tourStep'), next=document.getElementById('tourNext'), close=document.getElementById('tourClose');
-  var current=0, target=null;
+  var title=document.getElementById('tourTitle'), text=document.getElementById('tourText'), step=document.getElementById('tourStep');
+  var next=document.getElementById('tourNext'), skip=document.getElementById('tourSkip'), close=document.getElementById('tourClose');
+  var current=0,target=null,steps=[];
   var baseSteps=[
-    {sel:'#installBox',title:'Install Admission Tracker',text:'Install the website on your phone so it works like an app. Tap the Install button when it appears.'},
+    {sel:'#installBox',title:'Install Admission Tracker (Optional)',text:'You can install the website on your phone and use it like an app. This is completely optional — you can skip it and continue using the website normally.',install:true},
     {sel:'#notif',title:'Turn on notifications',text:'Enable notifications to receive important admission notices and exam alerts.'},
     {sel:'#q',title:'Search anything quickly',text:'Search by university name, unit, or exam date to find the admission card instantly.'},
     {sel:'[data-mark]',title:'Mark a university',text:'Tap Mark University to save it. You will get a live countdown and see its exam dates in My Universities and the calendar.'},
@@ -814,38 +815,51 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
   function buildSteps(){
     return baseSteps.filter(function(s){
       var el=document.querySelector(s.sel);
-      if(s.sel==='#installBox' && (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true))return false;
+      if(s.install && (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true))return false;
       return visible(el);
     });
   }
-  var steps=[];
   function clearTarget(){if(target)target.classList.remove('tour-target');target=null}
   function finish(){clearTarget();overlay.classList.remove('show');try{localStorage.setItem(TOUR_KEY,'done')}catch(e){}document.body.style.overflow=''}
   function show(i){
     clearTarget();
     if(i>=steps.length){finish();return}
-    current=i;var s=steps[i],el=document.querySelector(s.sel);
+    current=i;
+    var s=steps[i],el=document.querySelector(s.sel);
     if(!el||!visible(el)){show(i+1);return}
     target=el;target.classList.add('tour-target');
     el.scrollIntoView({behavior:'smooth',block:'center',inline:'nearest'});
-    step.textContent=(i+1)+' of '+steps.length;title.textContent=s.title;text.textContent=s.text;
+    step.textContent=(i+1)+' of '+steps.length;
+    title.textContent=s.title;
+    text.textContent=s.text;
     next.textContent=i===steps.length-1?'Got it ✓':'Next →';
-    setTimeout(function(){if(target)target.classList.add('tour-target')},80);
+    skip.textContent=s.install?'Skip':'Exit';
   }
-  function start(){
-    steps=buildSteps();
-    if(!steps.length){try{localStorage.setItem(TOUR_KEY,'done')}catch(e){}return}
-    overlay.classList.add('show');document.body.style.overflow='hidden';show(0);
-  }
-  next.addEventListener('click',function(){show(current+1)});
+  function advance(){show(current+1)}
+  next.addEventListener('click',function(){
+    var s=steps[current];
+    if(s && s.install){
+      var btn=document.getElementById('installBtn');
+      if(btn)btn.click();
+      setTimeout(function(){ if(document.body.contains(overlay)&&overlay.classList.contains('show')) advance(); },700);
+    }else advance();
+  });
+  skip.addEventListener('click',function(){var s=steps[current];if(s&&s.install)advance();else finish()});
   close.addEventListener('click',finish);
   overlay.addEventListener('click',function(e){if(e.target===overlay)finish()});
-  document.addEventListener('keydown',function(e){if(!overlay.classList.contains('show'))return;if(e.key==='Escape')finish();if(e.key==='Enter')show(current+1)});
+  document.addEventListener('keydown',function(e){if(!overlay.classList.contains('show'))return;if(e.key==='Escape')finish();if(e.key==='Enter')advance()});
+  window.addEventListener('appinstalled',function(){if(overlay.classList.contains('show')&&steps[current]&&steps[current].install)advance()});
   var started=false;
-  function maybeStart(){if(started)return;var done=false;try{done=localStorage.getItem(TOUR_KEY)==='done'}catch(e){}if(done)return;started=true;setTimeout(start,900)}
+  function maybeStart(){
+    if(started)return;
+    var done=false;try{done=localStorage.getItem(TOUR_KEY)==='done'}catch(e){}
+    if(done)return;
+    started=true;
+    setTimeout(function(){steps=buildSteps();if(!steps.length){finish();return}overlay.classList.add('show');document.body.style.overflow='hidden';show(0)},900);
+  }
   window.addEventListener('load',maybeStart);
   setTimeout(maybeStart,1400);
 })();
-</script>
+</script>>
 </body>
 </html>
