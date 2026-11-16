@@ -1,0 +1,32 @@
+name: Generate PWA PNG icons
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'icon-192.png'
+      - 'icon-512.png'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SVG converter
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Generate PNG icons
+        run: |
+          convert -background none icon.svg -resize 192x192 -strip icon-192.png
+          convert -background none icon.svg -resize 512x512 -strip icon-512.png
+      - name: Commit icons
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icon-192.png icon-512.png
+          git diff --cached --quiet && exit 0
+          git commit -m "Generate PNG PWA icons"
+          git push
