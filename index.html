@@ -343,11 +343,48 @@
     .tour-next:active{transform:scale(.97)}
     body.dark .tour-close{background:#252d3b;color:#c8d0dc}
     @media(max-width:640px){.tour-overlay{padding:.7rem}.tour-card{border-radius:16px;padding:.9rem}.tour-card p{font-size:.8rem}}
+
+    /* User manual */
+    .manual-btn{position:fixed;left:.7rem;bottom:.7rem;z-index:80;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:999px;padding:.55rem .8rem;font-size:.78rem;font-weight:750;cursor:pointer;box-shadow:var(--sh)}
+    .manual-btn:hover{background:var(--bg)}
+    .manual-overlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.62);display:none;align-items:center;justify-content:center;padding:1rem}
+    .manual-overlay.show{display:flex}
+    .manual-modal{width:min(620px,100%);max-height:88dvh;overflow:auto;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.35);padding:1.1rem}
+    .manual-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;margin-bottom:.9rem}
+    .manual-head h2{font-size:1.12rem;color:var(--pri)}
+    .manual-head p{font-size:.8rem;color:var(--muted);margin-top:.15rem}
+    .manual-close{width:2rem;height:2rem;border:0;border-radius:50%;background:var(--bg);color:var(--text);font-size:1.25rem;cursor:pointer;flex-shrink:0}
+    .manual-grid{display:grid;gap:.65rem}
+    .manual-item{border:1px solid var(--border);border-radius:11px;padding:.75rem .8rem;background:var(--bg)}
+    .manual-item strong{display:block;font-size:.88rem;color:var(--text);margin-bottom:.2rem}
+    .manual-item span{display:block;font-size:.8rem;line-height:1.45;color:var(--muted)}
+    .manual-item .manual-action{display:inline-block;margin-top:.35rem;font-size:.74rem;font-weight:750;color:var(--pri)}
+    @media(max-width:640px){.manual-overlay{padding:.65rem}.manual-modal{padding:.9rem;border-radius:14px}.manual-btn{left:.55rem;bottom:.55rem}.manual-item{padding:.68rem .72rem}}
 </style>
 </head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
   <div class="top-controls"><button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">বাংলা</button><button class="theme-toggle" id="themeToggle" type="button">☾ Dark</button></div>
+  <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual">User Manual</button>
+  <div class="manual-overlay" id="manualOverlay" role="dialog" aria-modal="true" aria-labelledby="manualTitle">
+    <div class="manual-modal">
+      <div class="manual-head">
+        <div><h2 id="manualTitle">How to use Admission Tracker</h2><p>Quick guide to the main features.</p></div>
+        <button class="manual-close" id="manualClose" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="manual-grid">
+        <div class="manual-item"><strong>1. Install the app (Optional)</strong><span>Want to use Admission Tracker like an app on your phone? Tap the <b>Download / Install</b> button in the Install box. This is optional — you can use the website normally without installing it.</span><span class="manual-action">Install box → Download / Install</span></div>
+        <div class="manual-item"><strong>2. Turn on notifications</strong><span>Tap <b>Enable Notifications</b> to allow admission notices and exam alerts to reach you on your device.</span><span class="manual-action">Notifications → Enable Notifications</span></div>
+        <div class="manual-item"><strong>3. Search</strong><span>Use the search box to quickly find a university, unit, or admission exam date.</span><span class="manual-action">Search → type university/unit/date</span></div>
+        <div class="manual-item"><strong>4. Mark a university</strong><span>Tap <b>Mark University</b> on an admission card. The university will be saved to your list and you can track its countdown and exam dates.</span><span class="manual-action">Admission card → Mark University</span></div>
+        <div class="manual-item"><strong>5. Check requirements</strong><span>Tap <b>Check Requirements</b> to see the available admission eligibility information for your group.</span><span class="manual-action">Admission card → Check Requirements</span></div>
+        <div class="manual-item"><strong>6. Official admission website</strong><span>Use the official-source button on a card to open the university's official admission page.</span><span class="manual-action">Admission card → Official Admission Website</span></div>
+        <div class="manual-item"><strong>7. Notice Board</strong><span>Check the Notice Board for important recent admission notices in one place. Verify important information on the official source.</span><span class="manual-action">Notice Board</span></div>
+        <div class="manual-item"><strong>8. My Admission Calendar</strong><span>Marked universities' exam dates appear on the calendar, making your upcoming admission schedule easier to track.</span><span class="manual-action">My Admission Calendar</span></div>
+      </div>
+    </div>
+  </div>
+
   <div class="app" id="top">
     <header>
       <div class="header-brand">
@@ -795,5 +832,18 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 </script>
 
 >
+
+<script>
+(function(){
+  var overlay=document.getElementById('manualOverlay'),openBtn=document.getElementById('manualBtn'),closeBtn=document.getElementById('manualClose');
+  if(!overlay||!openBtn||!closeBtn)return;
+  function openManual(){overlay.classList.add('show');document.body.style.overflow='hidden';closeBtn.focus()}
+  function closeManual(){overlay.classList.remove('show');document.body.style.overflow=''}
+  openBtn.addEventListener('click',openManual);closeBtn.addEventListener('click',closeManual);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closeManual()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('show'))closeManual()});
+  window.addEventListener('load',function(){setTimeout(openManual,500)});
+})();
+</script>
 </body>
 </html>
