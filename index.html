@@ -396,7 +396,7 @@
     </header>
     <div class="content-shell">
     <main>
-      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN">Enable Notifications</button></div>
+      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN">Enable Notifications</button><button type="button" id="testNotifBtn" hidden>Send Test Notification</button></div>
       <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon.svg" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
       <section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><h2 id="calendar-heading">My Admission Calendar</h2><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
@@ -647,15 +647,15 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     function urlBase64ToUint8Array(base64String){var padding='='.repeat((4-base64String.length%4)%4),base64=(base64String+padding).replace(/-/g,'+').replace(/_/g,'/'),raw=atob(base64),output=new Uint8Array(raw.length);for(var i=0;i<raw.length;i++)output[i]=raw.charCodeAt(i);return output}
     async function showExamNotification(title,body,tag){try{if(!('Notification' in window)||Notification.permission!=='granted')return;var reg=await navigator.serviceWorker.ready;await reg.showNotification(title,{body:body,icon:'./icon.svg',badge:'./icon.svg',tag:tag,data:{url:'./'}})}catch(e){}}
     async function syncPushPreferences(){try{if(!('Notification' in window)||Notification.permission!=='granted'||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(!sub)return false;var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});return res.ok}catch(e){console.error('Push preference sync failed',e);return false}}
-    async function enablePushNotifications(){if(!('Notification' in window)||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var permission=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(permission!=='granted')return false;try{var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)});var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Subscription save failed');hideNotif();return true}catch(e){console.error('Push subscription failed',e);return false}}
+    async function enablePushNotifications(){if(!('Notification' in window)||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var permission=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(permission!=='granted')return false;try{var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)});var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Subscription save failed');hideNotif();var testRes=await fetch('/api/push-test',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!testRes.ok)console.warn('Test notification failed');return true}catch(e){console.error('Push subscription failed',e);return false}}
     function checkExamNotifications(){if(!('Notification' in window)||Notification.permission!=='granted')return;var now=Date.now(),marked=getMarked(),sent={};try{sent=JSON.parse(localStorage.getItem('adt_sent_notifications_v1')||'{}')}catch(e){};exams.forEach(function(e){if(marked.indexOf(e.universityName)===-1)return;var d=examMoment(e);if(!d)return;var diff=d.getTime()-now,key=String(e.id);if(diff>0&&diff<=604800000&&!sent[key+'-7d']){sent[key+'-7d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 1 week: '+e.universityName+' — '+e.unit,key+'-7d')}if(diff>0&&diff<=172800000&&!sent[key+'-2d']){sent[key+'-2d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 2 days: '+e.universityName+' — '+e.unit,key+'-2d')}if(diff>0&&diff<=86400000&&!sent[key+'-24h']){sent[key+'-24h']=Date.now();showExamNotification('Admission Date Tracker','Exam tomorrow: '+e.universityName+' — '+e.unit,key+'-24h')}if(diff>0&&diff<=3600000&&!sent[key+'-1h']){sent[key+'-1h']=Date.now();showExamNotification('Admission Date Tracker','Exam in about 1 hour: '+e.universityName+' — '+e.unit,key+'-1h')}});try{localStorage.setItem('adt_sent_notifications_v1',JSON.stringify(sent))}catch(e){}}
-    if(!('Notification' in window)){hideNotif()}else if(Notification.permission==='granted'){hideNotif();syncPushPreferences();checkExamNotifications()}else{document.getElementById('enN').addEventListener('click',async function(){var ok=await enablePushNotifications();if(ok)checkExamNotifications();else if(Notification.permission==='denied')hideNotif()})}
+    if(!('Notification' in window)){hideNotif()}else if(Notification.permission==='granted'){hideNotif();syncPushPreferences();checkExamNotifications();var t=document.getElementById('testNotifBtn');if(t){t.hidden=false;t.onclick=async function(){var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(sub)await fetch('/api/push-test',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(sub.toJSON())});}}}else{document.getElementById('enN').addEventListener('click',async function(){var ok=await enablePushNotifications();if(ok)checkExamNotifications();else if(Notification.permission==='denied')hideNotif()})}
     setInterval(checkExamNotifications,60000)
     var mobileInstallPrompt=document.getElementById('mobileInstallPrompt'),mobileInstallBtn=document.getElementById('mobileInstallBtn'),mobileInstallClose=document.getElementById('mobileInstallClose'),mobileInstallDeferred=null;
     function isMobileDevice(){return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||('ontouchstart' in window&&window.innerWidth<=900)}
     function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
     function hideMobileInstall(){if(mobileInstallPrompt)mobileInstallPrompt.hidden=true}
-    function showMobileInstall(){if(!mobileInstallPrompt||!isMobileDevice()||isStandalone())return;if(localStorage.getItem('adt_install_dismissed_v1'))return;mobileInstallPrompt.hidden=false}
+    function showMobileInstall(){if(!mobileInstallPrompt||!isMobileDevice()||isStandalone())return;if(localStorage.getItem('adt_install_dismissed_v2'))return;mobileInstallPrompt.hidden=false}
     if(isStandalone()){hideInstall();hideMobileInstall()}else if(isMobileDevice()){
       window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();mobileInstallDeferred=e;showMobileInstall();installBox.style.display='none'});
       window.addEventListener('appinstalled',function(){mobileInstallDeferred=null;hideMobileInstall();hideInstall()});
@@ -663,16 +663,17 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       if(isIOS){mobileInstallPrompt.classList.add('install-ios');setTimeout(showMobileInstall,900)}
       else if(nativeInstallSupported){setTimeout(showMobileInstall,1200)}
       mobileInstallBtn&&mobileInstallBtn.addEventListener('click',async function(){
-        if(isIOS){hideMobileInstall();return}
+        if(isIOS){alert('On iPhone/iPad: tap Share → Add to Home Screen.');return}
         try{
           if(nativeInstallSupported){await navigator.install()}
           else if(mobileInstallDeferred){var p=mobileInstallDeferred;mobileInstallDeferred=null;await p.prompt();await p.userChoice}
+          else {alert('Chrome did not expose the install prompt yet. Open Chrome menu (⋮) → Add to Home screen / Install app.');return}
         }catch(e){console.error('Install prompt failed',e)}
         hideMobileInstall();
       });
-      mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v1','1');hideMobileInstall()});
+      mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v2','1');hideMobileInstall()});
     }else{hideInstall();hideMobileInstall()}
-    if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=16',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
+    if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=17',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
       'dhaka university':'https://www.du.ac.bd/notice',
       'buet':'https://ugadmission.buet.ac.bd/',
@@ -853,12 +854,21 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     var closeBtn=document.getElementById('manualClose');
     if(!overlay||!openBtn||!closeBtn)return;
     function openManual(){overlay.style.display='flex';overlay.classList.add('show');document.body.style.overflow='hidden';}
-    function closeManual(){overlay.style.display='none';overlay.classList.remove('show');document.body.style.overflow='';}
+    function closeManual(){overlay.style.display='none';overlay.classList.remove('show');document.body.style.overflow='';try{localStorage.setItem('adt_manual_seen_v1','1')}catch(e){}}
     openBtn.onclick=openManual;
     closeBtn.onclick=closeManual;
     overlay.onclick=function(e){if(e.target===overlay)closeManual()};
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('show'))closeManual()});
-    openManual();
+    var hasExistingUserData=false;
+    try{
+      hasExistingUserData=Object.keys(localStorage).some(function(k){
+        return /^(adt_|theme|language|marked|rating|review)/i.test(k);
+      });
+      if(!localStorage.getItem('adt_manual_seen_v1')&&!hasExistingUserData){
+        localStorage.setItem('adt_manual_seen_v1','1');
+        openManual();
+      }
+    }catch(e){}
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initManual);else initManual();
 })();
