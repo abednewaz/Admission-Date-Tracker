@@ -859,12 +859,9 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     closeBtn.onclick=closeManual;
     overlay.onclick=function(e){if(e.target===overlay)closeManual()};
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('show'))closeManual()});
-    var hasExistingUserData=false;
     try{
-      hasExistingUserData=Object.keys(localStorage).some(function(k){
-        return /^(adt_|theme|language|marked|rating|review)/i.test(k);
-      });
-      if(!localStorage.getItem('adt_manual_seen_v1')&&!hasExistingUserData){
+      var standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;
+      if(!localStorage.getItem('adt_manual_seen_v1')&&!standalone){
         localStorage.setItem('adt_manual_seen_v1','1');
         openManual();
       }
