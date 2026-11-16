@@ -1,4 +1,4 @@
-const CACHE = 'adt-v15';
+const CACHE = 'adt-v16';
 const ASSETS = [
   './Abed_Newaz_Profile.png',
   './manifest.webmanifest',
@@ -66,6 +66,6 @@ self.addEventListener('notificationclick', (event) => {
     for (const client of clientList) {
       if ('focus' in client) return client.focus();
     }
-    if (clients.openWindow) return clients.openWindow('./');
+    if (clients.openWindow) return clients.openWindow(event.notification.data?.url || './');
   }));
 });
