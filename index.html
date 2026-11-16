@@ -655,7 +655,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     var nativeInstallWrap=document.getElementById('nativeInstallWrap'),nativeInstallEl=document.getElementById('nativeInstall');
     function isMobileDevice(){return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||('ontouchstart' in window&&window.innerWidth<=900)}
     function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
-    if(nativeInstallWrap&&nativeInstallEl&&isMobileDevice()&&!isStandalone()&&('install' in document.createElement('install'))){nativeInstallWrap.style.display='block'}
+    if(nativeInstallWrap&&nativeInstallEl&&isMobileDevice()&&!isStandalone()){nativeInstallWrap.style.display='block'}
     function hideMobileInstall(){if(mobileInstallPrompt)mobileInstallPrompt.hidden=true}
     function showMobileInstall(){if(!mobileInstallPrompt||!isMobileDevice()||isStandalone())return;if(localStorage.getItem('adt_install_dismissed_v2'))return;mobileInstallPrompt.hidden=false}
     if(isStandalone()){hideInstall();hideMobileInstall()}else if(isMobileDevice()){
