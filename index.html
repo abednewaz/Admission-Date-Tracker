@@ -831,18 +831,22 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 })();
 </script>
 
->
-
 <script>
 (function(){
-  var overlay=document.getElementById('manualOverlay'),openBtn=document.getElementById('manualBtn'),closeBtn=document.getElementById('manualClose');
-  if(!overlay||!openBtn||!closeBtn)return;
-  function openManual(){overlay.classList.add('show');document.body.style.overflow='hidden';closeBtn.focus()}
-  function closeManual(){overlay.classList.remove('show');document.body.style.overflow=''}
-  openBtn.addEventListener('click',openManual);closeBtn.addEventListener('click',closeManual);
-  overlay.addEventListener('click',function(e){if(e.target===overlay)closeManual()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('show'))closeManual()});
-  window.addEventListener('load',function(){setTimeout(openManual,500)});
+  function initManual(){
+    var overlay=document.getElementById('manualOverlay');
+    var openBtn=document.getElementById('manualBtn');
+    var closeBtn=document.getElementById('manualClose');
+    if(!overlay||!openBtn||!closeBtn)return;
+    function openManual(){overlay.style.display='flex';overlay.classList.add('show');document.body.style.overflow='hidden';}
+    function closeManual(){overlay.style.display='none';overlay.classList.remove('show');document.body.style.overflow='';}
+    openBtn.onclick=openManual;
+    closeBtn.onclick=closeManual;
+    overlay.onclick=function(e){if(e.target===overlay)closeManual()};
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('show'))closeManual()});
+    openManual();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initManual);else initManual();
 })();
 </script>
 </body>
