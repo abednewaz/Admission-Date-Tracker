@@ -659,14 +659,18 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     if(isStandalone()){hideInstall();hideMobileInstall()}else if(isMobileDevice()){
       window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();mobileInstallDeferred=e;showMobileInstall();installBox.style.display='none'});
       window.addEventListener('appinstalled',function(){mobileInstallDeferred=null;hideMobileInstall();hideInstall()});
-      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){mobileInstallPrompt.classList.add('install-ios');setTimeout(showMobileInstall,900)}
+      var isIOS=/iPhone|iPad|iPod/i.test(navigator.userAgent),nativeInstallSupported=!!(window.Navigator&&Navigator.prototype&&typeof Navigator.prototype.install==='function');
+      if(isIOS){mobileInstallPrompt.classList.add('install-ios');setTimeout(showMobileInstall,900)}
+      else if(nativeInstallSupported){setTimeout(showMobileInstall,1200)}
       mobileInstallBtn&&mobileInstallBtn.addEventListener('click',async function(){
-        if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){hideMobileInstall();return}
-        if(!mobileInstallDeferred){hideMobileInstall();return}
-        var p=mobileInstallDeferred;mobileInstallDeferred=null;try{await p.prompt();await p.userChoice}catch(e){}hideMobileInstall();
+        if(isIOS){hideMobileInstall();return}
+        try{
+          if(nativeInstallSupported){await navigator.install()}
+          else if(mobileInstallDeferred){var p=mobileInstallDeferred;mobileInstallDeferred=null;await p.prompt();await p.userChoice}
+        }catch(e){console.error('Install prompt failed',e)}
+        hideMobileInstall();
       });
       mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v1','1');hideMobileInstall()});
-      setTimeout(showMobileInstall,1200);
     }else{hideInstall();hideMobileInstall()}
     if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',function(){window.location.reload()});window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=16',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
