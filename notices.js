@@ -1,8 +1,16 @@
 window.ADMISSION_NOTICES = [
   {
+    "university": "Marine Cadet Admission",
+    "title": "New Admission Marine Cadet Admission Circular 2026-2027 (Apply Online & PDF) 11/13",
+    "date": "2026-11-13",
+    "url": "https://students.bd/en/notice/marine-cadet-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Online applications start on November 13, 2026 and the application deadline is December 25, 2026. Written examination details will be announced later."
+  },
+  {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2026-12-22 Tuesday - Subject General Knowledge (MCQ) & Drawing (Human Figure Drawing) 11:00 AM - 12:30 PM"
@@ -10,7 +18,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-business-studies-c-unit-admission-circular-2026-27",
     "source": "students.bd",
     "summary": "Date & Day 2026-12-26 Saturday - Subject Business Studies Unit Admission Test (MCQ 45 mins + Written 45 mins) 11:00 AM - 12:30 PM"
@@ -18,7 +26,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-arts-law-social-science-unit-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2026-12-19 Saturday - Subject Arts, Law & Social Science Unit Admission Test (MCQ & Written) 11:00 AM - 12:30 PM"
@@ -26,7 +34,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Undergraduate Admission Circular 2026-2027 (Apply Online & Exam Date) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-undergraduate-admission-2026-2027",
     "source": "students.bd",
     "summary": "à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à¦¯à¦¼à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¬à¦¿à¦à§à¦à¦ªà§à¦¤à¦¿ à§¨à§¦à§¨à§§ à¦¸à¦¨ à¦¥à§à¦à§ à§¨à§¦à§¨à§ª à¦¸à¦¨ à¦ªà¦°à§à¦¯à¦¨à§à¦¤ à¦®à¦¾à¦§à§à¦¯à¦®à¦¿à¦ à¦¬à¦¾ à¦¸à¦®à¦®à¦¾à¦¨ à¦à¦¬à¦ à§¨à§¦à§¨à§¬ à¦¸à¦¨à§à¦° à¦à¦à§à¦ à¦®à¦¾à¦§à§à¦¯à¦®à¦¿à¦ à¦¬à¦¾ à¦¸à¦®à¦®à¦¾à¦¨à§à¦° à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦à¦¤à§à¦¤à§à¦°à§à¦£ à¦à¦¾à¦¤à§à¦°-à¦à¦¾à¦¤à§à¦°à§à¦¦à§à¦° à¦®à¦§à§à¦¯à§ à¦¯à¦¾à¦°à¦¾ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§à¦° à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦à¦à¦¨à¦¿à¦à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦¨à¦¿à¦°à§à¦§à¦¾à¦°à¦¿à¦¤ à¦¶à¦°à§à¦¤ à¦ªà§à¦°à¦£ à¦à¦°à§ à¦à§à¦¬à¦² à¦¤à¦¾à¦°à¦¾à¦ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¤à§ à¦ªà¦¾à¦°à¦¬à§à¥¤ à¦­à¦°à§à¦¤à¦¿ à¦ªà§à¦°à¦¾à¦°à§à¦¥à§à¦°à¦¾ à§§à§§/à§§à§§/à§¨à§¦à§¨à§¬ à¦¤à¦¾à¦°à¦¿à¦ à¦¦à§à¦ªà§à¦° à§§à§¨:à§¦à§¦à¦à¦¾ à¦¥à§à¦à§ à§¨à§«/à§§à§§/à§¨à§¦à"
@@ -34,7 +42,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Undergraduate Admission Application Guidelines 2026-27 (PDF) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-undergraduate-admission-application-guidelines-2026-27",
     "source": "students.bd",
     "summary": "à¦ à¦¨à¦²à¦¾à¦à¦¨ à¦­à¦°à§à¦¤à¦¿ à¦à¦®à¦¿à¦à¦¿ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦à§à¦¨à§à¦¦à§à¦°à§à§ à¦­à¦°à§à¦¤à¦¿ à¦ à¦«à¦¿à¦¸ à¦à¦à§à¦· à¦¨à¦-à§¨à§§à§ª, à¦ªà§à¦°à¦¶à¦¾à¦¸à¦¨à¦¿à¦ à¦­à¦¬à¦¨ à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦ à¦à¦¶à¦à§à¦°à¦¹à¦£à§à¦° à¦à¦¬à§à¦¦à¦¨ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à¦¬à¦¿à¦¶à§à¦· à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¨à¦¾ à¦ à¦¨à¦¾à¦à¦¾à¦à§à¦à¦¿à¦¤ à¦¬à¦¿à¦­à§à¦°à¦¾à¦¨à§à¦¤à¦¿ à¦à§à¦¾à¦¤à§ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§à¦¦à§à¦° à¦¨à¦¿à¦à§ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¾à¦° à¦à¦¨à§à¦¯ à¦ªà¦°à¦¾à¦®à¦°à§à¦¶ à¦¦à§à§à¦¾ à¦¹à¦à§à¦à§à¥¤ à¦ à¦¬à¦¸à§à¦¥à¦¾à¦° à¦ªà§à¦°à§à¦à§à¦·à¦¿à¦¤à§ à¦¨à¦¿à¦à§ à¦¸à¦®à§à¦­à¦¬ à¦¨à¦¾ à¦¹à¦²à§ à¦¤à¦¾à¦° à¦ªà¦à§à¦·à§ à¦ à¦¨à§à¦¯ à¦à§à¦ à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¾à¦° à¦¸à¦®à§ à¦ªà¦¾à¦¶à§ à¦¦à¦¾à¦à§à¦¿à§à§ à¦à§à§à¦¾à¦² à¦°à¦¾à¦à¦¾à¦° à¦à¦¨à§à¦¯ à¦ à¦¨à§à¦°à§à¦§ à¦à¦°à¦¾ à¦¯à¦¾à¦à§à¦à§à¥¤ à¦ à¦¤à§à¦¤à§ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦ªà§à¦°à¦¤à¦¿à¦·à§à¦ à¦¾à¦¨"
@@ -42,7 +50,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Dhaka University",
     "title": "New Admission Dhaka University Undergraduate Equivalence Registration Guide 2026-27 (PDF Download) 11/14",
-    "date": "",
+    "date": "2026-11-14",
     "url": "https://students.bd/notice/dhaka-university-undergraduate-equivalence-registration-guide-2026-27",
     "source": "students.bd",
     "summary": "à¦ à¦¨à¦²à¦¾à¦à¦¨ à¦­à¦°à§à¦¤à¦¿ à¦à¦®à¦¿à¦à¦¿ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦à§à¦¨à§à¦¦à§à¦°à§à§ à¦­à¦°à§à¦¤à¦¿ à¦ à¦«à¦¿à¦¸ à¦à¦à§à¦· à¦¨à¦-à§¨à§§à§ª, à¦ªà§à¦°à¦¶à¦¾à¦¸à¦¨à¦¿à¦ à¦­à¦¬à¦¨ à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à¦¯à¦¼à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨ à¦à¦¬à§à¦¦à¦¨ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à¦§à¦¾à¦ª à§§: à§¨à§¦à§¨à§¬-à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦¢à¦¾à¦à¦¾ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§à¦° à¦à¦¨à§à¦¡à¦¾à¦°à¦à§à¦°à§à¦¯à¦¾à¦à§à§à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦à¦¨à§à¦¯ à¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨ à¦à¦°à¦¤à§ à¦à¦à§à¦à§à¦ à¦à¦¬à§à¦¦à¦¨à¦à¦¾à¦°à§ https://admission.eis.du.ac.bd à¦à§à§à¦¬à¦¸à¦¾à¦à¦à§ à¦ªà§à¦°à¦¬à§à¦¶ à¦à¦°à§ âà¦¸à¦®à¦®à¦¾à¦¨ à¦¨à¦¿à¦¬à¦¨à§à¦§à¦¨â à¦®à§à¦¨à§à¦¤à§ à¦à§à¦²à¦¿à¦ à¦à¦°à¦²à§ à¦¨à¦¿à¦à§à¦° à¦ªà§à¦·à§à¦ à¦¾ à¦ªà§à¦°à¦¦à¦°à§à¦¶à¦¿à¦¤ à¦¹à¦¬à§à¥¤ à¦§à¦¾à¦ª à§¨: à¦à¦ªà¦°à§à¦° à¦à¦²à§à¦²à§à¦à¦¿à¦¤ à¦ªà§à¦·à§à¦ à¦¾à§ à¦ªà¦¾à¦¸à¦ªà§à¦°à§à¦/à¦à¦¨à"
@@ -50,7 +58,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Rajshahi University",
     "title": "New Admission Rajshahi University (RU) Honours 1st Year Admission Circular 2026-2027 (PDF) 11/12",
-    "date": "",
+    "date": "2026-11-12",
     "url": "https://students.bd/notice/rajshahi-university-ru-honours-1st-year-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2027-02-12 Friday Unit B Subject Unit B (Business Studies) 1st Shift: 11:00 AM - 12:00 PM | 2nd Shift: 3:00 PM - 4:00 PM"
@@ -58,7 +66,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "KUET",
     "title": "New Admission KUET Admission Circular 2026-2027 | 1st Year B.Sc. Engineering, BURP & B.Arch (PDF) 11/13",
-    "date": "",
+    "date": "2026-11-13",
     "url": "https://students.bd/notice/kuet-admission-circular-latest",
     "source": "students.bd",
     "summary": "à¦à§à¦²à¦¨à¦¾ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ Khulna University of Engineering & Technology (KUET) à¦­à¦°à§à¦¤à¦¿ à¦¨à¦¿à¦°à§à¦¦à§à¦¶à¦¿à¦à¦¾ à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿. à¦à¦¸-à¦¸à¦¿. à¦à¦à§à¦à¦¿à¦¨à¦¿à§à¦¾à¦°à¦¿à¦, à¦¬à¦¿à¦à¦à¦à¦°à¦ªà¦¿ à¦ à¦¬à¦¿à¦à¦°à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦­à¦°à§à¦¤à¦¿ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à¦ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à§§à¥¤ à¦à¦ªà¦à§à¦°à¦®à¦¨à¦¿à¦à¦¾: à¦à§à¦²à¦¨à¦¾ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿. à¦à¦¸-à¦¸à¦¿. à¦à¦à§à¦à¦¿à¦¨à¦¿à§à¦¾à¦°à¦¿à¦, à¦¬à¦¿à¦à¦à¦à¦°à¦ªà¦¿ à¦ à¦¬à¦¿à¦à¦°à§à¦ à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à§ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦¬à¦¿à¦­à¦¾à¦à§ à¦¨à¦¿à¦°à§à¦§à¦¾à¦°à¦¿à¦¤ à¦¸à¦à¦à§à¦¯à¦ à¦à¦¸à¦¨à§ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾ à¦ à¦¨à§à¦·à§à¦ à¦¿à¦¤ à¦¹à¦¬à§à¥¤ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦à§à¦¬à¦²à¦®à¦¾à¦¤à§à¦° à¦ªà§à¦°à¦¾à¦°à§à¦¥à§à¦° à¦®à§à¦§à¦¾à¦¸à§à¦¥à¦¾à¦¨ à¦à¦¬à¦ à¦¨à¦¿à"
