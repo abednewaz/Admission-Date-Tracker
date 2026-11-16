@@ -19,6 +19,11 @@ export default async function handler(req, res) {
       return json(res, 400, { error: 'Invalid push subscription' });
     }
 
+    const markedUniversities = Array.isArray(subscription.markedUniversities)
+      ? subscription.markedUniversities.filter((x) => typeof x === 'string').slice(0, 100)
+      : [];
+    const storedSubscription = { ...subscription, markedUniversities };
+
     const response = await fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/push_subscriptions', {
       method: 'POST',
       headers: {
@@ -27,7 +32,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
         Prefer: 'resolution=merge-duplicates,return=minimal'
       },
-      body: JSON.stringify([{ endpoint: subscription.endpoint, subscription }])
+      body: JSON.stringify([{ endpoint: subscription.endpoint, subscription: storedSubscription }])
     });
 
     if (!response.ok) {
