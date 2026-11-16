@@ -723,9 +723,31 @@ def update_notice_feed():
                 continue
             seen.add(key)
 
-            parent_text = a.parent.get_text(" ", strip=True) if a.parent else title
-            date_match = re.search(r"20(?:26|27)[-/](?:0?[1-9]|1[0-2])[-/](?:0?[1-9]|[12]\d|3[01])", parent_text)
-            date_value = date_match.group(0) if date_match else ""
+            # The source page stores the publication date in the table row,
+            # while the link itself often contains only the notice title.
+            # Walk up to the nearest row so the date is not lost.
+            context_nodes = []
+            node = a
+            for _ in range(5):
+                if not node:
+                    break
+                context_nodes.append(node)
+                node = getattr(node, "parent", None)
+            parent_text = " ".join(
+                normalize(n.get_text(" ", strip=True)) for n in context_nodes
+            )
+            date_value = ""
+            date_match = re.search(
+                r"(20(?:26|27))[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\d|3[01])",
+                parent_text
+            )
+            if date_match:
+                date_value = f"{date_match.group(1)}-{int(date_match.group(2)):02d}-{int(date_match.group(3)):02d}"
+            else:
+                short_match = re.search(r"(?<!\d)(0?[1-9]|1[0-2])/(0?[1-9]|[12]\d|3[01])(?!\d)", parent_text)
+                if short_match:
+                    year = datetime.now(ZoneInfo("Asia/Dhaka")).year
+                    date_value = f"{year:04d}-{int(short_match.group(1)):02d}-{int(short_match.group(2)):02d}"
             summary = extract_notice_summary(href)
             items.append({
                 "university": university,
