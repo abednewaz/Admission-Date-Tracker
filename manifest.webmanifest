@@ -1,8 +1,9 @@
 {
+  "id": "https://admissiontracker.site/",
   "name": "Admission Tracker",
   "short_name": "Admission Tracker",
   "description": "Track Bangladesh undergraduate admission dates, exam schedules, deadlines, requirements and notices.",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#08090d",
