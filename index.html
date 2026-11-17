@@ -688,7 +688,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       var meta=document.getElementById('meta');
       if(q){meta.hidden=false;meta.textContent=fil.length+' result'+(fil.length!==1?'s':'')}else meta.hidden=true;
       var up=0,wd=0;var unis=new Set();
-      for(var i=0;i<exams.length;i++){var e=exams[i];if(!isValidExamRecord(e))continue;unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;}}}
+      for(var i=0;i<fil.length;i++){var e=fil[i];if(!isValidExamRecord(e))continue;unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;}}}
       document.getElementById('stats').innerHTML='<div class="stat"><b>'+up+'</b><span>Upcoming exams</span></div><div class="stat"><b>'+unis.size+'</b><span>Universities</span></div><div class="stat"><b>'+wd+'</b><span>With exam date</span></div>';
       var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return a.examDate.localeCompare(b.examDate)});
       var gapM=new Map();
