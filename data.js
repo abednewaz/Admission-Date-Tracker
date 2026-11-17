@@ -1226,10 +1226,10 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "Official KUET admission portal confirms the MCQ admission test on 08 Jan 2027; application and fee deadline is 10 Dec 2026.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirements": "For Bangladeshi applicants: SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; each of these four subjects must have at least GP 3.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level applicants need at least B in five subjects; A-Level applicants need at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must satisfy the equivalent marks/grades stated in the official circular.",
+    "requirements": "7 UPCOMING Students Information · শিক্ষার্থীদের তথ্য Notices Search notices # Notice Stage Published File 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download Foreign & English Medium Students Admission information for international applicants and O/A Level candidates. English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details Foreign Students Free Accommodation on Campus Full Tuition Fee Waiver for the whole period of study How to Apply Send your application by e-mail to admission@kuet.ac.bd",
     "requirementsStatus": "verified",
-    "requirementsSource": "https://admission.kuet.ac.bd",
-    "requirementsLastChecked": "2026-11-15T11:26:21+06:00",
+    "requirementsSource": "https://admission.kuet.ac.bd/",
+    "requirementsLastChecked": "2026-11-17T10:13:55+06:00",
     "requirementsByGroup": {
       "science": {
         "eligible": true,
@@ -1254,15 +1254,16 @@ window.ADMISSION_EXAMS = [
       },
       "oLevelALevel": {
         "eligible": true,
-        "text": "Eligibility for Admission To apply, you must meet these requirements: • You must have passed the O-Level exam with at least grade B in five or more subjects. • You must have passed the A-Level, Higher Secondary or an equivalent exam with at least grade B in Physics, Chemistry and Mathematics",
-        "previousText": "O-Level: at least B in five subjects. A-Level: at least B separately in Physics, Chemistry and Mathematics; Biomedical Engineering additionally requires B in Biology."
+        "text": "7 UPCOMING Students Information · শিক্ষার্থীদের তথ্য Notices Search notices # Notice Stage Published File 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download Foreign & English Medium Students Admission information for international applicants and O/A Level candidates. English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details Foreign Students Free Accommodation on Campus Full Tuition Fee Waiver for the whole period of study How to Apply Send your application by e-mail to admission@kuet.ac.bd",
+        "previousText": "Eligibility for Admission To apply, you must meet these requirements: • You must have passed the O-Level exam with at least grade B in five or more subjects. • You must have passed the A-Level, Higher Secondary or an equivalent exam with at least grade B in Physics, Chemistry and Mathematics"
       },
       "others": {
         "eligible": null,
         "text": "Applicants with foreign-board or other equivalent qualifications must satisfy the equivalency conditions stated in the official KUET prospectus."
       }
     },
-    "requirementsChanged": true
+    "requirementsChanged": true,
+    "previousRequirements": "For Bangladeshi applicants: SSC/equivalent passed in 2023 or 2024 with minimum GPA 4.00. HSC/equivalent passed in 2026, or A-Level certificate obtained in November 2025 or later. In HSC/equivalent, Mathematics + Physics + Chemistry + English must total at least GP 16.00; each of these four subjects must have at least GP 3.00. Biomedical Engineering additionally requires Biology GP 4.00. GCE O-Level applicants need at least B in five subjects; A-Level applicants need at least B separately in Physics, Chemistry and Mathematics, plus Biology for Biomedical Engineering. Foreign-board applicants must satisfy the equivalent marks/grades stated in the official circular."
   },
   {
     "id": "e19",
