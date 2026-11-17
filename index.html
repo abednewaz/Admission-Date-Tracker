@@ -407,7 +407,7 @@
 .share-highlight{animation:shareHighlight 1.35s ease-out 2}
 @keyframes shareHighlight{0%{transform:translateY(0) scale(1);box-shadow:0 0 0 0 rgba(96,165,250,0)}25%{transform:translateY(-7px) scale(1.018);box-shadow:0 0 0 8px rgba(96,165,250,.18)}55%{transform:translateY(3px) scale(.995);box-shadow:0 0 0 13px rgba(96,165,250,.08)}100%{transform:translateY(0) scale(1);box-shadow:0 0 0 0 rgba(96,165,250,0)}}
 @media(max-width:640px){.share-targets{grid-template-columns:1fr 1fr}.share-dialog{border-radius:16px;padding:.9rem}}
-</style></style>
+.cd-share-row{display:flex;align-items:center;gap:.65rem}.cd-share-row .cd{flex:1}</style></style>
 </head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
@@ -653,7 +653,46 @@
         html+='</section>';
       });
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
+      setTimeout(focusSharedCard,40);
       document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});bindScrollReveal();
+    }
+    var shareModal=document.getElementById('shareModal'),shareClose=document.getElementById('shareClose'),shareStatus=document.getElementById('shareCopyStatus'),shareExam=null;
+    function shareUrlFor(e){return location.origin+location.pathname+'?share='+encodeURIComponent(String(e.id))}
+    function openShare(id){shareExam=exams.find(function(e){return String(e.id)===String(id)});if(!shareExam)return;shareStatus.textContent='';shareModal.classList.add('show');document.body.style.overflow='hidden'}
+    function closeShare(){shareModal.classList.remove('show');document.body.style.overflow=''}
+    function copyShareLink(url){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(url);var ta=document.createElement('textarea');ta.value=url;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}finally{ta.remove()}return Promise.resolve()}
+    function openShareTarget(target){
+      if(!shareExam)return;
+      var url=shareUrlFor(shareExam),text='Check '+shareExam.universityName+' admission exam details on Admission Tracker.';
+      if(target==='copy'){copyShareLink(url).then(function(){shareStatus.textContent='Link copied.'}).catch(function(){shareStatus.textContent='Could not copy automatically.'});return}
+      closeShare();
+      if(target==='facebook'){window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url),'_blank','noopener,noreferrer');return}
+      if(target==='reddit'){window.open('https://www.reddit.com/submit?url='+encodeURIComponent(url)+'&title='+encodeURIComponent(text),'_blank','noopener,noreferrer');return}
+      if(target==='telegram'){window.open('https://t.me/share/url?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text),'_blank','noopener,noreferrer');return}
+      if(target==='messenger'){
+        var deep='fb-messenger://share/?link='+encodeURIComponent(url);
+        var fallback=window.open('https://www.messenger.com/','_blank','noopener,noreferrer');
+        try{window.location.href=deep;setTimeout(function(){if(!document.hidden&&fallback&&!fallback.closed)fallback.focus()},900)}catch(e){}
+        return
+      }
+      if(target==='instagram'){
+        copyShareLink(url).catch(function(){});
+        var fallback=window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
+        try{window.location.href='instagram://sharesheet?url='+encodeURIComponent(url);setTimeout(function(){if(!document.hidden&&fallback&&!fallback.closed)fallback.focus()},900)}catch(e){}
+      }
+    }
+    if(shareClose)shareClose.addEventListener('click',closeShare);
+    if(shareModal)shareModal.addEventListener('click',function(e){if(e.target===shareModal)closeShare()});
+    document.querySelectorAll('[data-share-target]').forEach(function(b){b.addEventListener('click',function(){openShareTarget(b.getAttribute('data-share-target'))})});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&shareModal&&shareModal.classList.contains('show'))closeShare()});
+    function focusSharedCard(){
+      var params=new URLSearchParams(location.search),id=params.get('share');if(!id)return;
+      var card=document.querySelector('[data-share-id="'+CSS.escape(id)+'"]');
+      if(!card)return;
+      var article=card.closest('.card');if(!article)return;
+      article.scrollIntoView({behavior:'smooth',block:'center'});
+      article.classList.remove('share-highlight');void article.offsetWidth;article.classList.add('share-highlight');
+      setTimeout(function(){article.classList.remove('share-highlight')},3000);
     }
     const THEME_KEY='adt_theme_v1';
     function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;var headerIcon=document.querySelector('.header-logo');if(headerIcon)headerIcon.src=mode==='dark'?headerIcon.dataset.darkSrc:headerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
