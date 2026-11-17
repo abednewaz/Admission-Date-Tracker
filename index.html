@@ -579,6 +579,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
   </div>
 </div>
 <script src="data.js"></script>
+  <script src="medical-data.js"></script>
   <script src="notices.js"></script>
   <script>
     const TZ='Asia/Dhaka',CLOSE=3,exams=(window.ADMISSION_EXAMS||[]).filter(function(e){return e&&e.universityName&&e.unit&&e.admissionType;});
@@ -625,11 +626,10 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     }
     function categoryMatches(e){
       if(CATEGORY_FILTER==='all')return true;
-      /* Engineering filter: every current tracker institution except DGME has CSE/EEE or an engineering programme. */
-      if(CATEGORY_FILTER==='Engineering'){
-        var n=String((e&&e.universityName)||'').toLowerCase();
-        return !/dgme combined|medical admission/.test(n);
-      }
+      var n=String((e&&e.universityName)||'').toLowerCase();
+      var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology/.test(n);
+      if(CATEGORY_FILTER==='Engineering')return engineering;
+      if(CATEGORY_FILTER==='Science')return !engineering;
       return recordCategory(e)===CATEGORY_FILTER;
     }
 
