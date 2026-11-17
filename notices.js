@@ -1,6 +1,14 @@
 window.ADMISSION_NOTICES = [
   {
     "university": "Rajshahi University",
+    "title": "New Admission Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF) 11/17",
+    "date": "2026-11-01",
+    "url": "https://students.bd/notice/ru-honours-1st-year-admission-marks-distribution-requirements-2026-2027",
+    "source": "students.bd",
+    "summary": "à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦§à¦°à¦¨: MCQ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦¸à¦®à§: à§§ à¦à¦¨à§à¦à¦¾ à¦ªà§à¦°à¦¶à§à¦¨ à¦¸à¦à¦à§à¦¯à¦¾: à§®à§¦ à¦ªà§à¦°à§à¦£à¦®à¦¾à¦¨: à§§à§¦à§¦ MCQ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦ªà¦¾à¦¶ à¦¨à¦®à§à¦¬à¦°: à§ªà§¦ à¦¸à¦à§à¦à§à¦¤; à¦¨à¦¾à¦à§à¦¯à¦à¦²à¦¾; à¦à¦¿à¦¤à§à¦°à¦à¦²à¦¾, à¦ªà§à¦°à¦¾à¦à§à¦¯à¦à¦²à¦¾ à¦ à¦à¦¾à¦ªà¦à¦¿à¦¤à§à¦°; à¦®à§à§à¦¶à¦¿à¦²à§à¦ª à¦ à¦­à¦¾à¦¸à§à¦à¦°à§à¦¯ à¦à¦¬à¦ à¦à§à¦°à¦¾à¦«à¦¿à¦ à¦¡à¦¿à¦à¦¾à¦à¦¨, à¦à¦¾à¦°à§à¦¶à¦¿à¦²à§à¦ª à¦ à¦¶à¦¿à¦²à§à¦ªà¦à¦²à¦¾à¦° à¦à¦¤à¦¿à¦¹à¦¾à¦¸ à¦¬à¦¿à¦­à¦¾à¦à¦¸à¦®à§à¦¹à§à¦° à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦°à¦¿à¦ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦ªà§à¦°à§à¦£à¦®à¦¾à¦¨: à§§à§¦à§¦ à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦°à¦¿à¦ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦ªà¦¾à¦¶ à¦¨à¦®à§à¦¬à¦°: à§ªà§¦ A- à¦à¦à¦¨à¦¿à¦ (à¦à¦²à¦¾ à¦ à¦¨à§à¦·à¦¦, à¦à¦à¦¨ à¦ à¦¨à§à¦·à¦¦, à¦¸à¦¾à¦®à¦¾à¦à¦¿à¦ à¦¬à¦¿à¦à§à¦à¦¾à¦¨ à¦ à¦¨à§à¦·à¦¦, à¦à¦¾à¦°à§à¦à¦²à¦¾ à¦ à¦¨à§à¦·à¦¦ à¦à¦¬à¦ à¦¶à¦¿à¦à§à¦·à¦¾ à¦ à¦à¦¬à§à¦·à¦£à¦¾ à¦à¦¨à¦¸à§à¦à¦¿à¦à¦¿à¦à¦)- à¦à¦° MCQ à¦ªà§à¦°à¦¶à§à¦¨à¦ªà¦¤à§à¦°à§ à¦, à¦ à¦ à¦ - à¦à¦ à§©à¦à¦¿ à¦ à¦à¦¶ à¦¥à¦¾à¦à¦¬à§à¥¤ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦®à¦¾à¦¨à¦¬à¦¨à§à¦à¦¨ à¦¨à¦¿à¦®à§à"
+  },
+  {
+    "university": "Rajshahi University",
     "title": "New Admission Rajshahi University (RU) Admission Requirements & Marks Distribution 2026-2027 (PDF Download) 11/12",
     "date": "2026-11-01",
     "url": "https://students.bd/notice/rajshahi-university-ru-admission-requirements-2026-2027",
@@ -22,21 +30,5 @@ window.ADMISSION_NOTICES = [
     "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2026-12-22 Tuesday - Subject General Knowledge (MCQ) & Drawing (Human Figure Drawing) 11:00 AM - 12:30 PM"
-  },
-  {
-    "university": "Dhaka University",
-    "title": "New Admission Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 11/14",
-    "date": "2026-11-01",
-    "url": "https://students.bd/notice/dhaka-university-business-studies-c-unit-admission-circular-2026-27",
-    "source": "students.bd",
-    "summary": "Date & Day 2026-12-26 Saturday - Subject Business Studies Unit Admission Test (MCQ 45 mins + Written 45 mins) 11:00 AM - 12:30 PM"
-  },
-  {
-    "university": "Dhaka University",
-    "title": "New Admission Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 11/14",
-    "date": "2026-11-01",
-    "url": "https://students.bd/notice/dhaka-university-arts-law-social-science-unit-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "Date & Day 2026-12-19 Saturday - Subject Arts, Law & Social Science Unit Admission Test (MCQ & Written) 11:00 AM - 12:30 PM"
   }
 ];
