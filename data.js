@@ -2729,4 +2729,27 @@ window.ADMISSION_EXAMS = [
     "examDate": "2026-11-23",
     "notes": "IIUC official Spring 2027 admission instruction lists admission tests on 22 and 23 November 2026; programme-wise allocation and time should be checked in the official portal/admit card."
   }
+,
+  {
+    "id": "ruet-2026-27-kha",
+    "universityName": "Rajshahi University of Engineering & Technology",
+    "universityShortName": "RUET",
+    "unit": "KHA Unit — Engineering, Urban & Regional Planning and Architecture",
+    "admissionType": "Public",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-12-15",
+    "examDate": "2027-01-14",
+    "examTime": "10:00 AM",
+    "examLocation": "RUET campus",
+    "officialUrl": "https://admission.ruet.ac.bd/",
+    "status": "Tentatively published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27",
+    "requirementsStatus": "check_official",
+    "requirementsSource": "https://admission.ruet.ac.bd/",
+    "requirements": "Check the official RUET admission circular for 2026-27 eligibility and group-specific requirements.",
+    "requirementsByGroup": {},
+    "notes": "The 14 January 2027 date is currently reported by admission schedule sources, but the official RUET undergraduate portal currently shows the previous 2025-26 cycle. Treat this date as tentative until RUET publishes the 2026-27 circular."
+  }
 ];
