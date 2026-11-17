@@ -35,7 +35,7 @@
     .sub{font-size:.9rem;opacity:.92;font-weight:500}
     .tag{font-size:.78rem;opacity:.72;margin-top:.12rem}
     .content-shell{flex:1;max-width:1000px;width:100%;margin:0 auto;padding:1rem 1rem 2rem;display:grid;grid-template-columns:minmax(0,600px) minmax(220px,290px);gap:1.75rem;align-items:start}main{width:100%;padding:0}
-    .sw{position:sticky;top:0;z-index:45;margin:0 -0.1rem 1.15rem;padding:.65rem .1rem .55rem;background:linear-gradient(to bottom,var(--bg) 78%,transparent)}
+    .sw{position:sticky;position:relative;top:0;z-index:45;margin:0 -0.1rem 1.15rem;padding:.65rem .1rem .55rem;background:linear-gradient(to bottom,var(--bg) 78%,transparent)}
     @media (max-width:900px){.top-controls{top:.55rem;right:.55rem}.sw{top:3.35rem;padding-top:.55rem;background:linear-gradient(to bottom,var(--bg) 82%,transparent);z-index:40}.search{padding-right:2.5rem}}
 @media(max-width:900px){.search-filter-row{gap:.4rem}.admission-filter{height:43px;font-size:.8rem;padding-left:.75rem;padding-right:1.7rem;min-width:82px}.category-filter{min-width:132px;max-width:160px}}    .sw svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;color:var(--muted);pointer-events:none}
     .search{width:100%;padding:.75rem 2.5rem .75rem 2.6rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);font-size:1rem;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}    .search-filter-row{display:flex;align-items:center;gap:.5rem;width:100%}.search-wrap{position:relative;flex:1;min-width:0}.admission-filter{height:45px;padding:0 2rem 0 .9rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);color:var(--text);font-size:.86rem;font-weight:600;outline:none;cursor:pointer;box-shadow:none;min-width:92px}.admission-filter:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}.category-filter{min-width:150px;max-width:185px}
@@ -461,24 +461,45 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
             <input class="search" id="q" type="search" placeholder="Search by university or date (DU, BUET, 16 Jan…)" autocomplete="off" enterkeyhint="search">
             <button type="button" class="clear" id="clear" aria-label="Clear search">×</button>
           </div>
-          <select class="admission-filter" id="typeFilter" aria-label="University type">
-            <option value="all">All</option>
-            <option value="Public">Public</option>
-            <option value="Private">Private</option>
-          </select>
-          <select class="admission-filter category-filter" id="categoryFilter" aria-label="University category">
-            <option value="all">All Categories</option>
-            <option value="Engineering">Engineering</option>
-            <option value="Science">Science</option>
-            <option value="Business">Business</option>
-            <option value="Arts & Humanities">Arts & Humanities</option>
-            <option value="Social Science">Social Science</option>
-            <option value="Law">Law</option>
-            <option value="Fine Arts">Fine Arts</option>
-            <option value="Architecture">Architecture</option>
-            <option value="Medical & Health">Medical & Health</option>
-            <option value="Other">Other</option>
-          </select>
+          <button type="button" class="filter-trigger" id="filterTrigger" aria-haspopup="true" aria-expanded="false" aria-label="Open filters">
+            <span class="filter-trigger-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg></span>
+            <span>Filter</span>
+          </button>
+          <div class="filter-menu" id="filterMenu" hidden>
+            <button type="button" class="filter-reset" data-type="all" data-category="all">All</button>
+            <div class="filter-section">
+              <button type="button" class="filter-main" data-filter-type="Public"><span>Public</span><span class="filter-chevron">›</span></button>
+              <div class="filter-submenu">
+                <button type="button" data-type="Public" data-category="all">All Public</button>
+                <button type="button" data-type="Public" data-category="Engineering">Engineering</button>
+                <button type="button" data-type="Public" data-category="Science">Science</button>
+                <button type="button" data-type="Public" data-category="Business">Business</button>
+                <button type="button" data-type="Public" data-category="Arts & Humanities">Arts & Humanities</button>
+                <button type="button" data-type="Public" data-category="Social Science">Social Science</button>
+                <button type="button" data-type="Public" data-category="Law">Law</button>
+                <button type="button" data-type="Public" data-category="Fine Arts">Fine Arts</button>
+                <button type="button" data-type="Public" data-category="Architecture">Architecture</button>
+                <button type="button" data-type="Public" data-category="Medical & Health">Medical & Health</button>
+                <button type="button" data-type="Public" data-category="Other">Other</button>
+              </div>
+            </div>
+            <div class="filter-section">
+              <button type="button" class="filter-main" data-filter-type="Private"><span>Private</span><span class="filter-chevron">›</span></button>
+              <div class="filter-submenu">
+                <button type="button" data-type="Private" data-category="all">All Private</button>
+                <button type="button" data-type="Private" data-category="Engineering">Engineering</button>
+                <button type="button" data-type="Private" data-category="Science">Science</button>
+                <button type="button" data-type="Private" data-category="Business">Business</button>
+                <button type="button" data-type="Private" data-category="Arts & Humanities">Arts & Humanities</button>
+                <button type="button" data-type="Private" data-category="Social Science">Social Science</button>
+                <button type="button" data-type="Private" data-category="Law">Law</button>
+                <button type="button" data-type="Private" data-category="Fine Arts">Fine Arts</button>
+                <button type="button" data-type="Private" data-category="Architecture">Architecture</button>
+                <button type="button" data-type="Private" data-category="Medical & Health">Medical & Health</button>
+                <button type="button" data-type="Private" data-category="Other">Other</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <p class="meta" id="meta" hidden></p>
@@ -606,7 +627,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     function fieldValue(e,field){var v=e&&e[field];if(e&&e.status==='Better check Yourself'&&(field==='examDate'||field==='examTime'||field==='examLocation')&&(!v||v==='Not published yet'))return 'Better check Yourself';if(field==='examDate'||field==='applicationDeadline')return fmt(v);return v||'Not published yet'}
     function match(e,q){if(!q)return true;var terms=q.toLowerCase().trim().split(/\s+/).filter(Boolean);var name=(e.universityName||"").toLowerCase();var short=(e.universityShortName||"").toLowerCase();var unit=(e.unit||"").toLowerCase();var date=(e.examDate||"").toLowerCase();var time=(e.examTime||"").toLowerCase();var datePretty='';if(e.examDate&&e.examDate!=='Not published yet'&&e.examDate!=='Better check Yourself'){try{datePretty=new Date(e.examDate+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).toLowerCase()}catch(err){}}function hasWord(text,w){if(!text)return false;if(w.length<=2)return short===w||name.split(/[\s\-\/()]+/).indexOf(w)!==-1;return text.indexOf(w)!==-1}return terms.every(function(w){return short===w||hasWord(name,w)||hasWord(unit,w)||hasWord(date,w)||hasWord(datePretty,w)||hasWord(time,w)})}
     let Q='',SEC='all',TYPE_FILTER='all',CATEGORY_FILTER='all';
-    var topQ=document.getElementById('q'),typeFilter=document.getElementById('typeFilter'),categoryFilter=document.getElementById('categoryFilter');
+    var topQ=document.getElementById('q'),filterTrigger=document.getElementById('filterTrigger'),filterMenu=document.getElementById('filterMenu');
     function syncSearch(value){Q=value||'';if(topQ&&topQ.value!==Q)topQ.value=Q;var clear=document.getElementById('clear');if(clear)clear.style.display=Q?'flex':'none';render()}
     function recordCategory(e){
       var t=((e&&e.unit)||'')+' '+((e&&e.universityName)||'')+' '+((e&&e.universityShortName)||'');
@@ -733,13 +754,31 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
           var cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
           var gapTxt=gapM.get(e2.id);
           html+='<article class="card scroll-reveal">';
-          if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+gapTxt+'</span></div>';
-          html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
-          if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
-          if(/medical college|medical college and hospital|medical college & hospital|mbbs admission/i.test(String(e2.universityName||'')+' '+String(e2.unit||'')))html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
-          html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share '+esc(e2.universityName)+'"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
-          html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
-          if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+          if(e2.medicalCentral){
+            var mc=e2.medicalColleges||{public:[],private:[]};
+            html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">Medical Admission — Central Exam</h3><p class="unit">MBBS/BDS Admission Test — 2026-27</p></div></div><span class="badge bpub">Centralized</span></div>';
+            html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';
+            html+='<select class="medical-college-select" aria-label="Medical colleges"><option value="">View all participating medical colleges</option><optgroup label="Public Medical Colleges">';
+            mc.public.forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+            html+='</optgroup><optgroup label="Private Medical Colleges">';
+            mc.private.forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+            html+='</optgroup></select>';
+          } else {
+          if(!e2.medicalCentral){
+            if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+gapTxt+'</span></div>';
+            html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
+            if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
+            if(/medical college|medical college and hospital|medical college & hospital|mbbs admission/i.test(String(e2.universityName||'')+' '+String(e2.unit||'')))html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+            html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share '+esc(e2.universityName)+'"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
+            html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
+            if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+            if(e2.medicalCentral){
+              html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+              html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share Medical Admission — Central Exam"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
+              html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button><a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a></div>';
+              if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+            }
+          }
           html+='</article>';
         }
         html+='</section>';
@@ -835,8 +874,10 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.getElementById('q').addEventListener('input',function(e){syncSearch(e.target.value)});
     document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Escape'){this.value='';syncSearch('');this.blur()}});
     document.getElementById('clear').addEventListener('click',function(){syncSearch('');});
-    typeFilter.addEventListener('change',function(){TYPE_FILTER=this.value;render()});
-    categoryFilter.addEventListener('change',function(){CATEGORY_FILTER=this.value;render()});
+    filterMenu.querySelectorAll('[data-type][data-category]').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER=this.getAttribute('data-type')||'all';CATEGORY_FILTER=this.getAttribute('data-category')||'all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');render()})});
+    filterMenu.querySelectorAll('.filter-reset').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER='all';CATEGORY_FILTER='all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');render()})});
+    filterTrigger.addEventListener('click',function(){var open=!filterMenu.hidden;filterMenu.hidden=open;filterTrigger.setAttribute('aria-expanded',open?'false':'true')});
+    document.addEventListener('click',function(e){if(!filterMenu.contains(e.target)&&!filterTrigger.contains(e.target)){filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false')}});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
