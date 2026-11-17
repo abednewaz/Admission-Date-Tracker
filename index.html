@@ -627,13 +627,20 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     function categoryMatches(e){
       if(CATEGORY_FILTER==='all')return true;
       var n=String((e&&e.universityName)||'').toLowerCase();
-      var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology|\bbuet\b|\bcuet\b|\bruet\b|\bkuet\b/.test(n);
+      var u=String((e&&e.unit)||'').toLowerCase();
+      var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology|\\bbuet\\b|\\bcuet\\b|\\bruet\\b|\\bkuet\\b/.test(n);
+      var medical=/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(n+' '+u);
       if(CATEGORY_FILTER==='Engineering')return engineering;
-      var medical=/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(n);
       if(CATEGORY_FILTER==='Science')return !engineering&&!medical;
+      if(CATEGORY_FILTER==='Business')return /business studies|business administration|management|commerce|bba|fbs|faculty of business|e unit|c unit.*business|d unit.*management/.test(u);
+      if(CATEGORY_FILTER==='Arts & Humanities')return /arts|humanities|fass|fine arts/.test(u);
+      if(CATEGORY_FILTER==='Social Science')return /social science|social sciences|fsss|fss|social science|security and strategic/.test(u);
+      if(CATEGORY_FILTER==='Law')return /law|ll\.b|llb/.test(u);
+      if(CATEGORY_FILTER==='Fine Arts')return /fine arts|fine-art|charukala|চারুকলা|b1.*fine|b2.*fine|c1.*fine/.test(u);
+      if(CATEGORY_FILTER==='Architecture')return /architecture|archi/.test(u);
+      if(CATEGORY_FILTER==='Medical & Health')return medical;
       return recordCategory(e)===CATEGORY_FILTER;
     }
-
     function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase().trim();if(/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(n))return 'dgme.gov.bd';var m=[
 ['gst cluster','gstadmission.ac.bd'],['dgme combined','dgme.gov.bd'],['medical admission','dgme.gov.bd'],['du -','du.ac.bd'],['university of dhaka','du.ac.bd'],
 ['bangladesh university of engineering and technology','buet.ac.bd'],['buet','buet.ac.bd'],
