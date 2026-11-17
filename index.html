@@ -617,7 +617,9 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       if(/business|bba|fbs|fms|management|commerce|accounting|finance|marketing/.test(t))return 'Business';
       if(/social science|fsss|social sciences|sociology|political science|public administration|economics/.test(t))return 'Social Science';
       if(/arts|humanities|fass|english|bangla|literature|language|journalism|media/.test(t))return 'Arts & Humanities';
-      if(/engineering|engineer|cse|computer science|eee|ece|civil|mechanical|mechatronics|iut|mist|buet|cuet|kuet|ruet|aust/.test(t))return 'Engineering';
+      if(/engineering|engineer|cse|computer science|eee|ece|civil|mechanical|mechatronics|iut|mist|buet|cuet|kuet|ruet|aust|rajshahi university of engineering|chittagong university of engineering|khulna university of engineering/.test(t))return 'Engineering';
+      /* DU Science (A Unit) is the science/engineering-track admission card in this tracker. */
+      if(/du\s*-\s*science|science unit.*a unit|a unit.*science/.test(t))return 'Engineering';
       if(/science|fst|science and technology|physics|chemistry|mathematics|biology/.test(t))return 'Science';
       return 'Other';
     }
