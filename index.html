@@ -532,7 +532,21 @@
       </div>
     </footer>
   </div>
-  <script src="data.js"></script>
+  <div class="share-modal" id="shareModal" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+  <div class="share-dialog" role="document">
+    <div class="share-dialog-head"><h3 id="shareTitle">What do you want to share with?</h3><button class="share-close" id="shareClose" type="button" aria-label="Close">×</button></div>
+    <div class="share-targets">
+      <button class="share-target" type="button" data-share-target="copy"><span class="share-target-icon">🔗</span><span>Copy link</span></button>
+      <button class="share-target" type="button" data-share-target="facebook"><span class="share-target-icon">f</span><span>Facebook</span></button>
+      <button class="share-target" type="button" data-share-target="messenger"><span class="share-target-icon">M</span><span>Messenger</span></button>
+      <button class="share-target" type="button" data-share-target="instagram"><span class="share-target-icon">◎</span><span>Instagram</span></button>
+      <button class="share-target" type="button" data-share-target="reddit"><span class="share-target-icon">R</span><span>Reddit</span></button>
+      <button class="share-target" type="button" data-share-target="telegram"><span class="share-target-icon">➤</span><span>Telegram</span></button>
+    </div>
+    <p class="share-copy-status" id="shareCopyStatus" aria-live="polite"></p>
+  </div>
+</div>
+<script src="data.js"></script>
   <script src="notices.js"></script>
   <script>
     const TZ='Asia/Dhaka',CLOSE=3,exams=(window.ADMISSION_EXAMS||[]).filter(function(e){return e&&e.universityName&&e.unit&&e.admissionType;});
@@ -631,7 +645,7 @@
           html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
           if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
           html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
-          html+='<div class="cd '+cls+'">'+c2.l+'</div>';
+          html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share '+esc(e2.universityName)+'">↗ Share</button></div>';
           html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
           if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
           html+='</article>';
@@ -639,7 +653,7 @@
         html+='</section>';
       });
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
-      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});bindScrollReveal();
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});bindScrollReveal();
     }
     const THEME_KEY='adt_theme_v1';
     function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;var headerIcon=document.querySelector('.header-logo');if(headerIcon)headerIcon.src=mode==='dark'?headerIcon.dataset.darkSrc:headerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
