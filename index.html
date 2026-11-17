@@ -391,12 +391,12 @@
     .manual-item .manual-action{display:inline-block;margin-top:.35rem;font-size:.74rem;font-weight:750;color:var(--pri)}
     @media(max-width:640px){.manual-overlay{padding:.65rem}.manual-modal{padding:.9rem;border-radius:14px}.manual-btn{right:.55rem;top:3.35rem}.manual-item{padding:.68rem .72rem}}
 <style>
-.share-btn{margin-left:auto;flex:0 0 auto;min-height:38px;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:10px;padding:.5rem .82rem;font-size:.84rem;font-weight:750;cursor:pointer;white-space:nowrap;box-shadow:0 1px 3px rgba(26,35,50,.08);transition:transform .15s,box-shadow .15s,background .15s,border-color .15s}
-.share-btn:hover{transform:translateY(-1px);box-shadow:0 3px 9px rgba(26,35,50,.12);background:color-mix(in srgb,var(--card) 92%,var(--pri2));border-color:var(--pri2)}
-body.dark .share-btn{box-shadow:0 2px 6px rgba(0,0,0,.24);background:#222b38;color:#dbe7f5;border-color:#3b4655}
-body.dark .share-btn:hover{background:#2a3544;border-color:#7f9bbd;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-@media(max-width:640px){.share-btn{min-height:40px;padding:.54rem .86rem;font-size:.86rem}}
-.share-modal{position:fixed;inset:0;background:rgba(0,0,0,.68);display:none;align-items:center;justify-content:center;padding:1rem;z-index:250}
+.share-btn{margin-left:auto;flex:0 0 auto;min-height:42px;border:0;background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;border-radius:11px;padding:.56rem .95rem;font-size:.86rem;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 4px 12px rgba(37,99,235,.28);transition:transform .16s,box-shadow .16s,filter .16s;display:inline-flex;align-items:center;gap:.38rem}
+.share-btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 7px 17px rgba(37,99,235,.34)}
+.share-btn:active{transform:translateY(0) scale(.98)}
+body.dark .share-btn{background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;box-shadow:0 4px 14px rgba(59,130,246,.34)}
+body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 7px 20px rgba(59,130,246,.42)}
+@media(max-width:640px){.share-btn{min-height:42px;padding:.58rem .98rem;font-size:.88rem}}\n.share-modal{position:fixed;inset:0;background:rgba(0,0,0,.68);display:none;align-items:center;justify-content:center;padding:1rem;z-index:250}
 .share-modal.show{display:flex}
 .share-dialog{width:min(430px,100%);background:var(--panel,#111827);color:var(--text,#e5e7eb);border:1px solid var(--border,#334155);border-radius:18px;box-shadow:0 22px 70px rgba(0,0,0,.5);padding:1rem}
 .share-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin-bottom:.85rem}
