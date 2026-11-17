@@ -61,8 +61,15 @@ jobs:
               print("Established URL baseline for existing notices; skipping duplicate first-run alerts.")
               fresh = []
           else:
-              old_keys = {(n.get("url") or "", n.get("title") or "") for n in old}
-              fresh = [n for n in new if (n.get("url") or "", n.get("title") or "") not in old_keys and n.get("title")]
+              old_keys = {
+                  (n.get("url") or "", n.get("title") or "", n.get("date") or "")
+                  for n in old
+              }
+              fresh = [
+                  n for n in new
+                  if (n.get("url") or "", n.get("title") or "", n.get("date") or "") not in old_keys
+                  and n.get("title")
+              ]
 
           if not fresh:
               print("No newly detected notices.")
