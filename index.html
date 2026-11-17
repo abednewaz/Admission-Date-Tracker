@@ -37,8 +37,8 @@
     .content-shell{flex:1;max-width:1000px;width:100%;margin:0 auto;padding:1rem 1rem 2rem;display:grid;grid-template-columns:minmax(0,600px) minmax(220px,290px);gap:1.75rem;align-items:start}main{width:100%;padding:0}
     .sw{position:sticky;top:0;z-index:45;margin:0 -0.1rem 1.15rem;padding:.65rem .1rem .55rem;background:linear-gradient(to bottom,var(--bg) 78%,transparent)}
     @media (max-width:900px){.top-controls{top:.55rem;right:.55rem}.sw{top:3.35rem;padding-top:.55rem;background:linear-gradient(to bottom,var(--bg) 82%,transparent);z-index:40}.search{padding-right:2.5rem}}
-    .sw svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;color:var(--muted);pointer-events:none}
-    .search{width:100%;padding:.75rem 2.5rem .75rem 2.6rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);font-size:1rem;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}
+@media(max-width:900px){.search-filter-row{gap:.4rem}.admission-filter{height:43px;font-size:.8rem;padding-left:.75rem;padding-right:1.7rem;min-width:82px}.category-filter{min-width:132px;max-width:160px}}    .sw svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;color:var(--muted);pointer-events:none}
+    .search{width:100%;padding:.75rem 2.5rem .75rem 2.6rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);font-size:1rem;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}    .search-filter-row{display:flex;align-items:center;gap:.5rem;width:100%}.search-wrap{position:relative;flex:1;min-width:0}.admission-filter{height:45px;padding:0 2rem 0 .9rem;border:1.5px solid var(--border);border-radius:999px;background:var(--card);color:var(--text);font-size:.86rem;font-weight:600;outline:none;cursor:pointer;box-shadow:none;min-width:92px}.admission-filter:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}.category-filter{min-width:150px;max-width:185px}
     .search:focus{border-color:var(--pri2);box-shadow:0 0 0 3px rgba(44,82,130,.15)}
     .search::placeholder{color:#9aa3b2}
     .clear{position:absolute;right:.55rem;top:50%;transform:translateY(-50%);width:1.7rem;height:1.7rem;border:none;background:#e8e6e1;border-radius:50%;font-size:1.1rem;line-height:1;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center}
@@ -457,10 +457,32 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       <section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><h2 id="calendar-heading">My Admission Calendar</h2><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
-        <label for="q" class="sr-only">Search University or Date</label>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        <input class="search" id="q" type="search" placeholder="Search by university or date (DU, BUET, 16 Jan…)" autocomplete="off" enterkeyhint="search">
-        <button type="button" class="clear" id="clear" aria-label="Clear search">×</button>
+        <div class="search-filter-row">
+          <div class="search-wrap">
+            <label for="q" class="sr-only">Search University or Date</label>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input class="search" id="q" type="search" placeholder="Search by university or date (DU, BUET, 16 Jan…)" autocomplete="off" enterkeyhint="search">
+            <button type="button" class="clear" id="clear" aria-label="Clear search">×</button>
+          </div>
+          <select class="admission-filter" id="typeFilter" aria-label="University type">
+            <option value="all">All</option>
+            <option value="Public">Public</option>
+            <option value="Private">Private</option>
+          </select>
+          <select class="admission-filter category-filter" id="categoryFilter" aria-label="University category">
+            <option value="all">All Categories</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Science">Science</option>
+            <option value="Business">Business</option>
+            <option value="Arts & Humanities">Arts & Humanities</option>
+            <option value="Social Science">Social Science</option>
+            <option value="Law">Law</option>
+            <option value="Fine Arts">Fine Arts</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Medical & Health">Medical & Health</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
       </div>
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
@@ -585,9 +607,24 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
     function fieldValue(e,field){var v=e&&e[field];if(e&&e.status==='Better check Yourself'&&(field==='examDate'||field==='examTime'||field==='examLocation')&&(!v||v==='Not published yet'))return 'Better check Yourself';if(field==='examDate'||field==='applicationDeadline')return fmt(v);return v||'Not published yet'}
     function match(e,q){if(!q)return true;var terms=q.toLowerCase().trim().split(/\s+/).filter(Boolean);var name=(e.universityName||"").toLowerCase();var short=(e.universityShortName||"").toLowerCase();var unit=(e.unit||"").toLowerCase();var date=(e.examDate||"").toLowerCase();var time=(e.examTime||"").toLowerCase();var datePretty='';if(e.examDate&&e.examDate!=='Not published yet'&&e.examDate!=='Better check Yourself'){try{datePretty=new Date(e.examDate+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).toLowerCase()}catch(err){}}function hasWord(text,w){if(!text)return false;if(w.length<=2)return short===w||name.split(/[\s\-\/()]+/).indexOf(w)!==-1;return text.indexOf(w)!==-1}return terms.every(function(w){return short===w||hasWord(name,w)||hasWord(unit,w)||hasWord(date,w)||hasWord(datePretty,w)||hasWord(time,w)})}
-    let Q='',SEC='all';
-    var topQ=document.getElementById('q');
+    let Q='',SEC='all',TYPE_FILTER='all',CATEGORY_FILTER='all';
+    var topQ=document.getElementById('q'),typeFilter=document.getElementById('typeFilter'),categoryFilter=document.getElementById('categoryFilter');
     function syncSearch(value){Q=value||'';if(topQ&&topQ.value!==Q)topQ.value=Q;var clear=document.getElementById('clear');if(clear)clear.style.display=Q?'flex':'none';render()}
+    function recordCategory(e){
+      var t=((e&&e.unit)||'')+' '+((e&&e.universityName)||'')+' '+((e&&e.universityShortName)||'');
+      t=t.toLowerCase();
+      if(/fine arts|fine-art|charukala|চারুকলা|b1.*fine|b1 unit/.test(t))return 'Fine Arts';
+      if(/architecture|archi/.test(t))return 'Architecture';
+      if(/pharmacy|medicine|medical|dental|dgme|health|mbbs|bds/.test(t))return 'Medical & Health';
+      if(/law|ll\.b|llb/.test(t))return 'Law';
+      if(/business|bba|fbs|fms|management|commerce|accounting|finance|marketing/.test(t))return 'Business';
+      if(/social science|fsss|social sciences|sociology|political science|public administration|economics/.test(t))return 'Social Science';
+      if(/arts|humanities|fass|english|bangla|literature|language|journalism|media/.test(t))return 'Arts & Humanities';
+      if(/engineering|engineer|cse|computer science|eee|ece|civil|mechanical|mechatronics|iut|mist|buet|cuet|kuet|ruet|aust/.test(t))return 'Engineering';
+      if(/science|fst|science and technology|physics|chemistry|mathematics|biology/.test(t))return 'Science';
+      return 'Other';
+    }
+    function categoryMatches(e){return CATEGORY_FILTER==='all'||recordCategory(e)===CATEGORY_FILTER}
 
     function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase().trim();var m=[
 ['gst cluster','gstadmission.ac.bd'],['dgme combined','dgme.gov.bd'],['medical admission','dgme.gov.bd'],['du -','du.ac.bd'],['university of dhaka','du.ac.bd'],
@@ -645,7 +682,12 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     }
     function render(){
       const q=Q.toLowerCase().trim();
-      const fil=exams.filter(function(e){return isValidExamRecord(e)&&match(e,q)});
+      const fil=exams.filter(function(e){
+        if(!isValidExamRecord(e))return false;
+        if(TYPE_FILTER!=='all'&&String(e.admissionType||'').indexOf(TYPE_FILTER)===-1)return false;
+        if(!categoryMatches(e))return false;
+        return match(e,q);
+      });
       var meta=document.getElementById('meta');
       if(q){meta.hidden=false;meta.textContent=fil.length+' result'+(fil.length!==1?'s':'')}else meta.hidden=true;
       var up=0,wd=0;var unis=new Set();
@@ -778,6 +820,8 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.getElementById('q').addEventListener('input',function(e){syncSearch(e.target.value)});
     document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Escape'){this.value='';syncSearch('');this.blur()}});
     document.getElementById('clear').addEventListener('click',function(){syncSearch('');});
+    typeFilter.addEventListener('change',function(){TYPE_FILTER=this.value;render()});
+    categoryFilter.addEventListener('change',function(){CATEGORY_FILTER=this.value;render()});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
