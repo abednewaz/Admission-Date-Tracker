@@ -719,6 +719,8 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){
         if(!isValidExamRecord(e))return false;
+        var isMed=/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''));
+        if(CATEGORY_FILTER!=='Medical & Health'&&isMed)return false;
         if(TYPE_FILTER!=='all'&&String(e.admissionType||'').indexOf(TYPE_FILTER)===-1)return false;
         if(!categoryMatches(e))return false;
         return match(e,q);
@@ -947,7 +949,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       });
       mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v2','1');hideMobileInstall()});
     }else{hideInstall();hideMobileInstall()}
-    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=17',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
+    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=18',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
       'dhaka university':'https://www.du.ac.bd/notice',
       'buet':'https://ugadmission.buet.ac.bd/',
