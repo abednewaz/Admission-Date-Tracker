@@ -649,7 +649,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       var n=String((e&&e.universityName)||'').toLowerCase();
       var u=String((e&&e.unit)||'').toLowerCase();
       var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology|\\bbuet\\b|\\bcuet\\b|\\bruet\\b|\\bkuet\\b/.test(n);
-      var medical=/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(n+' '+u);
+      var medical=/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs/bds admission|dgme/i.test(n+' '+u);
       if(CATEGORY_FILTER==='Engineering')return engineering;
       if(CATEGORY_FILTER==='Science')return !engineering&&!medical;
       if(CATEGORY_FILTER==='Business')return /business studies|business administration|management|commerce|bba|fbs|faculty of business|e unit|c unit.*business|d unit.*management/.test(u);
@@ -661,7 +661,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       if(CATEGORY_FILTER==='Medical & Health')return medical;
       return recordCategory(e)===CATEGORY_FILTER;
     }
-    function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase().trim();if(/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(n))return 'dgme.gov.bd';var m=[
+    function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase().trim();if(/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs/bds admission|dgme/i.test(n))return 'dgme.gov.bd';var m=[
 ['gst cluster','gstadmission.ac.bd'],['dgme combined','dgme.gov.bd'],['medical admission','dgme.gov.bd'],['du -','du.ac.bd'],['university of dhaka','du.ac.bd'],
 ['bangladesh university of engineering and technology','buet.ac.bd'],['buet','buet.ac.bd'],
 ['rajshahi university of engineering','ruet.ac.bd'],['ruet','ruet.ac.bd'],['ru -','ru.ac.bd'],['rajshahi university','ru.ac.bd'],
@@ -719,7 +719,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){
         if(!isValidExamRecord(e))return false;
-        var isMed=/medical college|medical college and hospital|medical college & hospital|mbbs admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''));
+        var isMed=/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs/bds admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''));
         if(CATEGORY_FILTER!=='Medical & Health'&&isMed)return false;
         if(TYPE_FILTER!=='all'&&String(e.admissionType||'').indexOf(TYPE_FILTER)===-1)return false;
         if(!categoryMatches(e))return false;
