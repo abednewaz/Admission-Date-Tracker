@@ -2752,7 +2752,7 @@ window.ADMISSION_EXAMS = [
     "requirementsByGroup": {},
     "notes": "The 14 January 2027 date is currently reported by admission schedule sources, but the official RUET undergraduate portal currently shows the previous 2025-26 cycle. Treat this date as tentative until RUET publishes the 2026-27 circular."
   }
-  {
+,  {
     "id": "sust-2026-27-a1",
     "universityName": "Shahjalal University of Science & Technology",
     "universityShortName": "SUST",
@@ -2814,5 +2814,5 @@ window.ADMISSION_EXAMS = [
     "requirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
     "requirementsByGroup": {},
     "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 18 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal."
-  },
+  }
 ];
