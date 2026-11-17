@@ -671,8 +671,8 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       for(var gi=0;gi<orderedGroups.length;gi++){
         var uni=orderedGroups[gi].uni,list=orderedGroups[gi].list; any=true;
         html+='<section class="group"><h2 class="gt">'+esc(uni)+'</h2>';
-        for(var m=0;m<show.length;m++){
-          var e2=show[m],c2=cd(e2.examDate),ap=appS(e2);
+        for(var m=0;m<list.length;m++){
+          var e2=list[m],c2=cd(e2.examDate),ap=appS(e2);
           var cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
           var gapTxt=gapM.get(e2.id);
           html+='<article class="card scroll-reveal">';
