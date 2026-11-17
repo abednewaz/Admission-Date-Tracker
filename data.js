@@ -1228,8 +1228,8 @@ window.ADMISSION_EXAMS = [
     "cycle": "2026-27 / HSC Batch 2026",
     "requirements": "7 UPCOMING Students Information · শিক্ষার্থীদের তথ্য Notices Search notices # Notice Stage Published File 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download Foreign & English Medium Students Admission information for international applicants and O/A Level candidates. English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details Foreign Students Free Accommodation on Campus Full Tuition Fee Waiver for the whole period of study How to Apply Send your application by e-mail to admission@kuet.ac.bd",
     "requirementsStatus": "verified",
-    "requirementsSource": "https://admission.kuet.ac.bd/",
-    "requirementsLastChecked": "2026-11-17T10:13:55+06:00",
+    "requirementsSource": "https://admission.kuet.ac.bd",
+    "requirementsLastChecked": "2026-11-17T17:16:44+06:00",
     "requirementsByGroup": {
       "science": {
         "eligible": true,
@@ -1254,8 +1254,8 @@ window.ADMISSION_EXAMS = [
       },
       "oLevelALevel": {
         "eligible": true,
-        "text": "7 UPCOMING Students Information · শিক্ষার্থীদের তথ্য Notices Search notices # Notice Stage Published File 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download Foreign & English Medium Students Admission information for international applicants and O/A Level candidates. English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details Foreign Students Free Accommodation on Campus Full Tuition Fee Waiver for the whole period of study How to Apply Send your application by e-mail to admission@kuet.ac.bd",
-        "previousText": "Eligibility for Admission To apply, you must meet these requirements: • You must have passed the O-Level exam with at least grade B in five or more subjects. • You must have passed the A-Level, Higher Secondary or an equivalent exam with at least grade B in Physics, Chemistry and Mathematics"
+        "text": "Eligibility for Admission To apply, you must meet these requirements: • You must have passed the O-Level exam with at least grade B in five or more subjects. • You must have passed the A-Level, Higher Secondary or an equivalent exam with at least grade B in Physics, Chemistry and Mathematics",
+        "previousText": "7 UPCOMING Students Information · শিক্ষার্থীদের তথ্য Notices Search notices # Notice Stage Published File 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download Foreign & English Medium Students Admission information for international applicants and O/A Level candidates. English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details Foreign Students Free Accommodation on Campus Full Tuition Fee Waiver for the whole period of study How to Apply Send your application by e-mail to admission@kuet.ac.bd"
       },
       "others": {
         "eligible": null,
@@ -1303,8 +1303,8 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
       },
       "oLevelALevel": {
         "eligible": null,
@@ -1316,8 +1316,8 @@ window.ADMISSION_EXAMS = [
       }
     },
     "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:22+06:00",
-    "requirementsSource": "https://application.ru.ac.bd/",
+    "requirementsLastChecked": "2026-11-17T17:16:45+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
@@ -1359,8 +1359,8 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
       },
       "oLevelALevel": {
         "eligible": null,
@@ -1372,8 +1372,8 @@ window.ADMISSION_EXAMS = [
       }
     },
     "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:22+06:00",
-    "requirementsSource": "https://application.ru.ac.bd/",
+    "requirementsLastChecked": "2026-11-17T17:16:45+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University Unit C: HSC/equivalent passed in 2025 or 2026; Science applicants need minimum GPA 3.50 in both SSC and HSC/equivalent including 4th subject, combined GPA 7.50. O/A-Level and department-specific conditions also apply."
   },
@@ -1465,8 +1465,8 @@ window.ADMISSION_EXAMS = [
       },
       "technical": {
         "eligible": null,
-        "text": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
-        "previousText": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
+        "text": "2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।",
+        "previousText": "2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ 2025 ও 2026 সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে।"
       },
       "oLevelALevel": {
         "eligible": null,
@@ -1478,8 +1478,8 @@ window.ADMISSION_EXAMS = [
       }
     },
     "requirementsChanged": true,
-    "requirementsLastChecked": "2026-11-15T11:26:23+06:00",
-    "requirementsSource": "https://application.ru.ac.bd/",
+    "requirementsLastChecked": "2026-11-17T17:16:46+06:00",
+    "requirementsSource": "https://admission.ru.ac.bd",
     "requirementsStatus": "verified",
     "requirements": "Rajshahi University: HSC/equivalent passed in 2025 or 2026. Humanities and Business Studies: minimum GPA 3.00 in both SSC and HSC/equivalent including 4th subject, combined GPA 6.50. Science: minimum GPA 3.50 in both, combined GPA 7.50. O/A-Level and unit/department-specific conditions also apply."
   },
@@ -2728,8 +2728,7 @@ window.ADMISSION_EXAMS = [
     "unit": "Undergraduate Admission Test — Day 2",
     "examDate": "2026-11-23",
     "notes": "IIUC official Spring 2027 admission instruction lists admission tests on 22 and 23 November 2026; programme-wise allocation and time should be checked in the official portal/admit card."
-  }
-,
+  },
   {
     "id": "ruet-2026-27-kha",
     "universityName": "Rajshahi University of Engineering & Technology",
@@ -2751,8 +2750,8 @@ window.ADMISSION_EXAMS = [
     "requirements": "Check the official RUET admission circular for 2026-27 eligibility and group-specific requirements.",
     "requirementsByGroup": {},
     "notes": "The 14 January 2027 date is currently reported by admission schedule sources, but the official RUET undergraduate portal currently shows the previous 2025-26 cycle. Treat this date as tentative until RUET publishes the 2026-27 circular."
-  }
-,  {
+  },
+  {
     "id": "sust-2026-27-a1",
     "universityName": "Shahjalal University of Science & Technology",
     "universityShortName": "SUST",
@@ -2769,9 +2768,13 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2027-01-26",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "not_published",
-    "requirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirements": "Sign In Student Registration - Step# 1 /3 HSC Board Select HSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (DCOM) TECHNICAL (HSC) TECHNICAL (VOCATIONAL) HSC Roll HSC Pass Year Select Pass Year 2025 2024 SSC Board Select SSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (VOCATIONAL) SSC Roll SSC Pass Year Select Pass Year 2023 2022 Enter your HSC and SSC information corrrectly. Cancel Check Info Department Eligibility Information To be eligible to get admitted in a department of SUST under B.Sc (Hons/Engg) program, the student must fulfill ADDITIONAL CRITERIA ( Minimum GPA 3.0 at HSC-Level Subjects ), as given in the following table: Unit Dept HSC Subject A ARC Physics, Mathematics BMB, GEB Biology, Chemistry, Mathematics CEE, CEP, CHE, GEE, OCG, PME Physics, Chemistry, Mathematics CSE, EEE, IPE, MEE, PHY, SWE Physics, Mathematics FES Biology, Mathematics FET Biology, Chemistry, Mathematics MAT, STA Mathematics B ANP, PAD, PSS, SCW, SOC Civics / Commercial Geography / Economics / Economics & Commercial Geography / English / Logic / Socialwork / Sociology / Any Subject for Science or Commerce Group BNG Bangla BUS Economics / Islamic Economics / Mathematics / Statistics / English / Any Subject for Science or Commerce Group ECO Economics / Islamic Economics / Mathematics / Statistics / Economics & Commercial Geography / English ENG English ( Not required for A-level Applicants ) For ARC department : Must get (minimum) 40% in Drawing Exam For BMB, GEB department : Must participate the Biology Exam in Admission Test f@elseif($phase==2) শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটায় আবেদনকারীদের মেধা তালিকা শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটার মেধাক্রম পরীক্ষার্থীদের রেজিস্ট্রেশনকৃত মোবাইল নম্বরে SMS এর মাধ্যমে ইতিমধ্যে জানিয়ে দেয়া হয়েছে। শিক্ষার্থীগন নীচের লিঙ্ক থেকে ভর্তি পরীক্ষার (সাধারন ও কোটা) মেধাক্রম ডাউনলোড করতে পারবে । কোটা মেধাক্রম DMA EMA TMA SPMA SCMA Olympiad সাধারণ মেধাক্রম A1/A2 A2 (আর্কিটেকচার) B (বিজ্ঞান) B (মানবিক) B (ব্যবসা শিক্ষা) SUST Photo Gallery Shahjalal University of Science and Technology (SUST) is the first state supported university located in Sylhet, Bangladesh. It is the 8th oldest university and the first Science and Technology university in Bangladesh",
     "requirementsByGroup": {},
-    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 17 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal."
+    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 17 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal.",
+    "previousRequirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-17T17:18:11+06:00",
+    "requirementsSource": "https://admission.sust.edu.bd/"
   },
   {
     "id": "sust-2026-27-a2",
@@ -2790,9 +2793,13 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2027-01-26",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "not_published",
-    "requirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirements": "Sign In Student Registration - Step# 1 /3 HSC Board Select HSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (DCOM) TECHNICAL (HSC) TECHNICAL (VOCATIONAL) HSC Roll HSC Pass Year Select Pass Year 2025 2024 SSC Board Select SSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (VOCATIONAL) SSC Roll SSC Pass Year Select Pass Year 2023 2022 Enter your HSC and SSC information corrrectly. Cancel Check Info Department Eligibility Information To be eligible to get admitted in a department of SUST under B.Sc (Hons/Engg) program, the student must fulfill ADDITIONAL CRITERIA ( Minimum GPA 3.0 at HSC-Level Subjects ), as given in the following table: Unit Dept HSC Subject A ARC Physics, Mathematics BMB, GEB Biology, Chemistry, Mathematics CEE, CEP, CHE, GEE, OCG, PME Physics, Chemistry, Mathematics CSE, EEE, IPE, MEE, PHY, SWE Physics, Mathematics FES Biology, Mathematics FET Biology, Chemistry, Mathematics MAT, STA Mathematics B ANP, PAD, PSS, SCW, SOC Civics / Commercial Geography / Economics / Economics & Commercial Geography / English / Logic / Socialwork / Sociology / Any Subject for Science or Commerce Group BNG Bangla BUS Economics / Islamic Economics / Mathematics / Statistics / English / Any Subject for Science or Commerce Group ECO Economics / Islamic Economics / Mathematics / Statistics / Economics & Commercial Geography / English ENG English ( Not required for A-level Applicants ) For ARC department : Must get (minimum) 40% in Drawing Exam For BMB, GEB department : Must participate the Biology Exam in Admission Test f@elseif($phase==2) শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটায় আবেদনকারীদের মেধা তালিকা শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটার মেধাক্রম পরীক্ষার্থীদের রেজিস্ট্রেশনকৃত মোবাইল নম্বরে SMS এর মাধ্যমে ইতিমধ্যে জানিয়ে দেয়া হয়েছে। শিক্ষার্থীগন নীচের লিঙ্ক থেকে ভর্তি পরীক্ষার (সাধারন ও কোটা) মেধাক্রম ডাউনলোড করতে পারবে । কোটা মেধাক্রম DMA EMA TMA SPMA SCMA Olympiad সাধারণ মেধাক্রম A1/A2 A2 (আর্কিটেকচার) B (বিজ্ঞান) B (মানবিক) B (ব্যবসা শিক্ষা) SUST Photo Gallery Shahjalal University of Science and Technology (SUST) is the first state supported university located in Sylhet, Bangladesh. It is the 8th oldest university and the first Science and Technology university in Bangladesh",
     "requirementsByGroup": {},
-    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 17 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal."
+    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 17 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal.",
+    "previousRequirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-17T17:18:11+06:00",
+    "requirementsSource": "https://admission.sust.edu.bd/"
   },
   {
     "id": "sust-2026-27-b",
@@ -2811,8 +2818,12 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": "2027-01-27",
     "cycle": "2026-27 / HSC Batch 2026",
     "requirementsStatus": "not_published",
-    "requirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirements": "Sign In Student Registration - Step# 1 /3 HSC Board Select HSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (DCOM) TECHNICAL (HSC) TECHNICAL (VOCATIONAL) HSC Roll HSC Pass Year Select Pass Year 2025 2024 SSC Board Select SSC Board BARISAL CHITTAGONG COMILLA DHAKA DINAJPUR JESSORE RAJSHAHI SYLHET MADRASAH MYMENSINGH TECHNICAL (VOCATIONAL) SSC Roll SSC Pass Year Select Pass Year 2023 2022 Enter your HSC and SSC information corrrectly. Cancel Check Info Department Eligibility Information To be eligible to get admitted in a department of SUST under B.Sc (Hons/Engg) program, the student must fulfill ADDITIONAL CRITERIA ( Minimum GPA 3.0 at HSC-Level Subjects ), as given in the following table: Unit Dept HSC Subject A ARC Physics, Mathematics BMB, GEB Biology, Chemistry, Mathematics CEE, CEP, CHE, GEE, OCG, PME Physics, Chemistry, Mathematics CSE, EEE, IPE, MEE, PHY, SWE Physics, Mathematics FES Biology, Mathematics FET Biology, Chemistry, Mathematics MAT, STA Mathematics B ANP, PAD, PSS, SCW, SOC Civics / Commercial Geography / Economics / Economics & Commercial Geography / English / Logic / Socialwork / Sociology / Any Subject for Science or Commerce Group BNG Bangla BUS Economics / Islamic Economics / Mathematics / Statistics / English / Any Subject for Science or Commerce Group ECO Economics / Islamic Economics / Mathematics / Statistics / Economics & Commercial Geography / English ENG English ( Not required for A-level Applicants ) For ARC department : Must get (minimum) 40% in Drawing Exam For BMB, GEB department : Must participate the Biology Exam in Admission Test f@elseif($phase==2) শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটায় আবেদনকারীদের মেধা তালিকা শাবিপ্রবি ভর্তি পরীক্ষা 2025-26 এর কোটার মেধাক্রম পরীক্ষার্থীদের রেজিস্ট্রেশনকৃত মোবাইল নম্বরে SMS এর মাধ্যমে ইতিমধ্যে জানিয়ে দেয়া হয়েছে। শিক্ষার্থীগন নীচের লিঙ্ক থেকে ভর্তি পরীক্ষার (সাধারন ও কোটা) মেধাক্রম ডাউনলোড করতে পারবে । কোটা মেধাক্রম DMA EMA TMA SPMA SCMA Olympiad সাধারণ মেধাক্রম A1/A2 A2 (আর্কিটেকচার) B (বিজ্ঞান) B (মানবিক) B (ব্যবসা শিক্ষা) SUST Photo Gallery Shahjalal University of Science and Technology (SUST) is the first state supported university located in Sylhet, Bangladesh. It is the 8th oldest university and the first Science and Technology university in Bangladesh",
     "requirementsByGroup": {},
-    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 18 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal."
+    "notes": "SUST rescheduled the 2026-27 undergraduate admission test to 18 January 2027. Unit-wise details and the full application circular should be verified on the official admission portal.",
+    "previousRequirements": "Detailed 2026-27 eligibility and application requirements will be updated after the official SUST admission circular is published.",
+    "requirementsChanged": true,
+    "requirementsLastChecked": "2026-11-17T17:18:11+06:00",
+    "requirementsSource": "https://admission.sust.edu.bd/"
   }
 ];
