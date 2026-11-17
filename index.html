@@ -623,7 +623,15 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       if(/science|fst|science and technology|physics|chemistry|mathematics|biology/.test(t))return 'Science';
       return 'Other';
     }
-    function categoryMatches(e){return CATEGORY_FILTER==='all'||recordCategory(e)===CATEGORY_FILTER}
+    function categoryMatches(e){
+      if(CATEGORY_FILTER==='all')return true;
+      /* Engineering filter: every current tracker institution except DGME has CSE/EEE or an engineering programme. */
+      if(CATEGORY_FILTER==='Engineering'){
+        var n=String((e&&e.universityName)||'').toLowerCase();
+        return !/dgme combined|medical admission/.test(n);
+      }
+      return recordCategory(e)===CATEGORY_FILTER;
+    }
 
     function logoDomain(e){var n=(e&&e.universityName||'').toLowerCase().trim();var m=[
 ['gst cluster','gstadmission.ac.bd'],['dgme combined','dgme.gov.bd'],['medical admission','dgme.gov.bd'],['du -','du.ac.bd'],['university of dhaka','du.ac.bd'],
