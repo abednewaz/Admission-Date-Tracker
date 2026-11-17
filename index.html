@@ -627,7 +627,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     function categoryMatches(e){
       if(CATEGORY_FILTER==='all')return true;
       var n=String((e&&e.universityName)||'').toLowerCase();
-      var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology/.test(n);
+      var engineering=/bangladesh university of engineering and technology|chittagong university of engineering and technology|rajshahi university of engineering and technology|khulna university of engineering and technology|\bbuet\b|\bcuet\b|\bruet\b|\bkuet\b/.test(n);
       if(CATEGORY_FILTER==='Engineering')return engineering;
       if(CATEGORY_FILTER==='Science')return !engineering;
       return recordCategory(e)===CATEGORY_FILTER;
