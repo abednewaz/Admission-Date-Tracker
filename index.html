@@ -628,6 +628,21 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
     }
 
     function isValidExamRecord(e){return !!(e&&e.id&&e.universityName&&e.universityShortName&&e.unit&&e.admissionType&&e.officialUrl)}
+    function compareExamRecords(a,b){
+      var ad=String(a&&a.examDate||''),bd=String(b&&b.examDate||'');
+      var av=ad&&ad!=='Not published yet'&&ad!=='Better check Yourself';
+      var bv=bd&&bd!=='Not published yet'&&bd!=='Better check Yourself';
+      if(av!==bv)return av?-1:1;
+      if(av&&ad!==bd)return ad.localeCompare(bd);
+      var am=examMoment(a),bm=examMoment(b);
+      var at=am?am.getTime():null,bt=bm?bm.getTime():null;
+      if(at!==null||bt!==null){
+        if(at===null)return 1;
+        if(bt===null)return -1;
+        if(at!==bt)return at-bt;
+      }
+      return String(a&&a.universityName||'').localeCompare(String(b&&b.universityName||''),undefined,{sensitivity:'base'});
+    }
     function render(){
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){return isValidExamRecord(e)&&match(e,q)});
@@ -641,13 +656,20 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       for(var j=1;j<chrono.length;j++){var gap=daysB(chrono[j-1].examDate,chrono[j].examDate);if(gap!==null&&gap>=0&&gap<=CLOSE){var txt=gap===0?'Only 0 days between these exams':gap===1?'Only 1 day between these exams':'Only '+gap+' days between these exams';gapM.set(chrono[j].id,txt)}}
       var groups=new Map();
       for(var k=0;k<fil.length;k++){var ex=fil[k];if(!groups.has(ex.universityName))groups.set(ex.universityName,[]);groups.get(ex.universityName).push(ex)}
-      groups.forEach(function(list){list.sort(function(a,b){if(!a.examDate&&!b.examDate)return 0;if(!a.examDate)return 1;if(!b.examDate)return -1;return a.examDate.localeCompare(b.examDate)})});
+      groups.forEach(function(list){list.sort(compareExamRecords)});
       var html='',any=false;
-      groups.forEach(function(list,uni){
-        var show=list;
+      var orderedGroups=[];
+      groups.forEach(function(list,uni){var show=list;
         if(SEC==='upcoming')show=list.filter(function(e){var s=cd(e.examDate).s;return s==='up'||s==='tod'||s==='tom'||s==='unk'});
         else if(SEC==='finished')show=list.filter(function(e){return cd(e.examDate).s==='fin'});
-        if(!show.length)return;any=true;
+        if(show.length)orderedGroups.push({uni:uni,list:show});
+      });
+      orderedGroups.sort(function(a,b){
+        var c=compareExamRecords(a.list[0],b.list[0]);
+        return c!==0?c:String(a.uni).localeCompare(String(b.uni),undefined,{sensitivity:'base'});
+      });
+      for(var gi=0;gi<orderedGroups.length;gi++){
+        var uni=orderedGroups[gi].uni,list=orderedGroups[gi].list; any=true;
         html+='<section class="group"><h2 class="gt">'+esc(uni)+'</h2>';
         for(var m=0;m<show.length;m++){
           var e2=show[m],c2=cd(e2.examDate),ap=appS(e2);
