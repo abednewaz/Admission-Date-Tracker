@@ -1,67 +1,30 @@
 {
   "headers": [
     {
-      "source": "/(about|privacy|disclaimer|contact)(.html)?",
+      "source": "/sitemap.xml",
       "headers": [
         {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
           "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+          "value": "public, max-age=3600"
         }
       ]
     },
     {
-      "source": "/index.html",
+      "source": "/robots.txt",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-        }
-      ]
-    },
-    {
-      "source": "/data.js",
-      "headers": [
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
         {
           "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+          "value": "public, max-age=3600"
         }
       ]
-    },
-    {
-      "source": "/sw.js",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-        }
-      ]
-    },
-    {
-      "source": "/",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/about",
-      "destination": "/about.html"
-    },
-    {
-      "source": "/privacy",
-      "destination": "/privacy.html"
-    },
-    {
-      "source": "/disclaimer",
-      "destination": "/disclaimer.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact.html"
     }
   ]
 }
