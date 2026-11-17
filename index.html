@@ -686,7 +686,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
           html+='</article>';
         }
         html+='</section>';
-      });
+      }
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
       setTimeout(focusSharedCard,40);
       document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});bindScrollReveal();
