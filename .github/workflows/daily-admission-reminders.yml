@@ -1,0 +1,55 @@
+name: Daily Admission Reminders
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Bangladesh local time: every day at 9:00 AM.
+    - cron: "0 9 * * *"
+      timezone: "Asia/Dhaka"
+
+permissions:
+  contents: read
+
+jobs:
+  daily-reminders:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Send personalized daily reminders
+        env:
+          PUSH_BROADCAST_SECRET: ${{ secrets.PUSH_BROADCAST_SECRET }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import requests
+
+          with open("data.js", encoding="utf-8") as f:
+              text = f.read()
+
+          match = re.search(r"window\.ADMISSION_EXAMS\s*=\s*(\[.*?\])\s*;?\s*$", text, re.S)
+          if not match:
+              raise SystemExit("Could not parse data.js")
+
+          exams = json.loads(match.group(1))
+          secret = os.environ.get("PUSH_BROADCAST_SECRET")
+          if not secret:
+              raise SystemExit("PUSH_BROADCAST_SECRET is not configured")
+
+          response = requests.post(
+              "https://admissiontracker.site/api/push-daily",
+              headers={
+                  "Authorization": "Bearer " + secret,
+                  "Content-Type": "application/json",
+              },
+              json={"exams": exams},
+              timeout=60,
+          )
+          print("Daily reminder response:", response.status_code)
+          print(response.text)
+          response.raise_for_status()
+          PY
