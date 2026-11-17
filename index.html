@@ -388,7 +388,7 @@
     .manual-item span{display:block;font-size:.8rem;line-height:1.45;color:var(--muted)}
     .manual-item .manual-action{display:inline-block;margin-top:.35rem;font-size:.74rem;font-weight:750;color:var(--pri)}
     @media(max-width:640px){.manual-overlay{padding:.65rem}.manual-modal{padding:.9rem;border-radius:14px}.manual-btn{right:.55rem;top:3.35rem}.manual-item{padding:.68rem .72rem}}
-.share-btn{margin-left:auto;flex:0 0 auto;min-height:46px;border:1px solid #3730a3;background:linear-gradient(135deg,#312e81,#4338ca);color:#fff;border-radius:12px;padding:.62rem 1.08rem;font-size:.92rem;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 5px 14px rgba(49,46,129,.25);transition:transform .16s,box-shadow .16s,filter .16s;display:inline-flex;align-items:center;gap:.42rem}
+.filter-trigger{margin-left:.1rem;width:46px;height:46px;min-width:46px;border:1px solid #3730a3;background:linear-gradient(135deg,#312e81,#4338ca);color:#fff;border-radius:12px;padding:0;cursor:pointer;box-shadow:0 5px 14px rgba(49,46,129,.25);transition:transform .16s,box-shadow .16s,filter .16s;display:inline-flex;align-items:center;justify-content:center;flex:0 0 46px}.filter-trigger:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 8px 19px rgba(49,46,129,.32)}.filter-trigger:active{transform:translateY(0) scale(.98)}.filter-trigger-icon{width:21px;height:21px;display:inline-flex}.filter-trigger-icon svg{width:100%;height:100%;display:block}.filter-menu{position:absolute;right:0;top:calc(100% + .45rem);z-index:80;width:min(285px,calc(100vw - 1.5rem));padding:.45rem;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 18px 45px rgba(0,0,0,.22)}.filter-menu[hidden]{display:none}.filter-menu button{font:inherit;color:var(--text);cursor:pointer}.filter-reset,.filter-main{width:100%;border:0;background:transparent;text-align:left;border-radius:9px;padding:.65rem .7rem;font-size:.84rem;font-weight:750}.filter-reset{background:var(--bg);margin-bottom:.3rem}.filter-reset:hover,.filter-main:hover{background:var(--bg)}.filter-section+.filter-section{margin-top:.18rem}.filter-main{display:flex;align-items:center;justify-content:space-between}.filter-chevron{font-size:1rem;color:var(--muted);transition:transform .18s}.filter-section.open .filter-chevron{transform:rotate(90deg)}.filter-submenu{display:none;padding:.15rem 0 .35rem .55rem}.filter-section.open .filter-submenu{display:grid;grid-template-columns:1fr 1fr;gap:.15rem}.filter-submenu button{border:0;background:transparent;text-align:left;border-radius:8px;padding:.45rem .55rem;font-size:.76rem;font-weight:600}.filter-submenu button:hover{background:var(--bg);color:var(--pri)}body.dark .filter-trigger{border-color:#6366f1;background:linear-gradient(135deg,#3730a3,#4f46e5);box-shadow:0 5px 16px rgba(79,70,229,.32)}body.dark .filter-trigger:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79,70,229,.4)}@media(max-width:640px){.filter-trigger{width:46px;height:46px;min-width:46px;flex-basis:46px}.filter-menu{right:0;width:min(285px,calc(100vw - 1.5rem))}}.share-btn{margin-left:auto;flex:0 0 auto;min-height:46px;border:1px solid #3730a3;background:linear-gradient(135deg,#312e81,#4338ca);color:#fff;border-radius:12px;padding:.62rem 1.08rem;font-size:.92rem;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 5px 14px rgba(49,46,129,.25);transition:transform .16s,box-shadow .16s,filter .16s;display:inline-flex;align-items:center;gap:.42rem}
 .share-btn:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 8px 19px rgba(49,46,129,.32)}
 .share-btn:active{transform:translateY(0) scale(.98)}
 body.dark .share-btn{border-color:#6366f1;background:linear-gradient(135deg,#3730a3,#4f46e5);box-shadow:0 5px 16px rgba(79,70,229,.32)}
@@ -461,9 +461,8 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
             <input class="search" id="q" type="search" placeholder="Search by university or date (DU, BUET, 16 Jan…)" autocomplete="off" enterkeyhint="search">
             <button type="button" class="clear" id="clear" aria-label="Clear search">×</button>
           </div>
-          <button type="button" class="filter-trigger" id="filterTrigger" aria-haspopup="true" aria-expanded="false" aria-label="Open filters">
-            <span class="filter-trigger-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg></span>
-            <span>Filter</span>
+          <button type="button" class="filter-trigger" id="filterTrigger" aria-haspopup="true" aria-expanded="false" aria-label="Open filters" title="Filter">
+            <span class="filter-trigger-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6.2 7.2v5.4l-3.6 1.9v-7.3L4 5z"/></svg></span>
           </button>
           <div class="filter-menu" id="filterMenu" hidden>
             <button type="button" class="filter-reset" data-type="all" data-category="all">All</button>
@@ -727,18 +726,40 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
       var meta=document.getElementById('meta');
       if(q){meta.hidden=false;meta.textContent=fil.length+' result'+(fil.length!==1?'s':'')}else meta.hidden=true;
       var up=0,wd=0;var unis=new Set();
-      for(var i=0;i<fil.length;i++){var e=fil[i];if(!isValidExamRecord(e))continue;unis.add(e.universityName);if(e.examDate&&e.examDate!=='Not published yet'){wd++;var c=cd(e.examDate);if(c.s==='up'||c.s==='tod'||c.s==='tom'){up++;}}}
+      for(var i=0;i<fil.length;i++){
+        var e=fil[i];
+        if(!isValidExamRecord(e))continue;
+        unis.add(e.universityName);
+        if(e.examDate&&e.examDate!=='Not published yet'){
+          wd++;
+          var c=cd(e.examDate);
+          if(c.s==='up'||c.s==='tod'||c.s==='tom')up++;
+        }
+      }
       document.getElementById('stats').innerHTML='<div class="stat"><b>'+up+'</b><span>Upcoming exams</span></div><div class="stat"><b>'+unis.size+'</b><span>Universities</span></div><div class="stat"><b>'+wd+'</b><span>With exam date</span></div>';
-      var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return a.examDate.localeCompare(b.examDate)});
+
+      var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return compareExamRecords(a,b)});
       var gapM=new Map();
-      for(var j=1;j<chrono.length;j++){var gap=daysB(chrono[j-1].examDate,chrono[j].examDate);if(gap!==null&&gap>=0&&gap<=CLOSE){var txt=gap===0?'Only 0 days between these exams':gap===1?'Only 1 day between these exams':'Only '+gap+' days between these exams';gapM.set(chrono[j].id,txt)}}
+      for(var j=1;j<chrono.length;j++){
+        var gap=daysB(chrono[j-1].examDate,chrono[j].examDate);
+        if(gap!==null&&gap>=0&&gap<=CLOSE){
+          var txt=gap===0?'Only 0 days between these exams':gap===1?'Only 1 day between these exams':'Only '+gap+' days between these exams';
+          gapM.set(chrono[j].id,txt);
+        }
+      }
+
       var groups=new Map();
-      for(var k=0;k<fil.length;k++){var ex=fil[k];if(!groups.has(ex.universityName))groups.set(ex.universityName,[]);groups.get(ex.universityName).push(ex)}
+      for(var k=0;k<fil.length;k++){
+        var ex=fil[k];
+        if(!groups.has(ex.universityName))groups.set(ex.universityName,[]);
+        groups.get(ex.universityName).push(ex);
+      }
       groups.forEach(function(list){list.sort(compareExamRecords)});
-      var html='',any=false;
-      var orderedGroups=[];
-      groups.forEach(function(list,uni){var show=list;
-        if(SEC==='upcoming')show=list.filter(function(e){var s=cd(e.examDate).s;return s==='up'||s==='tod'||s==='tom'||s==='unk'});
+
+      var html='',any=false,orderedGroups=[];
+      groups.forEach(function(list,uni){
+        var show=list;
+        if(SEC==='upcoming')show=list.filter(function(e){var st=cd(e.examDate).s;return st==='up'||st==='tod'||st==='tom'||st==='unk'});
         else if(SEC==='finished')show=list.filter(function(e){return cd(e.examDate).s==='fin'});
         if(show.length)orderedGroups.push({uni:uni,list:show});
       });
@@ -746,46 +767,58 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
         var c=compareExamRecords(a.list[0],b.list[0]);
         return c!==0?c:String(a.uni).localeCompare(String(b.uni),undefined,{sensitivity:'base'});
       });
+
       for(var gi=0;gi<orderedGroups.length;gi++){
-        var uni=orderedGroups[gi].uni,list=orderedGroups[gi].list; any=true;
+        var uni=orderedGroups[gi].uni,list=orderedGroups[gi].list;
+        any=true;
         html+='<section class="group"><h2 class="gt">'+esc(uni)+'</h2>';
+
         for(var m=0;m<list.length;m++){
           var e2=list[m],c2=cd(e2.examDate),ap=appS(e2);
           var cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
           var gapTxt=gapM.get(e2.id);
+
           html+='<article class="card scroll-reveal">';
+
+          if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+esc(gapTxt)+'</span></div>';
+
           if(e2.medicalCentral){
             var mc=e2.medicalColleges||{public:[],private:[]};
             html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">Medical Admission — Central Exam</h3><p class="unit">MBBS/BDS Admission Test — 2026-27</p></div></div><span class="badge bpub">Centralized</span></div>';
             html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';
             html+='<select class="medical-college-select" aria-label="Medical colleges"><option value="">View all participating medical colleges</option><optgroup label="Public Medical Colleges">';
-            mc.public.forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+            (mc.public||[]).forEach(function(n){html+='<option>'+esc(n)+'</option>'});
             html+='</optgroup><optgroup label="Private Medical Colleges">';
-            mc.private.forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+            (mc.private||[]).forEach(function(n){html+='<option>'+esc(n)+'</option>'});
             html+='</optgroup></select>';
+            html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+            html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share Medical Admission — Central Exam"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
+            html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button><a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a></div>';
+            if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
           } else {
-          if(!e2.medicalCentral){
-            if(gapTxt)html+='<div class="gap" role="alert"><span aria-hidden="true">⚠</span><span>'+gapTxt+'</span></div>';
             html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
-            if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>'}
-            if(/medical college|medical college and hospital|medical college & hospital|mbbs admission/i.test(String(e2.universityName||'')+' '+String(e2.unit||'')))html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+            if(e2.dateChanged){
+              html+='<div class="chg"><strong>Date Changed</strong>';
+              if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);
+              html+='</div>';
+            }
+            html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
             html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share '+esc(e2.universityName)+'"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
             html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
             if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
-            if(e2.medicalCentral){
-              html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
-              html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share Medical Admission — Central Exam"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
-              html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button><a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a></div>';
-              if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
-            }
           }
+
           html+='</article>';
         }
         html+='</section>';
       }
+
       document.getElementById('list').innerHTML=any?html:'<p class="empty">'+(q?'No matching universities found.':'No exams in this section.')+'</p>';
       setTimeout(focusSharedCard,40);
-      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});bindScrollReveal();
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});
+      document.querySelectorAll("[data-req-id]").forEach(function(b){b.addEventListener("click",function(){openRequirements(b.getAttribute("data-req-id"))})});
+      document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});
+      bindScrollReveal();
     }
     var shareModal=document.getElementById('shareModal'),shareClose=document.getElementById('shareClose'),shareStatus=document.getElementById('shareCopyStatus'),shareExam=null;
     function shareUrlFor(e){return location.origin+location.pathname+'?share='+encodeURIComponent(String(e.id))}
@@ -874,9 +907,10 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.getElementById('q').addEventListener('input',function(e){syncSearch(e.target.value)});
     document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Escape'){this.value='';syncSearch('');this.blur()}});
     document.getElementById('clear').addEventListener('click',function(){syncSearch('');});
-    filterMenu.querySelectorAll('[data-type][data-category]').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER=this.getAttribute('data-type')||'all';CATEGORY_FILTER=this.getAttribute('data-category')||'all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');render()})});
-    filterMenu.querySelectorAll('.filter-reset').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER='all';CATEGORY_FILTER='all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');render()})});
-    filterTrigger.addEventListener('click',function(){var open=!filterMenu.hidden;filterMenu.hidden=open;filterTrigger.setAttribute('aria-expanded',open?'false':'true')});
+    filterMenu.querySelectorAll('[data-type][data-category]').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER=this.getAttribute('data-type')||'all';CATEGORY_FILTER=this.getAttribute('data-category')||'all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');filterMenu.querySelectorAll('.filter-section').forEach(function(sec){sec.classList.remove('open')});render()})});
+    filterMenu.querySelectorAll('.filter-reset').forEach(function(b){b.addEventListener('click',function(){TYPE_FILTER='all';CATEGORY_FILTER='all';filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false');filterMenu.querySelectorAll('.filter-section').forEach(function(sec){sec.classList.remove('open')});render()})});
+    filterMenu.querySelectorAll('.filter-main').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var sec=this.closest('.filter-section');if(!sec)return;filterMenu.querySelectorAll('.filter-section').forEach(function(other){if(other!==sec)other.classList.remove('open')});sec.classList.toggle('open')})});
+    filterTrigger.addEventListener('click',function(e){e.stopPropagation();var open=!filterMenu.hidden;filterMenu.hidden=open;filterTrigger.setAttribute('aria-expanded',open?'false':'true');if(!open)filterMenu.querySelectorAll('.filter-section').forEach(function(sec){sec.classList.remove('open')})});
     document.addEventListener('click',function(e){if(!filterMenu.contains(e.target)&&!filterTrigger.contains(e.target)){filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false')}});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
