@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       { endpoint: subscription.endpoint, keys: subscription.keys },
       JSON.stringify({
         title: 'Admission Tracker — Test',
-        body: 'Notification system is working. Best of luck on your journey.',
+        body: 'Just checking if you were ok ☺️.',
         url: './',
         tag: 'admission-tracker-test'
       }),
