@@ -1,14 +1,5 @@
 window.ADMISSION_NOTICES = [
   {
-    "university": "Admission Tracker",
-    "title": "IMPORTANT: High Court suspends public university & medical admission tests until 31 December",
-    "date": "2026-11-18",
-    "url": "",
-    "source": "The Daily Star",
-    "sourceUrl": "https://www.thedailystar.net/news/education/news/university-medical-admission-tests-put-hold-until-dec-31-high-court-4327066",
-    "summary": "The High Court has ordered that public universities and medical colleges cannot hold honours and medical admission tests until 31 December 2026. The order came after a writ petition concerning students awaiting supplementary HSC/equivalent examination and re-scrutiny results. Universities and medical colleges have also been directed to continue accepting online applications, including from eligible supplementary-exam candidates. The government has said it will challenge the order before the Appellate Division."
-  },
-  {
     "university": "Bangladesh University of Professionals",
     "title": "New Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) 11/17",
     "date": "2026-11-01",
