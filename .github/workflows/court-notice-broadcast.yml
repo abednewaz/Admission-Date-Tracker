@@ -1,0 +1,39 @@
+name: Broadcast High Court Admission Notice
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  broadcast:
+    if: github.event.head_commit.message == 'Publish High Court admission suspension notice'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Broadcast to all notification subscribers
+        env:
+          PUSH_BROADCAST_SECRET: ${{ secrets.PUSH_BROADCAST_SECRET }}
+        run: |
+          python - <<'PY'
+          import os, requests
+          notice = {
+              "title": "IMPORTANT: High Court suspends public university & medical admission tests until 31 December",
+              "university": "Admission Tracker",
+              "date": "2026-11-18",
+              "url": "https://www.admissiontracker.site/?notice=hc-admission-suspension",
+              "source": "The Daily Star"
+          }
+          secret = os.environ.get("PUSH_BROADCAST_SECRET")
+          if not secret:
+              raise SystemExit("PUSH_BROADCAST_SECRET is not configured")
+          r = requests.post(
+              "https://www.admissiontracker.site/api/push-broadcast",
+              headers={"Authorization": "Bearer " + secret},
+              json=notice,
+              timeout=30,
+          )
+          print(r.status_code, r.text)
+          r.raise_for_status()
+          PY
