@@ -7,6 +7,8 @@ on:
 permissions:
   contents: read
 
+# One-shot broadcast marker for the current court notice.
+
 jobs:
   broadcast:
     if: github.event.head_commit.message == 'Publish High Court admission suspension notice'
