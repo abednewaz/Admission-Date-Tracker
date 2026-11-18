@@ -1,5 +1,13 @@
 window.ADMISSION_NOTICES = [
   {
+    "university": "Bangladesh University of Professionals",
+    "title": "New Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) 11/17",
+    "date": "2026-11-01",
+    "url": "https://students.bd/notice/bup-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Date & Day 2027-01-16 Saturday N/A Subject Faculty of Arts and Social Sciences (FASS) 10:30 AM - 11:30 AM"
+  },
+  {
     "university": "Rajshahi University",
     "title": "New Admission Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF) 11/17",
     "date": "2026-11-01",
@@ -22,13 +30,5 @@ window.ADMISSION_NOTICES = [
     "url": "https://students.bd/notice/ju-admission-circular-2026-27-pdf",
     "source": "students.bd",
     "summary": "à¦¶à§à¦°à¦¨à¦à¦° à¦¬à¦¿à¦¶à§à¦¬à¦¶à¦¿à¦ à¦à¦¾à¦¹à¦¾à¦à§à¦à§à¦°à¦¨à¦à¦° à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦¸à¦¾à¦­à¦¾à¦°, à¦¢à¦¾à¦à¦¾-à§§à§©à§ªà§¨ à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦ªà§à¦°à¦¥à¦® à¦¬à¦°à§à¦· à¦¸à§à¦¨à¦¾à¦¤à¦ (à¦¸à¦®à§à¦®à¦¾à¦¨) à¦¶à§à¦°à§à¦£à¦¿à¦¤à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦¬à¦¿à¦à§à¦à¦ªà§à¦¤à¦¿ à¦¨à¦à¦°à§à¦² à¦¨à¦® à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à§§à¦® à¦¬à¦°à§à¦· à¦¸à§à¦¨à¦¾à¦¤à¦ (à¦¸à¦®à§à¦®à¦¾à¦¨) à¦¶à§à¦°à§à¦£à¦¿à¦¤à§ à¦¬à¦¿à¦­à¦¿à¦¨à§à¦¨ à¦à¦à¦¨à¦¿à¦à§à¦° à¦ à¦°à§à¦¨à§à¦¤à¦­à§à¦à§à¦¤ à§©à§­ à¦à¦¿ à¦¬à¦¿à¦­à¦¾à¦/à¦à¦¨à¦¸à§à¦à¦¿à¦à¦¿à¦à¦à§ à§§à§®à§ªà§® à¦à¦¿ à¦à¦¸à¦¨à§ à¦­à¦°à§à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦¨à¦¿à¦®à§à¦¨à¦¬à¦°à§à¦£à¦¿à¦¤ à¦¯à§à¦à§à¦¯à¦¤à¦¾à¦¸à¦®à§à¦ªà¦¨à§à¦¨ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§à¦¦à§à¦° à¦à¦¾à¦ à¦¥à§à¦à§ à¦à¦¬à§à¦¦à¦¨ à¦à¦¹à§à¦¬à¦¾à¦¨ à¦à¦°à¦¾ à¦¹à¦à§à¦à§à¥¤ à¦à¦¬à§à¦¦à¦¨à¦à¦¾à¦°à§à¦à§ à¦à¦¾à¦¹à¦¾à¦à§à¦à§à¦°à¦¨à¦à¦° à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§à§à¦° à¦­à¦°à§à¦¤à¦¿à¦° à¦à§à§à¦¬à¦¸à¦¾à¦à¦ admission.juniv.edu à¦ à¦ªà§à¦°à¦à¦¾à¦¶à¦¿à¦¤ à¦¨à¦¿à§à¦®à¦¾à¦¬à¦²à¦¿ à¦ à¦¨à§à¦¸à¦°à¦£ à¦"
-  },
-  {
-    "university": "Dhaka University",
-    "title": "New Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 11/14",
-    "date": "2026-11-01",
-    "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "Date & Day 2026-12-22 Tuesday - Subject General Knowledge (MCQ) & Drawing (Human Figure Drawing) 11:00 AM - 12:30 PM"
   }
 ];
