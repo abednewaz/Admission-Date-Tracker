@@ -1,5 +1,13 @@
 window.ADMISSION_NOTICES = [
   {
+    "university": "BUTEX",
+    "title": "New Admission BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) 11/19",
+    "date": "2026-11-01",
+    "url": "https://students.bd/notice/butex-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "Date & Day 2027-01-29 Friday N/A Subject Written Admission Test (Mathematics - 60, Physics - 60, Chemistry - 60, English - 20; Total - 200 Marks) 10:00 AM - 12:00 PM"
+  },
+  {
     "university": "MIST",
     "title": "New Admission MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) 11/19",
     "date": "2026-11-01",
