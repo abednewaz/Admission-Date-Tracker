@@ -9,9 +9,96 @@ const SUPABASE_KEY =
 const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY;
 const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY;
 const BROADCAST_SECRET = process.env.PUSH_BROADCAST_SECRET;
+const GITHUB_OIDC_ISSUER = 'https://token.actions.githubusercontent.com';
+const GITHUB_OIDC_AUDIENCE = 'https://admissiontracker.site';
+const GITHUB_REPOSITORY = 'abednewaz/Admission-Date-Tracker';
+const GITHUB_WORKFLOW_PATH = '.github/workflows/daily-admission-reminders.yml';
 
 function json(res, status, body) {
   res.status(status).json(body);
+}
+
+function base64UrlDecode(value) {
+  const normalized = String(value).replace(/-/g, '+').replace(/_/g, '/');
+  const padded = normalized + '='.repeat((4 - normalized.length % 4) % 4);
+  const binary = atob(padded);
+  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+}
+
+function decodeJsonPart(value) {
+  return JSON.parse(new TextDecoder().decode(base64UrlDecode(value)));
+}
+
+async function verifyGitHubOidcToken(token) {
+  const parts = String(token || '').split('.');
+  if (parts.length !== 3) return false;
+
+  let header;
+  let payload;
+  try {
+    header = decodeJsonPart(parts[0]);
+    payload = decodeJsonPart(parts[1]);
+  } catch {
+    return false;
+  }
+
+  if (header.alg !== 'RS256' || !header.kid) return false;
+  if (payload.iss !== GITHUB_OIDC_ISSUER) return false;
+  if (payload.aud !== GITHUB_OIDC_AUDIENCE) return false;
+  if (payload.repository !== GITHUB_REPOSITORY) return false;
+  if (payload.ref !== 'refs/heads/main') return false;
+  if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
+
+  const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
+  if (
+    workflowRef !== GITHUB_WORKFLOW_PATH + '@refs/heads/main' &&
+    workflowRef !== GITHUB_REPOSITORY + '/' + GITHUB_WORKFLOW_PATH + '@refs/heads/main'
+  ) {
+    return false;
+  }
+
+  const now = Math.floor(Date.now() / 1000);
+  if (!Number.isFinite(payload.exp) || payload.exp < now) return false;
+  if (payload.nbf && payload.nbf > now + 60) return false;
+
+  try {
+    const jwksResponse = await fetch(GITHUB_OIDC_ISSUER + '/.well-known/jwks');
+    if (!jwksResponse.ok) return false;
+    const jwks = await jwksResponse.json();
+    const jwk = Array.isArray(jwks.keys)
+      ? jwks.keys.find((key) => key.kid === header.kid && key.kty === 'RSA')
+      : null;
+    if (!jwk) return false;
+
+    const cryptoKey = await crypto.subtle.importKey(
+      'jwk',
+      jwk,
+      { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
+      false,
+      ['verify']
+    );
+
+    const data = new TextEncoder().encode(parts[0] + '.' + parts[1]);
+    const signature = base64UrlDecode(parts[2]);
+
+    return await crypto.subtle.verify(
+      'RSASSA-PKCS1-v1_5',
+      cryptoKey,
+      signature,
+      data
+    );
+  } catch {
+    return false;
+  }
+}
+
+async function isAuthorized(req) {
+  const authorization = req.headers.authorization || '';
+  if (BROADCAST_SECRET && authorization === 'Bearer ' + BROADCAST_SECRET) return true;
+
+  const prefix = 'Bearer ';
+  if (!authorization.startsWith(prefix)) return false;
+  return verifyGitHubOidcToken(authorization.slice(prefix.length));
 }
 
 function dateOnlyInDhaka() {
@@ -61,7 +148,7 @@ function formatDate(dt) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed' });
-  if (!BROADCAST_SECRET || req.headers.authorization !== 'Bearer ' + BROADCAST_SECRET) {
+  if (!(await isAuthorized(req))) {
     return json(res, 401, { error: 'Unauthorized' });
   }
   if (!SUPABASE_URL || !SUPABASE_KEY || !VAPID_PUBLIC_KEY || !VAPID_PRIVATE_KEY) {
