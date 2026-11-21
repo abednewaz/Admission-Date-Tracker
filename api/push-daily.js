@@ -1,5 +1,4 @@
 import webpush from 'web-push';
-import { createRemoteJWKSet, jwtVerify } from 'jose';
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY =
@@ -14,17 +13,19 @@ const GITHUB_OIDC_ISSUER = 'https://token.actions.githubusercontent.com';
 const GITHUB_OIDC_AUDIENCE = 'https://admissiontracker.site';
 const GITHUB_REPOSITORY = 'abednewaz/Admission-Date-Tracker';
 const GITHUB_WORKFLOW_PATH = '.github/workflows/daily-admission-reminders.yml';
+const josePromise = import('jose');
+const githubJwksPromise = josePromise.then(({ createRemoteJWKSet }) =>
+  createRemoteJWKSet(new URL(GITHUB_OIDC_ISSUER + '/.well-known/jwks'))
+);
 
 function json(res, status, body) {
   res.status(status).json(body);
 }
 
-const githubJwks = createRemoteJWKSet(
-  new URL(GITHUB_OIDC_ISSUER + '/.well-known/jwks')
-);
-
 async function verifyGitHubOidcToken(token) {
   try {
+    const { jwtVerify } = await josePromise;
+    const githubJwks = await githubJwksPromise;
     const { payload } = await jwtVerify(token, githubJwks, {
       issuer: GITHUB_OIDC_ISSUER,
       audience: GITHUB_OIDC_AUDIENCE
