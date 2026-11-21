@@ -2,6 +2,9 @@ name: Daily Admission Reminders
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/daily-admission-reminders.yml
   schedule:
     # Bangladesh local time: every day at 9:00 AM.
     - cron: "0 9 * * *"
