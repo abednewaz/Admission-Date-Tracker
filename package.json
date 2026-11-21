@@ -4,6 +4,7 @@
     "node": ">=20"
   },
   "dependencies": {
+    "jose": "^6.2.18",
     "web-push": "^3.6.7"
   }
 }
