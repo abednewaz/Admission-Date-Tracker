@@ -1,5 +1,5 @@
 import webpush from 'web-push';
-import { createPublicKey, verify as verifySignature } from 'node:crypto';
+import { createRemoteJWKSet, jwtVerify } from 'jose';
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY =
@@ -19,62 +19,26 @@ function json(res, status, body) {
   res.status(status).json(body);
 }
 
-function base64UrlDecode(value) {
-  const normalized = String(value).replace(/-/g, '+').replace(/_/g, '/');
-  const padded = normalized + '='.repeat((4 - normalized.length % 4) % 4);
-  const binary = atob(padded);
-  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
-}
-
-function decodeJsonPart(value) {
-  return JSON.parse(new TextDecoder().decode(base64UrlDecode(value)));
-}
+const githubJwks = createRemoteJWKSet(
+  new URL(GITHUB_OIDC_ISSUER + '/.well-known/jwks')
+);
 
 async function verifyGitHubOidcToken(token) {
-  const parts = String(token || '').split('.');
-  if (parts.length !== 3) return false;
-
-  let header;
-  let payload;
   try {
-    header = decodeJsonPart(parts[0]);
-    payload = decodeJsonPart(parts[1]);
-  } catch {
-    return false;
-  }
+    const { payload } = await jwtVerify(token, githubJwks, {
+      issuer: GITHUB_OIDC_ISSUER,
+      audience: GITHUB_OIDC_AUDIENCE
+    });
 
-  if (header.alg !== 'RS256' || !header.kid) return false;
-  if (payload.iss !== GITHUB_OIDC_ISSUER) return false;
+    if (payload.repository !== GITHUB_REPOSITORY) return false;
+    if (payload.ref !== 'refs/heads/main') return false;
+    if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
 
-  const audiences = Array.isArray(payload.aud) ? payload.aud : [payload.aud];
-  if (!audiences.includes(GITHUB_OIDC_AUDIENCE)) return false;
+    const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
+    const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
+    if (!String(workflowRef).endsWith(expectedWorkflowSuffix)) return false;
 
-  if (payload.repository !== GITHUB_REPOSITORY) return false;
-  if (payload.ref !== 'refs/heads/main') return false;
-  if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
-
-  const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
-  const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
-  if (!String(workflowRef).endsWith(expectedWorkflowSuffix)) return false;
-
-  const now = Math.floor(Date.now() / 1000);
-  if (!Number.isFinite(payload.exp) || payload.exp < now) return false;
-  if (payload.nbf && payload.nbf > now + 60) return false;
-
-  try {
-    const jwksResponse = await fetch(GITHUB_OIDC_ISSUER + '/.well-known/jwks');
-    if (!jwksResponse.ok) return false;
-    const jwks = await jwksResponse.json();
-    const jwk = Array.isArray(jwks.keys)
-      ? jwks.keys.find((key) => key.kid === header.kid && key.kty === 'RSA')
-      : null;
-    if (!jwk) return false;
-
-    const publicKey = createPublicKey({ key: jwk, format: 'jwk' });
-    const data = Buffer.from(parts[0] + '.' + parts[1], 'utf8');
-    const signature = Buffer.from(base64UrlDecode(parts[2]));
-
-    return verifySignature('RSA-SHA256', data, publicKey, signature);
+    return true;
   } catch {
     return false;
   }
