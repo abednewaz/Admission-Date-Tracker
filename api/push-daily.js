@@ -1,4 +1,5 @@
 import webpush from 'web-push';
+import { createPublicKey, verify as verifySignature } from 'node:crypto';
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY =
@@ -44,18 +45,17 @@ async function verifyGitHubOidcToken(token) {
 
   if (header.alg !== 'RS256' || !header.kid) return false;
   if (payload.iss !== GITHUB_OIDC_ISSUER) return false;
-  if (payload.aud !== GITHUB_OIDC_AUDIENCE) return false;
+
+  const audiences = Array.isArray(payload.aud) ? payload.aud : [payload.aud];
+  if (!audiences.includes(GITHUB_OIDC_AUDIENCE)) return false;
+
   if (payload.repository !== GITHUB_REPOSITORY) return false;
   if (payload.ref !== 'refs/heads/main') return false;
   if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
 
   const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
-  if (
-    workflowRef !== GITHUB_WORKFLOW_PATH + '@refs/heads/main' &&
-    workflowRef !== GITHUB_REPOSITORY + '/' + GITHUB_WORKFLOW_PATH + '@refs/heads/main'
-  ) {
-    return false;
-  }
+  const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
+  if (!String(workflowRef).endsWith(expectedWorkflowSuffix)) return false;
 
   const now = Math.floor(Date.now() / 1000);
   if (!Number.isFinite(payload.exp) || payload.exp < now) return false;
@@ -70,23 +70,11 @@ async function verifyGitHubOidcToken(token) {
       : null;
     if (!jwk) return false;
 
-    const cryptoKey = await crypto.subtle.importKey(
-      'jwk',
-      jwk,
-      { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' },
-      false,
-      ['verify']
-    );
+    const publicKey = createPublicKey({ key: jwk, format: 'jwk' });
+    const data = Buffer.from(parts[0] + '.' + parts[1], 'utf8');
+    const signature = Buffer.from(base64UrlDecode(parts[2]));
 
-    const data = new TextEncoder().encode(parts[0] + '.' + parts[1]);
-    const signature = base64UrlDecode(parts[2]);
-
-    return await crypto.subtle.verify(
-      'RSASSA-PKCS1-v1_5',
-      cryptoKey,
-      signature,
-      data
-    );
+    return verifySignature('RSA-SHA256', data, publicKey, signature);
   } catch {
     return false;
   }
