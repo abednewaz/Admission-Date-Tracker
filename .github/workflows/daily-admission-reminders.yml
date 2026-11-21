@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/daily-admission-reminders.yml
   schedule:
-    # Bangladesh local time: every day at 9:00 AM. Verified with GitHub OIDC.
+    # Bangladesh local time: every day at 9:00 AM. Final OIDC verification.
     - cron: "0 9 * * *"
       timezone: "Asia/Dhaka"
 
