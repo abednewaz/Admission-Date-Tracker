@@ -2,11 +2,8 @@ name: Daily Admission Reminders
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/daily-admission-reminders.yml
   schedule:
-    # Bangladesh local time: every day at 9:00 AM. Final OIDC verification run.
+    # Bangladesh local time: every day at 9:00 AM.
     - cron: "0 9 * * *"
       timezone: "Asia/Dhaka"
 
@@ -56,22 +53,6 @@ jobs:
           id_token = response.json().get("value")
           if not id_token:
               raise SystemExit("GitHub Actions OIDC token was not returned")
-
-          import base64
-          payload_part = id_token.split(".")[1]
-          payload_part += "=" * ((4 - len(payload_part) % 4) % 4)
-          claims = json.loads(base64.urlsafe_b64decode(payload_part).decode("utf-8"))
-          print("OIDC claims:", json.dumps({
-              "iss": claims.get("iss"),
-              "aud": claims.get("aud"),
-              "repository": claims.get("repository"),
-              "ref": claims.get("ref"),
-              "event_name": claims.get("event_name"),
-              "workflow_ref": claims.get("workflow_ref"),
-              "job_workflow_ref": claims.get("job_workflow_ref"),
-              "exp": claims.get("exp"),
-              "nbf": claims.get("nbf")
-          }, sort_keys=True))
 
           push_response = requests.post(
               "https://www.admissiontracker.site/api/push-daily",
