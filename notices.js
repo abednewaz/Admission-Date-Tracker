@@ -14,21 +14,5 @@ window.ADMISSION_NOTICES = [
     "url": "https://students.bd/notice/butex-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2027-01-29 Friday N/A Subject Written Admission Test (Mathematics - 60, Physics - 60, Chemistry - 60, English - 20; Total - 200 Marks) 10:00 AM - 12:00 PM"
-  },
-  {
-    "university": "MIST",
-    "title": "New Admission MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) 11/19",
-    "date": "2026-11-02",
-    "url": "https://students.bd/notice/mist-undergraduate-admission-circular-2026-27",
-    "source": "students.bd",
-    "summary": "Date & Day 2027-02-05 Friday Unit C Subject Unit C (Science) Admission Test 10:00 AM - 11:00 AM"
-  },
-  {
-    "university": "Bangladesh University of Professionals",
-    "title": "New Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) 11/17",
-    "date": "2026-11-02",
-    "url": "https://students.bd/notice/bup-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "Date & Day 2027-01-16 Saturday N/A Subject Faculty of Arts and Social Sciences (FASS) 10:30 AM - 11:30 AM"
   }
 ];
