@@ -2,7 +2,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Medical Admission",
     "title": "New Admission DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) 11/19",
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "url": "https://students.bd/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
     "source": "students.bd",
     "summary": "à¦à¦£à¦ªà§à¦°à¦à¦¾à¦¤à¦¨à§à¦¤à§à¦°à§ à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ à¦¸à¦°à¦à¦¾à¦° à¦¸à§à¦¬à¦¾à¦¸à§à¦¥à§à¦¯ à¦¶à¦¿à¦à§à¦·à¦¾ à¦ à¦§à¦¿à¦¦à¦ªà§à¦¤à¦° à¦®à¦¹à¦¾à¦à¦¾à¦²à§, à¦¢à¦¾à¦à¦¾-à§§à§¨à§§à§¨ www.dgme.gov.bd à¦¸à§à¦®à¦¾à¦°à¦ à¦¨à¦-à§«à§¯.à§§à§ª.à§¦à§¦à§¦à§¦.à§¦à§¦à§¦.à§§à§¦à§©.à§©à§ª.à§¦à§¦à§¦à§§.à§¨à§¬.à§®à§¬à§¯ à¦¤à¦¾à¦°à¦¿à¦: à§§à§¯/à§§à§§/à§¨à§¦à§¨à§¬ à¦à§à¦°à¦¿. à¦¬à¦¿à¦à§à¦à¦ªà§à¦¤à¦¿ à¦¬à¦¿à¦·à§: à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦à§à¦°à¦¿. à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦¸à¦°à¦à¦¾à¦°à¦¿ à¦à¦à¦à¦à¦à¦à¦¿ à¦ à¦®à§à¦¯à¦¾à¦à¦¸ à¦ à¦¨à¦¿à¦°à§à¦¬à¦¾à¦à¦¿à¦¤ à¦¶à¦¿à¦à§à¦·à¦¾à¦°à§à¦¥à§à¦¦à§à¦° à¦­à¦°à§à¦¤à¦¿à¥¤ à¦à¦ªà¦°à§à¦¯à§à¦à§à¦¤ à¦¬à¦¿à¦·à§à§à¦° à¦ªà¦°à¦¿à¦ªà§à¦°à§à¦à§à¦·à¦¿à¦¤à§ à¦¸à¦à¦¶à§à¦²à¦¿à¦·à§à¦ à¦¸à¦à¦²à§à¦° à¦ à¦¬à¦à¦¤à¦¿à¦° à¦à¦¨à§à¦¯ à¦à¦¾à¦¨à¦¾à¦¨à§ à¦¯à¦¾à¦à§à¦à§ à¦¯à§, à§¨à§¦à§¨à§¬-à§¨à§¦à§¨à§­ à¦à§à¦°à¦¿. à¦¶à¦¿à¦à§à¦·à¦¾à¦¬à¦°à§à¦·à§ à¦à¦à¦à¦à¦à¦à¦¿ à¦ à¦®à§à¦¯à¦¾à¦à¦¸ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾ à¦à¦¤ à§§à§©/à§§à§§/à§¨à§¦à§¨à§¬ à¦à§à¦°à¦¿. à¦¤à¦¾à¦°à¦¿à¦à§ à¦ à¦¨à§à¦·à§à¦ à¦¿à¦¤ à¦¹à§à§à¦à§ à¦à¦¬à¦ à¦à¦²à§à¦²à¦¿à¦à¦¿à¦¤ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§"
@@ -10,7 +10,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "BUTEX",
     "title": "New Admission BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) 11/19",
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "url": "https://students.bd/notice/butex-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2027-01-29 Friday N/A Subject Written Admission Test (Mathematics - 60, Physics - 60, Chemistry - 60, English - 20; Total - 200 Marks) 10:00 AM - 12:00 PM"
@@ -18,7 +18,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "MIST",
     "title": "New Admission MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) 11/19",
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "url": "https://students.bd/notice/mist-undergraduate-admission-circular-2026-27",
     "source": "students.bd",
     "summary": "Date & Day 2027-02-05 Friday Unit C Subject Unit C (Science) Admission Test 10:00 AM - 11:00 AM"
@@ -26,7 +26,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Bangladesh University of Professionals",
     "title": "New Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) 11/17",
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "url": "https://students.bd/notice/bup-admission-circular-2026-2027",
     "source": "students.bd",
     "summary": "Date & Day 2027-01-16 Saturday N/A Subject Faculty of Arts and Social Sciences (FASS) 10:30 AM - 11:30 AM"
@@ -34,7 +34,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Rajshahi University",
     "title": "New Admission Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF) 11/17",
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "url": "https://students.bd/notice/ru-honours-1st-year-admission-marks-distribution-requirements-2026-2027",
     "source": "students.bd",
     "summary": "à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦§à¦°à¦¨: MCQ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦¸à¦®à§: à§§ à¦à¦¨à§à¦à¦¾ à¦ªà§à¦°à¦¶à§à¦¨ à¦¸à¦à¦à§à¦¯à¦¾: à§®à§¦ à¦ªà§à¦°à§à¦£à¦®à¦¾à¦¨: à§§à§¦à§¦ MCQ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦ªà¦¾à¦¶ à¦¨à¦®à§à¦¬à¦°: à§ªà§¦ à¦¸à¦à§à¦à§à¦¤; à¦¨à¦¾à¦à§à¦¯à¦à¦²à¦¾; à¦à¦¿à¦¤à§à¦°à¦à¦²à¦¾, à¦ªà§à¦°à¦¾à¦à§à¦¯à¦à¦²à¦¾ à¦ à¦à¦¾à¦ªà¦à¦¿à¦¤à§à¦°; à¦®à§à§à¦¶à¦¿à¦²à§à¦ª à¦ à¦­à¦¾à¦¸à§à¦à¦°à§à¦¯ à¦à¦¬à¦ à¦à§à¦°à¦¾à¦«à¦¿à¦ à¦¡à¦¿à¦à¦¾à¦à¦¨, à¦à¦¾à¦°à§à¦¶à¦¿à¦²à§à¦ª à¦ à¦¶à¦¿à¦²à§à¦ªà¦à¦²à¦¾à¦° à¦à¦¤à¦¿à¦¹à¦¾à¦¸ à¦¬à¦¿à¦­à¦¾à¦à¦¸à¦®à§à¦¹à§à¦° à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦°à¦¿à¦ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦ªà§à¦°à§à¦£à¦®à¦¾à¦¨: à§§à§¦à§¦ à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦°à¦¿à¦ à¦ªà¦°à§à¦à§à¦·à¦¾à§ à¦ªà¦¾à¦¶ à¦¨à¦®à§à¦¬à¦°: à§ªà§¦ A- à¦à¦à¦¨à¦¿à¦ (à¦à¦²à¦¾ à¦ à¦¨à§à¦·à¦¦, à¦à¦à¦¨ à¦ à¦¨à§à¦·à¦¦, à¦¸à¦¾à¦®à¦¾à¦à¦¿à¦ à¦¬à¦¿à¦à§à¦à¦¾à¦¨ à¦ à¦¨à§à¦·à¦¦, à¦à¦¾à¦°à§à¦à¦²à¦¾ à¦ à¦¨à§à¦·à¦¦ à¦à¦¬à¦ à¦¶à¦¿à¦à§à¦·à¦¾ à¦ à¦à¦¬à§à¦·à¦£à¦¾ à¦à¦¨à¦¸à§à¦à¦¿à¦à¦¿à¦à¦)- à¦à¦° MCQ à¦ªà§à¦°à¦¶à§à¦¨à¦ªà¦¤à§à¦°à§ à¦, à¦ à¦ à¦ - à¦à¦ à§©à¦à¦¿ à¦ à¦à¦¶ à¦¥à¦¾à¦à¦¬à§à¥¤ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦®à¦¾à¦¨à¦¬à¦¨à§à¦à¦¨ à¦¨à¦¿à¦®à§à"
