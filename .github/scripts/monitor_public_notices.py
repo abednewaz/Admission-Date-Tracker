@@ -13,8 +13,8 @@ from bs4 import BeautifulSoup
 DATA_FILE = Path("data.js")
 STATE_FILE = Path("notice-state.json")
 NOTICES_FILE = Path("notices.js")
-TIMEOUT = 25
-MAX_DISCOVERY_PAGES = 10
+TIMEOUT = 8
+MAX_DISCOVERY_PAGES = 8
 MAX_ITEMS_PER_SOURCE = 12
 HEADERS = {
     "User-Agent": "Admission-Tracker-Public-Notice-Monitor/2.0 (+https://www.admissiontracker.site/)",
@@ -159,20 +159,30 @@ def robots_sitemaps(base):
     ]
     return list(dict.fromkeys(clean_url(x) for x in urls if x))
 
-def sitemap_urls(url, limit=120):
+def sitemap_urls(url, limit=40):
     found = []
     try:
         r = fetch(url)
         soup = BeautifulSoup(r.text, "xml")
         locs = [normalize(x.get_text()) for x in soup.find_all("loc")]
-        for loc in locs[:limit]:
-            if loc.lower().endswith((".xml", ".xml.gz")) or "sitemap" in loc.lower():
-                found.extend(sitemap_urls(loc, max(20, limit // 3)))
-            else:
-                found.append(loc)
+        nested = [x for x in locs if x.lower().endswith((".xml", ".xml.gz")) or "sitemap" in x.lower()]
+        direct = [x for x in locs if x not in nested]
+        found.extend(direct[:limit])
+        # One nested sitemap level is enough for university notice sitemaps and
+        # prevents a malformed sitemap index from consuming the whole run.
+        for child in nested[:6]:
+            try:
+                cr = fetch(child)
+                csoup = BeautifulSoup(cr.text, "xml")
+                found.extend(
+                    normalize(x.get_text())
+                    for x in csoup.find_all("loc")[:max(10, limit // 3)]
+                )
+            except Exception:
+                continue
     except Exception:
         pass
-    return list(dict.fromkeys(clean_url(x) for x in found if x))
+    return list(dict.fromkeys(clean_url(x) for x in found if x))[:limit]
 
 def candidate_urls(seed):
     base = origin(seed)
