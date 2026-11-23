@@ -1,5 +1,14 @@
 window.ADMISSION_NOTICES = [
   {
+    "university": "Admission Tracker",
+    "title": "IMPORTANT: Supreme Court appeal hearing on the admission-test suspension is scheduled for today",
+    "date": "2026-11-23",
+    "url": "",
+    "source": "BSS / Dhaka Tribune",
+    "sourceUrl": "https://www.dhakatribune.com/bangladesh/education/425131/no-stay-on-hc-order-halting-public-university",
+    "summary": "The Appellate Division scheduled 23 November 2026 to hear the state appeal against the High Court order suspending public university admission tests until 31 December. The chamber court did not stay the High Court order. This notice records the hearing status only; Admission Tracker will update the admission dates after a verified court decision."
+  },
+  {
     "university": "BUET",
     "title": "BUET publishes 2026-27 admission circular — test scheduled for 1 February 2027",
     "date": "2026-11-22",
