@@ -407,8 +407,16 @@ def main():
         key = origin(seed).lower()
         seeds = [seed] + SOURCE_FALLBACKS.get(urlparse(seed).netloc.lower(), [])
         candidates = []
+        primary_origin = origin(seed).lower()
         for seed_url in seeds:
-            candidates.extend(candidate_urls(seed_url))
+            # Cross-domain fallbacks (for example a public archive used when a
+            # university blocks automated requests) are checked only at the
+            # exact URL supplied. Never crawl the fallback site's unrelated
+            # pages and misattribute them to the university.
+            if origin(seed_url).lower() != primary_origin:
+                candidates.append(clean_url(seed_url))
+            else:
+                candidates.extend(candidate_urls(seed_url))
         candidates = list(dict.fromkeys(candidates))[:MAX_DISCOVERY_PAGES * max(1, len(seeds))]
         source_items = []
         fetched = 0
