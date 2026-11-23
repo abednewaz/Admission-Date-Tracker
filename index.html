@@ -1265,34 +1265,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initManual);else initManual();
 })();
-<script>(function(){
-var form=document.getElementById('boardResultForm'),status=document.getElementById('brStatus'),out=document.getElementById('brOutput'),printBtn=document.getElementById('brPrint');
-function esc(v){return String(v==null?'':v).replace(/[&<>"]/g,function(c){return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]})}
-function rows(obj,path){
-  var html='';
-  if(Array.isArray(obj)){obj.forEach(function(v,i){html+='<div class="br-group"><b>Record '+(i+1)+'</b>'+rows(v,path)+'</div>'});return html}
-  if(obj&&typeof obj==='object'){Object.keys(obj).forEach(function(k){var v=obj[k];if(v&&typeof v==='object')html+='<div class="br-nested"><strong>'+esc(k)+'</strong>'+rows(v,path+'.'+k)+'</div>';else html+='<div class="br-row"><span>'+esc(k.replace(/_/g,' '))+'</span><b>'+esc(v)+'</b></div>'});return html}
-  return '<div class="br-row"><span>Result</span><b>'+esc(obj)+'</b></div>'
-}
-if(form)form.addEventListener('submit',async function(e){
- e.preventDefault(); out.hidden=true; printBtn.hidden=true; status.textContent='Checking result…';
- var p=new URLSearchParams({exam:document.getElementById('brExam').value,year:document.getElementById('brYear').value,board:document.getElementById('brBoard').value,roll:document.getElementById('brRoll').value.trim(),reg:document.getElementById('brReg').value.trim()});
- if(!p.get('board')){status.textContent='Select your education board.';return}
- try{
-  var res=await fetch('/api/board-result?'+p.toString(),{headers:{Accept:'application/json'}});
-  var json=await res.json();
-  if(!res.ok)throw new Error(json.error||'Result service unavailable.');
-  var data=json.data;
-  out.innerHTML='<div class="br-title">Board Result</div>'+rows(data,'result');
-  out.hidden=false; printBtn.hidden=false; status.textContent='Result loaded.';
- }catch(err){status.textContent=err.message||'Could not load the result right now.'}
-});
-if(printBtn)printBtn.addEventListener('click',function(){
- var w=window.open('','_blank','noopener,noreferrer');if(!w)return;
- w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;text-transform:capitalize;margin-bottom:6px}.br-group{margin:14px 0;padding:12px;border:1px solid #ddd;border-radius:8px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()
-});
-})();</script>
-</script>
+
 <script>(function(){
 var sel=document.getElementById('studentsToolSelect'),boardModal=document.getElementById('boardResultModal'),pcmModal=document.getElementById('pcmRankModal');
 function open(which){var m=which==='board-result'?boardModal:pcmModal;if(m){m.classList.add('open');document.body.classList.add('modal-open')}}
@@ -1313,5 +1286,63 @@ function round10(x){return Math.max(1,Math.round(x/10)*10)}function fmt(n){retur
 function initPCM(){var mark=document.getElementById('pcmMark'),bs=document.getElementById('pcmBoard');if(!mark||!bs)return;var o=document.createElement('option');o.value='';o.textContent='Not selected';bs.appendChild(o);BOARDS.forEach(function(b,i){var q=document.createElement('option');q.value=String(i);q.textContent=b.name;bs.appendChild(q)});var cut=cutoffs();document.getElementById('pcmCutLikely').textContent=cut.likely;document.getElementById('pcmCutWorst').textContent=cut.worst;function show(id,on){document.getElementById(id).hidden=!on}function update(){var raw=mark.value.trim();if(raw===''){show('pcmMsg',false);show('pcmResult',false);return}var m=Number(raw);if(!isFinite(m)||m<0||m>600){document.getElementById('pcmMsgText').textContent='Enter a total between 0 and 600.';show('pcmMsg',true);show('pcmResult',false);return}m=Math.round(m);if(m<FLOOR){document.getElementById('pcmMsgText').textContent='The chart only covers marks of '+FLOOR+' and above (about '+fmt(national(FLOOR,'likely'))+' students).';show('pcmMsg',true);show('pcmResult',false);return}show('pcmMsg',false);var e=estimate(m),v=verdict(e),total510=national(FLOOR,'likely');document.getElementById('pcmLikely').textContent='≈ #'+fmt(round10(e.likely));document.getElementById('pcmRange').textContent='Likely about '+fmt(round10(e.likely))+' · worst case about '+fmt(round10(e.worst));var b=document.getElementById('pcmBadge');b.className='pcm-badge '+v.cls;b.textContent=v.label;document.getElementById('pcmVerdict').textContent=v.text;document.getElementById('pcmPct').textContent=(Math.max(.01,e.likely/total510*100)).toFixed(1)+'%';var bi=bs.value;document.getElementById('pcmBoardRank').textContent=bi===''?'Pick a board':'≈ #'+fmt(round10(e.rows[Number(bi)].rank));var body=document.getElementById('pcmRows');body.innerHTML='';e.rows.forEach(function(r){var tr=document.createElement('tr'),a=document.createElement('td'),c=document.createElement('td');a.textContent=r.name;c.textContent=fmt(Math.round(r.above));tr.appendChild(a);tr.appendChild(c);body.appendChild(tr)});show('pcmResult',true)}mark.addEventListener('input',update);bs.addEventListener('change',update)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initPCM);else initPCM();
 
-})();</script></body>
+})();</script><script>
+(function(){
+  document.addEventListener('submit', async function(e){
+    var form=e.target;
+    if(!form || form.id!=='boardResultForm') return;
+    e.preventDefault();
+    e.stopPropagation();
+    var status=document.getElementById('brStatus');
+    var out=document.getElementById('brOutput');
+    var printBtn=document.getElementById('brPrint');
+    if(!status||!out) return;
+    out.hidden=true;
+    if(printBtn) printBtn.hidden=true;
+    status.textContent='Checking result…';
+    var board=document.getElementById('brBoard').value;
+    if(!board){status.textContent='Select your education board.';return;}
+    var p=new URLSearchParams({
+      exam:document.getElementById('brExam').value,
+      year:document.getElementById('brYear').value,
+      board:board,
+      roll:document.getElementById('brRoll').value.trim(),
+      reg:document.getElementById('brReg').value.trim()
+    });
+    try{
+      var res=await fetch('/api/board-result?'+p.toString(),{headers:{Accept:'application/json'},credentials:'same-origin'});
+      var json=await res.json();
+      if(!res.ok) throw new Error(json.error||'Result service unavailable.');
+      function esc(v){return String(v==null?'':v).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+      function rows(obj){
+        var html='';
+        if(Array.isArray(obj)){obj.forEach(function(v,i){html+='<div class="br-group"><b>Record '+(i+1)+'</b>'+rows(v)+'</div>'});return html}
+        if(obj&&typeof obj==='object'){Object.keys(obj).forEach(function(k){var v=obj[k];if(v&&typeof v==='object')html+='<div class="br-nested"><strong>'+esc(k.replace(/_/g,' '))+'</strong>'+rows(v)+'</div>';else html+='<div class="br-row"><span>'+esc(k.replace(/_/g,' '))+'</span><b>'+esc(v)+'</b></div>'});return html}
+        return '<div class="br-row"><span>Result</span><b>'+esc(obj)+'</b></div>';
+      }
+      out.innerHTML='<div class="br-title">Board Result</div>'+rows(json.data);
+      out.hidden=false;
+      if(printBtn) printBtn.hidden=false;
+      status.textContent='Result loaded.';
+    }catch(err){
+      status.textContent=err.message||'Could not load the result right now.';
+    }
+  },true);
+
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest ? e.target.closest('#brPrint') : null;
+    if(!btn) return;
+    e.preventDefault();
+    var out=document.getElementById('brOutput');
+    if(!out||out.hidden)return;
+    var w=window.open('','_blank');
+    if(!w)return;
+    w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested,.br-group{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');
+    w.document.close();
+    w.focus();
+    w.print();
+  },true);
+})();
+</script>
+</body>
 </html>
