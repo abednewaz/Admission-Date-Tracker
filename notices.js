@@ -123,41 +123,11 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology",
+    "title": "1st Year B.Sc. Engineering, B.URP, B.Arch Admission",
     "date": "2026-12-10",
     "url": "https://admission.kuet.ac.bd/",
     "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Application & fee payment open until 10 December 2026 admission@kuet.ac.bd (preferred) | +880 1714 087339 (9 AM – 5 PM office days only) Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply Check your status Result, merit position and allocated department Application ID Date of birth Show my status",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Download",
-    "date": "2026-12-10",
-    "url": "https://admission.kuet.ac.bd/notices/1.UG-Admission-2026-Circular.pdf",
-    "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Download Download 1 Admission Test Circular Published Nov 3, 2026 Download 1 Admission Test Circular Published Nov 3, 2026 Download 2 Admission Guidelines Published Nov 11, 2026 Download",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Apply now",
-    "date": "2026-12-10",
-    "url": "https://admission.kuet.ac.bd/signup",
-    "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Apply now Apply now Download circular 18 days left to apply NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply Check your status Result, merit position and allocated department Application ID Date of birth Show my status",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Apply / Details",
-    "date": "2026-12-10",
-    "url": "https://admission.kuet.ac.bd/foreign/signup",
-    "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Apply / Details English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details English Medium (O/A Level) Bangladeshi students with GCE O Level and A Level qualifications can apply for undergraduate admission. Applicants must upload their certificates as described in the circular. Eligibility: as stated in the admission circular Required: O/A Level transcripts and certificates Apply / Details",
+    "summary": "UG Admission 2026-27 | KUET Application & fee payment open until 10 December 2026 admission@kuet.ac.bd (preferred) | +880 1714 087339 (9 AM – 5 PM office days only) Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply Check your status Result, merit position and allocated department Application ID Date of birth Show my status LATEST Online application and fee payment are open until 10 December 2026 . View notice The admission process, start to finish Seven stages. Each opens after the previous one closes — watch the notices for exact dates. 1 NOW Apply online & pay fee · আবেদন ও ফি জমা Until 10 Dec 2026 2 UPCOMING Admission test · ভর্তি পরীক্ষা 08 Jan 2027 3 UPCOMING Result & merit list · ফলাফল 21 Jan 2027 4 UPCOMING Subject choice · বিষয় পছন্দ 5 UPCOMING Admission · ভর্তি 6 UPCOMING Department Allocation & Migrations · বিভাগ বরাদ্দ",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -198,26 +168,6 @@ window.ADMISSION_NOTICES = [
     "url": "https://students.bd/en/notice/bteb-hsc-supplementary-exam-2026-form-fill-up-fee-payment-date-extended",
     "source": "Jagannath University official source",
     "summary": "📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Ch",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "ভর্তি ভর্তি বিজ্ঞপ্তি",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/category/admission",
-    "source": "Jagannath University official source",
-    "summary": "ভর্তি ভর্তি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "নোটিশ সরকারি বিজ্ঞপ্তি",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/category/notice",
-    "source": "Jagannath University official source",
-    "summary": "নোটিশ সরকারি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি রুটিন পরীক্ষার রুটিন ফলাফল পরীক্ষার ফলাফল ভর্তি ভর্তি বিজ্ঞপ্তি ফর্ম ফিলাপ পরীক্ষার ফর্ম পূরণ কেন্দ্র তালিকা পরীক্ষার কেন্দ্রসমূহ নোটিশ সরকারি বিজ্ঞপ্তি",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -282,6 +232,16 @@ window.ADMISSION_NOTICES = [
     "generatedBy": "official-notice-monitor"
   },
   {
+    "university": "Jagannath University",
+    "title": "নতুন Admission সরকারি আইএইচটি ও ম্যাটস ভর্তি বিজ্ঞপ্তি ও মাইগ্রেশন ফরম ২০২৬-২০২৭ (পিডিএফ ডাউনলোড) 11/19",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
+    "source": "Jagannath University official source",
+    "summary": "নতুন Admission সরকারি আইএইচটি ও ম্যাটস ভর্তি বিজ্ঞপ্তি ও মাইগ্রেশন ফরম ২০২৬-২০২৭ (পিডিএফ ডাউনলোড) 11/19 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admi",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
     "university": "Khulna University",
     "title": "“১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)”",
     "date": "2026-11-21",
@@ -301,282 +261,32 @@ window.ADMISSION_NOTICES = [
     "notify": true
   },
   {
-    "university": "Islamic University of Technology",
-    "title": "Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country)",
-    "date": "2026-10-30",
-    "url": "https://admission.iutoic-dhaka.edu/notice/opencall-instruction-2",
-    "source": "Islamic University of Technology official source",
-    "summary": "Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Ha",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Notification of 3rd call for the Female Halls of Residence",
-    "date": "2026-10-30",
-    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Registration Notification 3rd call.pdf",
-    "source": "Islamic University of Technology official source",
-    "summary": "Notification of 3rd call for the Female Halls of Residence Notification of 3rd call for the Female Halls of Residence 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registr",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Notification of 2nd call for the Male Halls of Residence",
-    "date": "2026-10-26",
-    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Hall Registration Schedule with Allocation of seat-2nd Call A.Y 2025-26.pdf",
-    "source": "Islamic University of Technology official source",
-    "summary": "Notification of 2nd call for the Male Halls of Residence Notification of 2nd call for the Male Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registration ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Notification of 2nd call for the Female Halls of Residence",
-    "date": "2026-10-22",
-    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Registration Notification 2nd call.pdf",
-    "source": "Islamic University of Technology official source",
-    "summary": "Notification of 2nd call for the Female Halls of Residence Notification of 2nd call for the Female Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registr",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Notice for Orientation Programme of Newly Admitted First Year Students (Revised)",
-    "date": "2026-10-19",
-    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Orientation for 2025-2026.pdf",
-    "source": "Islamic University of Technology official source",
-    "summary": "Notice for Orientation Programme of Newly Admitted First Year Students (Revised) Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of t",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country)",
-    "date": "2026-10-19",
-    "url": "https://admission.iutoic-dhaka.edu/notice/admission/migration-eighth",
-    "source": "Islamic University of Technology official source",
-    "summary": "Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised)",
-    "date": "2026-10-16",
-    "url": "https://admission.iutoic-dhaka.edu/assets/admission/registration-revised.pdf",
-    "source": "Islamic University of Technology official source",
-    "summary": "Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) 16 October, 2026 Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "orientation",
-    "date": "2026-05-08",
-    "url": "https://admission.ruet.ac.bd/notices/orientation",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "orientation orientation orientation 2026-05-08 05:25 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "obtained-dept",
-    "date": "2026-05-08",
-    "url": "https://admission.ruet.ac.bd/notices/obtained-dept",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "obtained-dept obtained-dept obtained-dept 2026-05-08 04:34 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Zoology Masters Circular - Session 2026-27",
+    "date": "2026-05-06",
+    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/339",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Zoology Masters Circular - Session 2026-27 Zoology Masters Circular - Session 2026-27 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More 10 Oct 2026 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
   {
     "university": "GST Cluster — 20 Public Universities",
-    "title": "৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি",
+    "title": "Zoology Masters Circular - Session 2026-27",
     "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/345",
+    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/339",
     "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি 26 Oct 2026, 08:52 ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ২৬ অক্টোবর ২০২৬ অনুষ্ঠিত বিশ্ববিদ্যালয়ের সমাবর্তন কমিটির সভার সিদ্ধান্তক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান... Read More 26 Oct 2026 26 Oct 2026, 08:52 ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ২৬ অক্টোবর ২০২৬ অনুষ্ঠিত বিশ্ববিদ্যালয়ের সমাবর্তন কমিটির সভার সিদ্ধান্তক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/345",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি 26 Oct 2026, 08:52 ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ২৬ অক্টোবর ২০২৬ অনুষ্ঠিত বিশ্ববিদ্যালয়ের সমাবর্তন কমিটির সভার সিদ্ধান্তক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান... Read More 26 Oct 2026 26 Oct 2026, 08:52 ৩য় সমাবর্তন সংক্রান্ত সংশোধিত বিজ্ঞপ্তি ২৬ অক্টোবর ২০২৬ অনুষ্ঠিত বিশ্ববিদ্যালয়ের সমাবর্তন কমিটির সভার সিদ্ধান্তক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/334",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More 05 Jan 2026 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/334",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More 05 Jan 2026 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/336",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More 06 May 2026 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/336",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More 06 May 2026 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/352",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More 16 Nov 2026 New 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/352",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More 16 Nov 2026 New 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/344",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More 20 Oct 2026 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/344",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More 20 Oct 2026 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "সমাবর্তন বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/340",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "সমাবর্তন বিজ্ঞপ্তি সমাবর্তন বিজ্ঞপ্তি 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More 12 Oct 2026 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "সমাবর্তন বিজ্ঞপ্তি",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/340",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "সমাবর্তন বিজ্ঞপ্তি সমাবর্তন বিজ্ঞপ্তি 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More 12 Oct 2026 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "date": "2026-01-25",
-    "url": "https://admission.ruet.ac.bd/notices/result",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "result result result 2026-01-25 04:45 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "prospectus",
-    "date": "2026-01-03",
-    "url": "https://admission.ruet.ac.bd/notices/prospectus",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "prospectus prospectus prospectus 2025-12-06 07:06 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "eligible-ls",
-    "date": "2026-01-03",
-    "url": "https://admission.ruet.ac.bd/notices/eligible-ls",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "eligible-ls eligible-ls eligible-ls 2026-01-03 12:18 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "admission-circular-for-ruet-2025-2026-session.pdf",
-    "date": "2026-01-03",
-    "url": "https://admission.ruet.ac.bd/notices/admission-circular-for-ruet-2025-2026-session.pdf",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "admission-circular-for-ruet-2025-2026-session.pdf admission-circular-for-ruet-2025-2026-session.pdf admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "Parent Directory",
-    "date": "2026-01-03",
-    "url": "https://admission.ruet.ac.bd/",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "Parent Directory Parent Directory Parent Directory Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "2024-2025",
-    "date": "2026-01-03",
-    "url": "https://admission.ruet.ac.bd/notices/2024-2025",
-    "source": "Rajshahi University of Engineering & Technology official source",
-    "summary": "2024-2025 2024-2025 2024-2025 2025-11-26 06:17 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "summary": "Zoology Masters Circular - Session 2026-27 Zoology Masters Circular - Session 2026-27 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More 10 Oct 2026 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
   {
     "university": "University of Rajshahi",
-    "title": "University of Rajshahi Undergraduate Admission 2026-2027",
+    "title": "University of Rajshahi",
     "date": "",
     "url": "https://admission.ru.ac.bd/",
     "source": "University of Rajshahi official source",
-    "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "summary": "RU Admission | 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Menu Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ ২০২৫ ও ২০২৬ সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে। বিএফএ (প্রাক) ডিগ্রিপ্রাপ্ত শিক্ষার্থীদের আবেদনের সময় মার্কশিট আপলোড করতে হবে। কারিগরী শিক্ষা বোর্ডের অধীন কারিগরী শিক্ষা প্রতিষ্ঠানসমূহ থেকে ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ ৫.০০ স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তী",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -597,6 +307,136 @@ window.ADMISSION_NOTICES = [
     "url": "https://admission.ru.ac.bd/student/photo-selfie-instructions",
     "source": "University of Rajshahi official source",
     "summary": "Photo/Selfie Instructions Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Payment Instructions",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/payment-instructions",
+    "source": "University of Rajshahi official source",
+    "summary": "Payment Instructions Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/faq",
+    "source": "University of Rajshahi official source",
+    "summary": "FAQ Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Helpline",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/helpline",
+    "source": "University of Rajshahi official source",
+    "summary": "Helpline Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Complaint",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/complaint-box/create",
+    "source": "University of Rajshahi official source",
+    "summary": "Complaint Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Application Guideline",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/application-guideline",
+    "source": "University of Rajshahi official source",
+    "summary": "Application Guideline Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Admission Notices 2",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/notices",
+    "source": "University of Rajshahi official source",
+    "summary": "Admission Notices 2 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB-%E0%A7%A8%E0%A7%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%B8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%A4%E0%A6%95-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%A8-%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A3%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%9A%E0%A7%82%E0%A6%A1%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%AE%E0%A6%AF%E0%A6%BC-%E0%A6%AC%E0%A7%83%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BF-%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6a5b9b4d7d988",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "জরুরি বিজ্ঞপ্তি",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B0%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6a6f1a31c5832",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "জরুরি বিজ্ঞপ্তি জরুরি বিজ্ঞপ্তি জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Weekend MBA program Summer-2025 admission test result and admission notice.",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/weekend-mba-program-summer-2025-admission-test-result-and-admission-notice.-6a63506ecb85b",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Weekend MBA program Summer-2025 admission test result and admission notice. Weekend MBA program Summer-2025 admission test result and admission notice. Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Read More",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-%E0%A7%A8%E0%A7%AD-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2.-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF.-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%87-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ae1d69b1a16a",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Read More Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Read More",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/weekend-mba-admission-notice-6ad204a022165",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Read More Read More weekend MBA Admission Notice Published: 16-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Read More",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/master-of-development-studiesmds-weekend-program-admission-notice-for-winter-2026-6ad0836f5df04",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Read More Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "Read More",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB-%E0%A7%A8%E0%A7%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ac7a42c114fb",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "Read More Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   }
