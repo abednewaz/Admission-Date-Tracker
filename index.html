@@ -1167,6 +1167,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     'Open Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট খুলুন','Requirements have not been published yet.':'ভর্তির যোগ্যতা এখনো প্রকাশ করা হয়নি।','Eligible under the published criteria.':'প্রকাশিত শর্ত অনুযায়ী আপনি যোগ্য।','No matching recent notices found.':'সাম্প্রতিক কোনো প্রাসঙ্গিক নোটিশ পাওয়া যায়নি।'
   };
   var keys=Object.keys(dict).sort(function(a,b){return b.length-a.length});
+  function reEsc(s){return String(s).replace(/[.*+?^$\\{}()|[\\]\\\\]/g,'\\\\  var keys=Object.keys(dict).sort(function(a,b){return b.length-a.length});
 
   function translate(){
     var bn=document.documentElement.getAttribute('data-language')==='bn';
@@ -1217,6 +1218,63 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     setLanguage(saved==='en'||saved==='bn'?saved:'bn');
     var observer=new MutationObserver(function(){
       if(document.documentElement.getAttribute('data-language')==='bn')translate();
+    });
+    observer.observe(document.body,{childList:true,subtree:true});
+    var button=document.getElementById('languageToggle');
+    if(button)button.onclick=function(e){e.preventDefault();e.stopPropagation();toggleLanguage();};
+  }')}
+  var translationPattern=new RegExp(keys.map(reEsc).join('|'),'g');
+
+  function translate(){
+    var bn=document.documentElement.getAttribute('data-language')==='bn';
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+    var node;
+    while(node=walker.nextNode()){
+      if(!node.parentElement||/SCRIPT|STYLE|NOSCRIPT/.test(node.parentElement.tagName))continue;
+      if(typeof node.__adtEnglish!=='string')node.__adtEnglish=node.nodeValue;
+      var out=bn?node.__adtEnglish.replace(translationPattern,function(match){return dict[match]||match}):node.__adtEnglish;
+      if(node.nodeValue!==out)node.nodeValue=out;
+    }
+    document.querySelectorAll('[placeholder],[aria-label]').forEach(function(el){
+      ['placeholder','aria-label'].forEach(function(a){
+        var prop='adtOriginal'+a;
+        if(typeof el[prop]!=='string')el[prop]=el.getAttribute(a)||'';
+        var original=el[prop];
+        el.setAttribute(a,bn?(dict[original]||original):original);
+      });
+    });
+    document.documentElement.lang=bn?'bn':'en';
+    var btn=document.getElementById('languageToggle');
+    if(btn){
+      btn.textContent=bn?'English':'বাংলা';
+      btn.setAttribute('aria-label',bn?'Switch to English':'বাংলা ভাষায় পরিবর্তন করুন');
+      btn.setAttribute('title',bn?'Switch to English':'Switch to Bangla');
+    }
+  }
+
+  function setLanguage(lang){
+    lang=lang==='en'?'en':'bn';
+    document.documentElement.setAttribute('data-language',lang);
+    try{localStorage.setItem(key,lang)}catch(e){}
+    translate();
+    window.dispatchEvent(new CustomEvent('adt-language-change',{detail:{language:lang}}));
+  }
+
+  function toggleLanguage(){
+    var current=document.documentElement.getAttribute('data-language');
+    setLanguage(current==='bn'?'en':'bn');
+  }
+
+  function init(){
+    var saved='';
+    try{saved=localStorage.getItem(key)||''}catch(e){}
+    setLanguage(saved==='en'||saved==='bn'?saved:'bn');
+    var translationQueued=false;
+    var observer=new MutationObserver(function(){
+      if(document.documentElement.getAttribute('data-language')!=='bn'||translationQueued)return;
+      translationQueued=true;
+      var run=function(){translationQueued=false;translate()};
+      if(window.requestAnimationFrame)requestAnimationFrame(run);else setTimeout(run,0);
     });
     observer.observe(document.body,{childList:true,subtree:true});
     var button=document.getElementById('languageToggle');
