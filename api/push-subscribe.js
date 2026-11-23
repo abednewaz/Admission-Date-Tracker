@@ -1,4 +1,28 @@
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT = 10;
+const rateStore = globalThis.__adtPushRateStore || (globalThis.__adtPushRateStore = new Map());
+
+function requestIp(req) {
+  const forwarded = req.headers['x-forwarded-for'];
+  return String(forwarded || req.headers['x-real-ip'] || 'unknown').split(',')[0].trim().slice(0, 80);
+}
+
+function allowRequest(req) {
+  const key = requestIp(req);
+  const now = Date.now();
+  const recent = (rateStore.get(key) || []).filter((ts) => now - ts < RATE_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) return false;
+  recent.push(now);
+  rateStore.set(key, recent);
+  if (rateStore.size > 2000) {
+    for (const [ip, timestamps] of rateStore) {
+      if (!timestamps.some((ts) => now - ts < RATE_WINDOW_MS)) rateStore.delete(ip);
+    }
+  }
+  return true;
+}
+
 const SUPABASE_KEY =
   process.env.SUPABASE_SECRET_KEY ||
   process.env.SUPABASE_SERVICE_ROLE_KEY ||
@@ -11,6 +35,7 @@ function json(res, status, body) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed' });
+  if (!allowRequest(req)) return json(res, 429, { error: 'Too many subscription requests. Please try again later.' });
   if (!SUPABASE_URL || !SUPABASE_KEY) return json(res, 500, { error: 'Supabase environment variables are missing' });
 
   try {
