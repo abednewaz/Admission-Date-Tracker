@@ -1167,7 +1167,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     'Open Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট খুলুন','Requirements have not been published yet.':'ভর্তির যোগ্যতা এখনো প্রকাশ করা হয়নি।','Eligible under the published criteria.':'প্রকাশিত শর্ত অনুযায়ী আপনি যোগ্য।','No matching recent notices found.':'সাম্প্রতিক কোনো প্রাসঙ্গিক নোটিশ পাওয়া যায়নি।'
   };
   var keys=Object.keys(dict).sort(function(a,b){return b.length-a.length});
-  function reEsc(s){return String(s).replace(/[.*+?^$()|[\]\\{}]/g,'\\$&')}
+  function reEsc(s){return String(s).replace(/[\\^$.*+?()[\]{}|]/g,'\\$&')}
   var translationPattern=new RegExp(keys.map(reEsc).join('|'),'g');
 
   function translate(){
