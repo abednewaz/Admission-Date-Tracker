@@ -79,7 +79,7 @@ jobs:
               if notice_identity(n) not in old_keys
               and n.get("title")
               and n.get("notify", True)
-              and n.get("generatedBy") != "admission-date-check"
+              and n.get("generatedBy") in ("official-notice-monitor", "court-status-monitor")
           ]
 
           if not fresh:
