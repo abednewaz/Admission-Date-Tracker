@@ -1,6 +1,10 @@
 name: Admission Date Auto Checker
 
 on:
+  push:
+    paths:
+      - ".github/scripts/check_admission_dates.py"
+      - ".github/workflows/admission-date-check.yml"
   workflow_dispatch:
   schedule:
     # Bangladesh local time: every hour at minute 17.
@@ -13,6 +17,7 @@ permissions:
 
 jobs:
   check-admission-dates:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
