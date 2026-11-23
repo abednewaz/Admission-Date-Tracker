@@ -2,6 +2,7 @@ import io
 import json
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse
@@ -13,7 +14,7 @@ DATA_FILE = Path("data.js")
 STATE_FILE = Path("notice-state.json")
 NOTICES_FILE = Path("notices.js")
 TIMEOUT = 25
-MAX_DISCOVERY_PAGES = 18
+MAX_DISCOVERY_PAGES = 10
 MAX_ITEMS_PER_SOURCE = 12
 HEADERS = {
     "User-Agent": "Admission-Tracker-Public-Notice-Monitor/2.0 (+https://www.admissiontracker.site/)",
@@ -189,6 +190,7 @@ def extract_html_items(url, response, university):
     items = []
     seen = set()
 
+    pdf_budget = 4
     for a in soup.find_all("a", href=True):
         href = clean_url(urljoin(response.url, a.get("href", "")))
         if urlparse(href).scheme not in ("http", "https"):
@@ -218,8 +220,9 @@ def extract_html_items(url, response, university):
             continue
         seen.add(key)
 
-        if ".pdf" in href.lower():
+        if ".pdf" in href.lower() and pdf_budget > 0:
             try:
+                pdf_budget -= 1
                 pr = fetch(href)
                 item = extract_pdf_item(href, pr, university)
                 if item:
@@ -307,7 +310,7 @@ def main():
     health = {}
     failures = []
 
-    for source in sources:
+    def check_source(source):
         name, seed = source["university"], source["seed"]
         key = origin(seed).lower()
         candidates = candidate_urls(seed)
@@ -315,7 +318,6 @@ def main():
         fetched = 0
         notice_pages = 0
         errors = 0
-
         for url in candidates:
             try:
                 r = fetch(url)
@@ -328,11 +330,9 @@ def main():
                 items, has_notice_text = extract_html_items(url, r, name)
                 notice_pages += int(has_notice_text)
                 source_items.extend(items)
-                time.sleep(0.08)
             except Exception:
                 errors += 1
 
-        # Deduplicate and prefer dated, specific notices.
         unique = {}
         for item in source_items:
             k = notice_key(item)
@@ -341,9 +341,8 @@ def main():
                 unique[k] = item
         source_items = list(unique.values())
         source_items.sort(key=lambda x: (x.get("date",""), x.get("title","")), reverse=True)
-
         healthy = fetched > 0 and (notice_pages > 0 or bool(source_items))
-        health[key] = {
+        return key, {
             "university": name,
             "seed": seed,
             "checkedAt": datetime.utcnow().isoformat(timespec="seconds") + "Z",
@@ -353,10 +352,18 @@ def main():
             "noticesExtracted": len(source_items),
             "requestErrors": errors,
             "healthy": healthy,
-        }
-        if not healthy:
-            failures.append(f"{name} ({seed})")
-        all_items.extend(source_items[:MAX_ITEMS_PER_SOURCE])
+        }, source_items
+
+    # Public universities are monitored concurrently so one slow/blocked
+    # institution cannot starve the rest of the monitoring cycle.
+    with ThreadPoolExecutor(max_workers=min(6, max(1, len(sources)))) as pool:
+        futures = [pool.submit(check_source, source) for source in sources]
+        for future in as_completed(futures):
+            key, report, source_items = future.result()
+            health[key] = report
+            if not report["healthy"]:
+                failures.append(f'{report["university"]} ({report["seed"]})')
+            all_items.extend(source_items[:MAX_ITEMS_PER_SOURCE])
 
     if failures:
         print("PUBLIC SOURCE HEALTH FAILURE:")
