@@ -20,6 +20,20 @@ HEADERS = {
     "User-Agent": "Admission-Tracker-Public-Notice-Monitor/2.0 (+https://www.admissiontracker.site/)",
     "Accept-Language": "en-US,en;q=0.9,bn;q=0.8",
 }
+SOURCE_FALLBACKS = {
+    "admission.jnu.ac.bd": [
+        "https://admission.jnu.ac.bd/preliminary/advertisement/",
+        "https://www.admission.jnu.ac.bd/preliminary/advertisement/",
+    ],
+    "gstadmission.ac.bd": [
+        "https://nstu.edu.bd/services/viewNotice",
+        "https://www.nstu.edu.bd/services/viewNotice",
+        "https://admission.pstu.ac.bd/Notices",
+        "https://www.pstu.ac.bd/",
+        "https://jkkniu.edu.bd/notice-board/admission",
+    ],
+}
+
 NOTICE_WORDS = re.compile(
     r"notice|notices|circular|admission|undergraduate|prospectus|guideline|"
     r"advertisement|announcement|important|ভর্তি|বিজ্ঞপ্তি|নোটিশ|নির্দেশিকা|"
@@ -262,6 +276,7 @@ def build_sources(rows):
             entry["university"] = name
     # Prefer a clean institution label when unit names are repeated.
     aliases = {
+        "jnu - unit a":"Jagannath University",
         "du - iba unit":"University of Dhaka","du - science unit (a unit)":"University of Dhaka",
         "du - arts, law & social science (b unit)":"University of Dhaka","du - fine arts unit (f unit)":"University of Dhaka",
         "du - business studies unit (c unit)":"University of Dhaka","ru - b unit":"University of Rajshahi",
@@ -313,7 +328,11 @@ def main():
     def check_source(source):
         name, seed = source["university"], source["seed"]
         key = origin(seed).lower()
-        candidates = candidate_urls(seed)
+        seeds = [seed] + SOURCE_FALLBACKS.get(urlparse(seed).netloc.lower(), [])
+        candidates = []
+        for seed_url in seeds:
+            candidates.extend(candidate_urls(seed_url))
+        candidates = list(dict.fromkeys(candidates))[:MAX_DISCOVERY_PAGES * max(1, len(seeds))]
         source_items = []
         fetched = 0
         notice_pages = 0
