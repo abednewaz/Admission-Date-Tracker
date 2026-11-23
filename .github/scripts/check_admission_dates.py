@@ -696,8 +696,28 @@ def extract_notice_summary(url):
         print(f"Notice summary failed for {url}: {exc}")
     return ""
 
+def load_existing_notices():
+    path = Path("notices.js")
+    if not path.exists():
+        return []
+    try:
+        text = path.read_text(encoding="utf-8")
+        match = re.search(r"window\.ADMISSION_NOTICES\s*=\s*(\[.*?\])\s*;?\s*$", text, re.S)
+        return json.loads(match.group(1)) if match else []
+    except Exception as exc:
+        print(f"Existing notice parse failed: {exc}")
+        return []
+
+def notice_key(item):
+    return (
+        normalize(str(item.get("university", ""))).lower(),
+        normalize(str(item.get("title", ""))).lower(),
+        str(item.get("date", "")),
+    )
+
 def update_notice_feed():
     try:
+        existing = load_existing_notices()
         r = request_source(NOTICE_FEED_URL)
         soup = BeautifulSoup(r.text, "html.parser")
         items = []
@@ -767,16 +787,29 @@ def update_notice_feed():
             print("Notice feed returned no matching items; keeping the previous feed unchanged.")
             return 0
 
-        # Newest first where a date was captured; preserve source order otherwise.
-        items.sort(key=lambda x: x.get("date", ""), reverse=True)
+        # Preserve manually curated notices (especially court decisions and
+        # date-change notices) alongside the auto-detected feed. Auto notices
+        # replace only an existing auto notice with the same stable identity.
+        manual = [n for n in existing if not n.get("url")]
+        auto = [n for n in existing if n.get("url")]
+        auto_by_key = {notice_key(n): n for n in auto}
+        for item in items:
+            auto_by_key[notice_key(item)] = item
+
+        merged = manual + list(auto_by_key.values())
+        merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+
         Path("notices.js").write_text(
             "window.ADMISSION_NOTICES = "
-            + json.dumps(items[:12], ensure_ascii=False, indent=2)
+            + json.dumps(merged[:20], ensure_ascii=False, indent=2)
             + ";\n",
             encoding="utf-8",
         )
-        print(f"Notice feed: {len(items[:12])} matching notices saved.")
-        return len(items[:12])
+        print(
+            f"Notice feed: {len(items)} auto notices + {len(manual)} manual notices; "
+            f"{len(merged[:20])} total notices saved."
+        )
+        return len(merged[:20])
     except Exception as exc:
         print(f"Notice feed failed: {exc}")
         return 0
@@ -802,6 +835,10 @@ def main():
         for row in rows:
             url = row.get("officialUrl")
             if not url:
+                continue
+            if row.get("autoDateCheck") is False:
+                # Manual/court-controlled records must not be overwritten by
+                # the source scraper. They are updated only after a verified review.
                 continue
             try:
                 if url not in source_cache:
