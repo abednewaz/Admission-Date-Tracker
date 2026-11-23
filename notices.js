@@ -1,5 +1,15 @@
 window.ADMISSION_NOTICES = [
   {
+    "university": "Admission Tracker",
+    "title": "IMPORTANT: Supreme Court stays High Court order — admission tests can proceed",
+    "date": "2026-11-23",
+    "url": "",
+    "source": "BSS / The Daily Star",
+    "sourceUrl": "https://www.thedailystar.net/news/bangladesh/education/news/sc-clears-way-public-universities-medical-colleges-hold-admission-tests-4331006",
+    "notify": true,
+    "summary": "The Appellate Division of the Supreme Court stayed the High Court order that had suspended public university and medical admission tests until 31 December. This clears the way for public universities and medical colleges to hold admission tests according to their announced schedules. Admission Tracker has restored the affected published exam dates."
+  },
+  {
     "university": "AIUB",
     "title": "AIUB admission test date updated to 29 November 2026",
     "date": "2026-11-23",
@@ -9,17 +19,6 @@ window.ADMISSION_NOTICES = [
     "notify": true,
     "generatedBy": "admission-date-check",
     "summary": "The official admission source changed the scheduled admission-test date from 28 November 2026 to 29 November 2026. Admission Tracker updated the exam record automatically."
-  },
-  {
-    "university": "Admission Tracker",
-    "title": "IMPORTANT: Supreme Court appeal hearing on the admission-test suspension is scheduled for 23 November",
-    "date": "2026-11-23",
-    "url": "",
-    "source": "BSS / Dhaka Tribune",
-    "sourceUrl": "https://www.dhakatribune.com/bangladesh/education/425131/no-stay-on-hc-order-halting-public-university",
-    "notify": true,
-    "summary": "The Appellate Division scheduled 23 November 2026 to hear the state appeal against the High Court order suspending public university admission tests until 31 December. The chamber court did not stay the High Court order. No later Supreme Court outcome has been verified in the monitored sources yet; the suspension remains the working legal status while the automated court monitor continues checking for the ruling. Admission Tracker will not restore suspended exam dates until a verified court decision changes the legal position.",
-    "lastChecked": "2026-11-23T10:19:00+06:00"
   },
   {
     "university": "BUET",
@@ -63,13 +62,13 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Admission Tracker",
-    "title": "IMPORTANT: High Court suspends public university & medical admission tests until 31 December",
-    "date": "2026-11-18",
+    "title": "Resolved: Supreme Court stays High Court admission-test suspension",
+    "date": "2026-11-23",
     "url": "",
-    "source": "The Daily Star",
-    "sourceUrl": "https://www.thedailystar.net/news/education/news/university-medical-admission-tests-put-hold-until-dec-31-high-court-4327066",
+    "source": "BSS / The Daily Star",
+    "sourceUrl": "https://www.thedailystar.net/news/bangladesh/education/news/sc-clears-way-public-universities-medical-colleges-hold-admission-tests-4331006",
     "notify": true,
-    "summary": "The High Court ordered that public universities and medical colleges cannot hold honours and medical admission tests until 31 December 2026 and directed authorities to continue accepting eligible admission applications. The state and Dhaka University appealed. The Appellate Division scheduled a full-bench hearing for 23 November."
+    "summary": "The Appellate Division on 23 November 2026 stayed the High Court order that had barred public universities and medical colleges from holding admission tests until 31 December. The stay clears the way for admission tests to proceed according to announced schedules. Admission Tracker has restored the affected published exam dates where applicable."
   },
   {
     "university": "Khulna University",
