@@ -783,10 +783,18 @@ def load_existing_notices():
         print(f"Existing notice parse failed: {exc}")
         return []
 
+def normalize_notice_url(url):
+    raw = str(url or "").strip().rstrip("/")
+    if not raw:
+        return ""
+    parsed = urlparse(raw)
+    path = re.sub(r"^/(?:en|bn)(?=/)", "", parsed.path)
+    return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path, "", parsed.query, ""))
+
 def notice_key(item):
-    url = str(item.get("url", "")).strip()
+    url = normalize_notice_url(item.get("url", ""))
     if url:
-        return ("url", url.rstrip("/").lower())
+        return ("url", url.lower())
     return (
         "manual",
         normalize(str(item.get("university", ""))).lower(),
@@ -902,7 +910,7 @@ def update_notice_feed():
     try:
         existing = load_existing_notices()
         existing_by_url = {
-            str(n.get("url", "")).rstrip("/").lower(): n
+            normalize_notice_url(n.get("url", "")).lower(): n
             for n in existing if n.get("url")
         }
         state = load_notice_state()
@@ -987,16 +995,20 @@ def update_notice_feed():
                 previous = existing_by_url.get(href.lower())
                 if not date_value and previous:
                     date_value = str(previous.get("date", ""))
+                # Do not invent a publication date for admission landing
+                # pages. A missing date sorts the fallback source lower than
+                # verified dated notices and avoids fake "today" notices.
                 if not date_value:
-                    date_value = datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat()
+                    date_value = ""
 
-                previous = existing_by_url.get(href.lower())
-                is_new_source_notice = href.lower() not in known_urls
+                canonical_href = normalize_notice_url(href)
+                previous = existing_by_url.get(canonical_href.lower())
+                is_new_source_notice = canonical_href.lower() not in known_urls
                 items.append({
                     "university": university,
                     "title": title,
                     "date": date_value,
-                    "url": href,
+                    "url": canonical_href,
                     "source": "students.bd",
                     "summary": meta.get("summary", ""),
                     "notify": bool(previous.get("notify", True)) if previous else is_new_source_notice,
@@ -1019,8 +1031,9 @@ def update_notice_feed():
         for item in items:
             auto_by_key[notice_key(item)] = item
 
-        merged = manual + list(auto_by_key.values())
-        merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+        auto_items = list(auto_by_key.values())
+        auto_items.sort(key=lambda x: x.get("date", ""), reverse=True)
+        merged = manual + auto_items
 
         save_notice_state(
             list(known_urls)
