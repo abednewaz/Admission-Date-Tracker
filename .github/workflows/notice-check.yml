@@ -64,6 +64,7 @@ jobs:
               n for n in new
               if (n.get("university") or "", n.get("title") or "", n.get("date") or "") not in old_keys
               and n.get("title")
+              and n.get("notify", True)
           ]
 
           if not fresh:
