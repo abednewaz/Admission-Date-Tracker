@@ -25,63 +25,63 @@ jobs:
 
       - name: Validate data, notices, system status and executable JavaScript
         run: |
-          python - <<'PY'
-          import json, re
-          from pathlib import Path
-          from datetime import date
+          node --input-type=commonjs <<'NODE'
+          const fs = require('fs');
+          const vm = require('vm');
 
-          def parse_assignment(path, name):
-              text = Path(path).read_text(encoding="utf-8")
-              marker = "window." + name + " ="
-              start = text.find(marker)
-              if start < 0:
-                  raise SystemExit(f"Could not locate {name} in {path}")
-              start += len(marker)
-              end = text.rfind(";")
-              if end <= start:
-                  raise SystemExit(f"Could not parse {name} in {path}")
-              return json.loads(text[start:end].strip())
+          global.window = {};
+          for (const file of ['data.js', 'medical-data.js', 'notices.js', 'system-status.js']) {
+            const source = fs.readFileSync(file, 'utf8');
+            try { vm.runInThisContext(source, {filename:file}); }
+            catch (error) { throw new Error(file + ': ' + error.message); }
+          }
 
-          data = parse_assignment("data.js", "ADMISSION_EXAMS")
-          notices = parse_assignment("notices.js", "ADMISSION_NOTICES")
-          status = parse_assignment("system-status.js", "ADMISSION_SYSTEM_STATUS")
+          const data = window.ADMISSION_EXAMS || [];
+          const notices = window.ADMISSION_NOTICES || [];
+          const status = window.ADMISSION_SYSTEM_STATUS || {};
+          if (!data.length) throw new Error('No admission records found');
 
-          if len(data) < 1:
-              raise SystemExit("No admission records found")
-          ids = [x.get("id") for x in data]
-          if len(ids) != len(set(ids)):
-              raise SystemExit("Duplicate admission record IDs detected")
-          for row in data:
-              if not row.get("universityName") or not row.get("unit") or not row.get("admissionType"):
-                  raise SystemExit(f"Malformed admission record: {row.get('id')}")
-              d = row.get("examDate")
-              if d and d not in ("Not published yet", "Better check Yourself"):
-                  date.fromisoformat(d)
+          const ids = data.map(x => x.id);
+          if (new Set(ids).size !== ids.length) throw new Error('Duplicate admission record IDs detected');
 
-          if not any(n.get("university") == "BUET" and "circular" in str(n.get("title","")).lower() for n in notices):
-              raise SystemExit("BUET circular notice is missing")
-          court = status.get("courtAdmissionSuspension", {})
-          if not court.get("active") or court.get("through") != "2026-12-31":
-              raise SystemExit("Court suspension status is missing or inconsistent")
+          for (const row of data) {
+            if (!row.universityName || !row.unit || !row.admissionType) {
+              throw new Error('Malformed admission record: ' + row.id);
+            }
+            if (row.examDate && !['Not published yet', 'Better check Yourself'].includes(row.examDate)) {
+              if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(row.examDate)) {
+                throw new Error('Invalid exam date: ' + row.id);
+              }
+            }
+          }
 
-          aust = next((x for x in data if x.get("id") == "e36"), None)
-          if not aust or aust.get("examDate") is not None:
-              raise SystemExit("AUST must not have an invented exam date")
+          if (!notices.some(n => n.university === 'BUET' && String(n.title || '').toLowerCase().includes('circular'))) {
+            throw new Error('BUET circular notice is missing');
+          }
 
-          buet = next((x for x in data if x.get("id") == "e22"), None)
-          if not buet or buet.get("examDate") != "2027-02-01":
-              raise SystemExit("BUET exam date is not the verified 1 February 2027 date")
+          const court = status.courtAdmissionSuspension || {};
+          if (!court.active || court.through !== '2026-12-31') {
+            throw new Error('Court suspension status is missing or inconsistent');
+          }
 
-          sw = Path("sw.js").read_text(encoding="utf-8")
-          if "notices.js" not in sw or "system-status.js" not in sw:
-              raise SystemExit("Service worker is still caching live data")
+          const aust = data.find(x => x.id === 'e36');
+          if (!aust || aust.examDate !== null) throw new Error('AUST has an invented exam date');
 
-          for path in ["api/push-test.js", "api/push-daily-reminder.js"]:
-              if Path(path).exists():
-                  raise SystemExit(f"Legacy endpoint still exists: {path}")
+          const buet = data.find(x => x.id === 'e22');
+          if (!buet || buet.examDate !== '2027-02-01') throw new Error('BUET date is not 1 February 2027');
 
-          print(f"Integrity OK: {len(data)} admission records, {len(notices)} notices")
-          PY
+          const sw = fs.readFileSync('sw.js', 'utf8');
+          if (!sw.includes('notices.js') || !sw.includes('system-status.js')) {
+            throw new Error('Service worker is still caching live data');
+          }
+
+          for (const file of ['api/push-test.js', 'api/push-daily-reminder.js']) {
+            if (fs.existsSync(file)) throw new Error('Legacy endpoint still exists: ' + file);
+          }
+
+          console.log('Integrity OK: ' + data.length + ' admission records, ' + notices.length + ' notices');
+          NODE
+
 
       - name: Validate JavaScript syntax
         run: |
