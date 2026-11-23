@@ -780,6 +780,26 @@ def notice_key(item):
         str(item.get("date", "")),
     )
 
+NOTICE_STATE_FILE = Path("notice-state.json")
+
+def load_notice_state():
+    if not NOTICE_STATE_FILE.exists():
+        return {"knownUrls": []}
+    try:
+        data = json.loads(NOTICE_STATE_FILE.read_text(encoding="utf-8"))
+        urls = data.get("knownUrls", [])
+        return {"knownUrls": list(dict.fromkeys(str(u).rstrip("/").lower() for u in urls if u))}
+    except Exception as exc:
+        print(f"Notice state parse failed: {exc}")
+        return {"knownUrls": []}
+
+def save_notice_state(urls):
+    NOTICE_STATE_FILE.write_text(
+        json.dumps({"knownUrls": sorted(set(str(u).rstrip("/").lower() for u in urls if u))}, ensure_ascii=False, indent=2)
+        + "\n",
+        encoding="utf-8",
+    )
+
 NOTICE_SOURCE_URLS = [
     "https://students.bd/en/notice",
     "https://students.bd/en/category/admission",
@@ -871,6 +891,8 @@ def update_notice_feed():
             str(n.get("url", "")).rstrip("/").lower(): n
             for n in existing if n.get("url")
         }
+        state = load_notice_state()
+        known_urls = set(state.get("knownUrls", []))
         items = []
         seen = set()
 
@@ -953,6 +975,8 @@ def update_notice_feed():
                 if not date_value:
                     date_value = datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat()
 
+                previous = existing_by_url.get(href.lower())
+                is_new_source_notice = href.lower() not in known_urls
                 items.append({
                     "university": university,
                     "title": title,
@@ -960,6 +984,7 @@ def update_notice_feed():
                     "url": href,
                     "source": "students.bd",
                     "summary": meta.get("summary", ""),
+                    "notify": bool(previous.get("notify", True)) if previous else is_new_source_notice,
                 })
 
                 if len(items) >= 40:
@@ -981,6 +1006,11 @@ def update_notice_feed():
 
         merged = manual + list(auto_by_key.values())
         merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+
+        save_notice_state(
+            list(known_urls)
+            + [item.get("url", "") for item in items]
+        )
 
         Path("notices.js").write_text(
             "window.ADMISSION_NOTICES = "
