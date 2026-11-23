@@ -927,22 +927,51 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
     var VAPID_PUBLIC_KEY='BC9OwY4GKq1Rygoxn2e7fM7nc15VxH20RzQCwb4hr0BMPvAHPDqwLn-dTsVnt3owy4YkNSxaiGGgjHWKz_tIhgw';
     function urlBase64ToUint8Array(base64String){var padding='='.repeat((4-base64String.length%4)%4),base64=(base64String+padding).replace(/-/g,'+').replace(/_/g,'/'),raw=atob(base64),output=new Uint8Array(raw.length);for(var i=0;i<raw.length;i++)output[i]=raw.charCodeAt(i);return output}
-    async function showExamNotification(title,body,tag,url){try{if(!('Notification' in window)||Notification.permission!=='granted')return;var reg=await navigator.serviceWorker.ready;await reg.showNotification(title,{body:body,icon:'./icon.svg',badge:'./icon.svg',tag:tag,data:{url:url||'./'}})}catch(e){}}
+    async function showExamNotification(title,body,tag,url){
+      try{
+        if(!('Notification' in window)||Notification.permission!=='granted')return false;
+        var reg=await navigator.serviceWorker.ready;
+        await reg.showNotification(title,{body:body,icon:'./icon.svg',badge:'./icon.svg',tag:tag,data:{url:url||'./'}});
+        return true;
+      }catch(e){console.error('Notification display failed',e);return false}
+    }
     async function sendFirstVisitNotifications(){
       try{
-        var key='adt_first_visit_notifications_v1';
-        if(localStorage.getItem(key)==='1')return;
-        await showExamNotification('Welcome to Admission Tracker','Welcome. You will now receive admission notices and exam alerts on this device.','first-visit-welcome');
-        var notices=Array.isArray(window.ADMISSION_NOTICES)?window.ADMISSION_NOTICES:[];
-        var latest=notices.filter(function(n){return n&&n.title}).slice().sort(function(a,b){
-          return String(b.date||'').localeCompare(String(a.date||''));
-        })[0];
-        if(latest){
-          var noticeBody=(latest.university?latest.university+': ':'')+latest.title;
-          await showExamNotification('Latest Admission Notice',noticeBody,'first-visit-latest-notice',latest.url||'./');
+        if(!('Notification' in window)||Notification.permission!=='granted')return;
+        var welcomeKey='adt_first_visit_welcome_v1';
+        var latestKey='adt_latest_notice_replay_v2';
+
+        if(localStorage.getItem(welcomeKey)!=='1'){
+          var welcomed=await showExamNotification(
+            'Welcome to Admission Tracker',
+            'Welcome. You will now receive admission notices and exam alerts on this device.',
+            'first-visit-welcome'
+          );
+          if(welcomed)try{localStorage.setItem(welcomeKey,'1')}catch(e){}
         }
-        try{localStorage.setItem(key,'1')}catch(e){}
-      }catch(e){console.error('First-visit notification failed',e)}
+
+        if(localStorage.getItem(latestKey)==='1')return;
+
+        var notices=Array.isArray(window.ADMISSION_NOTICES)?window.ADMISSION_NOTICES:[];
+        var latestNotices=notices
+          .filter(function(n){return n&&n.title})
+          .slice()
+          .sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''))})
+          .slice(0,5);
+
+        for(var i=0;i<latestNotices.length;i++){
+          var n=latestNotices[i];
+          var body=(n.university?n.university+': ':'')+n.title;
+          await showExamNotification(
+            'Latest Admission Notice',
+            body,
+            'latest-notice-'+String(n.date||'')+'-'+i,
+            n.url||'./'
+          );
+        }
+
+        try{localStorage.setItem(latestKey,'1')}catch(e){}
+      }catch(e){console.error('Latest notice notification failed',e)}
     }
     async function syncPushPreferences(){try{if(!('Notification' in window)||Notification.permission!=='granted'||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(!sub)return false;var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});return res.ok}catch(e){console.error('Push preference sync failed',e);return false}}
     async function enablePushNotifications(){if(!('Notification' in window)||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var permission=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(permission!=='granted')return false;hideNotif();try{var reg=await navigator.serviceWorker.ready;var sub=await reg.pushManager.getSubscription();if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)});var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error('Subscription save failed');hideNotif();await sendFirstVisitNotifications();return true}catch(e){console.error('Push subscription failed',e);return false}}
@@ -1145,7 +1174,12 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     });
     document.documentElement.lang=bn?'bn':'en';
     var btn=document.getElementById('languageToggle');
-    if(btn){var label=bn?'English':'বাংলা';if(btn.textContent!==label)btn.textContent=label;btn.setAttribute('aria-label',bn?'Switch to English':'বাংলা ভাষায় পরিবর্তন করুন');}
+    if(btn){
+      var label=bn?'English':'বাংলা';
+      if(btn.textContent!==label)btn.textContent=label;
+      btn.setAttribute('aria-label',bn?'Switch to English':'বাংলা ভাষায় পরিবর্তন করুন');
+      btn.setAttribute('title',bn?'Switch to English':'Switch to Bangla');
+    }
   }
   function setLanguage(lang){
     document.documentElement.setAttribute('data-language',lang);
