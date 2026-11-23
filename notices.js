@@ -173,26 +173,6 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Jagannath University",
-    "title": "নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice/nu-masters-professional-quota-merit-list-admission-2026-27",
-    "source": "Jagannath University official source",
-    "summary": "নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 ন",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice/hsc-board-challenge-result-2026",
-    "source": "Jagannath University official source",
-    "summary": "নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admission জাতীয় ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
     "title": "নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22",
     "date": "2026-11-22",
     "url": "https://students.bd/bn/notice/bteb-hsc-supplementary-exam-2026-form-fill-up-fee-payment-date-extended",
@@ -242,12 +222,172 @@ window.ADMISSION_NOTICES = [
     "generatedBy": "official-notice-monitor"
   },
   {
+    "university": "Jagannath University",
+    "title": "নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/ju-1st-year-undergraduate-admission-application-process-2026-2027",
+    "source": "Jagannath University official source",
+    "summary": "নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Jagannath University",
+    "title": "নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার তারিখ ২০২৬-২৭ (নোটিশ) 11/19",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/nu-mphil-phd-admission-test-date-2026-27",
+    "source": "Jagannath University official source",
+    "summary": "নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার তারিখ ২০২৬-২৭ (নোটিশ) 11/19 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admission জাতী",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "BUET",
+    "title": "নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/nu-mphil-phd-admission-test-seat-plan-2026-2027",
+    "source": "BUET official source",
+    "summary": "নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admis",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "BUET",
+    "title": "নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/agricultural-cluster-admission-circular-2026-2027",
+    "source": "BUET official source",
+    "summary": "নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admission জাতীয় বিশ্ববিদ্য",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "BUET",
+    "title": "New Notice Dhaka Board HSC Supplementary Exam Seat Plan 2026 & Center List (PDF) 11/16",
+    "date": "2026-11-22",
+    "url": "https://students.bd/notice/dhaka-board-hsc-supplementary-exam-seat-plan-2026",
+    "source": "BUET official source",
+    "summary": "New Notice Dhaka Board HSC Supplementary Exam Seat Plan 2026 & Center List (PDF) 11/16 New NU Masters Professional Quota Merit List Result & Admission 2026-27 (PDF Notice) 11/22 New Admission NU Masters (Professional) Admission 2027 Application Deadline Extended (PDF) 11/22 New Admission NU MPhil & PhD Admission Test Seat Plan 2026-2027 (PDF Download) 11/22 New Notice BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 11/22 New Notice BTEB HSC (BMT), Vocational & Diploma in Commerce Supplementary Exam Center List 2026 (PDF) 11/22 New Result HSC Board Challenge Result 2026 Published - Check Re-scrutiny Result Online 11/22 New Notice Dhaka Board HSC Supplementary Exam Seat Plan 2026 & Center List (PDF) 11/16 New Notice Dhaka Board HSC Supplementary Exam 2026 Answer Script & Material Distribution Notice (PDF) 11/22 New Admission JU 1st Year Undergraduate Admission Online Application Process 2026-2027 (Step-by-Step Guide & PDF) 11/22 New Admission Agricultural Cluster Admission Circular 2026-2027 (Apply Online & PDF) 11/19 New Admission NU MPhil & PhD Admission Test Date 2026-27 (Notice PDF) 11/19 New Admission DGME IHT & MATS Admission Notice & Migration ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
     "university": "Khulna University",
     "title": "“১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)”",
     "date": "2026-11-21",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/১ম বর্ষ টার্ম-১ রেজিস্ট্রেশনে র তারিখ প্রসঙ্গে_20260225_0001.pdf",
     "source": "Khulna University official source",
     "summary": "“১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” “১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” 86 “১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামে",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "“আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/I D Cricket opening 2024_page-0001.jpg",
+    "source": "Khulna University official source",
+    "summary": "“আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ “আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ 407 “আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/কোর্স রেজিস্ট্রেশনের তারিখ_20250123_0001.pdf",
+    "source": "Khulna University official source",
+    "summary": "৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ ৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ 279 ৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 202",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত)",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি_20260406_0001.pdf",
+    "source": "Khulna University official source",
+    "summary": "২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) ২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) 77 ২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Prog",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত.pdf",
+    "source": "Khulna University official source",
+    "summary": "২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত ২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত 472 ২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Applic",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/22-23.pdf",
+    "source": "Khulna University official source",
+    "summary": "২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ ২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ 476 ২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২৬ এর বিজ্",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/M. Pharm_Admission Form _2026-27.pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Applica",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন)",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/MEd_Admission_Brochure_2026-2027_tracked.pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS P",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৫–২০২৬ শিক্ষাবর্ষে ১ম বর্ষে ভর্তি শিক্ষার্থীদের ভর্তি বাতিল সংক্রান্ত বিজ্ঞপ্তি / Notice regarding cancellation of admission of students admitted in the 1st year of the 2025-2026 academic year",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/2212026admissioncancelreleted.pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৫–২০২৬ শিক্ষাবর্ষে ১ম বর্ষে ভর্তি শিক্ষার্থীদের ভর্তি বাতিল সংক্রান্ত বিজ্ঞপ্তি / Notice regarding cancellation of admission of students admitted in the 1st year of the 2025-2026 academic year ২০২৫–২০২৬ শিক্ষাবর্ষে ১ম বর্ষে ভর্তি শিক্ষার্থীদের ভর্তি বাতিল সংক্রান্ত বিজ্ঞপ্তি / Notice regarding cancellation of admission of students admitted in the 1st year of the 2025-2026 academic year 103 ২০২৫–২০২৬ শিক্ষাবর্ষে ১ম বর্ষে ভর্তি শিক্ষার্থীদের ভর্তি বাতিল সংক্রান্ত বিজ্ঞপ্তি / Notice regarding cancellation of admission of students admitted in the 1st year of the 2025-2026 academic year 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-2",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৫–২০২৬ শিক্ষাবর্ষে স্নাতক/স্নাতক (সম্মান) শ্রেণির ১ম বর্ষে ভর্তি পরীক্ষায় উত্তীর্ণ শিক্ষার্থীদের প্রোফাইলে প্রদর্শিত নির্বাচিত ডিসিপ্লিনে ক্লাস শুরু সংক্রান্ত নির্দেশনা / Class Commencement Instructions for 1st Year Students (AY 2025–2026)",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/2025-26Class.pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৫–২০২৬ শিক্ষাবর্ষে স্নাতক/স্নাতক (সম্মান) শ্রেণির ১ম বর্ষে ভর্তি পরীক্ষায় উত্তীর্ণ শিক্ষার্থীদের প্রোফাইলে প্রদর্শিত নির্বাচিত ডিসিপ্লিনে ক্লাস শুরু সংক্রান্ত নির্দেশনা / Class Commencement Instructions for 1st Year Students (AY 2025–2026) ২০২৫–২০২৬ শিক্ষাবর্ষে স্নাতক/স্নাতক (সম্মান) শ্রেণির ১ম বর্ষে ভর্তি পরীক্ষায় উত্তীর্ণ শিক্ষার্থীদের প্রোফাইলে প্রদর্শিত নির্বাচিত ডিসিপ্লিনে ক্লাস শুরু সংক্রান্ত নির্দেশনা / Class Commencement Instructions for 1st Year Students (AY 2025–2026) 102 ২০২৫–২০২৬ শিক্ষাবর্ষে স্নাতক/স্নাতক (সম্মান) শ্রেণির ১ম বর্ষে ভর্তি পরীক্ষায় উত্তীর্ণ শিক্ষার্থীদের প্রোফাইলে প্রদর্শিত নির্বাচিত ডিসিপ্লিনে ক্লাস শুরু সংক্রান্ত নির্দেশনা / Class Commencement Instructions for 1st Year Students (AY 2025–2026) 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৫-২৬ শিক্ষাবর্ষের স্নাতক/স্নাতক (সম্মান) ১ম বর্ষ ভর্তি পরীক্ষার ফলাফল (A, B, C ও D ইউনিট) প্রকাশ / Results of the 2025-26 Academic Year Bachelor's/Bachelor's (Honours) 1st Year Admission Test (A, B, C and D Units) published",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/Admission Test 2025-26  Result Publish Related Notice .pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৫-২৬ শিক্ষাবর্ষের স্নাতক/স্নাতক (সম্মান) ১ম বর্ষ ভর্তি পরীক্ষার ফলাফল (A, B, C ও D ইউনিট) প্রকাশ / Results of the 2025-26 Academic Year Bachelor's/Bachelor's (Honours) 1st Year Admission Test (A, B, C and D Units) published ২০২৫-২৬ শিক্ষাবর্ষের স্নাতক/স্নাতক (সম্মান) ১ম বর্ষ ভর্তি পরীক্ষার ফলাফল (A, B, C ও D ইউনিট) প্রকাশ / Results of the 2025-26 Academic Year Bachelor's/Bachelor's (Honours) 1st Year Admission Test (A, B, C and D Units) published 123 ২০২৫-২৬ শিক্ষাবর্ষের স্নাতক/স্নাতক (সম্মান) ১ম বর্ষ ভর্তি পরীক্ষার ফলাফল (A, B, C ও D ইউনিট) প্রকাশ / Results of the 2025-26 Academic Year Bachelor's/Bachelor's (Honours) 1st Year Admission Test (A, B, C and D Units) published 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী,",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University",
+    "title": "২০২৫-২৬ শিক্ষাবর্ষের (২৬ ব্যাচ) স্নাতক/স্নাতক (সন্মান) শ্রেণির ১ম টার্মের পুন:নির্ধারিত একাডেমিক ক্যালেন্ডার / Academic Calendar for the 1st Term of Undergraduate/Honours Programs (26th Batch), Academic Year 2025–26.",
+    "date": "2026-11-21",
+    "url": "https://ku.ac.bd/uploads/noticeboardfiles/একাডেমিক ক্যালেন্ডার_20260514_0001.pdf",
+    "source": "Khulna University official source",
+    "summary": "২০২৫-২৬ শিক্ষাবর্ষের (২৬ ব্যাচ) স্নাতক/স্নাতক (সন্মান) শ্রেণির ১ম টার্মের পুন:নির্ধারিত একাডেমিক ক্যালেন্ডার / Academic Calendar for the 1st Term of Undergraduate/Honours Programs (26th Batch), Academic Year 2025–26. ২০২৫-২৬ শিক্ষাবর্ষের (২৬ ব্যাচ) স্নাতক/স্নাতক (সন্মান) শ্রেণির ১ম টার্মের পুন:নির্ধারিত একাডেমিক ক্যালেন্ডার / Academic Calendar for the 1st Term of Undergraduate/Honours Programs (26th Batch), Academic Year 2025–26. 65 ২০২৫-২৬ শিক্ষাবর্ষের (২৬ ব্যাচ) স্নাতক/স্নাতক (সন্মান) শ্রেণির ১ম টার্মের পুন:নির্ধারিত একাডেমিক ক্যালেন্ডার / Academic Calendar for the 1st Term of Undergraduate/Honours Programs (26th Batch), Academic Year 2025–26. 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Ec",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -261,62 +401,12 @@ window.ADMISSION_NOTICES = [
     "notify": true
   },
   {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Zoology Masters Circular - Session 2026-27",
-    "date": "2026-05-06",
-    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/339",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Zoology Masters Circular - Session 2026-27 Zoology Masters Circular - Session 2026-27 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More 10 Oct 2026 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Zoology Masters Circular - Session 2026-27",
-    "date": "2026-05-06",
-    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/339",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Zoology Masters Circular - Session 2026-27 Zoology Masters Circular - Session 2026-27 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More 10 Oct 2026 10 Oct 2026, 14:12 Zoology Masters Circular - Session 2026-27 প্রাণিবিদ্যা বিভাগের স্নাতকোত্তর (মাস্টার্স) ২০২৫-২৬ শিক্ষাবর্ষে ভর্তির বিজ্ঞপ্তি নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের প্রাণিবিদ্... Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
     "university": "University of Rajshahi",
-    "title": "University of Rajshahi",
+    "title": "University of Rajshahi Undergraduate Admission 2026-2027",
     "date": "",
     "url": "https://admission.ru.ac.bd/",
     "source": "University of Rajshahi official source",
-    "summary": "RU Admission | 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Student Panel Menu Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ ২০২৫ ও ২০২৬ সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে। বিএফএ (প্রাক) ডিগ্রিপ্রাপ্ত শিক্ষার্থীদের আবেদনের সময় মার্কশিট আপলোড করতে হবে। কারিগরী শিক্ষা বোর্ডের অধীন কারিগরী শিক্ষা প্রতিষ্ঠানসমূহ থেকে ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ ৫.০০ স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তী",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "University of Rajshahi",
-    "title": "Registration",
-    "date": "",
-    "url": "https://admission.ru.ac.bd/student/registration",
-    "source": "University of Rajshahi official source",
-    "summary": "Registration Login Registration Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ ২০২৫ ও ২০২৬ সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে। বিএফএ (প্রাক) ডিগ্রিপ্রাপ্ত শিক্ষার্থীদের আবেদনের সময় মার্কশিট আপলোড করতে হবে। কারিগরী শিক্ষা বোর্ডের অধীন কারিগরী শিক্ষা প্রতিষ্ঠানসমূহ থেকে ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ ৫.০০ স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.০০ সহ মোট জিপিএ ৬.৫০ পেতে হবে। বাণিজ্য শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.০০ সহ মোট জিপিএ ৬.৫০ পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.৫০ সহ মোট জিপিএ ৭.৫০ পেতে হবে। জিসিই O লেভেল পরীক্ষায় ৫টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত ২টি বিষয়ে উত্তীর্ণ হতে হবে এবং উভয় লেভেলে মোট ৭টি বিষয়ের মধ্যে ৪টি বিষয়",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "University of Rajshahi",
-    "title": "Photo/Selfie Instructions",
-    "date": "",
-    "url": "https://admission.ru.ac.bd/student/photo-selfie-instructions",
-    "source": "University of Rajshahi official source",
-    "summary": "Photo/Selfie Instructions Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "University of Rajshahi",
-    "title": "Payment Instructions",
-    "date": "",
-    "url": "https://admission.ru.ac.bd/student/payment-instructions",
-    "source": "University of Rajshahi official source",
-    "summary": "Payment Instructions Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -327,26 +417,6 @@ window.ADMISSION_NOTICES = [
     "url": "https://admission.ru.ac.bd/student/faq",
     "source": "University of Rajshahi official source",
     "summary": "FAQ Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "University of Rajshahi",
-    "title": "Helpline",
-    "date": "",
-    "url": "https://admission.ru.ac.bd/student/helpline",
-    "source": "University of Rajshahi official source",
-    "summary": "Helpline Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "University of Rajshahi",
-    "title": "Complaint",
-    "date": "",
-    "url": "https://admission.ru.ac.bd/student/complaint-box/create",
-    "source": "University of Rajshahi official source",
-    "summary": "Complaint Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -372,11 +442,41 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "GST Cluster — 20 Public Universities",
+    "title": "২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-%E0%A7%A8%E0%A7%AD-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2.-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF.-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%87-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ae1d69b1a16a",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
     "title": "২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি",
     "date": "",
     "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB-%E0%A7%A8%E0%A7%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%B8%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%A4%E0%A6%95-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%A8-%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A3%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%9A%E0%A7%82%E0%A6%A1%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%AE%E0%A6%AF%E0%A6%BC-%E0%A6%AC%E0%A7%83%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BF-%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6a5b9b4d7d988",
     "source": "GST Cluster — 20 Public Universities official source",
     "summary": "২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB-%E0%A7%A8%E0%A7%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ac7a42c114fb",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম",
+    "date": "",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%8B%E0%A6%97-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF--%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-%E0%A6%93-%E0%A6%86%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A6%A8-%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE-6ae0989cec89e",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -392,51 +492,21 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "GST Cluster — 20 Public Universities",
-    "title": "Weekend MBA program Summer-2025 admission test result and admission notice.",
+    "title": "কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম",
     "date": "",
-    "url": "https://jkkniu.edu.bd/notice/weekend-mba-program-summer-2025-admission-test-result-and-admission-notice.-6a63506ecb85b",
+    "url": "https://jkkniu.edu.bd/notice/%E0%A6%95%E0%A6%AC%E0%A6%BF-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2-%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%95%E0%A6%B2%E0%A7%87%E0%A6%9C-%E0%A6%8F%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%8B%E0%A6%97-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%93-%E0%A6%86%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A6%A8-%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE-6acb24c8aef5f",
     "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Weekend MBA program Summer-2025 admission test result and admission notice. Weekend MBA program Summer-2025 admission test result and admission notice. Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি ",
+    "summary": "কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ও আবেদন ফর্ম হিট উপ-প্রকল্পের (পিন ১৩৪৮২) আওতায় ২০২৬-২৭ শিক্ষাবর্ষে পিএইচডি ফেলোশিপ বিজ্ঞপ্তি weekend MBA Admission Notice Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 কবি নজরুল বিশ্ববিদ্যালয় স্কুল এন্ড কলেজ এর নিয়োগ বিজ্ঞপ্তি ও আবেদন ফর্ম ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি এ্যাম্বুলেন্সের ড্রাইভার ও মোবাইল নম্বর আপডেট (১০.০৯.২০২৬ তারিখ থেকে কার্যকর) ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি নিয়োগ বিজ্ঞপ্তি- ২০২৬ ",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
   {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Read More",
+    "university": "Bangladesh University of Professionals (BUP)",
+    "title": "BUP Admission Portal",
     "date": "",
-    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-%E0%A7%A8%E0%A7%AD-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2.-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF.-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%87-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ae1d69b1a16a",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Read More Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Read More",
-    "date": "",
-    "url": "https://jkkniu.edu.bd/notice/weekend-mba-admission-notice-6ad204a022165",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Read More Read More weekend MBA Admission Notice Published: 16-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Read More",
-    "date": "",
-    "url": "https://jkkniu.edu.bd/notice/master-of-development-studiesmds-weekend-program-admission-notice-for-winter-2026-6ad0836f5df04",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Read More Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "GST Cluster — 20 Public Universities",
-    "title": "Read More",
-    "date": "",
-    "url": "https://jkkniu.edu.bd/notice/%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB-%E0%A7%A8%E0%A7%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%8F%E0%A6%AE.%E0%A6%AB%E0%A6%BF%E0%A6%B2-%E0%A6%93-%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%87%E0%A6%9A.%E0%A6%A1%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF-6ac7a42c114fb",
-    "source": "GST Cluster — 20 Public Universities official source",
-    "summary": "Read More Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More ২০২৬-২৭ শিক্ষাবর্ষে এম.ফিল. ও পিএইচ.ডি. প্রোগ্রামে ভর্তি বিজ্ঞপ্তি Published: 28-10-2026 Read More weekend MBA Admission Notice Published: 16-10-2026 Read More Master of Development Studies(MDS) weekend Program Admission Notice for Winter-2026 Published: 15-10-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষে এম.ফিল ও পিএইচ.ডি কোর্সে শিক্ষার্থী ভর্তি বিজ্ঞপ্তি Published: 08-10-2026 Read More জরুরি বিজ্ঞপ্তি Published: 02-08-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিকৃত শিক্ষার্থীদের মাইগ্রেশন সংক্রান্ত বিজ্ঞপ্তি Published: 28-07-2026 Read More GST 2025-2026 শিক্ষাবর্ষে ভর্তিচ্ছু শিক্ষার্থীদের জন্য গণ বিজ্ঞপ্তি Published: 28-07-2026 Read More GST ২০২৫-২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি Published: 25-07-2026 Read More Weekend MBA program Summer-2025 admission test result and admission notice. Published: 24-07-2026 Read More ২০২৫-২৬ শিক্ষাবর্ষের প্রথম বর্ষ স্নাতক সম্মান শ্রেণীতে চূড়ান্ত ভর্তির সময় বৃদ্ধি সংক্রান্ত বিজ্ঞপ্তি Published: 18-07-2026 Read More",
+    "url": "https://admission.bup.edu.bd/Admission/Home",
+    "source": "Bangladesh University of Professionals (BUP) official source",
+    "summary": "BUP Admission Home FAQ How To Apply Exam Center Location MPhil/PhD Programs BUP Admission Portal Apply for a Program Apply (International Students) Bachelors Programs Masters Programs MPhil & PhD Programs Diploma Programs Certificate Courses Notices MBA (Professional) Written Exam Result (Session: Jan-Apr 2027) : Download LLM (Professional): Final Selected List for Admission (Session: January-April 2027) : Download MBA(Professional): List of Eligible Candidates for Written Test : Download Admission Notice: Bachelor’s and Master’s Programmes (Session 2026-2027) : Download Extended MESM Admission Advertisement : Download MISS: Extended Admission Advertisement (Session: 2026-2027) : Download MICT: Extended Admission Advertisement (Session: 2026-2027) : Download Final Result: Master of Public Health (MPH), Session: January-June 2027 : Download Extnded: MBA Professionals Admission Advertisement (Session: January 2027) : Download Extended MCSE (Professional) Admission Advertisement (Session: 2026-2027) : Download Extended Masters in Cyber Security (Professional) Admission Advertisement (Session: 2026-2027) : Download Master of Public Health (MPH) Admission Advertisement (Session: January",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   }
