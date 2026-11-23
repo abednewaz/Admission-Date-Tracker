@@ -96,7 +96,7 @@ export default async function handler(req,res){
       if(q.mode==='captcha'){
         const {session,ua}=await createSession();
         const image=await getCaptcha(session,ua);
-        return json(res,{ok:true,image},{status:200});
+        return json(res,{ok:true,image},200,{'Set-Cookie':'adt_ebr_session='+encodeURIComponent(session)+'; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=300'});
       }
       return json(res,{ok:true,service:'eboardresults',message:'Use mode=captcha to initialize verification.'});
     }
