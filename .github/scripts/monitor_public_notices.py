@@ -59,7 +59,7 @@ EXCLUDE_NON_UNDERGRAD = re.compile(
     re.I,
 )
 
-def is_relevant_notice(title, summary=""):
+def is_relevant_notice(title, summary="", allow_summary_cycle=False):
     title_text = normalize(title)
     summary_text = normalize(summary)
     blob = f"{title_text} {summary_text}"
@@ -67,6 +67,11 @@ def is_relevant_notice(title, summary=""):
         r"2026\s*[-–/]\s*2027|2026\s*[-–/]\s*27|২০২৬\s*[-–/]\s*২০২৭|২০২৬\s*[-–/]\s*২৭",
         title_text, re.I
     )
+    if not current_cycle and allow_summary_cycle:
+        current_cycle = re.search(
+            r"2026\s*[-–/]\s*2027|2026\s*[-–/]\s*27|২০২৬\s*[-–/]\s*২০২৭|২০২৬\s*[-–/]\s*২৭",
+            summary_text, re.I
+        )
     if not current_cycle:
         return False
     title_has_admission = bool(ADMISSION_ONLY.search(title_text))
@@ -268,7 +273,7 @@ def extract_html_items(url, response, university, follow_links=True):
         page_title = normalize(h1.get_text(" ", strip=True))
     if not page_title and soup.title:
         page_title = normalize(soup.title.get_text(" ", strip=True))
-    if page_title and is_relevant_notice(page_title, page_text[:2500]):
+    if page_title and is_relevant_notice(page_title, page_text[:2500], allow_summary_cycle=True):
         items.append({
             "university": university,
             "title": page_title[:300],
