@@ -22,182 +22,6 @@ window.ADMISSION_NOTICES = [
     "lastChecked": "2026-11-23T10:19:00+06:00"
   },
   {
-    "university": "KUET",
-    "title": "KUET Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/kuet-admission",
-    "source": "students.bd",
-    "summary": "KUET Admission 2026 Apply Online - à¦à§à§à§à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¨à¦²à¦¾à¦à¦¨ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦¬à§à¦¦à¦¨ à¦à¦²à¦à§ (à¦à¦²à¦®à¦¾à¦¨) KUET UG ADMISSION 2026â27 KUET Admission 2026 Apply Online à¦à§à¦²à¦¨à¦¾ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ (à¦à§à§à§à¦) à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨, à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦"
-  },
-  {
-    "university": "MIST",
-    "title": "MIST Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/mist-admission",
-    "source": "students.bd",
-    "summary": "MIST Admission 2026 Apply Online - à¦à¦®à¦à¦à¦à¦¸à¦à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à§à¦ à¦à¦¸à¦¨: à§¯à§¨à§¦à¦à¦¿ (à¦®à¦¿à¦°à¦ªà§à¦° à¦¸à§à¦¨à¦¾à¦¨à¦¿à¦¬à¦¾à¦¸) MIST UNDERGRADUATE ADMISSION 2026â27 MIST Admission 2026 Apply Online à¦®à¦¿à¦²à¦¿à¦à¦¾à¦°à¦¿ à¦à¦¨à¦¸à§à¦à¦¿à¦à¦¿à¦à¦ à¦à¦¬ à¦¸à¦¾à§à§à¦¨à§à¦¸ à¦à§à¦¯à¦¾à¦¨à§à¦¡ à¦à§à¦à¦¨à§à¦²à¦à¦¿ à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨à¥¤ à§¯à§"
-  },
-  {
-    "university": "BUET",
-    "title": "BUET Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/buet-admission",
-    "source": "students.bd",
-    "summary": "BUET Admission 2026 Apply Online - à¦¬à§à§à§à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¨à¦²à¦¾à¦à¦¨ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à§à¦ à¦à¦¸à¦¨: à§§,à§©à§¦à§¯à¦à¦¿ BUET UNDERGRADUATE ADMISSION 2026â27 BUET Admission 2026 Apply Online à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ à¦ªà§à¦°à¦à§à¦¶à¦² à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ (à¦¬à§à§à§à¦) à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨à¥¤ à¦®à§à¦ à§§,à§©à§¦à§¯à¦à¦¿ à¦à¦¸à¦¨, à¦ªà§à¦°à¦¾à¦-à¦¨à¦¿à¦°à"
-  },
-  {
-    "university": "Medical Admission",
-    "title": "Medical Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/medical-admission",
-    "source": "students.bd",
-    "summary": "Medical (MBBS) Admission 2027 â à¦®à§à¦¡à¦¿à¦à§à¦² à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾ à§§à§® à¦¡à¦¿à¦¸à§à¦®à§à¦¬à¦° à§¨à§¦à§¨à§¬ | à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦ à¦à¦¸à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦ªà¦°à§à¦à§à¦·à¦¾: à§§à§® à¦¡à¦¿à¦¸à§à¦®à§à¦¬à¦° (à¦¸à¦®à§à¦­à¦¾à¦¬à§à¦¯) MBBS / BDS ADMISSION 2026â27 Medical Admission 2026 Apply Online à¦à¦®à¦¬à¦¿à¦¬à¦¿à¦à¦¸ à¦­à¦°à§à¦¤à¦¿ à¦ªà¦°à§à¦à§à¦·à¦¾ à§¨à§¦à§¨à§¬-à§¨à§­à¥¤ à¦¸à¦°à¦à¦¾à¦°à¦¿ à§©à§¯à¦à¦"
-  },
-  {
-    "university": "Bangladesh University of Professionals",
-    "title": "BUP Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/bup-admission",
-    "source": "students.bd",
-    "summary": "BUP Admission 2026 Apply Online - à¦¬à¦¿à¦à¦à¦ªà¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦à¦° Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦¬à§à¦¦à¦¨ à¦«à¦¿: à§§à§¨à§¦à§¦/- à¦à¦¾à¦à¦¾ BUP UNDERGRADUATE ADMISSION 2026â27 BUP Admission 2026 Apply Online à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿ à¦à¦¬ à¦ªà§à¦°à¦«à§à¦¶à¦¨à¦¾à¦²à¦¸ (BUP) à§§à¦® à¦¬à¦°à§à¦· à¦¸à§à¦¨à¦¾à¦¤à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦"
-  },
-  {
-    "university": "IUT",
-    "title": "IUT Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/iut-admission",
-    "source": "students.bd",
-    "summary": "IUT Admission 2026 Apply Online - à¦à¦à¦à¦à¦à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¨à¦²à¦¾à¦à¦¨ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦¨à§à¦¤à¦°à§à¦à¦¾à¦¤à¦¿à¦ à¦à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸ (à§­à§¨à§¦ à¦à¦¸à¦¨) IUT (OIC) UNDERGRADUATE ADMISSION 2026â27 IUT Admission 2026 Apply Online à¦à¦¸à¦²à¦¾à¦®à¦¿à¦ à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿ à¦à¦¬ à¦à§à¦à¦¨à§à¦²à¦à¦¿ (IUT) à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨à¥¤ à¦®à§à¦ à§­à§¨à§¦à¦à¦¿ "
-  },
-  {
-    "university": "SUST",
-    "title": "SUST Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/sust-admission",
-    "source": "students.bd",
-    "summary": "SUST Admission 2026 Apply Online - à¦¶à¦¾à¦¬à¦¿à¦ªà§à¦°à¦¬à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦¨à¦¤à§à¦¨ à¦ªà¦°à§à¦à§à¦·à¦¾à¦° à¦¤à¦¾à¦°à¦¿à¦: à§§à§­ à¦ à§§à§® à¦à¦¾à¦¨à§à§à¦¾à¦°à¦¿ à§¨à§¦à§¨à§­ SUST ADMISSION 2026â27 (à¦¤à¦¾à¦°à¦¿à¦ à¦ªà§à¦¨à¦°à§à¦¨à¦¿à¦°à§à¦§à¦¾à¦°à¦¿à¦¤) SUST Admission 2026 Apply Online à¦¶à¦¾à¦¹à¦à¦¾à¦²à¦¾à¦² à¦¬à¦¿à¦à§à¦à¦¾à¦¨ à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦"
-  },
-  {
-    "university": "CUET",
-    "title": "CUET Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/cuet-admission",
-    "source": "students.bd",
-    "summary": "CUET Admission 2026 Apply Online - à¦à§à¦¯à¦¼à§à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦à¦° Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à§à¦ à¦à¦¸à¦¨: à§¯à§¨à§¦à¦à¦¿ CUET ENGINEERING ADMISSION 2026â27 CUET Admission 2026 Apply Online à¦à¦à§à¦à¦à§à¦°à¦¾à¦® à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼ (CUET) à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿à¦à¦¸à¦¸à¦¿ à¦à¦à§à¦à¦¿à¦¨"
-  },
-  {
-    "university": "RUET",
-    "title": "RUET Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/ruet-admission",
-    "source": "students.bd",
-    "summary": "RUET Admission 2026 Apply Online - à¦°à§à¦¯à¦¼à§à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦à¦° Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à§à¦ à¦à¦¸à¦¨: à§§,à§¨à§©à§«à¦à¦¿ RUET ENGINEERING ADMISSION 2026â27 RUET Admission 2026 Apply Online à¦°à¦¾à¦à¦¶à¦¾à¦¹à§ à¦ªà§à¦°à¦à§à¦¶à¦² à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼ (RUET) à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿à¦à¦¸à¦¸à¦¿ à¦à¦à§à¦à¦¿à¦¨à¦"
-  },
-  {
-    "university": "BUTEX",
-    "title": "BUTEX Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/butex-admission",
-    "source": "students.bd",
-    "summary": "BUTEX Admission 2026 Apply Online - à¦¬à§à¦à§à¦à§à¦¸ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦à¦° Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à§à¦ à¦à¦¸à¦¨: à§¬à§©à§¦à¦à¦¿ BUTEX TEXTILE ENGINEERING ADMISSION 2026â27 BUTEX Admission 2026 Apply Online à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ à¦à§à¦à§à¦¸à¦à¦¾à¦à¦² à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ (à¦¬à§à¦à§à¦à§à¦¸) à§§à¦® à¦¬à¦°à§à¦· à¦¬à¦¿à¦à¦¸à¦¸à¦¿ à¦à§à¦à§à¦¸à¦à"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "JnU Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/jnu-admission",
-    "source": "students.bd",
-    "summary": "à¦à¦à¦¨à§à¦¨à¦¾à¦¥ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼ à¦­à¦°à§à¦¤à¦¿ à¦¬à¦¿à¦à§à¦à¦ªà§à¦¤à¦¿ à§¨à§¦à§¨à§¬-à§¨à§­ â à¦¤à¦¾à¦°à¦¿à¦, à¦à¦¸à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ (AâE à¦à¦à¦¨à¦¿à¦) Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦¸à§à¦à§à¦¨à§à¦¡ à¦à¦¾à¦à¦® à¦¨à§à¦ (à¦¸à¦¾à¦ªà§à¦²à¦¿à¦®à§à¦¨à§à¦à¦¾à¦°à¦¿ à§¨à§¦à§¨à§¬ à¦à¦¬à§à¦¦à¦¨ à¦à¦°à¦¤à§ à¦ªà¦¾à¦°à¦¬à§) JAGANNATH UNIVERSITY (JNU) 2026â27 JnU Admission 2026 Apply Online à¦à¦à¦¨à§à¦¨"
-  },
-  {
-    "university": "AIUB",
-    "title": "AIUB Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/aiub-admission",
-    "source": "students.bd",
-    "summary": "AIUB Admission 2026-2027 Apply Online - à¦à¦à¦à¦à¦à¦¬à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦ªà¦°à§à¦à§à¦·à¦¾: à§¨à§¬ à¦¨à¦­à§à¦®à§à¦¬à¦° à§¨à§¦à§¨à§¬ (à¦¦à§à¦ªà§à¦° à§§à§¨à¦à¦¾) AIUB SPRING ADMISSION 2026â27 (SLOT 1) AIUB Admission 2026 Apply Online à¦à¦®à§à¦°à¦¿à¦à¦¾à¦¨ à¦à¦¨à§à¦à¦¾à¦°à¦¨à§à¦¯à¦¾à¦¶à¦¨à¦¾à¦² à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿-à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ à¦¸à§à¦¨à¦¾à¦¤à¦ à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§"
-  },
-  {
-    "university": "HSTU",
-    "title": "HSTU Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/hstu-admission",
-    "source": "students.bd",
-    "summary": "HSTU Admission 2026 Apply Online - à¦¹à¦¾à¦¬à¦¿à¦ªà§à¦°à¦¬à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à¦à§à¦¯à¦¤à¦¾ à¦à§à¦¯à¦¾à¦²à¦à§à¦²à§à¦à¦° Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦¬à§à¦¦à¦¨ à¦«à¦¿: à§§à§¦à§¦à§¦/- à¦à¦¾à¦à¦¾ HSTU SCIENCE & TECHNOLOGY ADMISSION 2026â27 HSTU Admission 2026 Apply Online à¦¹à¦¾à¦à§ à¦®à§à¦¹à¦¾à¦®à§à¦®à¦¦ à¦¦à¦¾à¦¨à§à¦¶ à¦¬à¦¿à¦à§à¦à¦¾à¦¨ à¦ à¦ªà§à¦°à¦¯à§à¦à§à¦¤à¦¿ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ (à¦¹à¦¾à"
-  },
-  {
-    "university": "BRAC University",
-    "title": "BRAC University Admission 2026",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/bracu-admission",
-    "source": "students.bd",
-    "summary": "BRAC University Admission 2026 Apply Online - à¦¬à§à¦°à§à¦¯à¦¾à¦ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦¶à§à¦°à§à¦· à¦ªà§à¦°à¦¾à¦à¦­à§à¦ (à¦®à§à¦°à§à¦² à¦¬à¦¾à¦¡à§à¦¡à¦¾ à¦à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸) BRAC UNIVERSITY ADMISSION 2026â27 BRAC University Admission 2026 à¦¬à§à¦°à§à¦¯à¦¾à¦ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ à¦¸à§à¦¨à¦¾à¦¤à¦ (à¦¸à§à¦¨à¦¾à¦¤à¦ à¦¸à¦®à§à¦®à¦¾à¦¨) à§§à¦® à"
-  },
-  {
-    "university": "North South University",
-    "title": "North South University Admission 2026",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/nsu-admission",
-    "source": "students.bd",
-    "summary": "North South University (NSU) Admission 2026 Apply Online - à¦à¦¨à¦à¦¸à¦à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦¦à§à¦¶à§à¦° à§§à¦® à¦ªà§à¦°à¦¾à¦à¦­à§à¦ (à¦¬à¦¸à§à¦¨à§à¦§à¦°à¦¾ à¦à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸) NORTH SOUTH UNIVERSITY ADMISSION 2026â27 North South University Admission 2026 à¦¨à¦°à§à¦¥ à¦¸à¦¾à¦à¦¥ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à§ (NSU) à¦¸à§à¦¨à¦¾à¦¤à¦ à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à"
-  },
-  {
-    "university": "East West University",
-    "title": "East West University Admission 2026",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/ewu-admission",
-    "source": "students.bd",
-    "summary": "East West University (EWU) Admission 2026 Apply Online - à¦à¦¸à§à¦ à¦à¦¯à¦¼à§à¦¸à§à¦ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦«à¦¤à¦¾à¦¬à¦¨à¦à¦° à¦°à¦¾à¦®à¦ªà§à¦°à¦¾ à¦à§à¦¯à¦¾à¦®à§à¦ªà¦¾à¦¸ EAST WEST UNIVERSITY ADMISSION 2026â27 East West University Admission 2026 à¦à¦¸à§à¦ à¦à¦¯à¦¼à§à¦¸à§à¦ à¦¬à¦¿à¦¶à§à¦¬à¦¬à¦¿à¦¦à§à¦¯à¦¾à¦²à¦¯à¦¼ (EWU) à¦¸à§à¦¨à¦¾à¦¤à¦ à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¯à§à"
-  },
-  {
-    "university": "Independent University, Bangladesh",
-    "title": "IUB Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/iub-admission",
-    "source": "students.bd",
-    "summary": "IUB Admission 2026 Apply Online - à¦à¦¨à¦¡à¦¿à¦ªà§à¦¨à¦¡à§à¦¨à§à¦ à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦à¦¬à§à¦·à¦£à¦¾ à¦ à¦²à¦¿à¦¬à¦¾à¦°à§à¦² à¦à¦°à§à¦à¦¸ (à¦¬à¦¸à§à¦¨à§à¦§à¦°à¦¾) INDEPENDENT UNIVERSITY BANGLADESH ADMISSION 2026â27 IUB Admission 2026 Apply Online à¦à¦¨à¦¡à¦¿à¦ªà§à¦¨à¦¡à§à¦¨à§à¦ à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿ à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ (IUB) à¦¸à§à¦¨à¦¾à¦¤à¦ à§§à"
-  },
-  {
-    "university": "ULAB",
-    "title": "ULAB Admission 2026 Apply Online",
-    "date": "2026-11-23",
-    "url": "https://students.bd/admission/ulab-admission",
-    "source": "students.bd",
-    "summary": "ULAB Admission 2026 Apply Online - à¦à¦à¦²à§à¦¯à¦¾à¦¬ à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer à¦®à¦¿à¦¡à¦¿à¦¯à¦¼à¦¾ à¦ à¦²à¦¿à¦¬à¦¾à¦°à§à¦² à¦à¦°à§à¦à¦¸ (à¦®à§à¦¹à¦¾à¦®à§à¦®à¦¦à¦ªà§à¦°) ULAB ADMISSION 2026â27 ULAB Admission 2026 Apply Online à¦à¦à¦¨à¦¿à¦­à¦¾à¦°à§à¦¸à¦¿à¦à¦¿ à¦à¦¬ à¦²à¦¿à¦¬à¦¾à¦°à§à¦² à¦à¦°à§à¦à¦¸ à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶ (ULAB) à¦¸à§à¦¨à¦¾à¦¤à¦ à§§à¦® à¦¬à¦°à§à¦· à¦­à¦°à§à¦¤à¦¿ à¦à¦¬à§à¦¦à¦¨ à¦ à¦¨à¦¿"
-  },
-  {
-    "university": "Bangladesh University of Professionals",
-    "title": "BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF)",
-    "date": "2026-11-23",
-    "url": "https://students.bd/notice/bup-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) Published: 2026-11-17 Share Quick Summary Routine Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Bangladesh University of Professionals Published Date 2026-11-17 Application Wind"
-  },
-  {
-    "university": "BUTEX",
-    "title": "BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download)",
-    "date": "2026-11-23",
-    "url": "https://students.bd/notice/butex-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) Published: 2026-11-19 Share Quick Summary Routine Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Bangladesh University of Textiles (BUTEX) Published Date 2026-11-19 Application Window 202"
-  },
-  {
-    "university": "MIST",
-    "title": "MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF)",
-    "date": "2026-11-23",
-    "url": "https://students.bd/notice/mist-undergraduate-admission-circular-2026-27",
-    "source": "students.bd",
-    "summary": "MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) Published: 2026-11-19 Share Quick Summary Routine Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Military Institute of Science and Technology (MIST) Published Date 2026-11-19 Application"
-  },
-  {
-    "university": "Dhaka University",
-    "title": "Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF)",
-    "date": "2026-11-23",
-    "url": "https://students.bd/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
-    "source": "students.bd",
-    "summary": "Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) Published: 2026-11-14 Share Quick Summary Routine Center List Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board University of Dhaka Published Date 2026-11-14 Application Window 2026-1"
-  },
-  {
     "university": "BUET",
     "title": "BUET publishes 2026-27 undergraduate admission circular",
     "date": "2026-11-22",
@@ -256,5 +80,23 @@ window.ADMISSION_NOTICES = [
     "sourceUrl": "https://www.bssnews.net/news/444300",
     "notify": false,
     "summary": "Khulna University revised its 2026-27 undergraduate admission tests from 17–18 December 2026 to 4–5 February 2027."
+  },
+  {
+    "university": "Medical Admission",
+    "title": "New Admission DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) 11/19",
+    "date": "2026-11-02",
+    "url": "https://students.bd/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
+    "source": "students.bd",
+    "summary": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার স্বাস্থ্য শিক্ষা অধিদপ্তর মহাখালী, ঢাকা-1212 www.dgme.gov.bd স্মারক নং-59.14.0000.000.103.34.0001.26.869 তারিখ: 19/11/2026 খ্রি. বিজ্ঞপ্তি বিষয়: 2026-2027 খ্রি. শিক্ষাবর্ষে সরকারি আইএইচটি ও ম্যাটস এ নির্বাচিত শিক্ষার্থীদের ভর্তি। উপর্যুক্ত বিষয়ের পরিপ্রেক্ষিতে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, 2026-2027 খ্রি. শিক্ষাবর্ষে আইএইচটি ও ম্যাটস ভর্তি পরীক্ষা গত 13/11/2026 খ্রি. তারিখে অনুষ্ঠিত হয়েছে এবং উল্লিখিত ভর্তি পরীক্ষার ফল গত 14/11/2026 খ্রি. তারিখে প্রকাশিত হয়েছে। তৎপ্রেক্ষিতে মেধা ও পছন্দক্রম অনুযায়ী 23 (তেইশ)টি সরকারি আইএইচটিতে বিভিন্ন অনুষদে 3619 জন প্রার্থীকে এবং 07 (সাত) টি সরকারি ম্যাটসে 664 জন প্রার্থীকে প্রাথমিকভাবে নির্বাচন করা হয়েছে। সংশ্লিষ্ট আইএইচটি ও ম্যাটসসমূহের অধ্যক্ষগণ আগামী 22/11/2026 খ্রি. হতে 06/12/2026 খ্রি. তারিখ পর্যন্ত অফিস চলাকালীন সময়ে নির্বাচিত শিক্ষার্থীদের ভর্তি প্রক্রিয়া সম্পন্ন করবেন। অধ্যক্ষ কর্তৃক গঠিত স্থানীয় ভর্তি কমিটি শিক্ষার্থীদের সনদপত্র পরীক্ষা-নিরীক্ষা করবেন এবং গঠিত মেডিকেল বোর্ড তাঁদের স্বাস্থ্য পরীক্ষা করবেন। কোনো শিক্ষার্থীর দাখিলকৃত সনদপত্রের মধ্যে ভুলত্রুটি পরিলক্ষিত হলে বা কোনো শিক্ষার্থী স্বাস্থ্য পরীক্ষায় অযোগ্য বলে বিবেচিত হলে তার প্রাথমিক নির্বাচন বাতিল বলে গণ্য হবে। সরকারি আইএইচটি/ম্যাটস"
+  },
+  {
+    "university": "Shahjalal University of Science & Technology",
+    "title": "SUST reschedules 2026-27 admission tests to 17–18 January 2027",
+    "date": "2026-11-01",
+    "url": "",
+    "source": "SUST / Jago News",
+    "sourceUrl": "https://www.jagonews24.com/en/education/news/97715",
+    "notify": false,
+    "summary": "SUST moved its 2026-27 undergraduate admission tests from 26–27 January to 17–18 January 2027."
   }
 ];
