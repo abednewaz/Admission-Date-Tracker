@@ -74,6 +74,14 @@ function daysBetween(from, to) {
   return Math.round((to.getTime() - from.getTime()) / 86400000);
 }
 
+function isCourtSuspended(e) {
+  const s = e && e.systemStatus && e.systemStatus.courtAdmissionSuspension;
+  if (!s || !s.active || !e.examDate) return false;
+  if (String(e.admissionType || '').includes('Private')) return false;
+  return String(e.examDate) >= String(s.effectiveFrom || '9999-99-99') &&
+    String(e.examDate) <= String(s.through || '0000-00-00');
+}
+
 function chooseNextExam(exams, universityName, today) {
   const rows = exams
     .filter((e) =>
@@ -81,7 +89,8 @@ function chooseNextExam(exams, universityName, today) {
       e.universityName === universityName &&
       e.examDate &&
       e.examDate !== 'Not published yet' &&
-      e.examDate !== 'Better check Yourself'
+      e.examDate !== 'Better check Yourself' &&
+      !isCourtSuspended(e)
     )
     .map((e) => ({ e, date: parseDate(e.examDate) }))
     .filter((x) => x.date && x.date.getTime() >= today.getTime())
