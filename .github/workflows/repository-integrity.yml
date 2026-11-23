@@ -32,12 +32,10 @@ jobs:
 
           def parse_assignment(path, name):
               text = Path(path).read_text(encoding="utf-8")
-              m = re.search(r"window\\." + re.escape(name) + r"\\s*=\\s*(\\[|\\{).*?;\\s*$", text, re.S)
+              m = re.search(r"window\\." + re.escape(name) + r"\\s*=\\s*(.*)\\s*;\\s*$", text, re.S)
               if not m:
                   raise SystemExit(f"Could not locate {name} in {path}")
-              start = text.find(m.group(1), m.start())
-              payload = text[start:text.rfind(";")]
-              return json.loads(payload)
+              return json.loads(m.group(1))
 
           data = parse_assignment("data.js", "ADMISSION_EXAMS")
           notices = parse_assignment("notices.js", "ADMISSION_NOTICES")
