@@ -87,6 +87,13 @@ jobs:
         run: |
           python -m py_compile .github/scripts/check_admission_dates.py
 
+      - name: Validate Vercel serverless function syntax
+        run: |
+          node --check api/push-broadcast.js
+          node --check api/push-daily.js
+          node --check api/push-subscribe.js
+          node --check api/reviews.js
+
       - name: Validate JavaScript syntax
         run: |
           node --input-type=commonjs <<'NODE'
