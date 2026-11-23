@@ -992,6 +992,57 @@ def update_notice_feed():
         return 0
 
 
+def _court_news_items():
+    queries = [
+        "Bangladesh Supreme Court admission tests public universities December 31 2026",
+        "Bangladesh Supreme Court DU admission test High Court order 2026",
+        "Bangladesh Supreme Court medical admission test High Court order 2026",
+    ]
+    items = []
+    seen = set()
+    for query in queries:
+        rss_url = (
+            "https://news.google.com/rss/search?q="
+            + quote_plus(query)
+            + "&hl=en-BD&gl=BD&ceid=BD:en"
+        )
+        try:
+            response = request_source(rss_url)
+            soup = BeautifulSoup(response.text, "html.parser")
+            for item in soup.find_all("item"):
+                title = normalize(item.find("title").get_text(" ", strip=True) if item.find("title") else "")
+                link = item.find("link").get_text(" ", strip=True) if item.find("link") else ""
+                description = normalize(item.find("description").get_text(" ", strip=True) if item.find("description") else "")
+                pub = item.find("pubDate").get_text(" ", strip=True) if item.find("pubDate") else ""
+                source_node = item.find("source")
+                source = normalize(source_node.get_text(" ", strip=True) if source_node else "")
+                if not title or not link:
+                    continue
+                key = (title.lower(), link)
+                if key in seen:
+                    continue
+                seen.add(key)
+                published = None
+                try:
+                    from email.utils import parsedate_to_datetime
+                    published = parsedate_to_datetime(pub).astimezone(timezone.utc) if pub else None
+                except Exception:
+                    published = None
+                items.append({
+                    "title": title,
+                    "link": link,
+                    "description": description,
+                    "source": source,
+                    "published": published,
+                })
+        except Exception as exc:
+            print(f"Court news feed failed for {query!r}: {exc}")
+    items.sort(
+        key=lambda x: x.get("published") or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+    return items
+
 def update_court_status():
     path = Path("system-status.js")
     try:
