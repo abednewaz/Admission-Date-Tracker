@@ -1,4 +1,4 @@
-window.ADMISSION_DATA = [
+window.ADMISSION_EXAMS = [
   {
     "id": "e2",
     "universityName": "American International University-Bangladesh (AIUB)",
