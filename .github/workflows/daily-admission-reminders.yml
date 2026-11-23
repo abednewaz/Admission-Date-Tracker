@@ -36,6 +36,18 @@ jobs:
 
           exams = json.loads(match.group(1))
 
+          with open("system-status.js", encoding="utf-8") as f:
+              status_text = f.read()
+          status_match = re.search(
+              r"window\\.ADMISSION_SYSTEM_STATUS\\s*=\\s*(\\{.*?\\})\\s*;?\\s*$",
+              status_text,
+              re.S,
+          )
+          if not status_match:
+              raise SystemExit("Could not parse system-status.js")
+          # system-status.js is intentionally JSON-compatible JavaScript.
+          system_status = json.loads(status_match.group(1))
+
           token_url = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL")
           token_request_token = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN")
           if not token_url or not token_request_token:
@@ -60,7 +72,7 @@ jobs:
                   "Authorization": "Bearer " + id_token,
                   "Content-Type": "application/json",
               },
-              json={"exams": exams},
+              json={"exams": exams, "systemStatus": system_status},
               timeout=60,
           )
           print("Daily reminder response:", push_response.status_code)
