@@ -187,6 +187,13 @@ def request_source(url):
                     headers=headers,
                 )
                 r.raise_for_status()
+                if "students.bd" in urlparse(r.url).netloc.lower():
+                    r.encoding = "utf-8"
+                elif not r.encoding or r.encoding.lower() in ("iso-8859-1", "latin-1"):
+                    try:
+                        r.encoding = r.apparent_encoding
+                    except Exception:
+                        pass
                 return r
             except requests.exceptions.SSLError as exc:
                 last_error = exc
@@ -892,9 +899,10 @@ def extract_notice_page(url):
             if match:
                 date_value = f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
 
-        for tag in soup(["script", "style", "noscript", "nav", "footer", "form"]):
+        content_root = soup.find("main") or soup.find("article") or soup.body or soup
+        for tag in content_root.find_all(["script", "style", "noscript", "nav", "footer", "header", "form"]):
             tag.decompose()
-        body_text = normalize(soup.get_text(" ", strip=True))
+        body_text = normalize(content_root.get_text(" ", strip=True))
         body_text = re.sub(r"\\s+", " ", body_text).strip()
         summary = body_text[:1200] if len(body_text) >= 80 else ""
         return {
