@@ -528,7 +528,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
     </main>
     
     </div>
-    <div class="students-modal-overlay" id="boardResultModal" role="dialog" aria-modal="true" aria-labelledby="boardResultTitle"><div class="students-modal"><div class="students-modal-head"><div><h2 id="boardResultTitle">Get your Board Result</h2><p>Check your SSC/HSC result without leaving Admission Tracker.</p></div><button class="students-modal-close" type="button" data-student-close="board-result" aria-label="Close">×</button></div><div class="board-result-panel" id="boardResultPanel"><form id="boardResultForm" novalidate><div class="board-form-grid"><label>Exam<select id="brExam" required><option value="hsc" selected>HSC / Equivalent</option><option value="ssc">SSC / Equivalent</option></select></label><label>Year<select id="brYear" required><option value="2026" selected>2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select></label><label>Board<select id="brBoard" required><option value="">Select Board</option><option value="dhaka">Dhaka</option><option value="rajshahi">Rajshahi</option><option value="chittagong">Chattogram</option><option value="comilla">Comilla</option><option value="barisal">Barisal</option><option value="sylhet">Sylhet</option><option value="jessore">Jessore</option><option value="dinajpur">Dinajpur</option><option value="mymensingh">Mymensingh</option><option value="madrasah">Madrasah</option><option value="tec">Technical</option></select></label><label>Roll Number<input id="brRoll" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="Enter roll number" required></label><label>Registration Number<input id="brReg" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="Enter registration number" required></label></div><div class="board-result-security" id="brCaptchaBox" hidden><b>Security verification</b><span>CAPTCHA is handled by the result service automatically. No broken security image or manual code entry is required here.</span></div><div class="board-result-security"><b>Result service</b><span>Your result is checked inside Admission Tracker through the Education Board result service API.</span></div><div class="board-result-actions"><button type="submit" id="brSubmit">Check Result</button><button type="button" id="brPrint" hidden>Print Result</button></div></form><div class="board-result-status" id="brStatus" aria-live="polite"></div><div class="board-result-output" id="brOutput" hidden></div></div></div></div>
+    <div class="students-modal-overlay" id="boardResultModal" role="dialog" aria-modal="true" aria-labelledby="boardResultTitle"><div class="students-modal"><div class="students-modal-head"><div><h2 id="boardResultTitle">Get your Board Result</h2><p>Check your SSC/HSC result without leaving Admission Tracker.</p></div><button class="students-modal-close" type="button" data-student-close="board-result" aria-label="Close">×</button></div><div class="board-result-panel" id="boardResultPanel"><form id="boardResultForm" novalidate><div class="board-form-grid"><label>Exam<select id="brExam" required><option value="hsc" selected>HSC / Equivalent</option><option value="ssc">SSC / Equivalent</option></select></label><label>Year<select id="brYear" required><option value="2026" selected>2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select></label><label>Board<select id="brBoard" required><option value="">Select Board</option><option value="dhaka">Dhaka</option><option value="rajshahi">Rajshahi</option><option value="chittagong">Chattogram</option><option value="comilla">Comilla</option><option value="barisal">Barisal</option><option value="sylhet">Sylhet</option><option value="jessore">Jessore</option><option value="dinajpur">Dinajpur</option><option value="mymensingh">Mymensingh</option><option value="madrasah">Madrasah</option><option value="tec">Technical</option></select></label><label>Roll Number<input id="brRoll" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="Enter roll number" required></label><label>Registration Number<input id="brReg" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="Enter registration number" required></label></div><div class="board-result-security" id="brCaptchaBox" hidden><b>Security verification</b><span>Type the digits shown in the security image.</span><div class="br-captcha-row"><img id="brCaptchaImage" alt="Security verification code" width="160" height="54"><button type="button" id="brCaptchaReload">Reload</button></div><input id="brCaptcha" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="Enter security code" aria-label="Security code"></div><div class="board-result-security"><b>Result service</b><span>Your result is checked inside Admission Tracker through the Education Board result service API.</span></div><div class="board-result-actions"><button type="submit" id="brSubmit">Check Result</button><button type="button" id="brPrint" hidden>Print Result</button></div></form><div class="board-result-status" id="brStatus" aria-live="polite"></div><div class="board-result-output" id="brOutput" hidden></div></div></div></div>
 <div class="students-modal-overlay" id="pcmRankModal" role="dialog" aria-modal="true" aria-labelledby="pcmRankTitle"><div class="students-modal"><div class="students-modal-head"><div><h2 id="pcmRankTitle">Ranking by PCM Marks (Apprx.)</h2><p>Physics + Chemistry + Higher Math · unofficial nationwide estimate</p></div><button class="students-modal-close" type="button" data-student-close="pcm-rank" aria-label="Close">×</button></div><div class="pcm-wrap"><h1>PCM Nationwide Rank Estimator</h1><p class="pcm-sub">পিসিএম (পদার্থবিজ্ঞান + রসায়ন + উচ্চতর গণিত) মোট নম্বর দিয়ে সারাদেশে আনুমানিক অবস্থান</p><div class="pcm-card"><div class="pcm-row"><div><label for="pcmMark">Total PCM marks (out of 600)</label><input id="pcmMark" type="number" inputmode="numeric" min="0" max="600" step="1" placeholder="e.g. 536"></div><div><label for="pcmBoard">Your board (optional)</label><select id="pcmBoard"></select></div></div><p class="pcm-hint">Physics + Chemistry + Higher Math, added together. Works for marks of 510 and above.</p></div><div id="pcmMsg" class="pcm-card" hidden><p class="pcm-error" id="pcmMsgText"></p></div><div id="pcmResult" class="pcm-card" hidden><div class="pcm-lab">Estimated nationwide position</div><div class="pcm-big" id="pcmLikely">–</div><div class="pcm-note" id="pcmRange"></div><span class="pcm-badge" id="pcmBadge"></span><p class="pcm-note" id="pcmVerdict" style="margin:.5rem 0 0"></p><div class="pcm-grid"><div class="pcm-mini"><span class="pcm-lab">Top percent</span><b id="pcmPct">–</b></div><div class="pcm-mini"><span class="pcm-lab">Your board position</span><b id="pcmBoardRank">–</b></div></div><p class="pcm-note" style="margin-top:.7rem">Estimated BUET top-10,000 line: about <b id="pcmCutLikely"></b> marks (up to <b id="pcmCutWorst"></b> in the worst case).</p><details style="margin-top:.5rem"><summary>Board-by-board breakdown</summary><table class="pcm-table"><thead><tr><th>Board</th><th>Students estimated above you</th></tr></thead><tbody id="pcmRows"></tbody></table></details></div><div class="pcm-card pcm-note"><b>How this works.</b> The estimate uses the board-wise rank chart published by EBR.BD (before re-scrutiny), with Dhaka/Rajshahi interpolation and a Dhaka-shaped model for the other boards. It is unofficial; always verify BUET's published list and circular.</div></div></div></div><div class="nb-detail-overlay" id="nbDetailOverlay" role="dialog" aria-modal="true" aria-labelledby="nbDetailTitle"><div class="nb-detail-modal"><div class="nb-detail-head"><h2 id="nbDetailTitle">Important Notice</h2><button class="nb-detail-close" id="nbDetailClose" type="button" aria-label="Close notice">×</button></div><div class="nb-detail-body" id="nbDetailBody"></div></div></div>
 <div class="req-overlay" id="reqOverlay" role="dialog" aria-modal="true"><div class="req-modal"><div class="req-head"><h2 id="reqTitle">Admission Requirements</h2><button class="req-close" id="reqClose" type="button">×</button></div><div class="req-body" id="reqBody"></div></div></div>
 
@@ -1289,9 +1289,38 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 
 })();</script><script>
 (function(){
-  document.addEventListener('submit', async function(e){
+  var captchaReady=false;
+
+  async function loadCaptcha(){
+    var box=document.getElementById('brCaptchaBox');
+    var img=document.getElementById('brCaptchaImage');
+    var input=document.getElementById('brCaptcha');
+    var status=document.getElementById('brStatus');
+    if(!box||!img)return false;
+
+    box.hidden=false;
+    if(input)input.value='';
+    status.textContent='Loading security verification…';
+
+    try{
+      var res=await fetch('/api/board-result?mode=captcha',{cache:'no-store',credentials:'same-origin'});
+      var data=await res.json();
+      if(!res.ok||!data.ok||!data.image)throw new Error(data.error||'Could not load the security image.');
+      img.src=data.image;
+      captchaReady=true;
+      status.textContent='Enter the digits shown in the image, then check your result.';
+      if(input)input.focus();
+      return true;
+    }catch(err){
+      captchaReady=false;
+      status.textContent=err.message||'Could not load the security verification.';
+      return false;
+    }
+  }
+
+  document.addEventListener('submit',async function(e){
     var form=e.target;
-    if(!form || form.id!=='boardResultForm') return;
+    if(!form||form.id!=='boardResultForm')return;
     e.preventDefault();
     e.stopPropagation();
 
@@ -1309,10 +1338,22 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       year:document.getElementById('brYear').value,
       board:document.getElementById('brBoard').value,
       roll:document.getElementById('brRoll').value.trim(),
-      reg:document.getElementById('brReg').value.trim()
+      reg:document.getElementById('brReg').value.trim(),
+      captcha:(document.getElementById('brCaptcha')||{}).value||''
     };
 
     if(!payload.board){status.textContent='Select your education board.';return;}
+
+    if(!captchaReady){
+      await loadCaptcha();
+      return;
+    }
+
+    if(!payload.captcha.trim()){
+      status.textContent='Enter the security code shown in the image.';
+      document.getElementById('brCaptcha')?.focus();
+      return;
+    }
 
     try{
       status.textContent='Checking your result…';
@@ -1328,14 +1369,14 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       if(!res.ok)throw new Error(json.error||'Result lookup failed.');
 
       function esc(v){
-        return String(v==null?'':v).replace(/[&<>"]/g,function(c){
-          return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];
+        return String(v==null?'':v).replace(/[&<>"]/g,function(ch){
+          return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch];
         });
       }
 
       var result=json.result||{};
       var html='<div class="br-title">Board Result</div>';
-      var fields=[
+      [
         ['Name',result.name],
         ['Roll Number',result.roll],
         ['Registration Number',result.reg],
@@ -1346,9 +1387,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
         ['Institute',result.institute],
         ['Result',result.result],
         ['GPA',result.gpa]
-      ];
-
-      fields.forEach(function(pair){
+      ].forEach(function(pair){
         if(pair[1])html+='<div class="br-row"><span>'+esc(pair[0])+'</span><b>'+esc(pair[1])+'</b></div>';
       });
 
@@ -1367,27 +1406,39 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       status.textContent='Result loaded successfully.';
     }catch(err){
       if(submitBtn)submitBtn.disabled=false;
-      status.textContent=err.message||'Could not load the result right now.';
+      if(/security code|security session/i.test(err.message||'')){
+        captchaReady=false;
+        status.textContent=err.message;
+        await loadCaptcha();
+      }else{
+        status.textContent=err.message||'Could not load the result right now.';
+      }
     }
   },true);
 
   document.addEventListener('click',function(e){
+    var reload=e.target.closest ? e.target.closest('#brCaptchaReload') : null;
+    if(reload){
+      e.preventDefault();
+      loadCaptcha();
+      return;
+    }
+
     var btn=e.target.closest ? e.target.closest('#brPrint') : null;
     if(!btn)return;
     e.preventDefault();
 
     var out=document.getElementById('brOutput');
     if(!out||out.hidden)return;
-
     var w=window.open('','_blank');
     if(!w)return;
-
     w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');
     w.document.close();
     w.focus();
     w.print();
   },true);
 })();
+</script>
 </script>
 </body>
 </html>
