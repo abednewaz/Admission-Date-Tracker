@@ -31,6 +31,16 @@ window.ADMISSION_NOTICES = [
     "summary": "The 2026-27 MBBS/BDS admission test remains scheduled for 18 December 2026. The formal DGME admission circular, including application dates and final eligibility details, was still awaited as of the latest update. The medical test is subject to the High Court order affecting public university and medical admission tests until 31 December, unless the court changes that position."
   },
   {
+    "university": "BUET",
+    "title": "BUET publishes 2026-27 undergraduate admission circular",
+    "date": "2026-11-22",
+    "url": "",
+    "source": "BUET Undergraduate Admission Portal",
+    "sourceUrl": "https://ugadmission.buet.ac.bd/",
+    "notify": true,
+    "summary": "BUET has published the 2026-27 undergraduate admission circular. Applications are scheduled for 1 December 2026 to 7 January 2027, with fee payment until 8 January. The admission test is scheduled for 1 February 2027. Module A is 9:00 AM–12:00 PM and Module B for Architecture is 2:30 PM–4:00 PM. Always verify the final circular and instructions on the official BUET admission portal."
+  },
+  {
     "university": "Bangladesh University of Professionals",
     "title": "BUP revises 2026-27 admission tests to 16, 22 and 23 January 2027",
     "date": "2026-11-21",
