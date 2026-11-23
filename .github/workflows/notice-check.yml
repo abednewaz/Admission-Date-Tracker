@@ -58,13 +58,11 @@ jobs:
 
           def notice_identity(n):
               url = (n.get("url") or "").strip().rstrip("/").lower()
-              summary = " ".join((n.get("summary") or "").split())[:1200]
               return (
                   url,
                   n.get("university") or "",
                   n.get("title") or "",
                   n.get("date") or "",
-                  summary,
               )
 
           old_keys = {notice_identity(n) for n in old}
