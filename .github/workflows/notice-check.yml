@@ -53,20 +53,15 @@ jobs:
           old = parse_notices(old_text)
           new = parse_notices(new_text)
 
-          legacy_baseline = bool(old) and all(not n.get("url") for n in old)
-          if legacy_baseline:
-              print("Established URL baseline for existing notices; skipping duplicate first-run alerts.")
-              fresh = []
-          else:
-              old_keys = {
-                  (n.get("url") or "", n.get("title") or "", n.get("date") or "")
-                  for n in old
-              }
-              fresh = [
-                  n for n in new
-                  if (n.get("url") or "", n.get("title") or "", n.get("date") or "") not in old_keys
-                  and n.get("title")
-              ]
+          old_keys = {
+              (n.get("university") or "", n.get("title") or "", n.get("date") or "")
+              for n in old
+          }
+          fresh = [
+              n for n in new
+              if (n.get("university") or "", n.get("title") or "", n.get("date") or "") not in old_keys
+              and n.get("title")
+          ]
 
           if not fresh:
               print("No newly detected notices.")
