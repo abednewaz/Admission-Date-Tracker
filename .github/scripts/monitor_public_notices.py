@@ -256,7 +256,7 @@ def candidate_urls(seed):
             filtered.append(u)
     return filtered[:MAX_DISCOVERY_PAGES]
 
-def extract_html_items(url, response, university):
+def extract_html_items(url, response, university, follow_links=True):
     soup = BeautifulSoup(response.text, "html.parser")
     page_text = normalize(soup.get_text(" ", strip=True))
     page_date = parse_date(page_text)
@@ -279,6 +279,8 @@ def extract_html_items(url, response, university):
             "notify": True,
             "generatedBy": "official-notice-monitor",
         })
+    if not follow_links:
+        return items, bool(NOTICE_WORDS.search(page_text))
     seen = set()
 
     pdf_budget = 4
@@ -431,7 +433,7 @@ def main():
                     if item:
                         source_items.append(item)
                     continue
-                items, has_notice_text = extract_html_items(url, r, name)
+                items, has_notice_text = extract_html_items(url, r, name, follow_links=(origin(url).lower() == key))
                 notice_pages += int(has_notice_text)
                 source_items.extend(items)
             except Exception:
