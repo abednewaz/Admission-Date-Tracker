@@ -133,16 +133,6 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Home Process Notices Foreign Board Available Seats Login",
-    "date": "2026-12-10",
-    "url": "https://admission.kuet.ac.bd/login",
-    "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Login Login Home Process Notices Foreign Board Available Seats Login Home Process Notices Foreign Board Available Seats Login",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University of Engineering & Technology (KUET)",
     "title": "Download",
     "date": "2026-12-10",
     "url": "https://admission.kuet.ac.bd/notices/1.UG-Admission-2026-Circular.pdf",
@@ -223,16 +213,6 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Jagannath University",
-    "title": "বাংলা ভার্সন",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice",
-    "source": "Jagannath University official source",
-    "summary": "বাংলা ভার্সন বাংলা ভার্সন students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Calculators All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker All Result Checkers SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre News Jobs MCQ & Prep MCQ Solutions Board Question Solutions Lecture Sheets & Notes Free Notes & PDFs Book Library Textbooks & Guides PDF Suggestions Final Exam Suggestions More Online Tools & Converters Articles & Guides About Us Contact Disclaimer বাংলা ভার্সন students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Calculators All Calculators School Education Scientific Calc (100M",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
     "title": "নোটিশ সরকারি বিজ্ঞপ্তি",
     "date": "2026-11-22",
     "url": "https://students.bd/bn/category/notice",
@@ -292,242 +272,22 @@ window.ADMISSION_NOTICES = [
     "generatedBy": "official-notice-monitor"
   },
   {
+    "university": "Jagannath University",
+    "title": "নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22",
+    "date": "2026-11-22",
+    "url": "https://students.bd/bn/notice/bteb-hsc-bmt-vocational-diploma-in-commerce-supplementary-exm-center-list-2026",
+    "source": "Jagannath University official source",
+    "summary": "নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও প",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
     "university": "Khulna University",
     "title": "“১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)”",
     "date": "2026-11-21",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/১ম বর্ষ টার্ম-১ রেজিস্ট্রেশনে র তারিখ প্রসঙ্গে_20260225_0001.pdf",
     "source": "Khulna University official source",
     "summary": "“১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” “১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” 86 “১ম বর্ষ ১ম টার্ম কোর্স রেজিষ্ট্রেশনের তারিখ(মাইগ্রেশন সহ)/Date of Course Registration for 1st Year, 1st Term(with migration)” 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামে",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "“আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/I D Cricket opening 2024_page-0001.jpg",
-    "source": "Khulna University official source",
-    "summary": "“আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ “আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ 407 “আন্তঃডিপ্লিন ক্রিকেট প্রতিযোগিতা-২০২৪” উদ্বোধনী নোটিশ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "“Notice for the Award of Educational Scholarships (Permanent Residents of Chattogram District)/শিক্ষা বৃত্তি প্রদানের বিজ্ঞপ্তি (চট্টগ্রাম জেলার স্থায়ী অধিবাসী)”",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/chattogram district.pdf",
-    "source": "Khulna University official source",
-    "summary": "“Notice for the Award of Educational Scholarships (Permanent Residents of Chattogram District)/শিক্ষা বৃত্তি প্রদানের বিজ্ঞপ্তি (চট্টগ্রাম জেলার স্থায়ী অধিবাসী)” “Notice for the Award of Educational Scholarships (Permanent Residents of Chattogram District)/শিক্ষা বৃত্তি প্রদানের বিজ্ঞপ্তি (চট্টগ্রাম জেলার স্থায়ী অধিবাসী)” 112 “Notice for the Award of Educational Scholarships (Permanent Residents of Chattogram District)/শিক্ষা বৃত্তি প্রদানের বিজ্ঞপ্তি (চট্টগ্রাম জেলার স্থায়ী অধিবাসী)” 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Ad",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "“Notice Inviting Tenders/দরপত্র আহবান এর বিজ্ঞপ্তি”",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/দরপত্র আহবান এর বিজ্ঞপ্তি.pdf",
-    "source": "Khulna University official source",
-    "summary": "“Notice Inviting Tenders/দরপত্র আহবান এর বিজ্ঞপ্তি” “Notice Inviting Tenders/দরপত্র আহবান এর বিজ্ঞপ্তি” 111 “Notice Inviting Tenders/দরপত্র আহবান এর বিজ্ঞপ্তি” 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২৬ এর বিজ্",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "“Eligible List Evening MBA Program , Admission Session 2025-2026/ইভনিং এমবিএ প্রোগ্রামের জন্য যোগ্য প্রার্থীর তালিকা, ভর্তি সেশন ২০২৫–২০২৬”",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/Eligible List Evening MBA Program (Admission Session 2025-2026).pdf",
-    "source": "Khulna University official source",
-    "summary": "“Eligible List Evening MBA Program , Admission Session 2025-2026/ইভনিং এমবিএ প্রোগ্রামের জন্য যোগ্য প্রার্থীর তালিকা, ভর্তি সেশন ২০২৫–২০২৬” “Eligible List Evening MBA Program , Admission Session 2025-2026/ইভনিং এমবিএ প্রোগ্রামের জন্য যোগ্য প্রার্থীর তালিকা, ভর্তি সেশন ২০২৫–২০২৬” 110 “Eligible List Evening MBA Program , Admission Session 2025-2026/ইভনিং এমবিএ প্রোগ্রামের জন্য যোগ্য প্রার্থীর তালিকা, ভর্তি সেশন ২০২৫–২০২৬” 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "৭ম সমাবর্তনের জন্য শিক্ষার্থীদের রেজিস্ট্রেশন সংক্রান্ত",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/Forwarding-ICT-Cell.pdf",
-    "source": "Khulna University official source",
-    "summary": "৭ম সমাবর্তনের জন্য শিক্ষার্থীদের রেজিস্ট্রেশন সংক্রান্ত ৭ম সমাবর্তনের জন্য শিক্ষার্থীদের রেজিস্ট্রেশন সংক্রান্ত 20 ৭ম সমাবর্তনের জন্য শিক্ষার্থীদের রেজিস্ট্রেশন সংক্রান্ত 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/কোর্স রেজিস্ট্রেশনের তারিখ_20250123_0001.pdf",
-    "source": "Khulna University official source",
-    "summary": "৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ ৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ 279 ৭ম পর্যায়ে ভর্তি ও মাইগ্রেশনকৃত শিক্ষার্থীদের কোর্স রেজিস্ট্রেশনের তারিখ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 202",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত)",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি_20260406_0001.pdf",
-    "source": "Khulna University official source",
-    "summary": "২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) ২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) 77 ২৬ ব্যাচের কোর্স রেজিস্টেশনের পুন বিজ্ঞপ্তি(০৭/০৪/২০২৬ হতে ১২/০৪/২০২৬ পর্যন্ত) 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Prog",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "২৪-২০ ব্যাচের বিভিন্ন টার্মের একাডেমিক ক্যালেন্ডার",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/২৪-২০ ব্যাচের বিভিন্ন টার্মের একাডেমিক ক্যালেন্ডার.pdf",
-    "source": "Khulna University official source",
-    "summary": "২৪-২০ ব্যাচের বিভিন্ন টার্মের একাডেমিক ক্যালেন্ডার ২৪-২০ ব্যাচের বিভিন্ন টার্মের একাডেমিক ক্যালেন্ডার 308 ২৪-২০ ব্যাচের বিভিন্ন টার্মের একাডেমিক ক্যালেন্ডার 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২৬ এর বিজ্ঞপ্",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "২৪ ব্যাচের সংশোধিত একাডেমিক ক্যালেন্ডার I",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/একাডেমিক ক্যালেন্ডার_20250130_0001.pdf",
-    "source": "Khulna University official source",
-    "summary": "২৪ ব্যাচের সংশোধিত একাডেমিক ক্যালেন্ডার I ২৪ ব্যাচের সংশোধিত একাডেমিক ক্যালেন্ডার I 274 ২৪ ব্যাচের সংশোধিত একাডেমিক ক্যালেন্ডার I 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২৬ এর বিজ্ঞপ্তি ও আবেদন ফরম 11 Admission",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত.pdf",
-    "source": "Khulna University official source",
-    "summary": "২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত ২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত 472 ২৩ ব্যাচে ভর্তিকৃত শিক্ষার্থীদের মূল কাগজপত্র জমা দেয়া সংক্রান্ত 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Applic",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Khulna University",
-    "title": "২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ",
-    "date": "2026-11-21",
-    "url": "https://ku.ac.bd/uploads/noticeboardfiles/22-23.pdf",
-    "source": "Khulna University official source",
-    "summary": "২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ ২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ 476 ২২, ২৩ ব্যাচের ছাত্রীদের গনরুমে সিট প্রাপ্তির নোটিশ 1 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 MBA in HRM Admission Notice & application form for the 2026-2027 session 3 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 MBA (Regular) Program Admission 2026-27(Circular and Application Form) 10 মধুসূদন পদক ২০২৬ এর বিজ্",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Selection Procedure",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/information/selection-process",
-    "source": "Islamic University of Technology official source",
-    "summary": "Selection Procedure Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Pa",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Selection Procedure",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/international-students/selection-process",
-    "source": "Islamic University of Technology official source",
-    "summary": "Selection Procedure Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance International Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Scholarships Distribution",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/information/scholarship",
-    "source": "Islamic University of Technology official source",
-    "summary": "Scholarships Distribution Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Scholarships Distribution",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/international-students/scholarship",
-    "source": "Islamic University of Technology official source",
-    "summary": "Scholarships Distribution Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance International Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Resources",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/resources",
-    "source": "Islamic University of Technology official source",
-    "summary": "Resources Resources Home Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ International Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD Fees, Payment Sc",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Offered Programs",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/information/offered-programmes",
-    "source": "Islamic University of Technology official source",
-    "summary": "Offered Programs Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Sch",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Offered Programs",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/international-students/offered-programmes",
-    "source": "Islamic University of Technology official source",
-    "summary": "Offered Programs Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance International Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Eng",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Minimum Entry Requirements",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/information/entry-requirements",
-    "source": "Islamic University of Technology official source",
-    "summary": "Minimum Entry Requirements Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Educ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Minimum Entry Requirements",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/international-students/entry-requirements",
-    "source": "Islamic University of Technology official source",
-    "summary": "Minimum Entry Requirements Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full OIC Scholarship) BSc Engineering (Partial Scholarship) BSc Engineering and BBA (Without Scholarship) Technical Education MSc Engineering/PhD Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance International Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering (Full O",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Islamic University of Technology Admission 2025-2026",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/",
-    "source": "Islamic University of Technology official source",
-    "summary": "Islamic University of Technology Admission 2025-2026 Islamic University of Technology Admission 2025-2026 Home Host Country Students General Information Offered Programs Minimum Entry Requirements Scholarships Distribution Fees, Payment Schedule and Payment Method Selection Procedure Facilities How to Apply FAQ International Students General Information Offered Programs Minimum Entry Requirements Scholarships Distribution Fees, Payment Schedule and Payment Method Selection Procedure Facilities RoadMap Resources Notices Login Islamic University of Technology Admission 2025-2026 Home Host Country Students General Information Offered Programs Minimum Entry Requirements Scholarships Distribution Fees, Payment Schedule and Payment Method Selection Procedure Facilities How to Apply FAQ International Students General Information Offered Programs Minimum Entry Requirements Scholarships Distribution Fees, Payment Schedule and Payment Method Selection Procedure Facilities RoadMap Resources Notices Login Islamic University of Technology ADMISSION 2025-2026 Islamic University of Technology Admission 2025-2026 Home Host Country Students General Information Offered Programs BSc Engineering, BBA ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "How to Apply",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/information/howtoapply",
-    "source": "Islamic University of Technology official source",
-    "summary": "How to Apply How to Apply General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Tec",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Islamic University of Technology",
-    "title": "Host Country Students",
-    "date": "2026-11-13",
-    "url": "https://admission.iutoic-dhaka.edu/notice",
-    "source": "Islamic University of Technology official source",
-    "summary": "Host Country Students Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Selection Procedure BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Facilities Accommodation Foods Medical Facilities Pocket Allowance How to Apply FAQ Home Host Country Students General Information Offered Programs BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Minimum Entry Requirements BSc Engineering and BBA Technical Education MSc Engineering/PhD MSc in Technical Education Scholarships Distribution BSc Engineering, BBA Technical Education MSc Engineering/PhD MSc in Technical Education Fees, Payment Schedule and Payment Method BSc Engineering, BBA Technical Education MSc Eng",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
@@ -539,6 +299,76 @@ window.ADMISSION_NOTICES = [
     "source": "students.bd",
     "summary": "Quick Summary Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Directorate General of Medical Education (DGME) Published Date 2026-11-19 Application Window 2026-11-22 — 2026-12-06 TL;DR: The Directorate General of Medical Education (DGME) has published the admission notice for candidates preliminarily selected in 23 government IHTs (3,619 seats) and 7 government MATS (664 seats) for the 2026-2027 academic session. Selected students must complete their admission formalities along with required documents and migration forms between November 22, 2026, and December 6, 2026. Quick Summary Notice Summary & Overview The Directorate General of Medical Education (DGME) has published the admission notice for candidates preliminarily selected in 23 government IHTs (3,619 seats) and 7 government MATS (664 seats) for the 2026-2027 academic session. Selected students must complete their admission formalities along with required documents and migration forms between November 22, 2026, and December 6, 2026. Key Points Read the full notice carefully Check application deadline DGME Official Website & Resu",
     "notify": true
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country)",
+    "date": "2026-10-30",
+    "url": "https://admission.iutoic-dhaka.edu/notice/opencall-instruction-2",
+    "source": "Islamic University of Technology official source",
+    "summary": "Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Ha",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Notification of 3rd call for the Female Halls of Residence",
+    "date": "2026-10-30",
+    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Registration Notification 3rd call.pdf",
+    "source": "Islamic University of Technology official source",
+    "summary": "Notification of 3rd call for the Female Halls of Residence Notification of 3rd call for the Female Halls of Residence 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registr",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Notification of 2nd call for the Male Halls of Residence",
+    "date": "2026-10-26",
+    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Hall Registration Schedule with Allocation of seat-2nd Call A.Y 2025-26.pdf",
+    "source": "Islamic University of Technology official source",
+    "summary": "Notification of 2nd call for the Male Halls of Residence Notification of 2nd call for the Male Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registration ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Notification of 2nd call for the Female Halls of Residence",
+    "date": "2026-10-22",
+    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Registration Notification 2nd call.pdf",
+    "source": "Islamic University of Technology official source",
+    "summary": "Notification of 2nd call for the Female Halls of Residence Notification of 2nd call for the Female Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 16 October, 2026 Registr",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Notice for Orientation Programme of Newly Admitted First Year Students (Revised)",
+    "date": "2026-10-19",
+    "url": "https://admission.iutoic-dhaka.edu/assets/admission/Orientation for 2025-2026.pdf",
+    "source": "Islamic University of Technology official source",
+    "summary": "Notice for Orientation Programme of Newly Admitted First Year Students (Revised) Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call for the Male Halls of Residence 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of t",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country)",
+    "date": "2026-10-19",
+    "url": "https://admission.iutoic-dhaka.edu/notice/admission/migration-eighth",
+    "source": "Islamic University of Technology official source",
+    "summary": "Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 19 October, 2026 Eighth Migration List for admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (Revised) 16 October, 2026 Notification of 1st call ",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Islamic University of Technology",
+    "title": "Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised)",
+    "date": "2026-10-16",
+    "url": "https://admission.iutoic-dhaka.edu/assets/admission/registration-revised.pdf",
+    "source": "Islamic University of Technology official source",
+    "summary": "Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) 16 October, 2026 Registration Instruction for the newly admitted B.Sc. Engineering and BBA-TM students in the academic year 2025-2026 (Host Country) (Revised) 13 November, 2026 Notification of 6th call for the Female Halls of Residence 10 November, 2026 Notification of 3rd call for the Male Halls of Residence 10 November, 2026 Notification of 5th call for the Female Halls of Residence 6 November, 2026 Notification of 4th call for the Female Halls of Residence 30 October, 2026 Second Open Call for Admission in B.Sc. Engineering and BBA-TM programmes of the academic year 2025-2026 (Host Country) 30 October, 2026 Notification of 3rd call for the Female Halls of Residence 26 October, 2026 Notification of 2nd call for the Male Halls of Residence 22 October, 2026 Notification of 2nd call for the Female Halls of Residence 19 October, 2026 Notice for Orientation Programme of Newly Admitted First Year Students (",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
   },
   {
     "university": "Rajshahi University of Engineering & Technology",
@@ -597,6 +427,176 @@ window.ADMISSION_NOTICES = [
     "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/334",
     "source": "GST Cluster — 20 Public Universities official source",
     "summary": "২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More 05 Jan 2026 05 Jan 2026, 01:56 ২০২৫-২৬ শিক্ষাবর্ষে ১ম বর্ষ স্নাতক (সম্মান) শ্রেনিতে ভর্তি সংক্রান্ত তথ্যবলী নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ে ২০২৫-২৬ শিক্ষাবর্ষে ইউনিট ভিত্তিক বিভিন্ন বিভাগের অধীনে ১ম বর্ষ স্নাতক (সম্মান) শ্রেণিতে ভর্তি... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ",
+    "date": "2026-05-06",
+    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/336",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More 06 May 2026 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ",
+    "date": "2026-05-06",
+    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/336",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More 06 May 2026 06 May 2026, 03:20 ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন সংক্রান্ত নোটিশ ২০২৫-২০২৬ শিক্ষাবর্ষে GST গুচ্ছভুক্ত ২০টি পাবলিক বিশ্ববিদ্যালয়ে বিভাগ পছন্দক্রম প্রদানসহ ভর্তির আবেদন ০৬/০৫/২০২৬ তারিখ দুপুর ১২:৩০টা হতে ১৩... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/352",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More 16 Nov 2026 New 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/352",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More 16 Nov 2026 New 16 Nov 2026, 09:33 স্নাতকোত্তর (মাস্টার্স) - মাইক্রোবায়োলজি বিভাগ ভর্তির সংক্রান্ত জরুরী বিজ্ঞপ্তি সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের মাইক্রোবায়োলজি বিভাগে ২০২৫-২৬ শিক্ষাবর্ষে মাস্ট... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/344",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More 20 Oct 2026 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/344",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More 20 Oct 2026 20 Oct 2026, 13:23 সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সমাবর্তন সংক্রান্ত বিজ্ঞপ্তি সম্প্রতি সামাজিক যোগাযোগমাধ্যমে নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ২৪ জানুয়ারি ২০২৭ তারিখে অনুষ্ঠ... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "সমাবর্তন বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://nstu.edu.bd/services/ViewNoticeDetails/340",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "সমাবর্তন বিজ্ঞপ্তি সমাবর্তন বিজ্ঞপ্তি 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More 12 Oct 2026 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "GST Cluster — 20 Public Universities",
+    "title": "সমাবর্তন বিজ্ঞপ্তি",
+    "date": "2026-05-06",
+    "url": "https://www.nstu.edu.bd/services/ViewNoticeDetails/340",
+    "source": "GST Cluster — 20 Public Universities official source",
+    "summary": "সমাবর্তন বিজ্ঞপ্তি সমাবর্তন বিজ্ঞপ্তি 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More 12 Oct 2026 12 Oct 2026, 07:56 সমাবর্তন বিজ্ঞপ্তি কর্তৃপক্ষের অনুমোদনক্রমে সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২৪ জানুয়ারি ২০২৭ নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ৩... Read More",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "date": "2026-01-25",
+    "url": "https://admission.ruet.ac.bd/notices/result",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "result result result 2026-01-25 04:45 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "prospectus",
+    "date": "2026-01-03",
+    "url": "https://admission.ruet.ac.bd/notices/prospectus",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "prospectus prospectus prospectus 2025-12-06 07:06 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "eligible-ls",
+    "date": "2026-01-03",
+    "url": "https://admission.ruet.ac.bd/notices/eligible-ls",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "eligible-ls eligible-ls eligible-ls 2026-01-03 12:18 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "admission-circular-for-ruet-2025-2026-session.pdf",
+    "date": "2026-01-03",
+    "url": "https://admission.ruet.ac.bd/notices/admission-circular-for-ruet-2025-2026-session.pdf",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "admission-circular-for-ruet-2025-2026-session.pdf admission-circular-for-ruet-2025-2026-session.pdf admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "Parent Directory",
+    "date": "2026-01-03",
+    "url": "https://admission.ruet.ac.bd/",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "Parent Directory Parent Directory Parent Directory Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Rajshahi University of Engineering & Technology",
+    "title": "2024-2025",
+    "date": "2026-01-03",
+    "url": "https://admission.ruet.ac.bd/notices/2024-2025",
+    "source": "Rajshahi University of Engineering & Technology official source",
+    "summary": "2024-2025 2024-2025 2024-2025 2025-11-26 06:17 - Name Last Modified Size Parent Directory 2024-2025 2025-11-26 06:17 - eligible-ls 2026-01-03 12:18 - obtained-dept 2026-05-08 04:34 - orientation 2026-05-08 05:25 - prospectus 2025-12-06 07:06 - result 2026-01-25 04:45 - admission-circular-for-ruet-2025-2026-session.pdf 2025-11-26 06:19 826k",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "University of Rajshahi Undergraduate Admission 2026-2027",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/",
+    "source": "University of Rajshahi official source",
+    "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Registration",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/registration",
+    "source": "University of Rajshahi official source",
+    "summary": "Registration Login Registration Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ ২০২৫ ও ২০২৬ সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরীক্ষায় (এইচএসসি সমমান নির্ধারণ কমিটি কর্তৃক অনুমোদন সাপেক্ষে) উত্তীর্ণ শিক্ষার্থীরা ভর্তি পরীক্ষার জন্য আবেদন করতে পারবে। বিএফএ (প্রাক) ডিগ্রিপ্রাপ্ত শিক্ষার্থীদের আবেদনের সময় মার্কশিট আপলোড করতে হবে। কারিগরী শিক্ষা বোর্ডের অধীন কারিগরী শিক্ষা প্রতিষ্ঠানসমূহ থেকে ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং পাশ করা শিক্ষার্থীরাও সংশ্লিষ্ট ইউনিটে আবেদন করতে পারবে, তবে তাদের প্রাপ্ত জিপিএ ৫.০০ স্কেলে নির্ধারিত হবে। মানবিক শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.০০ সহ মোট জিপিএ ৬.৫০ পেতে হবে। বাণিজ্য শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.০০ সহ মোট জিপিএ ৬.৫০ পেতে হবে। বিজ্ঞান শাখা থেকে উত্তীর্ণ আবেদনকারীদের এসএসসি/সমমান ও এইচএসসি/সমমান উভয় পরীক্ষায় (৪র্থ বিষয়সহ) ন্যূনতম জিপিএ ৩.৫০ সহ মোট জিপিএ ৭.৫০ পেতে হবে। জিসিই O লেভেল পরীক্ষায় ৫টি বিষয়ে এবং A লেভেল পরীক্ষায় অন্তত ২টি বিষয়ে উত্তীর্ণ হতে হবে এবং উভয় লেভেলে মোট ৭টি বিষয়ের মধ্যে ৪টি বিষয়",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "University of Rajshahi",
+    "title": "Photo/Selfie Instructions",
+    "date": "",
+    "url": "https://admission.ru.ac.bd/student/photo-selfie-instructions",
+    "source": "University of Rajshahi official source",
+    "summary": "Photo/Selfie Instructions Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   }
