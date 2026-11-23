@@ -1,6 +1,31 @@
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET || process.env.SUPABASE_SECRET_KEY_2;
 
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT = 5;
+const rateStore = globalThis.__adtReviewRateStore || (globalThis.__adtReviewRateStore = new Map());
+
+function requestIp(req) {
+  const forwarded = req.headers['x-forwarded-for'];
+  return String(forwarded || req.headers['x-real-ip'] || 'unknown').split(',')[0].trim().slice(0, 80);
+}
+
+function allowRequest(req) {
+  const key = requestIp(req);
+  const now = Date.now();
+  const recent = (rateStore.get(key) || []).filter((ts) => now - ts < RATE_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) return false;
+  recent.push(now);
+  rateStore.set(key, recent);
+  if (rateStore.size > 2000) {
+    for (const [ip, timestamps] of rateStore) {
+      if (!timestamps.some((ts) => now - ts < RATE_WINDOW_MS)) rateStore.delete(ip);
+    }
+  }
+  return true;
+}
+
+
 async function supabaseRequest(path, options = {}) {
   if (!SUPABASE_URL || !SUPABASE_KEY) throw new Error('Supabase environment variables are missing.');
   const res = await fetch(SUPABASE_URL + '/rest/v1/' + path, {
@@ -33,6 +58,7 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'POST') {
+      if (!allowRequest(req)) return res.status(429).json({ error: 'Too many reviews submitted. Please try again later.' });
       const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
       const rating = Number(body.rating);
       const review = String(body.review || '').trim();
