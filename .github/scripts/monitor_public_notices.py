@@ -394,6 +394,26 @@ def notice_key(n):
         "manual", str(n.get("university","")).lower(), str(n.get("title","")).lower(), str(n.get("date",""))
     )
 
+def valid_external_notice(n):
+    url = str(n.get("url", ""))
+    if not url:
+        return True
+    host = urlparse(url).netloc.lower()
+    if host != "students.bd" and not host.endswith(".students.bd"):
+        return True
+    title = normalize(n.get("title", "")).lower()
+    name = normalize(n.get("university", "")).lower()
+    aliases = {
+        "buet": ("buet", "বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়", "bangladesh university of engineering"),
+        "jagannath university": ("jagannath", "জগন্নাথ", "jnu", "জবি"),
+        "gst cluster — 20 public universities": ("gst", "গুচ্ছ", "general, science & technology"),
+    }
+    terms = aliases.get(name)
+    if terms:
+        return any(term.lower() in title for term in terms)
+    significant = [x for x in re.split(r"[^a-z0-9অ-হ]+", name) if len(x) >= 4]
+    return bool(significant and any(x in title for x in significant))
+
 def main():
     rows = load_rows()
     sources = build_sources(rows)
@@ -486,6 +506,7 @@ def main():
     auto = {
         k: v for k, v in auto.items()
         if is_relevant_notice(v.get("title",""), v.get("summary",""))
+        and valid_external_notice(v)
     }
     merged = manual + sorted(auto.values(), key=lambda x: (x.get("date",""), x.get("university",""), x.get("title","")), reverse=True)
     merged = merged[:60]
