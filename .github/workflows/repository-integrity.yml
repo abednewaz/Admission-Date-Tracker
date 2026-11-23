@@ -92,10 +92,7 @@ jobs:
             'medical-data.js',
             'notices.js',
             'system-status.js',
-            'sw.js',
-            'api/push-broadcast.js',
-            'api/push-daily.js',
-            'api/push-subscribe.js'
+            'sw.js'
           ];
           for (const file of files) {
             const source = fs.readFileSync(file, 'utf8');
