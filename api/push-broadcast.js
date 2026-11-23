@@ -12,7 +12,10 @@ const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY;
 const GITHUB_OIDC_ISSUER = 'https://token.actions.githubusercontent.com';
 const GITHUB_OIDC_AUDIENCE = 'https://admissiontracker.site';
 const GITHUB_REPOSITORY = 'abednewaz/Admission-Date-Tracker';
-const GITHUB_WORKFLOW_PATH = '.github/workflows/notice-check.yml';
+const GITHUB_WORKFLOW_PATHS = new Set([
+  '.github/workflows/notice-check.yml',
+  '.github/workflows/admission-date-check.yml'
+]);
 
 const josePromise = import('jose');
 const githubJwksPromise = josePromise.then(({ createRemoteJWKSet }) =>
@@ -37,8 +40,10 @@ async function verifyGitHubOidcToken(token) {
     if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch' && payload.event_name !== 'push') return false;
 
     const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
-    const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
-    if (!String(workflowRef).endsWith(expectedWorkflowSuffix)) return false;
+    const matchesWorkflow = [...GITHUB_WORKFLOW_PATHS].some((path) =>
+      String(workflowRef).endsWith(path + '@refs/heads/main')
+    );
+    if (!matchesWorkflow) return false;
 
     return true;
   } catch {
