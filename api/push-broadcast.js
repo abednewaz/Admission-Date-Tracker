@@ -34,7 +34,7 @@ async function verifyGitHubOidcToken(token) {
 
     if (payload.repository !== GITHUB_REPOSITORY) return false;
     if (payload.ref !== 'refs/heads/main') return false;
-    if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
+    if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch' && payload.event_name !== 'push') return false;
 
     const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
     const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
