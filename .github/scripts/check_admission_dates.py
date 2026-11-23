@@ -950,15 +950,29 @@ def update_court_status():
             relevant.append(item)
 
         status_text = path.read_text(encoding="utf-8") if path.exists() else ""
-        current_match = re.search(r"window\.ADMISSION_SYSTEM_STATUS\s*=\s*(\{.*\});\s*$", status_text, re.S)
-        current = json.loads(current_match.group(1)) if current_match else {
+        def read_status_value(name, default=None):
+            pattern = r"\\b" + re.escape(name) + r"\\s*:\\s*(?:\"([^\"]*)\"|(true|false))"
+            match = re.search(pattern, status_text)
+            if not match:
+                return default
+            if match.group(2) is not None:
+                return match.group(2) == "true"
+            return match.group(1)
+
+        current = {
             "courtAdmissionSuspension": {
-                "active": True,
-                "effectiveFrom": "2026-11-18",
-                "through": "2026-12-31",
+                "active": read_status_value("active", True),
+                "effectiveFrom": read_status_value("effectiveFrom", "2026-11-18"),
+                "through": read_status_value("through", "2026-12-31"),
+                "label": read_status_value("label", "Suspended by High Court — Supreme Court appeal pending"),
+                "shortLabel": read_status_value("shortLabel", "Admission test suspended — court order"),
+                "source": read_status_value("source", "The Daily Star"),
+                "sourceUrl": read_status_value("sourceUrl", ""),
+                "appealStatus": read_status_value("appealStatus", "Supreme Court appeal status pending"),
+                "lastVerified": read_status_value("lastVerified", ""),
             }
         }
-        court = current.setdefault("courtAdmissionSuspension", {})
+        court = current["courtAdmissionSuspension"]
         old_active = bool(court.get("active", True))
         old_status = str(court.get("appealStatus", ""))
 
