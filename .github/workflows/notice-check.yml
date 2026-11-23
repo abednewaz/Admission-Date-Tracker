@@ -2,6 +2,9 @@ name: Admission Notice Auto Checker
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - notices.js
   schedule:
     # Bangladesh local time: every hour at minute 34.
     - cron: "34 * * * *"
