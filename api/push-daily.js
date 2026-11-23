@@ -74,15 +74,15 @@ function daysBetween(from, to) {
   return Math.round((to.getTime() - from.getTime()) / 86400000);
 }
 
-function isCourtSuspended(e) {
-  const s = e && e.systemStatus && e.systemStatus.courtAdmissionSuspension;
+function isCourtSuspended(e, systemStatus) {
+  const s = systemStatus && systemStatus.courtAdmissionSuspension;
   if (!s || !s.active || !e.examDate) return false;
   if (String(e.admissionType || '').includes('Private')) return false;
   return String(e.examDate) >= String(s.effectiveFrom || '9999-99-99') &&
     String(e.examDate) <= String(s.through || '0000-00-00');
 }
 
-function chooseNextExam(exams, universityName, today) {
+function chooseNextExam(exams, universityName, today, systemStatus) {
   const rows = exams
     .filter((e) =>
       e &&
@@ -90,7 +90,7 @@ function chooseNextExam(exams, universityName, today) {
       e.examDate &&
       e.examDate !== 'Not published yet' &&
       e.examDate !== 'Better check Yourself' &&
-      !isCourtSuspended(e)
+      !isCourtSuspended(e, systemStatus)
     )
     .map((e) => ({ e, date: parseDate(e.examDate) }))
     .filter((x) => x.date && x.date.getTime() >= today.getTime())
@@ -120,6 +120,7 @@ export default async function handler(req, res) {
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const exams = Array.isArray(body?.exams) ? body.exams : [];
+    const systemStatus = body?.systemStatus || {};
     if (!exams.length) return json(res, 400, { error: 'Exam data is required' });
 
     webpush.setVapidDetails(
@@ -166,7 +167,7 @@ export default async function handler(req, res) {
         });
       } else {
         for (const universityName of marked) {
-          const next = chooseNextExam(exams, universityName, today);
+          const next = chooseNextExam(exams, universityName, today, systemStatus);
           if (!next) continue;
 
           const days = daysBetween(today, next.date);
