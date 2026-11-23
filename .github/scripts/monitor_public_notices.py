@@ -21,6 +21,10 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9,bn;q=0.8",
 }
 SOURCE_FALLBACKS = {
+    "ku.ac.bd": [
+        "https://ku.ac.bd/notices",
+        "https://ku.ac.bd/all-news",
+    ],
     "admission.jnu.ac.bd": [
         "https://www.admission.jnu.ac.bd/",
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/",
