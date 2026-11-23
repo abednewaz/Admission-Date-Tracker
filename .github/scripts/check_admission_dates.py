@@ -979,10 +979,10 @@ def update_court_status():
         outcome = None
         for item in relevant:
             blob = (item.get("title", "") + " " + item.get("description", "")).lower()
-            if re.search(r"stay granted|order stayed|suspension lifted|order set aside|order quashed|tests can proceed|tests may proceed|appeal allowed", blob):
+            if re.search(r"stay granted|order stayed|suspension lifted|order set aside|order quashed|tests can proceed|tests may proceed|appeal allowed|স্থগিতাদেশ বাতিল|আদেশ স্থগিত|পরীক্ষা অনুষ্ঠিত হবে", blob):
                 outcome = ("inactive", item)
                 break
-            if re.search(r"no stay|stay denied|stay rejected|suspension remains|remains in effect|order remains|order upheld|appeal dismissed|appeal rejected", blob):
+            if re.search(r"no stay|stay denied|stay rejected|suspension remains|remains in effect|order remains|order upheld|appeal dismissed|appeal rejected|স্থগিতাদেশ বহাল|আদেশ বহাল|স্থগিতই থাক|আপিল খারিজ", blob):
                 outcome = ("active", item)
                 break
 
