@@ -7,7 +7,8 @@ window.ADMISSION_NOTICES = [
     "source": "BSS / Dhaka Tribune",
     "sourceUrl": "https://www.dhakatribune.com/bangladesh/education/425131/no-stay-on-hc-order-halting-public-university",
     "notify": true,
-    "summary": "The Appellate Division scheduled 23 November 2026 to hear the state appeal against the High Court order suspending public university admission tests until 31 December. The chamber court did not stay the High Court order. This notice records the hearing status only; Admission Tracker will update the admission dates after a verified court decision."
+    "summary": "The Appellate Division scheduled 23 November 2026 to hear the state appeal against the High Court order suspending public university admission tests until 31 December. The chamber court did not stay the High Court order. Latest check: 23 November 2026, 10:19 AM Bangladesh time. No verified final outcome of the full-bench hearing had been published at that check time. Admission Tracker will update the admission dates after a verified court decision.",
+    "lastChecked": "2026-11-23T10:19:00+06:00"
   },
   {
     "university": "BUET",
