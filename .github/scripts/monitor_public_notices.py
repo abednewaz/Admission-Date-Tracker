@@ -32,6 +32,9 @@ SOURCE_FALLBACKS = {
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/b286beede20ebe41dad7d5854296a64321c2c2ab.jsp",
         "https://students.bd/en/notice/jagannath-university-undergraduate-admission-circular-2026-2027",
     ],
+    "ugadmission.buet.ac.bd": [
+        "https://students.bd/admission/buet-admission",
+    ],
     "gstadmission.ac.bd": [
         "https://nstu.edu.bd/services/viewNotice",
         "https://www.nstu.edu.bd/services/viewNotice",
@@ -56,21 +59,26 @@ EXCLUDE_NON_UNDERGRAD = re.compile(
 )
 
 def is_relevant_notice(title, summary=""):
-    blob = normalize(f"{title} {summary}")
+    title_text = normalize(title)
+    summary_text = normalize(summary)
+    blob = f"{title_text} {summary_text}"
     current_cycle = re.search(
         r"2026\s*[-–/]\s*2027|2026\s*[-–/]\s*27|২০২৬\s*[-–/]\s*২০২৭|২০২৬\s*[-–/]\s*২৭",
         blob, re.I
     )
     if not current_cycle:
         return False
-    if not ADMISSION_ONLY.search(blob):
+    title_has_admission = bool(ADMISSION_ONLY.search(title_text))
+    title_has_notice = bool(re.search(r"notice|circular|বিজ্ঞপ্তি|নোটিশ", title_text, re.I))
+    summary_has_admission = bool(re.search(r"admission|undergraduate|ভর্তি|ভর্তি পরীক্ষা|স্নাতক|সম্মান|১ম বর্ষ", summary_text, re.I))
+    if not title_has_admission and not (title_has_notice and summary_has_admission):
         return False
-    if EXCLUDE_NON_UNDERGRAD.search(blob) and not re.search(
+    if EXCLUDE_NON_UNDERGRAD.search(title_text) and not re.search(
         r"undergraduate|1st year|first year|honours|স্নাতক|সম্মান|১ম বর্ষ|ভর্তি পরীক্ষা",
-        blob, re.I
+        title_text, re.I
     ):
         return False
-    if re.search(r"parent directory|name\s+last\s+modified|^prospectus$|^registration$|^resources$|^selection procedure$", blob, re.I):
+    if re.search(r"parent directory|name\s+last\s+modified|^prospectus$|^registration$|^resources$|^selection procedure$|^home(?:\s+admission\s+notices)?$", title_text, re.I):
         return False
     return True
 
