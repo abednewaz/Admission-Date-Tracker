@@ -65,6 +65,7 @@ jobs:
               if (n.get("university") or "", n.get("title") or "", n.get("date") or "") not in old_keys
               and n.get("title")
               and n.get("notify", True)
+              and n.get("generatedBy") != "admission-date-check"
           ]
 
           if not fresh:
