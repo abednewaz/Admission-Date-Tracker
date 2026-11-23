@@ -1367,12 +1367,14 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 
   document.addEventListener('click',function(e){
     var reload=e.target.closest ? e.target.closest('#brCaptchaReload') : null;
-    if(reload){
-      e.preventDefault();
-      var form=document.getElementById('boardResultForm');
-      if(form)form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
-      return;
-    }
+    if(!reload)return;
+    e.preventDefault();
+    var box=document.getElementById('brCaptchaBox');
+    if(box)box.hidden=true;
+    var form=document.getElementById('boardResultForm');
+    if(form)form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
+  },true);
+
   document.addEventListener('click',function(e){
     var btn=e.target.closest ? e.target.closest('#brPrint') : null;
     if(!btn) return;
