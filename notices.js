@@ -220,63 +220,57 @@ window.ADMISSION_NOTICES = [
     "notify": false
   },
   {
-    "university": "BUET",
-    "title": "BUET publishes 2026-27 undergraduate admission circular",
-    "date": "2026-11-22",
-    "url": "",
-    "source": "BUET Undergraduate Admission Portal",
-    "sourceUrl": "https://ugadmission.buet.ac.bd/",
-    "notify": true,
-    "summary": "BUET published the 2026-27 undergraduate admission circular on 22 November 2026. Applications open on 1 December 2026 and close on 7 January 2027, with fee payment until 8 January. The admission test is scheduled for 1 February 2027. Module A is 9:00 AM–12:00 PM and Module B for Architecture is 2:30 PM–4:00 PM. Verify the official BUET admission portal for final instructions."
+    "university": "Medical Admission",
+    "title": "DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
+    "source": "students.bd",
+    "summary": "DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) Published: 2026-11-19 Share Quick Summary Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Directorate General of Medical Education (DGME) Published Date 2026-11-19 Applica",
+    "notify": false
   },
   {
     "university": "Medical Admission",
-    "title": "DGME keeps MBBS/BDS admission test on 18 December; circular awaited",
-    "date": "2026-11-22",
-    "url": "",
-    "source": "BSS",
-    "sourceUrl": "https://www.bssnews.net/news/448740",
-    "notify": true,
-    "summary": "The 2026-27 MBBS/BDS admission test remains reported for 18 December 2026, while the formal DGME admission circular was still awaited. The medical test is subject to the High Court order affecting public university and medical admission tests until 31 December unless the court changes that position."
+    "title": "DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/en/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
+    "source": "students.bd",
+    "summary": "DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission DGME IHT & MATS Admission Notice & Migration Form 2026-2027 (PDF Download) Published: 2026-11-19 Share Quick Summary Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Directorate General of Medical Education (DGME) Published Date 2026-11-19 Applica",
+    "notify": true
+  },
+  {
+    "university": "BUTEX",
+    "title": "BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/en/notice/butex-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission BUTEX Admission Circular 2026-2027 | BSc in Textile Engineering (PDF Download) Published: 2026-11-19 Share Quick Summary Routine Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Bangladesh University of Textiles (BUTEX) Published Date 2026-11-19 Application Window 202",
+    "notify": true
+  },
+  {
+    "university": "MIST",
+    "title": "MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/en/notice/mist-undergraduate-admission-circular-2026-27",
+    "source": "students.bd",
+    "summary": "MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission MIST Undergraduate Admission Circular 2026-27 (Apply Online & PDF) Published: 2026-11-19 Share Quick Summary Routine Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Military Institute of Science and Technology (MIST) Published Date 2026-11-19 Application",
+    "notify": true
   },
   {
     "university": "Bangladesh University of Professionals",
-    "title": "BUP revises 2026-27 admission tests to 16, 22 and 23 January 2027",
-    "date": "2026-11-21",
-    "url": "",
-    "source": "BUP official admission circular",
-    "sourceUrl": "https://admission.bup.edu.bd/Upload/Notices/BUP%20Admission%20Advertisement%202026-2027.pdf",
-    "notify": false,
-    "summary": "BUP's 2026-27 written admission tests are scheduled for FASS on 16 January 2027; FST, FET and FMS on 22 January; FSSS on 22 January; and FBS on 23 January."
+    "title": "BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/en/notice/bup-admission-circular-2026-2027",
+    "source": "students.bd",
+    "summary": "BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission BUP Admission Circular 2026-2027 (Honours, Engineering, BBA & MBA PDF) Published: 2026-11-17 Share Quick Summary Routine Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board Bangladesh University of Professionals Published Date 2026-11-17 Application Wind",
+    "notify": true
   },
   {
-    "university": "Rajshahi University of Engineering & Technology",
-    "title": "RUET revises 2026-27 admission test date to 28 January 2027",
-    "date": "2026-11-19",
-    "url": "",
-    "source": "BSS",
-    "sourceUrl": "https://www.bssnews.net/bangla/national/361688",
-    "notify": false,
-    "summary": "RUET revised its 2026-27 undergraduate admission test date to 28 January 2027 instead of 14 January."
-  },
-  {
-    "university": "Admission Tracker",
-    "title": "IMPORTANT: High Court suspends public university & medical admission tests until 31 December",
-    "date": "2026-11-18",
-    "url": "",
-    "source": "The Daily Star",
-    "sourceUrl": "https://www.thedailystar.net/news/education/news/university-medical-admission-tests-put-hold-until-dec-31-high-court-4327066",
-    "notify": true,
-    "summary": "The High Court ordered that public universities and medical colleges cannot hold honours and medical admission tests until 31 December 2026 and directed authorities to continue accepting eligible admission applications. The state and Dhaka University appealed. The Appellate Division scheduled a full-bench hearing for 23 November."
-  },
-  {
-    "university": "Khulna University",
-    "title": "Khulna University reschedules 2026-27 admission tests to 4–5 February 2027",
-    "date": "2026-11-10",
-    "url": "",
-    "source": "BSS",
-    "sourceUrl": "https://www.bssnews.net/news/444300",
-    "notify": false,
-    "summary": "Khulna University revised its 2026-27 undergraduate admission tests from 17–18 December 2026 to 4–5 February 2027."
+    "university": "Rajshahi University",
+    "title": "Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF)",
+    "date": "2026-11-23",
+    "url": "https://students.bd/en/notice/ru-honours-1st-year-admission-marks-distribution-requirements-2026-2027",
+    "source": "students.bd",
+    "summary": "Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF) - students.bd Home Categories Routine Exam Routines Result Exam Results Admission Admission Notices Form Fill-up Exam Form Fill-up Center List Exam Centers Notice Official Notices Education News Latest Exam & Board News Job Circulars Govt, Bank & Private Jobs Calculators View All Calculators School Education Scientific Calc (100MS) SSC/Dakhil GPA HSC/Alim GPA JSC/JDC GPA Vocational GPA Universities Universal NSU NU BA NU BSc NU BSS NU BBA Degree Masters Age & Career Defense Body Fat & BMI Job Age BCS Age Professional CGPA All Programs Result Checker SSC Result SSC/Dakhil/Equivalent HSC Result HSC/Alim/Equivalent Articles BCS Result All BCS exams incl. 50th Govt. Job Result Recruitment exam results NU Centre List Admission exam centre About Us Contact Disclaimer Admission Rajshahi University (RU) Honours 1st Year Admission Test Marks Distribution & Requirements 2026-2027 (PDF) Published: 2026-11-17 Share Quick Summary Read Notice PDF Download Fee Breakdown How to check Important Instructions Who Can Apply? FAQ Quick Facts & Key Dates Verified Authority / Board University of Raj",
+    "notify": true
   }
 ];
