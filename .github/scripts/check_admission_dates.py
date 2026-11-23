@@ -734,7 +734,7 @@ def add_curated_notice(notice):
     path.write_text(
         "window.ADMISSION_NOTICES = "
         + json.dumps(existing[:20], ensure_ascii=False, indent=2)
-        + ";\\n",
+        + ";\n",
         encoding="utf-8",
     )
     return True
