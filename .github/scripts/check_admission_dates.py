@@ -716,6 +716,29 @@ def extract_notice_summary(url):
         print(f"Notice summary failed for {url}: {exc}")
     return ""
 
+def add_curated_notice(notice):
+    path = Path("notices.js")
+    existing = []
+    if path.exists():
+        try:
+            text = path.read_text(encoding="utf-8")
+            match = re.search(r"window\\.ADMISSION_NOTICES\\s*=\\s*(\\[.*?\\])\\s*;?\\s*$", text, re.S)
+            existing = json.loads(match.group(1)) if match else []
+        except Exception as exc:
+            print(f"Curated notice parse failed: {exc}")
+    key = notice_key(notice)
+    if any(notice_key(item) == key for item in existing):
+        return False
+    existing.append(notice)
+    existing.sort(key=lambda x: x.get("date", ""), reverse=True)
+    path.write_text(
+        "window.ADMISSION_NOTICES = "
+        + json.dumps(existing[:20], ensure_ascii=False, indent=2)
+        + ";\\n",
+        encoding="utf-8",
+    )
+    return True
+
 def load_existing_notices():
     path = Path("notices.js")
     if not path.exists():
@@ -881,6 +904,28 @@ def main():
                             f"Auto-detected admission-test date from official source: {source_url}"
                         )
                         changed.append((row["universityShortName"], old_date, new_date, source_url))
+                        add_curated_notice({
+                            "university": row.get("universityShortName") or row.get("universityName"),
+                            "title": (
+                                str(row.get("universityShortName") or row.get("universityName"))
+                                + " admission test date updated to "
+                                + datetime.strptime(new_date, "%Y-%m-%d").strftime("%-d %B %Y")
+                            ),
+                            "date": datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat(),
+                            "url": "",
+                            "source": "Official admission source",
+                            "sourceUrl": source_url,
+                            "notify": True,
+                            "generatedBy": "admission-date-check",
+                            "summary": (
+                                "The official admission source changed the scheduled admission-test date "
+                                + "from "
+                                + (old_date if old_date else "an unpublished date")
+                                + " to "
+                                + new_date
+                                + ". Admission Tracker updated the exam record automatically."
+                            ),
+                        })
 
                 # -------------------------
                 # Requirements check
