@@ -235,7 +235,7 @@ window.ADMISSION_NOTICES = [
     "date": "",
     "url": "https://admission.ru.ac.bd/",
     "source": "University of Rajshahi official source",
-    "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 2 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
+    "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices 1 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   }

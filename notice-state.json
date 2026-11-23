@@ -235,6 +235,7 @@
     "https://www.nstu.edu.bd/services/viewnoticedetails/345",
     "https://www.nstu.edu.bd/services/viewnoticedetails/352",
     "https://www.pstu.ac.bd",
+    "https://www.pstu.ac.bd/",
     "https://www.pstu.ac.bd/storage/files/university-ordinances/1793602120_img_0001.pdf",
     "https://www.pstu.ac.bd/storage/files/university-ordinances/1795415694_img_20261123_0001.pdf",
     "https://www.pstu.ac.bd/storage/files/university-ordinances/1795415846_img_20261123_0002.pdf"
@@ -243,7 +244,7 @@
     "https://admission.ru.ac.bd": {
       "university": "University of Rajshahi",
       "seed": "https://admission.ru.ac.bd",
-      "checkedAt": "2026-11-23T07:47:18Z",
+      "checkedAt": "2026-11-23T13:55:31Z",
       "candidatePages": 8,
       "pagesFetched": 1,
       "noticePagesFound": 1,
@@ -251,10 +252,21 @@
       "requestErrors": 7,
       "healthy": true
     },
+    "https://ugadmission.buet.ac.bd": {
+      "university": "BUET",
+      "seed": "https://ugadmission.buet.ac.bd",
+      "checkedAt": "2026-11-23T13:55:32Z",
+      "candidatePages": 9,
+      "pagesFetched": 2,
+      "noticePagesFound": 2,
+      "noticesExtracted": 1,
+      "requestErrors": 7,
+      "healthy": true
+    },
     "https://admission.cu.ac.bd": {
       "university": "University of Chittagong",
       "seed": "https://admission.cu.ac.bd",
-      "checkedAt": "2026-11-23T07:47:22Z",
+      "checkedAt": "2026-11-23T13:55:35Z",
       "candidatePages": 8,
       "pagesFetched": 8,
       "noticePagesFound": 8,
@@ -262,32 +274,10 @@
       "requestErrors": 0,
       "healthy": true
     },
-    "https://ugadmission.buet.ac.bd": {
-      "university": "BUET",
-      "seed": "https://ugadmission.buet.ac.bd",
-      "checkedAt": "2026-11-23T07:47:24Z",
-      "candidatePages": 9,
-      "pagesFetched": 2,
-      "noticePagesFound": 2,
-      "noticesExtracted": 0,
-      "requestErrors": 7,
-      "healthy": true
-    },
-    "https://admission.eis.du.ac.bd": {
-      "university": "University of Dhaka",
-      "seed": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-      "checkedAt": "2026-11-23T07:47:26Z",
-      "candidatePages": 8,
-      "pagesFetched": 2,
-      "noticePagesFound": 2,
-      "noticesExtracted": 0,
-      "requestErrors": 6,
-      "healthy": true
-    },
     "https://cuet.ac.bd": {
       "university": "Chittagong University of Engineering & Technology (CUET)",
       "seed": "https://cuet.ac.bd/admission",
-      "checkedAt": "2026-11-23T07:47:29Z",
+      "checkedAt": "2026-11-23T13:55:40Z",
       "candidatePages": 8,
       "pagesFetched": 1,
       "noticePagesFound": 1,
@@ -298,18 +288,29 @@
     "https://admission.kuet.ac.bd": {
       "university": "Khulna University of Engineering & Technology (KUET)",
       "seed": "https://admission.kuet.ac.bd",
-      "checkedAt": "2026-11-23T07:47:31Z",
+      "checkedAt": "2026-11-23T13:55:45Z",
       "candidatePages": 8,
       "pagesFetched": 1,
       "noticePagesFound": 1,
       "noticesExtracted": 3,
       "requestErrors": 7,
+      "healthy": true
+    },
+    "https://admission.eis.du.ac.bd": {
+      "university": "University of Dhaka",
+      "seed": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
+      "checkedAt": "2026-11-23T13:55:45Z",
+      "candidatePages": 8,
+      "pagesFetched": 2,
+      "noticePagesFound": 2,
+      "noticesExtracted": 1,
+      "requestErrors": 6,
       "healthy": true
     },
     "https://admission.mist.ac.bd": {
       "university": "Military Institute of Science and Technology",
       "seed": "https://admission.mist.ac.bd/",
-      "checkedAt": "2026-11-23T07:47:37Z",
+      "checkedAt": "2026-11-23T13:55:51Z",
       "candidatePages": 8,
       "pagesFetched": 1,
       "noticePagesFound": 1,
@@ -317,43 +318,21 @@
       "requestErrors": 7,
       "healthy": true
     },
-    "https://admission.jnu.ac.bd": {
-      "university": "Jagannath University",
-      "seed": "https://admission.jnu.ac.bd",
-      "checkedAt": "2026-11-23T07:47:40Z",
-      "candidatePages": 13,
-      "pagesFetched": 3,
-      "noticePagesFound": 1,
-      "noticesExtracted": 1,
-      "requestErrors": 10,
-      "healthy": true
-    },
     "https://gstadmission.ac.bd": {
       "university": "GST Cluster — 20 Public Universities",
       "seed": "https://gstadmission.ac.bd/",
-      "checkedAt": "2026-11-23T07:47:41Z",
+      "checkedAt": "2026-11-23T13:55:53Z",
       "candidatePages": 13,
       "pagesFetched": 5,
       "noticePagesFound": 5,
-      "noticesExtracted": 0,
+      "noticesExtracted": 2,
       "requestErrors": 8,
-      "healthy": true
-    },
-    "https://admission.ruet.ac.bd": {
-      "university": "Rajshahi University of Engineering & Technology",
-      "seed": "https://admission.ruet.ac.bd/",
-      "checkedAt": "2026-11-23T07:47:48Z",
-      "candidatePages": 8,
-      "pagesFetched": 2,
-      "noticePagesFound": 2,
-      "noticesExtracted": 0,
-      "requestErrors": 6,
       "healthy": true
     },
     "https://admission.bup.edu.bd": {
       "university": "Bangladesh University of Professionals (BUP)",
       "seed": "https://admission.bup.edu.bd/Upload/Notices/20260831_1788165883.pdf",
-      "checkedAt": "2026-11-23T07:47:48Z",
+      "checkedAt": "2026-11-23T13:55:53Z",
       "candidatePages": 8,
       "pagesFetched": 2,
       "noticePagesFound": 1,
@@ -361,10 +340,21 @@
       "requestErrors": 6,
       "healthy": true
     },
+    "https://admission.jnu.ac.bd": {
+      "university": "Jagannath University",
+      "seed": "https://admission.jnu.ac.bd",
+      "checkedAt": "2026-11-23T13:55:54Z",
+      "candidatePages": 13,
+      "pagesFetched": 1,
+      "noticePagesFound": 1,
+      "noticesExtracted": 1,
+      "requestErrors": 12,
+      "healthy": true
+    },
     "https://admission.sust.edu.bd": {
       "university": "Shahjalal University of Science & Technology",
       "seed": "https://admission.sust.edu.bd/",
-      "checkedAt": "2026-11-23T07:47:48Z",
+      "checkedAt": "2026-11-23T13:56:02Z",
       "candidatePages": 8,
       "pagesFetched": 1,
       "noticePagesFound": 1,
@@ -372,26 +362,37 @@
       "requestErrors": 7,
       "healthy": true
     },
-    "https://admission.iutoic-dhaka.edu": {
-      "university": "Islamic University of Technology",
-      "seed": "https://admission.iutoic-dhaka.edu/",
-      "checkedAt": "2026-11-23T07:47:49Z",
+    "https://admission.ruet.ac.bd": {
+      "university": "Rajshahi University of Engineering & Technology",
+      "seed": "https://admission.ruet.ac.bd/",
+      "checkedAt": "2026-11-23T13:56:03Z",
       "candidatePages": 8,
       "pagesFetched": 2,
       "noticePagesFound": 2,
-      "noticesExtracted": 4,
+      "noticesExtracted": 0,
       "requestErrors": 6,
       "healthy": true
     },
     "https://ku.ac.bd": {
       "university": "Khulna University",
       "seed": "https://ku.ac.bd/news-details/2884",
-      "checkedAt": "2026-11-23T07:47:53Z",
+      "checkedAt": "2026-11-23T13:56:09Z",
       "candidatePages": 10,
       "pagesFetched": 10,
       "noticePagesFound": 3,
       "noticesExtracted": 14,
       "requestErrors": 0,
+      "healthy": true
+    },
+    "https://admission.iutoic-dhaka.edu": {
+      "university": "Islamic University of Technology",
+      "seed": "https://admission.iutoic-dhaka.edu/",
+      "checkedAt": "2026-11-23T13:56:17Z",
+      "candidatePages": 8,
+      "pagesFetched": 2,
+      "noticePagesFound": 2,
+      "noticesExtracted": 4,
+      "requestErrors": 6,
       "healthy": true
     }
   }
