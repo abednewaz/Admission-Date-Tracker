@@ -770,90 +770,206 @@ def load_existing_notices():
         return []
 
 def notice_key(item):
+    url = str(item.get("url", "")).strip()
+    if url:
+        return ("url", url.rstrip("/").lower())
     return (
+        "manual",
         normalize(str(item.get("university", ""))).lower(),
         normalize(str(item.get("title", ""))).lower(),
         str(item.get("date", "")),
     )
 
+NOTICE_SOURCE_URLS = [
+    "https://students.bd/en/notice",
+    "https://students.bd/en/category/admission",
+    "https://students.bd/en/admission",
+    "https://students.bd/en/",
+]
+
+def extract_notice_page(url):
+    try:
+        r = request_source(url)
+        soup = BeautifulSoup(r.text, "html.parser")
+        title = ""
+        h1 = soup.find("h1")
+        if h1:
+            title = normalize(h1.get_text(" ", strip=True))
+        if not title and soup.title:
+            title = normalize(soup.title.get_text(" ", strip=True))
+        date_value = ""
+
+        # Prefer explicit publication/update metadata over dates mentioned
+        # inside application/exam schedules.
+        date_candidates = []
+        for meta_name in [
+            ("property", "article:published_time"),
+            ("property", "article:modified_time"),
+            ("name", "date"),
+            ("name", "pubdate"),
+            ("name", "publish-date"),
+            ("name", "published_time"),
+            ("name", "modified_time"),
+        ]:
+            node = soup.find("meta", attrs={meta_name[0]: meta_name[1]})
+            if node and node.get("content"):
+                date_candidates.append(node.get("content", "").strip())
+
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                payload = json.loads(script.string or script.get_text())
+                stack = payload if isinstance(payload, list) else [payload]
+                for obj in stack:
+                    if not isinstance(obj, dict):
+                        continue
+                    for key in ("datePublished", "dateModified", "dateCreated"):
+                        if obj.get(key):
+                            date_candidates.append(str(obj[key]))
+            except Exception:
+                continue
+
+        last_modified = r.headers.get("Last-Modified", "")
+        if last_modified:
+            date_candidates.append(last_modified)
+
+        for raw in date_candidates:
+            match = re.search(r"(20\\d{2})[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\\d|3[01])", raw)
+            if match:
+                date_value = f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+                break
+
+        for label in ("published", "publication", "updated", "last updated", "প্রকাশিত"):
+            if date_value:
+                break
+            text = normalize(soup.get_text(" ", strip=True))
+            match = re.search(
+                rf"{re.escape(label)}\\s*[:\\-]?\\s*(20\\d{{2}})[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\\d|3[01])",
+                text,
+                re.I,
+            )
+            if match:
+                date_value = f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+
+        for tag in soup(["script", "style", "noscript", "nav", "footer", "form"]):
+            tag.decompose()
+        body_text = normalize(soup.get_text(" ", strip=True))
+        body_text = re.sub(r"\\s+", " ", body_text).strip()
+        summary = body_text[:1200] if len(body_text) >= 80 else ""
+        return {
+            "title": title,
+            "date": date_value,
+            "summary": summary,
+        }
+    except Exception as exc:
+        print(f"Notice page extraction failed for {url}: {exc}")
+        return {"title": "", "date": "", "summary": ""}
+
 def update_notice_feed():
     try:
         existing = load_existing_notices()
-        r = request_source(NOTICE_FEED_URL)
-        soup = BeautifulSoup(r.text, "html.parser")
+        existing_by_url = {
+            str(n.get("url", "")).rstrip("/").lower(): n
+            for n in existing if n.get("url")
+        }
         items = []
         seen = set()
 
-        for a in soup.find_all("a", href=True):
-            href = urljoin(r.url, a["href"])
-            if "/notice/" not in href:
-                continue
-            title = a.get_text(" ", strip=True)
-            if not title or len(title) < 8:
-                continue
-
-            university = notice_university(title)
-            if not university:
+        for source_url in NOTICE_SOURCE_URLS:
+            try:
+                r = request_source(source_url)
+                soup = BeautifulSoup(r.text, "html.parser")
+            except Exception as exc:
+                print(f"Notice source failed for {source_url}: {exc}")
                 continue
 
-            # Ignore navigation/category links and duplicate detail links.
-            # One notice page can appear multiple times with slightly different link text.
-            # Keep one entry per detail URL so the board shows distinct latest notices.
-            key = href
-            if key in seen:
-                continue
-            seen.add(key)
+            source_is_admission_hub = "/admission" in urlparse(source_url).path
+            for a in soup.find_all("a", href=True):
+                href = urljoin(r.url, a["href"]).rstrip("/")
+                if href in seen:
+                    continue
 
-            # The source page stores the publication date in the table row,
-            # while the link itself often contains only the notice title.
-            # Walk up to the nearest row so the date is not lost.
-            context_nodes = []
-            node = a
-            for _ in range(5):
-                if not node:
+                path = urlparse(href).path.lower()
+                if source_is_admission_hub:
+                    if "/admission/" not in path or path.endswith("/admission"):
+                        continue
+                else:
+                    if "/notice/" not in path:
+                        continue
+
+                # The admission hub uses a generic "Apply" anchor. Resolve
+                # the university from the surrounding card instead of the
+                # anchor text alone.
+                context_nodes = []
+                node = a
+                for _ in range(7):
+                    if not node:
+                        break
+                    context_nodes.append(node)
+                    node = getattr(node, "parent", None)
+
+                parent_text = " ".join(
+                    normalize(n.get_text(" ", strip=True)) for n in context_nodes
+                )
+                anchor_text = normalize(a.get_text(" ", strip=True))
+                title = anchor_text
+                for n in context_nodes:
+                    heading = n.find(["h1", "h2", "h3", "h4"]) if hasattr(n, "find") else None
+                    if heading:
+                        candidate_title = normalize(heading.get_text(" ", strip=True))
+                        if len(candidate_title) >= 8:
+                            title = candidate_title
+                            break
+
+                university = notice_university(title + " " + parent_text)
+                if not university:
+                    # Some cards identify the institution only in the
+                    # destination page title/URL. Resolve that page once.
+                    meta = extract_notice_page(href)
+                    resolved_title = meta.get("title", "")
+                    university = notice_university(resolved_title + " " + href)
+                    if university:
+                        title = resolved_title or title
+                if not university:
+                    continue
+
+                seen.add(href)
+
+                meta = extract_notice_page(href)
+                if meta.get("title"):
+                    title = meta["title"]
+                if not title or len(title) < 8:
+                    title = f"{university} admission update 2026-27"
+
+                date_value = meta.get("date", "")
+                previous = existing_by_url.get(href.lower())
+                if not date_value and previous:
+                    date_value = str(previous.get("date", ""))
+                if not date_value:
+                    date_value = datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat()
+
+                items.append({
+                    "university": university,
+                    "title": title,
+                    "date": date_value,
+                    "url": href,
+                    "source": "students.bd",
+                    "summary": meta.get("summary", ""),
+                })
+
+                if len(items) >= 40:
                     break
-                context_nodes.append(node)
-                node = getattr(node, "parent", None)
-            parent_text = " ".join(
-                normalize(n.get_text(" ", strip=True)) for n in context_nodes
-            )
-            date_value = ""
-            date_match = re.search(
-                r"(20(?:26|27))[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\d|3[01])",
-                parent_text
-            )
-            if date_match:
-                date_value = f"{date_match.group(1)}-{int(date_match.group(2)):02d}-{int(date_match.group(3)):02d}"
-            else:
-                short_match = re.search(r"(?<!\d)(0?[1-9]|1[0-2])/(0?[1-9]|[12]\d|3[01])(?!\d)", parent_text)
-                if short_match:
-                    year = datetime.now(ZoneInfo("Asia/Dhaka")).year
-                    date_value = f"{year:04d}-{int(short_match.group(1)):02d}-{int(short_match.group(2)):02d}"
-            summary = extract_notice_summary(href)
-            items.append({
-                "university": university,
-                "title": title,
-                "date": date_value,
-                "url": href,
-                "source": "students.bd",
-                "summary": summary,
-            })
 
-            if len(items) >= 20:
+            if len(items) >= 40:
                 break
 
-        # Do not erase the existing notice board if the source temporarily
-        # returns an incomplete page or no matching cards.
+        # Keep the old notice-page scraper as a fallback only if the broader
+        # sources returned nothing.
         if not items:
-            print("Notice feed returned no matching items; keeping the previous feed unchanged.")
+            print("All notice sources returned no matching items; keeping previous feed unchanged.")
             return 0
 
-        # Preserve manually curated notices (especially court decisions and
-        # date-change notices) alongside the auto-detected feed. Auto notices
-        # replace only an existing auto notice with the same stable identity.
         manual = [n for n in existing if not n.get("url")]
-        auto = [n for n in existing if n.get("url")]
-        auto_by_key = {notice_key(n): n for n in auto}
+        auto_by_key = {notice_key(n): n for n in existing if n.get("url")}
         for item in items:
             auto_by_key[notice_key(item)] = item
 
@@ -862,69 +978,18 @@ def update_notice_feed():
 
         Path("notices.js").write_text(
             "window.ADMISSION_NOTICES = "
-            + json.dumps(merged[:20], ensure_ascii=False, indent=2)
+            + json.dumps(merged[:30], ensure_ascii=False, indent=2)
             + ";\n",
             encoding="utf-8",
         )
         print(
-            f"Notice feed: {len(items)} auto notices + {len(manual)} manual notices; "
-            f"{len(merged[:20])} total notices saved."
+            f"Notice feed: {len(items)} auto notices from {len(NOTICE_SOURCE_URLS)} sources + "
+            f"{len(manual)} manual notices; {len(merged[:30])} total notices saved."
         )
-        return len(merged[:20])
+        return len(merged[:30])
     except Exception as exc:
         print(f"Notice feed failed: {exc}")
         return 0
-
-
-def _court_news_items():
-    queries = [
-        'Bangladesh Supreme Court admission tests public universities December 31',
-        'Bangladesh Supreme Court DU admission test High Court order',
-        'Bangladesh Supreme Court medical admission test High Court order',
-    ]
-    items = []
-    seen = set()
-    for query in queries:
-        rss_url = (
-            "https://news.google.com/rss/search?q="
-            + quote_plus(query)
-            + "&hl=en-BD&gl=BD&ceid=BD:en"
-        )
-        try:
-            response = request_source(rss_url)
-            soup = BeautifulSoup(response.text, "html.parser")
-            for item in soup.find_all("item"):
-                title = normalize(item.find("title").get_text(" ", strip=True) if item.find("title") else "")
-                link = item.find("link").get_text(" ", strip=True) if item.find("link") else ""
-                description = normalize(item.find("description").get_text(" ", strip=True) if item.find("description") else "")
-                pub = item.find("pubDate").get_text(" ", strip=True) if item.find("pubDate") else ""
-                source_node = item.find("source")
-                source = normalize(source_node.get_text(" ", strip=True) if source_node else "")
-                if not title or not link:
-                    continue
-                key = (title.lower(), link)
-                if key in seen:
-                    continue
-                seen.add(key)
-                try:
-                    published = datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
-                except ValueError:
-                    try:
-                        from email.utils import parsedate_to_datetime
-                        published = parsedate_to_datetime(pub).astimezone(timezone.utc)
-                    except Exception:
-                        published = None
-                items.append({
-                    "title": title,
-                    "link": link,
-                    "description": description,
-                    "source": source,
-                    "published": published,
-                })
-        except Exception as exc:
-            print(f"Court news feed failed for {query!r}: {exc}")
-    items.sort(key=lambda x: x["published"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
-    return items
 
 
 def update_court_status():
