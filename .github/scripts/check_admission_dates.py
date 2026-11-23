@@ -6,7 +6,7 @@ import hashlib
 from datetime import datetime, date, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, quote_plus
+from urllib.parse import urljoin, urlparse, urlunparse, quote_plus
 
 import requests
 from bs4 import BeautifulSoup
