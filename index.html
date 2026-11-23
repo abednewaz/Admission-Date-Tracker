@@ -613,7 +613,7 @@ body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79
   <script>
     const TZ='Asia/Dhaka',CLOSE=3;
     const SYSTEM_STATUS=window.ADMISSION_SYSTEM_STATUS||{};
-    function isMedicalRecord(e){return !!(e&&(/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs\\/bds admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''))||e.medicalCentral));}
+    function isMedicalRecord(e){return !!(e&&(/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs\/bds admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''))||e.medicalCentral));}
     function isCourtSuspendedRecord(e){
       var s=SYSTEM_STATUS.courtAdmissionSuspension;
       if(!s||!s.active||!e||!e.examDate||e.examDate==='Not published yet'||e.examDate==='Better check Yourself')return false;
