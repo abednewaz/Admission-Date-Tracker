@@ -107,7 +107,8 @@ jobs:
           }
 
           const html = fs.readFileSync('index.html', 'utf8');
-          const scripts = [...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/gi)]
+          const scriptRe = new RegExp('<script(?:\\\\s[^>]*)?>([\\\\s\\\\S]*?)<\\\\/script>', 'gi');
+          const scripts = [...html.matchAll(scriptRe)]
             .map(m => m[1].trim())
             .filter(s => s && !s.startsWith('{'));
           scripts.forEach((source, i) => {
