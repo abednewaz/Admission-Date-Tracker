@@ -1,0 +1,120 @@
+name: Repository Integrity Check
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 * * * *"
+      timezone: "Asia/Dhaka"
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate data, notices, system status and executable JavaScript
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          from datetime import date
+
+          def parse_assignment(path, name):
+              text = Path(path).read_text(encoding="utf-8")
+              m = re.search(r"window\\." + re.escape(name) + r"\\s*=\\s*(\\[|\\{).*?;\\s*$", text, re.S)
+              if not m:
+                  raise SystemExit(f"Could not locate {name} in {path}")
+              start = text.find(m.group(1), m.start())
+              payload = text[start:text.rfind(";")]
+              return json.loads(payload)
+
+          data = parse_assignment("data.js", "ADMISSION_EXAMS")
+          notices = parse_assignment("notices.js", "ADMISSION_NOTICES")
+          status = parse_assignment("system-status.js", "ADMISSION_SYSTEM_STATUS")
+
+          if len(data) < 1:
+              raise SystemExit("No admission records found")
+          ids = [x.get("id") for x in data]
+          if len(ids) != len(set(ids)):
+              raise SystemExit("Duplicate admission record IDs detected")
+          for row in data:
+              if not row.get("universityName") or not row.get("unit") or not row.get("admissionType"):
+                  raise SystemExit(f"Malformed admission record: {row.get('id')}")
+              d = row.get("examDate")
+              if d and d not in ("Not published yet", "Better check Yourself"):
+                  date.fromisoformat(d)
+
+          if not any(n.get("university") == "BUET" and "circular" in str(n.get("title","")).lower() for n in notices):
+              raise SystemExit("BUET circular notice is missing")
+          court = status.get("courtAdmissionSuspension", {})
+          if not court.get("active") or court.get("through") != "2026-12-31":
+              raise SystemExit("Court suspension status is missing or inconsistent")
+
+          aust = next((x for x in data if x.get("id") == "e36"), None)
+          if not aust or aust.get("examDate") is not None:
+              raise SystemExit("AUST must not have an invented exam date")
+
+          buet = next((x for x in data if x.get("id") == "e22"), None)
+          if not buet or buet.get("examDate") != "2027-02-01":
+              raise SystemExit("BUET exam date is not the verified 1 February 2027 date")
+
+          sw = Path("sw.js").read_text(encoding="utf-8")
+          if "notices.js" not in sw or "system-status.js" not in sw:
+              raise SystemExit("Service worker is still caching live data")
+
+          for path in ["api/push-test.js", "api/push-daily-reminder.js"]:
+              if Path(path).exists():
+                  raise SystemExit(f"Legacy endpoint still exists: {path}")
+
+          print(f"Integrity OK: {len(data)} admission records, {len(notices)} notices")
+          PY
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --input-type=commonjs <<'NODE'
+          const fs = require('fs');
+          const files = [
+            'data.js',
+            'medical-data.js',
+            'notices.js',
+            'system-status.js',
+            'sw.js',
+            'api/push-broadcast.js',
+            'api/push-daily.js',
+            'api/push-subscribe.js'
+          ];
+          for (const file of files) {
+            const source = fs.readFileSync(file, 'utf8');
+            if (file === 'medical-data.js' || file === 'sw.js') {
+              // These are browser/service-worker scripts; syntax-only validation is enough.
+            }
+            try { new Function(source); }
+            catch (error) { throw new Error(file + ': ' + error.message); }
+          }
+
+          const html = fs.readFileSync('index.html', 'utf8');
+          const scripts = [...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/gi)]
+            .map(m => m[1].trim())
+            .filter(s => s && !s.startsWith('{'));
+          scripts.forEach((source, i) => {
+            try { new Function(source); }
+            catch (error) { throw new Error('index.html inline script #' + (i + 1) + ': ' + error.message); }
+          });
+
+          if (!html.includes('G-250GLKNKZ0')) throw new Error('GA4 Measurement ID missing');
+          if (!html.includes('id="languageToggle"')) throw new Error('Language toggle missing');
+          if (!html.includes('adt_language_v3')) throw new Error('Language system missing');
+          if (!html.includes('system-status.js')) throw new Error('System status script missing');
+          console.log('JavaScript integrity OK');
+          NODE
