@@ -75,7 +75,7 @@ def is_relevant_notice(title, summary=""):
     if not title_has_admission and not (title_has_notice and summary_has_admission):
         return False
     if EXCLUDE_NON_UNDERGRAD.search(title_text) and not re.search(
-        r"undergraduate|1st year|first year|honours|স্নাতক|সম্মান|১ম বর্ষ|ভর্তি পরীক্ষা",
+        r"undergraduate|1st year|first year|honours|স্নাতক|সম্মান|১ম বর্ষ",
         title_text, re.I
     ):
         return False
