@@ -8,17 +8,54 @@ const SUPABASE_KEY =
   process.env.SUPABASE_SECRET_KEY_2;
 const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY;
 const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY;
-const BROADCAST_SECRET = process.env.PUSH_BROADCAST_SECRET;
+
+const GITHUB_OIDC_ISSUER = 'https://token.actions.githubusercontent.com';
+const GITHUB_OIDC_AUDIENCE = 'https://admissiontracker.site';
+const GITHUB_REPOSITORY = 'abednewaz/Admission-Date-Tracker';
+const GITHUB_WORKFLOW_PATH = '.github/workflows/notice-check.yml';
+
+const josePromise = import('jose');
+const githubJwksPromise = josePromise.then(({ createRemoteJWKSet }) =>
+  createRemoteJWKSet(new URL(GITHUB_OIDC_ISSUER + '/.well-known/jwks'))
+);
 
 function json(res, status, body) {
   res.status(status).json(body);
 }
 
+async function verifyGitHubOidcToken(token) {
+  try {
+    const { jwtVerify } = await josePromise;
+    const githubJwks = await githubJwksPromise;
+    const { payload } = await jwtVerify(token, githubJwks, {
+      issuer: GITHUB_OIDC_ISSUER,
+      audience: GITHUB_OIDC_AUDIENCE
+    });
+
+    if (payload.repository !== GITHUB_REPOSITORY) return false;
+    if (payload.ref !== 'refs/heads/main') return false;
+    if (payload.event_name !== 'schedule' && payload.event_name !== 'workflow_dispatch') return false;
+
+    const workflowRef = payload.workflow_ref || payload.job_workflow_ref || '';
+    const expectedWorkflowSuffix = GITHUB_WORKFLOW_PATH + '@refs/heads/main';
+    if (!String(workflowRef).endsWith(expectedWorkflowSuffix)) return false;
+
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function isAuthorized(req) {
+  const authorization = req.headers.authorization || '';
+  const prefix = 'Bearer ';
+  if (!authorization.startsWith(prefix)) return false;
+  return verifyGitHubOidcToken(authorization.slice(prefix.length));
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed' });
-  if (!BROADCAST_SECRET || req.headers.authorization !== 'Bearer ' + BROADCAST_SECRET) {
-    return json(res, 401, { error: 'Unauthorized' });
-  }
+  if (!(await isAuthorized(req))) return json(res, 401, { error: 'Unauthorized' });
   if (!SUPABASE_URL || !SUPABASE_KEY || !VAPID_PUBLIC_KEY || !VAPID_PRIVATE_KEY) {
     return json(res, 500, { error: 'Push environment variables are missing' });
   }
@@ -48,13 +85,14 @@ export default async function handler(req, res) {
         const stored = row.subscription || {};
         const pushSubscription = { endpoint: stored.endpoint || row.endpoint, keys: stored.keys };
         if (!pushSubscription.endpoint || !pushSubscription.keys?.p256dh || !pushSubscription.keys?.auth) continue;
+
         await webpush.sendNotification(
           pushSubscription,
           JSON.stringify({
             title: 'New Admission Notice',
             body: (notice.university ? notice.university + ': ' : '') + notice.title,
             url: notice.url || './',
-            tag: 'notice-' + (notice.url || notice.title).slice(0, 120)
+            tag: 'notice-' + String(notice.url || notice.title).slice(0, 120)
           }),
           { TTL: 86400 }
         );
@@ -73,6 +111,7 @@ export default async function handler(req, res) {
 
     return json(res, 200, { ok: true, sent, removed });
   } catch (error) {
+    console.error('Broadcast failed', error);
     return json(res, 500, { error: 'Broadcast failed' });
   }
 }
