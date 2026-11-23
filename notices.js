@@ -29,7 +29,7 @@ window.ADMISSION_NOTICES = [
     "source": "BUET Undergraduate Admission Portal",
     "sourceUrl": "https://ugadmission.buet.ac.bd/",
     "notify": true,
-    "summary": "BUET has published the 2026-27 undergraduate admission circular. Applications are scheduled for 1 December 2026 to 7 January 2027, with fee payment until 8 January. The admission test is scheduled for 1 February 2027. Module A is 9:00 AM–12:00 PM and Module B for Architecture is 2:30 PM–4:00 PM. Verify the official BUET admission portal for final instructions."
+    "summary": "BUET published the 2026-27 undergraduate admission circular on 22 November 2026. Applications open on 1 December 2026 and close on 7 January 2027, with fee payment until 8 January. The admission test is scheduled for 1 February 2027. Module A is 9:00 AM–12:00 PM and Module B for Architecture is 2:30 PM–4:00 PM. Verify the official BUET admission portal for final instructions."
   },
   {
     "university": "Medical Admission",
