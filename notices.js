@@ -112,66 +112,6 @@ window.ADMISSION_NOTICES = [
     "generatedBy": "official-notice-monitor"
   },
   {
-    "university": "Jagannath University",
-    "title": "📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25",
-    "date": "2026-11-25",
-    "url": "https://students.bd/en/notice/dhaka-university-cha-unit-admission-circular-2026-2027",
-    "source": "Jagannath University official source",
-    "summary": "📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Unit Admi",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25",
-    "date": "2026-11-25",
-    "url": "https://students.bd/en/notice/dhaka-university-business-studies-c-unit-admission-circular-2026-27",
-    "source": "Jagannath University official source",
-    "summary": "📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Uni",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25",
-    "date": "2026-11-25",
-    "url": "https://students.bd/en/notice/dhaka-university-arts-law-social-science-unit-admission-circular-2026-2027",
-    "source": "Jagannath University official source",
-    "summary": "📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Cha Unit Admission Circular 2026-2027 (Fine Art PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 💳 2 d Payment Deadline Dhaka University Business Studies (C Unit) Admission Circular 2026-27 (PDF) 2026-11-25 📝 2 d Application Deadline Dhaka University Arts, Law & Social Science Unit Admission Circular 2026-2027 (PDF Download) 2026-11-25 📝 1 d Application Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 💳 1 d Payment Deadline BTEB HSC Supplementary Exam 2026 Form Fill-up Fee Payment Date Extended (Notice) 2026-11-24 📝 2 d Application Deadline Dhaka U",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "নতুন Admission সরকারি আইএইচটি ও ম্যাটস ভর্তি বিজ্ঞপ্তি ও মাইগ্রেশন ফরম ২০২৬-২০২৭ (পিডিএফ ডাউনলোড) 11/19",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice/dgme-iht-mats-admission-notice-migration-form-2026-2027",
-    "source": "Jagannath University official source",
-    "summary": "নতুন Admission সরকারি আইএইচটি ও ম্যাটস ভর্তি বিজ্ঞপ্তি ও মাইগ্রেশন ফরম ২০২৬-২০২৭ (পিডিএফ ডাউনলোড) 11/19 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admi",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "Jagannath University",
-    "title": "নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice/ju-1st-year-undergraduate-admission-application-process-2026-2027",
-    "source": "Jagannath University official source",
-    "summary": "নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ ",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
-    "university": "BUET",
-    "title": "নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19",
-    "date": "2026-11-22",
-    "url": "https://students.bd/bn/notice/agricultural-cluster-admission-circular-2026-2027",
-    "source": "BUET official source",
-    "summary": "নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন জাতীয় বিশ্ববিদ্যালয় মাস্টার্স প্রফেশনাল ভর্তি কোটার মেধা তালিকা ও চূড়ান্ত ভর্তি বিজ্ঞপ্তি ২০২৬-২৭ 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় মাস্টার্স (প্রফেশনাল) ভর্তি ২০২৭ আবেদনের সময় বৃদ্ধি বিজ্ঞপ্তি 11/22 নতুন Admission জাতীয় বিশ্ববিদ্যালয় এমফিল ও পিএইচডি ভর্তি পরীক্ষার আসন বিন্যাস ২০২৬-২০২৭ (পিডিএফ) 11/22 নতুন Notice বিটিইবি এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ ফরম পূরণের ফি জমার সময় বৃদ্ধি (বিজ্ঞপ্তি) 11/22 নতুন Notice কারিগরি বোর্ডের এইচএসসি (বিএমটি), ভোকেশনাল ও ডিপ্লোমা ইন কমার্স সাপ্লিমেন্টারি পরীক্ষার কেন্দ্র তালিকা ২০২৬ 11/22 নতুন Result এইচএসসি ও সমমান পরীক্ষা ২০২৬ পুনঃনিরীক্ষণ ও পুনর্মূল্যায়নের ফলাফল প্রকাশ 11/22 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬ আসন বিন্যাস ও কেন্দ্র তালিকা (পিডিএফ) 11/16 নতুন Notice ঢাকা বোর্ড এইচএসসি সাপ্লিমেন্টারি পরীক্ষা ২০২৬-এর উত্তরপত্র ও সরঞ্জামাদি বিতরণ বিজ্ঞপ্তি (পিডিএফ) 11/22 নতুন Admission জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (জাবি) ১ম বর্ষ স্নাতক (সম্মান) ভর্তি আবেদন প্রক্রিয়া ২০২৬-২০২৭ (বিস্তারিত নির্দেশিকা ও পিডিএফ) 11/22 নতুন Admission কৃষি গুচ্ছ ভর্তি বিজ্ঞপ্তি ২০২৬-২০২৭ (অনলাইন আবেদন ও পিডিএফ) 11/19 নতুন Admission জাতীয় বিশ্ববিদ্য",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
     "university": "Khulna University",
     "title": "২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027",
     "date": "2026-11-21",
