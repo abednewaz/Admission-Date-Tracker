@@ -920,11 +920,12 @@ def update_notice_feed():
                             title = candidate_title
                             break
 
-                university = notice_university(title + " " + parent_text)
+                # Never use the full card/site navigation text for
+                # university matching: it contains generic links such as
+                # "Medical Admission" and can misclassify unrelated notices.
+                university = notice_university(title + " " + href)
+                meta = extract_notice_page(href)
                 if not university:
-                    # Some cards identify the institution only in the
-                    # destination page title/URL. Resolve that page once.
-                    meta = extract_notice_page(href)
                     resolved_title = meta.get("title", "")
                     university = notice_university(resolved_title + " " + href)
                     if university:
@@ -932,9 +933,14 @@ def update_notice_feed():
                 if not university:
                     continue
 
+                # A broken admission-hub link (e.g. a stale slug redirecting
+                # to students.bd/404) must never become a fake notice.
+                if source_is_admission_hub and not meta.get("title"):
+                    print(f"Skipping unresolved admission page: {href}")
+                    continue
+
                 seen.add(href)
 
-                meta = extract_notice_page(href)
                 if meta.get("title"):
                     title = meta["title"]
                 if not title or len(title) < 8:
