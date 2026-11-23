@@ -56,13 +56,21 @@ jobs:
           old = parse_notices(old_text)
           new = parse_notices(new_text)
 
-          old_keys = {
-              (n.get("university") or "", n.get("title") or "", n.get("date") or "")
-              for n in old
-          }
+          def notice_identity(n):
+              url = (n.get("url") or "").strip().rstrip("/").lower()
+              summary = " ".join((n.get("summary") or "").split())[:1200]
+              return (
+                  url,
+                  n.get("university") or "",
+                  n.get("title") or "",
+                  n.get("date") or "",
+                  summary,
+              )
+
+          old_keys = {notice_identity(n) for n in old}
           fresh = [
               n for n in new
-              if (n.get("university") or "", n.get("title") or "", n.get("date") or "") not in old_keys
+              if notice_identity(n) not in old_keys
               and n.get("title")
               and n.get("notify", True)
               and n.get("generatedBy") != "admission-date-check"
