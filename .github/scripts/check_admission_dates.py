@@ -992,8 +992,8 @@ def update_notice_feed():
                     title = f"{university} admission update 2026-27"
 
                 date_value = meta.get("date", "")
-                previous = existing_by_url.get(href.lower())
-                if not date_value and previous:
+                previous = existing_by_url.get(canonical_href.lower())
+                if not date_value and previous and not source_is_admission_hub:
                     date_value = str(previous.get("date", ""))
                 # Do not invent a publication date for admission landing
                 # pages. A missing date sorts the fallback source lower than
