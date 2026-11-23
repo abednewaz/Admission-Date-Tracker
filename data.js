@@ -383,7 +383,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T21:11:19+06:00",
     "requirementsSource": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "autoDateCheck": false
   },
   {
     "id": "e9",
@@ -489,7 +490,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T21:11:27+06:00",
     "requirementsSource": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "autoDateCheck": false
   },
   {
     "id": "e11",
@@ -595,7 +597,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T21:11:27+06:00",
     "requirementsSource": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "autoDateCheck": false
   },
   {
     "id": "e13",
@@ -651,7 +654,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T21:11:27+06:00",
     "requirementsSource": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "autoDateCheck": false
   },
   {
     "id": "e14",
@@ -707,7 +711,8 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T21:11:27+06:00",
     "requirementsSource": "https://admission.eis.du.ac.bd/bn/408b7c8ad06e4d9954fa2d948a01f508",
-    "requirementsStatus": "verified"
+    "requirementsStatus": "verified",
+    "autoDateCheck": false
   },
   {
     "id": "e15",
@@ -1850,7 +1855,8 @@ window.ADMISSION_EXAMS = [
     "previousExamDate": null,
     "notes": "AUST Spring 2027 undergraduate admission applications are reported open from 15 Nov 2026 to 25 Dec 2026. No reliable official 2026-27 undergraduate admission-test date was found; the official AUST notice page currently shows Spring 2026 merit/migration notices, not a new 2026-27 test date. Do not treat the old 22 Nov date as an exam date.",
     "cycle": "2026-27 / HSC Batch 2026",
-    "requirementsStatus": "not_published"
+    "requirementsStatus": "not_published",
+    "autoDateCheck": false
   },
   {
     "id": "e37",
