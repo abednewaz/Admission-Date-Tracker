@@ -1,4 +1,4 @@
-const CACHE = 'adt-v18';
+const CACHE = 'adt-v19';
 const ASSETS = [
   './Abed_Newaz_Profile.png',
   './manifest.webmanifest',
@@ -26,7 +26,7 @@ self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
 
   const url = new URL(e.request.url);
-  const isLiveData = url.pathname.endsWith('/index.html') || url.pathname.endsWith('/data.js') || url.pathname.endsWith('/');
+  const isLiveData = url.pathname.endsWith('/index.html') || url.pathname.endsWith('/data.js') || url.pathname.endsWith('/notices.js') || url.pathname.endsWith('/system-status.js') || url.pathname.endsWith('/');
   if (isLiveData) {
     e.respondWith(
       fetch(new Request(e.request, {cache:'no-store'}))
