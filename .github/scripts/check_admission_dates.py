@@ -78,21 +78,25 @@ session.headers.update(HEADERS)
 
 def repair_mojibake(text):
     value = str(text or "")
-    suspicious = sum(value.count(ch) for ch in ("à", "â", "ã", "¤", "¦", "§", "©", "®", "°", "±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º", "»", "¼", "½", "¾", "¿", "�"))
-    if suspicious < 3:
-        return value
-    best = value
-    best_score = suspicious
-    for encoding in ("latin1", "cp1252"):
-        try:
-            candidate = value.encode(encoding).decode("utf-8")
-        except (UnicodeEncodeError, UnicodeDecodeError):
-            continue
-        candidate_suspicious = sum(candidate.count(ch) for ch in ("à", "â", "ã", "¤", "¦", "§", "©", "®", "°", "±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º", "»", "¼", "½", "¾", "¿", "�"))
-        if candidate_suspicious < best_score:
-            best = candidate
-            best_score = candidate_suspicious
-    return best
+    for _ in range(2):
+        suspicious = sum(value.count(ch) for ch in ("à", "â", "ã", "¤", "¦", "§", "©", "®", "°", "±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º", "»", "¼", "½", "¾", "¿", "�"))
+        if suspicious < 3:
+            break
+        best = value
+        best_score = suspicious
+        for encoding in ("latin1", "cp1252"):
+            try:
+                candidate = value.encode(encoding).decode("utf-8")
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                continue
+            candidate_suspicious = sum(candidate.count(ch) for ch in ("à", "â", "ã", "¤", "¦", "§", "©", "®", "°", "±", "²", "³", "´", "µ", "¶", "·", "¸", "¹", "º", "»", "¼", "½", "¾", "¿", "�"))
+            if candidate_suspicious < best_score:
+                best = candidate
+                best_score = candidate_suspicious
+        if best == value:
+            break
+        value = best
+    return value
 
 def normalize(text):
     return repair_mojibake(text).translate(BANGLA_DIGITS).replace("\u200c", " ").replace("\u200d", " ")
