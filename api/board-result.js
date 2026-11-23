@@ -31,11 +31,11 @@ export default async function handler(req,res){
   if(!/^\d{5,12}$/.test(reg)) return res.status(400).json({error:'Enter a valid registration number.'});
 
   try{
-    const url='https://api.bangladeshgov.org/?'+new URLSearchParams({exam,year,board,roll,reg}).toString();
+    const url='https://eduboardapi.vercel.app/fetch?'+new URLSearchParams({exam,year,board,roll,reg}).toString();
     const upstream=await fetch(url,{headers:{Accept:'application/json'},redirect:'follow'});
     const body=await upstream.text();
     let data; try{data=JSON.parse(body)}catch{data={raw:body}};
-    if(!upstream.ok) return res.status(502).json({error:'The result service is temporarily unavailable.',upstreamStatus:upstream.status});
+    if(!upstream.ok) return res.status(502).json({error:'The education board result service is temporarily unavailable. Please try again in a moment.',upstreamStatus:upstream.status});
     return res.status(200).json({source:'Education Board result service',data});
   }catch(error){
     console.error('Board result API error:',error);
