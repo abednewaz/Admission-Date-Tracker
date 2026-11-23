@@ -1121,77 +1121,75 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 </script>
 <script>
 (function(){
-  var key='adt_language_v1';
+  var key='adt_language_v2';
   var dict={
     'Rate your Experience':'আপনার অভিজ্ঞতা মূল্যায়ন করুন','How helpful was Admission Tracker for you?':'Admission Tracker আপনার জন্য কতটা উপকারী ছিল?','Your name (optional)':'আপনার নাম (ঐচ্ছিক)','Write your review...':'আপনার রিভিউ লিখুন...','Submit Review':'রিভিউ জমা দিন','Recent Reviews':'সাম্প্রতিক রিভিউ','Loading reviews...':'রিভিউ লোড হচ্ছে...','No reviews yet. Be the first to share your experience.':'এখনও কোনো রিভিউ নেই। আপনার অভিজ্ঞতা সবার আগে শেয়ার করুন।','Reviews are temporarily unavailable.':'রিভিউগুলো সাময়িকভাবে পাওয়া যাচ্ছে না।','Please select a rating first.':'প্রথমে একটি রেটিং নির্বাচন করুন।','Please write a review.':'অনুগ্রহ করে একটি রিভিউ লিখুন।','Your review has been submitted.':'আপনার রিভিউ জমা হয়েছে।','Could not submit your review. Please try again.':'রিভিউ জমা দেওয়া যায়নি। আবার চেষ্টা করুন।','Thanks for your feedback.':'আপনার মতামতের জন্য ধন্যবাদ।',
     'Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.':'বাংলাদেশের বিশ্ববিদ্যালয়গুলোর ভর্তি তারিখ, আবেদনের শেষ সময়, পরীক্ষার সময়সূচি, যোগ্যতা এবং গুরুত্বপূর্ণ নোটিশ সম্পর্কে আপডেট থাকুন।',
-    'Get new notice and exam alerts':'নতুন নোটিশ ও পরীক্ষার অ্যালার্ট পান',
-    'Enable Notifications':'নোটিফিকেশন চালু করুন',
-    'Install Admission Date Tracker to stay informed easily.':'সহজে আপডেট পেতে Admission Tracker ইনস্টল করুন।',
-    'Download to get informed always.':'সবসময় আপডেট থাকতে ইনস্টল করুন',
-    'My Admission Calendar':'আমার ভর্তি ক্যালেন্ডার','Red marks show exam dates for your marked universities.':'লাল চিহ্নে আপনার পছন্দের বিশ্ববিদ্যালয়ের পরীক্ষার তারিখ দেখানো হয়।',
-    'My Universities':'আমার বিশ্ববিদ্যালয়','Search University or Date':'বিশ্ববিদ্যালয় বা তারিখ খুঁজুন',
-    'Search by university or date (DU, BUET, 16 Jan…)':'বিশ্ববিদ্যালয় বা তারিখ দিয়ে খুঁজুন (DU, BUET, ১৬ জানু...)',
-    'Upcoming exams':'আসন্ন পরীক্ষা','Universities':'বিশ্ববিদ্যালয়সমূহ','With exam date':'পরীক্ষার তারিখ প্রকাশিত',
-    'Upcoming':'আসন্ন','All':'সব','Finished':'শেষ হয়েছে','Notice Board':'নোটিশ বোর্ড',
-    'Always verify important details on the university\'s official website.':'গুরুত্বপূর্ণ তথ্য বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে যাচাই করে নিন।',
-    'Quick Links':'দ্রুত লিংক','Admission Calendar':'ভর্তি ক্যালেন্ডার','Home':'হোম','Privacy Policy':'গোপনীয়তা নীতি',
-    'Disclaimer':'দায়মুক্তি ঘোষণা','Contact':'যোগাযোগ','About':'পরিচিতি',
-    'Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at':'নির্মাতা: Abed Newaz। আপনার মূল্যবান পরামর্শ জানাতে ইমেইল করুন:',
-    '© 2026 Admission Tracker. All rights reserved.':'© ২০২৬ Admission Tracker। সর্বস্বত্ব সংরক্ষিত।',
-    'Date Changed':'তারিখ পরিবর্তিত','Exam Date':'পরীক্ষার তারিখ','Exam Time':'পরীক্ষার সময়','Location':'স্থান',
-    'Application Deadline':'আবেদনের শেষ সময়','Check Requirements':'যোগ্যতা যাচাই করুন','Mark University':'তালিকায় রাখুন',
-    'Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট','No matching universities found.':'কোনো বিশ্ববিদ্যালয় পাওয়া যায়নি।',
-    'No exams in this section.':'এই বিভাগে কোনো পরীক্ষা নেই।','Admission Requirements':'ভর্তির যোগ্যতা',
-    'Select your group:':'আপনার বিভাগ নির্বাচন করুন:','Science':'বিজ্ঞান','Business Studies':'ব্যবসায় শিক্ষা',
-    'Humanities':'মানবিক','Madrasa (Alim)':'মাদ্রাসা (আলিম)','Technical (HSC Vocational)':'কারিগরি (এইচএসসি ভোকেশনাল)',
-    'O Level / A Level':'ও লেভেল / এ লেভেল','Others':'অন্যান্য',
-    'Open Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট খুলুন',
-    'Requirements have not been published yet.':'ভর্তির যোগ্যতা এখনো প্রকাশ করা হয়নি।',
-    'Eligible under the published criteria.':'প্রকাশিত শর্ত অনুযায়ী আপনি যোগ্য।',
-    'No matching recent notices found.':'সাম্প্রতিক কোনো প্রাসঙ্গিক নোটিশ পাওয়া যায়নি।'
+    'Get new notice and exam alerts':'নতুন নোটিশ ও পরীক্ষার অ্যালার্ট পান','Enable Notifications':'নোটিফিকেশন চালু করুন','Install Admission Date Tracker to stay informed easily.':'সহজে আপডেট পেতে Admission Tracker ইনস্টল করুন।','Download to get informed always.':'সবসময় আপডেট থাকতে ইনস্টল করুন',
+    'My Admission Calendar':'আমার ভর্তি ক্যালেন্ডার','Red marks show exam dates for your marked universities.':'লাল চিহ্নে আপনার পছন্দের বিশ্ববিদ্যালয়ের পরীক্ষার তারিখ দেখানো হয়।','My Universities':'আমার বিশ্ববিদ্যালয়','Search University or Date':'বিশ্ববিদ্যালয় বা তারিখ খুঁজুন','Search by university or date (DU, BUET, 16 Jan…)':'বিশ্ববিদ্যালয় বা তারিখ দিয়ে খুঁজুন (DU, BUET, ১৬ জানু...)',
+    'Upcoming exams':'আসন্ন পরীক্ষা','Universities':'বিশ্ববিদ্যালয়সমূহ','With exam date':'পরীক্ষার তারিখ প্রকাশিত','Upcoming':'আসন্ন','All':'সব','Finished':'শেষ হয়েছে','Notice Board':'নোটিশ বোর্ড',
+    'Always verify important details on the university\'s official website.':'গুরুত্বপূর্ণ তথ্য বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে যাচাই করে নিন।','Quick Links':'দ্রুত লিংক','Admission Calendar':'ভর্তি ক্যালেন্ডার','Home':'হোম','Privacy Policy':'গোপনীয়তা নীতি','Disclaimer':'দায়মুক্তি ঘোষণা','Contact':'যোগাযোগ','About':'পরিচিতি',
+    'Created by Abed Newaz. If you want to give your precious recommendation, feel free to email me at':'নির্মাতা: Abed Newaz। আপনার মূল্যবান পরামর্শ জানাতে ইমেইল করুন:','© 2026 Admission Tracker. All rights reserved.':'© ২০২৬ Admission Tracker। সর্বস্বত্ব সংরক্ষিত।',
+    'Date Changed':'তারিখ পরিবর্তিত','Exam Date':'পরীক্ষার তারিখ','Exam Time':'পরীক্ষার সময়','Location':'স্থান','Application Deadline':'আবেদনের শেষ সময়','Check Requirements':'যোগ্যতা যাচাই করুন','Mark University':'তালিকায় রাখুন','Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট','No matching universities found.':'কোনো বিশ্ববিদ্যালয় পাওয়া যায়নি।','No exams in this section.':'এই বিভাগে কোনো পরীক্ষা নেই।','Admission Requirements':'ভর্তির যোগ্যতা',
+    'Select your group:':'আপনার বিভাগ নির্বাচন করুন:','Science':'বিজ্ঞান','Business Studies':'ব্যবসায় শিক্ষা','Humanities':'মানবিক','Madrasa (Alim)':'মাদ্রাসা (আলিম)','Technical (HSC Vocational)':'কারিগরি (এইচএসসি ভোকেশনাল)','O Level / A Level':'ও লেভেল / এ লেভেল','Others':'অন্যান্য',
+    'Open Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট খুলুন','Requirements have not been published yet.':'ভর্তির যোগ্যতা এখনো প্রকাশ করা হয়নি।','Eligible under the published criteria.':'প্রকাশিত শর্ত অনুযায়ী আপনি যোগ্য।','No matching recent notices found.':'সাম্প্রতিক কোনো প্রাসঙ্গিক নোটিশ পাওয়া যায়নি।'
   };
+
   function translate(){
     var bn=document.documentElement.getAttribute('data-language')==='bn';
     var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
     var node;
     while(node=walker.nextNode()){
-      var value=node.nodeValue;
-      if(!node.parentElement || /SCRIPT|STYLE/.test(node.parentElement.tagName)) continue;
-      if(!node.__english) node.__english=value;
+      if(!node.parentElement || /SCRIPT|STYLE/.test(node.parentElement.tagName))continue;
+      if(typeof node.__english!=='string')node.__english=node.nodeValue;
+      var out=node.__english;
       if(bn){
-        var out=node.__english;
-        Object.keys(dict).sort(function(a,b){return b.length-a.length}).forEach(function(k){out=out.split(k).join(dict[k])});
-        node.nodeValue=out;
-      }else node.nodeValue=node.__english;
+        Object.keys(dict).sort(function(a,b){return b.length-a.length}).forEach(function(k){
+          out=out.split(k).join(dict[k]);
+        });
+      }
+      if(node.nodeValue!==out)node.nodeValue=out;
     }
     document.querySelectorAll('[placeholder],[aria-label]').forEach(function(el){
       ['placeholder','aria-label'].forEach(function(a){
-        if(!el.dataset['en'+a])el.dataset['en'+a]=el.getAttribute(a);
-        var v=el.dataset['en'+a];
+        if(!el.dataset['adtEn'+a])el.dataset['adtEn'+a]=el.getAttribute(a)||'';
+        var v=el.dataset['adtEn'+a];
         el.setAttribute(a,bn?(dict[v]||v):v);
       });
     });
     document.documentElement.lang=bn?'bn':'en';
     var btn=document.getElementById('languageToggle');
     if(btn){
-      var label=bn?'English':'বাংলা';
-      if(btn.textContent!==label)btn.textContent=label;
+      btn.textContent=bn?'English':'বাংলা';
       btn.setAttribute('aria-label',bn?'Switch to English':'বাংলা ভাষায় পরিবর্তন করুন');
       btn.setAttribute('title',bn?'Switch to English':'Switch to Bangla');
     }
   }
+
   function setLanguage(lang){
+    lang=lang==='en'?'en':'bn';
     document.documentElement.setAttribute('data-language',lang);
     try{localStorage.setItem(key,lang)}catch(e){}
     translate();
   }
-  var saved='en';try{saved=localStorage.getItem(key)||'en'}catch(e){}
-  document.getElementById('languageToggle').addEventListener('click',function(){
-    setLanguage(document.documentElement.getAttribute('data-language')==='bn'?'en':'bn');
-  });
-  setLanguage(saved);
-  new MutationObserver(function(){if(document.documentElement.getAttribute('data-language')==='bn')translate()}).observe(document.body,{childList:true,subtree:true});
+
+  function init(){
+    var btn=document.getElementById('languageToggle');
+    if(!btn)return;
+    var saved='';
+    try{saved=localStorage.getItem(key)||''}catch(e){}
+    setLanguage(saved==='en'||saved==='bn'?saved:'bn');
+    btn.onclick=function(){
+      var current=document.documentElement.getAttribute('data-language')==='bn'?'bn':'en';
+      setLanguage(current==='bn'?'en':'bn');
+    };
+    new MutationObserver(function(){
+      if(document.documentElement.getAttribute('data-language')==='bn')translate();
+    }).observe(document.body,{childList:true,subtree:true});
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+  else init();
 })();
 </script>
 
