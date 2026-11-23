@@ -5,6 +5,10 @@ on:
   push:
     paths:
       - notices.js
+      - system-status.js
+      - notice-state.json
+      - .github/scripts/check_admission_dates.py
+      - .github/workflows/notice-check.yml
   schedule:
     # Bangladesh local time: every hour at minute 34.
     - cron: "34 * * * *"
