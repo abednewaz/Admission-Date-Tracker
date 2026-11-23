@@ -840,6 +840,20 @@ NOTICE_SOURCE_URLS = [
     "https://students.bd/en/",
 ]
 
+# Official admission/notice pages for tracker institutions whose notices may not
+# be mirrored reliably by students.bd. These are checked in addition to the
+# aggregator feed; a failure on one source must never stop the others.
+OFFICIAL_NOTICE_SOURCES = [
+    {"university": "BUET", "url": "https://ugadmission.buet.ac.bd/"},
+    {"university": "Dhaka University", "url": "https://admission.eis.du.ac.bd/en/"},
+    {"university": "Rajshahi University", "url": "https://admission.ru.ac.bd/index.php/student/notices"},
+    {"university": "Khulna University", "url": "https://admission.ku.ac.bd/"},
+    {"university": "KUET", "url": "https://admission.kuet.ac.bd/"},
+    {"university": "AUST", "url": "https://admission.aust.edu/notice/"},
+    {"university": "Jagannath University", "url": "https://www.admission.jnu.ac.bd/preliminary/advertisement/"},
+    {"university": "RUET", "url": "https://admission.ruet.ac.bd/notices/"},
+]
+
 def extract_notice_page(url):
     try:
         r = request_source(url)
@@ -917,6 +931,54 @@ def extract_notice_page(url):
     except Exception as exc:
         print(f"Notice page extraction failed for {url}: {exc}")
         return {"title": "", "date": "", "summary": ""}
+
+def extract_official_notice_items(source):
+    items = []
+    try:
+        r = request_source(source["url"])
+        soup = BeautifulSoup(r.text, "html.parser")
+        base = r.url
+        seen = set()
+
+        # Treat the source page itself as a candidate when it is an admission
+        # portal, then inspect linked notices/PDFs. Do not require /notice/ in
+        # the URL: many university portals use arbitrary routes or PDF links.
+        candidates = [(base, soup)]
+        for a in soup.find_all("a", href=True):
+            href = urljoin(base, a["href"]).rstrip("/")
+            if href in seen or href == base.rstrip("/"):
+                continue
+            label = normalize(a.get_text(" ", strip=True))
+            low = (label + " " + href).lower()
+            if not re.search(r"notice|circular|guideline|prospectus|admission|ভর্তি|বিজ্ঞপ্তি|নির্দেশ|prospect", low, re.I):
+                continue
+            if not (".pdf" in href.lower() or re.search(r"notice|circular|guideline|prospectus|advertisement", low, re.I)):
+                continue
+            seen.add(href)
+            try:
+                meta = extract_notice_page(href)
+                if meta.get("title"):
+                    items.append({
+                        "university": source["university"],
+                        "title": meta["title"],
+                        "date": meta.get("date", ""),
+                        "url": normalize_notice_url(href),
+                        "source": source["university"] + " official admission source",
+                        "summary": meta.get("summary", ""),
+                        "notify": True,
+                    })
+            except Exception as exc:
+                print(f"Official notice candidate failed for {source['university']}: {href}: {exc}")
+
+        # If no linked item was extracted, still record a source-health failure
+        # rather than inventing a notice from the portal homepage.
+        if not items:
+            print(f"OFFICIAL SOURCE: no extractable notice items for {source['university']} ({source['url']})")
+        return items[:12]
+    except Exception as exc:
+        print(f"OFFICIAL SOURCE FAILED: {source['university']} ({source['url']}): {exc}")
+        return []
+
 
 def update_notice_feed():
     try:
@@ -1003,8 +1065,9 @@ def update_notice_feed():
                 if not title or len(title) < 8:
                     title = f"{university} admission update 2026-27"
 
-                date_value = meta.get("date", "")
+                canonical_href = normalize_notice_url(href)
                 previous = existing_by_url.get(canonical_href.lower())
+                date_value = meta.get("date", "")
                 if not date_value and previous and not source_is_admission_hub:
                     date_value = str(previous.get("date", ""))
                 # Do not invent a publication date for admission landing
@@ -1012,9 +1075,6 @@ def update_notice_feed():
                 # verified dated notices and avoids fake "today" notices.
                 if not date_value:
                     date_value = ""
-
-                canonical_href = normalize_notice_url(href)
-                previous = existing_by_url.get(canonical_href.lower())
                 is_new_source_notice = canonical_href.lower() not in known_urls
                 items.append({
                     "university": university,
@@ -1032,6 +1092,15 @@ def update_notice_feed():
             if len(items) >= 40:
                 break
 
+        # Check institution-owned admission/notice sources as a second
+        # independent layer. This is the critical path for notices such as the
+        # BUET 2026-27 circular, which may never appear on students.bd.
+        for source in OFFICIAL_NOTICE_SOURCES:
+            official_items = extract_official_notice_items(source)
+            for item in official_items:
+                if item.get("url"):
+                    items.append(item)
+        
         # Keep the old notice-page scraper as a fallback only if the broader
         # sources returned nothing.
         if not items:
