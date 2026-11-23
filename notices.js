@@ -31,6 +31,16 @@ window.ADMISSION_NOTICES = [
     "summary": "The 2026-27 MBBS/BDS admission test remains scheduled for 18 December 2026. The formal DGME admission circular, including application dates and final eligibility details, was still awaited as of the latest update. The medical test is subject to the High Court order affecting public university and medical admission tests until 31 December, unless the court changes that position."
   },
   {
+    "university": "Bangladesh University of Professionals",
+    "title": "BUP revises 2026-27 admission tests to 16, 22 and 23 January 2027",
+    "date": "2026-11-21",
+    "url": "",
+    "source": "BUP official admission circular",
+    "sourceUrl": "https://admission.bup.edu.bd/Upload/Notices/BUP%20Admission%20Advertisement%202026-2027.pdf",
+    "notify": false,
+    "summary": "BUP's 2026-27 written admission tests are scheduled for FASS on 16 January 2027; FST, FET and FMS on 22 January; FSSS on 22 January at 3:30 PM; and FBS on 23 January. The application window is 1 December 2026 to 5 January 2027."
+  },
+  {
     "university": "Rajshahi University of Engineering & Technology",
     "title": "RUET revises 2026-27 admission test date to 28 January 2027",
     "date": "2026-11-19",
