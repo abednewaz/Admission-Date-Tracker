@@ -22,8 +22,10 @@ HEADERS = {
 }
 SOURCE_FALLBACKS = {
     "admission.jnu.ac.bd": [
-        "https://admission.jnu.ac.bd/preliminary/advertisement/",
+        "https://www.admission.jnu.ac.bd/",
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/",
+        "https://www.admission.jnu.ac.bd/preliminary/advertisement/e1c02afe22c4d6522a79dc6652cdd9b95c34e49b.jsp",
+        "https://www.admission.jnu.ac.bd/preliminary/advertisement/b286beede20ebe41dad7d5854296a64321c2c2ab.jsp",
     ],
     "gstadmission.ac.bd": [
         "https://nstu.edu.bd/services/viewNotice",
