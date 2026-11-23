@@ -1009,18 +1009,15 @@ def update_court_status():
                 })
                 print("COURT STATUS UPDATE:", active, court["sourceUrl"])
         else:
-            court["lastVerified"] = datetime.now(ZoneInfo("Asia/Dhaka")).isoformat(timespec="seconds")
-            if not court.get("appealStatus"):
-                court["appealStatus"] = "Supreme Court appeal status not yet verified; High Court suspension remains the working status"
-            changed = court.get("lastVerified") != current.get("courtAdmissionSuspension", {}).get("lastVerified")
+            print("No new court outcome found; retaining the current court status.")
+            return False
 
         new_text = "window.ADMISSION_SYSTEM_STATUS = " + json.dumps(current, ensure_ascii=False, indent=2) + ";\n"
         if new_text != status_text:
             path.write_text(new_text, encoding="utf-8")
             print("Court status file updated.")
-        elif not outcome:
-            print("No new court outcome found; retaining the current court status.")
-        return changed or new_text != status_text
+            return True
+        return False
     except Exception as exc:
         print(f"Court status monitor failed: {exc}")
         return False
