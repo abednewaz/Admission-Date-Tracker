@@ -3,10 +3,10 @@ import io
 import json
 import re
 import hashlib
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, quote_plus
 
 import requests
 from bs4 import BeautifulSoup
@@ -740,7 +740,7 @@ def add_curated_notice(notice):
     if path.exists():
         try:
             text = path.read_text(encoding="utf-8")
-            match = re.search(r"window\\.ADMISSION_NOTICES\\s*=\\s*(\\[.*?\\])\\s*;?\\s*$", text, re.S)
+            match = re.search(r"window\.ADMISSION_NOTICES\s*=\s*(\[.*?\])\s*;?\s*$", text, re.S)
             existing = json.loads(match.group(1)) if match else []
         except Exception as exc:
             print(f"Curated notice parse failed: {exc}")
@@ -876,13 +876,163 @@ def update_notice_feed():
         return 0
 
 
+def _court_news_items():
+    queries = [
+        'Bangladesh Supreme Court admission tests public universities December 31',
+        'Bangladesh Supreme Court DU admission test High Court order',
+        'Bangladesh Supreme Court medical admission test High Court order',
+    ]
+    items = []
+    seen = set()
+    for query in queries:
+        rss_url = (
+            "https://news.google.com/rss/search?q="
+            + quote_plus(query)
+            + "&hl=en-BD&gl=BD&ceid=BD:en"
+        )
+        try:
+            response = request_source(rss_url)
+            soup = BeautifulSoup(response.text, "html.parser")
+            for item in soup.find_all("item"):
+                title = normalize(item.find("title").get_text(" ", strip=True) if item.find("title") else "")
+                link = item.find("link").get_text(" ", strip=True) if item.find("link") else ""
+                description = normalize(item.find("description").get_text(" ", strip=True) if item.find("description") else "")
+                pub = item.find("pubDate").get_text(" ", strip=True) if item.find("pubDate") else ""
+                source_node = item.find("source")
+                source = normalize(source_node.get_text(" ", strip=True) if source_node else "")
+                if not title or not link:
+                    continue
+                key = (title.lower(), link)
+                if key in seen:
+                    continue
+                seen.add(key)
+                try:
+                    published = datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
+                except ValueError:
+                    try:
+                        from email.utils import parsedate_to_datetime
+                        published = parsedate_to_datetime(pub).astimezone(timezone.utc)
+                    except Exception:
+                        published = None
+                items.append({
+                    "title": title,
+                    "link": link,
+                    "description": description,
+                    "source": source,
+                    "published": published,
+                })
+        except Exception as exc:
+            print(f"Court news feed failed for {query!r}: {exc}")
+    items.sort(key=lambda x: x["published"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    return items
+
+
+def update_court_status():
+    path = Path("system-status.js")
+    try:
+        news_items = _court_news_items()
+        now = datetime.now(timezone.utc)
+        relevant = []
+        for item in news_items:
+            published = item.get("published")
+            if published and (now - published).total_seconds() > 4 * 86400:
+                continue
+            blob = normalize(
+                " ".join([
+                    item.get("title", ""),
+                    item.get("description", ""),
+                ])
+            ).lower()
+            if not re.search(r"admission|ভর্তি", blob):
+                continue
+            if not re.search(r"supreme court|appellate division|high court|appeal|stay|স্থগিত|আপিল", blob, re.I):
+                continue
+            relevant.append(item)
+
+        status_text = path.read_text(encoding="utf-8") if path.exists() else ""
+        current_match = re.search(r"window\.ADMISSION_SYSTEM_STATUS\s*=\s*(\{.*\});\s*$", status_text, re.S)
+        current = json.loads(current_match.group(1)) if current_match else {
+            "courtAdmissionSuspension": {
+                "active": True,
+                "effectiveFrom": "2026-11-18",
+                "through": "2026-12-31",
+            }
+        }
+        court = current.setdefault("courtAdmissionSuspension", {})
+        old_active = bool(court.get("active", True))
+        old_status = str(court.get("appealStatus", ""))
+
+        outcome = None
+        for item in relevant:
+            blob = (item.get("title", "") + " " + item.get("description", "")).lower()
+            if re.search(r"stay granted|order stayed|suspension lifted|order set aside|order quashed|tests can proceed|tests may proceed|appeal allowed", blob):
+                outcome = ("inactive", item)
+                break
+            if re.search(r"no stay|stay denied|stay rejected|suspension remains|remains in effect|order remains|order upheld|appeal dismissed|appeal rejected", blob):
+                outcome = ("active", item)
+                break
+
+        if outcome:
+            state, item = outcome
+            active = state == "active"
+            court["active"] = active
+            court["lastVerified"] = datetime.now(ZoneInfo("Asia/Dhaka")).isoformat(timespec="seconds")
+            court["source"] = item.get("source") or "News report"
+            court["sourceUrl"] = item.get("link") or court.get("sourceUrl", "")
+            if active:
+                court["label"] = "Admission test suspension remains in effect — Supreme Court appeal"
+                court["shortLabel"] = "Admission test suspended — court order remains in effect"
+                court["appealStatus"] = "Supreme Court appeal heard; latest verified reports say the suspension remains in effect"
+            else:
+                court["label"] = "High Court admission-test suspension lifted/stayed by Supreme Court"
+                court["shortLabel"] = "Admission test suspension lifted by Supreme Court"
+                court["appealStatus"] = "Supreme Court has changed the effect of the High Court order"
+            changed = active != old_active or court.get("appealStatus") != old_status
+            if changed:
+                add_curated_notice({
+                    "university": "Admission Tracker",
+                    "title": (
+                        "Supreme Court updates the public-university admission-test suspension"
+                        if active else
+                        "Supreme Court changes the High Court admission-test suspension"
+                    ),
+                    "date": datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat(),
+                    "url": "",
+                    "source": court["source"],
+                    "sourceUrl": court["sourceUrl"],
+                    "notify": True,
+                    "generatedBy": "court-status-monitor",
+                    "summary": (
+                        "The Admission Tracker court monitor detected a new Supreme Court update. "
+                        + court["appealStatus"] + ". The tracker has updated its admission-test status automatically."
+                    ),
+                })
+                print("COURT STATUS UPDATE:", active, court["sourceUrl"])
+        else:
+            court["lastVerified"] = datetime.now(ZoneInfo("Asia/Dhaka")).isoformat(timespec="seconds")
+            if not court.get("appealStatus"):
+                court["appealStatus"] = "Supreme Court appeal status not yet verified; High Court suspension remains the working status"
+            changed = court.get("lastVerified") != current.get("courtAdmissionSuspension", {}).get("lastVerified")
+
+        new_text = "window.ADMISSION_SYSTEM_STATUS = " + json.dumps(current, ensure_ascii=False, indent=2) + ";\n"
+        if new_text != status_text:
+            path.write_text(new_text, encoding="utf-8")
+            print("Court status file updated.")
+        elif not outcome:
+            print("No new court outcome found; retaining the current court status.")
+        return changed or new_text != status_text
+    except Exception as exc:
+        print(f"Court status monitor failed: {exc}")
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--mode",
-        choices=("admission", "notices", "all"),
+        choices=("admission", "notices", "court", "all"),
         default="all",
-        help="Run only the admission/requirements checker, only the notice feed, or both.",
+        help="Run admission/requirements, notice feed, court-status monitoring, or all checks.",
     )
     mode = parser.parse_args().mode
 
@@ -1010,6 +1160,9 @@ def main():
 
     if mode in ("notices", "all"):
         update_notice_feed()
+
+    if mode in ("court", "notices", "all"):
+        update_court_status()
 
 
 if __name__ == "__main__":
