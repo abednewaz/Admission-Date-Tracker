@@ -26,6 +26,7 @@ SOURCE_FALLBACKS = {
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/",
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/e1c02afe22c4d6522a79dc6652cdd9b95c34e49b.jsp",
         "https://www.admission.jnu.ac.bd/preliminary/advertisement/b286beede20ebe41dad7d5854296a64321c2c2ab.jsp",
+        "https://students.bd/en/notice/jagannath-university-undergraduate-admission-circular-2026-2027",
     ],
     "gstadmission.ac.bd": [
         "https://nstu.edu.bd/services/viewNotice",
