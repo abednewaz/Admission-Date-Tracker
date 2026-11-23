@@ -51,6 +51,12 @@ EXAM_RE = re.compile(
     re.I,
 )
 
+POSTGRAD_CONTEXT_RE = re.compile(
+    r"post\s*graduate|postgraduate|m\.?(?:sc|eng|arch)|m\.engg|m\.arch|mba|emba|mphil|phd|"
+    r"masters?|master\\s+degree|ms\\b|pg\\b|এম\\.?(?:এসসি|ইঞ্জিনিয়ারিং)|স্নাতকোত্তর",
+    re.I,
+)
+
 DATE_PATTERNS = [
     re.compile(r"(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](2026|2027)(?!\d)"),
     re.compile(r"(?<!\d)(2026|2027)[./-](\d{1,2})[./-](\d{1,2})(?!\d)"),
@@ -563,6 +569,20 @@ def choose_exam_date(row, texts):
                 continue
 
             ctx_low = ctx.lower()
+            # Do not let a postgraduate notice overwrite an undergraduate
+            # admission record. This specifically prevents pages that list
+            # M.Sc./M.Engg./MBA/PhD tests alongside undergraduate admissions
+            # from being mistaken for the tracker record.
+            unit_low = normalize(str(row.get("unit", ""))).lower()
+            if POSTGRAD_CONTEXT_RE.search(ctx) and not POSTGRAD_CONTEXT_RE.search(unit_low):
+                continue
+
+            # Generic undergraduate records need undergraduate/admission context
+            # in the same source window; this avoids unrelated department tests.
+            if "undergraduate" in unit_low or re.search(r"undergraduate|স্নাতক|১ম বর্ষ|first year", unit_low, re.I):
+                if not re.search(r"undergraduate|স্নাতক|১ম বর্ষ|first year|bachelor|admission test", ctx, re.I):
+                    continue
+
             score = 300
             if current and date_value == current:
                 score += 40
