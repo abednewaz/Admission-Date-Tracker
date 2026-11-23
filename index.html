@@ -1121,7 +1121,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
 </script>
 <script>
 (function(){
-  var key='adt_language_v2';
+  var key='adt_language_v3';
   var dict={
     'Rate your Experience':'আপনার অভিজ্ঞতা মূল্যায়ন করুন','How helpful was Admission Tracker for you?':'Admission Tracker আপনার জন্য কতটা উপকারী ছিল?','Your name (optional)':'আপনার নাম (ঐচ্ছিক)','Write your review...':'আপনার রিভিউ লিখুন...','Submit Review':'রিভিউ জমা দিন','Recent Reviews':'সাম্প্রতিক রিভিউ','Loading reviews...':'রিভিউ লোড হচ্ছে...','No reviews yet. Be the first to share your experience.':'এখনও কোনো রিভিউ নেই। আপনার অভিজ্ঞতা সবার আগে শেয়ার করুন।','Reviews are temporarily unavailable.':'রিভিউগুলো সাময়িকভাবে পাওয়া যাচ্ছে না।','Please select a rating first.':'প্রথমে একটি রেটিং নির্বাচন করুন।','Please write a review.':'অনুগ্রহ করে একটি রিভিউ লিখুন।','Your review has been submitted.':'আপনার রিভিউ জমা হয়েছে।','Could not submit your review. Please try again.':'রিভিউ জমা দেওয়া যায়নি। আবার চেষ্টা করুন।','Thanks for your feedback.':'আপনার মতামতের জন্য ধন্যবাদ।',
     'Stay updated with university admission dates, deadlines, exam schedules, requirements, and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.':'বাংলাদেশের বিশ্ববিদ্যালয়গুলোর ভর্তি তারিখ, আবেদনের শেষ সময়, পরীক্ষার সময়সূচি, যোগ্যতা এবং গুরুত্বপূর্ণ নোটিশ সম্পর্কে আপডেট থাকুন।',
@@ -1134,27 +1134,27 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     'Select your group:':'আপনার বিভাগ নির্বাচন করুন:','Science':'বিজ্ঞান','Business Studies':'ব্যবসায় শিক্ষা','Humanities':'মানবিক','Madrasa (Alim)':'মাদ্রাসা (আলিম)','Technical (HSC Vocational)':'কারিগরি (এইচএসসি ভোকেশনাল)','O Level / A Level':'ও লেভেল / এ লেভেল','Others':'অন্যান্য',
     'Open Official Admission Website':'অফিসিয়াল ভর্তি ওয়েবসাইট খুলুন','Requirements have not been published yet.':'ভর্তির যোগ্যতা এখনো প্রকাশ করা হয়নি।','Eligible under the published criteria.':'প্রকাশিত শর্ত অনুযায়ী আপনি যোগ্য।','No matching recent notices found.':'সাম্প্রতিক কোনো প্রাসঙ্গিক নোটিশ পাওয়া যায়নি।'
   };
+  var keys=Object.keys(dict).sort(function(a,b){return b.length-a.length});
 
   function translate(){
     var bn=document.documentElement.getAttribute('data-language')==='bn';
-    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+    var walker=document.createTreeWalker(document.body,4);
     var node;
     while(node=walker.nextNode()){
-      if(!node.parentElement || /SCRIPT|STYLE/.test(node.parentElement.tagName))continue;
-      if(typeof node.__english!=='string')node.__english=node.nodeValue;
-      var out=node.__english;
+      if(!node.parentElement||/SCRIPT|STYLE/.test(node.parentElement.tagName))continue;
+      if(typeof node.__adtEnglish!=='string')node.__adtEnglish=node.nodeValue;
+      var out=node.__adtEnglish;
       if(bn){
-        Object.keys(dict).sort(function(a,b){return b.length-a.length}).forEach(function(k){
-          out=out.split(k).join(dict[k]);
-        });
+        for(var i=0;i<keys.length;i++)out=out.split(keys[i]).join(dict[keys[i]]);
       }
       if(node.nodeValue!==out)node.nodeValue=out;
     }
     document.querySelectorAll('[placeholder],[aria-label]').forEach(function(el){
       ['placeholder','aria-label'].forEach(function(a){
-        if(!el.dataset['adtEn'+a])el.dataset['adtEn'+a]=el.getAttribute(a)||'';
-        var v=el.dataset['adtEn'+a];
-        el.setAttribute(a,bn?(dict[v]||v):v);
+        var prop='adtOriginal'+a;
+        if(typeof el[prop]!=='string')el[prop]=el.getAttribute(a)||'';
+        var original=el[prop];
+        el.setAttribute(a,bn?(dict[original]||original):original);
       });
     });
     document.documentElement.lang=bn?'bn':'en';
@@ -1171,23 +1171,28 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.documentElement.setAttribute('data-language',lang);
     try{localStorage.setItem(key,lang)}catch(e){}
     translate();
+    window.dispatchEvent(new CustomEvent('adt-language-change',{detail:{language:lang}}));
+  }
+
+  function toggleLanguage(){
+    var current=document.documentElement.getAttribute('data-language');
+    setLanguage(current==='bn'?'en':'bn');
   }
 
   function init(){
-    var btn=document.getElementById('languageToggle');
-    if(!btn)return;
     var saved='';
     try{saved=localStorage.getItem(key)||''}catch(e){}
     setLanguage(saved==='en'||saved==='bn'?saved:'bn');
-    btn.onclick=function(){
-      var current=document.documentElement.getAttribute('data-language')==='bn'?'bn':'en';
-      setLanguage(current==='bn'?'en':'bn');
-    };
-    new MutationObserver(function(){
-      if(document.documentElement.getAttribute('data-language')==='bn')translate();
-    }).observe(document.body,{childList:true,subtree:true});
+    document.addEventListener('click',function(e){
+      var btn=e.target.closest ? e.target.closest('#languageToggle') : null;
+      if(!btn)return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggleLanguage();
+    },true);
   }
 
+  window.ADTSetLanguage=setLanguage;
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
   else init();
 })();
