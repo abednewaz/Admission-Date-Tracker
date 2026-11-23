@@ -37,6 +37,31 @@ SOURCE_FALLBACKS = {
     ],
 }
 
+ADMISSION_ONLY = re.compile(
+    r"admission|undergraduate|honours|1st year|first year|circular|prospectus|guideline|"
+    r"application|applicant|admit card|seat plan|merit list|migration|admission test|"
+    r"exam date|test schedule|ভর্তি|স্নাতক|সম্মান|১ম বর্ষ|বিবিএ|বিজ্ঞপ্তি|নোটিশ|"
+    r"ভর্তি পরীক্ষা|আবেদন|প্রবেশপত্র|মেধা|মাইগ্রেশন|পরীক্ষার তারিখ|পরীক্ষার সময়সূচি|গুচ্ছ|GST",
+    re.I,
+)
+EXCLUDE_NON_UNDERGRAD = re.compile(
+    r"post\s*graduate|postgraduate|phd|m\.?(?:phil|sc|eng|arch)|masters?|mba|emba|"
+    r"মাস্টার্স|এমফিল|পিএইচডি|স্নাতকোত্তর|scholarship|tender|procurement|recruitment|"
+    r"job circular|course registration|convocation|sports|seminar|workshop|staff|teacher",
+    re.I,
+)
+
+def is_relevant_notice(title, summary=""):
+    blob = normalize(f"{title} {summary}")
+    if not ADMISSION_ONLY.search(blob):
+        return False
+    if EXCLUDE_NON_UNDERGRAD.search(blob) and not re.search(
+        r"undergraduate|1st year|first year|honours|স্নাতক|সম্মান|১ম বর্ষ|ভর্তি পরীক্ষা",
+        blob, re.I
+    ):
+        return False
+    return True
+
 NOTICE_WORDS = re.compile(
     r"notice|notices|circular|admission|undergraduate|prospectus|guideline|"
     r"advertisement|announcement|important|ভর্তি|বিজ্ঞপ্তি|নোটিশ|নির্দেশিকা|"
@@ -260,7 +285,7 @@ def extract_html_items(url, response, university):
             except Exception:
                 pass
 
-        if title and len(title) >= 8:
+        if title and len(title) >= 8 and is_relevant_notice(title, context_text):
             items.append({
                 "university": university,
                 "title": title[:300],
@@ -407,7 +432,12 @@ def main():
     manual = [n for n in existing if not n.get("url")]
     auto = {notice_key(n): n for n in existing if n.get("url")}
     for item in all_items:
-        auto[notice_key(item)] = item
+        if is_relevant_notice(item.get("title",""), item.get("summary","")):
+            auto[notice_key(item)] = item
+    auto = {
+        k: v for k, v in auto.items()
+        if is_relevant_notice(v.get("title",""), v.get("summary",""))
+    }
     merged = manual + sorted(auto.values(), key=lambda x: (x.get("date",""), x.get("university",""), x.get("title","")), reverse=True)
     merged = merged[:60]
 
