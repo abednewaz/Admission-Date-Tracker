@@ -55,7 +55,7 @@ jobs:
             }
           }
 
-          if (!notices.some(n => n.university === 'BUET' && String(n.title || '').toLowerCase().includes('circular'))) {
+          if (!notices.some(n => n.university === 'BUET' && /admission.*circular|circular.*admission/i.test(String(n.title || '')))) {
             throw new Error('BUET circular notice is missing');
           }
 
