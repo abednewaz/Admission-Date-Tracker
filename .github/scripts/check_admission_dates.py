@@ -951,7 +951,7 @@ def update_court_status():
 
         status_text = path.read_text(encoding="utf-8") if path.exists() else ""
         def read_status_value(name, default=None):
-            pattern = r"\\b" + re.escape(name) + r"\\s*:\\s*(?:\"([^\"]*)\"|(true|false))"
+            pattern = r"\b" + re.escape(name) + r"\s*:\s*(?:" + chr(34) + r"([^" + chr(34) + r"]*)" + chr(34) + r"|(true|false))"
             match = re.search(pattern, status_text)
             if not match:
                 return default
