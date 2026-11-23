@@ -53,12 +53,20 @@ EXCLUDE_NON_UNDERGRAD = re.compile(
 
 def is_relevant_notice(title, summary=""):
     blob = normalize(f"{title} {summary}")
+    current_cycle = re.search(
+        r"2026\s*[-–/]\s*2027|2026\s*[-–/]\s*27|২০২৬\s*[-–/]\s*২০২৭|২০২৬\s*[-–/]\s*২৭",
+        blob, re.I
+    )
+    if not current_cycle:
+        return False
     if not ADMISSION_ONLY.search(blob):
         return False
     if EXCLUDE_NON_UNDERGRAD.search(blob) and not re.search(
         r"undergraduate|1st year|first year|honours|স্নাতক|সম্মান|১ম বর্ষ|ভর্তি পরীক্ষা",
         blob, re.I
     ):
+        return False
+    if re.search(r"parent directory|name\s+last\s+modified|^prospectus$|^registration$|^resources$|^selection procedure$", blob, re.I):
         return False
     return True
 
@@ -240,6 +248,24 @@ def extract_html_items(url, response, university):
     page_text = normalize(soup.get_text(" ", strip=True))
     page_date = parse_date(page_text)
     items = []
+
+    page_title = ""
+    h1 = soup.find("h1")
+    if h1:
+        page_title = normalize(h1.get_text(" ", strip=True))
+    if not page_title and soup.title:
+        page_title = normalize(soup.title.get_text(" ", strip=True))
+    if page_title and is_relevant_notice(page_title, page_text[:2500]):
+        items.append({
+            "university": university,
+            "title": page_title[:300],
+            "date": page_date,
+            "url": clean_url(response.url),
+            "source": f"{university} official source",
+            "summary": page_text[:1200],
+            "notify": True,
+            "generatedBy": "official-notice-monitor",
+        })
     seen = set()
 
     pdf_budget = 4
