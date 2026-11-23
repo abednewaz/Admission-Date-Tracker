@@ -53,7 +53,8 @@ ADMISSION_ONLY = re.compile(
 )
 EXCLUDE_NON_UNDERGRAD = re.compile(
     r"post\s*graduate|postgraduate|phd|m\.?(?:phil|sc|eng|arch)|masters?|mba|emba|"
-    r"মাস্টার্স|এমফিল|পিএইচডি|স্নাতকোত্তর|scholarship|tender|procurement|recruitment|"
+    r"মাস্টার্স|এমফিল|এম\.ফিল|এমফিল|পিএইচডি|স্নাতকোত্তর|"
+    r"scholarship|tender|procurement|recruitment|নিয়োগ|নিয়োগ|"
     r"job circular|course registration|convocation|sports|seminar|workshop|staff|teacher",
     re.I,
 )
@@ -64,7 +65,7 @@ def is_relevant_notice(title, summary=""):
     blob = f"{title_text} {summary_text}"
     current_cycle = re.search(
         r"2026\s*[-–/]\s*2027|2026\s*[-–/]\s*27|২০২৬\s*[-–/]\s*২০২৭|২০২৬\s*[-–/]\s*২৭",
-        blob, re.I
+        title_text, re.I
     )
     if not current_cycle:
         return False
@@ -78,7 +79,7 @@ def is_relevant_notice(title, summary=""):
         title_text, re.I
     ):
         return False
-    if re.search(r"parent directory|name\s+last\s+modified|^prospectus$|^registration$|^resources$|^selection procedure$|^home(?:\s+admission\s+notices)?$", title_text, re.I):
+    if re.search(r"parent directory|name\s+last\s+modified|^prospectus$|^registration$|^resources$|^selection procedure$|^home(?:\s+admission\s+notices)?$|^read more$|portal$|admission portal|payment instructions|helpline|complaint|photo/selfie instructions|^faq$", title_text, re.I):
         return False
     return True
 
