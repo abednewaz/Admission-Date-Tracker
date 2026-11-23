@@ -25,10 +25,10 @@ export default async function handler(req,res){
   const reg=String(req.query?.reg||'').replace(/\D/g,'');
 
   if(!['ssc','hsc'].includes(exam)) return res.status(400).json({error:'Select SSC or HSC/equivalent.'});
-  if(!/^20\\d{2}$/.test(year)) return res.status(400).json({error:'Invalid examination year.'});
+  if(!/^20\d{2}$/.test(year)) return res.status(400).json({error:'Invalid examination year.'});
   if(!board) return res.status(400).json({error:'Select an education board.'});
-  if(!/^\\d{4,8}$/.test(roll)) return res.status(400).json({error:'Enter a valid roll number.'});
-  if(!/^\\d{5,12}$/.test(reg)) return res.status(400).json({error:'Enter a valid registration number.'});
+  if(!/^\d{4,8}$/.test(roll)) return res.status(400).json({error:'Enter a valid roll number.'});
+  if(!/^\d{5,12}$/.test(reg)) return res.status(400).json({error:'Enter a valid registration number.'});
 
   try{
     const url='https://api.bangladeshgov.org/?'+new URLSearchParams({exam,year,board,roll,reg}).toString();
