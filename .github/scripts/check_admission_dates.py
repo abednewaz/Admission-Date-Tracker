@@ -654,6 +654,14 @@ NOTICE_TARGETS = {
     "ulab": "ULAB",
     "green university": "Green University of Bangladesh",
     "iub": "Independent University, Bangladesh",
+    "uiu": "United International University",
+    "united international university": "United International University",
+    "aust": "Ahsanullah University of Science and Technology",
+    "ahsanullah university": "Ahsanullah University of Science and Technology",
+    "green university": "Green University of Bangladesh",
+    "gub": "Green University of Bangladesh",
+    "international islamic university chittagong": "International Islamic University Chittagong",
+    "iiuc": "International Islamic University Chittagong",
 
     # Engineering / technology universities in the tracker.
     "buet": "BUET",
@@ -675,6 +683,12 @@ NOTICE_TARGETS = {
 
     # Divisional / regional public universities in the tracker.
     "rajshahi university": "Rajshahi University",
+    "ru admission": "Rajshahi University",
+    "ru-admission": "Rajshahi University",
+    "cu admission": "Chittagong University",
+    "cu-admission": "Chittagong University",
+    "gst admission": "GST Cluster — 20 Public Universities",
+    "gst-admission": "GST Cluster — 20 Public Universities",
     "university of rajshahi": "Rajshahi University",
     "chittagong university": "Chittagong University",
     "university of chittagong": "Chittagong University",
@@ -904,7 +918,8 @@ def update_notice_feed():
                 print(f"Notice source failed for {source_url}: {exc}")
                 continue
 
-            source_is_admission_hub = "/admission" in urlparse(source_url).path
+            source_path = urlparse(source_url).path.rstrip("/").lower()
+            source_is_admission_hub = source_path in ("/en/admission", "/bn/admission", "/admission")
             for a in soup.find_all("a", href=True):
                 href = urljoin(r.url, a["href"]).rstrip("/")
                 if href in seen:
