@@ -60,7 +60,7 @@ jobs:
           }
 
           const court = status.courtAdmissionSuspension || {};
-          if (!court.active || court.through !== '2026-12-31') {
+          if (court.active !== false || court.through !== '2026-12-31') {
             throw new Error('Court suspension status is missing or inconsistent');
           }
 
