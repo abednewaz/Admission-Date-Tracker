@@ -1323,6 +1323,15 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       }
       var res=await fetch('/api/board-result',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},credentials:'same-origin',body:JSON.stringify(payload)});
       var json=await res.json();
+      if(json.needsBrowser){
+        var box=document.getElementById('brCaptchaContent');
+        var officialUrl=String(json.url||'https://eboardresults.com/v2/home');
+        if(box){
+          box.innerHTML='<div style="font-size:.78rem;color:var(--muted);line-height:1.5;margin-bottom:.55rem">The official result service requires browser verification. Complete the verification in the official form below.</div><iframe id="brOfficialFrame" class="board-result-frame" title="Official Education Board Result Service" src="'+officialUrl.replace(/"/g,'&quot;')+'"></iframe><div class="board-result-actions" style="margin-top:.55rem"><a href="'+officialUrl.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">Open official result service</a></div>';
+        }
+        status.textContent='Complete the official verification and result form in the box above.';
+        return;
+      }
       if(res.status===428&&json.needsCaptcha){
         await loadCaptcha(status,submitBtn);
         return;
