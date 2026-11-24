@@ -91,10 +91,10 @@ export default async function handler(req,res){
 
     // Fallback path: official session + CAPTCHA, only when the API provider cannot answer.
     const captcha=String(body.captcha||'').trim();
-    if(!captcha||!body.session)return json(res,{error:'Automatic result lookup is temporarily unavailable. Load the security image and enter the code to use the official result service.',needsCaptcha:true},428);
+    if(!captcha||!body.session)return json(res,{error:'The official result service requires browser verification. Use the official result form below to complete the check in your browser.',needsBrowser:true,url:'https://eboardresults.com/v2/home'},503);
     const cookie=Buffer.from(String(body.session),'base64url').toString('utf8');
     const r=await upstream(RESULT,{method:'POST',headers:{Accept:'application/json, text/javascript, */*; q=0.01','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','Origin':BASE,'Referer':HOME,'X-Requested-With':'XMLHttpRequest','Cookie':cookie},body:new URLSearchParams({board,exam,year,result_type:'1',roll,reg,captcha}).toString()});
-    const raw=await r.text(); if(isChallenge(r,raw))return json(res,{error:'The official result server requested browser verification. The automatic provider was also unavailable. Please refresh and try again later.',needsCaptcha:true},502);
+    const raw=await r.text(); if(isChallenge(r,raw))return json(res,{error:'The official result server requested browser verification. Continue in the embedded official result form.',needsBrowser:true,url:'https://eboardresults.com/v2/home'},503);
     let data=null;try{data=JSON.parse(raw)}catch{}
     const result=normalize(data,v);
     if(result)return json(res,{ok:true,result,source:'Education Board Results'});
