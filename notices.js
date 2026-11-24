@@ -32,13 +32,13 @@ window.ADMISSION_NOTICES = [
   },
   {
     "university": "Medical Admission",
-    "title": "DGME keeps MBBS/BDS admission test on 18 December; circular awaited",
-    "date": "2026-11-22",
+    "title": "Medical/dental admission test set for 18 December after Supreme Court stay",
+    "date": "2026-11-24",
     "url": "",
-    "source": "BSS",
-    "sourceUrl": "https://www.bssnews.net/news/448740",
+    "source": "The Daily Star / DGME",
+    "sourceUrl": "https://www.thedailystar.net/news/news/medical-dental-admission-tests-december-18-after-sc-order-4331041",
     "notify": true,
-    "summary": "The 2026-27 MBBS/BDS admission test remains reported for 18 December 2026, while the formal DGME admission circular was still awaited. The medical test is subject to the High Court order affecting public university and medical admission tests until 31 December unless the court changes that position."
+    "summary": "Following the Appellate Division's 23 November stay of the High Court admission-test suspension, the 2026-27 MBBS/BDS admission tests are set for 18 December 2026. The formal DGME circular was expected on 24 November; verify the official circular when published. The previous legal-bar warning is no longer applicable."
   },
   {
     "university": "Bangladesh University of Professionals",
