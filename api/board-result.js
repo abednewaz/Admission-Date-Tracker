@@ -1,13 +1,15 @@
-const API='https://eduboardapi.vercel.app/fetch';
+const BROWSERLESS_SESSION='https://production-sfo.browserless.io/session';
 const BASE='https://www.educationboardresults.gov.bd';
 const HOME=BASE+'/v2/home';
-const CAPTCHA=BASE+'/v2/captcha';
-const RESULT=BASE+'/v2/getres';
 
 function json(res,data,status=200){return res.status(status).json(data);}
 function boardCode(v){
-  const m={chattogram:'chittagong',comilla:'comilla',cumilla:'comilla',jashore:'jessore',barishal:'barisal',sylhet:'sylhet',dinajpur:'dinajpur',mymensingh:'mymensingh',rajshahi:'rajshahi',dhaka:'dhaka',madrasah:'madrasah',technical:'tec'};
+  const m={chattogram:'chittagong',comilla:'comilla',cumilla:'comilla',jashore:'jessore',jessore:'jessore',barishal:'barisal',sylhet:'sylhet',dinajpur:'dinajpur',mymensingh:'mymensingh',rajshahi:'rajshahi',dhaka:'dhaka',madrasah:'madrasah',technical:'tec',tec:'tec'};
   return m[String(v||'').toLowerCase()]||String(v||'').toLowerCase();
+}
+function boardLabel(v){
+  const m={dhaka:'Dhaka',rajshahi:'Rajshahi',chittagong:'Chittagong',comilla:'Comilla',barisal:'Barisal',sylhet:'Sylhet',jessore:'Jessore',dinajpur:'Dinajpur',mymensingh:'Mymensingh',madrasah:'Madrasah',tec:'Technical'};
+  return m[boardCode(v)]||String(v||'');
 }
 function valid(v){
   if(!['ssc','hsc'].includes(v.exam))return 'Select SSC or HSC/equivalent.';
@@ -21,85 +23,124 @@ function normalize(data,fallback){
   const r=data&&typeof data==='object'?(data.res||data.result||data):null;
   if(!r||typeof r!=='object')return null;
   const grades=Array.isArray(r.grades)?r.grades:Array.isArray(r.subject_grades)?r.subject_grades:Array.isArray(r.subjectGrades)?r.subjectGrades:[];
-  const out={
-    roll:String(r.roll??r.roll_no??fallback.roll),reg:String(r.reg??r.regno??r.registration??fallback.reg),
-    name:String(r.name??r.name_of_student??r.student_name??''),fatherName:String(r.fname??r.father_name??r.fathers_name??r.fatherName??''),
-    motherName:String(r.mname??r.mother_name??r.mothers_name??r.motherName??''),board:String(r.board??fallback.board),
-    group:String(r.group??''),examType:String(r.exam_type??r.type??''),dob:String(r.dob??r.date_of_birth??''),
-    institute:String(r.institute??r.inst_name??r.institution??''),result:String(r.result??r.res_detail??''),gpa:String(r.gpa??''),
-    grades:grades.map(g=>({code:String(g.code??g.subjectCode??g.subject_code??''),subject:String(g.subject??g.subjectName??g.subject_name??''),grade:String(g.grade??g.subjectGPA??g.letter_grade??g.marks??'')}))
-  };
+  const out={roll:String(r.roll??r.roll_no??fallback.roll),reg:String(r.reg??r.regno??r.registration??fallback.reg),name:String(r.name??r.name_of_student??r.student_name??''),fatherName:String(r.fname??r.father_name??r.fathers_name??r.fatherName??''),motherName:String(r.mname??r.mother_name??r.mothers_name??r.motherName??''),board:String(r.board??fallback.board),group:String(r.group??''),examType:String(r.exam_type??r.type??''),dob:String(r.dob??r.date_of_birth??''),institute:String(r.institute??r.inst_name??r.institution??''),result:String(r.result??r.res_detail??''),gpa:String(r.gpa??''),grades:grades.map(g=>({code:String(g.code??g.subjectCode??g.subject_code??''),subject:String(g.subject??g.subjectName??g.subject_name??''),grade:String(g.grade??g.subjectGPA??g.letter_grade??g.marks??''),marks:String(g.marks??'')}))};
   if(!out.name&&!out.gpa&&!out.result&&!out.grades.length)return null;
   return out;
 }
-async function apiLookup(v){
-  const q=new URLSearchParams({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg}).toString();
-  const body=JSON.stringify({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
-  const providers=[
-    {url:API,method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body},
-    {url:API+'?'+q,method:'GET',headers:{Accept:'application/json'}},
-    {url:'https://api.bangladeshgov.org/?'+q,method:'GET',headers:{Accept:'application/json'}},
-  ];
-  for(const a of providers){
-    try{
-      const r=await fetch(a.url,{method:a.method,headers:a.headers,body:a.body,signal:AbortSignal.timeout(12000)});
-      const raw=await r.text(); let data=null; try{data=JSON.parse(raw)}catch{}
-      if(r.ok){const result=normalize(data,v);if(result)return result;}
-    }catch{}
+function browserlessSecret(){const v=process.env.BROWSERLESS_TOKEN;if(!v)throw new Error('Browserless API token is not configured.');return new TextEncoder().encode(v);}
+async function sessionKey(){
+  const raw=process.env.BROWSERLESS_TOKEN;
+  if(!raw)throw new Error('Browserless API token is not configured.');
+  return new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(raw)));
+}
+async function signSession(payload){
+  const { EncryptJWT } = await import('jose');
+  return new EncryptJWT(payload).setProtectedHeader({alg:'dir',enc:'A256GCM'}).setIssuedAt().setExpirationTime('2m').encrypt(await sessionKey());
+}
+async function readSession(token){
+  const {payload}=await jwtDecrypt(String(token),await sessionKey());
+  if(!payload.browserQL||!payload.stop)throw new Error('Result browser session is invalid.');
+  return payload;
+}
+async function createBrowserlessSession(){
+  const token=process.env.BROWSERLESS_TOKEN;
+  if(!token)throw new Error('Browserless API token is not configured.');
+  const r=await fetch(`${BROWSERLESS_SESSION}?token=${encodeURIComponent(token)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ttl:120000,stealth:false,browser:'chromium'}),signal:AbortSignal.timeout(30000)});
+  const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
+  if(!r.ok||!data?.browserQL||!data?.stop)throw new Error(data?.error||'Could not create the secure browser session.');
+  return data;
+}
+async function stopBrowserlessSession(stopUrl){
+  if(!stopUrl)return;
+  try{await fetch(stopUrl,{method:'DELETE'});}catch{}
+}
+async function bql(url,query,operationName){
+  let last='Browser service request failed.';
+  for(let attempt=0;attempt<3;attempt++){
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
+    const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
+    if(r.status===429&&attempt<2){await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));continue;}
+    if(!r.ok)throw new Error(data?.errors?.[0]?.message||last);
+    if(data?.errors?.length)throw new Error(data.errors.map(e=>e.message).join('; '));
+    return data?.data||{};
   }
-  return null;
+  throw new Error(last);
 }
-function cookieHeader(res){
-  try{if(typeof res.headers.getSetCookie==='function')return res.headers.getSetCookie().map(x=>x.split(';')[0]).join('; ');}catch{}
-  const raw=res.headers.get('set-cookie')||'';
-  return raw.split(/,(?=[A-Za-z0-9_]+=)/).map(x=>x.split(';')[0].trim()).filter(Boolean).join('; ');
+function gqlSetSelect(selector,label){
+  const s=JSON.stringify(selector),l=JSON.stringify(label);
+  return `evaluate(content: """(()=>{const s=document.querySelector(${s});if(!s)return false;const target=${l};const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(!o)return false;s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value;})()""") { value }`;
 }
-function isChallenge(res,text){
-  const u=String(res.url||'').toLowerCase(),t=String(text||'').toLowerCase();
-  return u.includes('_challenge-engine')||t.includes('verifying your browser')||t.includes('_challenge-engine');
+function gqlSetAnySelect(label){
+  const l=JSON.stringify(label);
+  return `evaluate(content: """(()=>{const target=${l};for(const s of document.querySelectorAll('select')){const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(o){s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value}}return false})()""") { value }`;
 }
-async function upstream(url,options={}){
-  return fetch(url,{...options,headers:{'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36','Accept-Language':'en-US,en;q=0.9',...(options.headers||{})},signal:AbortSignal.timeout(20000)});
+async function startBrowserSession(v){
+  const session=await createBrowserlessSession();
+  try{
+    const board=gqlSetSelect('select[name="board"]',boardLabel(v.board));
+    const exam=gqlSetSelect('select[name="exam"]',v.exam==='hsc'?'HSC/Alim/Equivalent':'SSC/Dakhil/Equivalent');
+    const year=gqlSetSelect('select[name="year"]',v.year);
+    const resultType=gqlSetAnySelect('Individual/Detailed Result');
+    const query=`mutation StartBoardResult {
+      goto(url: ${JSON.stringify(HOME)}, waitUntil: domContentLoaded) { status }
+      waitForSelector(selector: "select[name='board']", timeout: 15000) { selector }
+      ${board}
+      ${exam}
+      ${year}
+      ${resultType}
+      type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
+      type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
+      waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
+      screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png, quality: 100) { base64 }
+    }`;
+    const data=await bql(session.browserQL,query,'StartBoardResult');
+    const image=data?.screenshot?.base64;
+    if(!image)throw new Error('The official security image could not be loaded.');
+    const token=await signSession({browserQL:session.browserQL,stop:session.stop,exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
+    return {session:token,image:`data:image/png;base64,${image}`};
+  }catch(e){
+    await stopBrowserlessSession(session.stop);
+    throw e;
+  }
 }
-async function createSession(){
-  const home=await upstream(HOME,{headers:{Accept:'text/html,application/xhtml+xml'}});
-  const html=await home.text();
-  if(!home.ok)throw new Error('The official education-board result server is unavailable right now.');
-  if(isChallenge(home,html))throw new Error('The official result server is asking for browser verification. Please try again in a moment.');
-  const cookie=cookieHeader(home);
-  if(!cookie)throw new Error('Could not create a result-service session.');
-  const cap=await upstream(CAPTCHA+'?t='+Date.now(),{headers:{Accept:'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',Cookie:cookie,Referer:HOME}});
-  const type=cap.headers.get('content-type')||'',bytes=await cap.arrayBuffer();
-  if(!cap.ok||!type.includes('image'))throw new Error('Could not load the official security image.');
-  return {cookie,image:'data:'+type.split(';')[0]+';base64,'+Buffer.from(bytes).toString('base64')};
+function parseBrowserlessText(text,v){
+  const t=String(text||'').replace(/\r/g,'').trim(),find=(re)=>{const m=t.match(re);return m?m[1].trim():''};
+  const out={roll:find(/Roll No\s+([^\n]+)/i)||v.roll,reg:find(/Registration No\s+([^\n]+)/i)||v.reg,name:find(/Name of Student\s+([^\n]+)/i),fatherName:find(/Father's Name\s+([^\n]+)/i),motherName:find(/Mother's Name\s+([^\n]+)/i),board:find(/Board\s+([^\n]+?)(?=\s+Session|\n)/i)||boardLabel(v.board),group:find(/Group\s+(.+?)(?=\s+Type:)/i),examType:find(/Type:\s*(.+?)(?=\s+Gender|\n)/i),dob:find(/Date of Birth\s+([^\n]+)/i),institute:find(/Name of Institute\s+([^\n]+)/i),result:find(/Result\s+(.+?)(?=\s+GPA=|\n)/i),gpa:find(/GPA=\[?([0-9.]+)\]?/i),grades:[]};
+  if(!out.name&&!out.gpa&&!out.result)return null;
+  return out;
 }
+async function finishBrowserSession(v,sessionToken,captcha){
+  const s=await readSession(sessionToken);
+  if(s.exam!==v.exam||s.year!==v.year||s.board!==v.board||s.roll!==v.roll||s.reg!==v.reg)throw new Error('The result session does not match this request.');
+  try{
+    const query=`mutation SubmitBoardResult {
+      type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
+      click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
+      waitForNavigation(timeout: 15000) { status }
+      text(selector: "body") { text }
+    }`;
+    const data=await bql(String(s.browserQL),query,'SubmitBoardResult');
+    const text=data?.text?.text||'';
+    if(/security code|robot prevention|captcha|incorrect/i.test(text)&&!/Student Information Summary|Result of HSC|Result of SSC/i.test(text))throw new Error('Security code is incorrect or expired. Refresh the image and try again.');
+    const result=parseBrowserlessText(text,v);
+    if(!result)throw new Error('The official result page did not return a readable result. The CAPTCHA may be wrong or the session may have expired.');
+    return result;
+  }finally{
+    await stopBrowserlessSession(String(s.stop||''));
+  }
+}
+
 export default async function handler(req,res){
   if(req.method!=='POST')return json(res,{error:'Method not allowed.'},405);
   try{
     const body=typeof req.body==='object'&&req.body?req.body:JSON.parse(req.body||'{}');
-    const action=String(body.action||'result');
-    if(action==='captcha'){
-      const session=await createSession();
-      return json(res,{ok:true,session:Buffer.from(session.cookie,'utf8').toString('base64url'),image:session.image});
-    }
     const exam=String(body.exam||'').toLowerCase(),year=String(body.year||''),board=boardCode(body.board),roll=String(body.roll||'').replace(/\D/g,''),reg=String(body.reg||'').replace(/\D/g,'');
-    const v={exam,year,board,roll,reg},err=valid(v); if(err)return json(res,{error:err},400);
-
-    // Primary path: server-to-server result API. This avoids the official site's browser-verification challenge.
-    const apiResult=await apiLookup(v);
-    if(apiResult)return json(res,{ok:true,result:apiResult,source:'Education Board Results API'});
-
-    // Fallback path: official session + CAPTCHA, only when the API provider cannot answer.
-    const captcha=String(body.captcha||'').trim();
-    if(!captcha||!body.session)return json(res,{error:'The official result service requires browser verification. Use the official result form below to complete the check in your browser.',needsBrowser:true,url:'https://eboardresults.com/v2/home'},503);
-    const cookie=Buffer.from(String(body.session),'base64url').toString('utf8');
-    const r=await upstream(RESULT,{method:'POST',headers:{Accept:'application/json, text/javascript, */*; q=0.01','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','Origin':BASE,'Referer':HOME,'X-Requested-With':'XMLHttpRequest','Cookie':cookie},body:new URLSearchParams({board,exam,year,result_type:'1',roll,reg,captcha}).toString()});
-    const raw=await r.text(); if(isChallenge(r,raw))return json(res,{error:'The official result server requested browser verification. Continue in the embedded official result form.',needsBrowser:true,url:'https://eboardresults.com/v2/home'},503);
-    let data=null;try{data=JSON.parse(raw)}catch{}
-    const result=normalize(data,v);
-    if(result)return json(res,{ok:true,result,source:'Education Board Results'});
-    const message=String(data?.msg||data?.message||data?.error||'');
-    if(/captcha|security|robot/i.test(message))return json(res,{error:'Security code is incorrect or expired. Refresh the image and enter the new code.'},400);
-    return json(res,{error:message||'No result was found for the supplied examination information.'},404);
-  }catch(e){console.error('Board result API error:',e);return json(res,{error:e?.message||'Could not reach the result service right now.'},502);}
+    const v={exam,year,board,roll,reg},err=valid(v);if(err)return json(res,{error:err},400);
+        if(String(body.action||'result')==='captcha'||!body.session||!String(body.captcha||'').trim()){
+      const started=await startBrowserSession(v);
+      return json(res,{ok:true,needsCaptcha:true,session:started.session,image:started.image,expiresIn:110});
+    }
+    const result=await finishBrowserSession(v,String(body.session),String(body.captcha).trim());
+    return json(res,{ok:true,result,source:'Official Education Board Results via Browserless'});
+  }catch(e){console.error('Board result API error:',e);const msg=String(e?.message||'Could not reach the result service right now.');return json(res,{error:msg},/incorrect|expired|security code/i.test(msg)?400:502);}
 }
