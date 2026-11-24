@@ -106,9 +106,60 @@ async function startBrowserSession(v){
   }
 }
 function parseBrowserlessText(text,v){
-  const t=String(text||'').replace(/\r/g,'').trim(),find=(re)=>{const m=t.match(re);return m?m[1].trim():''};
-  const out={roll:find(/Roll No\s+([^\n]+)/i)||v.roll,reg:find(/Registration No\s+([^\n]+)/i)||v.reg,name:find(/Name of Student\s+([^\n]+)/i),fatherName:find(/Father's Name\s+([^\n]+)/i),motherName:find(/Mother's Name\s+([^\n]+)/i),board:find(/Board\s+([^\n]+?)(?=\s+Session|\n)/i)||boardLabel(v.board),group:find(/Group\s+(.+?)(?=\s+Type:)/i),examType:find(/Type:\s*(.+?)(?=\s+Gender|\n)/i),dob:find(/Date of Birth\s+([^\n]+)/i),institute:find(/Name of Institute\s+([^\n]+)/i),result:find(/Result\s+(.+?)(?=\s+GPA=|\n)/i),gpa:find(/GPA=\[?([0-9.]+)\]?/i),grades:[]};
-  if(!out.name&&!out.gpa&&!out.result)return null;
+  const t=String(text||'').replace(/\r/g,'').trim();
+  const find=(re)=>{const m=t.match(re);return m?m[1].trim():''};
+  const out={
+    roll:find(/Roll No\s+([^\n]+)/i)||v.roll,
+    reg:find(/Registration No\s+([^\n]+)/i)||v.reg,
+    name:find(/Name of Student\s+([^\n]+)/i),
+    fatherName:find(/Father's Name\s+([^\n]+)/i),
+    motherName:find(/Mother's Name\s+([^\n]+)/i),
+    board:find(/Board\s+([^\n]+?)(?=\s+Session|\n)/i)||boardLabel(v.board),
+    group:find(/Group\s+(.+?)(?=\s+Type:)/i),
+    examType:find(/Type:\s*(.+?)(?=\s+Gender|\n)/i),
+    dob:find(/Date of Birth\s+([^\n]+)/i),
+    institute:find(/Name of Institute\s+([^\n]+)/i),
+    result:find(/Result\s+(.+?)(?=\s+GPA=|\n)/i),
+    gpa:find(/GPA=\[?([0-9.]+)\]?/i),
+    grades:[]
+  };
+
+  const grades=[];
+  const seen=new Set();
+  const gradeRe='A\\+|A-|A|B|C|D|F';
+
+  // Two-code HSC subjects, e.g. "101 102 BANGLA BANGLA 151 A".
+  const pairRe=new RegExp(
+    '(\\d{3})\\s+(\\d{3})\\s+([A-Z][A-Z &]+?)\\s+\\3\\s+(\\d{2,3})\\s+('+
+    gradeRe+')','gi'
+  );
+  let m;
+  while((m=pairRe.exec(t))){
+    const key=m[1]+'-'+m[2];
+    if(seen.has(key))continue;
+    seen.add(key);
+    grades.push({code:key,subject:m[3].trim(),grade:m[5],marks:m[4].padStart(3,'0')});
+  }
+
+  // Single-code subjects, e.g. ICT (275). Skip codes already used as the
+  // second paper of a two-code subject to avoid duplicate rows.
+  const pairedSecond=new Set();
+  grades.forEach(g=>pairedSecond.add(g.code.split('-')[1]));
+  const singleRe=new RegExp(
+    '(?:^|\\s)(\\d{3})\\s+([A-Z][A-Z &]+?)\\s+(\\d{2,3})\\s+('+
+    gradeRe+')(?=\\s|$)','gi'
+  );
+  while((m=singleRe.exec(t))){
+    const code=m[1];
+    if(pairedSecond.has(code)||[...seen].some(k=>k===code||k.startsWith(code+'-')))continue;
+    const key=code;
+    if(seen.has(key))continue;
+    seen.add(key);
+    grades.push({code,subject:m[2].trim(),grade:m[4],marks:m[3].padStart(3,'0')});
+  }
+
+  out.grades=grades;
+  if(!out.name&&!out.gpa&&!out.result&&!out.grades.length)return null;
   return out;
 }
 async function finishBrowserSession(v,sessionToken,captcha){
