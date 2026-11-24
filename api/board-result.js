@@ -33,16 +33,16 @@ function normalize(data,fallback){
   return out;
 }
 async function apiLookup(v){
+  const q=new URLSearchParams({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg}).toString();
   const body=JSON.stringify({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
-  const attempts=[
-    {method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body},
-    {method:'GET',headers:{Accept:'application/json'}}
+  const providers=[
+    {url:API,method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body},
+    {url:API+'?'+q,method:'GET',headers:{Accept:'application/json'}},
+    {url:'https://api.bangladeshgov.org/?'+q,method:'GET',headers:{Accept:'application/json'}},
   ];
-  for(const a of attempts){
-    let url=API;
-    if(a.method==='GET')url=API+'?'+new URLSearchParams({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg}).toString();
+  for(const a of providers){
     try{
-      const r=await fetch(url,{...a,signal:AbortSignal.timeout(12000)});
+      const r=await fetch(a.url,{method:a.method,headers:a.headers,body:a.body,signal:AbortSignal.timeout(12000)});
       const raw=await r.text(); let data=null; try{data=JSON.parse(raw)}catch{}
       if(r.ok){const result=normalize(data,v);if(result)return result;}
     }catch{}
