@@ -1,7 +1,7 @@
 import { SignJWT, jwtVerify } from 'jose';
 
 const API='https://eduboardapi.vercel.app/fetch';
-const BQL_HOST='https://production-sfo.browserless.io/chromium/bql';
+const BROWSERLESS_SESSION='https://production-sfo.browserless.io/session';
 const BASE='https://www.educationboardresults.gov.bd';
 const HOME=BASE+'/v2/home';
 
@@ -40,34 +40,61 @@ async function apiLookup(v){
 function browserlessSecret(){const v=process.env.BROWSERLESS_TOKEN;if(!v)throw new Error('Browserless API token is not configured.');return new TextEncoder().encode(v);}
 async function signSession(payload){return new SignJWT(payload).setProtectedHeader({alg:'HS256'}).setIssuedAt().setExpirationTime('2m').sign(browserlessSecret());}
 async function readSession(token){const {payload}=await jwtVerify(String(token),browserlessSecret());if(!payload.endpoint)throw new Error('Result browser session is invalid.');return payload;}
+async function createBrowserlessSession(){
+  const token=process.env.BROWSERLESS_TOKEN;
+  if(!token)throw new Error('Browserless API token is not configured.');
+  const r=await fetch(`${BROWSERLESS_SESSION}?token=${encodeURIComponent(token)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ttl:120000,stealth:false,browser:'chromium'}),signal:AbortSignal.timeout(30000)});
+  const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
+  if(!r.ok||!data?.browserQL||!data?.stop)throw new Error(data?.error||'Could not create the secure browser session.');
+  return data;
+}
+async function stopBrowserlessSession(stopUrl){
+  if(!stopUrl)return;
+  try{await fetch(stopUrl,{method:'DELETE'});}catch{}
+}
 async function bql(url,query,operationName){
-  const target=url||`${BQL_HOST}?token=${encodeURIComponent(process.env.BROWSERLESS_TOKEN)}&timeout=120000`;
-  const r=await fetch(target,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
+  const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
   const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
   if(!r.ok)throw new Error(data?.errors?.[0]?.message||'Browser service request failed.');
-  if(data?.errors?.length)throw new Error(data.errors[0].message||'Browser service rejected the request.');
+  if(data?.errors?.length)throw new Error(data.errors.map(e=>e.message).join('; '));
   return data?.data||{};
 }
 function gqlSetSelect(selector,label){
   const s=JSON.stringify(selector),l=JSON.stringify(label);
-  return `evaluate(content: "(()=>{const s=document.querySelector(${s}); if(!s) return false; const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===${l}.trim().toLowerCase()); if(!o) return false; s.value=o.value; s.dispatchEvent(new Event('input',{bubbles:true})); s.dispatchEvent(new Event('change',{bubbles:true})); return s.value;})()") { value }`;
+  return `evaluate(content: """(()=>{const s=document.querySelector(${s});if(!s)return false;const target=${l};const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(!o)return false;s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value;})()""") { value }`;
+}
+function gqlSetAnySelect(label){
+  const l=JSON.stringify(label);
+  return `evaluate(content: """(()=>{const target=${l};for(const s of document.querySelectorAll('select')){const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(o){s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value}}return false})()""") { value }`;
 }
 async function startBrowserSession(v){
-  const board=gqlSetSelect('select[name="board"]',boardLabel(v.board)),exam=gqlSetSelect('select[name="exam"]',v.exam==='hsc'?'HSC/Alim/Equivalent':'SSC/Dakhil/Equivalent'),year=gqlSetSelect('select[name="year"]',v.year),resultType=gqlSetSelect('select[name="result_type"]','Individual/Detailed Result');
-  const query=`mutation StartBoardResult {
-    goto(url: ${JSON.stringify(HOME)}, waitUntil: domContentLoaded) { status }
-    waitForSelector(selector: "select[name='board']", timeout: 15000) { selector }
-    ${board}${exam}${year}${resultType}
-    type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
-    type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
-    waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
-    screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png, quality: 100) { base64 }
-    reconnect(timeout: 110000) { browserQLEndpoint }
-  }`;
-  const data=await bql(null,query,'StartBoardResult'),endpoint=data?.reconnect?.browserQLEndpoint,image=data?.screenshot?.base64;
-  if(Number(data?.goto?.status||200)>=400||!endpoint||!image)throw new Error('The official security image could not be loaded.');
-  const session=await signSession({endpoint,exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
-  return {session,image:`data:image/png;base64,${image}`};
+  const session=await createBrowserlessSession();
+  try{
+    const board=gqlSetSelect('select[name="board"]',boardLabel(v.board));
+    const exam=gqlSetSelect('select[name="exam"]',v.exam==='hsc'?'HSC/Alim/Equivalent':'SSC/Dakhil/Equivalent');
+    const year=gqlSetSelect('select[name="year"]',v.year);
+    const resultType=gqlSetAnySelect('Individual/Detailed Result');
+    const query=`mutation StartBoardResult {
+      goto(url: ${JSON.stringify(HOME)}, waitUntil: domContentLoaded) { status }
+      waitForSelector(selector: "select[name='board']", timeout: 15000) { selector }
+      ${board}
+      ${exam}
+      ${year}
+      ${resultType}
+      type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
+      type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
+      waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
+      screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png, quality: 100) { base64 }
+    }`;
+    const data=await bql(session.browserQL,query,'StartBoardResult');
+    const image=data?.screenshot?.base64;
+    if(!image)throw new Error('The official security image could not be loaded.');
+    const token=await signSession({browserQL:session.browserQL,stop:session.stop,exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
+    return {session:token,image:`data:image/png;base64,${image}`};
+  }catch(e){
+    await stopBrowserlessSession(session.stop);
+    throw e;
+  }
 }
 function parseBrowserlessText(text,v){
   const t=String(text||'').replace(/\r/g,'').trim(),find=(re)=>{const m=t.match(re);return m?m[1].trim():''};
@@ -78,27 +105,31 @@ function parseBrowserlessText(text,v){
 async function finishBrowserSession(v,sessionToken,captcha){
   const s=await readSession(sessionToken);
   if(s.exam!==v.exam||s.year!==v.year||s.board!==v.board||s.roll!==v.roll||s.reg!==v.reg)throw new Error('The result session does not match this request.');
-  const endpoint=`${s.endpoint}${String(s.endpoint).includes('?')?'&':'?'}token=${encodeURIComponent(process.env.BROWSERLESS_TOKEN)}`;
-  const query=`mutation SubmitBoardResult {
-    type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
-    click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
-    waitForNavigation(timeout: 15000) { status }
-    text(selector: "body") { text }
-  }`;
-  const data=await bql(endpoint,query,'SubmitBoardResult'),text=data?.text?.text||'';
-  if(/security code|robot prevention|captcha|incorrect/i.test(text)&&!/Student Information Summary|Result of HSC|Result of SSC/i.test(text))throw new Error('Security code is incorrect or expired. Refresh the image and try again.');
-  const result=parseBrowserlessText(text,v);
-  if(!result)throw new Error('The official result page did not return a readable result. The CAPTCHA may be wrong or the session may have expired.');
-  return result;
+  try{
+    const query=`mutation SubmitBoardResult {
+      type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
+      click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
+      waitForNavigation(timeout: 15000) { status }
+      text(selector: "body") { text }
+    }`;
+    const data=await bql(String(s.browserQL),query,'SubmitBoardResult');
+    const text=data?.text?.text||'';
+    if(/security code|robot prevention|captcha|incorrect/i.test(text)&&!/Student Information Summary|Result of HSC|Result of SSC/i.test(text))throw new Error('Security code is incorrect or expired. Refresh the image and try again.');
+    const result=parseBrowserlessText(text,v);
+    if(!result)throw new Error('The official result page did not return a readable result. The CAPTCHA may be wrong or the session may have expired.');
+    return result;
+  }finally{
+    await stopBrowserlessSession(String(s.stop||''));
+  }
 }
+
 export default async function handler(req,res){
   if(req.method!=='POST')return json(res,{error:'Method not allowed.'},405);
   try{
     const body=typeof req.body==='object'&&req.body?req.body:JSON.parse(req.body||'{}');
     const exam=String(body.exam||'').toLowerCase(),year=String(body.year||''),board=boardCode(body.board),roll=String(body.roll||'').replace(/\D/g,''),reg=String(body.reg||'').replace(/\D/g,'');
     const v={exam,year,board,roll,reg},err=valid(v);if(err)return json(res,{error:err},400);
-    const apiResult=await apiLookup(v);if(apiResult)return json(res,{ok:true,result:apiResult,source:'Education Board Results API'});
-    if(String(body.action||'result')==='captcha'||!body.session||!String(body.captcha||'').trim()){
+        if(String(body.action||'result')==='captcha'||!body.session||!String(body.captcha||'').trim()){
       const started=await startBrowserSession(v);
       return json(res,{ok:true,needsCaptcha:true,session:started.session,image:started.image,expiresIn:110});
     }
