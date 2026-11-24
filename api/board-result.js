@@ -91,7 +91,7 @@ async function startBrowserSession(v){
       fillRoll: type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
       fillReg: type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
       waitCaptcha: waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
-      screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png, quality: 100) { base64 }
+      screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png) { base64 }
     }`;
     const data=await bql(session.browserQL,query,'StartBoardResult');
     const image=data?.screenshot?.base64;
