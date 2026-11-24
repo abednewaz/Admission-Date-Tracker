@@ -1327,7 +1327,17 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
         await loadCaptcha(status,submitBtn);
         return;
       }
-      if(!res.ok)throw new Error(json.error||'Result lookup failed.');
+      if(!res.ok){
+        if(json.needsBrowser){
+          var box=document.getElementById('brCaptchaContent');
+          if(box){
+            box.innerHTML='<div style="font-size:.78rem;color:var(--muted);line-height:1.5;margin-bottom:.55rem">The official result service requires browser verification. It is now loaded below so the verification happens in your actual browser.</div><iframe id="brOfficialFrame" class="board-result-frame" title="Official Education Board Result Service" src="'+String(json.url||'https://eboardresults.com/v2/home').replace(/"/g,'&quot;')+'"></iframe><div class="board-result-actions" style="margin-top:.55rem"><a href="'+String(json.url||'https://eboardresults.com/v2/home').replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">Open official result service</a></div>';
+          }
+          status.textContent='Complete the official verification and result form in the box above.';
+          return;
+        }
+        throw new Error(json.error||'Result lookup failed.');
+      }
       function esc(v){return String(v==null?'':v).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch];});}
       var result=json.result||{},html='<div class="br-title">Board Result</div>';
       [['Name',result.name],['Roll Number',result.roll],['Registration Number',result.reg],['Board',result.board],['Group',result.group],['Exam',result.examType],['Date of Birth',result.dob],['Institute',result.institute],['Result',result.result],['GPA',result.gpa]].forEach(function(pair){if(pair[1])html+='<div class="br-row"><span>'+esc(pair[0])+'</span><b>'+esc(pair[1])+'</b></div>';});
