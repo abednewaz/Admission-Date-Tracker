@@ -118,7 +118,7 @@ async function finishBrowserSession(v,sessionToken,captcha){
     const query=`mutation SubmitBoardResult {
       fillCaptcha: type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
       clickSubmit: click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
-      waitResult: waitForNavigation(timeout: 45000, waitUntil: domContentLoaded) { status }
+      waitResult: waitForFunction(fn: "() => /Student Information Summary|Result of HSC|Result of SSC/i.test(document.body?.innerText || '')", timeout: 45000) { time }
       bodyText: text(selector: "body") { text }
     }`;
     const data=await bql(String(s.browserQL),query,'SubmitBoardResult');
