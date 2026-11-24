@@ -427,7 +427,53 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
 @media(max-width:1200px){.content-shell{grid-template-columns:minmax(0,1fr);max-width:900px}.notice-board{position:static}}
 @media(max-width:700px){.content-shell{padding-left:.65rem;padding-right:.65rem}.header-actions{width:100%;justify-content:center}.planning-grid{grid-template-columns:1fr!important}.students-tools-head{flex-direction:column;align-items:stretch}.students-tool-select{width:100%!important}.calendar-head{flex-wrap:wrap}.calendar-month{min-width:0;flex:1}.students-modal{width:calc(100vw - 1rem);max-width:calc(100vw - 1rem);padding:.7rem}.pcm-wrap{width:100%;max-width:100%}}
 @media(max-width:380px){header{padding-left:.55rem;padding-right:.55rem}.content-shell{padding-left:.5rem;padding-right:.5rem}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.search{font-size:.88rem}.filter-trigger{width:42px;min-width:42px;flex-basis:42px}.calendar-head{padding:.65rem}.calendar-month{font-size:.74rem}.calendar-day{min-height:32px;font-size:.7rem}}
-</style><style id="board-result-css">.board-result-panel{width:100%;min-width:0}.board-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.board-form-grid label{display:flex;flex-direction:column;gap:.28rem;font-size:.72rem;font-weight:750}.board-form-grid input,.board-form-grid select{width:100%;min-width:0;height:44px;padding:0 .7rem;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text);font:inherit}.board-result-security{margin-top:.7rem;padding:.65rem .75rem;border:1px solid rgba(99,102,241,.25);border-radius:10px;background:rgba(99,102,241,.07);display:flex;flex-direction:column;gap:.2rem;font-size:.75rem}.board-result-security span{color:var(--muted);line-height:1.45}.br-captcha-wrap{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}.br-captcha-image{width:170px;height:54px;object-fit:contain;background:#fff;border:1px solid var(--border);border-radius:7px}.br-captcha-refresh{border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:8px;padding:.55rem .7rem;cursor:pointer;font:inherit;font-weight:700}.br-captcha-label{display:flex;flex-direction:column;gap:.3rem;font-size:.72rem;font-weight:750}.br-captcha-label input{width:180px;height:42px;padding:0 .65rem;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}.board-result-status{min-height:1.4rem;margin-top:.65rem;font-size:.78rem;color:var(--muted)}.board-result-output{margin-top:.65rem;padding:.8rem;border:1px solid var(--border);border-radius:10px;background:var(--bg);overflow:auto}.board-result-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.75rem}.board-result-actions button{flex:1 1 180px;min-height:42px;border:0;border-radius:10px;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font:inherit;font-size:.84rem;font-weight:750;cursor:pointer}@media(max-width:560px){.board-form-grid{grid-template-columns:1fr}.board-result-actions{flex-direction:column}.board-result-actions button{width:100%}}.br-title{font-size:1rem;font-weight:800;color:var(--pri);margin-bottom:.45rem}.br-row{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--border);font-size:.78rem}.br-row span{text-transform:capitalize;color:var(--muted)}.br-row b{text-align:right;word-break:break-word}.br-nested{margin:.6rem 0;padding:.65rem;border:1px solid var(--border);border-radius:9px}.br-nested>strong{display:block;text-transform:capitalize;margin-bottom:.25rem}.br-group{margin:.65rem 0;padding:.65rem;border:1px solid var(--border);border-radius:9px}</style></head>
+</style><style id="board-result-css">
+.board-result-panel{width:100%;min-width:0}
+.board-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+.board-form-grid label{display:flex;flex-direction:column;gap:.28rem;font-size:.72rem;font-weight:750}
+.board-form-grid input,.board-form-grid select{width:100%;min-width:0;height:44px;padding:0 .7rem;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text);font:inherit}
+.board-result-security{margin-top:.7rem;padding:.65rem .75rem;border:1px solid rgba(99,102,241,.25);border-radius:10px;background:rgba(99,102,241,.07);display:flex;flex-direction:column;gap:.2rem;font-size:.75rem}
+.board-result-security span{color:var(--muted);line-height:1.45}
+.br-captcha-wrap{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.br-captcha-image{width:170px;height:54px;object-fit:contain;background:#fff;border:1px solid var(--border);border-radius:7px}
+.br-captcha-refresh{border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:8px;padding:.55rem .7rem;cursor:pointer;font:inherit;font-weight:700}
+.br-captcha-label{display:flex;flex-direction:column;gap:.3rem;font-size:.72rem;font-weight:750}
+.br-captcha-label input{width:180px;height:42px;padding:0 .65rem;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+.board-result-status{min-height:1.4rem;margin-top:.65rem;font-size:.78rem;color:var(--muted)}
+.board-result-output{margin-top:.65rem;padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
+.board-result-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.75rem}
+.board-result-actions button{flex:1 1 180px;min-height:42px;border:0;border-radius:10px;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font:inherit;font-size:.84rem;font-weight:750;cursor:pointer}
+.br-result-sheet{position:relative;overflow:hidden;background:#fff;color:#111;border:1px solid #dfe4e8;border-radius:0;padding:1.15rem .9rem 1rem;box-shadow:0 2px 10px rgba(0,0,0,.08);font-family:Arial,"Noto Sans Bengali",sans-serif}
+.br-result-sheet:before{content:"WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARD";position:absolute;left:50%;top:48%;transform:translate(-50%,-50%) rotate(-30deg);font-size:3.4rem;font-weight:800;letter-spacing:.02em;color:rgba(130,130,130,.18);white-space:nowrap;pointer-events:none;z-index:0}
+.br-result-topline{height:4px;background:#16833f;margin:-1.15rem -.9rem .9rem}
+.br-result-heading{position:relative;z-index:1;text-align:center;font-size:1.45rem;font-weight:800;color:#111;margin:.2rem 0 1rem}
+.br-student-summary{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #dfe4e8;margin-bottom:1rem;background:rgba(255,255,255,.94)}
+.br-student-summary .br-info{display:flex;justify-content:space-between;gap:.6rem;padding:.48rem .6rem;border-bottom:1px solid #e1e5e8;font-size:.78rem}
+.br-student-summary .br-info:nth-last-child(-n+2){border-bottom:0}
+.br-student-summary .br-info span{color:#667085}.br-student-summary .br-info b{text-align:right;color:#111;overflow-wrap:anywhere}
+.br-subject-heading{position:relative;z-index:1;text-align:center;font-size:1.18rem;font-weight:800;color:#111;margin:.7rem 0 .8rem}
+.br-subject-table{position:relative;z-index:1;width:100%;border-collapse:collapse;background:rgba(255,255,255,.95);font-size:.86rem}
+.br-subject-table th,.br-subject-table td{border:1px solid #d8dee3;padding:.55rem .55rem}
+.br-subject-table th{font-weight:800;text-align:left;background:#fafafa;color:#111}
+.br-subject-table th:nth-child(3),.br-subject-table th:nth-child(4),.br-subject-table td:nth-child(3),.br-subject-table td:nth-child(4){text-align:center}
+.br-subject-table td:nth-child(3){font-weight:800}
+.br-result-note{position:relative;z-index:1;margin:1rem 0 .1rem;padding-top:.65rem;border-top:1px dashed #cfd5da;text-align:center;font-size:.74rem;line-height:1.5;font-style:italic;color:#666}
+.br-empty-subject{position:relative;z-index:1;padding:.8rem;text-align:center;border:1px solid #dfe4e8;color:#666;background:#fff}
+@media(max-width:560px){
+  .board-form-grid{grid-template-columns:1fr}
+  .board-result-actions{flex-direction:column}
+  .board-result-actions button{width:100%}
+  .br-result-sheet{padding:.95rem .5rem .85rem}
+  .br-result-topline{margin:-.95rem -.5rem .8rem}
+  .br-result-sheet:before{font-size:2rem}
+  .br-result-heading{font-size:1.1rem}
+  .br-student-summary{grid-template-columns:1fr}
+  .br-student-summary .br-info{border-bottom:1px solid #e1e5e8!important}
+  .br-subject-heading{font-size:1rem}
+  .br-subject-table{font-size:.7rem}
+  .br-subject-table th,.br-subject-table td{padding:.45rem .3rem}
+}
+</style></head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
@@ -1315,9 +1361,19 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       status.textContent='Checking the official result…';if(submitBtn)submitBtn.disabled=true;
       var res=await fetch('/api/board-result',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},credentials:'same-origin',body:JSON.stringify(Object.assign({action:'result',session:brSession,captcha:captcha},payload))});
       var json=await res.json();if(!res.ok)throw new Error(json.error||'Result lookup failed.');
-      var result=json.result||{},esc=function(v){return String(v==null?'':v).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})},html='<div class="br-title">Board Result</div>';
-      [['Name',result.name],['Roll Number',result.roll],['Registration Number',result.reg],['Board',result.board],['Group',result.group],['Exam',result.examType],['Date of Birth',result.dob],['Institute',result.institute],['Result',result.result],['GPA',result.gpa]].forEach(function(pair){if(pair[1])html+='<div class="br-row"><span>'+esc(pair[0])+'</span><b>'+esc(pair[1])+'</b></div>'});
-      if(Array.isArray(result.grades)&&result.grades.length){html+='<div class="br-nested"><strong>Subject-wise Grade/Marks</strong>';result.grades.forEach(function(g){html+='<div class="br-row"><span>'+esc(g.code)+' — '+esc(g.subject)+'</span><b>'+esc(g.marks?g.marks+' · ':'')+esc(g.grade)+'</b></div>'});html+='</div>'}
+      var result=json.result||{},esc=function(v){return String(v==null?'':v).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})};
+      var html='<div class="br-result-sheet"><div class="br-result-topline"></div><div class="br-result-heading">Result of '+esc(payload.exam==='hsc'?'HSC or Equivalent':'SSC or Equivalent')+' Examination - '+esc(payload.year)+'</div>';
+      html+='<div class="br-student-summary">';
+      [['Name of Student',result.name],['Roll No',result.roll],['Registration No',result.reg],['Board',result.board],['Group',result.group],['Type',result.examType],['Institute',result.institute],['Result',result.result],['GPA',result.gpa]].forEach(function(pair){if(pair[1])html+='<div class="br-info"><span>'+esc(pair[0])+'</span><b>'+esc(pair[1])+'</b></div>'});
+      html+='</div><div class="br-subject-heading">বিষয়ভিত্তিক গ্রেড / নম্বর</div>';
+      if(Array.isArray(result.grades)&&result.grades.length){
+        html+='<table class="br-subject-table"><thead><tr><th>বিষয় কোড</th><th>বিষয়ের নাম</th><th>গ্রেড</th><th>নম্বর</th></tr></thead><tbody>';
+        result.grades.forEach(function(g){html+='<tr><td>'+esc(g.code||'—')+'</td><td>'+esc(g.subject||'—')+'</td><td>'+esc(g.grade||'—')+'</td><td>'+esc(g.marks||'—')+'</td></tr>'});
+        html+='</tbody></table>';
+      }else{
+        html+='<div class="br-empty-subject">Subject-wise marks and grades were not returned by the official result page.</div>';
+      }
+      html+='<div class="br-result-note">* Result data is displayed from the official Education Board result system. Always verify important details on the official result portal.</div></div>';
       output.innerHTML=html;output.hidden=false;if(printBtn)printBtn.hidden=false;status.textContent='Result loaded successfully.';brSession=null;clearInterval(brTimer);
     }catch(err){status.textContent=err.message||'Could not load the result right now.';if(/expired|session/i.test(status.textContent))brSession=null}
     finally{if(submitBtn){submitBtn.disabled=false;submitBtn.textContent='Check Result'}}
