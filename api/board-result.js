@@ -45,7 +45,7 @@ async function readSession(token){
 async function createBrowserlessSession(){
   const token=process.env.BROWSERLESS_TOKEN;
   if(!token)throw new Error('Browserless API token is not configured.');
-  const r=await fetch(`${BROWSERLESS_SESSION}?token=${encodeURIComponent(token)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ttl:120000,stealth:false,browser:'chromium'}),signal:AbortSignal.timeout(30000)});
+  const r=await fetch(`${BROWSERLESS_SESSION}?token=${encodeURIComponent(token)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ttl:600000,processKeepAlive:300000,stealth:true,browser:'chromium'}),signal:AbortSignal.timeout(30000)});
   const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
   if(!r.ok||!data?.browserQL||!data?.stop)throw new Error(data?.error||'Could not create the secure browser session.');
   return data;
@@ -60,7 +60,7 @@ async function bql(url,query,operationName){
     const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
     const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
     if(r.status===429&&attempt<2){await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));continue;}
-    if(!r.ok)throw new Error(data?.errors?.[0]?.message||last);
+    if(!r.ok)throw new Error(data?.errors?.map(e=>e.message).join('; ')||raw.slice(0,500)||`${last} (HTTP ${r.status})`);
     if(data?.errors?.length)throw new Error(data.errors.map(e=>e.message).join('; '));
     return data?.data||{};
   }
