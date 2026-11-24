@@ -1,6 +1,5 @@
-import { SignJWT, jwtVerify } from 'jose';
+import { EncryptJWT, jwtDecrypt } from 'jose';
 
-const API='https://eduboardapi.vercel.app/fetch';
 const BROWSERLESS_SESSION='https://production-sfo.browserless.io/session';
 const BASE='https://www.educationboardresults.gov.bd';
 const HOME=BASE+'/v2/home';
@@ -30,16 +29,20 @@ function normalize(data,fallback){
   if(!out.name&&!out.gpa&&!out.result&&!out.grades.length)return null;
   return out;
 }
-async function apiLookup(v){
-  const q=new URLSearchParams({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg}).toString();
-  const body=JSON.stringify({exam:v.exam,year:v.year,board:v.board,roll:v.roll,reg:v.reg});
-  const providers=[{url:API,method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body},{url:API+'?'+q,method:'GET',headers:{Accept:'application/json'}},{url:'https://api.bangladeshgov.org/?'+q,method:'GET',headers:{Accept:'application/json'}}];
-  for(const a of providers){try{const r=await fetch(a.url,{method:a.method,headers:a.headers,body:a.body,signal:AbortSignal.timeout(12000)});const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}if(r.ok){const result=normalize(data,v);if(result)return result;}}catch{}}
-  return null;
-}
 function browserlessSecret(){const v=process.env.BROWSERLESS_TOKEN;if(!v)throw new Error('Browserless API token is not configured.');return new TextEncoder().encode(v);}
-async function signSession(payload){return new SignJWT(payload).setProtectedHeader({alg:'HS256'}).setIssuedAt().setExpirationTime('2m').sign(browserlessSecret());}
-async function readSession(token){const {payload}=await jwtVerify(String(token),browserlessSecret());if(!payload.endpoint)throw new Error('Result browser session is invalid.');return payload;}
+async function sessionKey(){
+  const raw=process.env.BROWSERLESS_TOKEN;
+  if(!raw)throw new Error('Browserless API token is not configured.');
+  return new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(raw)));
+}
+async function signSession(payload){
+  return new EncryptJWT(payload).setProtectedHeader({alg:'dir',enc:'A256GCM'}).setIssuedAt().setExpirationTime('2m').encrypt(await sessionKey());
+}
+async function readSession(token){
+  const {payload}=await jwtDecrypt(String(token),await sessionKey());
+  if(!payload.browserQL||!payload.stop)throw new Error('Result browser session is invalid.');
+  return payload;
+}
 async function createBrowserlessSession(){
   const token=process.env.BROWSERLESS_TOKEN;
   if(!token)throw new Error('Browserless API token is not configured.');
