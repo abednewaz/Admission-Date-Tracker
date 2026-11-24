@@ -1325,6 +1325,5 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()});
 })();
 </script>
-</script>
 </body>
 </html>
