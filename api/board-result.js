@@ -7,10 +7,10 @@ function json(res,data,status=200){return res.status(status).json(data);}
 function boardCode(v){return v==='chattogram'?'chittagong':v;}
 function valid(v){
   if(!['ssc','hsc'].includes(v.exam))return 'Select SSC or HSC/equivalent.';
-  if(!/^\\d{4}$/.test(v.year))return 'Invalid examination year.';
+  if(!/^\d{4}$/.test(v.year))return 'Invalid examination year.';
   if(!v.board)return 'Select an education board.';
-  if(!/^\\d{1,10}$/.test(v.roll))return 'Enter a valid roll number.';
-  if(!/^\\d{1,15}$/.test(v.reg))return 'Enter a valid registration number.';
+  if(!/^\d{1,10}$/.test(v.roll))return 'Enter a valid roll number.';
+  if(!/^\d{1,15}$/.test(v.reg))return 'Enter a valid registration number.';
   return null;
 }
 function cookieHeader(res){
@@ -96,8 +96,8 @@ export default async function handler(req,res){
     const exam=String(body.exam||'').toLowerCase();
     const year=String(body.year||'');
     const board=boardCode(String(body.board||'').toLowerCase());
-    const roll=String(body.roll||'').replace(/\\D/g,'');
-    const reg=String(body.reg||'').replace(/\\D/g,'');
+    const roll=String(body.roll||'').replace(/\D/g,'');
+    const reg=String(body.reg||'').replace(/\D/g,'');
     const captcha=String(body.captcha||'').trim();
     const err=valid({exam,year,board,roll,reg});
     if(err)return json(res,{error:err},400);
