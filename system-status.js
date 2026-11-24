@@ -10,6 +10,6 @@ window.ADMISSION_SYSTEM_STATUS = {
     source: "BSS / The Daily Star",
     sourceUrl: "https://www.thedailystar.net/news/bangladesh/education/news/sc-clears-way-public-universities-medical-colleges-hold-admission-tests-4331006",
     appealStatus: "Appellate Division stay issued on 23 November 2026",
-    lastVerified: "2026-11-23T23:00:00+06:00"
+    lastVerified: "2026-11-24T08:16:00+06:00"
   }
 };
