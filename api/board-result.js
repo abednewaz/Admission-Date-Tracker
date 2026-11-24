@@ -105,10 +105,33 @@ async function startBrowserSession(v){
     throw e;
   }
 }
+function parseSubjectGrades(text){
+  const lines=String(text||'').replace(/\r/g,'').split('\n').map(s=>s.trim()).filter(Boolean);
+  const start=lines.findIndex(s=>/Subject-wise Grade\/Marks/i.test(s));
+  if(start<0)return [];
+  const grades=[],pending=[];
+  for(let i=start+1;i<lines.length;i++){
+    const line=lines[i];
+    if(/^\d{3}$/.test(line)){pending.push(line);continue;}
+    let m=line.match(/^(\d{3})\s+(.+?)\s+(\d{2,3})\s+(A\+|A-|A|B|C|D|F)$/i);
+    if(m){
+      grades.push({code:m[1],subject:m[2].trim(),marks:m[3],grade:m[4].toUpperCase()});
+      pending.length=0;
+      continue;
+    }
+    m=line.match(/^(.+?)\s+(\d{2,3})\s+(A\+|A-|A|B|C|D|F)$/i);
+    if(m && !/^\d+$/.test(m[1].trim())){
+      grades.push({code:pending.join('-'),subject:m[1].trim(),marks:m[2],grade:m[3].toUpperCase()});
+      pending.length=0;
+    }
+  }
+  return grades;
+}
 function parseBrowserlessText(text,v){
   const t=String(text||'').replace(/\r/g,'').trim(),find=(re)=>{const m=t.match(re);return m?m[1].trim():''};
-  const out={roll:find(/Roll No\s+([^\n]+)/i)||v.roll,reg:find(/Registration No\s+([^\n]+)/i)||v.reg,name:find(/Name of Student\s+([^\n]+)/i),fatherName:find(/Father's Name\s+([^\n]+)/i),motherName:find(/Mother's Name\s+([^\n]+)/i),board:find(/Board\s+([^\n]+?)(?=\s+Session|\n)/i)||boardLabel(v.board),group:find(/Group\s+(.+?)(?=\s+Type:)/i),examType:find(/Type:\s*(.+?)(?=\s+Gender|\n)/i),dob:find(/Date of Birth\s+([^\n]+)/i),institute:find(/Name of Institute\s+([^\n]+)/i),result:find(/Result\s+(.+?)(?=\s+GPA=|\n)/i),gpa:find(/GPA=\[?([0-9.]+)\]?/i),grades:[]};
-  if(!out.name&&!out.gpa&&!out.result)return null;
+  const grades=parseSubjectGrades(t);
+  const out={roll:find(/Roll No\s+([^\n]+)/i)||v.roll,reg:find(/Registration No\s+([^\n]+)/i)||v.reg,name:find(/Name of Student\s+([^\n]+)/i),fatherName:find(/Father's Name\s+([^\n]+)/i),motherName:find(/Mother's Name\s+([^\n]+)/i),board:find(/Board\s+([^\n]+?)(?=\s+Session|\n)/i)||boardLabel(v.board),group:find(/Group\s+(.+?)(?=\s+Type:)/i),examType:find(/Type:\s*(.+?)(?=\s+Gender|\n)/i),dob:find(/Date of Birth\s+([^\n]+)/i),institute:find(/Name of Institute\s+([^\n]+)/i),result:find(/Result\s+(.+?)(?=\s+GPA=|\n)/i),gpa:find(/GPA=\[?([0-9.]+)\]?/i),grades};
+  if(!out.name&&!out.gpa&&!out.result&&!out.grades.length)return null;
   return out;
 }
 async function finishBrowserSession(v,sessionToken,captcha){
