@@ -1,5 +1,3 @@
-import { EncryptJWT, jwtDecrypt } from 'jose';
-
 const BROWSERLESS_SESSION='https://production-sfo.browserless.io/session';
 const BASE='https://www.educationboardresults.gov.bd';
 const HOME=BASE+'/v2/home';
@@ -36,6 +34,7 @@ async function sessionKey(){
   return new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(raw)));
 }
 async function signSession(payload){
+  const { EncryptJWT } = await import('jose');
   return new EncryptJWT(payload).setProtectedHeader({alg:'dir',enc:'A256GCM'}).setIssuedAt().setExpirationTime('2m').encrypt(await sessionKey());
 }
 async function readSession(token){
