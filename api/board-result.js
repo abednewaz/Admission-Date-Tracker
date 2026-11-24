@@ -38,7 +38,7 @@ async function signSession(payload){
   return new EncryptJWT(payload).setProtectedHeader({alg:'dir',enc:'A256GCM'}).setIssuedAt().setExpirationTime('2m').encrypt(await sessionKey());
 }
 async function readSession(token){
-  const {payload}=await jwtDecrypt(String(token),await sessionKey());
+  const {jwtDecrypt}=await import('jose');const {payload}=await jwtDecrypt(String(token),await sessionKey());
   if(!payload.browserQL||!payload.stop)throw new Error('Result browser session is invalid.');
   return payload;
 }
@@ -66,31 +66,31 @@ async function bql(url,query,operationName){
   }
   throw new Error(last);
 }
-function gqlSetSelect(selector,label){
+function gqlSetSelect(selector,label,alias){
   const s=JSON.stringify(selector),l=JSON.stringify(label);
-  return `evaluate(content: """(()=>{const s=document.querySelector(${s});if(!s)return false;const target=${l};const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(!o)return false;s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value;})()""") { value }`;
+  return `${alias}: evaluate(content: """(()=>{const s=document.querySelector(${s});if(!s)return false;const target=${l};const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(!o)return false;s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value;})()""") { value }`;
 }
-function gqlSetAnySelect(label){
+function gqlSetAnySelect(label,alias){
   const l=JSON.stringify(label);
-  return `evaluate(content: """(()=>{const target=${l};for(const s of document.querySelectorAll('select')){const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(o){s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value}}return false})()""") { value }`;
+  return `${alias}: evaluate(content: """(()=>{const target=${l};for(const s of document.querySelectorAll('select')){const o=[...s.options].find(x=>x.textContent.trim().toLowerCase()===target.trim().toLowerCase());if(o){s.value=o.value;s.dispatchEvent(new Event('input',{bubbles:true}));s.dispatchEvent(new Event('change',{bubbles:true}));return s.value}}return false})()""") { value }`;
 }
 async function startBrowserSession(v){
   const session=await createBrowserlessSession();
   try{
-    const board=gqlSetSelect('select[name="board"]',boardLabel(v.board));
-    const exam=gqlSetSelect('select[name="exam"]',v.exam==='hsc'?'HSC/Alim/Equivalent':'SSC/Dakhil/Equivalent');
-    const year=gqlSetSelect('select[name="year"]',v.year);
-    const resultType=gqlSetAnySelect('Individual/Detailed Result');
+    const board=gqlSetSelect('select[name="board"]',boardLabel(v.board),'setBoard');
+    const exam=gqlSetSelect('select[name="exam"]',v.exam==='hsc'?'HSC/Alim/Equivalent':'SSC/Dakhil/Equivalent','setExam');
+    const year=gqlSetSelect('select[name="year"]',v.year,'setYear');
+    const resultType=gqlSetAnySelect('Individual/Detailed Result','setResultType');
     const query=`mutation StartBoardResult {
       goto(url: ${JSON.stringify(HOME)}, waitUntil: domContentLoaded) { status }
-      waitForSelector(selector: "select[name='board']", timeout: 15000) { selector }
+      waitBoard: waitForSelector(selector: "select[name='board']", timeout: 15000) { selector }
       ${board}
       ${exam}
       ${year}
       ${resultType}
-      type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
-      type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
-      waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
+      fillRoll: type(selector: "input[name='roll']", text: ${JSON.stringify(v.roll)}) { time }
+      fillReg: type(selector: "input[name='reg']", text: ${JSON.stringify(v.reg)}) { time }
+      waitCaptcha: waitForSelector(selector: "input[name='captcha'], #captcha", timeout: 10000) { selector }
       screenshot(selector: "img[src*='captcha'], img[id*='captcha'], img[alt*='captcha']", type: png, quality: 100) { base64 }
     }`;
     const data=await bql(session.browserQL,query,'StartBoardResult');
@@ -114,13 +114,13 @@ async function finishBrowserSession(v,sessionToken,captcha){
   if(s.exam!==v.exam||s.year!==v.year||s.board!==v.board||s.roll!==v.roll||s.reg!==v.reg)throw new Error('The result session does not match this request.');
   try{
     const query=`mutation SubmitBoardResult {
-      type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
-      click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
-      waitForNavigation(timeout: 15000) { status }
-      text(selector: "body") { text }
+      fillCaptcha: type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
+      clickSubmit: click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
+      waitResult: waitForNavigation(timeout: 15000) { status }
+      bodyText: text(selector: "body") { text }
     }`;
     const data=await bql(String(s.browserQL),query,'SubmitBoardResult');
-    const text=data?.text?.text||'';
+    const text=data?.bodyText?.text||'';
     if(/security code|robot prevention|captcha|incorrect/i.test(text)&&!/Student Information Summary|Result of HSC|Result of SSC/i.test(text))throw new Error('Security code is incorrect or expired. Refresh the image and try again.');
     const result=parseBrowserlessText(text,v);
     if(!result)throw new Error('The official result page did not return a readable result. The CAPTCHA may be wrong or the session may have expired.');
