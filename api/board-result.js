@@ -119,6 +119,8 @@ function parseSubjectGrades(text){
       pending.length=0;
       continue;
     }
+    const codeAndSubject=line.match(/^(\d{3})\s+(.+)$/);
+    if(codeAndSubject){pending.push(codeAndSubject[1]);continue;}
     m=line.match(/^(.+?)\s+(\d{2,3})\s+(A\+|A-|A|B|C|D|F)$/i);
     if(m && !/^\d+$/.test(m[1].trim())){
       grades.push({code:pending.join('-'),subject:m[1].trim(),marks:m[2],grade:m[3].toUpperCase()});
