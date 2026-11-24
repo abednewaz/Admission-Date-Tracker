@@ -1,13 +1,8 @@
-const SOURCES=[
-  'https://api.bangladeshgov.org/',
-  'https://eduboardapi.vercel.app/fetch'
-];
+const API='https://eduboardapi.vercel.app/fetch';
 
-function json(res,data,status=200){
-  return res.status(status).json(data);
-}
+function json(res,data,status=200){return res.status(status).json(data);}
 function boardCode(v){return v==='chattogram'?'chittagong':v;}
-function validate(v){
+function valid(v){
   if(!['ssc','hsc'].includes(v.exam))return 'Select SSC or HSC/equivalent.';
   if(!/^\d{4}$/.test(v.year))return 'Invalid examination year.';
   if(!v.board)return 'Select an education board.';
@@ -15,15 +10,13 @@ function validate(v){
   if(!/^\d{1,15}$/.test(v.reg))return 'Enter a valid registration number.';
   return null;
 }
-function normalize(data,fallback){
-  const r=data?.res||data;
+function normalize(r,fallback){
   if(!r||typeof r!=='object')return null;
-  const rawGrades=Array.isArray(r.grades)?r.grades:[];
-  const grades=rawGrades.map(g=>({
-    code:String(g.code??g.subject_code??''),
-    subject:String(g.subject??g.subject_name??''),
-    grade:String(g.grade??g.letter_grade??'')
-  }));
+  const grades=Array.isArray(r.grades)?r.grades.map(g=>({
+    code:String(g.code??g.subjectCode??g.subject_code??''),
+    subject:String(g.subject??g.subjectName??g.subject_name??''),
+    grade:String(g.grade??g.subjectGPA??g.letter_grade??'')
+  })):[];
   const out={
     roll:String(r.roll??r.roll_no??fallback.roll),
     reg:String(r.reg??r.regno??r.registration??fallback.reg),
@@ -43,21 +36,6 @@ function normalize(data,fallback){
   return out;
 }
 
-async function fetchJson(url,options){
-  const response=await fetch(url,{
-    ...options,
-    headers:{
-      'User-Agent':'Mozilla/5.0 AdmissionTracker/1.0',
-      'Accept':'application/json,text/plain,*/*',
-      ...(options?.headers||{})
-    }
-  });
-  const raw=await response.text();
-  let data=null;
-  try{data=JSON.parse(raw)}catch{}
-  return {response,data,raw};
-}
-
 export default async function handler(req,res){
   if(req.method!=='POST')return json(res,{error:'Method not allowed.'},405);
   try{
@@ -67,42 +45,35 @@ export default async function handler(req,res){
     const board=boardCode(String(body.board||'').toLowerCase());
     const roll=String(body.roll||'').replace(/\D/g,'');
     const reg=String(body.reg||'').replace(/\D/g,'');
-    const err=validate({exam,year,board,roll,reg});
+    const err=valid({exam,year,board,roll,reg});
     if(err)return json(res,{error:err},400);
 
-    const q={exam,year,board,roll,reg};
-    const encoded=new URLSearchParams(q).toString();
-    let lastError='';
+    const upstream=await fetch(API,{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'User-Agent':'AdmissionTracker/1.0'
+      },
+      body:JSON.stringify({exam,year,board,roll,reg}),
+      signal:AbortSignal.timeout(15000)
+    });
 
-    for(const base of SOURCES){
-      try{
-        const isQuery=base.includes('?')||base.endsWith('/');
-        const url=isQuery
-          ? base+(base.includes('?')?'&':'?')+encoded
-          : base+'?'+encoded;
-        const result=await fetchJson(url,{
-          method:'GET',
-          signal:AbortSignal.timeout(8000)
-        });
-        if(!result.response.ok){
-          lastError='Result source returned HTTP '+result.response.status+'.';
-          continue;
-        }
-        if(result.data?.error||result.data?.message){
-          lastError=String(result.data.error||result.data.message);
-          continue;
-        }
-        const parsed=normalize(result.data,{roll,reg,board});
-        if(parsed)return json(res,{ok:true,result:parsed,source:'education-board-result-service'});
-        lastError='No result data was returned.';
-      }catch(e){
-        lastError=e?.message||'Source unavailable.';
-      }
+    const raw=await upstream.text();
+    let data=null;
+    try{data=JSON.parse(raw)}catch{}
+
+    if(!upstream.ok){
+      const detail=data?.error||data?.message||data?.msg||'';
+      return json(res,{error:detail||'The result service rejected the request. Check your exam, year, board, roll and registration number.'},502);
     }
 
-    return json(res,{error:lastError||'The result service is temporarily unavailable. Please try again.'},502);
+    const result=normalize(data,{roll,reg,board});
+    if(result)return json(res,{ok:true,result,source:'EduBoard API'});
+
+    return json(res,{error:String(data?.error||data?.message||'No result was found for the supplied information.')},404);
   }catch(e){
-    console.error('Board result lookup error:',e);
-    return json(res,{error:'The result service is temporarily unavailable. Please try again.'},502);
+    console.error('Board result API error:',e);
+    return json(res,{error:'Could not reach the result service right now. Please try again.'},502);
   }
 }
