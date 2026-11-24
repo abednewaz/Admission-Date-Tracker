@@ -56,11 +56,16 @@ async function stopBrowserlessSession(stopUrl){
   try{await fetch(stopUrl,{method:'DELETE'});}catch{}
 }
 async function bql(url,query,operationName){
-  const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
-  const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
-  if(!r.ok)throw new Error(data?.errors?.[0]?.message||'Browser service request failed.');
-  if(data?.errors?.length)throw new Error(data.errors.map(e=>e.message).join('; '));
-  return data?.data||{};
+  let last='Browser service request failed.';
+  for(let attempt=0;attempt<3;attempt++){
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
+    const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
+    if(r.status===429&&attempt<2){await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));continue;}
+    if(!r.ok)throw new Error(data?.errors?.[0]?.message||last);
+    if(data?.errors?.length)throw new Error(data.errors.map(e=>e.message).join('; '));
+    return data?.data||{};
+  }
+  throw new Error(last);
 }
 function gqlSetSelect(selector,label){
   const s=JSON.stringify(selector),l=JSON.stringify(label);
