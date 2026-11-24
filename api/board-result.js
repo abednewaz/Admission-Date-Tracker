@@ -1,3 +1,5 @@
+export const maxDuration = 60;
+
 const BROWSERLESS_SESSION='https://production-sfo.browserless.io/session';
 const BASE='https://www.educationboardresults.gov.bd';
 const HOME=BASE+'/v2/home';
@@ -57,7 +59,7 @@ async function stopBrowserlessSession(stopUrl){
 async function bql(url,query,operationName){
   let last='Browser service request failed.';
   for(let attempt=0;attempt<3;attempt++){
-    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(55000)});
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,variables:{},operationName}),signal:AbortSignal.timeout(59000)});
     const raw=await r.text();let data=null;try{data=JSON.parse(raw)}catch{}
     if(r.status===429&&attempt<2){await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));continue;}
     if(!r.ok)throw new Error(data?.errors?.map(e=>e.message).join('; ')||raw.slice(0,500)||`${last} (HTTP ${r.status})`);
@@ -116,7 +118,7 @@ async function finishBrowserSession(v,sessionToken,captcha){
     const query=`mutation SubmitBoardResult {
       fillCaptcha: type(selector: "input[name='captcha'], #captcha", text: ${JSON.stringify(captcha)}) { time }
       clickSubmit: click(selector: "input[type='submit'], button[type='submit']", visible: true) { time }
-      waitResult: waitForNavigation(timeout: 15000) { status }
+      waitResult: waitForNavigation(timeout: 45000, waitUntil: domContentLoaded) { status }
       bodyText: text(selector: "body") { text }
     }`;
     const data=await bql(String(s.browserQL),query,'SubmitBoardResult');
