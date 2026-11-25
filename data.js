@@ -2677,5 +2677,272 @@ window.ADMISSION_EXAMS = [
     "requirementsChanged": true,
     "requirementsLastChecked": "2026-11-17T17:18:11+06:00",
     "requirementsSource": "https://admission.sust.edu.bd/"
+  },
+  {
+    "id": "cou-2026-27",
+    "universityName": "Comilla University",
+    "universityShortName": "CoU",
+    "unit": "Undergraduate — A, B & C Units",
+    "admissionType": "Public",
+    "applicationOpenDate": "2026-12-10",
+    "applicationDeadline": "2026-12-31",
+    "examDate": "2027-02-05 to 2027-02-07",
+    "examTime": "Unit-wise schedule",
+    "examLocation": "Comilla University / designated centres",
+    "officialUrl": "https://www.cou.ac.bd/index.php/admission",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "verified",
+    "requirementsSource": "https://www.cou.ac.bd/",
+    "requirements": "A Unit: Science group; SSC and HSC/equivalent minimum GPA 3.00 separately and combined GPA 6.50. B Unit: Humanities and Business Studies minimum GPA 2.75 separately and combined GPA 5.50; Science combined GPA 6.00. C Unit: Business Studies and Humanities combined GPA 5.50; Science combined GPA 6.00; minimum GPA 2.75 separately. English and Law have additional English-section requirements.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "A Unit: minimum GPA 3.00 in both SSC and HSC/equivalent, combined GPA 6.50. B Unit: combined GPA 6.00 with the published unit conditions. C Unit: combined GPA 6.00 with minimum GPA 2.75 in each examination."
+      },
+      "business": {
+        "eligible": true,
+        "text": "B Unit: minimum GPA 2.75 in both SSC and HSC/equivalent, combined GPA 5.50. C Unit: combined GPA 5.50 with minimum GPA 2.75 in each examination."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "B Unit: minimum GPA 2.75 in both SSC and HSC/equivalent, combined GPA 5.50. C Unit: combined GPA 5.50 with minimum GPA 2.75 in each examination."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check the official equivalence and unit-specific conditions."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check the official equivalence and unit-specific conditions."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "GCE O/A-Level applicants must follow the university's published equivalence and subject requirements."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the official admission guideline for the applicable equivalence."
+      }
+    },
+    "notes": "Applications run 10–31 December 2026. Admission tests are scheduled for A Unit on 5 February, B Unit on 6 February and C Unit on 7 February 2027."
+  },
+  {
+    "id": "butex-2026-27",
+    "universityName": "Bangladesh University of Textiles",
+    "universityShortName": "BUTEX",
+    "unit": "B.Sc. in Textile Engineering — Level 1",
+    "admissionType": "Public",
+    "applicationOpenDate": "2026-12-01",
+    "applicationDeadline": "2027-01-10",
+    "examDate": "2027-01-29",
+    "examTime": "10:00 AM–12:00 PM",
+    "examLocation": "BUTEX / designated examination centre",
+    "officialUrl": "https://www.butex.edu.bd/",
+    "status": "Officially published",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "verified",
+    "requirementsSource": "https://www.butex.edu.bd/wp-content/uploads/2026/11/20261119_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF.pdf",
+    "requirements": "Bangladeshi citizen. SSC/equivalent GPA minimum 4.00. HSC/equivalent must be Science, passed in 2026, GPA minimum 4.00. Mathematics + Physics + Chemistry + English combined grade point minimum 16.50, with minimum 3.50 in each. Top 14,000 candidates by HSC Mathematics, Physics and Chemistry marks are shortlisted for the written test.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "SSC/equivalent GPA at least 4.00; HSC/equivalent Science group passed in 2026 with GPA at least 4.00; Mathematics, Physics, Chemistry and English combined grade points at least 16.50 and at least 3.50 in each subject."
+      },
+      "business": {
+        "eligible": false,
+        "text": "The published 2026-27 eligibility requires a Science-group HSC/equivalent qualification."
+      },
+      "humanities": {
+        "eligible": false,
+        "text": "The published 2026-27 eligibility requires a Science-group HSC/equivalent qualification."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Science-equivalent eligibility must be verified against the official equivalence rules."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Technical-equivalent eligibility must be verified against the official equivalence rules."
+      },
+      "oLevelALevel": {
+        "eligible": true,
+        "text": "GCE applicants must meet the published subject-grade requirements and obtain the required equivalence certificate."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the official admission circular for equivalence."
+      }
+    },
+    "notes": "Preliminary application uses Teletalk SMS. Written-test shortlist: 14,000 candidates. Written test: Mathematics 60, Physics 60, Chemistry 60, English 20 (200 marks total)."
+  },
+  {
+    "id": "hstu-2026-27",
+    "universityName": "Hajee Mohammad Danesh Science and Technology University",
+    "universityShortName": "HSTU",
+    "unit": "Undergraduate Admission — A, B, C & D Units",
+    "admissionType": "Public",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2027-01-24 to 2027-01-28",
+    "examTime": "Unit-wise schedule not published yet",
+    "examLocation": "HSTU campus / designated centres",
+    "officialUrl": "https://hstu.ac.bd/",
+    "status": "Exam window officially announced; detailed circular pending",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published",
+    "requirements": "The university has officially announced the 24–28 January 2027 undergraduate admission-test window, but the detailed 2026-27 application circular and unit-wise eligibility are not yet reliably published in the official admission portal. Check the official admission page before applying.",
+    "requirementsByGroup": {},
+    "notes": "HSTU is conducting its own admission test outside the GST cluster. The university announced the 24–28 January 2027 exam window; unit-wise dates, application dates and current eligibility are to be published."
+  },
+  {
+    "id": "aaub-2026-27",
+    "universityName": "Aviation and Aerospace University, Bangladesh",
+    "universityShortName": "AAUB",
+    "unit": "4-Year B.Sc. Programs — Undergraduate",
+    "admissionType": "Public",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2027-01-30",
+    "examTime": "Not published yet",
+    "examLocation": "AAUB Lalmonirhat Campus / BAF Shaheen College Dhaka",
+    "officialUrl": "https://admission.aaub.edu.bd/",
+    "status": "Exam date listed on official admission portal; application details pending",
+    "dateChanged": true,
+    "previousExamDate": "2026-12-05",
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "not_published",
+    "requirements": "The current official AAUB admission portal lists the BSc admission test for 30 January 2027 and states that the undergraduate admission-test notice containing eligibility and application details will be published. Do not rely on older eligibility information until that notice is released.",
+    "requirementsByGroup": {},
+    "notes": "Programs: BSc in Aerospace Engineering, Avionics Engineering, Aircraft Maintenance Engineering (Aerospace), and Aircraft Maintenance Engineering (Avionics)."
+  },
+  {
+    "id": "bmu-2026-27",
+    "universityName": "Bangladesh Maritime University",
+    "universityShortName": "BMU",
+    "unit": "Undergraduate — Oceanography, NAOE, Port Management & Logistics, Maritime Law & Fisheries",
+    "admissionType": "Public",
+    "applicationOpenDate": null,
+    "applicationDeadline": null,
+    "examDate": "2026-12-29 to 2026-12-30",
+    "examTime": "Faculty-wise schedule",
+    "examLocation": "Designated examination centres",
+    "officialUrl": "https://bmu.edu.bd/admission/admission-notice",
+    "status": "Exam dates officially announced; application schedule pending",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "check_official",
+    "requirements": "The university has officially announced the 29–30 December 2026 undergraduate admission tests. Current programme requirements are published by BMU, but the 2026-27 application notice with the final session-specific criteria and application schedule should be checked before applying.",
+    "requirementsByGroup": {},
+    "notes": "Programmes covered: BSc (Hons) in Oceanography, BSc in Naval Architecture and Offshore Engineering, BBA in Port Management & Logistics, LLB (Hons) in Maritime Law, and BSc (Hons) in Fisheries."
+  },
+  {
+    "id": "iba-ju-2026-27",
+    "universityName": "Jahangirnagar University — IBA-JU",
+    "universityShortName": "IBA-JU",
+    "unit": "BBA — IBA-JU Admission Test",
+    "admissionType": "Public",
+    "applicationOpenDate": "2026-11-22",
+    "applicationDeadline": "2026-12-15",
+    "examDate": "2027-01-10 to 2027-01-21",
+    "examTime": "Final unit-wise schedule pending",
+    "examLocation": "Jahangirnagar University / designated centres",
+    "officialUrl": "https://admission.juniv.edu/",
+    "status": "Officially published; final test slot pending",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "verified",
+    "requirementsSource": "https://www.iba-ju.edu.bd/admission",
+    "requirements": "70 seats (35 male, 35 female). Science applicants: combined SSC+HSC/equivalent GPA 7.50 with at least 3.50 separately. Business Studies/Humanities/Other applicants: combined GPA 6.50 with at least 3.00 separately. Additional subject requirements apply: Science applicants need at least B in English and Higher Mathematics/Statistics; Humanities/Business/Other applicants need at least B in English and one of Accounting, Economics, Mathematics, Business Organization & Management, or Finance, Banking & Insurance.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "SSC and HSC/equivalent combined GPA at least 7.50, with at least 3.50 in each; additional B-grade requirements in English and Higher Mathematics/Statistics apply."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Combined GPA at least 6.50, with at least 3.00 in each; additional B-grade requirements in English and an accepted business/math/economics subject apply."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Combined GPA at least 6.50, with at least 3.00 in each; additional B-grade requirements in English and an accepted subject apply."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check the official equivalence and subject requirements."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check the official equivalence and subject requirements."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Check the official IBA-JU equivalence and subject-grade rules."
+      },
+      "others": {
+        "eligible": true,
+        "text": "The published IBA-JU criteria allow Other backgrounds at the 6.50 combined GPA threshold with at least 3.00 separately, subject to the additional subject requirements."
+      }
+    },
+    "notes": "Admission test: 80 MCQ questions carrying 90 marks. Subjects: Bangla 5, English 30, Mathematical Aptitude & IQ 30, Contemporary & Analytical Issues 15. Except Bangla, the question paper is in English. 70 seats."
+  },
+  {
+    "id": "ru-iba-2026-27",
+    "universityName": "Rajshahi University — IBA",
+    "universityShortName": "RU IBA",
+    "unit": "B Unit — IBA (BBA)",
+    "admissionType": "Public",
+    "applicationOpenDate": "2026-11-15",
+    "applicationDeadline": "2026-11-30",
+    "examDate": "2027-02-12",
+    "examTime": "Not published yet",
+    "examLocation": "University of Rajshahi / designated centres",
+    "officialUrl": "https://application.ru.ac.bd/",
+    "status": "Officially published as part of B Unit",
+    "dateChanged": false,
+    "previousExamDate": null,
+    "cycle": "2026-27 / HSC Batch 2026",
+    "requirementsStatus": "verified",
+    "requirementsSource": "https://application.ru.ac.bd/",
+    "requirements": "B Unit is open to Commerce and Non-Commerce (Science and Humanities) candidates. The B Unit MCQ is 100 marks with a pass mark of 40 and 0.25 negative marking per wrong answer. For IBA, candidates must score at least 10 out of 25 in the English section; the top 500 qualifying candidates proceed to the IBA written test. IBA has 44 seats: 22 Commerce, 18 Science and 4 Humanities.",
+    "requirementsByGroup": {
+      "science": {
+        "eligible": true,
+        "text": "Science candidates may apply to B Unit and IBA subject to the published B Unit eligibility. IBA requires at least 10/25 in English in the MCQ to enter the top-500 written-test selection."
+      },
+      "business": {
+        "eligible": true,
+        "text": "Business Studies candidates may apply to B Unit and IBA subject to the published B Unit eligibility. IBA requires at least 10/25 in English in the MCQ to enter the top-500 written-test selection."
+      },
+      "humanities": {
+        "eligible": true,
+        "text": "Humanities candidates may apply to B Unit and IBA subject to the published B Unit eligibility. IBA requires at least 10/25 in English in the MCQ to enter the top-500 written-test selection."
+      },
+      "madrasa": {
+        "eligible": null,
+        "text": "Check the official equivalence rules for B Unit eligibility."
+      },
+      "technical": {
+        "eligible": null,
+        "text": "Check the official equivalence rules for B Unit eligibility."
+      },
+      "oLevelALevel": {
+        "eligible": null,
+        "text": "Check the official equivalence rules and subject requirements."
+      },
+      "others": {
+        "eligible": null,
+        "text": "Check the official B Unit eligibility for the applicable equivalent qualification."
+      }
+    },
+    "notes": "IBA is a separate institute-level admission destination under RU B Unit. After the B Unit MCQ, the top 500 candidates meeting the English threshold sit the IBA written test."
   }
 ];
