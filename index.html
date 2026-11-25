@@ -76,7 +76,7 @@
     .view-switch button.on{background:var(--pri);color:#fff}
     .view-switch .view-all-link{margin-left:auto;color:var(--pri);border:1px solid var(--border)}
     .view-switch .view-all-link:hover{background:var(--bg)}
-    .university-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}.uni-grid-card.medical-central-grid-card{grid-column:1/-1;max-width:760px;width:100%;justify-self:center}
+    .university-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}
     .uni-grid-card{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.72rem;box-shadow:var(--sh);display:flex;flex-direction:column;gap:.48rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;cursor:pointer}
     .uni-grid-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(26,35,50,.12);border-color:var(--pri2)}
     .uni-grid-card:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
@@ -93,7 +93,7 @@
     .uni-grid-actions{display:grid;grid-template-columns:1fr 1fr;gap:.35rem;margin-top:auto}.uni-grid-actions .mark-btn,.uni-grid-actions .btn{width:100%;min-height:32px;padding:.34rem .35rem;font-size:.68rem;border-radius:7px}.uni-grid-actions .btn{display:flex;align-items:center;justify-content:center}
     .grid-see-more{width:100%;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:9px;padding:.58rem;font:inherit;font-size:.78rem;font-weight:800;cursor:pointer;margin-bottom:1rem}.grid-see-more:hover{background:var(--bg)}
     .grid-empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:12px}
-    @media(max-width:700px){.university-grid{grid-template-columns:1fr 1fr;gap:.55rem}.uni-grid-card{padding:.65rem}.uni-grid-title h3{font-size:.8rem}.uni-grid-card.medical-central-grid-card{grid-column:1/-1;max-width:none}}
+    @media(max-width:700px){.university-grid{grid-template-columns:1fr 1fr;gap:.55rem}.uni-grid-card{padding:.65rem}.uni-grid-title h3{font-size:.8rem}}
     @media(max-width:460px){.university-grid{grid-template-columns:1fr}.view-switch{overflow:auto}.view-switch button,.view-switch a{padding:.46rem .68rem}}
     @media(max-width:900px){.calendar-box .calendar-toggle{cursor:pointer}.calendar-box:not(.open) .calendar-grid,.calendar-box:not(.open) .calendar-events,.calendar-box:not(.open) .calendar-info{display:none}.calendar-box.open .calendar-chevron{transform:rotate(180deg)}.calendar-toggle{display:flex!important;align-items:center;gap:.42rem;border:0;background:transparent;color:inherit;padding:0;text-align:left;cursor:pointer}.calendar-toggle h2{font:inherit;color:var(--pri)}.calendar-chevron{font-size:1rem;color:var(--muted);transition:transform .24s ease}}
     @media(min-width:901px){.calendar-toggle{display:block!important;border:0;background:transparent;padding:0;text-align:left;cursor:default}.calendar-chevron{display:none}}
@@ -1018,7 +1018,7 @@ body.dark .mark-btn.marked{
       modal.classList.remove('show');document.body.style.overflow='';
     }
     function renderUniversityGrid(records){
-      var groups=universityGroups(records);var medicalIndex=groups.findIndex(function(g){return g.next&&g.next.medicalCentral});if(medicalIndex>0){var medicalGroup=groups.splice(medicalIndex,1)[0];groups.unshift(medicalGroup)}var visible=GRID_EXPANDED?groups:groups.slice(0,9);html='';
+      var groups=universityGroups(records),visible=GRID_EXPANDED?groups:groups.slice(0,9),html='';
       if(!groups.length){document.getElementById('list').innerHTML='<div class="grid-empty">No matching universities found.</div>';return}
       html+='<div class="university-grid">';
       visible.forEach(function(g){
@@ -1027,7 +1027,7 @@ body.dark .mark-btn.marked{
         var exam=e&&e.examDate&&e.examDate!=='Not published yet'&&e.examDate!=='Better check Yourself'?fmt(e.examDate):'Not announced';
         var time=fieldValue(e,'examTime');
         var deadline=fieldValue(e,'applicationDeadline');
-        html+='<article class="uni-grid-card '+(e&&e.medicalCentral?'medical-central-grid-card':'')+'" data-uni-id="'+esc(e.id)+'" tabindex="0" role="button" aria-label="Open '+esc(title)+' details">';
+        html+='<article class="uni-grid-card" data-uni-id="'+esc(e.id)+'" tabindex="0" role="button" aria-label="Open '+esc(title)+' details">';
         html+='<div class="uni-grid-top">'+logoMarkup(e,'uni-grid-logo')+'<div class="uni-grid-title"><h3>'+esc(title)+'</h3><div class="uni-grid-short">'+esc(e&&e.universityShortName||'')+'</div></div><span class="uni-grid-badge '+(type==='Private'?'private':'public')+'">'+type+'</span></div>';
         html+='<div class="uni-grid-info"><div class="uni-grid-info-row"><span>Exam date</span><span class="'+((c.s==='tod'||c.s==='tom')?'soon':'')+'">'+esc(exam)+'</span></div><div class="uni-grid-info-row"><span>Exam time</span><span>'+esc(time)+'</span></div><div class="uni-grid-info-row"><span>Application</span><span>'+esc(ap.l)+'</span></div><div class="uni-grid-info-row"><span>Deadline</span><span>'+esc(deadline)+'</span></div></div>';
         html+='<div class="uni-grid-actions"><button class="mark-btn '+(isMarked(g.name)?'marked':'')+'" type="button" data-mark="'+esc(g.name)+'">'+(isMarked(g.name)?'✓ Marked':'☆ Mark')+'</button>'+(e&&e.officialUrl?'<a class="btn" href="'+esc(e.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official</a>':'')+'</div>';
@@ -1102,8 +1102,6 @@ body.dark .mark-btn.marked{
         if(show.length)orderedGroups.push({uni:uni,list:show});
       });
       orderedGroups.sort(function(a,b){
-        if(a.list[0]&&a.list[0].medicalCentral)return -1;
-        if(b.list[0]&&b.list[0].medicalCentral)return 1;
         var c=compareExamRecords(a.list[0],b.list[0]);
         return c!==0?c:String(a.uni).localeCompare(String(b.uni),undefined,{sensitivity:'base'});
       });
