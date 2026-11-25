@@ -77,11 +77,16 @@
     .view-switch .view-all-link{margin-left:auto;color:var(--pri);border:1px solid var(--border)}
     .view-switch .view-all-link:hover{background:var(--bg)}
     .university-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}
-    .uni-grid-card{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.72rem;box-shadow:var(--sh);display:flex;flex-direction:column;gap:.48rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-    .uni-grid-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(26,35,50,.12)}
+    .uni-grid-card{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.72rem;box-shadow:var(--sh);display:flex;flex-direction:column;gap:.48rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;cursor:pointer}
+    .uni-grid-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(26,35,50,.12);border-color:var(--pri2)}
+    .uni-grid-card:focus-visible{outline:2px solid var(--pri2);outline-offset:2px}
     .uni-grid-top{display:flex;align-items:flex-start;gap:.55rem;min-width:0}
-    .uni-grid-logo{width:38px;height:38px;object-fit:contain;border-radius:9px;flex:0 0 38px;background:#f6f7f9;border:1px solid var(--border)}
-    .uni-logo-fallback{width:38px;height:38px;align-items:center;justify-content:center;border-radius:9px;background:var(--bg);border:1px solid var(--border);color:var(--pri);font-size:.68rem;font-weight:850;flex:0 0 38px}
+    .uni-grid-logo{width:46px;height:46px;object-fit:contain;border-radius:9px;flex:0 0 46px;background:#fff;border:1px solid var(--border);padding:2px;image-rendering:auto}
+    .clear-uni-logo{display:block}
+    .uni-logo-fallback{width:46px;height:46px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:var(--bg);border:1px solid var(--border);color:var(--muted);flex:0 0 46px}
+    .uni-logo-fallback svg{width:24px;height:24px}
+    .no-logo-fallback{display:flex!important}
+    .uni-grid-title{min-width:0;flex:1}
     .uni-grid-title{min-width:0;flex:1}.uni-grid-title h3{font-size:.84rem;line-height:1.25;font-weight:800;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.uni-grid-short{font-size:.66rem;color:var(--muted);margin-top:.12rem}
     .uni-grid-badge{font-size:.57rem;font-weight:800;padding:.15rem .34rem;border-radius:5px;white-space:nowrap;flex:0 0 auto}.uni-grid-badge.public{background:#ebf8ff;color:#2b6cb0}.uni-grid-badge.private{background:#faf5ff;color:#6b46c1}
     .uni-grid-info{display:grid;gap:.25rem;padding:.42rem .5rem;border-radius:8px;background:var(--bg)}.uni-grid-info-row{display:flex;justify-content:space-between;gap:.5rem;font-size:.67rem;line-height:1.3}.uni-grid-info-row span:first-child{color:var(--muted)}.uni-grid-info-row span:last-child{text-align:right;font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.uni-grid-info-row .soon{color:var(--red)}
@@ -426,6 +431,15 @@ body.dark .share-btn{border-color:#6366f1;background:linear-gradient(135deg,#373
 body.dark .share-btn:hover{filter:brightness(1.08);box-shadow:0 8px 21px rgba(79,70,229,.4)}
 @media(max-width:640px){.share-btn{min-height:46px;padding:.64rem 1.08rem;font-size:.93rem}}
 .share-icon{width:18px;height:18px;display:inline-flex;flex:0 0 18px}.share-icon svg{width:100%;height:100%}
+.university-popup{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;padding:1rem;z-index:260}
+.university-popup.show{display:flex}
+.university-popup-dialog{width:min(680px,100%);max-height:min(90dvh,760px);overflow:auto;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:18px;box-shadow:0 24px 80px rgba(0,0,0,.52);padding:1rem}
+.university-popup-head{position:sticky;top:-1rem;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:-1rem -1rem .8rem;padding:.85rem 1rem;background:var(--card);border-bottom:1px solid var(--border)}
+.university-popup-head h3{font-size:1rem;font-weight:800;min-width:0;line-height:1.3}
+.university-popup-close{width:36px;height:36px;flex:0 0 36px;border:0;border-radius:50%;background:rgba(127,127,127,.14);color:inherit;font-size:1.3rem;cursor:pointer}
+.university-popup-body .popup-list-card{margin:0;box-shadow:none}
+.university-popup-body .popup-list-card .uni-logo{width:46px;height:46px;object-fit:contain;background:#fff;border:1px solid var(--border);padding:2px;border-radius:9px}
+@media(max-width:640px){.university-popup{padding:.5rem}.university-popup-dialog{max-height:94dvh;border-radius:14px;padding:.8rem}.university-popup-head{margin:-.8rem -.8rem .7rem;padding:.7rem .8rem}.university-popup-body .popup-list-card{padding:.8rem}.university-popup-body .rows .row{font-size:.82rem}}
 .share-modal{position:fixed;inset:0;background:rgba(0,0,0,.68);display:none;align-items:center;justify-content:center;padding:1rem;z-index:250}
 .share-modal.show{display:flex}
 .share-dialog{width:min(430px,100%);background:var(--card,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e2e0db);border-radius:18px;box-shadow:0 22px 70px rgba(0,0,0,.5);padding:1rem}.dark .share-dialog{background:#111827;color:#e5e7eb;border-color:#334155}
@@ -677,6 +691,15 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       </div>
     </footer>
   </div>
+  <div class="university-popup" id="universityPopup" role="dialog" aria-modal="true" aria-labelledby="universityPopupTitle">
+    <div class="university-popup-dialog" role="document">
+      <div class="university-popup-head">
+        <h3 id="universityPopupTitle">University Details</h3>
+        <button class="university-popup-close" id="universityPopupClose" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="university-popup-body" id="universityPopupBody"></div>
+    </div>
+  </div>
   <div class="share-modal" id="shareModal" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
   <div class="share-dialog" role="document">
     <div class="share-dialog-head"><h3 id="shareTitle">What do you want to share with?</h3><button class="share-close" id="shareClose" type="button" aria-label="Close">×</button></div>
@@ -782,8 +805,86 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
 ['dhaka university of engineering and technology','duet.ac.bd'],['duet','duet.ac.bd'],['bangladesh university of textiles','butex.ac.bd'],['butex','butex.ac.bd'],
 ['north south university','northsouth.edu'],['brac university','bracu.ac.bd'],['east west university','ewubd.edu'],['american international university-bangladesh','aiub.edu'],['united international university','uiu.ac.bd'],['university of liberal arts bangladesh','ulab.edu.bd'],['green university','green.edu.bd'],['independent university, bangladesh','iub.edu.bd'],['independent university','iub.edu.bd'],['ahsAnullah university of science and technology','aust.edu']
 ];for(var i=0;i<m.length;i++)if(n.indexOf(m[i][0].toLowerCase())!==-1)return m[i][1];try{var u=e&&e.officialUrl?new URL(e.officialUrl,location.href):null;return u?u.hostname.replace(/^www\./,''):''}catch(err){return ''}}
-    function logoInitials(name){var s=String(name||'University').replace(/university/ig,'').trim().split(/\s+/).filter(Boolean);return s.slice(0,2).map(function(x){return x[0]}).join('').toUpperCase()||'U'}
-    function logoMarkup(e,cls){var domain=logoDomain(e),name=e&&e.universityName||'University',initials=logoInitials(name);var isMist=String(e&&e.universityShortName||'').toUpperCase()==='MIST'||String(name).toLowerCase().indexOf('military institute of science and technology')!==-1;if(isMist)return '<span class="'+cls+'-fallback mist-logo-fallback">MIST</span>';if(!domain)return '<span class="'+cls+'-fallback" style="display:flex">'+initials+'</span>';var src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=256';return '<span style="display:inline-flex;position:relative;flex-shrink:0"><img class="'+cls+'" src="'+esc(src)+'" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="'+cls+'-fallback">'+initials+'</span></span>'}
+    var CLEAR_LOGO_BASE='https://raw.githubusercontent.com/MrMajharul/bangladeshi-university-logos/master/logos/';
+    var CLEAR_LOGOS={
+      'american international university-bangladesh':'American_International_University-Bangladesh.png',
+      'brac university':'BRAC_University.png',
+      'north south university':'North_South_University.png',
+      'university of liberal arts bangladesh':'University_of_Liberal_Arts_Bangladesh.png',
+      'united international university':'United_International_University.png',
+      'east west university':'East_West_University.png',
+      'bangladesh university of professionals':'Bangladesh_University_of_Professionals.png',
+      'khulna university of engineering & technology':'Khulna_University_of_Engineering_and_Technology.png',
+      'khulna university':'University_of_Khulna.png',
+      'rajshahi university':'University_of_Rajshahi.png',
+      'rajshahi university of engineering & technology':'Rajshahi_University_of_Engineering_and_Technology.png',
+      'university of chittagong':'University_of_Chittagong.png',
+      'chittagong university of engineering & technology':'Chittagong_University_of_Engineering_and_Technology.png',
+      'bangladesh university of engineering and technology':'Bangladesh_University_of_Engineering_and_Technology.png',
+      'ahsAnullah university of science and technology':'Ahsanullah_University_of_Science_and_Technology.png',
+      'green university of bangladesh':'Green_University_of_Bangladesh.png',
+      'independent university, bangladesh':'Independent_University_Bangladesh.png',
+      'military institute of science and technology':'Military_Institute_of_Science_and_Technology.png',
+      'islamic university of technology':'Islamic_University_of_Technology.png',
+      'jagannath university':'Jagannath_University.png',
+      'jahangirnagar university':'Jahangirnagar_University.png',
+      'jashore university of science & technology':'Jashore_University_of_Science_and_Technology.png',
+      'shahjalal university of science & technology':'Shahjalal_University_of_Science_and_Technology.png',
+      'mawlana bhashani science & technology university':'Mawlana_Bhashani_Science_and_Technology_University.png',
+      'jatiya kabi kazi nazrul islam university':'Jatiya_Kabi_Kazi_Nazrul_Islam_University.png',
+      'hajee mohammad danesh science & technology university':'Hajee_Mohammad_Danesh_Science_and_Technology_University.png',
+      'begum rokeya university, rangpur':'Begum_Rokeya_University_Rangpur.png',
+      'gopalganj science and technology university':'Gopalganj_Science_and_Technology_University.png',
+      'pabna university of science and technology':'Pabna_University_of_Science_and_Technology.png',
+      'noakhali science and technology university':'Noakhali_Science_and_Technology_University.png',
+      'rabindra university, bangladesh':'Rabindra_University_Bangladesh.png',
+      'ahsAnullah university of science and technology':'Ahsanullah_University_of_Science_and_Technology.png',
+      'university of asia pacific':'University_of_Asia_Pacific.png',
+      'southeast university':'Southeast_University.png',
+      'sonargaon university':'Sonargaon_University.png',
+      'uttara university':'Uttara_University.png',
+      'port city international university':'Port_City_International_University.png',
+      'canadian university of bangladesh':'Canadian_University_of_Bangladesh.png',
+      'university of information technology & sciences':'University_of_Information_Technology_and_Sciences.png',
+      'east delta university':'East_Delta_University.png',
+      'dhaka international university':'Dhaka_International_University.png',
+      'bangladesh university of business and technology':'Bangladesh_University_of_Business_and_Technology.png',
+      'international islamic university chittagong':'International_Islamic_University_Chittagong.png',
+      'bangladesh army international university of science and technology':'Bangladesh_Army_International_University_of_Science_and_Technology.png',
+      'dafodil international university':'Daffodil_International_University.png',
+      'university of dhaka':'University_of_Dhaka.png',
+      'university of rajshahi':'University_of_Rajshahi.png'
+    };
+    function clearLogoFile(e){
+      var n=String(e&&e.universityName||'').toLowerCase().trim();
+      if(/^du\s*-/.test(n))return CLEAR_LOGOS['university of dhaka'];
+      if(/^ru\s*-/.test(n))return CLEAR_LOGOS['university of rajshahi'];
+      if(/^cu\s*-/.test(n))return CLEAR_LOGOS['university of chittagong'];
+      if(/^jnu\s*-/.test(n))return CLEAR_LOGOS['jagannath university'];
+      if(/^kuet\b/.test(n))return CLEAR_LOGOS['khulna university of engineering & technology'];
+      if(/^buet\b/.test(n))return CLEAR_LOGOS['bangladesh university of engineering and technology'];
+      if(/^ruet\b/.test(n))return CLEAR_LOGOS['rajshahi university of engineering & technology'];
+      if(/^cuet\b/.test(n))return CLEAR_LOGOS['chittagong university of engineering & technology'];
+      if(/^mist\b/.test(n))return CLEAR_LOGOS['military institute of science and technology'];
+      if(/^iut\b/.test(n))return CLEAR_LOGOS['islamic university of technology'];
+      var base=n.replace(/\s*\([^)]*\)\s*$/,'').trim();
+      if(CLEAR_LOGOS[base])return CLEAR_LOGOS[base];
+      var keys=Object.keys(CLEAR_LOGOS);
+      for(var i=0;i<keys.length;i++)if(base.indexOf(keys[i])!==-1||keys[i].indexOf(base)!==-1)return CLEAR_LOGOS[keys[i]];
+      return '';
+    }
+    function logoMarkup(e,cls){
+      var file=clearLogoFile(e),name=e&&e.universityName||'University',domain=logoDomain(e);
+      if(file){
+        var src=CLEAR_LOGO_BASE+encodeURIComponent(file).replace(/%2F/g,'/');
+        return '<img class="'+cls+' clear-uni-logo" src="'+esc(src)+'" alt="'+esc(name)+' logo" loading="lazy">';
+      }
+      if(domain){
+        var src2='https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=256';
+        return '<img class="'+cls+' clear-uni-logo fallback-logo'+'" src="'+esc(src2)+'" alt="'+esc(name)+' logo" loading="lazy">';
+      }
+      return '<span class="'+cls+'-fallback no-logo-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M8 21v-6h8v6M9 10h.01M12 10h.01M15 10h.01"/></svg></span>';
+    }
     function bindScrollReveal(){
       var cards=document.querySelectorAll('#list .card');
       if(!('IntersectionObserver' in window)){
@@ -832,6 +933,50 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       arr.sort(function(a,b){var c=compareExamRecords(a.next,b.next);return c!==0?c:String(a.name).localeCompare(String(b.name),undefined,{sensitivity:'base'})});
       return arr;
     }
+    function buildUniversityListCard(e2){
+      var c2=cd(e2&&e2.examDate),ap=appS(e2),cls=(c2.s==='tod'||c2.s==='tom')?'cdn':c2.s==='fin'?'cdd':(c2.d!==null&&c2.d<=7)?'cds':'cdu';
+      var html='<article class="card popup-list-card">';
+      if(e2&&e2.medicalCentral){
+        var mc=e2.medicalColleges||{public:[],private:[]};
+        html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">Medical Admission — Central Exam</h3><p class="unit">MBBS/BDS Admission Test — 2026-27</p></div></div><span class="badge bpub">Centralized</span></div>';
+        html+='<div class="medical-central-note"><strong>Centralized Medical Admission Exam.</strong><span>Conducted centrally under DGME for government and private medical colleges.</span></div>';
+        html+='<select class="medical-college-select" aria-label="Medical colleges"><option value="">View all participating medical colleges</option><optgroup label="Public Medical Colleges">';
+        (mc.public||[]).forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+        html+='</optgroup><optgroup label="Private Medical Colleges">';
+        (mc.private||[]).forEach(function(n){html+='<option>'+esc(n)+'</option>'});
+        html+='</optgroup></select>';
+        html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+        html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share Medical Admission — Central Exam"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
+        html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button><a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a></div>';
+        if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+      }else{
+        html+='<div class="ch"><div class="uni-head">'+logoMarkup(e2,'uni-logo')+'<div><h3 class="uni">'+esc(e2.universityName)+'</h3><p class="unit">'+esc(e2.unit)+'</p></div></div><span class="badge '+(e2.admissionType.indexOf('Private')!==-1?'bpri':'bpub')+'">'+(e2.admissionType.indexOf('Private')!==-1?'Private':'Public')+'</span></div>';
+        if(e2.dateChanged){html+='<div class="chg"><strong>Date Changed</strong>';if(e2.previousExamDate)html+='Previous: '+fmt(e2.previousExamDate)+' → New: '+fmt(e2.examDate);html+='</div>';}
+        html+='<div class="rows"><div class="row"><span class="l">Exam Date</span><span class="v">'+esc(fieldValue(e2,'examDate'))+'</span></div><div class="row"><span class="l">Exam Time</span><span class="v">'+esc(fieldValue(e2,'examTime'))+'</span></div><div class="row"><span class="l">Location</span><span class="v">'+esc(fieldValue(e2,'examLocation'))+'</span></div><div class="row"><span class="l">Application</span><span class="v '+(ap.status||'')+'">'+esc(ap.l)+'</span></div><div class="row"><span class="l">Application Deadline</span><span class="v '+(e2.applicationDeadline&&e2.applicationDeadline!=='Not published yet'?'application-deadline':'')+'">'+esc(fieldValue(e2,'applicationDeadline'))+'</span></div></div>';
+        html+='<div class="cd-share-row"><div class="cd '+cls+'">'+c2.l+'</div><button class="share-btn" type="button" data-share-id="'+esc(e2.id)+'" aria-label="Share '+esc(e2.universityName)+'"><span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.55"/><circle cx="6" cy="12" r="2.55"/><circle cx="18" cy="18.5" r="2.55"/><path d="M8.25 10.75 15.75 6.5M8.25 13.25l7.5 4.25"/></svg></span>Share</button></div>';
+        html+='<button class="req-btn" type="button" data-req-id="'+esc(e2.id)+'">Check Requirements</button><div class="card-actions"><button class="mark-btn '+(isMarked(e2.universityName)?'marked':'')+'" type="button" data-mark="'+esc(e2.universityName)+'">'+(isMarked(e2.universityName)?'✓ Marked':'☆ Mark University')+'</button>'+(e2.officialUrl?'<a class="btn" href="'+esc(e2.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official Admission Website</a>':'')+'</div>';
+        if(e2.notes)html+='<p class="notes">'+esc(e2.notes)+'</p>';
+      }
+      html+='</article>';
+      return html;
+    }
+    function openUniversityPopup(id){
+      var e=exams.find(function(x){return isValidExamRecord(x)&&String(x.id)===String(id)});
+      if(!e)return;
+      var modal=document.getElementById('universityPopup'),body=document.getElementById('universityPopupBody'),title=document.getElementById('universityPopupTitle');
+      if(!modal||!body)return;
+      title.textContent=e.medicalCentral?'Medical Admission — Central Exam':e.universityName;
+      body.innerHTML=buildUniversityListCard(e);
+      modal.classList.add('show');
+      document.body.style.overflow='hidden';
+      var mark=body.querySelector('[data-mark]');if(mark)mark.addEventListener('click',function(){toggleMarked(e.universityName);openUniversityPopup(e.id)});
+      var req=body.querySelector('[data-req-id]');if(req)req.addEventListener('click',function(){openRequirements(e.id)});
+      var share=body.querySelector('[data-share-id]');if(share)share.addEventListener('click',function(){openShare(e.id)});
+    }
+    function closeUniversityPopup(){
+      var modal=document.getElementById('universityPopup');if(!modal)return;
+      modal.classList.remove('show');document.body.style.overflow='';
+    }
     function renderUniversityGrid(records){
       var groups=universityGroups(records),visible=GRID_EXPANDED?groups:groups.slice(0,9),html='';
       if(!groups.length){document.getElementById('list').innerHTML='<div class="grid-empty">No matching universities found.</div>';return}
@@ -840,18 +985,24 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
         var e=g.next||g.list[0],c=cd(e&&e.examDate),ap=appS(e),type=String(e&&e.admissionType||'').indexOf('Private')!==-1?'Private':'Public';
         var title=e&&e.medicalCentral?'Medical Admission — Central Exam':g.name;
         var exam=e&&e.examDate&&e.examDate!=='Not published yet'&&e.examDate!=='Better check Yourself'?fmt(e.examDate):'Not announced';
+        var time=fieldValue(e,'examTime');
         var deadline=fieldValue(e,'applicationDeadline');
-        html+='<article class="uni-grid-card">';
+        html+='<article class="uni-grid-card" data-uni-id="'+esc(e.id)+'" tabindex="0" role="button" aria-label="Open '+esc(title)+' details">';
         html+='<div class="uni-grid-top">'+logoMarkup(e,'uni-grid-logo')+'<div class="uni-grid-title"><h3>'+esc(title)+'</h3><div class="uni-grid-short">'+esc(e&&e.universityShortName||'')+'</div></div><span class="uni-grid-badge '+(type==='Private'?'private':'public')+'">'+type+'</span></div>';
-        html+='<div class="uni-grid-info"><div class="uni-grid-info-row"><span>Next exam</span><span class="'+((c.s==='tod'||c.s==='tom')?'soon':'')+'">'+esc(exam)+'</span></div><div class="uni-grid-info-row"><span>Application</span><span>'+esc(ap.l)+'</span></div><div class="uni-grid-info-row"><span>Deadline</span><span>'+esc(deadline)+'</span></div></div>';
+        html+='<div class="uni-grid-info"><div class="uni-grid-info-row"><span>Exam date</span><span class="'+((c.s==='tod'||c.s==='tom')?'soon':'')+'">'+esc(exam)+'</span></div><div class="uni-grid-info-row"><span>Exam time</span><span>'+esc(time)+'</span></div><div class="uni-grid-info-row"><span>Application</span><span>'+esc(ap.l)+'</span></div><div class="uni-grid-info-row"><span>Deadline</span><span>'+esc(deadline)+'</span></div></div>';
         html+='<div class="uni-grid-actions"><button class="mark-btn '+(isMarked(g.name)?'marked':'')+'" type="button" data-mark="'+esc(g.name)+'">'+(isMarked(g.name)?'✓ Marked':'☆ Mark')+'</button>'+(e&&e.officialUrl?'<a class="btn" href="'+esc(e.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official</a>':'')+'</div>';
         html+='</article>';
       });
       html+='</div>';
       if(!GRID_EXPANDED&&groups.length>9)html+='<button type="button" class="grid-see-more" id="gridSeeMore">See more ('+groups.length+')</button>';
       document.getElementById('list').innerHTML=html;
-      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});
-      var more=document.getElementById('gridSeeMore');if(more)more.addEventListener('click',function(){GRID_EXPANDED=true;render()});
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(ev){ev.stopPropagation();toggleMarked(b.getAttribute("data-mark"))})});
+      document.querySelectorAll(".uni-grid-card").forEach(function(card){
+        function open(ev){if(ev&&ev.target&&ev.target.closest&&ev.target.closest('button,a,select'))return;openUniversityPopup(card.getAttribute('data-uni-id'))}
+        card.addEventListener('click',open);
+        card.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();open(ev)}});
+      });
+      var more=document.getElementById('gridSeeMore');if(more)more.addEventListener('click',function(ev){ev.stopPropagation();GRID_EXPANDED=true;render()});
     }
     function render(){
       const q=Q.toLowerCase().trim();
@@ -961,6 +1112,27 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       document.querySelectorAll("[data-share-id]").forEach(function(b){b.addEventListener("click",function(){openShare(b.getAttribute("data-share-id"))})});
       bindScrollReveal();
     }
+    var universityPopup=document.getElementById('universityPopup'),universityPopupClose=document.getElementById('universityPopupClose');
+    if(universityPopupClose)universityPopupClose.addEventListener('click',closeUniversityPopup);
+    if(universityPopup)universityPopup.addEventListener('click',function(e){if(e.target===universityPopup)closeUniversityPopup()});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&universityPopup&&universityPopup.classList.contains('show'))closeUniversityPopup()});
+    var universityPopupHistory=false;
+    var originalOpenUniversityPopup=openUniversityPopup;
+    openUniversityPopup=function(id){
+      originalOpenUniversityPopup(id);
+      if(universityPopup&&universityPopup.classList.contains('show')&&!universityPopupHistory){
+        try{history.pushState({adtUniversityPopup:true},'',location.href);universityPopupHistory=true}catch(e){}
+      }
+    };
+    var originalCloseUniversityPopup=closeUniversityPopup;
+    closeUniversityPopup=function(){
+      if(universityPopupHistory){universityPopupHistory=false;try{history.back();return}catch(e){}}
+      originalCloseUniversityPopup();
+    };
+    window.addEventListener('popstate',function(e){
+      if(universityPopupHistory){universityPopupHistory=false;originalCloseUniversityPopup()}
+    });
+
     var shareModal=document.getElementById('shareModal'),shareClose=document.getElementById('shareClose'),shareStatus=document.getElementById('shareCopyStatus'),shareExam=null;
     function shareUrlFor(e){return location.origin+location.pathname+'?share='+encodeURIComponent(String(e.id))}
     function openShare(id){shareExam=exams.find(function(e){return String(e.id)===String(id)});if(!shareExam)return;shareStatus.textContent='';shareModal.classList.add('show');document.body.style.overflow='hidden'}
