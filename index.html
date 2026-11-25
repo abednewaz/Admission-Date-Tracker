@@ -74,8 +74,6 @@
     .view-switch{display:flex;align-items:center;gap:.35rem;margin:.15rem 0 .8rem;padding:.3rem;background:var(--card);border:1px solid var(--border);border-radius:11px;box-shadow:var(--sh)}
     .view-switch button,.view-switch a{border:0;background:transparent;color:var(--muted);padding:.48rem .68rem;border-radius:8px;font:inherit;font-size:.78rem;font-weight:750;cursor:pointer;text-decoration:none;white-space:nowrap}.view-switch button{width:38px;height:34px;display:inline-flex;align-items:center;justify-content:center}.view-switch button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
     .view-switch button.on{background:var(--pri);color:#fff}
-    .view-switch .view-all-link{margin-left:auto;color:var(--pri);border:1px solid var(--border)}
-    .view-switch .view-all-link:hover{background:var(--bg)}
     .university-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}
     .uni-grid-card{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.72rem;box-shadow:var(--sh);display:flex;flex-direction:column;gap:.48rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;cursor:pointer}
     .uni-grid-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(26,35,50,.12);border-color:var(--pri2)}
@@ -644,7 +642,6 @@ body.dark .mark-btn.marked{
       <div class="view-switch" id="viewSwitch" role="group" aria-label="University display">
         <button type="button" id="viewGrid" class="on" aria-pressed="true" aria-label="Grid view" title="Grid view"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg></button>
         <button type="button" id="viewList" aria-pressed="false" aria-label="List view" title="List view"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><circle cx="4" cy="6" r="1"></circle><circle cx="4" cy="12" r="1"></circle><circle cx="4" cy="18" r="1"></circle></svg></button>
-        <a class="view-all-link" href="/universities">All Universities</a>
       </div>
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
