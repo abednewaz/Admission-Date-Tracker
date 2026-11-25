@@ -1049,8 +1049,14 @@ body.dark .mark-btn.marked{
       const fil=exams.filter(function(e){
         if(!isValidExamRecord(e))return false;
         var isMed=/medical college|medical college and hospital|medical college & hospital|medical admission|mbbs admission|mbbs\/bds admission|dgme/i.test(String((e&&e.universityName)||'')+' '+String((e&&e.unit)||''));
-        if(CATEGORY_FILTER!=='Medical & Health'&&isMed)return false;
-        if(!e.medicalCentral && TYPE_FILTER!=='all'&&String(e.admissionType||'').indexOf(TYPE_FILTER)===-1)return false;
+        // The single centralized medical admission card stays visible in the default view.
+        // It is treated as Public + Medical for filtering, without adding individual medical colleges.
+        if(CATEGORY_FILTER!=='Medical & Health'&&isMed&&!e.medicalCentral)return false;
+        if(TYPE_FILTER!=='all'){
+          if(e.medicalCentral){
+            if(TYPE_FILTER!=='Public')return false;
+          }else if(String(e.admissionType||'').indexOf(TYPE_FILTER)===-1)return false;
+        }
         if(!categoryMatches(e))return false;
         return match(e,q);
       });
