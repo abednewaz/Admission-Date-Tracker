@@ -19,10 +19,18 @@
       dateChanged:false,
       previousExamDate:null,
       cycle:'2026-27',
-      requirementsStatus:'check_official',
-      requirementsSource:'https://dgme.gov.bd/',
-      requirements:'Check the official DGME/BMDC admission circular for 2026-27 eligibility and application requirements.',
-      requirementsByGroup:{},
+      requirementsStatus:'verified',
+      requirementsSource:'https://www.bmdc.org.bd/upl/doc/news/r0fgYAw6gEjv.pdf',
+      requirements:'2026-27 national MBBS/BDS admission policy: Bangladeshi applicants need Science in SSC/equivalent and HSC/equivalent, Physics + Chemistry + Biology at HSC/equivalent, combined SSC+HSC GPA at least 8.50, and Biology GPA at least 3.50. HSC/equivalent must be from 2025 or 2026 and SSC/equivalent must be from 2023 or later. English-medium/O-Level/A-Level applicants must complete equivalence through DGME where applicable.',
+      requirementsByGroup:{
+        science:{eligible:true,text:'SSC/equivalent and HSC/equivalent must both be Science. HSC/equivalent must include Physics, Chemistry and Biology. Combined SSC + HSC GPA must be at least 8.50, with Biology GPA at least 3.50 (A-). For 2026-27, HSC/equivalent must be from 2025 or 2026 and SSC/equivalent from 2023 or later.'},
+        business:{eligible:false,text:'MBBS/BDS 2026-27 admission requires Science in both SSC/equivalent and HSC/equivalent, with Physics, Chemistry and Biology at HSC/equivalent.'},
+        humanities:{eligible:false,text:'MBBS/BDS 2026-27 admission requires Science in both SSC/equivalent and HSC/equivalent, with Physics, Chemistry and Biology at HSC/equivalent.'},
+        madrasa:{eligible:null,text:'Equivalent qualifications may be considered only where they satisfy the national eligibility rules. Check the official DGME/BMDC guidance for the exact equivalence requirements.'},
+        technical:{eligible:null,text:'Equivalent qualifications may be considered only where they satisfy the national eligibility rules. Check the official DGME/BMDC guidance for the exact equivalence requirements.'},
+        oLevelALevel:{eligible:null,text:'O-Level/A-Level or other foreign-equivalent candidates must have their academic records/equivalence handled through DGME before applying, and must satisfy the published eligibility criteria.'},
+        others:{eligible:null,text:'The official 2026-27 national policy is the final authority for any equivalent qualification or special case.'}
+      },
       medicalCentral:true,
       medicalColleges:{public:publicColleges,private:privateColleges},
       notes:'Government and private medical colleges use the same centralized MBBS/BDS admission test under DGME. The Appellate Division stayed the High Court order on 23 November 2026, clearing the legal bar on holding public-university and medical admission tests before 31 December. Application dates and other details will be updated after the official 2026-27 circular is published.'
