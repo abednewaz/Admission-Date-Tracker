@@ -806,28 +806,28 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
 ['dhaka university of engineering and technology','duet.ac.bd'],['duet','duet.ac.bd'],['bangladesh university of textiles','butex.ac.bd'],['butex','butex.ac.bd'],
 ['north south university','northsouth.edu'],['brac university','bracu.ac.bd'],['east west university','ewubd.edu'],['american international university-bangladesh','aiub.edu'],['united international university','uiu.ac.bd'],['university of liberal arts bangladesh','ulab.edu.bd'],['green university','green.edu.bd'],['independent university, bangladesh','iub.edu.bd'],['independent university','iub.edu.bd'],['ahsAnullah university of science and technology','aust.edu']
 ];for(var i=0;i<m.length;i++)if(n.indexOf(m[i][0].toLowerCase())!==-1)return m[i][1];try{var u=e&&e.officialUrl?new URL(e.officialUrl,location.href):null;return u?u.hostname.replace(/^www\./,''):''}catch(err){return ''}}
-    var CLEAR_LOGO_BASE='https://raw.githubusercontent.com/MrMajharul/bangladeshi-university-logos/master/logos/';
+    var CLEAR_LOGO_BASE='/logos/';
     var CLEAR_LOGOS={
-      'american international university-bangladesh':'American_International_University-Bangladesh.png',
-      'brac university': 'BRAC_University.png',
-      'north south university':'North_South_University.png',
-      'university of liberal arts bangladesh':'University_of_Liberal_Arts_Bangladesh.png',
-      'united international university':'United_International_University.png',
-      'east west university':'East_West_University.png',
-      'bangladesh university of professionals':'Bangladesh_University_of_Professionals.png',
-      'khulna university of engineering & technology':'Khulna_University_of_Engineering_and_Technology.png',
-      'khulna university':'https://en.wikipedia.org/wiki/Special:Redirect/file/Khulna_University_Logo.svg',
-      'rajshahi university':'University_of_Rajshahi.png',
-      'rajshahi university of engineering & technology':'Rajshahi_University_of_Engineering_and_Technology.png',
-      'university of chittagong':'University_of_Chittagong.png',
-      'chittagong university of engineering & technology':'Chittagong_University_of_Engineering_and_Technology.png',
-      'bangladesh university of engineering and technology':'Bangladesh_University_of_Engineering_and_Technology.png',
-      'ahsanullah university of science and technology':'Ahsanullah_University_of_Science_and_Technology.png',
-      'green university of bangladesh':'Green_University_of_Bangladesh.png',
-      'independent university, bangladesh':'Independent_University_Bangladesh.png',
-      'military institute of science and technology':'Military_Institute_of_Science_and_Technology.png',
-      'islamic university of technology':'Islamic_University_of_Technology.png',
-      'jagannath university':'Jagannath_University.png',
+      'american international university-bangladesh':'AIUB.webp',
+      'brac university': 'BRAC.webp',
+      'north south university':'nsu.webp',
+      'university of liberal arts bangladesh':'University_of_Liberal_Arts_Bangladesh.webp',
+      'united international university':'UIU.webp',
+      'east west university':'EWU.webp',
+      'bangladesh university of professionals':'BUP.webp',
+      'khulna university of engineering & technology':'KUET.webp',
+      'khulna university':'KU.webp',
+      'rajshahi university':'RU.webp',
+      'rajshahi university of engineering & technology':'RUET.webp',
+      'university of chittagong':'University_of_Chittagong.webp',
+      'chittagong university of engineering & technology':'CUET.webp',
+      'bangladesh university of engineering and technology':'BUET.webp',
+      'ahsanullah university of science and technology':'Ahsanullah_University_of_Science_and_Technology.webp',
+      'green university of bangladesh':'GUB.webp',
+      'independent university, bangladesh':'Independent_University_Bangladesh.webp',
+      'military institute of science and technology':'MIST.webp',
+      'islamic university of technology':'Islamic_University_of_Technology.webp',
+      'jagannath university':'Jagannath_University.webp',
       'jahangirnagar university':'Jahangirnagar_University.png',
       'jashore university of science & technology':'Jashore_University_of_Science_and_Technology.png',
       'shahjalal university of science & technology':'Shahjalal_University_of_Science_and_Technology.png',
@@ -852,8 +852,9 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       'bangladesh university of business and technology':'Bangladesh_University_of_Business_and_Technology.png',
       'bangladesh army international university of science and technology':'Bangladesh_Army_International_University_of_Science_and_Technology.png',
       'dafodil international university':'Daffodil_International_University.png',
-      'university of dhaka':'University_of_Dhaka.png',
-      'university of rajshahi':'University_of_Rajshahi.png'
+      'university of dhaka':'DU.webp',
+      'university of rajshahi':'University_of_Rajshahi.png',
+      'gst cluster':'GST_Guccho_Universities_Integrated_Admission_Test.webp'
     };
     function clearLogoFile(e){
       var n=String(e&&e.universityName||'').toLowerCase().trim();
