@@ -822,7 +822,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       'university of chittagong':'CU.png',
       'chittagong university of engineering & technology':'CUET.png',
       'bangladesh university of engineering and technology':'BUET.png',
-      'ahsAnullah university of science and technology':'AUST.png',
+      'ahsanullah university of science and technology':'AUST.png',
       'green university of bangladesh':'GUB.png',
       'independent university, bangladesh':'IUB.png',
       'military institute of science and technology':'MIST.png',
@@ -835,7 +835,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       'jatiya kabi kazi nazrul islam university':'Jatiya_Kabi_Kazi_Nazrul_Islam_University.png',
       'hajee mohammad danesh science & technology university':'Hajee_Mohammad_Danesh_Science_and_Technology_University.png',
       'begum rokeya university, rangpur':'Begum_Rokeya_University_Rangpur.png',
-      'gopalganj science and technology university':'Gopalganj_Science_and_Technology_University.png',
+      'gopalganj science and technology university':'https://www.observerbd.com/2025/02/04/ob_1738683458.jpg',
       'pabna university of science and technology':'Pabna_University_of_Science_and_Technology.png',
       'noakhali science and technology university':'Noakhali_Science_and_Technology_University.png',
       'rabindra university, bangladesh':'Rabindra_University_Bangladesh.png',
@@ -876,7 +876,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
     function logoMarkup(e,cls){
       var file=clearLogoFile(e),name=e&&e.universityName||'University',domain=logoDomain(e);
       if(file){
-        var src=CLEAR_LOGO_BASE+encodeURIComponent(file).replace(/%2F/g,'/');
+        var src=/^https?:\/\//i.test(file)?file:CLEAR_LOGO_BASE+encodeURIComponent(file).replace(/%2F/g,'/');
         return '<img class="'+cls+' clear-uni-logo" src="'+esc(src)+'" alt="'+esc(name)+' logo" loading="lazy">';
       }
       if(domain){
