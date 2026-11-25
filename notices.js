@@ -230,12 +230,22 @@ window.ADMISSION_NOTICES = [
     "notify": true
   },
   {
-    "university": "University of Rajshahi",
+    "university": "Rajshahi University — IBA",
     "title": "University of Rajshahi Undergraduate Admission 2026-2027",
     "date": "",
     "url": "https://admission.ru.ac.bd/",
-    "source": "University of Rajshahi official source",
+    "source": "Rajshahi University — IBA official source",
     "summary": "University of Rajshahi Undergraduate Admission 2026-2027 University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Skip to main content University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Skip to main content University of Rajshahi Undergraduate Admission 2026-2027 Home Admission Notices Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Applicant Panel Menu Home Admission Notices 0 Application Guideline Payment Instructions Photo/Selfie Instructions Helpline FAQ Complaint Important Dates Online Application Nov 15, 2026 12:00 PM - Nov 30, 2026 11:59 PM Admit Card Download To Be Announced Admission Test (Unit - B) Feb 12, 2027 Admission Test (Unit - C) Feb 13, 2027 Admission Test (Unit - A) Feb 20, 2027 Undergraduate Admission 2026-2027 ভর্তি আবেদনের যোগ্যতাঃ ২০২৫ ও ২০২৬ সালের এইচএসসি/সমমান, ডিপ্লোমা-ইন-কমার্স, বিএফএ (প্রাক), বাংলাদেশ কারিগরী শিক্ষা বোর্ডের অধীনে এইচএসসি (ভোকেশনাল), A লেভেল এবং অন্যান্য সমমান পরী",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Bangladesh University of Textiles",
+    "title": "BSc in Textile Engineering Undergraduate Admission L1-T1 2026-27 Circular",
+    "date": "",
+    "url": "https://www.butex.edu.bd/bsc-in-textile-engineering-undergraduate-admission-l1-t1-2026-27-circular",
+    "source": "Bangladesh University of Textiles official source",
+    "summary": "BSc in Textile Engineering Undergraduate Admission L1-T1 2026-27 Circular BSc in Textile Engineering Undergraduate Admission L1-T1 2026-27 Circular November 19, 2026 Result of Affiliated Colleges: Level-3 Term-1 Exam-2025 November 25, 2026 IPE Dept. Project Work, Industrial Attachment, Comprehensive Viva of BSc in Textile Engineering L-4 T-2 November 25, 2026 Invitation for International Quantum Olympiad (IQO)-2026 November 25, 2026 Re-Admission Notice of MBA in Textiles Program 10th Batch 2nd Semester November 25, 2026 অধিভুক্ত কলেজসমূহের ১৯/১১/২০২৬ তারিখের স্থগিতকৃত পরীক্ষার নতুন সময়সূচি November 24, 2026 Entry Form Notice of MBA in Textiles Program 8th, 9th, 10th Batch November 22, 2026 Entry Form Notice of B.Sc. in Textile Engineering (ID: 22010201025) Fabric Dept. November 22, 2026 BSc in Textile Engineering Undergraduate Admission L1-T1 2026-27 Circular November 19, 2026 Result of MSc in Textile Engineering Dated: 18/11/2026 November 19, 2026 Mid-Term Examination Schedule-2026 of Intake-3, 5 PGD in Textile Industry Management November 19, 2026 Latest Updates Result of Affiliated Colleges: Level-3 Term-1 Exam-2025 November 25, 2026 IPE Dept. Project Work, Industrial Attachment",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   }
