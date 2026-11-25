@@ -512,7 +512,46 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
   .br-subject-table{font-size:.7rem}
   .br-subject-table th,.br-subject-table td{padding:.45rem .3rem}
 }
-</style></head>
+</style><style id="ux-fix-v2">
+/* Layering: requirements must always sit above an open university popup. */
+.req-overlay{z-index:5000!important}
+.req-modal{position:relative;z-index:5001}
+
+/* Mark University: visible enough to find, but still secondary to the main action. */
+.mark-btn{
+  border:1px solid #c8c6f3!important;
+  background:linear-gradient(135deg,#f1efff 0%,#eef7ff 100%)!important;
+  color:#5147c8!important;
+  box-shadow:0 3px 10px rgba(81,70,200,.10)!important;
+}
+.mark-btn:hover,.mark-btn:focus-visible{
+  background:linear-gradient(135deg,#e9e7ff 0%,#e7f3ff 100%)!important;
+  border-color:#aaa7e9!important;
+  box-shadow:0 6px 14px rgba(81,70,200,.15)!important;
+}
+.mark-btn.marked{
+  border-color:#a8d8c1!important;
+  background:linear-gradient(135deg,#eaf8f1 0%,#eef8ff 100%)!important;
+  color:#237a55!important;
+}
+body.dark .mark-btn{
+  border-color:#4c5280!important;
+  background:linear-gradient(135deg,#252143 0%,#202d3d 100%)!important;
+  color:#b8adff!important;
+  box-shadow:0 3px 10px rgba(0,0,0,.18)!important;
+}
+body.dark .mark-btn:hover,body.dark .mark-btn:focus-visible{
+  background:linear-gradient(135deg,#2d2850 0%,#26374a 100%)!important;
+  border-color:#666aa0!important;
+  box-shadow:0 6px 15px rgba(0,0,0,.24)!important;
+}
+body.dark .mark-btn.marked{
+  border-color:#3e775c!important;
+  background:linear-gradient(135deg,#1f3a2d 0%,#213343 100%)!important;
+  color:#8ee0ad!important;
+}
+</style>
+</head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
