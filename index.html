@@ -69,6 +69,30 @@
     .ndate{font-size:.74rem;color:var(--muted)}
     .ntitle{font-size:.88rem;font-weight:650;margin:.22rem 0}
     .ndesc{font-size:.84rem;color:var(--muted);line-height:1.45}
+
+    /* University grid/list view */
+    .view-switch{display:flex;align-items:center;gap:.35rem;margin:.15rem 0 .8rem;padding:.3rem;background:var(--card);border:1px solid var(--border);border-radius:11px;box-shadow:var(--sh)}
+    .view-switch button,.view-switch a{border:0;background:transparent;color:var(--muted);padding:.48rem .75rem;border-radius:8px;font:inherit;font-size:.78rem;font-weight:750;cursor:pointer;text-decoration:none;white-space:nowrap}
+    .view-switch button.on{background:var(--pri);color:#fff}
+    .view-switch .view-all-link{margin-left:auto;color:var(--pri);border:1px solid var(--border)}
+    .view-switch .view-all-link:hover{background:var(--bg)}
+    .university-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}
+    .uni-grid-card{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.72rem;box-shadow:var(--sh);display:flex;flex-direction:column;gap:.48rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .uni-grid-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(26,35,50,.12)}
+    .uni-grid-top{display:flex;align-items:flex-start;gap:.55rem;min-width:0}
+    .uni-grid-logo{width:38px;height:38px;object-fit:contain;border-radius:9px;flex:0 0 38px;background:#f6f7f9;border:1px solid var(--border)}
+    .uni-logo-fallback{width:38px;height:38px;align-items:center;justify-content:center;border-radius:9px;background:var(--bg);border:1px solid var(--border);color:var(--pri);font-size:.68rem;font-weight:850;flex:0 0 38px}
+    .uni-grid-title{min-width:0;flex:1}.uni-grid-title h3{font-size:.84rem;line-height:1.25;font-weight:800;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.uni-grid-short{font-size:.66rem;color:var(--muted);margin-top:.12rem}
+    .uni-grid-badge{font-size:.57rem;font-weight:800;padding:.15rem .34rem;border-radius:5px;white-space:nowrap;flex:0 0 auto}.uni-grid-badge.public{background:#ebf8ff;color:#2b6cb0}.uni-grid-badge.private{background:#faf5ff;color:#6b46c1}
+    .uni-grid-info{display:grid;gap:.25rem;padding:.42rem .5rem;border-radius:8px;background:var(--bg)}.uni-grid-info-row{display:flex;justify-content:space-between;gap:.5rem;font-size:.67rem;line-height:1.3}.uni-grid-info-row span:first-child{color:var(--muted)}.uni-grid-info-row span:last-child{text-align:right;font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.uni-grid-info-row .soon{color:var(--red)}
+    .uni-grid-actions{display:grid;grid-template-columns:1fr 1fr;gap:.35rem;margin-top:auto}.uni-grid-actions .mark-btn,.uni-grid-actions .btn{width:100%;min-height:32px;padding:.34rem .35rem;font-size:.68rem;border-radius:7px}.uni-grid-actions .btn{display:flex;align-items:center;justify-content:center}
+    .grid-see-more{width:100%;border:1px solid var(--border);background:var(--card);color:var(--pri);border-radius:9px;padding:.58rem;font:inherit;font-size:.78rem;font-weight:800;cursor:pointer;margin-bottom:1rem}.grid-see-more:hover{background:var(--bg)}
+    .grid-empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:12px}
+    @media(max-width:700px){.university-grid{grid-template-columns:1fr 1fr;gap:.55rem}.uni-grid-card{padding:.65rem}.uni-grid-title h3{font-size:.8rem}}
+    @media(max-width:460px){.university-grid{grid-template-columns:1fr}.view-switch{overflow:auto}.view-switch button,.view-switch a{padding:.46rem .68rem}}
+    @media(max-width:900px){.calendar-box .calendar-toggle{cursor:pointer}.calendar-box:not(.open) .calendar-grid,.calendar-box:not(.open) .calendar-events,.calendar-box:not(.open) .calendar-info{display:none}.calendar-box.open .calendar-chevron{transform:rotate(180deg)}.calendar-toggle{display:flex!important;align-items:center;gap:.42rem;border:0;background:transparent;color:inherit;padding:0;text-align:left;cursor:pointer}.calendar-toggle h2{font:inherit;color:var(--pri)}.calendar-chevron{font-size:1rem;color:var(--muted);transition:transform .24s ease}}
+    @media(min-width:901px){.calendar-toggle{display:block!important;border:0;background:transparent;padding:0;text-align:left;cursor:default}.calendar-chevron{display:none}}
+
     .tabs{display:flex;gap:.35rem;margin-bottom:1rem;background:#ebe8e2;padding:.28rem;border-radius:999px}
     .tabs button{flex:1;padding:.48rem .7rem;border:none;background:transparent;border-radius:999px;font-size:.84rem;font-weight:600;color:var(--muted);cursor:pointer}
     .tabs button.on{background:var(--card);color:var(--pri);box-shadow:0 1px 3px rgba(0,0,0,.08)}
@@ -513,7 +537,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
     <main>
       <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN">Enable Notifications</button></div>
       <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="native-install-wrap" id="nativeInstallWrap"><install id="nativeInstall" manifest="/manifest.webmanifest"></install></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon.svg" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
-      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker">Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><h2 id="calendar-heading">My Admission Calendar</h2><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
+      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker">Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading">My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
         <div class="search-filter-row">
@@ -562,6 +586,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
             </div>
           </div>
         </div>
+      </div>
+      <div class="view-switch" id="viewSwitch" role="group" aria-label="University display">
+        <button type="button" id="viewGrid" class="on" aria-pressed="true">Grid</button>
+        <button type="button" id="viewList" aria-pressed="false">List</button>
+        <a class="view-all-link" href="/universities">All Universities</a>
       </div>
       <p class="meta" id="meta" hidden></p>
       <section class="stats" id="stats" aria-label="Overview"></section>
@@ -794,6 +823,36 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
       }
       return String(a&&a.universityName||'').localeCompare(String(b&&b.universityName||''),undefined,{sensitivity:'base'});
     }
+    var VIEW_MODE='grid',GRID_EXPANDED=location.pathname==='/universities';
+    function universityGroups(records){
+      var map=new Map();
+      records.forEach(function(e){if(!map.has(e.universityName))map.set(e.universityName,[]);map.get(e.universityName).push(e)});
+      var arr=[];
+      map.forEach(function(list,name){list.sort(compareExamRecords);arr.push({name:name,list:list,next:list[0]})});
+      arr.sort(function(a,b){var c=compareExamRecords(a.next,b.next);return c!==0?c:String(a.name).localeCompare(String(b.name),undefined,{sensitivity:'base'})});
+      return arr;
+    }
+    function renderUniversityGrid(records){
+      var groups=universityGroups(records),visible=GRID_EXPANDED?groups:groups.slice(0,9),html='';
+      if(!groups.length){document.getElementById('list').innerHTML='<div class="grid-empty">No matching universities found.</div>';return}
+      html+='<div class="university-grid">';
+      visible.forEach(function(g){
+        var e=g.next||g.list[0],c=cd(e&&e.examDate),ap=appS(e),type=String(e&&e.admissionType||'').indexOf('Private')!==-1?'Private':'Public';
+        var title=e&&e.medicalCentral?'Medical Admission — Central Exam':g.name;
+        var exam=e&&e.examDate&&e.examDate!=='Not published yet'&&e.examDate!=='Better check Yourself'?fmt(e.examDate):'Not announced';
+        var deadline=fieldValue(e,'applicationDeadline');
+        html+='<article class="uni-grid-card">';
+        html+='<div class="uni-grid-top">'+logoMarkup(e,'uni-grid-logo')+'<div class="uni-grid-title"><h3>'+esc(title)+'</h3><div class="uni-grid-short">'+esc(e&&e.universityShortName||'')+'</div></div><span class="uni-grid-badge '+(type==='Private'?'private':'public')+'">'+type+'</span></div>';
+        html+='<div class="uni-grid-info"><div class="uni-grid-info-row"><span>Next exam</span><span class="'+((c.s==='tod'||c.s==='tom')?'soon':'')+'">'+esc(exam)+'</span></div><div class="uni-grid-info-row"><span>Application</span><span>'+esc(ap.l)+'</span></div><div class="uni-grid-info-row"><span>Deadline</span><span>'+esc(deadline)+'</span></div></div>';
+        html+='<div class="uni-grid-actions"><button class="mark-btn '+(isMarked(g.name)?'marked':'')+'" type="button" data-mark="'+esc(g.name)+'">'+(isMarked(g.name)?'✓ Marked':'☆ Mark')+'</button>'+(e&&e.officialUrl?'<a class="btn" href="'+esc(e.officialUrl)+'" target="_blank" rel="noopener noreferrer">Official</a>':'')+'</div>';
+        html+='</article>';
+      });
+      html+='</div>';
+      if(!GRID_EXPANDED&&groups.length>9)html+='<button type="button" class="grid-see-more" id="gridSeeMore">See more ('+groups.length+')</button>';
+      document.getElementById('list').innerHTML=html;
+      document.querySelectorAll("[data-mark]").forEach(function(b){b.addEventListener("click",function(){toggleMarked(b.getAttribute("data-mark"))})});
+      var more=document.getElementById('gridSeeMore');if(more)more.addEventListener('click',function(){GRID_EXPANDED=true;render()});
+    }
     function render(){
       const q=Q.toLowerCase().trim();
       const fil=exams.filter(function(e){
@@ -818,6 +877,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}.app,header,.content-shell
         }
       }
       document.getElementById('stats').innerHTML='<div class="stat"><b>'+up+'</b><span>Upcoming exams</span></div><div class="stat"><b>'+unis.size+'</b><span>Universities</span></div><div class="stat"><b>'+wd+'</b><span>With exam date</span></div>';
+      if(VIEW_MODE==='grid'){renderUniversityGrid(fil);return}
 
       var chrono=fil.filter(function(e){return e.examDate&&e.examDate!=='Not published yet'}).sort(function(a,b){return compareExamRecords(a,b)});
       var gapM=new Map();
@@ -994,6 +1054,12 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     filterTrigger.addEventListener('click',function(e){e.stopPropagation();var open=!filterMenu.hidden;filterMenu.hidden=open;filterTrigger.setAttribute('aria-expanded',open?'false':'true');if(!open)filterMenu.querySelectorAll('.filter-section').forEach(function(sec){sec.classList.remove('open')})});
     document.addEventListener('click',function(e){if(!filterMenu.contains(e.target)&&!filterTrigger.contains(e.target)){filterMenu.hidden=true;filterTrigger.setAttribute('aria-expanded','false')}});
     document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});b.classList.add('on');b.setAttribute('aria-selected','true');SEC=b.getAttribute('data-s');render()})});
+    var viewGrid=document.getElementById('viewGrid'),viewList=document.getElementById('viewList');
+    function syncViewButtons(){var grid=VIEW_MODE==='grid';viewGrid.classList.toggle('on',grid);viewList.classList.toggle('on',!grid);viewGrid.setAttribute('aria-pressed',grid?'true':'false');viewList.setAttribute('aria-pressed',grid?'false':'true')}
+    viewGrid.addEventListener('click',function(){VIEW_MODE='grid';GRID_EXPANDED=location.pathname==='/universities';syncViewButtons();render()});
+    viewList.addEventListener('click',function(){VIEW_MODE='list';GRID_EXPANDED=true;syncViewButtons();render()});
+    syncViewButtons();
+
     var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
     function hideNotif(){notifEl.style.display='none'} function hideInstall(){installBox.style.display='none'}
     var VAPID_PUBLIC_KEY='BC9OwY4GKq1Rygoxn2e7fM7nc15VxH20RzQCwb4hr0BMPvAHPDqwLn-dTsVnt3owy4YkNSxaiGGgjHWKz_tIhgw';
@@ -1090,7 +1156,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
       });
       mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v2','1');hideMobileInstall()});
     }else{hideInstall();hideMobileInstall()}
-    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=18',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
+    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=20',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
       'dhaka university':'https://www.du.ac.bd/notice',
       'buet':'https://ugadmission.buet.ac.bd/',

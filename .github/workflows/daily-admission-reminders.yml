@@ -39,7 +39,7 @@ jobs:
           with open("system-status.js", encoding="utf-8") as f:
               status_text = f.read()
           status_match = re.search(
-              r"window\\.ADMISSION_SYSTEM_STATUS\\s*=\\s*(\\{.*?\\})\\s*;?\\s*$",
+              r"window\.ADMISSION_SYSTEM_STATUS\s*=\s*(\{.*?\})\s*;?\s*$",
               status_text,
               re.S,
           )
@@ -54,7 +54,7 @@ jobs:
               raise SystemExit("GitHub Actions OIDC token endpoint is unavailable")
 
           response = requests.get(
-              token_url + "&audience=https://admissiontracker.site",
+              token_url + ("&" if "?" in token_url else "?") + "audience=https://admissiontracker.site",
               headers={
                   "Authorization": "Bearer " + token_request_token,
                   "Accept": "application/json",
