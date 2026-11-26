@@ -1,0 +1,4 @@
+const fs=require('fs');const path=require('path');
+const root=process.cwd();
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.woff2':'font/woff2'};
+module.exports=(req,res)=>{let u=(req.url||'/').split('?')[0];if(u==='/')u='/index.html';if(u.includes('..')){res.statusCode=400;return res.end('Bad request');}const file=path.join(root,u);fs.readFile(file,(err,data)=>{if(err){res.statusCode=404;return res.end('Not found');}res.setHeader('Content-Type',types[path.extname(file).toLowerCase()]||'application/octet-stream');res.setHeader('Cache-Control','no-store');res.end(data);});};
