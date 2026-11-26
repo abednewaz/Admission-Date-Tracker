@@ -548,6 +548,45 @@ body.dark .mark-btn.marked{
   color:#8ee0ad!important;
 }
 </style>
+<style id="header-redesign-v1">
+header{min-height:178px;padding:1rem 1rem .85rem;text-align:right}
+.header-brand{position:relative;z-index:1;display:block;margin:2.35rem 0 .25rem auto;width:min(900px,calc(100% - 4.6rem));text-align:right}
+.header-logo{position:absolute;left:1rem;top:1rem;width:3.15rem;height:3.15rem;margin:0;border-radius:.8rem;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+header h1{font-size:1.48rem;line-height:1.15;text-align:right}
+.sub{position:relative;z-index:1;max-width:900px;margin:0 0 0 auto;text-align:right;font-size:.86rem;line-height:1.4;font-weight:650}
+.header-actions{position:absolute;z-index:3;right:1rem;bottom:.75rem;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:.32rem .42rem;width:146px;margin:0}
+.language-toggle,.theme-toggle,.header-actions .manual-btn{position:relative;inset:auto;width:100%;min-width:0;height:38px;padding:0;border:1px solid rgba(255,255,255,.28);border-radius:11px;background:rgba(255,255,255,.10);color:#fff;box-shadow:0 5px 16px rgba(17,15,75,.18),inset 0 1px 0 rgba(255,255,255,.18);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.language-toggle:hover,.theme-toggle:hover,.header-actions .manual-btn:hover{background:rgba(255,255,255,.17);border-color:rgba(255,255,255,.42);box-shadow:0 7px 20px rgba(17,15,75,.23),inset 0 1px 0 rgba(255,255,255,.22)}
+.language-toggle{display:flex;align-items:center;justify-content:center;perspective:180px;overflow:hidden}
+.lang-cube{position:relative;display:block;width:54px;height:27px;transform-style:preserve-3d;transform:rotateX(-8deg) rotateY(-13deg);transition:transform .28s ease}
+.language-toggle:hover .lang-cube{transform:rotateX(-5deg) rotateY(-22deg) translateY(-1px)}
+.lang-face{position:absolute;top:0;width:32px;height:27px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.28);border-radius:6px;font-size:.68rem;font-weight:850;letter-spacing:.02em;line-height:1;box-shadow:0 3px 7px rgba(0,0,0,.18);backface-visibility:hidden}
+.lang-en{left:0;color:#fff;background:linear-gradient(145deg,#ff6b8a,#ff8f5b);transform:translateZ(8px)}
+.lang-ban{right:0;color:#fff;background:linear-gradient(145deg,#43d39e,#38a0ff);transform:rotateY(25deg) translateZ(1px)}
+.theme-toggle{display:flex;align-items:center;justify-content:center}
+.theme-icon{width:21px;height:21px;display:inline-flex;align-items:center;justify-content:center;color:#fff}
+.theme-icon svg{width:100%;height:100%;display:block}
+.header-actions .manual-btn{grid-column:1 / 3;justify-self:center;width:94px;height:31px;border-radius:9px;font-size:.66rem;font-weight:800;letter-spacing:.01em;background:rgba(255,255,255,.08)}
+@media(max-width:640px){
+  header{min-height:160px;padding:.75rem .7rem .7rem}
+  .header-logo{left:.7rem;top:.72rem;width:2.65rem;height:2.65rem}
+  .header-brand{margin-top:2.05rem;width:calc(100% - 3.55rem)}
+  header h1{font-size:1.22rem}
+  .sub{max-width:calc(100% - .2rem);font-size:.72rem;line-height:1.35;margin-top:.1rem}
+  .header-actions{right:.7rem;bottom:.6rem;width:132px;gap:.28rem .35rem}
+  .language-toggle,.theme-toggle{height:34px}
+  .header-actions .manual-btn{height:28px;width:88px;font-size:.62rem}
+  .lang-cube{transform:rotateX(-8deg) rotateY(-13deg) scale(.9)}
+  .theme-icon{width:18px;height:18px}
+}
+@media(max-width:380px){
+  header{min-height:154px}
+  .header-brand{width:calc(100% - 3.2rem)}
+  header h1{font-size:1.08rem}
+  .sub{font-size:.67rem}
+  .header-actions{width:124px}
+}
+</style>
 </head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
@@ -577,10 +616,17 @@ body.dark .mark-btn.marked{
         <img class="header-logo" src="icon-light.svg?v=12" data-light-src="icon-light.svg?v=12" data-dark-src="icon.svg?v=12" width="40" height="40" alt="" aria-hidden="true">
         <h1>Admission Tracker</h1>
       </div>
-      <p class="sub">Stay updated with university admission dates, deadlines, exam schedules, requirements,<br class="mobile-header-break"> and important notices from universities across Bangladesh. Admission Tracker brings everything together in one place, so you never miss an important date.</p>
+      <p class="sub">Your Admission Tracker for all the Universities accross Bangladesh. Stay Updated always.</p>
       <div class="header-actions">
-        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English" title="Switch to English">English</button>
-        <button class="theme-toggle" id="themeToggle" type="button">☀ Light</button>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English" title="Switch to English">
+          <span class="lang-cube" aria-hidden="true">
+            <span class="lang-face lang-en">En</span>
+            <span class="lang-face lang-ban">Ban</span>
+          </span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle appearance" title="Toggle appearance">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
         <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual">User Manual</button>
       </div>
     </header>
@@ -1214,7 +1260,20 @@ body.dark .mark-btn.marked{
       setTimeout(function(){article.classList.remove('share-highlight')},3000);
     }
     const THEME_KEY='adt_theme_v1';
-    function applyTheme(mode){document.body.classList.toggle('dark',mode==='dark');document.getElementById('themeToggle').textContent=mode==='dark'?'☀ Light':'☾ Dark';var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;var headerIcon=document.querySelector('.header-logo');if(headerIcon)headerIcon.src=mode==='dark'?headerIcon.dataset.darkSrc:headerIcon.dataset.lightSrc;try{localStorage.setItem(THEME_KEY,mode)}catch(e){}}
+    function applyTheme(mode){
+      document.body.classList.toggle('dark',mode==='dark');
+      var themeBtn=document.getElementById('themeToggle');
+      if(themeBtn){
+        themeBtn.innerHTML=mode==='dark'
+          ? '<span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg></span>'
+          : '<span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 15.7A8.4 8.4 0 0 1 8.3 3.4 8.7 8.7 0 1 0 20.6 15.7Z"></path></svg></span>';
+        themeBtn.setAttribute('aria-label',mode==='dark'?'Switch to light mode':'Switch to dark mode');
+        themeBtn.setAttribute('title',mode==='dark'?'Switch to light mode':'Switch to dark mode');
+      }
+      var footerIcon=document.querySelector('.footer-brand-icon');if(footerIcon)footerIcon.src=mode==='dark'?footerIcon.dataset.darkSrc:footerIcon.dataset.lightSrc;
+      var headerIcon=document.querySelector('.header-logo');if(headerIcon)headerIcon.src=mode==='dark'?headerIcon.dataset.darkSrc:headerIcon.dataset.lightSrc;
+      try{localStorage.setItem(THEME_KEY,mode)}catch(e){}
+    }
     (function(){var s='';try{s=localStorage.getItem(THEME_KEY)||''}catch(e){}applyTheme(s==='light'?'light':'dark')})();
     document.getElementById('themeToggle').addEventListener('click',function(){applyTheme(document.body.classList.contains('dark')?'light':'dark')});
     var reqOverlay=document.getElementById('reqOverlay'),reqBody=document.getElementById('reqBody'),reqTitle=document.getElementById('reqTitle'),reqPrevOverflow='';
@@ -1527,9 +1586,12 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     document.documentElement.lang=bn?'bn':'en';
     var btn=document.getElementById('languageToggle');
     if(btn){
-      btn.textContent=bn?'English':'বাংলা';
+      if(!btn.querySelector('.lang-cube')){
+        btn.innerHTML='<span class="lang-cube" aria-hidden="true"><span class="lang-face lang-en">En</span><span class="lang-face lang-ban">Ban</span></span>';
+      }
       btn.setAttribute('aria-label',bn?'Switch to English':'বাংলা ভাষায় পরিবর্তন করুন');
       btn.setAttribute('title',bn?'Switch to English':'Switch to Bangla');
+      btn.setAttribute('data-current-language',bn?'bn':'en');
     }
   }
 
