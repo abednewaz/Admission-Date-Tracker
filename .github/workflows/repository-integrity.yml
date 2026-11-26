@@ -49,9 +49,10 @@ jobs:
               throw new Error('Malformed admission record: ' + row.id);
             }
             if (row.examDate && !['Not published yet', 'Better check Yourself'].includes(row.examDate)) {
-              if (Number.isNaN(Date.parse(row.examDate + 'T00:00:00Z'))) {
-                throw new Error('Invalid exam date: ' + row.id);
-              }
+              const examDateParts = String(row.examDate).split(/\s+to\s+/i);
+            if (examDateParts.length > 2 || examDateParts.some(part => Number.isNaN(Date.parse(part.trim() + 'T00:00:00Z')))) {
+              throw new Error('Invalid exam date: ' + row.id);
+            }
             }
           }
 
