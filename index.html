@@ -1963,7 +1963,9 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       dashboardNodes.forEach(function(n){n.style.display='none';});
       hero.style.display='none';hideOriginalFooter();
       page.innerHTML='<a class="route-back" href="/">← Dashboard</a>';
-      var title='',desc='',body='';\n      var canonical=document.querySelector('link[rel="canonical"]');\n      if(canonical)canonical.href='https://www.admissiontracker.site'+(path==='/'?'':path);
+      var title='',desc='',body='';
+      var canonical=document.querySelector('link[rel="canonical"]');
+      if(canonical)canonical.href='https://www.admissiontracker.site'+(path==='/'?'':path);
       if(path==='/universities'){
         title='All Universities';desc='Explore, filter, search and compare every university in the tracker.';
         var listWrap=document.createElement('div');listWrap.className='route-card';listWrap.appendChild(view||document.createElement('div'));if(stats)listWrap.appendChild(stats);if(tabs)listWrap.appendChild(tabs);if(list)listWrap.appendChild(list);page.innerHTML+='<h2>'+title+'</h2><p>'+desc+'</p>';page.appendChild(listWrap);
