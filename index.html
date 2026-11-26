@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -14,6 +14,21 @@
   </script>
   <meta name="theme-color" content="#0d1220">
   <meta name="description" content="Admission Tracker – Track university admission dates, application deadlines, exam schedules, admission requirements, and upcoming notices from universities across Bangladesh, all in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Admission Tracker">
+  <meta property="og:description" content="Track Bangladesh university admission dates, deadlines, exam schedules, requirements and important notices in one place.">
+  <meta property="og:url" content="https://www.admissiontracker.site/">
+  <meta property="og:site_name" content="Admission Tracker">
+  <meta property="og:image" content="https://www.admissiontracker.site/icon-512.png?v=2">
+  <meta property="og:image:secure_url" content="https://www.admissiontracker.site/icon-512.png?v=2">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Admission Tracker icon">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Admission Tracker">
+  <meta name="twitter:description" content="Track Bangladesh university admission dates, deadlines, exam schedules, requirements and important notices in one place.">
+  <meta name="twitter:image" content="https://www.admissiontracker.site/icon-512.png?v=2">
 
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -186,13 +201,17 @@
       var(--bg)}
     header{
       position:relative;overflow:hidden;
-      background-image:
-        url("https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58");
+      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4?v=clear2");
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
+      filter:none;
       padding:1.45rem 1rem 1.65rem;
       box-shadow:0 8px 28px rgba(65,62,170,.20)
+    }
+    body.dark header{
+      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58?v=clear2");
+      filter:none
     }
     header::before,header::after{content:"";position:absolute;pointer-events:none}
     header::before{display:none}
@@ -785,6 +804,108 @@ header h1{font-size:.98rem}
       .stat b{font-size:1.25rem}
       .uni-grid-card:hover{transform:translateY(-2px)}
       .students-tools-head{min-height:0}
+    }
+  </style>
+  <style id="final-ui-fixes-v3">
+    /* Clear artwork: no blur, no filter, no color wash over the source image. */
+    header,body.dark header{filter:none!important;background-blend-mode:normal!important}
+    header::before{display:none!important}
+    header::after{display:none!important}
+    .header-brand,.header-copy,.header-actions{z-index:5}
+
+    /* Header controls stay on the right and gain real visual depth. */
+    header{position:relative}
+    .header-actions{
+      position:absolute!important;
+      right:1rem!important;
+      top:50%!important;
+      transform:translateY(-50%)!important;
+      margin:0!important;
+      width:auto!important;
+      display:flex!important;
+      flex-direction:row!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:.42rem!important;
+      flex-wrap:nowrap!important;
+    }
+    .language-toggle,.theme-toggle,.header-actions .manual-btn{
+      position:relative!important;
+      inset:auto!important;
+      min-width:42px!important;
+      min-height:38px!important;
+      width:auto!important;
+      height:38px!important;
+      padding:.42rem .7rem!important;
+      border:1px solid rgba(255,255,255,.46)!important;
+      border-radius:12px!important;
+      color:#fff!important;
+      background:linear-gradient(135deg,rgba(83,62,220,.94),rgba(31,126,224,.92))!important;
+      box-shadow:0 8px 20px rgba(20,30,90,.32),inset 0 1px 0 rgba(255,255,255,.25)!important;
+      backdrop-filter:none!important;
+      -webkit-backdrop-filter:none!important;
+      transition:transform .18s ease,filter .18s ease,box-shadow .18s ease!important;
+    }
+    .language-toggle:hover,.theme-toggle:hover,.header-actions .manual-btn:hover{
+      transform:translateY(-2px)!important;
+      filter:brightness(1.08)!important;
+      box-shadow:0 12px 26px rgba(20,30,90,.38),inset 0 1px 0 rgba(255,255,255,.3)!important;
+    }
+    body.dark .language-toggle,body.dark .theme-toggle,body.dark .header-actions .manual-btn{
+      background:linear-gradient(135deg,#6d5dfc,#168fe8)!important;
+      border-color:rgba(255,255,255,.38)!important;
+      box-shadow:0 9px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.2)!important;
+    }
+
+    /* Stronger, non-white typography that works in both themes. */
+    body{color:var(--text)}
+    .uni,.uni-grid-title h3,.students-tools-title h2{color:var(--text)}
+    .students-tools-kicker,.gt,.meta,.unit,.row .l,.ndesc,.calendar-info,.marked-unit{color:var(--muted)}
+    .stat b,.calendar-head h2,.marked-head h2,.nb-head h2,.ntog h2,.students-tools-kicker,.gt{color:var(--pri)}
+    .students-tools-kicker,.gt{letter-spacing:.09em}
+    .header-copy h1{
+      color:#fff!important;
+      background:linear-gradient(90deg,#fff 0%,#d9e7ff 48%,#b9f3ff 100%);
+      -webkit-background-clip:text;background-clip:text;
+      -webkit-text-fill-color:transparent;
+      text-shadow:none!important;
+    }
+    .sub{color:rgba(255,255,255,.94)!important}
+    .tag{color:#d9f6ff!important}
+
+    /* More depth for the main interactive controls without changing their behavior. */
+    .btn,.req-link,.req-btn{
+      background:linear-gradient(135deg,var(--pri),var(--pri2))!important;
+      color:#fff!important;
+      box-shadow:0 7px 18px rgba(91,91,214,.24),inset 0 1px 0 rgba(255,255,255,.18)!important;
+    }
+    .mark-btn,.calendar-nav button,.view-switch,.admission-filter,.search{
+      box-shadow:0 7px 18px rgba(44,55,105,.09),inset 0 1px 0 rgba(255,255,255,.55)!important;
+    }
+    body.dark .mark-btn,body.dark .calendar-nav button,body.dark .view-switch,body.dark .admission-filter,body.dark .search{
+      box-shadow:0 8px 20px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.06)!important;
+    }
+
+    /* New users start in English; a previously saved choice is still respected. */
+    @media(max-width:700px){
+      .header-actions{
+        right:.65rem!important;
+        gap:.28rem!important;
+      }
+      .header-brand{width:calc(100% - 150px)!important}
+      .language-toggle,.theme-toggle,.header-actions .manual-btn{
+        min-height:32px!important;height:32px!important;
+        padding:.3rem .48rem!important;
+        border-radius:9px!important;
+        font-size:.68rem!important;
+      }
+      .header-actions .manual-btn{min-width:74px!important}
+    }
+    @media(max-width:380px){
+      .header-brand{width:calc(100% - 126px)!important}
+      .header-actions{right:.45rem!important;gap:.22rem!important}
+      .language-toggle,.theme-toggle{min-width:30px!important;width:30px!important;padding:0!important}
+      .header-actions .manual-btn{min-width:68px!important;width:68px!important;font-size:.58rem!important}
     }
   </style>
 </head>
@@ -1813,7 +1934,7 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
   function init(){
     var saved='';
     try{saved=localStorage.getItem(key)||''}catch(e){}
-    setLanguage(saved==='en'||saved==='bn'?saved:'bn');
+    setLanguage(saved==='en'||saved==='bn'?saved:'en');
     var translationQueued=false;
     var observer=new MutationObserver(function(){
       if(document.documentElement.getAttribute('data-language')!=='bn'||translationQueued)return;
