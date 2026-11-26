@@ -186,13 +186,18 @@
       var(--bg)}
     header{
       position:relative;overflow:hidden;
-      background:linear-gradient(135deg,#5146c9 0%,#6764df 48%,#4f8fe8 100%);
+      background-image:
+        linear-gradient(180deg,rgba(28,22,86,.18),rgba(28,22,86,.10)),
+        url("https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58");
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
       padding:1.45rem 1rem 1.65rem;
       box-shadow:0 8px 28px rgba(65,62,170,.20)
     }
-    header::before,header::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
-    header::before{width:18rem;height:18rem;right:-7rem;top:-11rem;background:rgba(255,255,255,.10)}
-    header::after{width:12rem;height:12rem;left:-6rem;bottom:-9rem;background:rgba(255,255,255,.08)}
+    header::before,header::after{content:"";position:absolute;pointer-events:none}
+    header::before{inset:0;border-radius:0;background:linear-gradient(180deg,rgba(10,14,48,.04),rgba(10,14,48,.10));}
+    header::after{display:none}
     .header-brand,.sub,.tag{position:relative;z-index:1}
     .header-logo{border-radius:.7rem;box-shadow:0 5px 16px rgba(0,0,0,.16)}
     header h1{font-size:1.5rem;letter-spacing:-.035em}
@@ -243,7 +248,15 @@
         radial-gradient(circle at 92% 5%,rgba(103,211,155,.06),transparent 22rem),
         var(--bg)
     }
-    body.dark header{background:linear-gradient(135deg,#29235f 0%,#35337b 48%,#28517f 100%);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    body.dark header{
+      background-image:
+        linear-gradient(180deg,rgba(3,7,28,.12),rgba(3,7,28,.18)),
+        url("https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4");
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
     body.dark .tabs{background:#1b2335}
     body.dark .tabs button.on{background:#27304a;color:#a79ff8}
     body.dark .search{border-color:#303a53}
