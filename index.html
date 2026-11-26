@@ -1963,20 +1963,20 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
       dashboardNodes.forEach(function(n){n.style.display='none';});
       hero.style.display='none';hideOriginalFooter();
       page.innerHTML='<a class="route-back" href="/">← Dashboard</a>';
-      var title='',desc='',body='';
+      var title='',desc='',body='';\n      var canonical=document.querySelector('link[rel="canonical"]');\n      if(canonical)canonical.href='https://www.admissiontracker.site'+(path==='/'?'':path);
       if(path==='/universities'){
         title='All Universities';desc='Explore, filter, search and compare every university in the tracker.';
         var listWrap=document.createElement('div');listWrap.className='route-card';listWrap.appendChild(view||document.createElement('div'));if(stats)listWrap.appendChild(stats);if(tabs)listWrap.appendChild(tabs);if(list)listWrap.appendChild(list);page.innerHTML+='<h2>'+title+'</h2><p>'+desc+'</p>';page.appendChild(listWrap);
       }else if(path==='/tools'){
         title='Student Tools';desc='Practical tools for results, ranking estimates and admission planning.';
-        var tc=document.createElement('div');tc.className='route-card';var st=document.getElementById('studentsTools');if(st)tc.appendChild(st);page.innerHTML+='<h2>'+title+'</h2><p>'+desc+'</p>';page.appendChild(tc);
+        var tc=document.createElement('div');tc.className='route-card';var st=document.getElementById('studentsTools');if(st){st.style.display='';tc.appendChild(st);}page.innerHTML+='<h2>'+title+'</h2><p>'+desc+'</p>';page.appendChild(tc);
       }else if(path==='/about'){
         title='About Admission Tracker';desc='Built to make Bangladesh university admission information easier to follow.';
         var about=document.createElement('div');about.className='route-card';
         var intro=document.querySelector('.footer-intro'),exp=document.querySelector('.experience-box');
         about.innerHTML='<h3 style="font-size:22px;margin-bottom:8px">The project</h3><p style="color:var(--adt-muted);margin-bottom:18px">Admission Tracker brings admission dates, deadlines, exam schedules, requirements and important notices together in one place.</p>';
         if(intro)about.appendChild(intro.cloneNode(true));
-        if(exp)about.appendChild(exp.cloneNode(true));
+        if(exp)about.appendChild(exp);
         page.innerHTML+='<h2>'+title+'</h2><p>'+desc+'</p>';page.appendChild(about);
       }else{
         page.innerHTML+='<h2>Admission Tracker</h2><p>This page is not available in the preview.</p><div class="route-card"><a class="route-back" href="/">Return to Dashboard</a></div>';
