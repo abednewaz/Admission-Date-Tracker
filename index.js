@@ -1,0 +1,1 @@
+module.exports=(req,res)=>{const p=(req.url||'/').split('?')[0];const routes={'/':'/index.html','/universities':'/index.html','/tools':'/tools.html','/about':'/about.html'};const target=routes[p];if(!target){res.statusCode=404;res.end('Not found');return;}res.statusCode=302;res.setHeader('Location',target);res.end();};
