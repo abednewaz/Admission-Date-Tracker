@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070914">
+<title>Tools — Admission Tracker</title>
+<style>
+:root{--bg:#070914;--card:rgba(16,20,39,.78);--line:rgba(255,255,255,.10);--ink:#eef2ff;--muted:#a9b4d0;--a:#8b5cf6;--b:#22d3ee;--green:#34d399;--red:#fb7185}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 10% -10%,rgba(139,92,246,.22),transparent 34%),radial-gradient(circle at 92% 0,rgba(34,211,238,.13),transparent 28%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{padding:18px 14px 44px}.shell{max-width:1180px;margin:auto}
+.header{border:1px solid var(--line);border-radius:22px;background:rgba(11,15,31,.72);backdrop-filter:blur(18px);padding:13px 16px;box-shadow:0 18px 60px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}.brand img{width:42px;height:42px;border-radius:12px}.brand strong{display:block;font-size:18px}.brand span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.nav{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.nav a{color:#cbd5ff;text-decoration:none;border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.035);font-size:12px;font-weight:700}.nav a.active,.nav a:hover{background:rgba(139,92,246,.16);border-color:rgba(139,92,246,.38)}
+.hero{margin:14px 0 16px;border:1px solid var(--line);border-radius:25px;min-height:190px;overflow:hidden;position:relative;background:linear-gradient(115deg,#4c1d95,#5b35c8 32%,#2563eb 67%,#0891b2);box-shadow:0 24px 70px rgba(18,15,60,.42)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(4,7,20,.42))}
+.hero-copy{position:relative;z-index:2;padding:30px;max-width:680px}.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#dbeafe;font-weight:800}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.02;letter-spacing:-.045em;margin:8px 0;color:#fff}.hero p{color:#e0e7ff;max-width:600px;margin:0;font-size:14px}
+.main-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.tool{border:1px solid var(--line);border-radius:20px;background:var(--card);backdrop-filter:blur(16px);padding:18px;box-shadow:0 16px 45px rgba(0,0,0,.18)}.tool.wide{grid-column:1/-1}.tool-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}.tool-head h2{margin:0;font-size:19px}.tool-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.pill{font-size:10px;font-weight:800;padding:5px 8px;border-radius:999px;background:rgba(139,92,246,.14);color:#c4b5fd;border:1px solid rgba(139,92,246,.28);white-space:nowrap}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.field label{display:block;color:var(--muted);font-size:11px;font-weight:700;margin-bottom:5px}.field input,.field select{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.045);color:var(--ink);padding:0 11px;outline:0}.field input::placeholder{color:#75809b}
+.security,.service{margin-top:10px;padding:11px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.025);font-size:12px}.security b,.service b{display:block;margin-bottom:3px}.security span,.service span{color:var(--muted)}
+.actions{display:flex;gap:8px;margin-top:12px}.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer;font-size:12px}.primary{background:linear-gradient(135deg,var(--a),#6366f1);color:white}.secondary{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--line)}
+.pcm-total{font-size:38px;font-weight:900;letter-spacing:-.04em;margin:5px 0}.note{color:var(--muted);font-size:12px;line-height:1.5}.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:12px}.mini{padding:11px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.025)}.mini span{display:block;color:var(--muted);font-size:10px}.mini b{display:block;margin-top:3px;font-size:18px}
+.manual-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.manual-item{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(255,255,255,.025)}.manual-item b{display:block;font-size:12px;margin-bottom:5px}.manual-item span{display:block;color:var(--muted);font-size:11px;line-height:1.45}.manual-action{margin-top:8px!important;color:#c4b5fd!important;font-weight:700}
+.footer{margin-top:14px;border:1px solid var(--line);border-radius:18px;background:rgba(16,20,39,.6);padding:15px;text-align:center;color:var(--muted);font-size:11px}
+@media(max-width:850px){body{padding:10px}.header{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.main-grid{grid-template-columns:1fr}.tool.wide{grid-column:auto}.manual-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.hero{min-height:220px;border-radius:20px}.hero-copy{padding:22px}.hero h1{font-size:31px}.form-grid,.manual-grid{grid-template-columns:1fr}.tool{padding:14px;border-radius:16px}.brand strong{font-size:16px}.nav a{font-size:11px;padding:6px 8px}.actions{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="header">
+<div class="brand"><img src="/icon.svg" alt=""><div><strong>Admission Tracker</strong><span>Every University. Every Deadline. One Place.</span></div></div>
+<nav class="nav"><a href="/">Dashboard</a><a href="/universities">All Universities</a><a href="/tools" class="active">Tools</a><a href="/about">About</a></nav>
+</header>
+<section class="hero"><div class="hero-copy"><div class="kicker">Student Tools</div><h1>Everything you need, in one place.</h1><p>Board Result, PCM Nationwide Rank Estimator, and the complete User Manual — preserved as full visual components in the prototype. Actions are intentionally non-persistent.</p></div></section>
+<main class="main-grid">
+<section class="tool">
+<div class="tool-head"><div><h2>Get your Board Result</h2><p>Check your SSC/HSC result without leaving Admission Tracker.</p></div><span class="pill">OFFICIAL RESULT</span></div>
+<div class="form-grid">
+<div class="field"><label>Exam</label><select><option>HSC / Equivalent</option><option>SSC / Equivalent</option></select></div>
+<div class="field"><label>Year</label><select><option>2026</option><option>2025</option><option>2024</option></select></div>
+<div class="field"><label>Board</label><select><option>Select Board</option><option>Dhaka</option><option>Rajshahi</option><option>Chattogram</option><option>Comilla</option><option>Barisal</option><option>Sylhet</option><option>Jessore</option><option>Dinajpur</option><option>Mymensingh</option><option>Madrasah</option><option>Technical</option></select></div>
+<div class="field"><label>Roll Number</label><input placeholder="Enter roll number"></div>
+<div class="field"><label>Registration Number</label><input placeholder="Enter registration number"></div>
+</div>
+<div class="security"><b>Security verification</b><span>Click Check Result to load the official security image. Prototype mode keeps this panel visual-only.</span></div>
+<div class="service"><b>Result service</b><span>Admission Tracker opens a short-lived browser session to the official Education Board result system.</span></div>
+<div class="actions"><button class="btn primary" type="button">Check Result</button><button class="btn secondary" type="button">Print Result</button></div>
+</section>
+<section class="tool">
+<div class="tool-head"><div><h2>Ranking by PCM Marks (Apprx.)</h2><p>Physics + Chemistry + Higher Math · unofficial nationwide estimate</p></div><span class="pill">ESTIMATOR</span></div>
+<div class="field"><label>Total PCM marks (out of 600)</label><input placeholder="e.g. 536" inputmode="numeric"></div>
+<div class="field" style="margin-top:10px"><label>Your board (optional)</label><select><option>Select board</option><option>Dhaka</option><option>Rajshahi</option><option>Chattogram</option><option>Other</option></select></div>
+<div class="pcm-total">—</div><p class="note">পিসিএম (পদার্থবিজ্ঞান + রসায়ন + উচ্চতর গণিত) মোট নম্বর দিয়ে সারাদেশে আনুমানিক অবস্থান। Works for marks of 510 and above.</p>
+<div class="result-grid"><div class="mini"><span>Estimated nationwide position</span><b>—</b></div><div class="mini"><span>Top percent</span><b>—</b></div><div class="mini"><span>Your board position</span><b>—</b></div><div class="mini"><span>BUET top-10,000 line</span><b>—</b></div></div>
+<p class="note" style="margin-top:10px">Unofficial estimate. Always verify BUET's published list and circular.</p>
+</section>
+<section class="tool wide">
+<div class="tool-head"><div><h2>User Manual</h2><p>Complete visual guide to the main Admission Tracker features.</p></div><span class="pill">8 STEPS</span></div>
+<div class="manual-grid">
+<div class="manual-item"><b>1. Install the app</b><span>Use the Install box to add Admission Tracker to your phone like an app.</span><span class="manual-action">Install box → Download / Install</span></div><div class="manual-item"><b>2. Turn on notifications</b><span>Enable admission notices and exam alerts on your device.</span><span class="manual-action">Notifications → Enable Notifications</span></div><div class="manual-item"><b>3. Search</b><span>Find a university, unit, or admission exam date quickly.</span><span class="manual-action">Search → type university/unit/date</span></div><div class="manual-item"><b>4. Mark a university</b><span>Mark a target university to track its countdown and exam dates.</span><span class="manual-action">Admission card → Mark University</span></div><div class="manual-item"><b>5. Check requirements</b><span>See available admission eligibility information for your group.</span><span class="manual-action">Admission card → Check Requirements</span></div><div class="manual-item"><b>6. Official admission website</b><span>Open the university's official admission page from its card.</span><span class="manual-action">Admission card → Official Admission Website</span></div><div class="manual-item"><b>7. Notice Board</b><span>Check recent admission notices and verify important details from official sources.</span><span class="manual-action">Notice Board</span></div><div class="manual-item"><b>8. My Admission Calendar</b><span>See exam dates for marked universities in one calendar.</span><span class="manual-action">My Admission Calendar</span></div>
+</div>
+</section>
+</main>
+<footer class="footer">Prototype mode: tool actions, persistence, account state, and automated reminders are intentionally disabled. Visual components remain complete.</footer>
+</div>
+</body>
+</html>
