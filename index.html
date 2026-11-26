@@ -1894,7 +1894,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
         '<a href="#manualBtn" data-nav="resources">▤ <span>Resources</span></a>',
         '<a href="/about" data-nav="about">● <span>About</span></a>'
       ].join('');
-      var p=location.pathname.replace(/\\/+$/,'')||'/';
+      var p=location.pathname.replace(/\/+$/,'')||'/';
       nav.querySelectorAll('a').forEach(function(a){
         var d=a.getAttribute('data-nav');
         if((d==='home'&&p==='/')||(d===p.slice(1)))a.classList.add('active');
