@@ -1946,7 +1946,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     main.appendChild(layout);
 
     var dashboardNodes=[quick,utility,layout];
-    var path=location.pathname.replace(/\\/+$/,'')||'/';
+    var path=location.pathname.replace(/\/+$/,'')||'/';
 
     function hideOriginalFooter(){
       var footer=document.querySelector('.site-footer'); if(footer)footer.classList.add('adt-hidden-dashboard');
