@@ -26,5 +26,19 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/universities",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/tools",
+      "destination": "/tools.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    }
   ]
 }
