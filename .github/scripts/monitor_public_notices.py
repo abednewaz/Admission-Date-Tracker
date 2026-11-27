@@ -497,10 +497,9 @@ def main():
             all_items.extend(source_items[:MAX_ITEMS_PER_SOURCE])
 
     if failures:
-        print("PUBLIC SOURCE HEALTH FAILURE:")
+        print("PUBLIC SOURCE HEALTH WARNING (feed continues):")
         for item in failures:
             print(" -", item)
-        raise SystemExit(2)
 
     # Never delete manual notices. Auto notices are keyed by canonical URL.
     manual = [n for n in existing if not n.get("url")]
