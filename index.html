@@ -936,6 +936,154 @@ header h1{font-size:.98rem}
     .language-toggle,.theme-toggle{width:30px!important;min-width:30px!important;padding:0!important}
     .header-actions .manual-btn{width:66px!important;min-width:66px!important;font-size:.58rem!important}
   }
+</style><style id="adt-art-panel-v5">
+/* V5: responsive editorial hero — artwork is a real image layer, not a CSS background. */
+header{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  min-height:228px!important;
+  padding:1rem 1rem 1.1rem!important;
+  background:#11182d!important;
+}
+.header-art{
+  position:absolute!important;
+  inset:0!important;
+  z-index:-2!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  overflow:hidden!important;
+}
+.header-art img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  object-fit:cover!important;
+  object-position:center 57%!important;
+  opacity:1!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:auto!important;
+  backface-visibility:hidden!important;
+  -webkit-backface-visibility:hidden!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+.header-art-light{display:block!important}
+.header-art-dark{display:none!important}
+body.dark .header-art-light{display:none!important}
+body.dark .header-art-dark{display:block!important}
+
+/* Only the text zone gets readability treatment; the artwork itself stays untouched. */
+.header-brand{
+  position:relative!important;
+  z-index:3!important;
+  width:min(46%,560px)!important;
+  max-width:none!important;
+  min-height:148px!important;
+  margin:0!important;
+  padding:1rem 1.05rem!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  text-align:left!important;
+  border:1px solid rgba(255,255,255,.2)!important;
+  border-radius:18px!important;
+  background:linear-gradient(105deg,rgba(8,14,38,.78),rgba(14,24,57,.42),rgba(14,24,57,0))!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.2)!important;
+  overflow:hidden!important;
+}
+.header-brand::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  background:radial-gradient(circle at 15% 45%,rgba(110,91,255,.26),transparent 58%)!important;
+  pointer-events:none!important;
+}
+.header-logo{flex:0 0 auto!important}
+.header-copy{min-width:0!important}
+.header-copy h1{
+  color:#fff!important;
+  font-weight:800!important;
+  letter-spacing:-.035em!important;
+  text-shadow:0 2px 14px rgba(0,0,0,.34)!important;
+}
+.header-copy .sub{
+  color:rgba(255,255,255,.94)!important;
+  text-shadow:0 1px 8px rgba(0,0,0,.3)!important;
+}
+
+/* Controls are independent from the artwork and stay at the upper-right. */
+.header-actions{
+  position:absolute!important;
+  z-index:5!important;
+  right:1rem!important;
+  top:1rem!important;
+  transform:none!important;
+  margin:0!important;
+  width:auto!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:.42rem!important;
+}
+.language-toggle,.theme-toggle,.header-actions .manual-btn{
+  position:static!important;
+  min-width:42px!important;
+  min-height:38px!important;
+  height:38px!important;
+  padding:.4rem .68rem!important;
+  border:1px solid rgba(255,255,255,.5)!important;
+  border-radius:11px!important;
+  color:#fff!important;
+  background:linear-gradient(135deg,rgba(67,45,184,.96),rgba(13,117,210,.94))!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.28)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+
+/* Remove old header overlays from earlier iterations. */
+header::before,header::after{content:none!important;display:none!important}
+@media(max-width:760px){
+  header{
+    min-height:270px!important;
+    padding:5.2rem .72rem .8rem!important;
+  }
+  .header-art img{
+    object-position:center 58%!important;
+  }
+  .header-brand{
+    width:100%!important;
+    min-height:132px!important;
+    padding:.8rem .85rem!important;
+    border-radius:16px!important;
+    background:linear-gradient(180deg,rgba(8,14,38,.72),rgba(8,14,38,.38))!important;
+  }
+  .header-actions{
+    top:.68rem!important;
+    right:.68rem!important;
+    gap:.28rem!important;
+  }
+  .language-toggle,.theme-toggle,.header-actions .manual-btn{
+    height:33px!important;
+    min-height:33px!important;
+    padding:.28rem .5rem!important;
+    border-radius:9px!important;
+    font-size:.68rem!important;
+  }
+  .header-actions .manual-btn{min-width:74px!important}
+}
+@media(max-width:390px){
+  header{min-height:258px!important;padding-top:5rem!important}
+  .header-actions{right:.45rem!important;gap:.2rem!important}
+  .language-toggle,.theme-toggle{width:30px!important;min-width:30px!important;padding:0!important}
+  .header-actions .manual-btn{width:68px!important;min-width:68px!important;font-size:.58rem!important}
+}
 </style></head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
@@ -962,7 +1110,7 @@ header h1{font-size:.98rem}
   <div class="app" id="top">
     <header>
       <picture class="header-art" aria-hidden="true">
-        <img class="header-art-light" src="https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4" alt="" decoding="async" fetchpriority="high">
+        <img class="header-art-light" src="https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4" alt="" decoding="sync" loading="eager" fetchpriority="high" sizes="100vw">
         <img class="header-art-dark" src="https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58" alt="" decoding="async" fetchpriority="high">
       </picture>
       <div class="header-brand">
