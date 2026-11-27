@@ -35,10 +35,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Admission Tracker">
   <link rel="manifest" href="manifest.webmanifest?v=4">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop stop-color=%225d32d6%22/%3E%3Cstop offset=%221%22 stop-color=%237b55f2%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2213%22 fill=%22url(%23g)%22/%3E%3Cpath d=%22M10 23 32 14l22 9-22 9-22-9Zm6 4v12m32-12v12M18 35h28v8H18z%22 fill=%22white%22/%3E%3Cpath d=%22M15 44h34v7H15z%22 fill=%22white%22/%3E%3C/svg%3E">
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=14">
-  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop stop-color=%225d32d6%22/%3E%3Cstop offset=%221%22 stop-color=%237b55f2%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2213%22 fill=%22url(%23g)%22/%3E%3Cpath d=%22M10 23 32 14l22 9-22 9-22-9Zm6 4v12m32-12v12M18 35h28v8H18z%22 fill=%22white%22/%3E%3Cpath d=%22M15 44h34v7H15z%22 fill=%22white%22/%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png?v=13">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20" sizes="any">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png?v=20">
   <title>Admission Tracker</title>
   <link rel="canonical" href="https://www.admissiontracker.site/">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -1247,6 +1245,40 @@ body.dark header{
   background-color:#07143f!important;
 }
 .header-art{display:none!important}
+.header-brand,.header-actions{position:relative!important;z-index:10!important}
+</style><style id="adt-final-banner-favicon-v10">
+header{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  background:#11182d!important;
+}
+.header-art{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  z-index:1!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+}
+.header-art img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:none!important;
+  opacity:1!important;
+  filter:none!important;
+  transform:none!important;
+  visibility:visible!important;
+}
+.header-art-light{display:block!important}
+body.dark .header-art-light{display:none!important}
+body.dark .header-art-dark{display:block!important}
 .header-brand,.header-actions{position:relative!important;z-index:10!important}
 </style></head>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body>
