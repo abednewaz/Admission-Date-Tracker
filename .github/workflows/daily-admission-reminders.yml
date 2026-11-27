@@ -45,8 +45,14 @@ jobs:
           )
           if not status_match:
               raise SystemExit("Could not parse system-status.js")
-          # system-status.js is intentionally JSON-compatible JavaScript.
-          system_status = json.loads(status_match.group(1))
+          # system-status.js is a JavaScript object literal. Quote bare property names
+          # before decoding because Python's json module requires strict JSON.
+          system_status_text = re.sub(
+              r'([\\{,])\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*:',
+              r'\\1"\\2":',
+              status_match.group(1),
+          )
+          system_status = json.loads(system_status_text)
 
           token_url = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL")
           token_request_token = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN")
