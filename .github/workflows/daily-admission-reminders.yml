@@ -48,8 +48,8 @@ jobs:
           # system-status.js is a JavaScript object literal. Quote bare property names
           # before decoding because Python's json module requires strict JSON.
           system_status_text = re.sub(
-              r'([\\{,])\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*:',
-              r'\\1"\\2":',
+              r'([,{])\s*([A-Za-z_][A-Za-z0-9_]*)\s*:',
+              r'\1"\2":',
               status_match.group(1),
           )
           system_status = json.loads(system_status_text)
