@@ -34,9 +34,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Admission Tracker">
-  <link rel="manifest" href="manifest.webmanifest?v=3">
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon.svg">
-  <link rel="shortcut icon" href="/icon.svg">
+  <link rel="manifest" href="manifest.webmanifest?v=4">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4">
+  <link rel="shortcut icon" href="/icon-192.png?v=4">
   <title>Admission Tracker</title>
   <link rel="canonical" href="https://www.admissiontracker.site/">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -908,7 +908,35 @@ header h1{font-size:.98rem}
       .header-actions .manual-btn{min-width:68px!important;width:68px!important;font-size:.58rem!important}
     }
   </style>
-</head>
+<style id="adt-final-fix-v4">
+  header{position:relative;isolation:isolate;overflow:hidden;background:#151b2b!important;text-align:left!important;padding:1rem 1rem 1.15rem!important;min-height:0!important}
+  .header-art{position:absolute;inset:0;z-index:-2;display:block;width:100%;height:100%;overflow:hidden}
+  .header-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:none!important;opacity:1!important;transform:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .header-art-dark{display:none!important}
+  body.dark .header-art-light{display:none!important}
+  body.dark .header-art-dark{display:block!important}
+  header:before,header:after{content:none!important;display:none!important;filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .header-brand{position:relative;z-index:3;justify-content:flex-start!important;margin-bottom:0!important;max-width:calc(100% - 260px);text-align:left}
+  .header-copy h1{color:#fff!important}
+  .sub,.tag{color:rgba(255,255,255,.95)!important}
+  .header-actions{position:absolute!important;z-index:4;right:1rem!important;top:50%!important;transform:translateY(-50%)!important;margin:0!important;width:auto!important;justify-content:flex-end!important;align-items:center!important;flex-wrap:nowrap!important;gap:.45rem!important}
+  .language-toggle,.theme-toggle,.header-actions .manual-btn{position:static!important;min-width:42px!important;min-height:38px!important;height:38px!important;padding:.4rem .68rem!important;border:1px solid rgba(255,255,255,.48)!important;border-radius:11px!important;color:#fff!important;background:linear-gradient(135deg,rgba(72,47,190,.96),rgba(16,123,213,.94))!important;box-shadow:0 8px 22px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.3)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .language-toggle:hover,.theme-toggle:hover,.header-actions .manual-btn:hover{filter:brightness(1.08)!important;transform:translateY(-1px)!important}
+  .notif{transition:none!important}
+  @media(max-width:640px){
+    header{padding:5.7rem .75rem 1rem!important}
+    .header-brand{max-width:100%;width:100%!important}
+    .header-actions{top:.7rem!important;right:.65rem!important;transform:none!important;gap:.28rem!important}
+    .language-toggle,.theme-toggle,.header-actions .manual-btn{height:32px!important;min-height:32px!important;padding:.3rem .48rem!important;border-radius:9px!important;font-size:.68rem!important}
+    .header-actions .manual-btn{min-width:72px!important}
+  }
+  @media(max-width:380px){
+    header{padding-top:5.45rem!important}
+    .header-actions{right:.45rem!important;gap:.2rem!important}
+    .language-toggle,.theme-toggle{width:30px!important;min-width:30px!important;padding:0!important}
+    .header-actions .manual-btn{width:66px!important;min-width:66px!important;font-size:.58rem!important}
+  }
+</style></head>
 <body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
@@ -933,6 +961,10 @@ header h1{font-size:.98rem}
 
   <div class="app" id="top">
     <header>
+      <picture class="header-art" aria-hidden="true">
+        <img class="header-art-light" src="https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4" alt="" decoding="async" fetchpriority="high">
+        <img class="header-art-dark" src="https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58" alt="" decoding="async" fetchpriority="high">
+      </picture>
       <div class="header-brand">
         <img class="header-logo" src="icon-light.svg?v=12" data-light-src="icon-light.svg?v=12" data-dark-src="icon.svg?v=12" width="40" height="40" alt="" aria-hidden="true">
         <div class="header-copy">
@@ -956,7 +988,7 @@ header h1{font-size:.98rem}
     <div class="content-shell">
     <main>
       <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN">Enable Notifications</button></div>
-      <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="native-install-wrap" id="nativeInstallWrap"><install id="nativeInstall" manifest="/manifest.webmanifest"></install></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon.svg" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
+      <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="native-install-wrap" id="nativeInstallWrap"><install id="nativeInstall" manifest="/manifest.webmanifest"></install></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon-192.png" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
       <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker">Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading">My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
@@ -1656,8 +1688,8 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     viewList.addEventListener('click',function(){VIEW_MODE='list';GRID_EXPANDED=true;syncViewButtons();render()});
     syncViewButtons();
 
-    var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn'),deferredInstallPrompt=null;
-    function hideNotif(){if(notifEl){notifEl.remove();notifEl=null}} function hideInstall(){installBox.style.display='none'}
+    var notifEl=document.getElementById('notif'),installBox=document.getElementById('installBox'),installBtn=document.getElementById('installBtn');
+    function hideNotif(){if(notifEl){notifEl.hidden=true;notifEl.style.display='none';notifEl.setAttribute('aria-hidden','true');notifEl.remove();notifEl=null}} function hideInstall(){if(installBox)installBox.style.display='none'}
     var VAPID_PUBLIC_KEY='BC9OwY4GKq1Rygoxn2e7fM7nc15VxH20RzQCwb4hr0BMPvAHPDqwLn-dTsVnt3owy4YkNSxaiGGgjHWKz_tIhgw';
     function urlBase64ToUint8Array(base64String){var padding='='.repeat((4-base64String.length%4)%4),base64=(base64String+padding).replace(/-/g,'+').replace(/_/g,'/'),raw=atob(base64),output=new Uint8Array(raw.length);for(var i=0;i<raw.length;i++)output[i]=raw.charCodeAt(i);return output}
     function withTimeout(promise,ms,label){
@@ -1732,27 +1764,50 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
     var nativeInstallWrap=document.getElementById('nativeInstallWrap'),nativeInstallEl=document.getElementById('nativeInstall');
     function isMobileDevice(){return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||('ontouchstart' in window&&window.innerWidth<=900)}
     function isStandalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
-    if(nativeInstallWrap&&nativeInstallEl&&isMobileDevice()&&!isStandalone()){nativeInstallWrap.style.display='block'}
     function hideMobileInstall(){if(mobileInstallPrompt)mobileInstallPrompt.hidden=true}
-    function showMobileInstall(){if(!mobileInstallPrompt||!isMobileDevice()||isStandalone())return;if(localStorage.getItem('adt_install_dismissed_v2'))return;mobileInstallPrompt.hidden=false}
+    function showMobileInstall(){if(!mobileInstallPrompt||!isMobileDevice()||isStandalone())return;if(localStorage.getItem('adt_install_dismissed_v3'))return;mobileInstallPrompt.hidden=false}
+    if(nativeInstallWrap)nativeInstallWrap.style.display='none';
     if(isStandalone()){hideInstall();hideMobileInstall()}else if(isMobileDevice()){
-      window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();mobileInstallDeferred=e;showMobileInstall();installBox.style.display='none'});
-      window.addEventListener('appinstalled',function(){mobileInstallDeferred=null;hideMobileInstall();hideInstall()});
-      var isIOS=/iPhone|iPad|iPod/i.test(navigator.userAgent),nativeInstallSupported=!!(window.Navigator&&Navigator.prototype&&typeof Navigator.prototype.install==='function');
-      if(isIOS){mobileInstallPrompt.classList.add('install-ios');setTimeout(showMobileInstall,900)}
-      else if(nativeInstallSupported){setTimeout(showMobileInstall,1200)}
+      window.addEventListener('beforeinstallprompt',function(e){
+        e.preventDefault();
+        mobileInstallDeferred=e;
+        showMobileInstall();
+      });
+      window.addEventListener('appinstalled',function(){
+        mobileInstallDeferred=null;
+        hideMobileInstall();
+        hideInstall();
+      });
+      var isIOS=/iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if(isIOS){
+        mobileInstallPrompt&&mobileInstallPrompt.classList.add('install-ios');
+      }
+      // Always show a fallback install prompt on eligible mobile browsers.
+      // If Chrome exposes beforeinstallprompt, the same button invokes the native prompt.
+      setTimeout(showMobileInstall,1800);
       mobileInstallBtn&&mobileInstallBtn.addEventListener('click',async function(){
-        if(isIOS){alert('On iPhone/iPad: tap Share → Add to Home Screen.');return}
+        if(isIOS){
+          alert('On iPhone/iPad: tap Share → Add to Home Screen.');
+          return;
+        }
         try{
-          if(nativeInstallSupported){await navigator.install()}
-          else if(mobileInstallDeferred){var p=mobileInstallDeferred;mobileInstallDeferred=null;await p.prompt();await p.userChoice}
-          else {alert('Chrome did not expose the install prompt yet. Open Chrome menu (⋮) → Add to Home screen / Install app.');return}
+          if(mobileInstallDeferred){
+            var p=mobileInstallDeferred;
+            mobileInstallDeferred=null;
+            await p.prompt();
+            await p.userChoice;
+            hideMobileInstall();
+          }else{
+            alert('To install Admission Tracker, open your browser menu (⋮) and choose “Install app” or “Add to Home screen”.');
+          }
         }catch(e){console.error('Install prompt failed',e)}
+      });
+      mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){
+        try{localStorage.setItem('adt_install_dismissed_v3','1')}catch(e){}
         hideMobileInstall();
       });
-      mobileInstallClose&&mobileInstallClose.addEventListener('click',function(){localStorage.setItem('adt_install_dismissed_v2','1');hideMobileInstall()});
     }else{hideInstall();hideMobileInstall()}
-    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=20',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
+    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js?v=21',{updateViaCache:'none'}).then(function(reg){return reg.update()}).catch(function(){})})}
     var NOTICE_BOARD_LINKS={
       'dhaka university':'https://www.du.ac.bd/notice',
       'buet':'https://ugadmission.buet.ac.bd/',
