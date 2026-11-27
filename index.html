@@ -964,8 +964,8 @@ header{
   object-fit:cover!important;
   object-position:center 57%!important;
   opacity:1!important;
-  filter:none!important;
-  transform:none!important;
+  filter:url(#adt-sharpen)!important;
+  transform:translateZ(0)!important;
   image-rendering:auto!important;
   backface-visibility:hidden!important;
   -webkit-backface-visibility:hidden!important;
@@ -1084,8 +1084,36 @@ header::before,header::after{content:none!important;display:none!important}
   .language-toggle,.theme-toggle{width:30px!important;min-width:30px!important;padding:0!important}
   .header-actions .manual-btn{width:68px!important;min-width:68px!important;font-size:.58rem!important}
 }
+</style><style id="adt-control-depth-v6">
+.language-toggle,.theme-toggle,.header-actions .manual-btn{
+  border:1px solid rgba(255,255,255,.72)!important;
+  background:linear-gradient(145deg,#6f4bff 0%,#3f67f5 48%,#078fe1 100%)!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -2px 0 rgba(0,0,0,.20),
+    0 2px 0 rgba(0,0,0,.28),
+    0 7px 14px rgba(12,31,100,.42),
+    0 12px 26px rgba(0,0,0,.25)!important;
+  text-shadow:0 1px 2px rgba(0,0,0,.34)!important;
+}
+.language-toggle:hover,.theme-toggle:hover,.header-actions .manual-btn:hover{
+  filter:brightness(1.12)!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.5),
+    inset 0 -2px 0 rgba(0,0,0,.18),
+    0 3px 0 rgba(0,0,0,.25),
+    0 9px 18px rgba(12,31,100,.5),
+    0 14px 30px rgba(0,0,0,.3)!important;
+}
+.language-toggle:active,.theme-toggle:active,.header-actions .manual-btn:active{
+  transform:translateY(2px)!important;
+  box-shadow:
+    inset 0 2px 3px rgba(0,0,0,.22),
+    0 1px 0 rgba(0,0,0,.24),
+    0 4px 10px rgba(0,0,0,.22)!important;
+}
 </style></head>
-<body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
   <div class="manual-overlay" id="manualOverlay" role="dialog" aria-modal="true" aria-labelledby="manualTitle">
