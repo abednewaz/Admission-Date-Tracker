@@ -201,7 +201,7 @@
       var(--bg)}
     header{
       position:relative;overflow:hidden;
-      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4?v=clear2");
+      background-image:none;
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
@@ -210,7 +210,7 @@
       box-shadow:0 8px 28px rgba(65,62,170,.20)
     }
     body.dark header{
-      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58?v=clear2");
+      background-image:none;
       filter:none
     }
     header::before,header::after{content:"";position:absolute;pointer-events:none}
@@ -268,7 +268,7 @@
     }
     body.dark header{
       background-image:
-        url("https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4");
+        none;
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
@@ -663,7 +663,7 @@ header h1{font-size:.98rem}
       isolation:isolate;
       min-height:188px;
       padding:1.25rem 1rem 1.35rem;
-      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/a8d5e485dc221249a940b7953becacd7a097fe58");
+      background-image:none;
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
@@ -671,7 +671,7 @@ header h1{font-size:.98rem}
       box-shadow:0 14px 42px rgba(30,58,95,.18);
     }
     body.dark header{
-      background-image:url("https://dmmcy0pwk6bqi.cloudfront.net/4c521df01a32ccbf2130528b92bd4ffcf4ca31d4");
+      background-image:none;
       box-shadow:0 16px 44px rgba(0,0,0,.32);
     }
     header::before{
@@ -1230,22 +1230,22 @@ body.dark .header-art img{filter:none!important}
       </div>
       <div class="header-actions">
         <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English" title="Switch to English">
-          <span class="icon" aria-hidden="true">[object Object]</span><span class="lang-cube" aria-hidden="true">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9S14.5 18.4 12 21c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3"/></svg></span><span class="lang-cube" aria-hidden="true">
             <span class="lang-face lang-en">En</span>
             <span class="lang-face lang-ban">Ban</span>
           </span>
         </button>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle appearance" title="Toggle appearance">
-          <span class="icon" aria-hidden="true">[object Object]</span><span class="theme-icon" aria-hidden="true"></span>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span class="theme-icon" aria-hidden="true"></span>
         </button>
-        <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual"><span class="icon" aria-hidden="true">[object Object]</span>User Manual</button>
+        <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z"/><path d="M4 5.5v15A2.5 2.5 0 0 1 6.5 18H20"/></svg></span>User Manual</button>
       </div>
     </header>
     <div class="content-shell">
     <main>
-      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN"><span class="adt-inline-icon" aria-hidden="true">[object Object]</span>Enable Notifications</button></div>
+      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN"><span class="adt-inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></span>Enable Notifications</button></div>
       <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="native-install-wrap" id="nativeInstallWrap"><install id="nativeInstall" manifest="/manifest.webmanifest"></install></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon-192.png" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
-      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker"><span class="adt-section-icon" aria-hidden="true">[object Object]</span>Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">▦ &nbsp; Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading"><span class="adt-section-icon" aria-hidden="true">[object Object]</span>My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2><span class="adt-section-icon" aria-hidden="true">[object Object]</span>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
+      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker"><span class="adt-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.7 6.3 3-3a4 4 0 0 0-5.1 5.1L5 16a3 3 0 1 0 4.2 4.2l7.6-7.6a4 4 0 0 0 5.1-5.1l-3 3-2.8-.6z"/></svg></span>Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">▦ &nbsp; Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading"><span class="adt-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></span>My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2><span class="adt-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a2 2 0 0 0 2 2h2l2 5h2l-1.6-5H11l8 4V5l-8 4H5a2 2 0 0 0-2 2z"/><path d="M21 9a3 3 0 0 1 0 6"/></svg></span>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
         <div class="search-filter-row">
