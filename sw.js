@@ -54,8 +54,8 @@ self.addEventListener('push', (event) => {
   const title = data.title || 'Admission Tracker';
   const options = {
     body: data.body || 'A new admission notice is available.',
-    icon: './icon.svg',
-    badge: './icon.svg',
+    icon: './icon-192.png',
+    badge: './icon-192.png',
     tag: data.tag || 'admission-notice',
     data: { url: data.url || './' }
   };
