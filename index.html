@@ -35,8 +35,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Admission Tracker">
   <link rel="manifest" href="manifest.webmanifest?v=4">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20" sizes="any">
-  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png?v=20">
+  <link rel="icon" href="/favicon.svg?rev=21" type="image/svg+xml" sizes="any">
+<link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png?v=20">
   <title>Admission Tracker</title>
   <link rel="canonical" href="https://www.admissiontracker.site/">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -1306,8 +1306,8 @@ body.dark .header-art-dark{display:block!important}
   <div class="app" id="top">
     <header>
       <picture class="header-art" aria-hidden="true">
-        <img class="header-art-light" src="/assets/banner-light.webp?v=2" alt="" decoding="sync" loading="eager" fetchpriority="high" sizes="100vw">
-        <img class="header-art-dark" src="/assets/banner-dark.webp?v=2" alt="" decoding="async" fetchpriority="high">
+        <img class="header-art-light" src="/assets/banner-light.webp?v=21" alt="" decoding="sync" loading="eager" fetchpriority="high" sizes="100vw">
+        <img class="header-art-dark" src="/assets/banner-dark.webp?v=21" alt="" decoding="async" fetchpriority="high">
       </picture>
       <div class="header-brand">
         <img class="header-logo" src="icon-light.svg?v=12" data-light-src="icon-light.svg?v=12" data-dark-src="icon.svg?v=12" width="40" height="40" alt="" aria-hidden="true">
@@ -2444,7 +2444,49 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     }catch(err){status.textContent=err.message||'Could not load the result right now.';if(/expired|session/i.test(status.textContent))brSession=null}
     finally{if(submitBtn){submitBtn.disabled=false;submitBtn.textContent='Check Result'}}
   },true);
-  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()});
+  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'<style id="adt-final-visual-fix-v21">
+/* Final visual fix: banner image is a foreground layer inside the isolated header. */
+header{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  background:#17104a!important;
+}
+.header-art{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.header-art img{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  filter:none!important;
+  transform:none!important;
+}
+.header-art-light{display:block!important}
+body.dark .header-art-light{display:none!important}
+.header-art-dark{display:none!important}
+body.dark .header-art-dark{display:block!important}
+.header-brand,.header-actions{
+  position:relative!important;
+  z-index:2!important;
+}
+</style></body></html>');w.document.close();w.focus();w.print()});
 })();
 </script>
 </body>
