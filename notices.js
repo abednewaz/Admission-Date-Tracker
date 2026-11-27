@@ -101,19 +101,9 @@ window.ADMISSION_NOTICES = [
     "generatedBy": "official-notice-monitor"
   },
   {
-    "university": "Khulna University of Engineering & Technology (KUET)",
-    "title": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology",
-    "date": "2026-12-10",
-    "url": "https://admission.kuet.ac.bd/",
-    "source": "Khulna University of Engineering & Technology (KUET) official source",
-    "summary": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Application & fee payment open until 10 December 2026 admission@kuet.ac.bd (preferred) | +880 1714 087339 (9 AM – 5 PM office days only) Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply Check your status Result, merit position and allocated department Application ID Date of birth Show my status",
-    "notify": true,
-    "generatedBy": "official-notice-monitor"
-  },
-  {
     "university": "Khulna University",
     "title": "২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/M. Pharm_Admission Form _2026-27.pdf",
     "source": "Khulna University official source",
     "summary": "২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০",
@@ -123,7 +113,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন)",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/MEd_Admission_Brochure_2026-2027_tracked.pdf",
     "source": "Khulna University official source",
     "summary": "২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ",
@@ -133,7 +123,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027)",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/Notice and Application Form for26–27).pdf",
     "source": "Khulna University official source",
     "summary": "সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক",
@@ -143,7 +133,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন (ইউজিসি) কর্তৃক ২০২৬–২০২৭ অর্থবছরের জন্য প্রকল্প প্রস্তাব আহ্বান বিজ্ঞপ্তি",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/প্রকল্প প্রস্তাব আহ্বান বিজ্ঞপ্তি- 2026-27.pdf",
     "source": "Khulna University official source",
     "summary": "বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন (ইউজিসি) কর্তৃক ২০২৬–২০২৭ অর্থবছরের জন্য প্রকল্প প্রস্তাব আহ্বান বিজ্ঞপ্তি বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন (ইউজিসি) কর্তৃক ২০২৬–২০২৭ অর্থবছরের জন্য প্রকল্প প্রস্তাব আহ্বান বিজ্ঞপ্তি 29 বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন (ইউজিসি) কর্তৃক ২০২৬–২০২৭ অর্থবছরের জন্য প্রকল্প প্রস্তাব আহ্বান বিজ্ঞপ্তি 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ড",
@@ -153,7 +143,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/Merged Circuler & Form.pdf",
     "source": "Khulna University official source",
     "summary": "পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of",
@@ -163,7 +153,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/MDS ADMISSION GUIDELINES 2026-2027.pdf",
     "source": "Khulna University official source",
     "summary": "ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রো",
@@ -173,7 +163,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/ma bangla.pdf",
     "source": "Khulna University official source",
     "summary": "এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 20",
@@ -183,7 +173,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "MSS in Economics Program Admissionn Form and Guidelines, session 2026-27",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/MSS_Admission_Form_Guideline.pdf",
     "source": "Khulna University official source",
     "summary": "MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Y",
@@ -193,7 +183,7 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "M. Sc. Engg. (CSE)/M. Engg. (CSE) Admission Circular 2026-2027 and Application Form",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/M. Sc. Engg. (CSE)M. Engg. (CSE) Admission Requirement 2026-2027-merged.pdf",
     "source": "Khulna University official source",
     "summary": "M. Sc. Engg. (CSE)/M. Engg. (CSE) Admission Circular 2026-2027 and Application Form M. Sc. Engg. (CSE)/M. Engg. (CSE) Admission Circular 2026-2027 and Application Form 14 M. Sc. Engg. (CSE)/M. Engg. (CSE) Admission Circular 2026-2027 and Application Form 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission N",
@@ -203,10 +193,20 @@ window.ADMISSION_NOTICES = [
   {
     "university": "Khulna University",
     "title": "M. Arch Admission Circular (Session : 2026-2027) & Form",
-    "date": "2026-11-21",
+    "date": "2027-01-13",
     "url": "https://ku.ac.bd/uploads/noticeboardfiles/M.Arch Admission Circular (2026-2027)-merged.pdf",
     "source": "Khulna University official source",
     "summary": "M. Arch Admission Circular (Session : 2026-2027) & Form M. Arch Admission Circular (Session : 2026-2027) & Form 22 M. Arch Admission Circular (Session : 2026-2027) & Form 1 Master of Social Science (MSS) in Sociology_Session_2026-2027_Guidelines 2 ২০২৬-২০২৭ শিক্ষাবর্ষে মাস্টার অব এডুকেশন (এমএড) প্রোগ্রামে ভর্তির গাইডলাইন (এডুকেশন ডিসিপ্লন) 3 MBA in HRM Admission Notice & application form for the 2026-2027 session 4 সয়েল, ওয়াটার এন্ড এনভায়রনমন্টে ডিসিপ্লিনে ২০২৬-২০২৭ শিক্ষাবর্ষে MS প্রোগ্রামে শিক্ষার্থী ভর্তি সংক্রান্ত বিজ্ঞপ্তি ও আবেদন ফরম / Notice and Application Form for Admission to the MS Program in SWE (2026–2027) 5 পরিসংখ্যান ডিসিপ্লিনের এমএস ২০২৬-২০২৭ প্রোগ্রামে ভর্তি বিজ্ঞপ্তি ও ফরম 6 এম এ (বাংলা ডিসিপ্লিন) প্রোগ্রামে ভর্তি সংক্রান্ত তথ্যাবলী, শিক্ষাবর্ষ ২০২৬-২৭ 7 MSS in Economics Program Admissionn Form and Guidelines, session 2026-27 8 ২০২৬-২০২৭ শিক্ষাবর্ষের M. Pharm. প্রোগ্রামে ভর্তির আবেদন পত্র ও নিয়মাবলী / Application Form and Admission Guidelines for the M. Pharm. Program, Academic Year 2026–2027 9 ডিএস ডিসিপ্লিনের এমডিএস প্রোগ্রামের ২০২৬-২০২৭ শিক্ষাবর্ষের ভর্তি বিজ্ঞপ্তি / Admission Notice for the 2026-2027 Academic Year of MDS Program of DS Discipline 10 MBA (Regula",
+    "notify": true,
+    "generatedBy": "official-notice-monitor"
+  },
+  {
+    "university": "Khulna University of Engineering & Technology (KUET)",
+    "title": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology",
+    "date": "2026-12-10",
+    "url": "https://admission.kuet.ac.bd/",
+    "source": "Khulna University of Engineering & Technology (KUET) official source",
+    "summary": "Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login Application & fee payment open until 10 December 2026 admission@kuet.ac.bd (preferred) | +880 1714 087339 (9 AM – 5 PM office days only) Undergraduate Admission 2026-27 Khulna University of Engineering & Technology Home Process Notices Foreign Board Available Seats Login NOW: Applications are open 1st Year B.Sc. Engineering, B.URP, B.Arch Admission Submit your online application and pay the fee by 10 December 2026. The MCQ admission test is on 08 January 2027 at Khulna, Dhaka and Rajshahi. Apply now Download circular 18 days left to apply Check your status Result, merit position and allocated department Application ID Date of birth Show my status",
     "notify": true,
     "generatedBy": "official-notice-monitor"
   },
