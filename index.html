@@ -1112,6 +1112,86 @@ header::before,header::after{content:none!important;display:none!important}
     0 1px 0 rgba(0,0,0,.24),
     0 4px 10px rgba(0,0,0,.22)!important;
 }
+</style><style id="adt-artistic-icons-v7">
+/* V7: crisp editorial icon system + reliable banner layer */
+header{
+  background:transparent!important;
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.header-art{
+  z-index:0!important;
+  pointer-events:none!important;
+}
+.header-art img{
+  z-index:0!important;
+  filter:none!important;
+  image-rendering:auto!important;
+}
+.header-brand,.header-actions{z-index:4!important}
+.header-brand{
+  text-shadow:0 2px 10px rgba(0,0,0,.42);
+}
+.header-logo{
+  box-shadow:0 10px 26px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);
+}
+.header-actions .icon{
+  width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+}
+.header-actions .icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.header-actions button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:.38rem!important}
+.notif,.students-tools,.calendar-box,.notice-board{
+  position:relative;
+  overflow:hidden;
+}
+.notif:before,.students-tools:before,.calendar-box:before,.notice-board:before{
+  content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,#8b2cff,#3478ff,#00c7e8);
+}
+.notif{
+  border:1px solid rgba(118,100,235,.28)!important;
+  box-shadow:0 16px 38px rgba(20,22,55,.14),inset 0 1px 0 rgba(255,255,255,.12)!important;
+}
+.notif>p{
+  display:flex;align-items:center;justify-content:center;gap:.48rem;
+}
+.notif>p:before{
+  content:"";display:inline-block;width:19px;height:19px;
+  background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+.students-tools-kicker,.calendar-head h2,.notice-board h2{display:inline-flex;align-items:center;gap:.42rem}
+.adt-section-icon{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.adt-section-icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.students-tools-kicker{color:#c28cff!important}
+.calendar-head h2,.notice-board h2{color:#b98aff!important}
+.students-tool-select{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 20px rgba(0,0,0,.16);
+}
+.students-tool-select:focus{box-shadow:0 0 0 3px rgba(118,103,232,.18),0 8px 20px rgba(0,0,0,.16)!important}
+.calendar-box,.notice-board{
+  border-color:rgba(102,104,210,.36)!important;
+  box-shadow:0 12px 28px rgba(15,18,45,.12),inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+body.dark .notif{
+  background:linear-gradient(135deg,#171d32,#18243a)!important;
+  border-color:rgba(128,98,239,.38)!important;
+}
+body.dark .students-tools{
+  background:linear-gradient(135deg,#121b31,#10233a)!important;
+  border-color:rgba(92,91,220,.36)!important;
+}
+body.dark .calendar-box,body.dark .notice-board{
+  background:linear-gradient(135deg,#121a2f,#111f37)!important;
+}
+body.dark .header-art img{filter:none!important}
+@media(max-width:640px){
+  .header-brand{text-shadow:0 2px 8px rgba(0,0,0,.48)}
+}
+</style><style id="adt-icon-details-v7">
+.adt-inline-icon{display:inline-flex;width:17px;height:17px;vertical-align:-3px;margin-right:.35rem}.adt-inline-icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.notif button{display:inline-flex!important;align-items:center;justify-content:center;gap:.28rem}.students-tools-kicker .adt-section-icon{color:#d58cff}.calendar-head h2 .adt-section-icon,.notice-board h2 .adt-section-icon{color:#d08bff}.calendar-head h2,.notice-board h2{font-weight:800!important}.nb-head-actions{z-index:2}.nb-search-btn{display:inline-flex!important;align-items:center;justify-content:center}.nb-search-btn:before{content:"";width:16px;height:16px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m21 20-4.2-4.2a7 7 0 1 0-1 1L20 21zM5 10a5 5 0 1 1 10 0A5 5 0 0 1 5 10'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m21 20-4.2-4.2a7 7 0 1 0-1 1L20 21zM5 10a5 5 0 1 1 10 0A5 5 0 0 1 5 10'/%3E%3C/svg%3E") center/contain no-repeat}.nb-search-btn{font-size:0}
 </style></head>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
@@ -1150,22 +1230,22 @@ header::before,header::after{content:none!important;display:none!important}
       </div>
       <div class="header-actions">
         <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English" title="Switch to English">
-          <span class="lang-cube" aria-hidden="true">
+          <span class="icon" aria-hidden="true">[object Object]</span><span class="lang-cube" aria-hidden="true">
             <span class="lang-face lang-en">En</span>
             <span class="lang-face lang-ban">Ban</span>
           </span>
         </button>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle appearance" title="Toggle appearance">
-          <span class="theme-icon" aria-hidden="true"></span>
+          <span class="icon" aria-hidden="true">[object Object]</span><span class="theme-icon" aria-hidden="true"></span>
         </button>
-        <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual">User Manual</button>
+        <button class="manual-btn" id="manualBtn" type="button" aria-label="Open User Manual"><span class="icon" aria-hidden="true">[object Object]</span>User Manual</button>
       </div>
     </header>
     <div class="content-shell">
     <main>
-      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN">Enable Notifications</button></div>
+      <div class="notif" id="notif"><p>Get new notice and exam alerts</p><button type="button" id="enN"><span class="adt-inline-icon" aria-hidden="true">[object Object]</span>Enable Notifications</button></div>
       <div class="install-box" id="installBox"><p>Install Admission Date Tracker to stay informed easily.</p><button type="button" id="installBtn">Download to get informed always.</button></div><div class="native-install-wrap" id="nativeInstallWrap"><install id="nativeInstall" manifest="/manifest.webmanifest"></install></div><div class="mobile-install-prompt" id="mobileInstallPrompt" hidden><img src="icon-192.png" width="48" height="48" alt=""><div class="mobile-install-copy"><strong>Install Admission Tracker</strong><span>admissiontracker.site</span></div><button type="button" id="mobileInstallBtn">Install</button><button type="button" class="mobile-install-close" id="mobileInstallClose" aria-label="Dismiss">×</button></div>
-      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker">Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading">My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
+      <section class="students-tools card" id="studentsTools" aria-labelledby="studentsToolsHeading"><div class="students-tools-head"><div class="students-tools-title"><div class="students-tools-kicker"><span class="adt-section-icon" aria-hidden="true">[object Object]</span>Students Tools</div><h2 id="studentsToolsHeading">Quick student tools</h2><p>Useful tools for checking results and estimating admission position.</p></div><select id="studentsToolSelect" class="students-tool-select" aria-label="Students Tools"><option value="">▦ &nbsp; Select a tool</option><option value="board-result">Get your Board Result</option><option value="pcm-rank">Ranking by PCM Marks (Apprx.)</option></select></div></section><div class="planning-grid" id="planningGrid"><section class="calendar-box" id="calendarBox" aria-labelledby="calendar-heading"><div class="calendar-head"><button class="calendar-toggle" id="calendarToggle" type="button" aria-expanded="false" aria-controls="calendarGrid"><span class="calendar-chevron" aria-hidden="true">▾</span><h2 id="calendar-heading"><span class="adt-section-icon" aria-hidden="true">[object Object]</span>My Admission Calendar</h2></button><div class="calendar-nav"><button type="button" id="calPrev" aria-label="Previous month">‹</button><div class="calendar-month" id="calMonth"></div><button type="button" id="calNext" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div><div class="calendar-events" id="calendarEvents"></div><div class="calendar-info">Red marks show exam dates for your marked universities.</div></section><aside class="notice-board" id="noticeBoard" aria-label="Live Notice Board"><div class="nb-head"><button class="nb-toggle" id="noticeToggle" type="button" aria-expanded="false" aria-controls="noticeList"><span class="nb-title-wrap"><span class="nb-chevron" aria-hidden="true">▾</span><h2><span class="adt-section-icon" aria-hidden="true">[object Object]</span>Notice Board</h2></span></button><div class="nb-head-actions"><button class="nb-search-btn" id="noticeSearchBtn" type="button" aria-label="Search notices" aria-expanded="false">⌕</button><span class="nb-live"><i aria-hidden="true"></i>LIVE</span></div></div><div class="nb-search-wrap" id="noticeSearchWrap"><input id="noticeSearch" type="search" placeholder="Search notices..." autocomplete="off"><button id="noticeSearchClear" type="button" aria-label="Clear notice search">×</button></div><div class="nb-list" id="noticeList"><div class="nb-empty">Loading latest notices…</div></div><div class="nb-foot">Always verify important details on the university's official website.</div></aside></div>
       <section class="marked-section" id="markedSection" aria-labelledby="marked-heading" hidden><div class="marked-head"><h2 id="marked-heading">My Universities</h2><span id="markedCount">0 marked</span></div><div class="marked-list" id="markedList"></div></section>
       <div class="sw">
         <div class="search-filter-row">
