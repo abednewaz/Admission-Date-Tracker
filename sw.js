@@ -1,11 +1,11 @@
-const CACHE = 'adt-v38';
+const CACHE = 'adt-v39';
 const ASSETS = [
   './Abed_Newaz_Profile.png',
-  './manifest.webmanifest?v=34',
-  './favicon.png?v=33',
-  './icon-192.png?v=33',
-  './icon-512.png?v=33',
-  './icon-light.svg?v=33',
+  './manifest.webmanifest?v=35',
+  './favicon.png?v=34',
+  './icon-192.png?v=34',
+  './icon-512.png?v=34',
+  './icon-light.svg?v=34',
 ];
 
 self.addEventListener('install', (e) => {
