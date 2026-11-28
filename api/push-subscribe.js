@@ -47,7 +47,7 @@ export default async function handler(req, res) {
     const markedUniversities = Array.isArray(subscription.markedUniversities)
       ? subscription.markedUniversities.filter((x) => typeof x === 'string').slice(0, 100)
       : [];
-    const storedSubscription = { ...subscription, markedUniversities };
+    const storedSubscription = { ...subscription, markedUniversities, isAppInstalled: subscription.isAppInstalled === true };
 
     const response = await fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/push_subscriptions', {
       method: 'POST',
