@@ -2823,24 +2823,31 @@ body:not(.dark) .adt-shimmer::after{
     });
   }).observe(document.body,{childList:true,subtree:true});
 })();
-</script><style id="adt-panel-border-shimmer-v5">
-/* Border shimmer only: the original border underneath remains untouched. */
-.adt-border-shimmer{position:relative!important}
+</script><style id="adt-panel-border-shimmer-v6">
+/* Visible colorful base border + moving shimmer. Content/background stays untouched. */
+.adt-border-shimmer{position:relative!important;border-color:transparent!important}
+.adt-border-shimmer::after,
 .adt-border-shimmer::before{
   content:""!important;
   position:absolute!important;
   inset:-1px!important;
-  border:1.5px solid transparent!important;
   border-radius:inherit!important;
   pointer-events:none!important;
+  padding:1px!important;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;
+  -webkit-mask-composite:xor!important;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;
+  mask-composite:exclude!important;
+}
+.adt-border-shimmer::after{
   z-index:20!important;
-  background:linear-gradient(110deg,transparent 0%,transparent 43%,rgba(255,255,255,.95) 49%,rgba(255,255,255,.38) 52%,transparent 58%,transparent 100%)!important;
+  background:linear-gradient(90deg,#6256e8 0%,#18b7e8 48%,#6256e8 100%)!important;
+}
+.adt-border-shimmer::before{
+  z-index:21!important;
+  background:linear-gradient(110deg,transparent 0%,transparent 43%,rgba(255,255,255,.98) 49%,rgba(255,255,255,.42) 52%,transparent 58%,transparent 100%)!important;
   background-size:240% 100%!important;
   background-position:220% 0!important;
-  -webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0) border-box!important;
-  -webkit-mask-composite:xor!important;
-  mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0) border-box!important;
-  mask-composite:exclude!important;
   animation:adtBorderShimmerOnly 3.8s ease-in-out infinite!important;
 }
 @keyframes adtBorderShimmerOnly{
