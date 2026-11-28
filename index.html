@@ -2704,39 +2704,7 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
  addEventListener('resize',function(){if(board.classList.contains('open'))sync()},{passive:true});
  if(window.ResizeObserver){new ResizeObserver(function(){if(board.classList.contains('open'))sync()}).observe(calendar)}
 })();
-</script><style id="adt-global-shimmer-v1">
-/* Global processing shimmer: used only while the UI is actively waiting/loading. */
-.adt-shimmer{
-  position:relative!important;
-  overflow:hidden!important;
-  isolation:isolate;
-}
-.adt-shimmer::after{
-  content:""!important;
-  position:absolute!important;
-  inset:0!important;
-  pointer-events:none!important;
-  z-index:20!important;
-  background:linear-gradient(105deg,transparent 0%,transparent 38%,rgba(255,255,255,.07) 45%,rgba(255,255,255,.32) 50%,rgba(255,255,255,.07) 55%,transparent 62%,transparent 100%)!important;
-  background-size:220% 100%!important;
-  animation:adtShimmer 1.35s linear infinite!important;
-  border-radius:inherit!important;
-}
-@keyframes adtShimmer{from{background-position:220% 0}to{background-position:-20% 0}}
-body:not(.dark) .adt-shimmer::after{
-  background:linear-gradient(105deg,transparent 0%,transparent 38%,rgba(255,255,255,.05) 45%,rgba(255,255,255,.75) 50%,rgba(255,255,255,.05) 55%,transparent 62%,transparent 100%)!important;
-  background-size:220% 100%!important;
-}
-.adt-shimmer-text{position:relative!important;overflow:hidden!important}
-.adt-shimmer-text::after{
-  content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;
-  background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%)!important;
-  background-size:220% 100%!important;animation:adtShimmer 1.35s linear infinite!important;
-}
-@media(prefers-reduced-motion:reduce){
-  .adt-shimmer::after,.adt-shimmer-text::after{animation:none!important}
-}
-</style><script id="adt-global-shimmer-v1">
+</script><script id="adt-global-shimmer-v1">
 (function(){
   var rx=/^(loading|checking|opening|enabling|fetching|updating|saving|submitting|syncing|calculating|processing|refreshing|preparing|please wait|connecting|verifying|searching|sending|installing|deleting|removing|publishing|deploying|generating|loading\.\.\.|checking\.\.\.)/i;
   var selectors='button,[role="status"],[aria-live="polite"],.review-status,.board-result-status,.share-copy-status,.pcm-msg-text';
@@ -2760,33 +2728,7 @@ body:not(.dark) .adt-shimmer::after{
     });
   }).observe(document.body,{subtree:true,childList:true,characterData:true});
 })();
-</script><style id="adt-panel-border-shimmer-v2">
-/* Border shimmer is an additive highlight only: existing border colors remain untouched. */
-.panel,.section-panel,.dashboard-panel,.tools-panel,.calendar-panel,.notice-panel,.stats-card,.view-toggle,.filter-bar,.search-bar,.calendar-box,.notice-board,.stats,.search-filter-row,.search-wrap,.filter-main,.marked-section,.board-result-panel,.pcm-card,.tour-card,.experience-box,.reviews-section,.app,.content-shell,.install-box,.native-install-wrap,.mobile-install-prompt,.students-tools,.card,.planning-grid,.marked-card,.filter-menu,.filter-section,.filter-submenu,.view-switch,.stat,.tabs,.board-result-security,.board-result-output,.pcm-wrap,.pcm-row,.pcm-lab,.pcm-mini,.pcm-table,.reviews-list,.review-card,.manual-modal,.students-modal,.students-modal-overlay,.nb-detail-modal,.nb-detail-overlay,.req-modal,.req-overlay,.university-popup-dialog,.share-dialog,.share-target,.popup-list-card,.university-grid,.uni-grid-card,.uni,.uni-head,.req-section,.req-group-select,.req-note,.req-warning,.req-ineligible,.req-eligible,.site-footer,.footer-main,.footer-intro,.footer-quicklinks,.footer-legal,.br-result-sheet,.br-info,.br-subject-table{position:relative}
-
-.panel::before,.section-panel::before,.dashboard-panel::before,.tools-panel::before,.calendar-panel::before,.notice-panel::before,.stats-card::before,.view-toggle::before,.filter-bar::before,.search-bar::before,.calendar-box::before,.notice-board::before,.stats::before,.search-filter-row::before,.search-wrap::before,.filter-main::before,.marked-section::before,.board-result-panel::before,.pcm-card::before,.tour-card::before,.experience-box::before,.reviews-section::before,.app::before,.content-shell::before,.install-box::before,.native-install-wrap::before,.mobile-install-prompt::before,.students-tools::before,.card::before,.planning-grid::before,.marked-card::before,.filter-menu::before,.filter-section::before,.filter-submenu::before,.view-switch::before,.stat::before,.tabs::before,.board-result-security::before,.board-result-output::before,.pcm-wrap::before,.pcm-row::before,.pcm-lab::before,.pcm-mini::before,.pcm-table::before,.reviews-list::before,.review-card::before,.manual-modal::before,.students-modal::before,.students-modal-overlay::before,.nb-detail-modal::before,.nb-detail-overlay::before,.req-modal::before,.req-overlay::before,.university-popup-dialog::before,.share-dialog::before,.share-target::before,.popup-list-card::before,.university-grid::before,.uni-grid-card::before,.uni::before,.uni-head::before,.req-section::before,.req-group-select::before,.req-note::before,.req-warning::before,.req-ineligible::before,.req-eligible::before,.site-footer::before,.footer-main::before,.footer-intro::before,.footer-quicklinks::before,.footer-legal::before,.br-result-sheet::before,.br-info::before,.br-subject-table::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius:inherit;
-  padding:1px;
-  pointer-events:none;
-  z-index:20;
-  background:linear-gradient(105deg,transparent 0%,transparent 43%,rgba(255,255,255,0) 46%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 54%,transparent 57%,transparent 100%);
-  background-size:220% 100%;
-  animation:adtPanelBorderShimmer 3.2s linear infinite;
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;
-  mask-composite:exclude;
-  opacity:.7;
-  mix-blend-mode:screen;
-}
-@keyframes adtPanelBorderShimmer{from{background-position:220% 0}to{background-position:-20% 0}}
-@media(prefers-reduced-motion:reduce){
-  .panel::before,.section-panel::before,.dashboard-panel::before,.tools-panel::before,.calendar-panel::before,.notice-panel::before,.stats-card::before,.view-toggle::before,.filter-bar::before,.search-bar::before,.calendar-box::before,.notice-board::before,.stats::before,.search-filter-row::before,.search-wrap::before,.filter-main::before,.marked-section::before,.board-result-panel::before,.pcm-card::before,.tour-card::before,.experience-box::before,.reviews-section::before{animation:none}
-}
-</style>
-<style id="adt-global-fadeup-v1">
+</script><style id="adt-global-fadeup-v1">
 /* Shared entrance animation for dynamically rendered website content. */
 .adt-fade-up{
   animation:adtFadeUp .48s cubic-bezier(.22,1,.36,1) both;
@@ -2823,40 +2765,7 @@ body:not(.dark) .adt-shimmer::after{
     });
   }).observe(document.body,{childList:true,subtree:true});
 })();
-</script><style id="adt-panel-border-shimmer-v6">
-/* Visible colorful base border + moving shimmer. Content/background stays untouched. */
-.adt-border-shimmer{position:relative!important;border-color:transparent!important}
-.adt-border-shimmer::after,
-.adt-border-shimmer::before{
-  content:""!important;
-  position:absolute!important;
-  inset:-1px!important;
-  border-radius:inherit!important;
-  pointer-events:none!important;
-  padding:1px!important;
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;
-  -webkit-mask-composite:xor!important;
-  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;
-  mask-composite:exclude!important;
-}
-.adt-border-shimmer::after{
-  z-index:20!important;
-  background:linear-gradient(90deg,#6256e8 0%,#18b7e8 48%,#6256e8 100%)!important;
-}
-.adt-border-shimmer::before{
-  z-index:21!important;
-  background:linear-gradient(110deg,transparent 0%,transparent 43%,rgba(255,255,255,.98) 49%,rgba(255,255,255,.42) 52%,transparent 58%,transparent 100%)!important;
-  background-size:240% 100%!important;
-  background-position:220% 0!important;
-  animation:adtBorderShimmerOnly 3.8s ease-in-out infinite!important;
-}
-@keyframes adtBorderShimmerOnly{
-  0%,12%{background-position:220% 0}
-  55%,100%{background-position:-20% 0}
-}
-@media(prefers-reduced-motion:reduce){.adt-border-shimmer::before{animation:none!important}}
-</style>
-<style id="adt-desktop-width-fix-v1">
+</script><style id="adt-desktop-width-fix-v1">
 /* Use the full desktop canvas; the old layout reserved an unused 290px side column. */
 @media(min-width:1201px){
   .content-shell{
@@ -2871,34 +2780,5 @@ body:not(.dark) .adt-shimmer::after{
     max-width:calc(100% - 2rem)!important;
   }
 }
-</style><script id="adt-border-shimmer-apply-v5">
-(function(){
-  /* Hard allow-list: shimmer may exist ONLY on these four elements. */
-  var selectors=['.header-brand','.students-tools','.search','.tabs'];
-  function isAllowed(el){return el&&el.matches&&selectors.some(function(sel){return el.matches(sel)})}
-  function clean(root){
-    if(!root||root.nodeType!==1)return;
-    var nodes=[root].concat(root.querySelectorAll?Array.from(root.querySelectorAll('.adt-border-shimmer')):[]);
-    nodes.forEach(function(el){
-      if(isAllowed(el)) el.classList.add('adt-border-shimmer');
-      else el.classList.remove('adt-border-shimmer');
-    });
-  }
-  function run(){
-    document.querySelectorAll('.adt-border-shimmer').forEach(function(el){
-      if(!isAllowed(el))el.classList.remove('adt-border-shimmer');
-    });
-    selectors.forEach(function(sel){
-      document.querySelectorAll(sel).forEach(function(el){el.classList.add('adt-border-shimmer')});
-    });
-  }
-  run();
-  new MutationObserver(function(ms){
-    ms.forEach(function(m){
-      m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)clean(n)});
-    });
-    run();
-  }).observe(document.body,{childList:true,subtree:true});
-})();
-</script></body>
+</style></body>
 </html>
