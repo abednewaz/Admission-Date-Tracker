@@ -1371,8 +1371,31 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   .language-toggle,.theme-toggle{width:29px!important;min-width:29px!important}
   .header-actions .manual-btn{width:64px!important;min-width:64px!important}
 }
+</style><style id="app-update-notice-v1">
+.app-update-notice{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;background:rgba(7,10,24,.72);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.app-update-notice[hidden]{display:none!important}
+.app-update-card{position:relative;width:min(560px,100%);display:flex;gap:1rem;padding:1.15rem 1.2rem 1.1rem;border:2px solid transparent;border-radius:18px;background:linear-gradient(#121a31,#121a31) padding-box,linear-gradient(135deg,#8b5cf6,#22d3ee,#f59e0b,#8b5cf6) border-box;box-shadow:0 22px 70px rgba(0,0,0,.48)}
+.app-update-icon{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#6d5dfc,#21d4fd);font-size:1.45rem;box-shadow:0 8px 24px rgba(88,76,220,.35)}
+.app-update-copy{min-width:0;color:#edf2ff}
+.app-update-copy strong{display:block;font-size:1.02rem;color:#ffe39a;margin-bottom:.35rem}
+.app-update-copy p{font-size:.82rem;line-height:1.5;color:#cbd5ee;margin:.2rem 0}
+.app-update-copy .app-update-signoff{margin-top:.55rem;color:#e8eaff}
+#appUpdateNoticeClose{position:absolute;right:.55rem;top:.45rem;border:0;background:rgba(255,255,255,.08);color:#fff;width:30px;height:30px;border-radius:50%;font-size:1.25rem;cursor:pointer}
+#appUpdateNoticeClose:hover{background:rgba(255,255,255,.16)}
+@media(max-width:520px){.app-update-card{padding:.95rem;gap:.7rem}.app-update-icon{width:42px;height:42px;flex-basis:42px;font-size:1.2rem}.app-update-copy strong{font-size:.94rem}.app-update-copy p{font-size:.76rem}}
 </style></head>
-<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body><div class="app-update-notice" id="appUpdateNotice" hidden>
+  <div class="app-update-card" role="status" aria-live="polite">
+    <div class="app-update-icon">📢</div>
+    <div class="app-update-copy">
+      <strong>Important App Update</strong>
+      <p>Both the website and app were updated. Please uninstall and re-install the app to get the benefits of the features.</p>
+      <p>We are very sorry for the inconvenience. And thanks for your co-operation.</p>
+      <p class="app-update-signoff">Regards,<br>Abed Newaz<br>Founder of Admission Tracker</p>
+    </div>
+    <button type="button" id="appUpdateNoticeClose" aria-label="Close update notice">×</button>
+  </div>
+</div>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
   <div class="manual-overlay" id="manualOverlay" role="dialog" aria-modal="true" aria-labelledby="manualTitle">
@@ -2191,8 +2214,8 @@ function closeRequirements(){reqOverlay.classList.remove('show');document.body.s
         try{localStorage.setItem(seenKey,JSON.stringify(seen))}catch(e){}
       }catch(e){console.error('Latest notice notification failed',e)}
     }
-    async function syncPushPreferences(){try{if(!('Notification' in window)||Notification.permission!=='granted'||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var reg=await withTimeout(navigator.serviceWorker.ready,8000,'Service worker startup timed out');var sub=await withTimeout(reg.pushManager.getSubscription(),5000,'Push subscription lookup timed out');if(!sub)return false;var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await withTimeout(fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}),8000,'Push preference sync timed out');return res.ok}catch(e){console.error('Push preference sync failed',e);return false}}
-    async function enablePushNotifications(){if(!('Notification' in window)||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var permission=Notification.permission==='granted'?'granted':await withTimeout(Notification.requestPermission(),20000,'Notification permission request timed out');if(permission!=='granted')return false;try{var reg=await withTimeout(navigator.serviceWorker.ready,8000,'Service worker startup timed out');var sub=await withTimeout(reg.pushManager.getSubscription(),5000,'Push subscription lookup timed out');if(!sub)sub=await withTimeout(reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)}),15000,'Push subscription timed out');var payload=sub.toJSON();payload.markedUniversities=getMarked();var res=await withTimeout(fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}),8000,'Subscription save timed out');if(!res.ok)throw new Error('Subscription save failed');hideNotif();return true}catch(e){console.error('Push subscription failed',e);return false}}
+    async function syncPushPreferences(){try{if(!('Notification' in window)||Notification.permission!=='granted'||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var reg=await withTimeout(navigator.serviceWorker.ready,8000,'Service worker startup timed out');var sub=await withTimeout(reg.pushManager.getSubscription(),5000,'Push subscription lookup timed out');if(!sub)return false;var payload=sub.toJSON();payload.markedUniversities=getMarked();payload.isAppInstalled=isStandalone();var res=await withTimeout(fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}),8000,'Push preference sync timed out');return res.ok}catch(e){console.error('Push preference sync failed',e);return false}}
+    async function enablePushNotifications(){if(!('Notification' in window)||!('serviceWorker' in navigator)||!('PushManager' in window))return false;var permission=Notification.permission==='granted'?'granted':await withTimeout(Notification.requestPermission(),20000,'Notification permission request timed out');if(permission!=='granted')return false;try{var reg=await withTimeout(navigator.serviceWorker.ready,8000,'Service worker startup timed out');var sub=await withTimeout(reg.pushManager.getSubscription(),5000,'Push subscription lookup timed out');if(!sub)sub=await withTimeout(reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)}),15000,'Push subscription timed out');var payload=sub.toJSON();payload.markedUniversities=getMarked();payload.isAppInstalled=isStandalone();var res=await withTimeout(fetch('/api/push-subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}),8000,'Subscription save timed out');if(!res.ok)throw new Error('Subscription save failed');hideNotif();return true}catch(e){console.error('Push subscription failed',e);return false}}
     function checkExamNotifications(){if(!('Notification' in window)||Notification.permission!=='granted')return;var now=Date.now(),marked=getMarked(),sent={};try{sent=JSON.parse(localStorage.getItem('adt_sent_notifications_v1')||'{}')}catch(e){};exams.forEach(function(e){if(marked.indexOf(e.universityName)===-1)return;var d=examMoment(e);if(!d)return;var diff=d.getTime()-now,key=String(e.id);if(diff>0&&diff<=604800000&&!sent[key+'-7d']){sent[key+'-7d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 1 week: '+e.universityName+' — '+e.unit,key+'-7d')}if(diff>0&&diff<=172800000&&!sent[key+'-2d']){sent[key+'-2d']=Date.now();showExamNotification('Admission Date Tracker','Exam in 2 days: '+e.universityName+' — '+e.unit,key+'-2d')}if(diff>0&&diff<=86400000&&!sent[key+'-24h']){sent[key+'-24h']=Date.now();showExamNotification('Admission Date Tracker','Exam tomorrow: '+e.universityName+' — '+e.unit,key+'-24h')}if(diff>0&&diff<=3600000&&!sent[key+'-1h']){sent[key+'-1h']=Date.now();showExamNotification('Admission Date Tracker','Exam in about 1 hour: '+e.universityName+' — '+e.unit,key+'-1h')}});try{localStorage.setItem('adt_sent_notifications_v1',JSON.stringify(sent))}catch(e){}}
     if(!('Notification' in window)){hideNotif()}else if(Notification.permission==='granted'){(async function(){var keyVersion='vapid-v2',en=document.getElementById('enN');try{if(localStorage.getItem('adt_vapid_key_version')!==keyVersion){var reg=await navigator.serviceWorker.ready;var oldSub=await reg.pushManager.getSubscription();if(oldSub)await oldSub.unsubscribe();var ok=await enablePushNotifications();if(ok)localStorage.setItem('adt_vapid_key_version',keyVersion)}else{var ok=await syncPushPreferences();if(!ok)ok=await enablePushNotifications()}if(ok){hideNotif();await sendFirstVisitNotifications();if(en){en.textContent='Notifications Enabled';en.disabled=true}}else if(en){en.textContent=Notification.permission==='denied'?'Notifications Blocked':'Enable Notifications';en.disabled=false}}catch(e){console.error('Push key migration failed',e);if(en){en.textContent='Enable Notifications';en.disabled=false}}checkExamNotifications()})();}else{document.getElementById('enN').addEventListener('click',async function(){var en=this;en.disabled=true;en.textContent='Enabling…';var ok=await enablePushNotifications();if(ok){try{localStorage.setItem('adt_vapid_key_version','vapid-v2');localStorage.setItem('adt_returning_user_v1','1')}catch(e){}en.textContent='Notifications Enabled';en.disabled=true;checkExamNotifications()}else{en.textContent=Notification.permission==='denied'?'Notifications Blocked':'Enable Notifications';en.disabled=false;if(Notification.permission==='denied')hideNotif()}})}
     setInterval(checkExamNotifications,60000)
@@ -2536,7 +2559,21 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     }catch(err){status.textContent=err.message||'Could not load the result right now.';if(/expired|session/i.test(status.textContent))brSession=null}
     finally{if(submitBtn){submitBtn.disabled=false;submitBtn.textContent='Check Result'}}
   },true);
-  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()});
+  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'<script id="app-update-notice-v1-js">
+(function(){
+  var KEY='adt_app_update_notice_v1_20261128';
+  function standalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
+  function init(){
+    if(!standalone())return;
+    var box=document.getElementById('appUpdateNotice'),close=document.getElementById('appUpdateNoticeClose');
+    if(!box||!close)return;
+    try{if(localStorage.getItem(KEY)==='1')return}catch(e){}
+    box.hidden=false;
+    close.onclick=function(){box.hidden=true;try{localStorage.setItem(KEY,'1')}catch(e){}};
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script></body></html>');w.document.close();w.focus();w.print()});
 })();
 </script><style id="adt-notice-scroll-fix-v2">
 @media(max-width:900px){
