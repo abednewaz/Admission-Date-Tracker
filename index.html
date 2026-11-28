@@ -2536,65 +2536,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     }catch(err){status.textContent=err.message||'Could not load the result right now.';if(/expired|session/i.test(status.textContent))brSession=null}
     finally{if(submitBtn){submitBtn.disabled=false;submitBtn.textContent='Check Result'}}
   },true);
-  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'<style id="adt-responsive-layout-v2">
-/* Final responsive override — must be last so earlier visual patches cannot reintroduce fixed sizing. */
-html,body{width:100%;max-width:100%;overflow-x:clip}
-.app,header,footer{width:100%;max-width:100%;min-width:0}
-.content-shell{
-  width:calc(100% - 2rem)!important;
-  max-width:1440px!important;
-  grid-template-columns:minmax(0,1fr) minmax(270px,320px)!important;
-  gap:clamp(1rem,2vw,2rem)!important;
-}
-.header-actions{
-  position:absolute!important;
-  width:auto!important;
-  max-width:calc(100% - 1.5rem)!important;
-  right:1rem!important;
-  left:auto!important;
-  top:1rem!important;
-  transform:none!important;
-  margin:0!important;
-  flex-wrap:nowrap!important;
-}
-.header-brand{min-width:0!important;max-width:calc(100% - 260px)!important}
-.header-copy{min-width:0!important}
-.header-copy h1,.header-copy .sub,.header-copy .tag{overflow-wrap:anywhere}
-.university-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))!important}
-.students-tools-head{min-width:0!important}
-.students-tool-select{max-width:100%!important}
-@media(max-width:1200px){
-  .content-shell{grid-template-columns:minmax(0,1fr)!important;max-width:960px!important}
-}
-@media(max-width:760px){
-  .content-shell{width:calc(100% - 1.5rem)!important}
-  header{min-height:270px!important}
-  .header-actions{
-    position:absolute!important;
-    width:auto!important;
-    right:.68rem!important;
-    left:auto!important;
-    top:.68rem!important;
-    transform:none!important;
-    flex-wrap:nowrap!important;
-  }
-  .header-brand{width:100%!important;max-width:100%!important}
-}
-@media(max-width:390px){
-  .content-shell{width:calc(100% - 1rem)!important}
-  header{min-height:258px!important}
-  .header-actions{
-    right:.45rem!important;
-    width:auto!important;
-    max-width:calc(100% - .9rem)!important;
-  }
-}
-@media(max-width:360px){
-  .header-actions{gap:.15rem!important}
-  .language-toggle,.theme-toggle{width:29px!important;min-width:29px!important}
-  .header-actions .manual-btn{width:64px!important;min-width:64px!important}
-}
-</style></body></html>');w.document.close();w.focus();w.print()});
+  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()});
 })();
 </script>
 <style id="adt-final-visual-fix-v31">
@@ -2619,5 +2561,19 @@ body.dark header{
   position:relative!important;
   z-index:2!important;
 }
+</style><style id="adt-responsive-layout-v2">
+html,body{width:100%;max-width:100%;overflow-x:clip}
+.app,header,footer{width:100%;max-width:100%;min-width:0}
+.content-shell{width:calc(100% - 2rem)!important;max-width:1440px!important;grid-template-columns:minmax(0,1fr) minmax(270px,320px)!important;gap:clamp(1rem,2vw,2rem)!important}
+.header-actions{position:absolute!important;width:auto!important;max-width:calc(100% - 1.5rem)!important;right:1rem!important;left:auto!important;top:1rem!important;transform:none!important;margin:0!important;flex-wrap:nowrap!important}
+.header-brand{min-width:0!important;max-width:calc(100% - 260px)!important}
+.header-copy{min-width:0!important}
+.header-copy h1,.header-copy .sub,.header-copy .tag{overflow-wrap:anywhere}
+.university-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))!important}
+.students-tools-head{min-width:0!important}.students-tool-select{max-width:100%!important}
+@media(max-width:1200px){.content-shell{grid-template-columns:minmax(0,1fr)!important;max-width:960px!important}}
+@media(max-width:760px){.content-shell{width:calc(100% - 1.5rem)!important}header{min-height:270px!important}.header-actions{position:absolute!important;width:auto!important;right:.68rem!important;left:auto!important;top:.68rem!important;transform:none!important;flex-wrap:nowrap!important}.header-brand{width:100%!important;max-width:100%!important}}
+@media(max-width:390px){.content-shell{width:calc(100% - 1rem)!important}header{min-height:258px!important}.header-actions{right:.45rem!important;width:auto!important;max-width:calc(100% - .9rem)!important}}
+@media(max-width:360px){.header-actions{gap:.15rem!important}.language-toggle,.theme-toggle{width:29px!important;min-width:29px!important}.header-actions .manual-btn{width:64px!important;min-width:64px!important}}
 </style></body>
 </html>
