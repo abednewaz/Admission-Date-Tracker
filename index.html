@@ -2871,19 +2871,33 @@ body:not(.dark) .adt-shimmer::after{
     max-width:calc(100% - 2rem)!important;
   }
 }
-</style><script id="adt-border-shimmer-apply-v4">
+</style><script id="adt-border-shimmer-apply-v5">
 (function(){
-  /* Shimmer is intentionally limited to the four red-marked areas in the reference:
-     header brand panel, Student Tools, search field, and Upcoming/All/Finished tabs. */
-  var selectors='.header-brand,.students-tools,.search,.tabs';
-  function apply(root){
+  /* Hard allow-list: shimmer may exist ONLY on these four elements. */
+  var selectors=['.header-brand','.students-tools','.search','.tabs'];
+  function isAllowed(el){return el&&el.matches&&selectors.some(function(sel){return el.matches(sel)})}
+  function clean(root){
     if(!root||root.nodeType!==1)return;
-    if(root.matches&&root.matches(selectors))root.classList.add('adt-border-shimmer');
-    if(root.querySelectorAll)root.querySelectorAll(selectors).forEach(function(el){el.classList.add('adt-border-shimmer')});
+    var nodes=[root].concat(root.querySelectorAll?Array.from(root.querySelectorAll('.adt-border-shimmer')):[]);
+    nodes.forEach(function(el){
+      if(isAllowed(el)) el.classList.add('adt-border-shimmer');
+      else el.classList.remove('adt-border-shimmer');
+    });
   }
-  if(document.body)apply(document.body);
+  function run(){
+    document.querySelectorAll('.adt-border-shimmer').forEach(function(el){
+      if(!isAllowed(el))el.classList.remove('adt-border-shimmer');
+    });
+    selectors.forEach(function(sel){
+      document.querySelectorAll(sel).forEach(function(el){el.classList.add('adt-border-shimmer')});
+    });
+  }
+  run();
   new MutationObserver(function(ms){
-    ms.forEach(function(m){m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)apply(n)})});
+    ms.forEach(function(m){
+      m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)clean(n)});
+    });
+    run();
   }).observe(document.body,{childList:true,subtree:true});
 })();
 </script></body>
