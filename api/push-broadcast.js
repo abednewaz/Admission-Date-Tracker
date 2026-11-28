@@ -14,7 +14,8 @@ const GITHUB_OIDC_AUDIENCE = 'https://admissiontracker.site';
 const GITHUB_REPOSITORY = 'abednewaz/Admission-Date-Tracker';
 const GITHUB_WORKFLOW_PATHS = new Set([
   '.github/workflows/notice-check.yml',
-  '.github/workflows/admission-date-check.yml'
+  '.github/workflows/admission-date-check.yml',
+  '.github/workflows/app-update-notice.yml'
 ]);
 
 const josePromise = import('jose');
@@ -68,6 +69,7 @@ export default async function handler(req, res) {
   try {
     const notice = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     if (!notice?.title) return json(res, 400, { error: 'Notice title is required' });
+    const appOnly = notice.appOnly === true;
 
     webpush.setVapidDetails(
       process.env.VAPID_SUBJECT || 'mailto:the.abednewaz@gmail.com',
@@ -88,6 +90,7 @@ export default async function handler(req, res) {
     for (const row of subscriptions) {
       try {
         const stored = row.subscription || {};
+        if (appOnly && stored.isAppInstalled !== true) continue;
         const pushSubscription = { endpoint: stored.endpoint || row.endpoint, keys: stored.keys };
         if (!pushSubscription.endpoint || !pushSubscription.keys?.p256dh || !pushSubscription.keys?.auth) continue;
 
