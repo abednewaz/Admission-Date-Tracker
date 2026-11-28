@@ -2823,43 +2823,31 @@ body:not(.dark) .adt-shimmer::after{
     });
   }).observe(document.body,{childList:true,subtree:true});
 })();
-</script><style id="adt-panel-border-shimmer-v3">
-/* Preserve every original border. Shimmer is an extra moving highlight painted only on the edges. */
-.adt-border-shimmer{
-  position:relative!important;
-}
-.adt-border-shimmer::before,
-.adt-border-shimmer::after{
+</script><style id="adt-panel-border-shimmer-v5">
+/* Border shimmer only: the original border underneath remains untouched. */
+.adt-border-shimmer{position:relative!important}
+.adt-border-shimmer::before{
   content:""!important;
   position:absolute!important;
-  inset:0!important;
-  pointer-events:none!important;
+  inset:-1px!important;
+  border:1.5px solid transparent!important;
   border-radius:inherit!important;
-  z-index:5!important;
+  pointer-events:none!important;
+  z-index:20!important;
+  background:linear-gradient(110deg,transparent 0%,transparent 43%,rgba(255,255,255,.95) 49%,rgba(255,255,255,.38) 52%,transparent 58%,transparent 100%)!important;
+  background-size:240% 100%!important;
+  background-position:220% 0!important;
+  -webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0) border-box!important;
+  -webkit-mask-composite:xor!important;
+  mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0) border-box!important;
+  mask-composite:exclude!important;
+  animation:adtBorderShimmerOnly 3.8s ease-in-out infinite!important;
 }
-.adt-border-shimmer::before{
-  background:
-    linear-gradient(90deg,transparent 0%,transparent 40%,rgba(255,255,255,.75) 50%,transparent 60%,transparent 100%) top/220% 1.5px no-repeat,
-    linear-gradient(90deg,transparent 0%,transparent 40%,rgba(255,255,255,.75) 50%,transparent 60%,transparent 100%) bottom/220% 1.5px no-repeat!important;
-  animation:adtBorderH 3.4s linear infinite!important;
+@keyframes adtBorderShimmerOnly{
+  0%,12%{background-position:220% 0}
+  55%,100%{background-position:-20% 0}
 }
-.adt-border-shimmer::after{
-  background:
-    linear-gradient(0deg,transparent 0%,transparent 40%,rgba(255,255,255,.75) 50%,transparent 60%,transparent 100%) left/1.5px 220% no-repeat,
-    linear-gradient(0deg,transparent 0%,transparent 40%,rgba(255,255,255,.75) 50%,transparent 60%,transparent 100%) right/1.5px 220% no-repeat!important;
-  animation:adtBorderV 3.4s linear infinite!important;
-}
-@keyframes adtBorderH{
-  from{background-position:-20% 0,220% 100%}
-  to{background-position:220% 0,-20% 100%}
-}
-@keyframes adtBorderV{
-  from{background-position:0 220%,100% -20%}
-  to{background-position:0 -20%,100% 220%}
-}
-@media(prefers-reduced-motion:reduce){
-  .adt-border-shimmer::before,.adt-border-shimmer::after{animation:none!important}
-}
+@media(prefers-reduced-motion:reduce){.adt-border-shimmer::before{animation:none!important}}
 </style>
 <style id="adt-desktop-width-fix-v1">
 /* Use the full desktop canvas; the old layout reserved an unused 290px side column. */
@@ -2876,31 +2864,23 @@ body:not(.dark) .adt-shimmer::after{
     max-width:calc(100% - 2rem)!important;
   }
 }
-</style><script id="adt-border-shimmer-apply-v1">
+</style><script id="adt-border-shimmer-apply-v3">
 (function(){
-  var selectors=[
-    '.notif','.install-box','.mobile-install-prompt','.students-tools','.calendar-box','.notice-board',
-    '.marked-section','.marked-card','.search-filter-row','.search-wrap','.filter-menu','.filter-section',
-    '.filter-main','.filter-submenu','.view-switch','.stats','.stat','.tabs','.card','.uni-grid-card',
-    '.grid-see-more','.grid-empty','.board-result-panel','.board-result-security','.board-result-output',
-    '.pcm-card','.pcm-mini','.pcm-table','.experience-box','.reviews-section','.reviews-list','.review-card',
-    '.manual-modal','.students-modal','.nb-detail-modal','.req-modal','.tour-card','.university-popup-dialog',
-    '.share-dialog','.share-target','.popup-list-card','.uni','.uni-head','.req-section','.req-group-select',
-    '.req-note','.req-warning','.req-ineligible','.req-eligible','.site-footer','.footer-main','.footer-intro',
-    '.footer-quicklinks','.footer-legal','.br-result-sheet','.br-info','.br-subject-table'
-  ].join(',');
   function apply(root){
     if(!root||root.nodeType!==1)return;
-    if(root.matches&&root.matches(selectors)&&!root.matches('.rating-stars,.rating-star'))root.classList.add('adt-border-shimmer');
-    if(root.querySelectorAll)root.querySelectorAll(selectors).forEach(function(el){
-      if(!el.matches('.rating-stars,.rating-star'))el.classList.add('adt-border-shimmer');
+    var nodes=[root].concat(root.querySelectorAll?Array.from(root.querySelectorAll('*')):[]);
+    nodes.forEach(function(el){
+      if(!el.matches||el.matches('input,select,textarea,button,svg,img,.rating-stars,.rating-star'))return;
+      var cs=getComputedStyle(el);
+      var hasBorder=['Top','Right','Bottom','Left'].some(function(s){
+        return parseFloat(cs['border'+s+'Width'])>0 && cs['border'+s+'Style']!=='none';
+      });
+      if(hasBorder)el.classList.add('adt-border-shimmer');
     });
   }
-  apply(document.body);
+  if(document.body)apply(document.body);
   new MutationObserver(function(ms){
-    ms.forEach(function(m){
-      m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)apply(n)});
-    });
+    ms.forEach(function(m){m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)apply(n)})});
   }).observe(document.body,{childList:true,subtree:true});
 })();
 </script></body>
