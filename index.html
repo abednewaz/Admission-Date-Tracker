@@ -2760,5 +2760,68 @@ body:not(.dark) .adt-shimmer::after{
     });
   }).observe(document.body,{subtree:true,childList:true,characterData:true});
 })();
+</script><style id="adt-panel-border-shimmer-v1">
+/* Subtle moving highlight along dashboard panel borders. */
+.panel,.section-panel,.dashboard-panel,.tools-panel,.calendar-panel,.notice-panel,.stats-card,.view-toggle,.filter-bar,.search-bar{
+  position:relative;
+}
+.panel::before,.section-panel::before,.dashboard-panel::before,.tools-panel::before,.calendar-panel::before,.notice-panel::before,.stats-card::before,.view-toggle::before,.filter-bar::before,.search-bar::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  padding:1px;
+  pointer-events:none;
+  background:linear-gradient(110deg,transparent 0%,transparent 40%,rgba(255,255,255,.05) 46%,rgba(255,255,255,.7) 50%,rgba(255,255,255,.05) 54%,transparent 60%,transparent 100%);
+  background-size:220% 100%;
+  animation:adtPanelBorderShimmer 3.2s linear infinite;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:.75;
+  z-index:2;
+}
+@keyframes adtPanelBorderShimmer{from{background-position:220% 0}to{background-position:-20% 0}}
+@media(prefers-reduced-motion:reduce){
+ .panel::before,.section-panel::before,.dashboard-panel::before,.tools-panel::before,.calendar-panel::before,.notice-panel::before,.stats-card::before,.view-toggle::before,.filter-bar::before,.search-bar::before{animation:none}
+}
+</style>
+<style id="adt-global-fadeup-v1">
+/* Shared entrance animation for dynamically rendered website content. */
+.adt-fade-up{
+  animation:adtFadeUp .48s cubic-bezier(.22,1,.36,1) both;
+  will-change:transform,opacity;
+}
+@keyframes adtFadeUp{
+  from{opacity:0;transform:translate3d(0,18px,0)}
+  to{opacity:1;transform:translate3d(0,0,0)}
+}
+@media(prefers-reduced-motion:reduce){
+ .adt-fade-up{animation:none;opacity:1;transform:none}
+}
+</style><script id="adt-global-fadeup-v1">
+(function(){
+  var selectors=[
+    '.uni-card','.university-card','.uni-list-item','.university-item',
+    '.result-card','.notice-item','.nb-item','.stats-card',
+    '.tool-card','.calendar-item','.filter-option','.modal-content'
+  ].join(',');
+  var seen=new WeakSet();
+  function apply(root){
+    if(!root||root.nodeType!==1)return;
+    if(root.matches&&root.matches(selectors)&&!seen.has(root)){
+      seen.add(root);root.classList.add('adt-fade-up');
+    }
+    if(root.querySelectorAll)root.querySelectorAll(selectors).forEach(function(el){
+      if(!seen.has(el)){seen.add(el);el.classList.add('adt-fade-up')}
+    });
+  }
+  apply(document.body);
+  new MutationObserver(function(ms){
+    ms.forEach(function(m){
+      m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)apply(n)});
+    });
+  }).observe(document.body,{childList:true,subtree:true});
+})();
 </script></body>
 </html>
