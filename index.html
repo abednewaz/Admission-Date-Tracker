@@ -2561,7 +2561,72 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 @media(min-width:481px) and (max-width:900px){
   .notice-board.open .nb-list{max-height:none!important}
 }
-</style></body></html>');w.document.close();w.focus();w.print()});
+</style><script id="adt-notice-board-height-v1">
+(function(){
+  var board=document.getElementById('noticeBoard');
+  var toggle=document.getElementById('noticeToggle');
+  var calendar=document.getElementById('calendarBox');
+  if(!board||!toggle||!calendar)return;
+
+  function getCalendarOpenHeight(){
+    var wasOpen=calendar.classList.contains('open');
+    if(!wasOpen)calendar.classList.add('open');
+    var height=Math.ceil(calendar.getBoundingClientRect().height);
+    if(!wasOpen)calendar.classList.remove('open');
+    return height;
+  }
+
+  function syncNoticeHeight(){
+    if(!board.classList.contains('open')){
+      board.style.removeProperty('--adt-notice-height');
+      return;
+    }
+    var h=getCalendarOpenHeight();
+    if(h>0)board.style.setProperty('--adt-notice-height',h+'px');
+  }
+
+  function syncVisibleNoticeWindow(){
+    if(!board.classList.contains('open'))return;
+    var width=window.innerWidth||document.documentElement.clientWidth;
+    var viewport=window.innerHeight||document.documentElement.clientHeight;
+    var count=width<=360?2:(width<=480?3:4);
+    var list=board.querySelector('.nb-list');
+    if(!list)return;
+    /* Target 2/3/4 notice rows on small screens while keeping the whole board
+       the same height as the calendar. The remaining notices stay scrollable. */
+    var row=Math.max(64,Math.min(92,Math.round(viewport/11)));
+    if(width<=900){
+      var target=count*row;
+      var available=Math.max(120,getCalendarOpenHeight()-95);
+      list.style.maxHeight=Math.min(target,available)+'px';
+    }else{
+      list.style.maxHeight='none';
+    }
+  }
+
+  function syncAll(){
+    syncNoticeHeight();
+    syncVisibleNoticeWindow();
+  }
+
+  toggle.addEventListener('click',function(){
+    requestAnimationFrame(function(){
+      if(board.classList.contains('open'))syncAll();
+    });
+  });
+
+  window.addEventListener('resize',function(){
+    if(board.classList.contains('open'))syncAll();
+  },{passive:true});
+
+  if(window.ResizeObserver){
+    var ro=new ResizeObserver(function(){
+      if(board.classList.contains('open'))syncAll();
+    });
+    ro.observe(calendar);
+  }
+})();
+</script></body></html>');w.document.close();w.focus();w.print()});
 })();
 </script>
 <style id="adt-final-visual-fix-v31">
