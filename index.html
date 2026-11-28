@@ -2559,21 +2559,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     }catch(err){status.textContent=err.message||'Could not load the result right now.';if(/expired|session/i.test(status.textContent))brSession=null}
     finally{if(submitBtn){submitBtn.disabled=false;submitBtn.textContent='Check Result'}}
   },true);
-  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'<script id="app-update-notice-v1-js">
-(function(){
-  var KEY='adt_app_update_notice_v1_20261128';
-  function standalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
-  function init(){
-    if(!standalone())return;
-    var box=document.getElementById('appUpdateNotice'),close=document.getElementById('appUpdateNoticeClose');
-    if(!box||!close)return;
-    try{if(localStorage.getItem(KEY)==='1')return}catch(e){}
-    box.hidden=false;
-    close.onclick=function(){box.hidden=true;try{localStorage.setItem(KEY,'1')}catch(e){}};
-  }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
-})();
-</script></body></html>');w.document.close();w.focus();w.print()});
+  document.addEventListener('click',function(e){var btn=e.target.closest?e.target.closest('#brPrint'):null;if(!btn)return;e.preventDefault();var out=byId('brOutput');if(!out||out.hidden)return;var w=window.open('','_blank');if(!w)return;w.document.write('<!doctype html><html><head><title>Education Board Result</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:Arial,sans-serif;padding:24px;color:#111}.br-title{font-size:22px;font-weight:700;margin-bottom:14px}.br-row{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #ddd;padding:9px 0}.br-nested{margin:12px 0;padding:10px;border:1px solid #ddd;border-radius:8px}.br-nested>strong{display:block;margin-bottom:6px}</style></head><body>'+out.innerHTML+'</body></html>');w.document.close();w.focus();w.print()});
 })();
 </script><style id="adt-notice-scroll-fix-v2">
 @media(max-width:900px){
@@ -2729,5 +2715,19 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
     max-width:calc(100% - 2rem)!important;
   }
 }
-</style></body>
+</style><script id="app-update-notice-v1-js">
+(function(){
+  var KEY='adt_app_update_notice_v1_20261128';
+  function standalone(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true}
+  function init(){
+    if(!standalone())return;
+    var box=document.getElementById('appUpdateNotice'),close=document.getElementById('appUpdateNoticeClose');
+    if(!box||!close)return;
+    try{if(localStorage.getItem(KEY)==='1')return}catch(e){}
+    box.hidden=false;
+    close.onclick=function(){box.hidden=true;try{localStorage.setItem(KEY,'1')}catch(e){}};
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script></body>
 </html>
