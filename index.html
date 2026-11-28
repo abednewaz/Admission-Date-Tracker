@@ -2704,5 +2704,61 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
  addEventListener('resize',function(){if(board.classList.contains('open'))sync()},{passive:true});
  if(window.ResizeObserver){new ResizeObserver(function(){if(board.classList.contains('open'))sync()}).observe(calendar)}
 })();
+</script><style id="adt-global-shimmer-v1">
+/* Global processing shimmer: used only while the UI is actively waiting/loading. */
+.adt-shimmer{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.adt-shimmer::after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  pointer-events:none!important;
+  z-index:20!important;
+  background:linear-gradient(105deg,transparent 0%,transparent 38%,rgba(255,255,255,.07) 45%,rgba(255,255,255,.32) 50%,rgba(255,255,255,.07) 55%,transparent 62%,transparent 100%)!important;
+  background-size:220% 100%!important;
+  animation:adtShimmer 1.35s linear infinite!important;
+  border-radius:inherit!important;
+}
+@keyframes adtShimmer{from{background-position:220% 0}to{background-position:-20% 0}}
+body:not(.dark) .adt-shimmer::after{
+  background:linear-gradient(105deg,transparent 0%,transparent 38%,rgba(255,255,255,.05) 45%,rgba(255,255,255,.75) 50%,rgba(255,255,255,.05) 55%,transparent 62%,transparent 100%)!important;
+  background-size:220% 100%!important;
+}
+.adt-shimmer-text{position:relative!important;overflow:hidden!important}
+.adt-shimmer-text::after{
+  content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;
+  background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%)!important;
+  background-size:220% 100%!important;animation:adtShimmer 1.35s linear infinite!important;
+}
+@media(prefers-reduced-motion:reduce){
+  .adt-shimmer::after,.adt-shimmer-text::after{animation:none!important}
+}
+</style><script id="adt-global-shimmer-v1">
+(function(){
+  var rx=/^(loading|checking|opening|enabling|fetching|updating|saving|submitting|syncing|calculating|processing|refreshing|preparing|please wait|connecting|verifying|searching|sending|installing|deleting|removing|publishing|deploying|generating|loading\.\.\.|checking\.\.\.)/i;
+  var selectors='button,[role="status"],[aria-live="polite"],.review-status,.board-result-status,.share-copy-status,.pcm-msg-text';
+  function should(el){
+    if(!el||el.nodeType!==1)return false;
+    if(el.closest('[hidden],[aria-hidden="true"]'))return false;
+    var t=(el.textContent||'').trim().replace(/\s+/g,' ');
+    return t.length>0 && t.length<90 && rx.test(t);
+  }
+  function scan(root){
+    if(!root||root.nodeType!==1)return;
+    if(root.matches&&root.matches(selectors)&&should(root))root.classList.add('adt-shimmer');
+    if(root.querySelectorAll)root.querySelectorAll(selectors).forEach(function(el){if(should(el))el.classList.add('adt-shimmer');else el.classList.remove('adt-shimmer')});
+  }
+  scan(document.body);
+  new MutationObserver(function(ms){
+    ms.forEach(function(m){
+      if(m.type==='characterData'&&m.parentElement)scan(m.parentElement);
+      else if(m.target)scan(m.target);
+      m.addedNodes&&m.addedNodes.forEach(function(n){if(n.nodeType===1)scan(n)});
+    });
+  }).observe(document.body,{subtree:true,childList:true,characterData:true});
+})();
 </script></body>
 </html>
