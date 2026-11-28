@@ -2669,5 +2669,40 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 @media(max-width:760px){.content-shell{width:calc(100% - 1.5rem)!important}header{min-height:270px!important}.header-actions{position:absolute!important;width:auto!important;right:.68rem!important;left:auto!important;top:.68rem!important;transform:none!important;flex-wrap:nowrap!important}.header-brand{width:100%!important;max-width:100%!important}}
 @media(max-width:390px){.content-shell{width:calc(100% - 1rem)!important}header{min-height:258px!important}.header-actions{right:.45rem!important;width:auto!important;max-width:calc(100% - .9rem)!important}}
 @media(max-width:360px){.header-actions{gap:.15rem!important}.language-toggle,.theme-toggle{width:29px!important;min-width:29px!important}.header-actions .manual-btn{width:64px!important;min-width:64px!important}}
-</style></body>
+</style><style id="adt-notice-board-responsive-live">
+.notice-board.open{display:flex!important;flex-direction:column!important;min-height:0!important;height:var(--adt-notice-height,auto)!important}
+.notice-board.open .nb-list{flex:1 1 auto!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;overflow-x:hidden!important}
+.notice-board.open .nb-foot{flex:0 0 auto!important}
+@media(max-width:900px){.notice-board.open .nb-item:nth-child(n+1){display:block!important}}
+</style><script id="adt-notice-board-height-live">
+(function(){
+ var board=document.getElementById('noticeBoard'),toggle=document.getElementById('noticeToggle'),calendar=document.getElementById('calendarBox');
+ if(!board||!toggle||!calendar)return;
+ function calendarHeight(){
+   var was=calendar.classList.contains('open');
+   if(!was)calendar.classList.add('open');
+   var h=Math.ceil(calendar.getBoundingClientRect().height);
+   if(!was)calendar.classList.remove('open');
+   return h;
+ }
+ function sync(){
+   if(!board.classList.contains('open')){board.style.removeProperty('--adt-notice-height');return}
+   var h=calendarHeight();
+   if(h>0)board.style.setProperty('--adt-notice-height',h+'px');
+   var list=board.querySelector('.nb-list');
+   if(!list)return;
+   var w=innerWidth||document.documentElement.clientWidth, vh=innerHeight||document.documentElement.clientHeight;
+   var count=w<=360?2:(w<=480?3:4);
+   if(w<=900){
+     var row=Math.max(64,Math.min(92,Math.round(vh/11)));
+     var target=count*row;
+     var available=Math.max(120,h-95);
+     list.style.maxHeight=Math.min(target,available)+'px';
+   }else list.style.maxHeight='none';
+ }
+ toggle.addEventListener('click',function(){requestAnimationFrame(sync)});
+ addEventListener('resize',function(){if(board.classList.contains('open'))sync()},{passive:true});
+ if(window.ResizeObserver){new ResizeObserver(function(){if(board.classList.contains('open'))sync()}).observe(calendar)}
+})();
+</script></body>
 </html>
