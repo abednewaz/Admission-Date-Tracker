@@ -1293,7 +1293,25 @@ try{
     (('Notification' in window) && Notification.permission==='granted');
   if(adtReturningUser) document.documentElement.classList.add('adt-returning-user');
 }catch(e){}
-</script></head>
+</script><style id="students-tools-select-contrast-v1">
+/* Keep the native student-tools dropdown readable in dark mode. */
+.students-tool-select{color-scheme:light;}
+.students-tool-select option{background:#fff;color:#172033;font-weight:700;}
+body.dark .students-tool-select{
+  background:#101725!important;
+  color:#eef2ff!important;
+  color-scheme:dark;
+}
+body.dark .students-tool-select option{
+  background:#101725!important;
+  color:#eef2ff!important;
+}
+body.dark .students-tool-select option:checked,
+body.dark .students-tool-select option:hover{
+  background:#263b63!important;
+  color:#fff!important;
+}
+</style></head>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="adt-sharpen" x="-3%" y="-3%" width="106%" height="106%"><feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/></filter></defs></svg><body>
   <script>try{if(localStorage.getItem('adt_theme_v1')!=='light')document.body.classList.add('dark')}catch(e){document.body.classList.add('dark')}</script>
 
