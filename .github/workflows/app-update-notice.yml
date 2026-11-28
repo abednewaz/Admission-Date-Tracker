@@ -67,8 +67,6 @@ jobs:
         run: |
           git config user.name "Admission Tracker Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan __adt_cleanup_tmp 2>/dev/null || true
-          git checkout main
           git rm .github/workflows/app-update-notice.yml
           git commit -m "Remove one-time app update notice workflow"
           git push origin main
