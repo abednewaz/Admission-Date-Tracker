@@ -16,12 +16,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install SVG converter
+      - name: Install SVG/WebP converter
         run: sudo apt-get update && sudo apt-get install -y imagemagick
       - name: Generate PNG icons
+        shell: bash
         run: |
-          convert -background none icon.svg -resize 192x192 -strip icon-192.png
-          convert -background none icon.svg -resize 512x512 -strip icon-512.png
+          python - <<'PY'
+          import base64, re
+          svg = open('icon.svg', 'r', encoding='utf-8').read()
+          match = re.search(r'data:image/webp;base64,([^"]+)', svg)
+          if not match:
+              raise SystemExit('Embedded WebP icon payload not found in icon.svg')
+          with open('/tmp/admission-tracker-icon.webp', 'wb') as f:
+              f.write(base64.b64decode(match.group(1)))
+          PY
+          convert -background none /tmp/admission-tracker-icon.webp -resize 192x192 -strip icon-192.png
+          convert -background none /tmp/admission-tracker-icon.webp -resize 512x512 -strip icon-512.png
       - name: Commit icons
         run: |
           git config user.name "github-actions[bot]"
